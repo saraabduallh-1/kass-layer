@@ -1,0 +1,462 @@
+{
+  "complete_catalog_dump": false,
+  "entry_limit_per_dictionary": 20,
+  "generated_at": "2026-10-14T09:30:35.703086+00:00",
+  "queries_searched": [
+    "نموذج",
+    "كتاب",
+    "بيت",
+    "عمل",
+    "لغة",
+    "بيانات",
+    "قهوة",
+    "ماء",
+    "طريق",
+    "مدينة"
+  ],
+  "sources": [
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "ee392446-a5df-4b0c-b1e2-f0002b74342d",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
+      "name": "معجم المصطلحات الإحصائية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "لغة"
+      ],
+      "sense_records_extracted": 3,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 3
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "a95a483e-e6b5-4f66-ba12-45b5b54d8f9e",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/a95a483e-e6b5-4f66-ba12-45b5b54d8f9e",
+      "name": "معجم أسماء الناس في المملكة العربية السعودية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيانات",
+        "قهوة",
+        "مدينة"
+      ],
+      "sense_records_extracted": 7,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 7
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "e662ca1b-ed42-4fdb-bbd3-26bbb15df897",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/e662ca1b-ed42-4fdb-bbd3-26bbb15df897",
+      "name": "القاموس العربي - الإندونيسي (مفردات)",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "عمل",
+        "لغة",
+        "بيانات",
+        "قهوة",
+        "ماء",
+        "طريق",
+        "مدينة"
+      ],
+      "sense_records_extracted": 10,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 10
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "Riyadh",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/Riyadh",
+      "name": "معجم الرياض للغة العربية المعاصرة",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت"
+      ],
+      "sense_records_extracted": 29,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "93004a81-d924-49d3-9970-42218cf74311",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/93004a81-d924-49d3-9970-42218cf74311",
+      "name": "المعجم العربي للطلاب ( للمرحلتين المتوسطة والثانوية )",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "عمل",
+        "لغة"
+      ],
+      "sense_records_extracted": 35,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "a33c935c-2dc5-4147-a19d-4ea33abb6979",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/a33c935c-2dc5-4147-a19d-4ea33abb6979",
+      "name": "المعجم العربي للطلاب ( المرحلة الابتدائية للصفوف الثلاثة العليا )",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "لغة",
+        "بيانات",
+        "قهوة",
+        "ماء",
+        "مدينة"
+      ],
+      "sense_records_extracted": 14,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 11
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "2202f51d-7d70-4472-9fc0-f178fb425463",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2202f51d-7d70-4472-9fc0-f178fb425463",
+      "name": "القاموس المحيط",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "عمل"
+      ],
+      "sense_records_extracted": 20,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "9be14020-1138-4651-8d3f-713ee1d0c750",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/9be14020-1138-4651-8d3f-713ee1d0c750",
+      "name": "معجم الألفاظ والمصطلحات التربوية في التراث العربي",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "عمل"
+      ],
+      "sense_records_extracted": 5,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 5
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "b60a0505-57cb-436a-8a07-75b062de8013",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b60a0505-57cb-436a-8a07-75b062de8013",
+      "name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "بيت",
+        "عمل",
+        "لغة",
+        "بيانات",
+        "ماء",
+        "طريق"
+      ],
+      "sense_records_extracted": 21,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "d0328aad-1959-4a9f-9cc8-f23216399c3a",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/d0328aad-1959-4a9f-9cc8-f23216399c3a",
+      "name": "المعجم الموسوعي لمصطلحات اللسانيات التطبيقية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "كتاب",
+        "عمل",
+        "لغة"
+      ],
+      "sense_records_extracted": 22,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "77843d16-9315-4f87-b891-80a9399fdf54",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/77843d16-9315-4f87-b891-80a9399fdf54",
+      "name": "القاموس العربي- الأذربيجاني",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيت",
+        "بيانات",
+        "مدينة"
+      ],
+      "sense_records_extracted": 14,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 5
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "c0458cdc-7de7-401e-8078-365eaf63782a",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/c0458cdc-7de7-401e-8078-365eaf63782a",
+      "name": "المعجم العربي للطلَّاب المرحلة الابتدائية للصفوف الثلاثة الأولى",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيت",
+        "عمل"
+      ],
+      "sense_records_extracted": 2,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 2
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "e740316b-bc1e-4b62-81a4-c26d787bdeb6",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/e740316b-bc1e-4b62-81a4-c26d787bdeb6",
+      "name": "القاموس العربي - الإندونيسي (تراكيب)",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيت",
+        "عمل",
+        "لغة",
+        "ماء",
+        "طريق"
+      ],
+      "sense_records_extracted": 8,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 8
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "84c98c01-6b96-469c-918f-e8d59fffe8ce",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/84c98c01-6b96-469c-918f-e8d59fffe8ce",
+      "name": "معجم مصطلحات الفروسية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيت"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "4fc63968-9cd8-47d9-a32e-aadc6c6a265b",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4fc63968-9cd8-47d9-a32e-aadc6c6a265b",
+      "name": "معجم مصطلحات الموارد البشرية والتنمية الاجتماعية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل"
+      ],
+      "sense_records_extracted": 13,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 13
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "2885a7fb-c347-4390-92c9-808c9b9b17c2",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2885a7fb-c347-4390-92c9-808c9b9b17c2",
+      "name": "معجم مصطلحات القطاع غير الربحي",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل"
+      ],
+      "sense_records_extracted": 7,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 7
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
+      "name": "معجم المصطلحات المالية والاقتصادية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل",
+        "بيانات",
+        "مدينة"
+      ],
+      "sense_records_extracted": 5,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 5
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "a86a513b-f7db-45c6-b5d9-6f266b4a872e",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/a86a513b-f7db-45c6-b5d9-6f266b4a872e",
+      "name": "معجم مصطلحات الحاج والمعتمر",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "89af196b-70be-4a4b-b193-4b761e0b0fdd",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/89af196b-70be-4a4b-b193-4b761e0b0fdd",
+      "name": "قاموس العقود والمشتريات وسلاسل الإمداد",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل",
+        "لغة",
+        "بيانات",
+        "مدينة"
+      ],
+      "sense_records_extracted": 17,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 17
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24",
+      "name": "معجم المصطلحات القانـونية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "عمل",
+        "بيانات",
+        "طريق"
+      ],
+      "sense_records_extracted": 5,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 5
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "418913c1-8e46-450d-ab28-7694b51a6047",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/418913c1-8e46-450d-ab28-7694b51a6047",
+      "name": "معجم اللغويات الاجتماعية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "لغة"
+      ],
+      "sense_records_extracted": 21,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
+      "name": "معجم البيانات والذكاء الاصطناعي",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "لغة",
+        "بيانات"
+      ],
+      "sense_records_extracted": 20,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "2932b042-933a-4d5b-af72-8585027ddb6f",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2932b042-933a-4d5b-af72-8585027ddb6f",
+      "name": "معجم المصطلحات الإنمائية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "لغة"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "4e36115e-07b0-4a92-9e04-7ce3fe6a2e96",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4e36115e-07b0-4a92-9e04-7ce3fe6a2e96",
+      "name": "معجم المنتخب من أسماء العرب",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "لغة",
+        "بيانات",
+        "مدينة"
+      ],
+      "sense_records_extracted": 7,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 5
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "7806f9cf-4bdb-4c10-b9e5-2705d8945603",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/7806f9cf-4bdb-4c10-b9e5-2705d8945603",
+      "name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيانات"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d",
+      "name": "معجم مصطلحات الحياة الفطرية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "بيانات"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "94d205e3-6e93-4b6b-a245-1d5304b3ed7d",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/94d205e3-6e93-4b6b-a245-1d5304b3ed7d",
+      "name": "معجم  مصطلحات الطرق",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "طريق"
+      ],
+      "sense_records_extracted": 20,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 20
+    },
+    {
+      "complete_dictionary_dump": false,
+      "dictionary_id": "2813060b-8eda-4c7b-8b10-1fc3255305cb",
+      "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
+      "name": "معجم مصطلحات الخطوط الحديدية",
+      "platform": "SIWAR",
+      "public_search_pattern": "https://siwar.ksaa.gov.sa/result-page-public/{query}?searchType=lemma",
+      "queries_with_records": [
+        "طريق"
+      ],
+      "sense_records_extracted": 1,
+      "source_url": "https://siwar.ksaa.gov.sa/",
+      "unique_entries_extracted": 1
+    }
+  ]
+}
