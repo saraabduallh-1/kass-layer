@@ -1,0 +1,31 @@
+{
+  "discovery_date": "2026-10-14",
+  "status": "partial_public_discovery",
+  "discovered_sources": [
+    {
+      "name": "Siwar",
+      "candidate_url": "https://siwar.sa/",
+      "status": "not_dictionary",
+      "reason": "Accessible site is a child hospitality landing page and not an Arabic dictionary platform."
+    },
+    {
+      "name": "Riyadh Dictionary",
+      "candidate_url": "https://riyadhdictionary.com",
+      "status": "unresolved",
+      "reason": "DNS resolution failed from this environment."
+    },
+    {
+      "name": "King Salman Global Academy for Arabic Language",
+      "candidate_url": "https://arabicacademy.gov.sa",
+      "status": "unresolved",
+      "reason": "No public dictionary endpoint was reachable from this environment."
+    }
+  ],
+  "dictionaries_discovered": 0,
+  "dictionaries_extracted": 0,
+  "total_original_entries": 0,
+  "notes": [
+    "Public Academy dictionary sources were not accessible from this environment.",
+    "The project records blocked sources and continues with the pipeline scaffold, cleaning, and retrieval logic without fabricating entries."
+  ]
+}

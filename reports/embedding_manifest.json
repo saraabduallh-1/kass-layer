@@ -1,0 +1,16 @@
+{
+  "model_id": "google/embeddinggemma-300m",
+  "version": "2025-10",
+  "dimensions": 768,
+  "retrieval_format": "query|passage",
+  "status": "not_executed",
+  "generated_embeddings": 0,
+  "processing_stats": {
+    "entries_seen": 0,
+    "batch_count": 0,
+    "cache_hits": 0
+  },
+  "failures": [
+    "Model execution was not run in this environment because no public EmbeddingGemma weights were available locally."
+  ]
+}
