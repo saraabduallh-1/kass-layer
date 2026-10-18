@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-10-18T08:11:46.814758+00:00",
+  "phase": "1B",
+  "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
+  "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
+  "source_url": "https://siwar.ksaa.gov.sa/public-dict-information/97ac5360-d65f-425f-974f-9118f09d13a6",
+  "method": "SIWAR public catalog, paginated lexical IDs, public entry-by-ID API",
+  "crawl_delay_seconds": 5,
+  "completion_status": "complete_verified",
+  "counts": {
+    "published_total_entries_metadata": 130,
+    "browse_total_rows": 260,
+    "browse_rows_enumerated": 260,
+    "browse_lemma_rows": 130,
+    "browse_translation_rows": 130,
+    "duplicate_browse_rows": 130,
+    "unique_browse_entry_ids": 130,
+    "unique_entries_extracted": 130,
+    "raw_record_lines": 130,
+    "total_senses": 130,
+    "normalized_sense_records": 130,
+    "entries_with_definition": 130,
+    "senses_with_definition": 130,
+    "senses_with_english_term": 130,
+    "senses_with_source_domain": 0,
+    "senses_with_part_of_speech": 16,
+    "senses_with_examples": 0,
+    "entries_without_senses": 0
+  },
+  "count_reconciliation": "The public browse API reports 260 rows. They are 130 Arabic lemma rows and 130 English translation rows that point at the same lexical-entry IDs, giving 130 unique IDs. Lexicon metadata reports 130 entries. Unique IDs reconcile with the published count.",
+  "missing_or_inaccessible_entry_ids": [],
+  "validation": {
+    "all_checks_passed": true,
+    "checks": {
+      "browse_index_fully_enumerated": true,
+      "all_browse_ids_extracted": true,
+      "no_extracted_ids_outside_browse_index": true,
+      "no_malformed_raw_lines": true,
+      "no_duplicate_raw_entries": true,
+      "dictionary_attribution_correct": true,
+      "browse_row_matches_entry_id": true,
+      "arabic_text_integrity": true,
+      "checkpoint_entry_count_consistent": true,
+      "checkpoint_sense_count_consistent": true,
+      "checkpoint_status_complete": true,
+      "normalized_sense_ids_unique": true,
+      "normalized_covers_every_raw_sense": true,
+      "raw_to_normalized_correspondence": true,
+      "json_export_matches_jsonl": true
+    },
+    "details": {
+      "malformed_raw_lines": [],
+      "duplicate_raw_entry_ids": [],
+      "extracted_ids_outside_browse_index": [],
+      "attribution_errors": [],
+      "browse_id_mismatches": [],
+      "arabic_text_issues": [],
+      "duplicate_sense_ids": [],
+      "correspondence_errors": [],
+      "entries_without_senses": []
+    }
+  },
+  "checkpoint": {
+    "status": "complete",
+    "next_offset": 260,
+    "unique_entries_extracted": 130,
+    "sense_records_extracted": 130,
+    "last_error": null,
+    "updated_at": "2026-10-18T08:11:39.567732+00:00",
+    "count_warning": null
+  },
+  "outputs": {
+    "raw_records_jsonl": "data/dictionaries/raw/siwar/by_dictionary/97ac5360-d65f-425f-974f-9118f09d13a6/records/*.jsonl",
+    "raw_browse_index": "data/dictionaries/raw/siwar/by_dictionary/97ac5360-d65f-425f-974f-9118f09d13a6/index/*.json",
+    "raw_export_json": "data/dictionaries/raw/siwar/by_dictionary/97ac5360-d65f-425f-974f-9118f09d13a6/export/entries.json",
+    "normalized_jsonl": "data/dictionaries/normalized/digital_government/97ac5360-d65f-425f-974f-9118f09d13a6.senses.jsonl",
+    "normalized_json": "data/dictionaries/normalized/digital_government/97ac5360-d65f-425f-974f-9118f09d13a6.senses.json"
+  },
+  "notes": [
+    "english_term/english_definition are split from SIWAR translations[].word ('term|definition'); the unsplit source string is kept in translations.",
+    "domain is taken only from sense.domains / sense.theme.label in the source; null when absent.",
+    "No enrichment, synonym generation, or embeddings were performed in Phase 1B."
+  ]
+}
