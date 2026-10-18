@@ -4,7 +4,8 @@ Subcommands:
   extract    Resume public browse-index + entry-by-ID extraction (network, honours robots.txt).
   normalize  Build per-sense normalized JSONL + JSON exports from the raw checkpoint records.
   validate   Validate raw/normalized data and write the extraction report.
-  all        Run the three steps in order.
+  flat       Write data/dictionaries/raw/siwar_digital_government.json (flat term list).
+  all        Run all steps in order.
 """
 from __future__ import annotations
 
@@ -21,6 +22,7 @@ from kass_layer.dictionary.digital_government import (  # noqa: E402
     RAW_ROOT,
     REPORT_PATH,
     build_report,
+    write_flat_export,
     run_extraction,
     write_normalized,
 )
@@ -29,7 +31,7 @@ from kass_layer.dictionary.siwar_enumerator import MINIMUM_CRAWL_DELAY_SECONDS, 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("step", choices=["extract", "normalize", "validate", "all"])
+    parser.add_argument("step", choices=["extract", "normalize", "validate", "flat", "all"])
     parser.add_argument("--delay-seconds", type=float, default=MINIMUM_CRAWL_DELAY_SECONDS)
     args = parser.parse_args()
     if args.delay_seconds < MINIMUM_CRAWL_DELAY_SECONDS:
@@ -51,6 +53,8 @@ def main() -> None:
         atomic_write_json(REPORT_PATH, report)
         print(f"validate: status={report['completion_status']} checks_passed={report['validation']['all_checks_passed']}")
         print(f"report written to {REPORT_PATH.relative_to(ROOT)}")
+    if args.step in {"flat", "all"}:
+        print(f"flat: {write_flat_export(NORMALIZED_DIR)} records written")
 
 
 if __name__ == "__main__":

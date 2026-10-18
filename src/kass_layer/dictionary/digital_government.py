@@ -434,3 +434,34 @@ def _rel(path: Path) -> str:
         return path.resolve().relative_to(ROOT).as_posix()
     except ValueError:
         return path.as_posix()
+
+
+FLAT_EXPORT_PATH = ROOT / "data" / "dictionaries" / "raw" / "siwar_digital_government.json"
+
+
+def write_flat_export(normalized_dir: Path, output_path: Path = FLAT_EXPORT_PATH) -> int:
+    """Write a flat list of term records, matching the layout of ``siwar_riyadh.json``."""
+    jsonl_path = normalized_dir / f"{DICTIONARY_ID}.senses.jsonl"
+    flat = []
+    for line in jsonl_path.open(encoding="utf-8"):
+        record = json.loads(line)
+        flat.append(
+            {
+                "entry_id": record["entry_id"],
+                "sense_id": record["sense_id"],
+                "term": record["term"],
+                "definition": record["definition"],
+                "english_term": record["english_term"],
+                "english_definition": record["english_definition"],
+                "dictionary_id": record["dictionary_id"],
+                "dictionary_name": record["dictionary_name"],
+                "dictionary_url": record["source_metadata"]["dictionary_url"],
+                "source_url": record["source_metadata"]["entry_api_url"],
+                "domain": record["domain"],
+                "part_of_speech": record["part_of_speech"],
+                "morphology": record["morphology"],
+                "translations": record["translations"],
+            }
+        )
+    atomic_write_json(output_path, flat)
+    return len(flat)
