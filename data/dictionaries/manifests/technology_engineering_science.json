@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-10-18T07:54:34.614980+00:00",
+  "generated_at": "2026-10-18T10:16:42.737914+00:00",
   "dictionary_count": 7,
   "dictionaries": [
     {
       "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
-      "normalized_jsonl": "data/dictionaries/normalized/technology_engineering_science/4cd164a7-7160-4de8-af5c-34382f5da657.jsonl",
+      "normalized_jsonl": "data/dictionaries/normalized/data_ai/4cd164a7-7160-4de8-af5c-34382f5da657.senses.jsonl",
       "raw_records_dir": "data/dictionaries/raw/siwar/by_dictionary/4cd164a7-7160-4de8-af5c-34382f5da657/records",
-      "entries_extracted": 8,
-      "senses_extracted": 8,
-      "senses_with_definitions": 8,
-      "status": "partial",
+      "entries_extracted": 1443,
+      "senses_extracted": 1443,
+      "senses_with_definitions": 1443,
+      "status": "complete",
       "source_public_catalog_record": true,
-      "notes": "Raw SIWAR entry records retained; normalized sense-level export generated from verified raw checkpoints."
+      "notes": "Normalized from the complete SIWAR export (siwar_data_ai_dictionary.json); 5663 entries across ar/en/fr/es, 1443 Arabic concepts.",
+      "source_json": "data/dictionaries/raw/siwar_data_ai_dictionary.json"
     },
     {
       "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",

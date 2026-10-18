@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-10-18T10:16:42.727414+00:00",
+  "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
+  "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
+  "source_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
+  "method": "Complete SIWAR dictionary export supplied as one JSON file; normalized locally.",
+  "source_retrieved_at": "2026-10-01T12:02:36.915Z",
+  "completion_status": "complete_verified",
+  "counts": {
+    "published_total_entries_metadata": 5663,
+    "source_entries": 5663,
+    "source_entries_by_language": {
+      "ar": 1443,
+      "frn": 1405,
+      "esp": 1439,
+      "eng": 1376
+    },
+    "arabic_concepts": 1443,
+    "normalized_sense_records": 1443,
+    "senses_with_definition": 1443,
+    "senses_with_english_term": 1375,
+    "senses_with_french_term": 1421,
+    "senses_with_spanish_term": 1439,
+    "senses_with_part_of_speech": 141,
+    "lemma_types": {
+      "MWE": 1302,
+      "singleWord": 141
+    },
+    "siwar_api_sample_entries_cross_checked": 33
+  },
+  "count_reconciliation": "The source lists 5663 entries across four languages (ar=1443, frn=1405, esp=1439, eng=1376). Non-Arabic entries are translations linked to Arabic entries, so the dictionary holds 1443 Arabic concepts, each normalized as one sense record.",
+  "validation": {
+    "all_checks_passed": true,
+    "checks": {
+      "entry_count_matches_metadata": true,
+      "language_counts_match_metadata": true,
+      "source_entry_ids_unique": true,
+      "every_entry_has_definition": true,
+      "every_translation_entry_linked_to_arabic": true,
+      "arabic_text_integrity": true,
+      "normalized_sense_ids_unique": true,
+      "normalized_covers_every_arabic_entry": true,
+      "source_to_normalized_correspondence": true,
+      "json_export_matches_jsonl": true,
+      "agrees_with_siwar_api_sample": true
+    },
+    "details": {
+      "orphan_translation_entry_ids": [],
+      "arabic_text_issues": [],
+      "correspondence_errors": [],
+      "siwar_api_disagreements": []
+    }
+  },
+  "source_data_warnings": {
+    "unresolved_translation_links": [
+      {
+        "entry_id": "45463fff-b8ea-4fa2-87d8-9ea7c45bd62d",
+        "term": "مُسَمِّي",
+        "link": {
+          "language": "frn",
+          "lemma": "Annotateur",
+          "id": "059e6031-1ded-4765-ad4a-be7214eaf3cd"
+        }
+      },
+      {
+        "entry_id": "0d97d14c-9f9a-428f-b64c-f8197af62f1c",
+        "term": "معدل إيجابي خاطئ",
+        "link": {
+          "language": "frn",
+          "lemma": "Taux de faux positifs",
+          "id": "24736b6c-e0aa-431f-8229-75d50ac10281"
+        }
+      },
+      {
+        "entry_id": "779f2210-3e83-4756-8a5b-fc8ac1918c31",
+        "term": "مُقيِّم",
+        "link": {
+          "language": "frn",
+          "lemma": "Annotateur",
+          "id": "059e6031-1ded-4765-ad4a-be7214eaf3cd"
+        }
+      }
+    ],
+    "entries_with_multiple_english_terms": [
+      {
+        "entry_id": "bedfc041-e663-44fe-b599-ad8b6a10dc71",
+        "term": "نموذج أساس",
+        "english_terms": [
+          "Baseline Model",
+          "Foundation Model"
+        ]
+      }
+    ],
+    "duplicate_arabic_terms": [],
+    "arabic_entries_without_english": [
+      "dd10d1b5-db69-48ce-91cf-9bedf6c6609c",
+      "f04ef118-b716-4fa4-8efa-4a320fa75322",
+      "32610b6c-8551-40fd-96f0-045dd237ab88",
+      "71f97fbd-a8a9-4761-b41d-65f0608f9da7",
+      "a3d04ecf-ac61-47f4-9421-3356f12fc6d1",
+      "cb30072a-8504-496f-9060-6a73ae030a91",
+      "5fca6dba-bf1d-4659-ab16-feb71ab38391",
+      "2819e549-58ee-4f36-99e8-0ae9e4143911",
+      "fe617c22-1649-455d-972c-e8790cff9800",
+      "cf928c6e-a34f-4504-93ff-2b8bd69f1025",
+      "cb22bd53-8d12-4e0a-96a9-c1c37f2b0afa",
+      "22f0309e-1ced-433c-b9bf-246f3d0da782",
+      "7ea2d82d-33fe-4e6e-be67-bb30676bd3d0",
+      "42c8bcd8-e0ba-4ace-841b-88fa57b1d018",
+      "43e6ec6a-14d1-49c9-84af-3a3f497ffcf3",
+      "25d2e556-8786-491c-b0b9-7ddba57b290e",
+      "60ae8e5f-dc1b-4deb-8023-041af1846241",
+      "fecda830-36ed-4153-a594-b19f8932f0cd",
+      "e1ee5286-ca83-4f16-8123-1c3399e4bdf3",
+      "4395e3fc-c603-45a8-8f53-47934eea89b3",
+      "dcaf4392-4356-4bc0-8adc-a5c3fc658a9c",
+      "c8e3f3e7-c1d6-4eeb-996b-e884ded000d6",
+      "86d9be6b-1d95-4e71-8282-49defa4ea5a9",
+      "3ab189dc-93d3-4140-947a-d46677ca17ff",
+      "2226b8ed-e968-4bf2-b217-dabe56ab54fa",
+      "27b141f1-6322-4059-86a3-4e85ad05dfaf",
+      "dbbfae7a-c8f3-45ef-90b4-724232d0b68d",
+      "173862ed-ca94-47a7-a0fb-f1dca4d45147",
+      "efb5a6bc-289f-4218-9275-a7690c649f2c",
+      "1706edaf-e30c-4531-b5f8-16efc486b5d0",
+      "cde5d149-4dd1-4f75-8f0b-698bce5c55a2",
+      "a9eee4cd-2ed0-4351-b9b3-1743e88eb984",
+      "3052e639-d7c8-4533-9dbf-37434693db43",
+      "49e5f5ad-6b21-4d3e-9806-4b53b6bcb524",
+      "c97b5126-9539-4bf7-b888-c909698fdb1b",
+      "db61acda-57c2-4833-b7a9-d7e5af940313",
+      "5a8e2b64-c9bc-4cbc-b13a-868d79067870",
+      "9ebb32ca-b471-440e-9a7d-6ea71f6c8a33",
+      "7a9a78f6-92ef-4366-91b9-378d0da8a44f",
+      "1983ccfc-06f3-4d3a-8fea-0691a9210fc5",
+      "838a8e97-ca0e-4b28-bca5-c5ed33b54b57",
+      "8660bc5f-eafc-42f8-857e-35866420dba3",
+      "dd38aa57-2f7b-4cce-be75-1002504e781b",
+      "b6b74bdb-c660-4753-ac08-a90fda0badfe",
+      "4fd3ee4a-3b14-4dcc-b3e6-842b5af68dff",
+      "9e126234-72d3-4337-bd63-16f8837aa0c2",
+      "f062d7c0-a5bf-4735-b6c4-791973377885",
+      "fd3054b1-e0dc-4cb2-a8a6-a707ce209d2d",
+      "c05e3f4d-804a-42a3-8a6f-57689ec1ebb3",
+      "65fae496-ef96-4663-855f-16a0053069ac",
+      "972e95a7-bdec-46a0-8c03-693ae58c65cf",
+      "b17ec594-227a-4b6f-a61b-3d0f46bc8dfd",
+      "503b1178-2c9f-4aad-9a6a-a164e0cb1307",
+      "779603ce-e11f-49fa-bd7e-9f6681949b17",
+      "6596428e-fd35-4d02-8ef6-71200ccd2e66",
+      "85c1c3cb-e9f1-4c83-afb9-8493a22ca8b0",
+      "e37ebd13-5825-413f-8bf8-2130ae676cbc",
+      "853788d1-2bfa-4877-957e-dd8f6392b012",
+      "fa41dbe8-7de7-4c57-b345-e08d9905294b",
+      "846a9cde-a4de-4ec7-8386-5b1e1a148303",
+      "246fac6a-e2e7-4293-9be2-4ced973311f4",
+      "1fabafff-d26e-4a4a-ae1d-ef4075396550",
+      "06b45439-629c-458b-b467-d7cd39798193",
+      "23832543-0edc-4811-a2e1-506ca18ea1d6",
+      "c33c453c-367b-452a-8763-7ba23871b01f",
+      "0cf8ba38-0d85-47d7-b04c-f07e5ab432f5",
+      "f692ab35-0c05-44c7-bf14-43954b09b492",
+      "6837b4e2-bdd7-4767-b4b3-63274308f9e8"
+    ]
+  },
+  "outputs": {
+    "source_json": "data/dictionaries/raw/siwar_data_ai_dictionary.json",
+    "normalized_jsonl": "data/dictionaries/normalized/data_ai/4cd164a7-7160-4de8-af5c-34382f5da657.senses.jsonl",
+    "normalized_json": "data/dictionaries/normalized/data_ai/4cd164a7-7160-4de8-af5c-34382f5da657.senses.json",
+    "flat_export_json": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json"
+  },
+  "notes": [
+    "Language codes are mapped to ISO 639-1 (eng→en, frn→fr, esp→es); each translation keeps its own definition and SIWAR entry ID.",
+    "english_term/english_definition come from the first linked English entry; entries with several English terms are listed under source_data_warnings.",
+    "The source has no domain, root, pattern or example fields; those stay empty rather than inferred.",
+    "No enrichment, synonym generation, or embeddings were performed."
+  ]
+}
