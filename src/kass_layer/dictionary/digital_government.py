@@ -134,6 +134,7 @@ def normalize_records(
             continue
         seen.add(entry_id)
         entry_api_url = f"{API_BASE_URL}/v2/search/{quote(entry_id, safe='')}/get-public-entry"
+        dictionary_url = f"{SIWAR_BASE_URL}/public-dict-information/{quote(str(entry.get('lexiconId')), safe='')}"
         for sense_index, sense in enumerate(entry.get("senses") or []):
             translations = sense.get("translations") or []
             english = [t for t in translations if t.get("language") == "en"]
@@ -152,7 +153,7 @@ def normalize_records(
                     "dictionary_id": entry.get("lexiconId"),
                     "dictionary_name": entry.get("lexiconName"),
                     "domain": _domain(sense),
-                    "source_url": DICTIONARY_URL,
+                    "source_url": dictionary_url,
                     "part_of_speech": entry.get("pos"),
                     "morphology": {
                         "lemma_type": entry.get("lemmaType"),
@@ -179,7 +180,7 @@ def normalize_records(
                     "translations": translations,
                     "source_metadata": {
                         "platform": "SIWAR",
-                        "dictionary_url": DICTIONARY_URL,
+                        "dictionary_url": dictionary_url,
                         "entry_api_url": entry_api_url,
                         "raw_entry_object_id": entry.get("_id"),
                         "raw_file": record["raw_file"],

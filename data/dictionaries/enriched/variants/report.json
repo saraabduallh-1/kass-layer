@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-10-19T08:10:00.886691+00:00",
+  "prompt_versions": {
+    "generation": "3",
+    "review": "1"
+  },
+  "totals": {
+    "dictionaries": 19,
+    "senses": 30136,
+    "generated": 13493,
+    "reviewed": 10978,
+    "variants_by_status": {
+      "accepted": 14735,
+      "review": 5623
+    },
+    "variants_by_type": {
+      "foreign": 12697,
+      "informal_synonym": 3865,
+      "abbreviation": 1750,
+      "colloquial": 457,
+      "transliteration": 1286,
+      "spelling_variant": 303
+    },
+    "reviewer_actions": {
+      "added": 18418,
+      "kept": 1113,
+      "unreviewed": 825,
+      "corrected": 2
+    },
+    "review_reasons": {
+      "proposed_for_other_terms": 3977,
+      "is_standard_term_elsewhere": 1108,
+      "ambiguous": 730,
+      "low_confidence": 353,
+      "not_reviewed_by_claude": 825,
+      "has_definite_article": 31
+    }
+  },
+  "claude_token_usage": {},
+  "dictionaries": {
+    "004ce05a-0d56-45e4-a284-1b0358d4cfc4": {
+      "dictionary_name": "معجم مصطلحات علم السلوك",
+      "senses": 205,
+      "generated": 205,
+      "reviewed": 205,
+      "senses_with_variants": 205,
+      "variants_accepted": 273,
+      "variants_review": 68,
+      "variants_dropped": 77
+    },
+    "0f0ad290-0fa5-4983-bb56-7144c641cc8c": {
+      "dictionary_name": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+      "senses": 1061,
+      "generated": 911,
+      "reviewed": 911,
+      "senses_with_variants": 911,
+      "variants_accepted": 1462,
+      "variants_review": 506,
+      "variants_dropped": 346
+    },
+    "2813060b-8eda-4c7b-8b10-1fc3255305cb": {
+      "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
+      "senses": 856,
+      "generated": 804,
+      "reviewed": 804,
+      "senses_with_variants": 804,
+      "variants_accepted": 1420,
+      "variants_review": 375,
+      "variants_dropped": 372
+    },
+    "2885a7fb-c347-4390-92c9-808c9b9b17c2": {
+      "dictionary_name": "معجم مصطلحات القطاع غير الربحي",
+      "senses": 521,
+      "generated": 415,
+      "reviewed": 0,
+      "senses_with_variants": 91,
+      "variants_accepted": 0,
+      "variants_review": 202,
+      "variants_dropped": 84
+    },
+    "2932b042-933a-4d5b-af72-8585027ddb6f": {
+      "dictionary_name": "معجم المصطلحات الإنمائية",
+      "senses": 791,
+      "generated": 0,
+      "reviewed": 0,
+      "senses_with_variants": 0,
+      "variants_accepted": 0,
+      "variants_review": 0,
+      "variants_dropped": 0
+    },
+    "4264f8ae-7c51-437d-a6e4-877abad57325": {
+      "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
+      "senses": 1893,
+      "generated": 1748,
+      "reviewed": 1748,
+      "senses_with_variants": 1274,
+      "variants_accepted": 1695,
+      "variants_review": 599,
+      "variants_dropped": 1020
+    },
+    "4cd164a7-7160-4de8-af5c-34382f5da657": {
+      "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
+      "senses": 1443,
+      "generated": 1375,
+      "reviewed": 1375,
+      "senses_with_variants": 1373,
+      "variants_accepted": 2068,
+      "variants_review": 441,
+      "variants_dropped": 1085
+    },
+    "4fc63968-9cd8-47d9-a32e-aadc6c6a265b": {
+      "dictionary_name": "معجم مصطلحات الموارد البشرية والتنمية الاجتماعية",
+      "senses": 446,
+      "generated": 0,
+      "reviewed": 0,
+      "senses_with_variants": 0,
+      "variants_accepted": 0,
+      "variants_review": 0,
+      "variants_dropped": 0
+    },
+    "54a32a50-2b7e-49c2-9aa4-897f58fae786": {
+      "dictionary_name": "معجم مصطلحات الرياضات الإلكترونية",
+      "senses": 507,
+      "generated": 0,
+      "reviewed": 0,
+      "senses_with_variants": 0,
+      "variants_accepted": 0,
+      "variants_review": 0,
+      "variants_dropped": 0
+    },
+    "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d": {
+      "dictionary_name": "معجم مصطلحات الحياة الفطرية",
+      "senses": 632,
+      "generated": 0,
+      "reviewed": 0,
+      "senses_with_variants": 0,
+      "variants_accepted": 0,
+      "variants_review": 0,
+      "variants_dropped": 0
+    },
+    "7806f9cf-4bdb-4c10-b9e5-2705d8945603": {
+      "dictionary_name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+      "senses": 320,
+      "generated": 310,
+      "reviewed": 310,
+      "senses_with_variants": 301,
+      "variants_accepted": 327,
+      "variants_review": 224,
+      "variants_dropped": 303
+    },
+    "928f4f87-b98c-4b2d-b31d-0b45c6747644": {
+      "dictionary_name": "معجم مصطلحات الإعلام",
+      "senses": 833,
+      "generated": 750,
+      "reviewed": 735,
+      "senses_with_variants": 690,
+      "variants_accepted": 947,
+      "variants_review": 308,
+      "variants_dropped": 483
+    },
+    "94d205e3-6e93-4b6b-a245-1d5304b3ed7d": {
+      "dictionary_name": "معجم مصطلحات الطرق",
+      "senses": 387,
+      "generated": 367,
+      "reviewed": 0,
+      "senses_with_variants": 106,
+      "variants_accepted": 0,
+      "variants_review": 221,
+      "variants_dropped": 129
+    },
+    "97ac5360-d65f-425f-974f-9118f09d13a6": {
+      "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
+      "senses": 130,
+      "generated": 130,
+      "reviewed": 130,
+      "senses_with_variants": 129,
+      "variants_accepted": 177,
+      "variants_review": 113,
+      "variants_dropped": 219
+    },
+    "ae041c6d-79e6-42c3-b54b-ffbf28c88b9a": {
+      "dictionary_name": "معجم المصطلحات الرياضية",
+      "senses": 981,
+      "generated": 836,
+      "reviewed": 836,
+      "senses_with_variants": 836,
+      "variants_accepted": 1483,
+      "variants_review": 399,
+      "variants_dropped": 604
+    },
+    "b4759d02-40ef-4df5-a818-4081a11c338c": {
+      "dictionary_name": "معجم المصطلحات الموسيقية",
+      "senses": 700,
+      "generated": 584,
+      "reviewed": 584,
+      "senses_with_variants": 498,
+      "variants_accepted": 785,
+      "variants_review": 304,
+      "variants_dropped": 410
+    },
+    "b60a0505-57cb-436a-8a07-75b062de8013": {
+      "dictionary_name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+      "senses": 16215,
+      "generated": 2968,
+      "reviewed": 1250,
+      "senses_with_variants": 1463,
+      "variants_accepted": 1942,
+      "variants_review": 1007,
+      "variants_dropped": 572
+    },
+    "c59be8de-20c3-482b-ab57-ce923dfb4cee": {
+      "dictionary_name": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+      "senses": 825,
+      "generated": 765,
+      "reviewed": 765,
+      "senses_with_variants": 750,
+      "variants_accepted": 882,
+      "variants_review": 482,
+      "variants_dropped": 429
+    },
+    "ee392446-a5df-4b0c-b1e2-f0002b74342d": {
+      "dictionary_name": "معجم المصطلحات الإحصائية",
+      "senses": 1390,
+      "generated": 1325,
+      "reviewed": 1325,
+      "senses_with_variants": 958,
+      "variants_accepted": 1274,
+      "variants_review": 374,
+      "variants_dropped": 618
+    }
+  }
+}
