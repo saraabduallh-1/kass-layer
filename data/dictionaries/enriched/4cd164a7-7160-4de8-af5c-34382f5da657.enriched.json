@@ -2,14 +2,14 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-10-19T08:10:00.617318+00:00",
-  "enrichment_status": "partial",
+  "generated_at": "2026-10-20T11:14:42.782946+00:00",
+  "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
-    "senses_reviewed": 1375,
-    "senses_with_variants": 1373,
-    "variants_accepted": 2068,
-    "variants_needing_review": 441
+    "senses_reviewed": 1443,
+    "senses_with_variants": 1441,
+    "variants_accepted": 1984,
+    "variants_needing_review": 653
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1291,8 +1291,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "احتمالية",
@@ -1913,6 +1915,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -2323,8 +2326,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "اعتيان",
@@ -2785,8 +2790,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تعتيم البيانات",
@@ -5867,8 +5874,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Information Retrieval",
@@ -6919,8 +6928,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "استدلال",
@@ -7368,8 +7379,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تسمية",
@@ -7763,8 +7776,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8127,8 +8142,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Resource Description Framework",
@@ -8501,8 +8518,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "موثوقية",
@@ -9769,8 +9788,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Restricted Boltzmann Machine",
@@ -10319,6 +10340,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -10331,6 +10353,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -10469,8 +10493,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11651,8 +11677,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المربعات الصغرى",
@@ -11991,8 +12019,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "LOESS",
@@ -13585,8 +13615,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "One-Shot Prompting",
@@ -15938,8 +15970,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "برامج",
@@ -15948,8 +15982,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16036,8 +16073,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مفتوح المصدر",
@@ -16122,8 +16161,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يعتمد النظام على بروتوكول MCP للتواصل.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Model Context Protocol",
@@ -16576,8 +16617,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ bot يعمل على الردود السريعة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "روبوت",
@@ -16951,8 +16994,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الخوارزمية تحسب centroid بدقة عالية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المركز",
@@ -17065,6 +17110,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -17287,8 +17333,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17711,8 +17759,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17913,8 +17963,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18115,8 +18167,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "PII",
@@ -18127,6 +18181,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -18137,8 +18192,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18659,8 +18716,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19157,8 +19216,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19896,8 +19957,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "زمن الاستجابة",
@@ -20085,6 +20148,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -21017,8 +21081,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نتائج clustering أظهرت تجمّع العملاء في فئات محددة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التجميع العنقودي",
@@ -21325,8 +21391,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كي مينز",
@@ -21592,7 +21660,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d39d3eba-b1e7-48ec-b430-f3d90f59b3da/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "agglomerative clustering",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "hierarchical clustering",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "be9709d7-e809-465b-b86b-ee1a6a365eb8",
@@ -21641,7 +21736,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/be9709d7-e809-465b-b86b-ee1a6a365eb8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "centroid-based clustering",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "k-means",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "015e3720-3da8-4bb2-80c1-42761d213717",
@@ -21690,7 +21812,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/015e3720-3da8-4bb2-80c1-42761d213717/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "dynamic batching",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0ad009e0-ec6f-470b-a2d9-79f94c9079c5",
@@ -21739,7 +21876,36 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0ad009e0-ec6f-470b-a2d9-79f94c9079c5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "binning",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "bucketing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "13123ec0-5f63-4dd6-87bd-59a22f9a93d9",
@@ -21788,7 +21954,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/13123ec0-5f63-4dd6-87bd-59a22f9a93d9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "quantile bucketing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "27a0e4f2-9708-4887-8728-7d64ec108e3e",
@@ -21846,8 +22027,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21910,8 +22093,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Binning",
@@ -21920,8 +22105,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22016,7 +22203,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -22282,8 +22470,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوبتمايزيشن",
@@ -22304,7 +22494,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -22571,7 +22762,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a4e62804-90e1-480c-8f3a-3e1d57e68c4d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "combinatorial optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2b4aad2a-b0fb-4448-a102-f6e436986517",
@@ -22620,7 +22826,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2b4aad2a-b0fb-4448-a102-f6e436986517/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mathematical optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "41dedc04-d73d-4204-ab65-4df8c529d7cc",
@@ -22669,7 +22902,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/41dedc04-d73d-4204-ab65-4df8c529d7cc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "PSO",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "particle swarm optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "73224c33-3517-4224-a347-22657406701a",
@@ -22718,7 +22978,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/73224c33-3517-4224-a347-22657406701a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "GSO",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "glowworm swarm optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9afb0d69-698e-4fd7-af1b-95206b1a3f19",
@@ -22767,7 +23054,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9afb0d69-698e-4fd7-af1b-95206b1a3f19/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "stochastic optimization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "00fefdc6-eb2a-4f59-a1b5-f1d9bdcc538c",
@@ -22945,8 +23247,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فاليديشن",
@@ -23330,8 +23634,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "استقلالية",
@@ -23906,8 +24212,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24044,8 +24352,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السلاسل الزمنية",
@@ -24054,8 +24364,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24398,8 +24710,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Principal Component Analysis",
@@ -24408,8 +24722,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تحليل المكونات الرئيسية",
@@ -24613,7 +24929,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/faf2c81e-e5c7-4983-ae8a-d8c756470411/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "deductive analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a8bf20a7-4b4d-435a-8431-2202b3091bb9",
@@ -24662,7 +24993,59 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a8bf20a7-4b4d-435a-8431-2202b3091bb9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "data analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "داتا أناليتكس",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تحليل البيانات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5909e0f9-aea9-4e9b-abe5-a4926530000d",
@@ -24711,7 +25094,24 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5909e0f9-aea9-4e9b-abe5-a4926530000d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "big data analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "55fd3d72-58a4-42ce-9c47-27d60c00330d",
@@ -24760,7 +25160,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/55fd3d72-58a4-42ce-9c47-27d60c00330d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "speech analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9a3c53f3-2562-449f-86dd-d82a5b69706f",
@@ -24809,7 +25224,36 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9a3c53f3-2562-449f-86dd-d82a5b69706f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "text analytics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "text mining",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "db1fcb3c-a35a-4114-8944-1cb4f4913829",
@@ -26623,6 +27067,7 @@
             "example": "التحيز في الشبكة العصبية يؤثر على الدقة.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -26645,7 +27090,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -28483,8 +28929,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جريدينت",
@@ -28646,8 +29094,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29084,6 +29534,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -29286,8 +29737,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Machine Translation",
@@ -29456,6 +29909,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "ambiguous"
             ]
           },
@@ -31886,6 +32340,7 @@
             "example": "نسبة TP عالية جدًا في هذا الاختبار.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -32110,6 +32565,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -32196,6 +32652,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -33016,8 +33473,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Rotary Position Embedding",
@@ -33282,8 +33741,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "التحول إلى EDD سيعزز من كفاءة الفريق.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Evaluation-Driven Development",
@@ -34212,8 +34673,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Facial Recognition",
@@ -34222,8 +34685,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بصمة الوجه",
@@ -34242,8 +34707,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -34370,8 +34837,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "خوارزمية Boosting تعمل على البيانات.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -34862,8 +35331,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Machine Learning",
@@ -34872,8 +35343,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التعلم الآلي",
@@ -36126,7 +36599,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -36446,7 +36920,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -37528,8 +38003,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التعلم الموحد",
@@ -38608,8 +39085,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "حدثت singularity في عالم الذكاء الاصطناعي.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39123,8 +39602,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39178,7 +39659,42 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7dea932e-24fe-4136-9745-16369386000e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "IoU",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "intersection over union",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "jaccard index",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "dbbfae7a-c8f3-45ef-90b4-724232d0b68d",
@@ -39219,7 +39735,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/dbbfae7a-c8f3-45ef-90b4-724232d0b68d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "extrapolation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ad7a3b0b-8864-4595-bfd1-453f13a775da",
@@ -39268,7 +39799,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ad7a3b0b-8864-4595-bfd1-453f13a775da/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "MLE",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "maximum likelihood estimation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "df0aae0c-11da-4fa1-b54e-1518dfd042b0",
@@ -39317,7 +39873,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/df0aae0c-11da-4fa1-b54e-1518dfd042b0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "depth estimation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a453adae-177e-4ad9-b43a-0a4b80891560",
@@ -39366,7 +39937,46 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a453adae-177e-4ad9-b43a-0a4b80891560/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "tokenization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "توكنة",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تقطيع النص",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "034c1e0b-2d53-460b-aa62-a79dc59854d2",
@@ -39779,7 +40389,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5eda513e-a573-42f4-bf32-0bfb478ce581/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "context distillation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5ed40f8d-46f3-4220-9e76-6bf9ed48e587",
@@ -39828,7 +40453,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5ed40f8d-46f3-4220-9e76-6bf9ed48e587/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "knowledge distillation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "distillation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "85a23ce0-fda0-4823-ac37-c2494832e0d5",
@@ -39877,7 +40527,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/85a23ce0-fda0-4823-ac37-c2494832e0d5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "model distillation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cc487462-eab8-4078-9e10-703208187a82",
@@ -39926,7 +40591,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cc487462-eab8-4078-9e10-703208187a82/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "chunking",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تقسيم النص",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5c4e66d5-495a-43e3-8b52-65b244ecad64",
@@ -39975,7 +40667,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5c4e66d5-495a-43e3-8b52-65b244ecad64/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "semantic chunking",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "67387871-642d-4d51-89e6-0308d369279d",
@@ -40409,8 +41116,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Structural Risk Minimization",
@@ -40483,8 +41192,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "استخدمنا clipping للتعامل مع القيم الشاذة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Gradient Clipping",
@@ -40989,8 +41700,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دمج البيانات",
@@ -41205,6 +41918,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -42486,8 +43200,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "توقع",
@@ -42499,6 +43215,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -42775,8 +43492,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Data Cleansing",
@@ -42785,8 +43504,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تنظيف الداتا",
@@ -44117,8 +44838,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Gaussian",
@@ -44191,8 +44914,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Bell Curve",
@@ -44201,8 +44926,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45023,8 +45750,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نستخدم الـ NLG لتحويل البيانات إلى نصوص.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Natural Language Generation",
@@ -45097,8 +45826,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "مشروعنا يعتمد على RAG.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Retrieval-Augmented Generation",
@@ -45331,8 +46062,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45409,6 +46142,7 @@
             "example": "نقوم بتجميع TF على الخادم.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -46544,6 +47278,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -46756,8 +47491,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حجم الدفعة",
@@ -46766,8 +47503,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "باتش سايز",
@@ -47332,8 +48071,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "حجم الـ batch يجب أن يكون صغيراً.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "باتش",
@@ -47342,8 +48083,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "استخدمنا باتش كبير لتدريب النموذج.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دفعة",
@@ -47354,6 +48097,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -47728,8 +48473,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -48006,6 +48753,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -48700,8 +49448,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -48828,8 +49578,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حوكمة الداتا",
@@ -49428,6 +50180,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -49504,6 +50257,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -49526,7 +50280,8 @@
             "example": "نستخدم هذه السمة في النموذج.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -50058,8 +50813,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تايم ستامب",
@@ -50930,8 +51687,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "برايفسي",
@@ -51722,8 +52481,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Mixture of Depths",
@@ -52388,6 +53149,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -53809,8 +54571,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -54326,6 +55090,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -54447,7 +55212,24 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bc62788f-58e5-4549-b7e2-efc1713a212b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "accuracy",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "381245ae-d790-437b-b2ac-136aed240019",
@@ -54496,7 +55278,48 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/381245ae-d790-437b-b2ac-136aed240019/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "specificity",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "TNR",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "true negative rate",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3ace602e-db32-4a53-b59f-dc767fe8bace",
@@ -54545,7 +55368,48 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3ace602e-db32-4a53-b59f-dc767fe8bace/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sensitivity",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "recall",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "TPR",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "de7fc3d0-6e16-4ea3-a148-c5683cb9de0e",
@@ -54667,8 +55531,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -55670,7 +56536,48 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/57801488-fae3-4330-9653-5a0b3034a2d8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "conversational AI",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "chatbots",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "شات بوت",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "949d0058-ffbc-4506-a647-6576c9bd3edd",
@@ -55719,7 +56626,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/949d0058-ffbc-4506-a647-6576c9bd3edd/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "composable AI",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8393d504-7f20-4951-bcd6-b6b4e7ee614c",
@@ -55768,7 +56690,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8393d504-7f20-4951-bcd6-b6b4e7ee614c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "symbolic AI",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "GOFAI",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e550426b-cabb-4572-b314-f0e2985cc965",
@@ -55817,7 +56764,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e550426b-cabb-4572-b314-f0e2985cc965/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "collaborative AI",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2802e92f-f710-4cce-8eba-52f2e3866452",
@@ -55866,7 +56828,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2802e92f-f710-4cce-8eba-52f2e3866452/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "analog AI",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0f1567e4-bd3d-40a9-8325-5aff97d198d1",
@@ -58527,8 +59504,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بي آي",
@@ -59679,8 +60658,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -59743,8 +60724,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -62368,8 +63351,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "AI Safety",
@@ -62454,6 +63439,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -62928,8 +63914,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -63298,8 +64286,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "AV",
@@ -63308,8 +64298,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -63372,8 +64364,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السيارات الذاتية",
@@ -63448,6 +64442,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -64159,7 +65154,36 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4daefe24-c035-4392-a7ce-1569507c3faf/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "transformer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ترانسفورمر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "85461d47-20da-4d4a-82a7-c1c8490e295b",
@@ -64208,7 +65232,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/85461d47-20da-4d4a-82a7-c1c8490e295b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "target network",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6cd4b5cc-65d3-419e-98cd-857da329f99e",
@@ -64257,7 +65296,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6cd4b5cc-65d3-419e-98cd-857da329f99e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "bayesian network",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "belief network",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0b77a68a-885a-4fb1-afd0-4d02dbdcbbb4",
@@ -64306,7 +65370,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0b77a68a-885a-4fb1-afd0-4d02dbdcbbb4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "agentic mesh",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a2bf00ac-2352-4441-8a39-2f2754b15f9d",
@@ -64355,7 +65434,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a2bf00ac-2352-4441-8a39-2f2754b15f9d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "GAN",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "generative adversarial network",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ca1e928e-cd74-4c9a-afb6-4b5cc9b12b82",
@@ -64699,8 +65803,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الشبكات العصبية",
@@ -64709,8 +65815,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نيورال نتورك",
@@ -66011,8 +67120,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "شجرة القرارات",
@@ -66401,8 +67512,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -66529,8 +67642,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صاحب البيانات",
@@ -66539,8 +67654,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -66759,8 +67877,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سلامة البيانات",
@@ -66769,8 +67889,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -66981,8 +68103,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المرونة",
@@ -66994,6 +68118,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -67147,8 +68272,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كلاس",
@@ -67167,8 +68294,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -68495,8 +69625,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Supervised Fine-Tuning",
@@ -69041,8 +70173,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لير",
@@ -69662,7 +70796,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/545f85b1-641e-4887-a3ed-0d5264d0b125/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "input layer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "72d0e4c9-806e-44e9-9b44-7a3fa02472ec",
@@ -69711,7 +70860,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/72d0e4c9-806e-44e9-9b44-7a3fa02472ec/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "intelligence explosion",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "singularity",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d40e4839-e129-400d-a312-59f76b54b622",
@@ -69760,7 +70936,58 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d40e4839-e129-400d-a312-59f76b54b622/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "context length",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "طول السياق (Context Length) في هذا النموذج هو 4096 كلمة.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "context window",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كونتكست",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "نافذة السياق",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "eee3993f-e75b-41cb-900b-b9aaa7869dd4",
@@ -69809,7 +71036,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/eee3993f-e75b-41cb-900b-b9aaa7869dd4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "data scientist",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "توظيف عالم بيانات (Data Scientist) لتحليل المبيعات.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "داتا ساينتست",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6328f6c1-0b01-483c-b51c-541e886530a7",
@@ -69858,7 +71110,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6328f6c1-0b01-483c-b51c-541e886530a7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "branching factor",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "129bbd2c-97f6-46b6-84da-179e936d9188",
@@ -70495,8 +71762,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تستخدم هذه الـ node في خوارزميات التعلم العميق.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نود",
@@ -70505,8 +71774,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هذه النود في الشبكة العصبية مسؤولة عن معالجة المدخلات.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -70747,8 +72018,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -72077,8 +73350,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -73056,6 +74331,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms",
               "ambiguous"
             ]
@@ -73547,8 +74823,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -73860,6 +75138,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -74052,8 +75331,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "DB",
@@ -74062,8 +75343,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "داتابيس",
@@ -74633,7 +75916,44 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b1cc4050-5221-4d53-a514-f95ea5c77b4d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "relational database",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "RDBMS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "SQL database",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d5d5d277-f21d-4984-8d2e-ee20dcb17a7a",
@@ -74682,7 +76002,42 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d5d5d277-f21d-4984-8d2e-ee20dcb17a7a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "distributed transactional database",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "شركة X تستخدم Distributed Transactional Database لبياناتها المالية.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "distributed SQL",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "NewSQL",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "952a560e-7dc6-475b-b755-f323240e450a",
@@ -74731,7 +76086,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/952a560e-7dc6-475b-b755-f323240e450a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "NoSQL",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "non-relational database",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8adcac41-572e-4bae-aa17-e98502035362",
@@ -74780,7 +76162,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8adcac41-572e-4bae-aa17-e98502035362/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "IMDB",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "in-memory database",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "00b716ac-b40a-4577-9875-ad1a8b941e91",
@@ -74829,7 +76236,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/00b716ac-b40a-4577-9875-ad1a8b941e91/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "multi-model database",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b56b9410-4083-408f-b876-938e6f299eb5",
@@ -76232,8 +77654,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -76340,8 +77764,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -76406,6 +77832,7 @@
             "example": "أحب قراءة الكتب باللغة R.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -76556,8 +77983,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "اللغة المستخدمة في قواعد البيانات هي SQL.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سيكول",
@@ -77354,8 +78783,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الصلابة",
@@ -77366,7 +78797,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -77912,6 +79344,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -78794,8 +80227,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كلستر",
@@ -78816,7 +80251,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -79322,6 +80758,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -79527,8 +80964,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هذا الـ transformer يعمل بسرعة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ترانسفورمر",
@@ -79537,8 +80976,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المحولات",
@@ -80532,7 +81973,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bf2a295f-6fff-4e31-b04f-3c055d967e5b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "squared hinge loss",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "da5780a0-425a-4cae-8a49-4b7b9f61fdf2",
@@ -80581,7 +82037,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/da5780a0-425a-4cae-8a49-4b7b9f61fdf2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "WALS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "weighted alternating least squares",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cf46a2af-7a2b-4893-a038-6d6027737b0a",
@@ -80630,7 +82111,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cf46a2af-7a2b-4893-a038-6d6027737b0a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "tensor order",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "tensor rank",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "702aa618-8dc1-43e4-908a-bcbba3dacb31",
@@ -80679,7 +82187,46 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/702aa618-8dc1-43e4-908a-bcbba3dacb31/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "convolutional filter",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "kernel",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "فلتر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d807d060-7daf-4a12-bc87-674dd6708324",
@@ -80728,7 +82275,49 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d807d060-7daf-4a12-bc87-674dd6708324/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "autonomous vehicle",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "self-driving car",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سيارة ذاتية القيادة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "82dfe987-2472-48d1-a6c4-041afacdd8cf",
@@ -80924,8 +82513,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنكودر",
@@ -80934,8 +82525,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مشفر",
@@ -80947,6 +82540,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -81013,8 +82607,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -82255,8 +83851,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نستخدم Data Warehouse لتخزين بيانات العملاء.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "DWH",
@@ -82843,8 +84441,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Data Stewardship",
@@ -84103,8 +85703,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Distributed Data Processing",
@@ -84113,8 +85715,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -84177,8 +85781,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المعالجة الدفعية",
@@ -84325,8 +85931,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -84463,8 +86071,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أداء الـ NLP في هذا المشروع ممتاز.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Natural Language Processing",
@@ -84999,8 +86609,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Parameters",
@@ -85019,8 +86631,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المعاملات",
@@ -85159,8 +86773,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -85849,8 +87465,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -86061,8 +87679,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "True Negative Rate",
@@ -86071,8 +87691,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Specificity",
@@ -86081,8 +87703,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -86331,8 +87955,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنفورميشن",
@@ -86931,8 +88557,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Metrics",
@@ -86941,8 +88569,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميتريك",
@@ -86951,8 +88581,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مؤشر أداء",
@@ -87241,8 +88873,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ METEOR جيد.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -87587,8 +89221,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -87927,8 +89563,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ROC Curve",
@@ -87992,7 +89630,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/06517f85-c1a0-4b36-9422-a096ba48ed77/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "analytics platform",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9e638426-c9fa-47ba-9449-e5a9b53ef479",
@@ -88041,7 +89694,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9e638426-c9fa-47ba-9449-e5a9b53ef479/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "conversational AI platform",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "07850525-9b62-412d-88ff-eec6aaf1cb02",
@@ -88090,7 +89758,32 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/07850525-9b62-412d-88ff-eec6aaf1cb02/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "fuzzy logic",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "المنطق الغامض",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d43d4839-6cdc-4794-a08a-a56c9692afa9",
@@ -88139,7 +89832,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d43d4839-6cdc-4794-a08a-a56c9692afa9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "machine perception",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a0f4aebc-8518-4303-9dc8-90daed61ab36",
@@ -88188,7 +89896,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a0f4aebc-8518-4303-9dc8-90daed61ab36/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "data ecosystem",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2299c4f8-7d83-4167-9387-e3ed94225eba",
@@ -88487,6 +90210,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -88871,8 +90595,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Trustworthy AI",
@@ -88891,8 +90617,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -89039,8 +90768,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -89557,8 +91288,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Context Length",
@@ -89567,8 +91300,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كونتكست ويندو",
@@ -89849,8 +91584,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الانحدار التدرجي",
@@ -90502,8 +92239,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سيستم",
@@ -90512,8 +92251,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -90931,8 +92672,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Remote Biometric Identification",
@@ -91843,6 +93586,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -91855,7 +93599,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -92905,8 +94650,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تشيك بوينت",
@@ -93277,6 +95024,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -93353,7 +95101,6 @@
             "example": "هذا الموديل يعمل بكفاءة عالية.",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -93364,8 +95111,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أفضل model في السوق هو هذا.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -93957,8 +95706,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -94999,8 +96750,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Generalized Linear Model",
@@ -95073,8 +96826,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -95317,8 +97072,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -95593,8 +97350,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -95861,8 +97620,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "State Space Model",
@@ -95945,8 +97706,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نموذج اللغة",
@@ -96221,8 +97984,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Small Language Model",
@@ -97465,6 +99230,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -97668,7 +99434,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bd84be88-fefc-4c2b-bb10-c450546a84b8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "membership inference attack",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا النموذج عرضة لهجوم Membership Inference Attack.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0532b11c-26ea-434c-94f6-12018511c48e",
@@ -97717,7 +99498,48 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0532b11c-26ea-434c-94f6-12018511c48e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "objective",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "objective function",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "loss",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "06b45439-629c-458b-b467-d7cd39798193",
@@ -97750,7 +99572,34 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/06b45439-629c-458b-b467-d7cd39798193/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "hadoop",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "هادوب",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b814566f-c2a1-46cb-b258-0b56269b8539",
@@ -97799,7 +99648,22 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b814566f-c2a1-46cb-b258-0b56269b8539/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "hallucination",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "65aa8dd1-02af-4cfc-b086-faf8d5be820a",
@@ -97848,7 +99712,35 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/65aa8dd1-02af-4cfc-b086-faf8d5be820a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "AI hallucination",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "هلوسة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "النظام يولد هلوسة في البيانات.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0e5873bc-dec4-4823-9d6e-6368e24b7d3b",
@@ -98394,8 +100286,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -98652,6 +100546,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           },
@@ -99398,6 +101293,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -100971,7 +102867,46 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/27c225fb-f417-45a9-b073-4e01d7439b80/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "test set",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "test data",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بيانات الاختبار",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نحتاج إلى بيانات الاختبار لتقييم النموذج.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "09131d82-e816-4bc6-a4f1-958b5f5bb79b",
@@ -101020,7 +102955,42 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/09131d82-e816-4bc6-a4f1-958b5f5bb79b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "validation set",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "validation data",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بيانات التحقق",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نستخدم بيانات التحقق لضبط النموذج.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ad85f045-5aca-4c45-8992-31c99aa8e1bb",
@@ -101069,7 +103039,52 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ad85f045-5aca-4c45-8992-31c99aa8e1bb/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "training set",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "training data",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "داتا التدريب",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بيانات التدريب",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a446b66c-33ad-42b1-8cdb-ce9515b4aefe",
@@ -101118,7 +103133,47 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a446b66c-33ad-42b1-8cdb-ce9515b4aefe/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "output",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "output data",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مخرجات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "لقد راقبنا مخرجات النظام بدقة.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "deed281e-e9d6-4b8b-88de-bcb09fd1d5fe",
@@ -101167,7 +103222,47 @@
       "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4cd164a7-7160-4de8-af5c-34382f5da657",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/deed281e-e9d6-4b8b-88de-bcb09fd1d5fe/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "input",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "input data",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مدخلات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "النموذج يعتمد على مدخلات دقيقة.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "202c8309-6a9e-4012-b372-b90cc9bca5e1",
@@ -101455,8 +103550,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "البيانات تحتوي على نسبة عالية من النويز.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ضوضاء",
@@ -101541,8 +103638,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نستخدم بيرت لفهم اللغة العربية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -102465,8 +104564,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "F-Score",

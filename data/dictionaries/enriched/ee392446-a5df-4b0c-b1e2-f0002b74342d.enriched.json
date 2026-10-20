@@ -2,14 +2,14 @@
   "dictionary_id": "ee392446-a5df-4b0c-b1e2-f0002b74342d",
   "dictionary_name": "معجم المصطلحات الإحصائية",
   "source_export": "data/dictionaries/exports/ee392446-a5df-4b0c-b1e2-f0002b74342d.json",
-  "generated_at": "2026-10-19T08:10:00.854457+00:00",
-  "enrichment_status": "partial",
+  "generated_at": "2026-10-20T11:14:43.676600+00:00",
+  "enrichment_status": "complete",
   "counts": {
     "senses": 1390,
-    "senses_reviewed": 1325,
-    "senses_with_variants": 958,
-    "variants_accepted": 1274,
-    "variants_needing_review": 374
+    "senses_reviewed": 1390,
+    "senses_with_variants": 1023,
+    "variants_accepted": 1082,
+    "variants_needing_review": 687
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -477,6 +477,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           },
@@ -532,8 +533,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Digital Asset Management",
@@ -658,8 +661,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الشركة أعلنت عن توزيعات الأرباح.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أرباح موزعة",
@@ -670,7 +676,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -715,8 +722,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أرشفة",
@@ -928,8 +937,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1052,8 +1063,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أظهرت البيانات ارتفاعاً في مؤشرات FPI.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Foreign Portfolio Investment",
@@ -1300,6 +1313,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -1438,7 +1452,47 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ac06bade-56e9-4ad5-8ce2-dddfb901bb81/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "consumption of fixed capital",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "depreciation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الإهلاك",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "afd3d89d-aaf0-466f-b953-ca0d1dc9add6",
@@ -1468,7 +1522,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/afd3d89d-aaf0-466f-b953-ca0d1dc9add6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "single-person household",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "one-person household",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "dc2a263f-7e52-4f8e-9ae2-2c20281b6466",
@@ -1498,7 +1577,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/dc2a263f-7e52-4f8e-9ae2-2c20281b6466/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "composite household",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3b355224-7bd7-4071-9942-0c9ac87127c1",
@@ -1528,7 +1622,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3b355224-7bd7-4071-9942-0c9ac87127c1/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "extended household",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "extended family",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "acdfe274-a451-4bcb-a6aa-9a8713128d51",
@@ -1558,7 +1677,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/acdfe274-a451-4bcb-a6aa-9a8713128d51/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "nuclear household",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "nuclear family",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "252dad51-3825-446b-b4df-b9a4cf05aaca",
@@ -1631,8 +1775,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Interbank Rate",
@@ -2695,8 +2841,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ريسايكل",
@@ -2807,8 +2955,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2988,8 +3138,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "قسط التأمين",
@@ -2998,8 +3150,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -3088,8 +3243,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نقابات",
@@ -3203,7 +3360,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -3348,8 +3506,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الراتب",
@@ -3361,6 +3521,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -3374,6 +3535,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -3419,8 +3581,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الراتب الأساسي",
@@ -3670,7 +3834,8 @@
             "example": "الاحترار العالمي يهدد التنوع البيولوجي.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -3715,8 +3880,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الاحتياطيات الأجنبية",
@@ -3893,8 +4060,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التوفير",
@@ -4005,8 +4174,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4084,8 +4255,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4290,8 +4463,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أرض خالية",
@@ -4300,8 +4475,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4336,7 +4513,42 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bcd06652-1de3-493b-89ed-9d1377b3c510/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "improved lands",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "developed land",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "أرض مخططة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0805b80c-f34b-4f95-a8e3-321f600bb1f2",
@@ -4366,7 +4578,34 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0805b80c-f34b-4f95-a8e3-321f600bb1f2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "cash basis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نظامنا يستخدم Cash Basis للحسابات.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "cash accounting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1e2beccf-30d6-4992-9369-d6a122ceb92c",
@@ -4396,7 +4635,36 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1e2beccf-30d6-4992-9369-d6a122ceb92c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "investment",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "gross fixed capital formation",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ea658686-1b33-4261-8b85-a939e1ce4ad9",
@@ -4426,7 +4694,46 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ea658686-1b33-4261-8b85-a939e1ce4ad9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "foreign investment",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "FDI",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الاستثمار الأجنبي المباشر",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e6b86001-536c-4b10-bcff-6af8613da630",
@@ -4456,7 +4763,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e6b86001-536c-4b10-bcff-6af8613da630/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "annual foreign investment in telecommunications",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8be8a56f-b333-455d-87ec-8a329969cafc",
@@ -5018,8 +5340,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -5291,8 +5615,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أسرة",
@@ -5304,6 +5630,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -5494,8 +5821,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سماد",
@@ -5504,8 +5833,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -5642,8 +5973,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -5892,8 +6225,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الأصول قصيرة الأجل",
@@ -5972,7 +6307,36 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a7d49413-f9cd-4121-ace8-d48be6126aba/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "gross fixed capital formation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "GFCF",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "aa4dace6-1c6f-43e2-aebc-d84415874c0a",
@@ -6002,7 +6366,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/aa4dace6-1c6f-43e2-aebc-d84415874c0a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "disability",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a02838a4-4961-46eb-abb1-ee401daab333",
@@ -6032,7 +6413,37 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a02838a4-4961-46eb-abb1-ee401daab333/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "subsidies",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الدعم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "35b85d71-5ffe-41ca-99cb-a3dcd7ea52b4",
@@ -6062,7 +6473,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/35b85d71-5ffe-41ca-99cb-a3dcd7ea52b4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "other subsidies on products",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ee32b947-9991-4d96-a9bb-c00f153edb40",
@@ -6092,7 +6518,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ee32b947-9991-4d96-a9bb-c00f153edb40/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "production subsidies",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "subsidies on production",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8affc99b-41b1-4e33-bbdf-03eb7ee8bf04",
@@ -6223,8 +6674,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6406,6 +6859,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -6571,8 +7025,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6776,8 +7232,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ internet هو شبكة عالمية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "النت",
@@ -6788,7 +7246,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -7081,8 +7540,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7904,8 +8365,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8232,8 +8695,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8777,8 +9242,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لايف",
@@ -8802,7 +9269,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -9307,6 +9775,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -10361,8 +10830,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حوالات",
@@ -10373,6 +10844,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "ambiguous"
             ]
           },
@@ -10498,7 +10970,46 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f7b64f84-dfc5-42cc-8579-836757d1f355/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "warehousing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "storage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "مستودعات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1a0f7e8d-2664-42de-bb28-8009531b9029",
@@ -10528,7 +11039,68 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1a0f7e8d-2664-42de-bb28-8009531b9029/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "specialization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "major",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "field of study",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "التخصص",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "تخصص",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d3f9f01e-426c-4dc7-bca6-45886bef4098",
@@ -10558,7 +11130,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d3f9f01e-426c-4dc7-bca6-45886bef4098/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "capital stock disposals",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "disposals of fixed assets",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7abf7000-fd5a-4283-bb20-aa45a1b2e2d7",
@@ -10588,7 +11185,34 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7abf7000-fd5a-4283-bb20-aa45a1b2e2d7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "training",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ترينينج",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f486c5df-b384-434d-bdc1-598bfedd5ca8",
@@ -10618,7 +11242,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f486c5df-b384-434d-bdc1-598bfedd5ca8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "training and studies related to employment",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "employment-related training",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b2961215-464a-48e4-9a8a-b0049f6c1ea6",
@@ -10657,8 +11306,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التراث",
@@ -10667,8 +11318,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11038,8 +11691,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11083,8 +11738,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التسرب الدراسي",
@@ -11093,8 +11750,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11183,8 +11842,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11445,6 +12106,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -11741,8 +12403,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12114,8 +12778,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12206,8 +12872,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12621,8 +13289,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12744,8 +13414,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "الجنس البيولوجي",
@@ -12844,8 +13516,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حادث سير",
@@ -12854,8 +13528,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حادث سيارة",
@@ -12864,8 +13540,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13225,8 +13903,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13325,8 +14005,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13527,8 +14209,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13639,8 +14323,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13718,8 +14404,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13773,8 +14461,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13873,8 +14563,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14010,8 +14702,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لوجستيات",
@@ -14020,8 +14714,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لوجستي",
@@ -14730,8 +15426,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دباب",
@@ -14752,8 +15450,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دراجة نارية",
@@ -14810,8 +15510,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15058,8 +15760,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15193,8 +15897,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Special Drawing Rights",
@@ -15203,8 +15909,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15473,8 +16181,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Producer Price Index",
@@ -15729,7 +16439,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -15874,8 +16585,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مؤشر الأسعار",
@@ -15884,8 +16597,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16139,8 +16854,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16452,8 +17169,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16497,8 +17216,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سايح",
@@ -16665,8 +17386,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ثمن",
@@ -16677,7 +17400,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -16826,8 +17550,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "PWD",
@@ -16836,8 +17562,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ذوي الإعاقة",
@@ -16856,8 +17584,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16984,7 +17714,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a7c74a00-9abc-4a9c-b90c-6cfe07ea2cc7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "goods and services",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f2e48a98-3116-49d4-bc1e-d66a620509aa",
@@ -17014,7 +17761,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f2e48a98-3116-49d4-bc1e-d66a620509aa/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "market goods and services",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9962f618-1228-4cbc-9b96-2cb811daefc1",
@@ -17044,7 +17806,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9962f618-1228-4cbc-9b96-2cb811daefc1/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "bonds",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6eee73bb-4c4a-48fa-ba96-9faddb2af7de",
@@ -17074,7 +17853,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6eee73bb-4c4a-48fa-ba96-9faddb2af7de/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "errors and omissions",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "net errors and omissions",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a5fe9a6f-adb6-435f-89af-70ca9e91004f",
@@ -17104,7 +17908,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a5fe9a6f-adb6-435f-89af-70ca9e91004f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5c01bbb8-b689-4d2d-9621-8b101a87db57",
@@ -17134,7 +17955,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5c01bbb8-b689-4d2d-9621-8b101a87db57/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "outbound tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "30979eed-ce9a-48d5-9dca-0a94e91baafb",
@@ -17164,7 +18000,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/30979eed-ce9a-48d5-9dca-0a94e91baafb/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "internal tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8a683002-8335-45e0-b982-8802bafff85c",
@@ -17194,7 +18045,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8a683002-8335-45e0-b982-8802bafff85c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "international tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21665b0e-4531-4a5a-9646-ad462918cced",
@@ -17224,7 +18090,34 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21665b0e-4531-4a5a-9646-ad462918cced/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "domestic tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "السياحة الداخلية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3ada9cf9-ef76-4546-aad5-c0fb7610725d",
@@ -17254,7 +18147,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3ada9cf9-ef76-4546-aad5-c0fb7610725d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "inbound tourism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c960e881-ad34-4b50-8ea1-4f5549c030bf",
@@ -17428,8 +18336,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يجب تفعيل جدار الحماية للإنترنت.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنترانت",
@@ -17438,8 +18348,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نستخدم إنترانت لنشر الإعلانات الداخلية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17493,8 +18405,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17628,8 +18543,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Company",
@@ -17638,8 +18555,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17683,8 +18602,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Holding Company",
@@ -17812,8 +18733,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الشركة holding تسيطر على 60% من أسهم الشركة الفرعية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "هولدنق",
@@ -18178,8 +19101,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ضعف السمع",
@@ -18188,8 +19113,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18335,8 +19262,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التصنيع",
@@ -18347,7 +19276,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -18402,8 +19332,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18945,8 +19878,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سولار",
@@ -19017,7 +19952,8 @@
             "example": "استهلاك الكهرباء في المنزل ارتفع هذا الشهر.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -19062,8 +19998,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Hydroelectricity",
@@ -19127,8 +20065,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19172,8 +20112,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19262,8 +20204,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الشهرة",
@@ -19274,6 +20218,8 @@
             "example": "تدخل الشهرة التجارية في الميزانية العمومية.",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -19310,7 +20256,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/30bf7767-c5e7-4496-8b83-2f1d755ece5c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "economic appearance of produced assets",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "26d4b604-5064-4e8e-8dd3-ed72f19d7873",
@@ -19340,7 +20301,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/26d4b604-5064-4e8e-8dd3-ed72f19d7873/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "economic appearance of non-produced assets",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e327addd-ef20-4da8-b084-28edc6b7b054",
@@ -19370,7 +20346,42 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e327addd-ef20-4da8-b084-28edc6b7b054/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "online multiplayer games",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "online games",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ألعاب أونلاين",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9c258394-0b8b-4f60-9f98-5a6e979bbe0d",
@@ -19400,7 +20411,44 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9c258394-0b8b-4f60-9f98-5a6e979bbe0d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "contractually married",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "عاقد",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ملكة",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "عقد القران قبل الزفاف",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "924d247b-a13b-4663-8bd9-a067df7657b9",
@@ -19430,7 +20478,36 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/924d247b-a13b-4663-8bd9-a067df7657b9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rest of the world",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ROW",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9deac22a-2724-4ee3-ad15-ffdea0fceb6b",
@@ -19717,8 +20794,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "عمل حر",
@@ -19739,8 +20818,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19784,8 +20865,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19829,8 +20912,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20042,8 +21127,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "موظفين",
@@ -20052,8 +21139,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "القوى العاملة",
@@ -20570,8 +21659,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "العمل التطوعي",
@@ -20582,7 +21673,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -20594,7 +21686,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -20707,8 +21800,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نقود",
@@ -20762,8 +21857,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "العنوان الوطني المختصر",
@@ -20862,8 +21959,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "NG",
@@ -20874,6 +21973,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -20919,8 +22019,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21068,8 +22170,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21776,8 +22880,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فايروس",
@@ -21833,8 +22939,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سلف",
@@ -21843,8 +22951,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21969,6 +23079,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -22073,6 +23184,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -22299,8 +23411,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22618,8 +23732,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كيلو",
@@ -22630,6 +23746,7 @@
             "example": "المسافة بين القرية والسوق حوالي 5 كيلو.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -22642,6 +23759,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -22721,8 +23839,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22800,8 +23920,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22845,8 +23967,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22890,8 +24014,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23002,8 +24128,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Pensioner",
@@ -23012,8 +24140,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23057,8 +24187,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23448,8 +24580,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "النفايات الخطرة",
@@ -23458,8 +24592,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23539,7 +24676,42 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a00d6aca-8d56-492a-bd1a-3b363368122b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "tourism payments",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "travel debits",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "tourism expenditure",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f3dba1e6-a335-42b7-a131-beaeb10d4da6",
@@ -23569,7 +24741,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f3dba1e6-a335-42b7-a131-beaeb10d4da6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "city",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0a2aea75-be46-48b7-8bca-000a7342f53f",
@@ -23599,7 +24788,52 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0a2aea75-be46-48b7-8bca-000a7342f53f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "suspended wife",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "abandoned wife",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "المعلقة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "المهجورة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e14eb4cd-1f97-42f6-abb6-5d8b089a4e67",
@@ -23629,7 +24863,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e14eb4cd-1f97-42f6-abb6-5d8b089a4e67/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "automated review",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "automated editing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f3a38c5f-478e-4d50-b08f-4697adf8896a",
@@ -23659,7 +24918,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f3a38c5f-478e-4d50-b08f-4697adf8896a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "desk review",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "office editing",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8730fe8e-6805-4857-8c32-4efdbd2e907e",
@@ -23810,8 +25094,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سيارة",
@@ -23869,8 +25155,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23958,8 +25246,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24037,8 +25327,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24524,8 +25816,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Theatre",
@@ -24534,8 +25828,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24579,8 +25875,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "منزل",
@@ -24997,8 +26295,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25178,8 +26478,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25257,8 +26559,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سماعات طبية",
@@ -25357,8 +26661,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25470,8 +26776,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25853,8 +27161,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "منشأة تجارية",
@@ -25908,8 +27218,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المنطقة",
@@ -26240,8 +27552,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26330,8 +27644,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الملوثات",
@@ -26340,8 +27656,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26533,8 +27851,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26634,7 +27954,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -26679,8 +28000,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27077,8 +28400,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27169,8 +28494,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27371,8 +28698,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مياه الصرف المعالجة",
@@ -27381,8 +28710,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27426,8 +28758,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مياه التحلية",
@@ -27436,8 +28770,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27641,8 +28977,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الميزانية العمومية",
@@ -27651,8 +28989,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "قائمة المركز المالي",
@@ -28218,8 +29559,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28263,8 +29606,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "النشاط التجاري",
@@ -28275,7 +29620,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -28615,7 +29961,48 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/33c6cb7a-a6a2-4561-8af9-1780b41ab294/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "eyeglasses",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "glasses",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "نظارة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "691c3a08-d425-43cc-a922-9aafe14e604e",
@@ -28645,7 +30032,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/691c3a08-d425-43cc-a922-9aafe14e604e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ICT access and usage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "56314f15-0f91-46ff-a64b-9c106788499c",
@@ -28675,7 +30077,36 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/56314f15-0f91-46ff-a64b-9c106788499c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "waste",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "wastes",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b998cec1-0fce-4f97-94ec-163654168d8a",
@@ -28705,7 +30136,34 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b998cec1-0fce-4f97-94ec-163654168d8a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "naphtha",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "النافثا",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ccb92e69-b0a4-4229-8d77-2c32bcb1fab7",
@@ -28735,7 +30193,48 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ccb92e69-b0a4-4229-8d77-2c32bcb1fab7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "crude oil",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "crude",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "البترول",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "015c3c8f-e17b-4a35-bf13-8c030ba09c68",
@@ -29239,8 +30738,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29284,8 +30785,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29844,8 +31347,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30049,8 +31554,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30204,8 +31711,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "محروقات",
@@ -30214,8 +31723,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بنزين",
@@ -30354,8 +31865,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أيتام",
@@ -30409,8 +31922,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أمية",
@@ -30804,8 +32319,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كيروسين",
@@ -30816,7 +32333,8 @@
             "example": "أنواع الكيروسين المستخدمة في التدفئة.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -31304,8 +32822,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "طالب عمل",
@@ -31316,7 +32836,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -31501,8 +33022,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مناولة البضائع",
@@ -31837,8 +33360,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Petrol",
@@ -31847,8 +33372,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "وقود السيارات",
@@ -31936,8 +33463,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Retail Trade",
@@ -31968,7 +33497,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -32293,8 +33823,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لاندسكيب",
@@ -32449,8 +33981,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32552,7 +34086,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d0df4bfa-e420-4a7d-8290-d60c1089a89a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "insurance claims paid",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "insurance compensation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "800f96d2-ccaa-40bc-8f47-e129139a3034",
@@ -32582,7 +34141,37 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/800f96d2-ccaa-40bc-8f47-e129139a3034/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "compensation of employees",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تعويضات العاملين",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9da07635-7d87-42ad-a8bc-e8480f5d929c",
@@ -32612,7 +34201,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9da07635-7d87-42ad-a8bc-e8480f5d929c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "reinsurance recoveries",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "68f7d0b2-c7ec-45c3-b6cb-806dee47a135",
@@ -32642,7 +34246,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/68f7d0b2-c7ec-45c3-b6cb-806dee47a135/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "GDP growth estimates",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6ec01baa-0d63-4820-affd-46fac485b743",
@@ -32672,7 +34291,42 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6ec01baa-0d63-4820-affd-46fac485b743/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ICT",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تقنيات المعلومات والاتصالات (ICT) ساهمت في تطوير الخدمات.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "information and communications technology",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تقنية المعلومات والاتصالات",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0bf67cad-94c8-43a8-adac-736972854398",
@@ -32711,8 +34365,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Environmental Impact Assessment",
@@ -32721,8 +34377,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دراسة الأثر البيئي",
@@ -32826,8 +34484,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تلوث التربة",
@@ -32836,8 +34496,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32881,8 +34543,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Environmental Pollution",
@@ -32891,8 +34555,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33309,8 +34975,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Television",
@@ -33319,8 +34987,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تلفزيون",
@@ -33331,7 +35001,8 @@
             "example": "جهاز التلفزيون القديم.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -33341,8 +35012,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "شراء تلفاز جديد.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33682,8 +35355,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حاويات القمامة",
@@ -33747,8 +35422,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كونتينر",
@@ -33757,8 +35434,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حاوية شحن",
@@ -33965,8 +35644,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Incineration",
@@ -33975,8 +35656,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ترميد النفايات",
@@ -33985,8 +35668,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -34120,8 +35805,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36357,8 +38044,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -36403,8 +38089,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Paid-in Capital",
@@ -36413,8 +38101,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36458,8 +38148,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رأس المال المرخص",
@@ -36468,8 +38160,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36513,8 +38207,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رحلة طيران",
@@ -36568,8 +38264,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Driver's License",
@@ -36578,8 +38276,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رخصة قيادة",
@@ -36588,8 +38288,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يجب أن تكون لديك رخصة قيادة سارية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "ليسن",
@@ -36677,8 +38379,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الرسوم الجمركية",
@@ -36689,7 +38393,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -36812,8 +38517,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رهن عقاري",
@@ -36835,8 +38542,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -37045,8 +38754,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Diesel",
@@ -37139,8 +38850,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -37304,8 +39017,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوفر تايم",
@@ -37314,8 +39029,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "العمل الإضافي",
@@ -37324,8 +39041,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -37821,8 +39541,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Vessel",
@@ -37831,8 +39553,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "باخرة",
@@ -37930,8 +39654,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سفينة سياحية",
@@ -38142,8 +39868,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38287,8 +40015,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Natural Gas Liquids",
@@ -38297,8 +40027,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38442,8 +40174,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38782,8 +40516,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39372,8 +41108,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Official Development Assistance",
@@ -39382,8 +41120,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39678,8 +41418,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39975,8 +41717,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Wind Power",
@@ -39985,8 +41729,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -40030,8 +41776,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -40907,8 +42655,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "شواغر",
@@ -41652,8 +43402,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تشغيل الأطفال",
@@ -41662,8 +43414,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -42044,8 +43798,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -42433,8 +44189,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Petcoke",
@@ -42443,8 +44201,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -42848,8 +44608,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -43377,8 +45139,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تكلفة تشغيل الطائرة تعتمد على سعر jet fuel.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Jet A-1",
@@ -44763,8 +46527,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45566,8 +47332,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45745,8 +47513,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Fish Farms",
@@ -45765,8 +47535,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الاستزراع المائي",
@@ -46316,7 +48088,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -46375,6 +48148,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -46756,8 +48530,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التمدن",
@@ -46766,8 +48542,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -48564,6 +50342,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -48964,8 +50743,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مشاركة المرأة في سوق العمل",
@@ -49021,8 +50802,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نسبة السعودة",
@@ -49031,8 +50814,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -49131,8 +50916,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "معدل النمو السكاني",
@@ -49649,7 +51436,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d48d3768-517c-4f3e-a880-ce427571afc8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "internet cafes",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مقهى إنترنت",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "123433e6-fe13-4aeb-b771-7ef9fc0156cd",
@@ -49679,7 +51491,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/123433e6-fe13-4aeb-b771-7ef9fc0156cd/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "subcontracting and outsourcing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مقاولات من الباطن",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5938bb19-e494-4cbe-b98e-447aec10ebc6",
@@ -49709,7 +51546,34 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5938bb19-e494-4cbe-b98e-447aec10ebc6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "emission measurement",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "emission standard",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "756fd0fc-3179-4f0c-b709-85aad14eb2c4",
@@ -49739,7 +51603,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/756fd0fc-3179-4f0c-b709-85aad14eb2c4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "part-time student",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "20fa6b0c-55a5-40ac-bb54-39b0ef8cd838",
@@ -49769,7 +51648,24 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/20fa6b0c-55a5-40ac-bb54-39b0ef8cd838/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "full-time student",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "120869d4-3ff1-42b7-87ab-828250a23a07",
@@ -50177,8 +52073,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -50742,8 +52640,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Free Trade Area",
@@ -50752,8 +52652,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -50952,8 +52854,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -51525,8 +53429,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مرفأ",
@@ -51590,8 +53496,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -51635,8 +53543,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "منفذ الدخول",
@@ -51645,8 +53555,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -54760,7 +56672,42 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cd7a256b-a579-4584-94e1-68f9dbe92dca/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sewage disposal system",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "sewerage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الصرف الصحي",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a4688351-2449-4751-addb-47caa8ea718d",
@@ -54790,7 +56737,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a4688351-2449-4751-addb-47caa8ea718d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "land tenure system",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a2a85596-e762-44b9-b004-ce96c792af27",
@@ -54820,7 +56782,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a2a85596-e762-44b9-b004-ce96c792af27/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "international passenger fares",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8fd2bb51-8d93-4a1a-b5f5-1aadf972c1be",
@@ -54850,7 +56827,36 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8fd2bb51-8d93-4a1a-b5f5-1aadf972c1be/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "POS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تستخدم المتاجر نظام نقاط البيع POS لحجز الطلبات.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "points of sale",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2dbc8613-7d28-456a-9faf-eeb74a375c48",
@@ -54880,7 +56886,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2dbc8613-7d28-456a-9faf-eeb74a375c48/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "public WLAN access points",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "public wifi hotspots",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "62e0009d-9cf3-4831-8bfb-d189d5362e07",
@@ -54919,8 +56950,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "النمو الشامل",
@@ -54931,7 +56964,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -55288,7 +57322,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -55400,8 +57435,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الوجهة",
@@ -56149,6 +58186,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -56432,7 +58470,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -56552,8 +58591,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الكتلة الحيوية",
@@ -56564,7 +58605,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -56609,8 +58651,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "القار",
@@ -56621,7 +58665,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -56631,8 +58676,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يُطلق على المادة اسم البيتومين أو القار.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الزفت",
@@ -56641,8 +58688,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أسفلت",
@@ -56653,6 +58702,7 @@
             "example": "يُستخدم الأسفلت في رصف الطرق والمباني.",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms",
               "ambiguous"
             ]
@@ -56709,8 +58759,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مدونة البناء",
@@ -57051,8 +59103,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "depleted resources",
@@ -57154,7 +59208,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -57474,8 +59529,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تأكد من كتابة عنوان البريد الإلكتروني بدقة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -57676,8 +59733,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حماية البيئة",
@@ -57688,7 +59747,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -57733,8 +59793,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "exports value FOB",
@@ -57808,8 +59870,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "holder",
@@ -57818,8 +59882,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "agricultural holder",
@@ -57838,8 +59904,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -58799,8 +60867,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "geothermal",
@@ -58921,8 +60991,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الناتج المحلي الإجمالي",
@@ -59652,8 +61724,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "butane",
@@ -59662,8 +61736,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "غاز البوتان",
@@ -59672,8 +61748,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "غاز الطبخ",
@@ -60290,8 +62368,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صالة المطار",
@@ -60302,7 +62382,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -60312,8 +62393,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -60381,7 +62464,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -60556,8 +62640,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "النفايات الإلكترونية",
@@ -60566,8 +62652,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -60677,7 +62765,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2fc55ccb-c2e7-443d-804c-87aa32a620ba/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "non-ferrous metal scrap",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8aa0f0cd-9235-4cf0-9ccf-471c80eeddb3",
@@ -60707,7 +62810,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8aa0f0cd-9235-4cf0-9ccf-471c80eeddb3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "liquid chemical waste",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1028ad18-46a7-433b-a03b-cf51d39901b7",
@@ -60737,7 +62855,22 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1028ad18-46a7-433b-a03b-cf51d39901b7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "solid chemical waste",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1ff759d7-1e67-438f-857f-1e8128e214db",
@@ -60767,7 +62900,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1ff759d7-1e67-438f-857f-1e8128e214db/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "paper waste",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "waste paper",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2487c96c-5eaa-4f45-81df-af6c87ca3c7f",
@@ -60797,7 +62955,32 @@
       "dictionary_name": "معجم المصطلحات الإحصائية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/ee392446-a5df-4b0c-b1e2-f0002b74342d",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2487c96c-5eaa-4f45-81df-af6c87ca3c7f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "duration of residence",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "length of residence",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7c4abc58-1487-4d17-8da3-ec3dccbc5bfc",
@@ -60836,8 +63019,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "inputs",
@@ -60903,8 +63088,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تم إصلاح runway رقم 09 بعد العاصفة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "runways",
@@ -60925,7 +63112,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -60970,8 +63158,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أنا أسرد تجاربي في مدونتي blog.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بلوق",
@@ -60980,8 +63170,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بلوج",
@@ -61271,8 +63463,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ممر الطائرات",
@@ -61815,8 +64009,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "property income",
@@ -61847,8 +64043,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -62279,8 +64477,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "elderly",
@@ -62289,8 +64489,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كبير السن",
@@ -62388,8 +64590,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "حقوق الملكية",
@@ -62400,7 +64604,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -62924,8 +65129,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "re-export in the same state",
@@ -63202,6 +65409,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           },
@@ -63472,8 +65680,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -63631,8 +65841,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المخلفات",
@@ -63641,8 +65853,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الزبالة",
@@ -64497,8 +66712,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التلوث الضوضائي",
@@ -64521,7 +66738,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -64641,8 +66859,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المنظمات غير الحكومية",
@@ -64651,8 +66871,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -64853,7 +67075,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -65067,8 +67290,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "نقص الوزن عند الولادة",

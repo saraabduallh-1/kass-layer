@@ -45,6 +45,7 @@ CHATGPT_PART_SIZE = 200
 REVIEW_PROMPT_VERSION = "1"
 DEFAULT_CLAUDE_MODEL = "claude-opus-5-5"
 DEFAULT_CLAUDE_EFFORT = "high"
+AUTO_ARABIC_TRUSTED = False  # set True once an audit of the arabic_auto pass shows acceptable precision
 QWEN_CHUNK_SIZE = 5
 REVIEW_CHUNK_SIZE = 15
 MAX_TOKENS = 16000
@@ -433,7 +434,7 @@ def import_chatgpt_part(dictionary: dict[str, Any], part: list[dict[str, Any]], 
 # --------------------------------------------------------------------------- validation
 
 
-_DIACRITICS = re.compile("[ؐ-ًؚ-ٰٟۖ-ۭـ]")
+_DIACRITICS = re.compile("[ؐ-ًؚ-ٰٟۖ-ۭـ\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]")  # also invisible bidi/zero-width marks
 _PUNCTUATION = re.compile(r"[\"'«»“”‘’()\[\]{}.,،؛:!?؟]")
 
 
@@ -524,7 +525,9 @@ def validate(rows: list[dict[str, Any]], terms: dict[str, set[str]]) -> list[dic
                 reasons.append("ambiguous")
             if variant.get("confidence") == "low":
                 reasons.append("low_confidence")
-            first_word, term_first = key.split()[0], term_key.split()[0]
+            if variant.get("origin") == "arabic-auto" and not AUTO_ARABIC_TRUSTED:
+                reasons.append("auto_added_unaudited")  # Qwen-only Arabic pass, until a precision audit clears it
+            first_word, term_first = (key.split() or [""])[0], (term_key.split() or [""])[0]
             if (not row.get("reviewed") and kind in ARABIC_TYPES
                     and first_word.startswith("ال") and not term_first.startswith("ال")):
                 reasons.append("has_definite_article")  # reviewers apply rule 3 themselves

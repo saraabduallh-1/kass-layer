@@ -2,14 +2,14 @@
   "dictionary_id": "2813060b-8eda-4c7b-8b10-1fc3255305cb",
   "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
   "source_export": "data/dictionaries/exports/2813060b-8eda-4c7b-8b10-1fc3255305cb.json",
-  "generated_at": "2026-10-19T08:10:00.548997+00:00",
-  "enrichment_status": "partial",
+  "generated_at": "2026-10-20T11:14:42.679904+00:00",
+  "enrichment_status": "complete",
   "counts": {
     "senses": 856,
-    "senses_reviewed": 804,
-    "senses_with_variants": 804,
-    "variants_accepted": 1420,
-    "variants_needing_review": 375
+    "senses_reviewed": 856,
+    "senses_with_variants": 856,
+    "variants_accepted": 1263,
+    "variants_needing_review": 639
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -57,8 +57,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "file transfer protocol",
@@ -67,8 +69,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بروتوكول نقل الملفات",
@@ -77,8 +81,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -242,8 +248,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إجراء",
@@ -254,6 +262,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -344,8 +353,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "cyclic redundancy check",
@@ -454,8 +465,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "factory acceptance test",
@@ -464,8 +477,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -509,8 +524,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "site acceptance test",
@@ -519,8 +536,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -839,7 +858,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -939,8 +959,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "time division multiplexing",
@@ -1401,8 +1423,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سيجنال",
@@ -1413,6 +1437,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -1979,8 +2004,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الأطراف المعنية",
@@ -2347,7 +2374,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -2392,8 +2420,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -3185,8 +3215,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "full supervision",
@@ -3250,8 +3282,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "العمرة",
@@ -3744,7 +3778,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -4139,7 +4174,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -4510,8 +4546,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4691,8 +4729,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ضبط السرعة",
@@ -4746,8 +4786,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "thin film transistor",
@@ -5038,8 +5080,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تردد راديوي",
@@ -5350,8 +5394,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "electromagnetic interference",
@@ -5514,7 +5560,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -5734,8 +5781,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -5834,8 +5883,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "telegraph",
@@ -5844,8 +5895,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "برقية",
@@ -5944,8 +5997,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "electromagnetic compatibility",
@@ -6099,8 +6154,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "direct current",
@@ -6109,8 +6166,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التيار المستمر",
@@ -6121,7 +6180,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -6247,8 +6307,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جدول مواعيد القطارات",
@@ -6534,8 +6596,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "automatic train protection",
@@ -6769,8 +6833,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "railroad",
@@ -6779,8 +6845,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سكة الحديد",
@@ -6789,8 +6857,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السكة الحديد",
@@ -6856,8 +6926,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "main line",
@@ -6866,8 +6938,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الخط الأساسي",
@@ -6966,8 +7040,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السكك الحديدية",
@@ -7041,8 +7117,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7261,8 +7339,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السرعة القصوى",
@@ -7273,7 +7353,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -7283,8 +7364,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7328,8 +7411,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7540,8 +7625,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تم تعيين PIC الجديد للتعامل مع الحوادث.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "person in charge",
@@ -7550,8 +7637,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7705,8 +7794,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "qualified person",
@@ -7715,8 +7806,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7760,8 +7853,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تصميم الدائرة يعتمد على LED عالي الكفاءة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "light emitting diode",
@@ -7780,8 +7875,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ثنائي باعث للضوء",
@@ -7790,8 +7887,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7861,7 +7960,8 @@
             "example": "يجب إجراء الصيانة الدورية للمحركات قبل فصل الشتاء.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -7961,8 +8061,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "third party",
@@ -7971,8 +8073,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8016,8 +8120,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حادثة",
@@ -8132,8 +8238,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "هاردوير",
@@ -8142,8 +8250,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المكونات المادية",
@@ -8595,8 +8705,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "المحرك يعمل بـ 1000 HP.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "horsepower",
@@ -8605,8 +8717,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حصان",
@@ -8617,7 +8731,8 @@
             "example": "القطار لديه قدرة جر عالية بـ 400 حصان.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -8627,8 +8742,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8663,7 +8780,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/64f65949-f99d-4afa-b751-136436f07aef/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "railway executive order",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b2fcbfad-302c-4699-b9dc-b1e21eb9d91f",
@@ -8693,7 +8825,24 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b2fcbfad-302c-4699-b9dc-b1e21eb9d91f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "bd8a20df-7a8b-4862-9165-b81f20af7eab",
@@ -8723,7 +8872,42 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bd8a20df-7a8b-4862-9165-b81f20af7eab/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "engineering train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "works train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "maintenance train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21fea3f8-2e98-446f-8952-d07df8a89282",
@@ -8753,7 +8937,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21fea3f8-2e98-446f-8952-d07df8a89282/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "molten sulfur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "liquid sulfur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "70c5e317-e472-4ad6-81eb-2264f776b912",
@@ -8783,7 +8992,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/70c5e317-e472-4ad6-81eb-2264f776b912/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "detection",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "train detection",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ec08f1a4-9f92-4683-91db-f8c8c96926de",
@@ -8999,8 +9235,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مراقب الحركة",
@@ -9056,8 +9294,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "عبارة",
@@ -9068,7 +9308,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -9178,8 +9419,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "محطة القطار",
@@ -9384,8 +9627,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9549,8 +9794,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "utilities",
@@ -9571,8 +9818,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9628,7 +9878,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -9673,8 +9924,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صاحب الترخيص",
@@ -9740,8 +9993,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سكة القطار",
@@ -10153,8 +10408,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "deutsches institut für normung",
@@ -10163,8 +10420,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10340,8 +10599,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الهاندبريك",
@@ -10460,8 +10721,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المكتب الرئيسي",
@@ -10470,8 +10733,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10957,8 +11222,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوبكس",
@@ -11256,8 +11523,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "line replaceable unit",
@@ -11441,8 +11710,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "unfitted mode",
@@ -11608,8 +11879,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تكلفة تركيب الـ Fiber optic مرتفعة لكنها مستقرة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "optical fiber",
@@ -11618,8 +11891,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فايبر",
@@ -11640,8 +11915,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11752,8 +12029,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "في المواصفات الفنية، يُشار إلى الوحدة بـ Ampere.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "A",
@@ -11762,8 +12041,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "amp",
@@ -11829,8 +12110,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الأمتعة",
@@ -11841,6 +12124,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           },
@@ -11851,8 +12135,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12077,8 +12363,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "CO2 emissions",
@@ -12087,8 +12375,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12391,7 +12681,67 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8c0aa155-16b0-4818-afec-c6783194121c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "track ballast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ballast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "بلاست",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "حصى",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "يجب وضع حصى حول مسار السكة.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "زلط",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a8a92d4d-748f-4097-8776-44958c61ff2d",
@@ -12421,7 +12771,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a8a92d4d-748f-4097-8776-44958c61ff2d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "start of mission",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نظام التحكم يبدأ من Start of Mission.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "SoM",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "بعد التأكد من SoM، أذن النظام للقطار بالحركة.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a0ad7e4a-37ff-4250-a160-ef43eef5d528",
@@ -12445,7 +12820,37 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a0ad7e4a-37ff-4250-a160-ef43eef5d528/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "telegraph",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تلغراف",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8abc387f-f506-4cdc-b99e-7a7650384038",
@@ -12475,7 +12880,61 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8abc387f-f506-4cdc-b99e-7a7650384038/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "software",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سوفتوير",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سوفت وير",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "البرامج",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "062d9bbb-475c-4f19-abd0-f6606531f8db",
@@ -12505,7 +12964,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/062d9bbb-475c-4f19-abd0-f6606531f8db/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "master control program",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "MCP",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d02b88fa-1ded-4398-95f7-1d5d98c291f1",
@@ -12656,8 +13142,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "spanning tree protocol",
@@ -12878,8 +13366,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "dangerous goods",
@@ -12888,8 +13378,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "hazmat",
@@ -12910,8 +13402,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12975,8 +13469,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13020,8 +13516,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "network interface card",
@@ -13150,8 +13648,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13242,8 +13742,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تأخر",
@@ -13407,6 +13909,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -13668,8 +14171,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أون كول",
@@ -13690,8 +14195,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13790,8 +14297,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فيريفيكيشن",
@@ -14044,8 +14553,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14127,7 +14638,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -14603,8 +15115,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تزييت",
@@ -14613,8 +15127,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14772,8 +15289,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "track movement authority",
@@ -15361,8 +15880,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15654,8 +16175,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إشعار",
@@ -15664,8 +16187,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15909,8 +16435,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15954,8 +16482,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "errored second",
@@ -16495,8 +17025,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Tx",
@@ -16505,8 +17037,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مرسل",
@@ -16517,7 +17051,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -16562,8 +17097,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حساس السرعة",
@@ -17211,8 +17748,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "programmable logic controller",
@@ -17231,8 +17770,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17600,8 +18141,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المصنع الأصلي",
@@ -17610,8 +18153,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الوكالة",
@@ -17622,7 +18167,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -17995,8 +18541,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جهاز كفي",
@@ -18095,8 +18643,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18197,8 +18747,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "virtual container",
@@ -18262,8 +18814,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18764,8 +19318,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حرم السكة",
@@ -19192,8 +19748,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "purified phosphoric acid",
@@ -19476,7 +20034,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/446145e3-c626-4ab3-a179-d313cb3708b7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "MWP",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "multiple worksite possession",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cb9fd5b7-2efc-40c4-9c4c-fd60abec479f",
@@ -19506,7 +20089,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cb9fd5b7-2efc-40c4-9c4c-fd60abec479f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "O&M server",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "operation and maintenance server",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "fa5dd300-3a00-4bc1-a53b-ea53ed010d2d",
@@ -19610,8 +20218,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "معطل",
@@ -19620,8 +20230,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19720,8 +20332,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الطوارئ",
@@ -19732,7 +20346,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -19932,8 +20547,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "centralized attendant service",
@@ -20098,7 +20715,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e399ff2f-a02a-4724-8b37-357f696c5d6a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "DSL",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "digital subscriber line",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "4f110d93-7d18-4e45-a1fa-887d6b6950c4",
@@ -20128,7 +20770,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4f110d93-7d18-4e45-a1fa-887d6b6950c4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "main railway line",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "mainline",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e23892e1-3eaa-45a7-9d72-59e7698c165d",
@@ -20158,7 +20827,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e23892e1-3eaa-45a7-9d72-59e7698c165d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "platform line",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "platform track",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9076a56c-9f73-4eec-b538-0c85ae3c3d76",
@@ -20188,7 +20882,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9076a56c-9f73-4eec-b538-0c85ae3c3d76/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "conventional railway line",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5eff8b1c-33e7-4de0-a54f-e0552dfa83f0",
@@ -20218,7 +20927,44 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5eff8b1c-33e7-4de0-a54f-e0552dfa83f0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "light rail line",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "LRT",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ترام",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7a0c4ea4-d37b-4421-801c-8493bae19f35",
@@ -20566,8 +21312,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "DRP",
@@ -20576,8 +21324,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20736,8 +21486,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "closed circuit television",
@@ -20758,7 +21510,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -21013,8 +21766,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صبة العجلة",
@@ -21747,8 +22502,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مقدمة القطار",
@@ -21992,8 +22749,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "level crossing attendant",
@@ -23032,8 +23791,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لوق",
@@ -23264,8 +24025,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "عرض السكة",
@@ -23320,7 +24083,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d8fcb25b-80f4-4c14-8f94-c573c90e914b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "wagon carrying capacity",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "payload",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "72fbe2ee-8f96-4303-9b92-018f0759db8c",
@@ -23350,7 +24140,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/72fbe2ee-8f96-4303-9b92-018f0759db8c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "passenger capacity",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "475c3665-22e6-4fdc-a8ce-3d942507e5f6",
@@ -23380,7 +24185,48 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/475c3665-22e6-4fdc-a8ce-3d942507e5f6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "railway track",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "track",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سكة القطار",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7ed079a9-601e-4441-8040-f52eed822451",
@@ -23410,7 +24256,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7ed079a9-601e-4441-8040-f52eed822451/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "PTS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "personal track safety",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "bb63437f-5b2d-4fd1-8021-9a97767430c7",
@@ -23440,7 +24311,42 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bb63437f-5b2d-4fd1-8021-9a97767430c7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "optical fibre cable",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "fiber optic cable",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كيبل فايبر",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "99d1a9c5-c9ad-4348-89ad-bf484292b4eb",
@@ -23491,8 +24397,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تريلا",
@@ -23503,6 +24411,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -23625,8 +24534,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نظام LCD في المحطة يعرض معلومات الرحلات بوضوح.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "liquid crystal display",
@@ -24912,8 +25823,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "train horn",
@@ -24932,8 +25845,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صفارة القطار",
@@ -25020,6 +25935,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -25142,8 +26058,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ valve يحتاج ضبط.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بلف",
@@ -25154,6 +26072,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -25166,7 +26085,8 @@
             "example": "الصمام لا يعمل بشكل صحيح.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -25257,7 +26177,24 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b69952ec-f3e9-489e-877b-9aab6f92eeda/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "maintenance",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "16ed03ea-1c6b-4478-bbb4-e13166b178ea",
@@ -25287,7 +26224,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/16ed03ea-1c6b-4478-bbb4-e13166b178ea/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rolling stock maintenance",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b044ca02-bef9-40dd-a80b-07c67e44391d",
@@ -25317,7 +26269,36 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b044ca02-bef9-40dd-a80b-07c67e44391d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "routine maintenance",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "periodic maintenance",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b0a08526-c5bc-4fb5-a26a-727626f04e87",
@@ -25347,7 +26328,42 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b0a08526-c5bc-4fb5-a26a-727626f04e87/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "TOLO",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "FOLO",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "train operations liaison officer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ab0c7323-0283-463c-b293-3ff81e103e4f",
@@ -25377,7 +26393,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ab0c7323-0283-463c-b293-3ff81e103e4f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ARS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "automatic route setting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "996c236e-7c62-48ee-bcc0-2a132a98a41e",
@@ -25487,8 +26530,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "thermal design power",
@@ -25667,8 +26712,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25767,8 +26814,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26133,8 +27182,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26722,8 +27773,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27273,8 +28326,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "wrong side failure",
@@ -27428,8 +28483,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "marker board",
@@ -27438,8 +28495,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27705,8 +28764,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أون كول",
@@ -27807,8 +28868,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "network element",
@@ -27929,8 +28992,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "technical equipment room",
@@ -28106,8 +29171,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28261,8 +29328,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "V",
@@ -28271,8 +29340,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28458,8 +29529,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29111,8 +30184,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "tramway",
@@ -29552,8 +30627,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "قطار كهربا",
@@ -29773,7 +30850,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c574b562-1e74-4ad7-b428-6a69e6e70335/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "intercity rail",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "قطار بين المدن",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3300045e-6311-4110-8c63-0b0ab5f07bed",
@@ -29803,7 +30905,54 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3300045e-6311-4110-8c63-0b0ab5f07bed/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "intracity rail",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "urban rail",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "metro",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مترو",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "16f3596b-1722-4166-b4cb-7169d7e56b04",
@@ -29833,7 +30982,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/16f3596b-1722-4166-b4cb-7169d7e56b04/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "hybrid train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "bi-mode train",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "842ffa6e-7af3-411c-a0dc-e8b0aeb75b35",
@@ -29863,7 +31037,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/842ffa6e-7af3-411c-a0dc-e8b0aeb75b35/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "urban freight trains",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f64dd578-8afc-46a8-96ec-919bd62d1abd",
@@ -29893,7 +31082,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f64dd578-8afc-46a8-96ec-919bd62d1abd/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "national freight trains",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "04cbf1c7-f137-41fa-904f-04a72c9cf618",
@@ -30353,8 +31557,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30477,8 +31683,11 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30577,8 +31786,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تكلفة الاستبدال",
@@ -30800,7 +32011,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/08beddb3-fbef-4227-aeff-b46a99dcc636/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "point detection",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "lock detection",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "52567785-0708-428a-bf65-2bde34a3e037",
@@ -30830,7 +32066,36 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/52567785-0708-428a-bf65-2bde34a3e037/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "competence",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "competency",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "03c20f1b-981d-438b-97c8-c81ab770e798",
@@ -30860,7 +32125,42 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/03c20f1b-981d-438b-97c8-c81ab770e798/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "kHz",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "kilohertz",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كيلوهرتز",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21eee18d-2706-4791-85a5-7875dc60d262",
@@ -30890,7 +32190,70 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21eee18d-2706-4791-85a5-7875dc60d262/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "km",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "kilometre",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "kilometer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كيلو",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كم",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0a94400a-979f-4f7a-a7ff-2b9067f268b7",
@@ -30920,7 +32283,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0a94400a-979f-4f7a-a7ff-2b9067f268b7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "hazard warning sign",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "47b94864-d64b-485f-9095-454ede815076",
@@ -31069,8 +32447,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -31271,8 +32651,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "fire alarm control panel",
@@ -31462,8 +32844,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "printed circuit board",
@@ -31472,8 +32856,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بوردة",
@@ -31482,8 +32868,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "اللوحة الإلكترونية",
@@ -31528,7 +32916,24 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9be8a036-e530-4a9f-bacd-c0b612db02a6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "marker board",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6c1612dd-e63a-4896-829a-604e2c87f637",
@@ -31558,7 +32963,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6c1612dd-e63a-4896-829a-604e2c87f637/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "operator panel",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "HMI",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "37ab87e2-a181-4406-b492-3390a9b30098",
@@ -31588,7 +33020,36 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/37ab87e2-a181-4406-b492-3390a9b30098/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "keyboard",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كيبورد",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9e3a343a-d647-40a0-a89f-cc1e8199be60",
@@ -31618,7 +33079,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9e3a343a-d647-40a0-a89f-cc1e8199be60/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "interface board",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "fa568503-ef7d-4248-b967-1f4e102eb282",
@@ -31648,7 +33124,24 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/fa568503-ef7d-4248-b967-1f4e102eb282/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "warning sign",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "84068d1f-0c7e-4cca-8919-112f1a1fe44b",
@@ -32003,8 +33496,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "lightning arrester",
@@ -32013,8 +33508,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مانعة الصواعق",
@@ -32178,8 +33675,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32268,8 +33767,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "mean time between failures",
@@ -32278,8 +33779,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32423,8 +33926,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "mean time to repair",
@@ -32433,8 +33938,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32655,8 +34162,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "hard disk drive",
@@ -32901,8 +34410,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "emergency trip station",
@@ -33604,7 +35115,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -33736,8 +35248,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33949,8 +35463,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مانع الاهتزاز",
@@ -34393,7 +35909,8 @@
             "example": "أدوات الرقابة على حالة المحركات.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -34693,8 +36210,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35044,8 +36563,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "radio control centre",
@@ -35211,8 +36732,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "mobile switching centre",
@@ -35266,8 +36789,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "sync",
@@ -35288,7 +36813,8 @@
             "example": "يجب تزامن الإشارات بين المحطات لضمان السلامة.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -35424,8 +36950,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "خط السير",
@@ -35721,8 +37249,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35896,8 +37426,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "safety integrity level",
@@ -35951,8 +37483,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "logger",
@@ -36038,8 +37572,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الفيديو يحفظ كل ما يحدث على المحطة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جهاز الفيديو",
@@ -36516,8 +38052,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -37137,8 +38675,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ضبط",
@@ -37502,8 +39042,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38142,8 +39684,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "tolerable hazard rate",
@@ -38209,8 +39753,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38331,8 +39877,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "وقت المغادرة",
@@ -38520,8 +40068,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "normally open",
@@ -38575,8 +40125,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "access charge",
@@ -38640,8 +40192,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كونتراكتر",
@@ -38851,8 +40405,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كابينة القيادة",
@@ -38861,8 +40417,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "قمرة القيادة",
@@ -38871,8 +40429,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38981,8 +40541,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كرسي",
@@ -39036,8 +40598,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مقوم",
@@ -39048,7 +40612,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -39337,8 +40902,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39382,8 +40949,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فرامل الوقوف",
@@ -39392,8 +40961,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "هاند بريك",
@@ -39402,8 +40973,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39884,8 +41457,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يتم التعامل مع الطلبات عبر RPO.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "railway post office",
@@ -40138,7 +41713,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -40183,8 +41759,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "flyover",
@@ -40193,8 +41771,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جسر علوي",
@@ -40543,8 +42123,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -40653,8 +42235,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -41030,8 +42614,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "specs",
@@ -41052,8 +42638,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -41152,8 +42740,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "system requirements specification",
@@ -41384,8 +42974,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مؤشرات الأداء",
@@ -41756,8 +43348,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ETA",
@@ -41768,6 +43362,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -41778,8 +43373,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -41833,8 +43430,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -41914,8 +43513,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -42019,7 +43620,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/16f07fb2-f3cb-4cf4-8742-7457f94b3db9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "Profibus",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بروفيباص",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e017203e-13ae-4191-80fb-5330f6d00936",
@@ -42049,7 +43675,36 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e017203e-13ae-4191-80fb-5330f6d00936/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "impulse",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "pulse",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ce3c7870-2d1c-4417-9ec6-3c5e256eda51",
@@ -42079,7 +43734,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ce3c7870-2d1c-4417-9ec6-3c5e256eda51/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "BBER",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "background block error ratio",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7d9c24e3-3a71-4178-a586-5d2fa3f59a1d",
@@ -42109,7 +43789,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7d9c24e3-3a71-4178-a586-5d2fa3f59a1d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "SCP",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "secure copy",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b6feded1-1555-4b00-91e5-52148d8efdc1",
@@ -42139,7 +43844,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b6feded1-1555-4b00-91e5-52148d8efdc1/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "radio communication system",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6b1397ba-07cf-4f4f-8080-fa6b62c2247e",
@@ -42693,8 +44413,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "suspension",
@@ -42760,8 +44482,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "overhead line",
@@ -42770,8 +44494,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "OCS",
@@ -42790,8 +44516,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الأسلاك الهوائية",
@@ -43305,8 +45033,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "public address system",
@@ -43370,8 +45100,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "passenger information system",
@@ -44129,8 +45861,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -44516,8 +46250,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -44732,8 +46468,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Hz",
@@ -44742,8 +46480,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "التردد 50 Hz.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "هرتز",
@@ -44799,8 +46539,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "product breakdown structure",
@@ -44989,8 +46731,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "network-network interface",
@@ -45044,8 +46788,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "human machine interface",
@@ -45329,8 +47075,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "W",
@@ -45339,8 +47087,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "وات",
@@ -45618,8 +47368,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45763,8 +47515,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45808,8 +47562,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "lineside electronic unit",
@@ -46640,8 +48396,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "twenty-foot equivalent unit",
@@ -46860,8 +48618,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "system interfaces description",
@@ -48219,8 +49979,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "RACI matrix",
@@ -48229,8 +49991,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مصفوفة راسي",
@@ -48275,7 +50039,46 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0f048bb6-74d6-46a5-8e89-b926a5c5099f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "siding",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "storage siding",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خط جانبي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5f4f897d-b25f-4cf0-8b8c-0107e625060b",
@@ -48305,7 +50108,34 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5f4f897d-b25f-4cf0-8b8c-0107e625060b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "combined transport",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "piggyback",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f356fe39-db28-42cb-bcf4-202710a18390",
@@ -48335,7 +50165,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f356fe39-db28-42cb-bcf4-202710a18390/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "stop board",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "stop sign",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "07dfb1d8-7af4-4f93-ad63-80bcbbdd4a23",
@@ -48365,7 +50220,32 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/07dfb1d8-7af4-4f93-ad63-80bcbbdd4a23/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "TAS platform",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "TAS OS",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "93eea2dd-63c1-4082-ba36-1c74e98672a8",
@@ -48395,7 +50275,22 @@
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/2813060b-8eda-4c7b-8b10-1fc3255305cb",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/93eea2dd-63c1-4082-ba36-1c74e98672a8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ARAMIS train control module",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "4ef54cb6-fefd-4603-8e49-9e8fc0900c73",

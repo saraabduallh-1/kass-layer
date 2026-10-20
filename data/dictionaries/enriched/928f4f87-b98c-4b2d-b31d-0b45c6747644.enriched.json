@@ -2,14 +2,14 @@
   "dictionary_id": "928f4f87-b98c-4b2d-b31d-0b45c6747644",
   "dictionary_name": "معجم مصطلحات الإعلام",
   "source_export": "data/dictionaries/exports/928f4f87-b98c-4b2d-b31d-0b45c6747644.json",
-  "generated_at": "2026-10-19T08:10:00.658722+00:00",
-  "enrichment_status": "partial",
+  "generated_at": "2026-10-20T11:14:43.092919+00:00",
+  "enrichment_status": "complete",
   "counts": {
     "senses": 833,
-    "senses_reviewed": 735,
-    "senses_with_variants": 690,
-    "variants_accepted": 947,
-    "variants_needing_review": 308
+    "senses_reviewed": 833,
+    "senses_with_variants": 788,
+    "variants_accepted": 1000,
+    "variants_needing_review": 448
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -382,8 +382,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "استطلاع",
@@ -394,7 +396,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -407,6 +410,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -1158,8 +1162,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميديا",
@@ -1261,8 +1267,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           },
           {
             "form": "مواقع التواصل",
@@ -1627,8 +1635,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Online Media",
@@ -1833,8 +1843,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2748,8 +2760,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ديجيتال ميديا",
@@ -4642,8 +4656,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "TV Commercial",
@@ -4666,6 +4682,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           },
@@ -4678,7 +4695,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -5912,8 +5930,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6312,6 +6332,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -6638,8 +6659,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنفوغرافيك",
@@ -6648,8 +6671,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنفوقرافيك",
@@ -6813,8 +6838,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Broadcasting",
@@ -7066,7 +7093,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/508735ae-59c3-4195-af1e-30b773496720/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "digital broadcasting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "DVB",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2d8e84f1-f4cf-4e83-a6ef-d726a26beff5",
@@ -7096,7 +7148,44 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2d8e84f1-f4cf-4e83-a6ef-d726a26beff5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "HD broadcasting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "HDTV",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "بث HD",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e0bad229-e5cf-478d-b623-d8ba4bbd4925",
@@ -7126,7 +7215,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e0bad229-e5cf-478d-b623-d8ba4bbd4925/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "high-efficiency broadcasting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "HEVC",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "02d77757-2954-4750-ad4a-427f184aa9ad",
@@ -7156,7 +7270,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/02d77757-2954-4750-ad4a-427f184aa9ad/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "satellite broadcasting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "البث الفضائي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "49cf9541-7b3f-4f93-83d8-8c5847e2f22c",
@@ -7186,7 +7327,44 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/49cf9541-7b3f-4f93-83d8-8c5847e2f22c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "live on-air",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "on air",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "على الهواء",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8612e5fa-49a6-42fe-9d2d-2430b9fdccf1",
@@ -7216,7 +7394,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8612e5fa-49a6-42fe-9d2d-2430b9fdccf1/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "satellite broadcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "فضائي",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "07c1bf78-4fef-40ca-9c6c-71c449e21505",
@@ -7246,7 +7449,46 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/07c1bf78-4fef-40ca-9c6c-71c449e21505/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "live broadcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "live",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "لايف",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "bd266c40-075a-473c-8e66-a056b0e5efd7",
@@ -7276,7 +7518,60 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bd266c40-075a-473c-8e66-a056b0e5efd7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "live streaming",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "livestream",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "لايف",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ستريم",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "4a7c7c1f-5d3f-4d09-8a23-649c3eb82a11",
@@ -7306,7 +7601,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4a7c7c1f-5d3f-4d09-8a23-649c3eb82a11/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "multipoint broadcasting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "multicast",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a79f08f8-0c2e-4e4d-84d9-f8a936a51aa3",
@@ -7336,7 +7656,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a79f08f8-0c2e-4e4d-84d9-f8a936a51aa3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "interrupted broadcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b3316d43-c8e6-4312-8f27-08ca904a472a",
@@ -7707,8 +8042,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8263,8 +8600,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8308,8 +8647,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "وثائقي",
@@ -8318,8 +8659,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دوكيومنتري",
@@ -8510,7 +8853,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4c80f514-9ebc-4d11-8b60-74063ef77254/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "بودكاست صوتي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "de0a5b2e-fe1e-42d2-a9e6-f0a366e5e183",
@@ -8540,7 +8910,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/de0a5b2e-fe1e-42d2-a9e6-f0a366e5e183/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "pilot podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "pilot episode",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a1f9666a-18b1-4bb9-ba4a-c6cbd4374db5",
@@ -8570,7 +8967,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a1f9666a-18b1-4bb9-ba4a-c6cbd4374db5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "entertainment podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5622e98b-b363-4149-b3c2-89738a7670a2",
@@ -8600,7 +9012,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5622e98b-b363-4149-b3c2-89738a7670a2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "educational podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0c4f6818-0ac4-48a4-918c-5844438a9631",
@@ -8630,7 +9057,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0c4f6818-0ac4-48a4-918c-5844438a9631/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "group podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "panel podcast",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a90821ad-8755-499c-ad73-e5bcf4f0eea9",
@@ -8660,7 +9112,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a90821ad-8755-499c-ad73-e5bcf4f0eea9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "interview podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بودكاست مقابلات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بودكاست حوارات",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "none: Qwen reply exceeded max_tokens; Claude review supplies variants",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8ffecea2-689c-42d4-8354-7b458978b5c2",
@@ -8690,7 +9177,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8ffecea2-689c-42d4-8354-7b458978b5c2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "narrative podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "storytelling podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بودكاست قصصي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f3e4786d-74ea-4836-bccc-46a57d68aacb",
@@ -8720,7 +9242,35 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f3e4786d-74ea-4836-bccc-46a57d68aacb/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "niche podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بودكاست",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا بودكاست عن التاريخ.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5fe482aa-0ce1-49d7-9cea-33ed55f26b71",
@@ -8750,7 +9300,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5fe482aa-0ce1-49d7-9cea-33ed55f26b71/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ongoing podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "podcast series",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cd5f390e-f1b8-42d9-b9c9-894772225632",
@@ -8780,7 +9355,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cd5f390e-f1b8-42d9-b9c9-894772225632/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "seasonal podcast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "podcast season",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ff27b9e9-9955-4824-9753-cb6cd7f44c29",
@@ -8819,8 +9419,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بيان",
@@ -8831,7 +9433,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -9012,8 +9615,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Dateline",
@@ -9600,8 +10205,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10527,6 +11134,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -10743,7 +11351,24 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a945f4d3-ea95-4c52-969b-cbf56319d995/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sentiment analysis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تقنية Sentiment Analysis ساعدتنا في فهم الرأي العام.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "89a69839-5a4f-4ca0-bc19-8473d1c81adc",
@@ -10773,7 +11398,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/89a69839-5a4f-4ca0-bc19-8473d1c81adc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "environmental analysis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تقرير Environmental Analysis يوضح المخاطر.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "aeaabcb6-6a24-4395-b588-659905509a4c",
@@ -10803,7 +11443,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/aeaabcb6-6a24-4395-b588-659905509a4c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "social impact analysis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الشركة نفذت مشروعاً معتمدًا على Social Impact Analysis.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "14a19182-8127-4eb5-82b6-a559e641a450",
@@ -10833,7 +11488,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/14a19182-8127-4eb5-82b6-a559e641a450/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "technology analysis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9c125fd2-0530-4344-9e63-e68ad97c20f3",
@@ -10863,7 +11533,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9c125fd2-0530-4344-9e63-e68ad97c20f3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "gender representation analysis",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تقرير Gender Representation Analysis يوضح الفجوة بين الجنسين.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "63a735f3-f795-426c-bdc8-aacb93159830",
@@ -11405,7 +12090,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/07887ca6-380c-4ea4-ad7e-30023f09de2f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "podcast download",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2d9baadf-95cd-499d-8836-1f1b765623a9",
@@ -11435,7 +12135,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2d9baadf-95cd-499d-8836-1f1b765623a9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "news personalization",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6ac6d1b1-dc87-42b5-ba7b-9efd77394d4a",
@@ -11465,7 +12180,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6ac6d1b1-dc87-42b5-ba7b-9efd77394d4a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "satellite interference",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "95d60b8e-496c-452c-ade4-ae9b5cef6667",
@@ -11495,7 +12225,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/95d60b8e-496c-452c-ade4-ae9b5cef6667/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "uplink frequency",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "uplink",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "72745b0b-8d5a-4a2c-96ca-f1a9afe88899",
@@ -11525,7 +12282,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/72745b0b-8d5a-4a2c-96ca-f1a9afe88899/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "downlink frequency",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "downlink",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c6780754-b016-4070-9c79-ee68f1c32e7d",
@@ -11555,7 +12339,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c6780754-b016-4070-9c79-ee68f1c32e7d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "channel frequency",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "85d9ec9e-5bf2-4de8-95bd-1b589a59ca0d",
@@ -11585,7 +12384,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/85d9ec9e-5bf2-4de8-95bd-1b589a59ca0d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "remote recording",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b1715a31-a3a5-4045-b238-4211a2973394",
@@ -11615,7 +12429,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b1715a31-a3a5-4045-b238-4211a2973394/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "field recording",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5642ab62-7722-419a-87b6-0386cb22e6e5",
@@ -11645,7 +12474,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5642ab62-7722-419a-87b6-0386cb22e6e5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "marketing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ماركتنق",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0fc33d50-2667-445c-91f7-87473b1fe4fc",
@@ -11675,7 +12531,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0fc33d50-2667-445c-91f7-87473b1fe4fc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "media marketing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d60662c4-db4f-4e08-bf35-2bc41f193846",
@@ -11779,8 +12650,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12126,8 +12999,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14742,7 +15617,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4bf8a779-df82-4869-b330-bc895bfe07b8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "institutional coverage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "corporate coverage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c8c046b3-3bc2-4d84-9a02-9c6ab32be7d0",
@@ -14772,7 +15672,24 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c8c046b3-3bc2-4d84-9a02-9c6ab32be7d0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "investigative series",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8014d804-35a2-416c-9a3d-326a732407b5",
@@ -14802,7 +15719,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8014d804-35a2-416c-9a3d-326a732407b5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "special reports",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "features",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a58560c8-c208-4047-b1b5-78177075687c",
@@ -14832,7 +15774,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a58560c8-c208-4047-b1b5-78177075687c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "quick reports",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "news flashes",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6f3638cf-3495-4889-beb0-d22e0f616fb0",
@@ -14862,7 +15829,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6f3638cf-3495-4889-beb0-d22e0f616fb0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "video reports",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "video packages",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "098bdf6e-7e82-404a-9511-54653ccbd82f",
@@ -15368,7 +16360,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/67d17c55-0089-4ec5-9b2a-bb30eb70bd6c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "technology report",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1192f0ce-e6c3-4990-bcf9-07902dbf0591",
@@ -15398,7 +16405,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1192f0ce-e6c3-4990-bcf9-07902dbf0591/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "human rights report",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5f7d6f9d-b512-4232-8130-1ca67725ebf2",
@@ -15428,7 +16450,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5f7d6f9d-b512-4232-8130-1ca67725ebf2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "special report",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0bf0c315-9782-45db-b273-72029a2a9990",
@@ -15458,7 +16495,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0bf0c315-9782-45db-b273-72029a2a9990/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "international report",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e95cf8f5-980d-48c5-981c-b6871daebecb",
@@ -15488,7 +16540,24 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e95cf8f5-980d-48c5-981c-b6871daebecb/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "annual report",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "95a5d13e-f7c9-4dd8-bfed-fec3c17ada96",
@@ -15978,8 +17047,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ضغط الملفات",
@@ -17610,7 +18681,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a184830b-8865-4034-b654-001ae2877040/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "motion graphics",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "موشن جرافيك",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا العمل موشن جرافيك.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "رسوم متحركة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c49cac78-b36d-47de-aaec-8f1085c5e491",
@@ -17640,7 +18746,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c49cac78-b36d-47de-aaec-8f1085c5e491/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "audience",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "جماهير",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "متابعين",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a2e3aedf-3885-410d-ac44-bc6f56f33f7e",
@@ -17670,7 +18811,48 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a2e3aedf-3885-410d-ac44-bc6f56f33f7e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "target audience",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الفئة المستهدفة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تارجت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2162fbae-76d4-426c-9b2d-7f35adad459c",
@@ -17700,7 +18882,46 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2162fbae-76d4-426c-9b2d-7f35adad459c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "receiver",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "رسيفر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ريسيفر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "02b7707b-ebe4-4802-baaf-10b78be7b731",
@@ -17730,7 +18951,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/02b7707b-ebe4-4802-baaf-10b78be7b731/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "continuous lighting",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "constant light",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "LED panel",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "646a6c5a-5340-4b42-81a0-fda6ebd7c700",
@@ -17760,7 +19016,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/646a6c5a-5340-4b42-81a0-fda6ebd7c700/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "digital broadcasting device",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "encoder",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e391d9ba-4772-466d-855b-8fb3017e191a",
@@ -17790,7 +19073,46 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e391d9ba-4772-466d-855b-8fb3017e191a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "remote control",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "remote",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ريموت",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ef677927-3820-4d87-a35d-97c053f782f7",
@@ -17820,7 +19142,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ef677927-3820-4d87-a35d-97c053f782f7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "audio converter",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f7197019-2ce5-4e02-92c7-db791368e9c2",
@@ -17850,7 +19187,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f7197019-2ce5-4e02-92c7-db791368e9c2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "multiviewer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ملتي فيور",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ffa2522b-af4c-4735-be30-710cdf896c82",
@@ -17880,7 +19242,58 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ffa2522b-af4c-4735-be30-710cdf896c82/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "microphone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "mic",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "مايك",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ميكروفون",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ed9806cf-c264-450a-9298-e885b53a7d84",
@@ -17964,8 +19377,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Stabilizer",
@@ -17974,8 +19389,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "قيمبال",
@@ -18196,8 +19613,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "VCR",
@@ -18354,8 +19773,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بروجكتر",
@@ -18364,8 +19785,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جهاز إسقاط",
@@ -18421,8 +19844,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18680,8 +20105,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميكسر",
@@ -19544,8 +20971,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Pilot",
@@ -19845,8 +21274,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20350,8 +21781,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "خلفية الخبر",
@@ -21269,8 +22702,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21568,8 +23003,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بروباغندا",
@@ -21592,6 +23029,7 @@
             "example": "كان هناك إعلان كبير في الشارع.",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -21749,8 +23187,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22280,6 +23720,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -22380,8 +23821,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22425,8 +23868,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رعاية",
@@ -22449,8 +23894,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23136,7 +24583,58 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ffe9a5f6-d12d-4107-a363-9998420be404/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "scoop",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "exclusive",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "خبر حصري",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سكوب",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9c588375-88b0-49c2-acab-16f2bae61267",
@@ -23166,7 +24664,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9c588375-88b0-49c2-acab-16f2bae61267/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "multimedia news narrative",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "985c9bca-4923-45f2-a40f-220afdbc2d2c",
@@ -23196,7 +24709,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/985c9bca-4923-45f2-a40f-220afdbc2d2c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "media narrative",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "storytelling",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ff1f50af-4a65-44b2-bccf-a04f64e6c44e",
@@ -23226,7 +24764,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ff1f50af-4a65-44b2-bccf-a04f64e6c44e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "interactive media narrative",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2b5e0aba-e11d-454e-950a-22a9f549e68b",
@@ -23256,7 +24809,44 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2b5e0aba-e11d-454e-950a-22a9f549e68b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "fact-checking",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "التحقق من الأخبار",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تقصي الحقائق",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1c0e4b64-8b26-47c7-81c3-fee1b5f79dca",
@@ -24278,7 +25868,24 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f3ecc09e-9eae-47f6-b085-a26ebe25012c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "media policy",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "27237de0-71f8-43cc-897b-5161dac895f9",
@@ -24308,7 +25915,36 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/27237de0-71f8-43cc-897b-5161dac895f9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "workflow",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ورك فلو",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "001a208a-f3a1-479b-86ab-693a0d84b5c2",
@@ -24338,7 +25974,36 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/001a208a-f3a1-479b-86ab-693a0d84b5c2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "cinema",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "film",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0dc13b88-28c5-41e0-bd60-665ba40b2847",
@@ -24368,7 +26033,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0dc13b88-28c5-41e0-bd60-665ba40b2847/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "program intro",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "title sequence",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "jingle",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9d9eb59f-4296-4b10-ad1a-d26c10456a65",
@@ -24398,7 +26098,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9d9eb59f-4296-4b10-ad1a-d26c10456a65/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "news badge",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "breaking news banner",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "367b5349-4f54-428c-aba9-fc62d94ccb50",
@@ -24428,7 +26153,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/367b5349-4f54-428c-aba9-fc62d94ccb50/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "green screen",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "chroma key",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كروما",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7396eae1-2936-4ae8-a12b-9a1c2fd68be4",
@@ -24458,7 +26218,49 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7396eae1-2936-4ae8-a12b-9a1c2fd68be4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "display screen",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "monitor",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "شاشة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الشاشة في غرفة التحكم تظهر الإشارات.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ba573484-b40d-48bf-977a-61c9306e23be",
@@ -24488,7 +26290,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ba573484-b40d-48bf-977a-61c9306e23be/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "split screen",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a8a75434-9b43-45cb-8458-4433fdc961fa",
@@ -24518,7 +26335,48 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a8a75434-9b43-45cb-8458-4433fdc961fa/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "social networks",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "social media",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "مواقع التواصل",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5d79f516-5ebc-4099-9d38-8ab19c4684e3",
@@ -24548,7 +26406,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5d79f516-5ebc-4099-9d38-8ab19c4684e3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "satellite rebroadcasting network",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "10e9303d-1732-4074-8d6c-bb9ff44ee4f0",
@@ -24697,8 +26570,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سيقمنت",
@@ -24897,8 +26772,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Press",
@@ -24907,8 +26784,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25087,8 +26966,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Narrative Journalism",
@@ -25097,8 +26978,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25405,8 +27288,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26499,8 +28384,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صحافة الحوادث",
@@ -26830,7 +28717,48 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7abe2b8f-1d69-45be-ac92-7c34e59cb0dc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "robot journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "automated journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "AI journalism",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7a2ee7c7-3801-48f8-bcfb-eaefb4ee77d9",
@@ -26860,7 +28788,35 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7a2ee7c7-3801-48f8-bcfb-eaefb4ee77d9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sports journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الإعلام الرياضي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "30f0be6b-d494-4f79-bf45-6442033e3d61",
@@ -26890,7 +28846,46 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/30f0be6b-d494-4f79-bf45-6442033e3d61/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "narrative journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "literary journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "long-form journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "43bbca82-7de1-4cbb-af0c-c871a55ae16f",
@@ -26920,7 +28915,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/43bbca82-7de1-4cbb-af0c-c871a55ae16f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "fast journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "breaking news",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d1194b72-d65b-4c0d-a09e-53ca56141e77",
@@ -26950,7 +28972,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d1194b72-d65b-4c0d-a09e-53ca56141e77/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "travel journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "tourism journalism",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "صحافة السفر",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "تغطي هذه الصحيفة أخباراً عن صحافة السفر والوجهات السياحية.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a734316d-f37a-40ed-bbef-eaea3b520d9f",
@@ -29070,8 +31127,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "صحافي",
@@ -29080,8 +31139,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جورناليست",
@@ -29206,8 +31267,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دش",
@@ -29276,8 +31339,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سعة النطاق",
@@ -29817,8 +31882,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29919,8 +31986,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30367,7 +32436,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ef87d043-fb29-41a4-a566-8b307073243d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "podcast category",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "22443e45-91a8-417e-8a3c-1cf2008cdf6f",
@@ -30397,7 +32481,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/22443e45-91a8-417e-8a3c-1cf2008cdf6f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "VOD",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "video on demand",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1f1d395f-b0de-4d74-8a5f-fd4d04d97cca",
@@ -30427,7 +32536,54 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1f1d395f-b0de-4d74-8a5f-fd4d04d97cca/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "film",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "movie",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "motion picture",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "فيلم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "عرض فيلم سينمائي في السينما.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8b86e9f0-829d-4f17-8870-64288f9e11b4",
@@ -30457,7 +32613,48 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8b86e9f0-829d-4f17-8870-64288f9e11b4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "documentary",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "doc",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "وثائقي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا برنامج وثائقي ممتع.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e429bdd4-f509-4f78-96a1-fd937a7770d4",
@@ -30487,7 +32684,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e429bdd4-f509-4f78-96a1-fd937a7770d4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "RTI law",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "right to information law",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "FOI",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9fd2711c-2c17-4ebc-b8d7-fd916e4ef007",
@@ -31136,8 +33368,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Brand Value",
@@ -31301,8 +33535,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مراسل",
@@ -32375,8 +34611,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32683,8 +34921,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دايركتر",
@@ -32805,8 +35045,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32952,8 +35194,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أنا أستمع لـ podcast كل صباح.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بودكاست",
@@ -32964,7 +35208,8 @@
             "example": "هذا بودكاست رائع جداً.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -34122,8 +36367,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35317,8 +37564,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التفاعل المجتمعي",
@@ -35656,8 +37905,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مصادر",
@@ -35666,8 +37917,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36090,6 +38343,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -36756,7 +39010,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3a318371-5e76-4ea1-8abf-33b3c63dc294/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "phone interview",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مداخلة هاتفية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "06edca89-1943-4604-bc08-f5d5ff5b0699",
@@ -36786,7 +39065,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/06edca89-1943-4604-bc08-f5d5ff5b0699/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "video interview",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "be13dd26-593a-4c4e-96e2-c13d08f0b255",
@@ -36816,7 +39110,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/be13dd26-593a-4c4e-96e2-c13d08f0b255/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "live interview",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21d7b27f-a87c-436e-905c-bde29422d07f",
@@ -36846,7 +39155,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21d7b27f-a87c-436e-905c-bde29422d07f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "follow-up interview",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "66193d15-0d63-487a-9c56-603c7a20174b",
@@ -36876,7 +39200,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/66193d15-0d63-487a-9c56-603c7a20174b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "in-depth interview",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "multi-aspect interview",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6bc8c086-2f92-4292-a162-ac15745756cd",
@@ -36960,8 +39311,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -37182,8 +39535,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "TV Host",
@@ -37316,8 +39671,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38012,8 +40369,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دولي",
@@ -38024,7 +40383,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -38264,8 +40624,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "sound wave",
@@ -38274,8 +40636,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ويف فورم",
@@ -38543,8 +40907,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "العد التنازلي",
@@ -38555,7 +40921,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -38610,8 +40977,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "graphics generator",
@@ -38630,8 +40999,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نحتاج إلى تحديث المولد الجرافيكس.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -38945,8 +41316,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هذا mic مناسب جداً للبودكاست.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مايك",
@@ -38955,8 +41328,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميكروفون",
@@ -38965,8 +41340,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "اشتريت ميكروفون جديد للبودكاست.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39010,8 +41387,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "المشكلة في الترانسبوندر الرئيسي.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ترانسبوندر",
@@ -39020,8 +41399,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هذا الترانسبوندر يعمل بكفاءة عالية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "satellite transponder",
@@ -39207,8 +41588,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "بث",
@@ -39447,8 +41830,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39602,8 +41987,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "direct broadcasting system",
@@ -40199,7 +42586,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e89ad2db-e792-4136-b167-d2a646cdeccc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "indoor antenna",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "أنتين داخلي",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "50c0f028-f44e-49e1-ac7e-52139c5ba236",
@@ -40229,7 +42641,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/50c0f028-f44e-49e1-ac7e-52139c5ba236/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "editorial board",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d6e551e0-0b27-4d52-8fc3-41b676fbd7f9",
@@ -40259,7 +42686,48 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d6e551e0-0b27-4d52-8fc3-41b676fbd7f9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "receiver",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "IRD",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "رسيفر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ed207478-9f5a-428b-8397-b1838651f5d7",
@@ -40289,7 +42757,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ed207478-9f5a-428b-8397-b1838651f5d7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "audio control unit",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "audio mixer",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f4bf52a2-3d64-4dd7-8a66-a75108a5d0a6",
@@ -40319,7 +42814,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f4bf52a2-3d64-4dd7-8a66-a75108a5d0a6/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "broadcast control unit",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "MCR",
+            "type": "abbreviation",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "14276acb-3578-4076-9c72-a616b124d8f1",
@@ -41320,7 +43840,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/99991db8-2865-4879-9ce8-af1ebf39adb4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "C band",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "نطاق سي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9b03e472-2622-4448-94ea-9e70df5e593f",
@@ -41350,7 +43895,24 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9b03e472-2622-4448-94ea-9e70df5e593f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "market research",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "13797062-1a47-4d79-9865-6d2be4a90849",
@@ -41380,7 +43942,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/13797062-1a47-4d79-9865-6d2be4a90849/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "two-way communications",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "duplex",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "53cd0d1a-18b3-43d0-8f63-131af09a9c74",
@@ -41410,7 +43999,42 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/53cd0d1a-18b3-43d0-8f63-131af09a9c74/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "news briefing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "press briefing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إيجاز صحفي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "fafb762f-a3a2-4914-9a7c-f6a1dac70eb9",
@@ -41440,7 +44064,22 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/fafb762f-a3a2-4914-9a7c-f6a1dac70eb9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "comprehensive briefing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "70d1f349-1787-4eb9-8d06-73ee87d2d497",
@@ -41765,7 +44404,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7f625c05-f25f-4079-8ed7-b3207a3ea241/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ImpaQ",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "impaq influencers forum",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2b031f6f-ec60-422b-a41a-f419947461a3",
@@ -41795,7 +44459,32 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2b031f6f-ec60-422b-a41a-f419947461a3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "Ku band",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "القطعة تدعم نطاق Ku Band.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "Ku",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الترددات Ku تستخدم في الأقمار الصناعية.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3d820fd7-a33a-4d93-a711-f4ebc1d94f69",
@@ -41825,7 +44514,34 @@
       "dictionary_name": "معجم مصطلحات الإعلام",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/928f4f87-b98c-4b2d-b31d-0b45c6747644",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3d820fd7-a33a-4d93-a711-f4ebc1d94f69/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "RSS feed",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الموقع يدعم موجز RSS Feed.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "RSS",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نستخدم موجز RSS لنشر المحتوى.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     }
   ]
 }

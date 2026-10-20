@@ -2,14 +2,14 @@
   "dictionary_id": "b4759d02-40ef-4df5-a818-4081a11c338c",
   "dictionary_name": "معجم المصطلحات الموسيقية",
   "source_export": "data/dictionaries/exports/b4759d02-40ef-4df5-a818-4081a11c338c.json",
-  "generated_at": "2026-10-19T08:10:00.697109+00:00",
-  "enrichment_status": "partial",
+  "generated_at": "2026-10-20T11:14:43.184594+00:00",
+  "enrichment_status": "complete",
   "counts": {
     "senses": 700,
-    "senses_reviewed": 584,
-    "senses_with_variants": 498,
-    "variants_accepted": 785,
-    "variants_needing_review": 304
+    "senses_reviewed": 700,
+    "senses_with_variants": 614,
+    "variants_accepted": 856,
+    "variants_needing_review": 458
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -527,7 +527,24 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/20958acd-f368-4f84-9998-44bce2e9d3f9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "performance",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "abe7c94e-0461-4b1b-8df7-1cb898421f6b",
@@ -557,7 +574,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/abe7c94e-0461-4b1b-8df7-1cb898421f6b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "aggregate",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1dec60ef-43f2-49cd-985b-754080fffd8f",
@@ -587,7 +619,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1dec60ef-43f2-49cd-985b-754080fffd8f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "arabesque",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b5a48532-ac9b-4e33-9bc4-cc903ac2785a",
@@ -617,7 +664,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b5a48532-ac9b-4e33-9bc4-cc903ac2785a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "arpeggio",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "أربيجيو",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "072d94c9-fce2-4a4e-ab98-aaf533cc4d62",
@@ -647,7 +723,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/072d94c9-fce2-4a4e-ab98-aaf533cc4d62/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "improvisation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تقاسيم",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "التقاسيم ارتجال آلي في الموسيقى العربية",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b1aee9ee-8823-4462-a8e4-a282838705e7",
@@ -967,6 +1070,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -1022,8 +1126,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1605,8 +1711,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوفرتير",
@@ -1670,8 +1778,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوفرتير",
@@ -1761,7 +1871,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/743ad6a7-a980-4b1a-ac1d-d63ce9390880/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "a cappella",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بدون موسيقى",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a7023a6a-97ed-432f-be09-ddd57c905a41",
@@ -1791,7 +1926,46 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a7023a6a-97ed-432f-be09-ddd57c905a41/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "chord",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "accord",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كورد",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e40d33c7-f6a7-43f0-8206-c5343207983c",
@@ -1821,7 +1995,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/e40d33c7-f6a7-43f0-8206-c5343207983c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "accordion",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "63fa9c9f-59d8-4c42-bdc1-9e382accd88a",
@@ -1851,7 +2040,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/63fa9c9f-59d8-4c42-bdc1-9e382accd88a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "musical alphabet",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5e08d61b-6c4f-414d-a0a4-695384cfaa03",
@@ -1881,7 +2085,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5e08d61b-6c4f-414d-a0a4-695384cfaa03/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "loud war instruments",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9cd790e8-77c0-4aa3-8339-e2296f5939f6",
@@ -2214,7 +2433,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/56f1759b-3bac-4d88-8e78-d79834bbbe43/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "woodwinds",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "woodwind instruments",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3ad54cb1-42a0-49d1-b23b-fe289cd643af",
@@ -2244,7 +2488,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3ad54cb1-42a0-49d1-b23b-fe289cd643af/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "instrumentalist",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "عازف",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "56f637ed-10d2-497c-bfd0-ecd1b92c42d1",
@@ -2274,7 +2547,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/56f637ed-10d2-497c-bfd0-ecd1b92c42d1/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "bird and string",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c38750ab-422a-46e7-b903-13790ed11650",
@@ -2304,7 +2592,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c38750ab-422a-46e7-b903-13790ed11650/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "album",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c43dce0a-2fa7-463c-a0e9-fa464dc086a7",
@@ -2334,7 +2637,48 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c43dce0a-2fa7-463c-a0e9-fa464dc086a7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "electric piano",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "digital piano",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كيبورد",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "30b2e4fa-3f79-4378-83eb-30b891a0e9ac",
@@ -2415,8 +2759,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ electric piano موديل 2024.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "digital piano",
@@ -2425,8 +2771,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4025,8 +4373,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أربيجيو",
@@ -4035,8 +4385,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أربيجو",
@@ -4445,8 +4797,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوكتيف",
@@ -4800,7 +5154,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1048305f-dc39-4944-9eb8-d06367850634/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "polyrhythm",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "التنسيق الموسيقي يعتمد على polyrhythm.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "43eb52bf-c157-4d0b-8076-a90182039f26",
@@ -4830,7 +5199,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/43eb52bf-c157-4d0b-8076-a90182039f26/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "compound meter",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "compound rhythm",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الآلات تضرب compound rhythm هنا.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6a943adf-9653-4bef-b232-3dc4f160918a",
@@ -4860,7 +5254,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6a943adf-9653-4bef-b232-3dc4f160918a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "duple meter",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "القطعة مكتوبة بـ duple meter.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "duple time",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6920fc43-87f7-4176-8d5f-c2a8a9fc9d7f",
@@ -4890,7 +5309,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6920fc43-87f7-4176-8d5f-c2a8a9fc9d7f/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "baroque",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الأوركسترا ألحنت بأسلوب baroque.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "bc7ef519-acb4-4b7e-9920-70e631811832",
@@ -4920,7 +5354,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/bc7ef519-acb4-4b7e-9920-70e631811832/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "alla marcia",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "نحتاج إلى كتابة alla marcia في الأعلى.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "e72ee4e6-72ed-45ef-a9ef-7cb2c522360d",
@@ -5530,8 +5979,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فيفاتشي",
@@ -5619,8 +6070,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "براتشي",
@@ -6258,10 +6711,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "البام الوتر الغليظ.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6341,6 +6792,7 @@
             "example": "استخدمت turn في بداية المقطع.",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -7281,8 +7733,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كورد",
@@ -7305,7 +7759,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -8267,7 +8722,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/59eb0231-2b88-49c7-8dcf-bb4ee0202019/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "antiphony",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "antiphonal singing",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "call and response",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2bd2c469-5b5e-49ad-9d91-331388157269",
@@ -8297,7 +8787,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2bd2c469-5b5e-49ad-9d91-331388157269/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "frequency",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "Hz",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5568c82a-5251-4d55-84a2-838ab8c6718e",
@@ -8327,7 +8846,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5568c82a-5251-4d55-84a2-838ab8c6718e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "numbering",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "figured bass",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "fingering",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d6a44a35-4988-4740-871b-7274cbff308e",
@@ -8357,7 +8911,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d6a44a35-4988-4740-871b-7274cbff308e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "trilling",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "trill",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ترنيم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا النوع من الطيور معروف بـ ترنيمه.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9a860d3f-2289-4d7c-b50a-1f4216ba0be3",
@@ -8387,7 +8978,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9a860d3f-2289-4d7c-b50a-1f4216ba0be3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "hymn",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ترتيلة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3a0822e0-d88c-4e95-8381-94d31c83daac",
@@ -8417,7 +9035,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3a0822e0-d88c-4e95-8381-94d31c83daac/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "Hallelujah",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "هللويا",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "bdd483ab-b066-4d24-9579-47fd40bf069b",
@@ -8537,8 +9180,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8702,8 +9347,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تسجيل صوتي",
@@ -8827,8 +9474,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فيولونسيل",
@@ -8955,8 +9604,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "intro",
@@ -8965,8 +9616,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "إنترو",
@@ -8975,8 +9628,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9302,8 +9957,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9919,8 +10576,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10043,8 +10702,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوكتيت",
@@ -10098,8 +10759,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوكتيت",
@@ -11203,8 +11866,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "leading note",
@@ -11213,8 +11878,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "حساس",
@@ -11223,8 +11890,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11965,8 +12634,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12035,7 +12706,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ccf89fe5-0bbb-4557-814d-82364339d5e8/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "frets",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "فريتات",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a8ff6a17-b5d7-4c0e-90e7-4616ab14ce83",
@@ -12065,7 +12765,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a8ff6a17-b5d7-4c0e-90e7-4616ab14ce83/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "oud frets",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3e96c6db-65b2-4910-a8c7-ecbdee674889",
@@ -12095,7 +12810,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3e96c6db-65b2-4910-a8c7-ecbdee674889/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "فريت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "33e79a60-311c-4626-9c6a-4c241ba1d615",
@@ -12125,7 +12865,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/33e79a60-311c-4626-9c6a-4c241ba1d615/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ring finger fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0dbed5fd-3464-43f4-9271-fb4cc4d79377",
@@ -12155,7 +12910,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0dbed5fd-3464-43f4-9271-fb4cc4d79377/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "pinky finger fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "81cd3208-5d42-4594-bb51-86518da6c574",
@@ -12185,7 +12955,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/81cd3208-5d42-4594-bb51-86518da6c574/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "index finger fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "641a13b3-a0b7-418e-a501-5b95222ddf3e",
@@ -12215,7 +13000,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/641a13b3-a0b7-418e-a501-5b95222ddf3e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "persian middle fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f0b074dd-6744-444d-974b-14ff171b0f80",
@@ -12245,7 +13045,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f0b074dd-6744-444d-974b-14ff171b0f80/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "old middle fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b4defba4-161d-472a-b172-06204cb726c9",
@@ -12275,7 +13090,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b4defba4-161d-472a-b172-06204cb726c9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "zalzal's fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "wusta zalzal",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cbfc5729-80a2-453e-ae07-087930935785",
@@ -12305,7 +13145,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cbfc5729-80a2-453e-ae07-087930935785/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "nut fret",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cbfc5729-80a2-453e-ae07-087930935785",
@@ -12559,7 +13414,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b23851a7-70a5-43d6-9cac-75477c86d8fe/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "female tambourine players",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طقاقات",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a7dcfc54-7317-4943-b27e-21ce4bef41c2",
@@ -12589,7 +13469,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a7dcfc54-7317-4943-b27e-21ce4bef41c2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "faint voice",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "cdd0373c-9a65-4226-9276-0926bdedd2af",
@@ -12619,7 +13514,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/cdd0373c-9a65-4226-9276-0926bdedd2af/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "key signature",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "دليل السلم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5fb243a1-9f36-4682-b6b5-6435856b4d83",
@@ -12649,7 +13569,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5fb243a1-9f36-4682-b6b5-6435856b4d83/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "dum",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c3d6b57e-445c-427b-89a0-b50883a1cd7d",
@@ -12679,7 +13614,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c3d6b57e-445c-427b-89a0-b50883a1cd7d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "dammah",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a81bf2ab-21cd-4238-ad71-5d580bef91f7",
@@ -12720,6 +13670,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -12822,8 +13773,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دوزنة",
@@ -12887,8 +13840,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دوزنة",
@@ -13507,7 +14462,47 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/501889e3-d669-43db-af3b-a9628e4d5a39/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mellow",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "soft",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ناعم",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الجلد ناعم جداً.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "83b96d71-71e3-453f-9587-74d42c03eb2e",
@@ -13537,7 +14532,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/83b96d71-71e3-453f-9587-74d42c03eb2e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "المقام Rast مشهور في الخليج.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "maqam rast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "48ef7191-4461-4888-a7d1-ed644671143a",
@@ -13567,7 +14589,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/48ef7191-4461-4888-a7d1-ed644671143a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rast dhail",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "المقام Rast Dhail يختلف عن الرست العادي.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "090463ca-e861-4187-bd4a-3b4a9ecb2a66",
@@ -13597,7 +14634,37 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/090463ca-e861-4187-bd4a-3b4a9ecb2a66/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rast",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "رست",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "1eab3986-8f97-4964-a44e-fc11a073d4d9",
@@ -13627,7 +14694,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1eab3986-8f97-4964-a44e-fc11a073d4d9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sweet voice",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "71bcf99a-a528-4d84-993d-d8b5f79649f1",
@@ -14010,8 +15092,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رنين",
@@ -14022,7 +15106,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -14077,8 +15162,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رول",
@@ -14324,8 +15411,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "زمار",
@@ -14336,7 +15425,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -14401,8 +15491,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14482,7 +15574,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ec3a4dd1-2320-4242-ae16-f07d30230ea2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "rhythmic variation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "05810596-96bf-4b19-825f-ae58eb5ea5c2",
@@ -14512,7 +15619,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/05810596-96bf-4b19-825f-ae58eb5ea5c2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "formal ornamentation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b3327f55-0eac-4fa2-9abd-3a0644d18879",
@@ -14542,7 +15664,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b3327f55-0eac-4fa2-9abd-3a0644d18879/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "melodic ornamentation",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b4e0b52a-81fd-4f05-a987-6b0b7d971e1d",
@@ -14572,7 +15709,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b4e0b52a-81fd-4f05-a987-6b0b7d971e1d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "endpin",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "spike",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ab964ffa-68c7-460b-861e-0e532bd17dae",
@@ -14602,7 +15766,24 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ab964ffa-68c7-460b-861e-0e532bd17dae/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "piper",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2798cf19-68d7-4f80-b532-3cb21cd53df9",
@@ -14835,7 +16016,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/34e66959-7193-4dfd-a366-29b5705f3e6b/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "samri",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5c8192db-861d-4b65-928c-d658e7f1e2c9",
@@ -14865,7 +16061,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5c8192db-861d-4b65-928c-d658e7f1e2c9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "heptachord",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8635bde7-321d-4d3c-81b1-ec7abdac7763",
@@ -14895,7 +16106,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8635bde7-321d-4d3c-81b1-ec7abdac7763/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "heptachord instrument",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "seven-string lyre",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "22b45623-57f3-49a8-8641-60fcb79edd59",
@@ -14925,7 +16161,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/22b45623-57f3-49a8-8641-60fcb79edd59/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "sound hole",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "rosette",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "ed9fdc0f-4bad-4c50-adfa-24c9caf91719",
@@ -14955,7 +16220,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ed9fdc0f-4bad-4c50-adfa-24c9caf91719/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "allegro vivace",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "vivace",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6d105f1a-2be1-410d-9f6e-1de204678091",
@@ -15276,7 +16568,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/564ddd33-31f6-4807-9e88-0ad54116ee62/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "chalumeau",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "شالومو",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "564ddd33-31f6-4807-9e88-0ad54116ee62",
@@ -15306,7 +16627,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/564ddd33-31f6-4807-9e88-0ad54116ee62/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "chalumeau register",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "fcaeddc6-67dc-4d6f-a943-40bb990b4f67",
@@ -15336,7 +16672,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/fcaeddc6-67dc-4d6f-a943-40bb990b4f67/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "simsimiyya",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "501c8f83-37d2-4394-9173-6926945e79c5",
@@ -15366,7 +16717,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/501c8f83-37d2-4394-9173-6926945e79c5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "drone reed",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "drone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "96f9a67a-ecc8-4f07-a522-e658e2801fe4",
@@ -15396,7 +16774,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/96f9a67a-ecc8-4f07-a522-e658e2801fe4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "santur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "dulcimer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "psaltery",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "976bb789-307a-4801-8e64-0134be95a71c",
@@ -15435,8 +16850,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "سنطور",
@@ -15447,7 +16864,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -15750,8 +17168,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوسيلوسكوب",
@@ -15760,8 +17180,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "راسم الذبذبات",
@@ -15817,8 +17239,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "شالومو",
@@ -15827,8 +17251,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16092,8 +17518,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16524,7 +17952,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/19f43bbb-b4ab-4258-a562-bb0fd699d028/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "soundboard",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "top",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "6111de61-5799-413f-9187-fe411d57231c",
@@ -16554,7 +18011,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6111de61-5799-413f-9187-fe411d57231c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "echo",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "reverb",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8b3a7c4d-3be4-428f-ba3a-c5c5ab927b1a",
@@ -16584,7 +18068,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8b3a7c4d-3be4-428f-ba3a-c5c5ab927b1a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "shrill voice",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7a1fa609-fca2-414d-b24c-9b13b6a9400a",
@@ -16614,7 +18113,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7a1fa609-fca2-414d-b24c-9b13b6a9400a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "surnay",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "zurna",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سرناي",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "218d68b5-d8d8-47d9-a0e7-9ae58a87dc01",
@@ -16644,7 +18180,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/218d68b5-d8d8-47d9-a0e7-9ae58a87dc01/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "fixed bridge",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "14f01954-84a0-4ac4-861d-cf3bd73d006e",
@@ -18300,6 +19851,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous",
               "low_confidence"
             ]
@@ -18391,8 +19943,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "burden",
@@ -18572,8 +20126,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "player",
@@ -18582,8 +20138,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "موسيقار",
@@ -19198,7 +20756,24 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/999d47d8-fd21-41a3-8d3d-cbbd999b7b6a/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ashi",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "18264607-76ba-443e-9488-a6b04706d95d",
@@ -19228,7 +20803,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/18264607-76ba-443e-9488-a6b04706d95d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "drumstick",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "stick",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "عصا الطبل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "18264607-76ba-443e-9488-a6b04706d95d",
@@ -19258,7 +20870,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/18264607-76ba-443e-9488-a6b04706d95d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "baton",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "conductor's baton",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "عصا المايسترو",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21f84cdf-2b1a-4e6c-9ca2-be5b83956b96",
@@ -19288,7 +20935,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21f84cdf-2b1a-4e6c-9ca2-be5b83956b96/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "oud ornament",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b932030a-16d5-4ae9-9ebf-c03c70132712",
@@ -19318,7 +20980,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b932030a-16d5-4ae9-9ebf-c03c70132712/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "retrograde",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "inversion",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "77da948a-3dc7-4be1-8014-32f020ad71e6",
@@ -19462,8 +21153,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أكوستيك",
@@ -19494,8 +21187,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20256,8 +21951,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جليساندو",
@@ -20821,8 +22518,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فرقة",
@@ -21266,7 +22965,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/16fff095-4851-48a9-aa7f-8810854ffbd0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "wedding singer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طقاقة",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذه الطقاقة معروفة في الأعراس.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "5ad5b53f-b68b-43c3-8236-2c0fe5a4a8c7",
@@ -21296,7 +23020,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/5ad5b53f-b68b-43c3-8236-2c0fe5a4a8c7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "subito",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "immediately",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d6840bfd-6c21-4609-9e22-1e35908e5242",
@@ -21326,7 +23077,52 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d6840bfd-6c21-4609-9e22-1e35908e5242/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "phonograph",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "gramophone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "فونوغراف",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا الفونوغراف قديم.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "جرامافون",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d2d79a5f-96bd-4de4-8c6a-119a4014f666",
@@ -21356,7 +23152,24 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d2d79a5f-96bd-4de4-8c6a-119a4014f666/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "viola",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "db53604f-ca4a-4989-8347-2d834b0f9e82",
@@ -21386,7 +23199,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/db53604f-ca4a-4989-8347-2d834b0f9e82/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "viola",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "bratsche",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "66f1f6c1-9d8a-4acf-bf85-918f42d90e7c",
@@ -22423,8 +24265,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22582,8 +24426,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22793,7 +24639,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/1ee51df9-e994-461a-a944-e7211a68eeaf/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "lyre",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الليرا",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "aa3e1257-c1ac-4c3c-930c-5f61c57ba1eb",
@@ -22823,7 +24694,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/aa3e1257-c1ac-4c3c-930c-5f61c57ba1eb/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "qayna",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "singing slave girl",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f4406c8d-1d36-423a-9d5e-6f5634c38cf5",
@@ -22853,7 +24749,49 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f4406c8d-1d36-423a-9d5e-6f5634c38cf5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "violoncello",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "cello",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تشيلو",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "db43d4ef-9c0f-4c6f-8637-c6405161b1a4",
@@ -22883,7 +24821,49 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/db43d4ef-9c0f-4c6f-8637-c6405161b1a4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "violoncello",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "cello",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تشيلو",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "21e86ef4-8f25-4d23-8012-3606029ba305",
@@ -22913,7 +24893,46 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/21e86ef4-8f25-4d23-8012-3606029ba305/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mute",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "sordino",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كاتم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2cdc2a7c-38cd-42d8-8df8-4610be5f5195",
@@ -23498,8 +25517,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "frog",
@@ -24065,7 +26086,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -24334,6 +26356,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -24682,8 +26705,7 @@
             "example": "الضجيج في القاعة عطل الأداء.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -24707,7 +26729,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -24857,8 +26880,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كيبورد",
@@ -24960,8 +26985,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25141,8 +27168,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25186,8 +27215,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "measure",
@@ -25196,8 +27227,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مقياس",
@@ -25733,8 +27766,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25890,8 +27925,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "parallel",
@@ -25900,8 +27937,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26298,8 +28337,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "unisono",
@@ -26881,8 +28922,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دخل",
@@ -26894,6 +28937,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -26939,8 +28983,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "stave",
@@ -27337,8 +29383,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "LPF",
@@ -27347,8 +29395,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "لو باس فلتر",
@@ -27412,8 +29462,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "band-stop filter",
@@ -27422,8 +29474,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "notch filter",
@@ -27432,8 +29486,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مرشح إيقاف النطاق",
@@ -27487,8 +29543,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "BPF",
@@ -27497,8 +29555,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مرشح تمرير النطاق",
@@ -28184,8 +30244,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أكومبانيمنت",
@@ -28452,8 +30514,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مغني",
@@ -28464,7 +30528,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -28770,7 +30835,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a9efda2b-fee3-4193-a578-c3d370efda2d/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "strained voice",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "97ba8107-b00e-419b-ac9f-97103e0f1094",
@@ -28800,7 +30880,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/97ba8107-b00e-419b-ac9f-97103e0f1094/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "skilled singer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "74728845-0345-4946-80e2-b97e59c067b4",
@@ -28830,7 +30925,46 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/74728845-0345-4946-80e2-b97e59c067b4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "singer",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "vocalist",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مطرب",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d5e85338-1915-4813-a17f-e43cc24ec924",
@@ -28860,7 +30994,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d5e85338-1915-4813-a17f-e43cc24ec924/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "minstrel",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "troubadour",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "jongleur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b382fab1-9d31-412c-931a-c8cc58f571a9",
@@ -28890,7 +31059,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b382fab1-9d31-412c-931a-c8cc58f571a9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "clef",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مفتاح موسيقي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b382fab1-9d31-412c-931a-c8cc58f571a9",
@@ -29032,8 +31226,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29176,8 +31372,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "maqam",
@@ -29234,7 +31432,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f432c1af-accd-40fa-91dc-9c6b51a6dbb3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "bimodality",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "polymodality",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "79227763-880f-4d3e-9b5f-c2171dc8de1c",
@@ -29264,7 +31487,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/79227763-880f-4d3e-9b5f-c2171dc8de1c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "handle",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "grip",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "8f8ecfd0-832d-44f8-ba03-b99ca3b60666",
@@ -29294,7 +31544,72 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/8f8ecfd0-832d-44f8-ba03-b99ca3b60666/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "introduction",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "intro",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "overture",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "إنترو",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "افتتاحية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "892172d3-2f07-43be-968d-d44cd2319ca4",
@@ -29324,7 +31639,49 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/892172d3-2f07-43be-968d-d44cd2319ca4/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "section",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "passage",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "كوبليه",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "b9f88a12-00f2-4573-9dc5-3ac4fa5bf957",
@@ -29354,7 +31711,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b9f88a12-00f2-4573-9dc5-3ac4fa5bf957/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "etude",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "étude",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "study",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "dc52ede9-18de-47bf-a353-7fcf50b63b18",
@@ -29990,7 +32384,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/ce3d212c-0806-40c9-83a2-df4fbef12394/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "manjur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2a05dfca-1d59-4524-8bca-779e15547bb0",
@@ -30020,7 +32429,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2a05dfca-1d59-4524-8bca-779e15547bb0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mandolin",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ماندولين",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "524ae4ad-9751-4d11-a97c-a9093c9c1788",
@@ -30050,7 +32484,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/524ae4ad-9751-4d11-a97c-a9093c9c1788/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "glissando",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "slide",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2ebb33f3-821c-44e9-893d-5f4ef4ba1032",
@@ -30080,7 +32543,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/2ebb33f3-821c-44e9-893d-5f4ef4ba1032/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "chanter",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "munshid",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c9c66752-9029-4c2d-812e-ef39719f166e",
@@ -30110,7 +32598,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c9c66752-9029-4c2d-812e-ef39719f166e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "blowhole",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "embouchure hole",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "869c9561-45fc-4675-a443-3902fce22c43",
@@ -30140,7 +32653,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/869c9561-45fc-4675-a443-3902fce22c43/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "broken chord",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "arpeggiated",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "f5ac3da9-9104-4375-be98-a9e1edca47a3",
@@ -30170,7 +32708,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f5ac3da9-9104-4375-be98-a9e1edca47a3/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mankous",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "32e005b7-b3dd-4b97-bf03-30b54dff1595",
@@ -30200,7 +32753,22 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/32e005b7-b3dd-4b97-bf03-30b54dff1595/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "music festival",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "d3370ab1-ed60-4d3e-835c-e9bc7ea675e7",
@@ -30230,7 +32798,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/d3370ab1-ed60-4d3e-835c-e9bc7ea675e7/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ambient sound effects",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "environmental effects",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "50716383-f011-4fe7-b753-bd70b72993b0",
@@ -30260,7 +32853,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/50716383-f011-4fe7-b753-bd70b72993b0/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "foley",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "motion effects",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "411792bc-7db7-4d76-98d7-c771beb4f790",
@@ -31717,8 +34335,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "دساتين",
@@ -31729,7 +34349,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -31739,8 +34360,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33068,8 +35691,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "note",
@@ -33205,8 +35830,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "overtone",
@@ -33215,8 +35842,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "هارمونيك",
@@ -33225,8 +35854,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33261,7 +35892,34 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/35961bb6-7704-4ab3-80ff-096aa18a4956/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "partial",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "overtone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "c374d636-b82e-4217-9aa4-613fe614c3c9",
@@ -33291,7 +35949,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/c374d636-b82e-4217-9aa4-613fe614c3c9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "A flat",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "A♭",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "لا بيمول",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "a1ecc891-bb46-4792-919a-7f2489176c08",
@@ -33321,7 +36014,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/a1ecc891-bb46-4792-919a-7f2489176c08/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "A sharp",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "A♯",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "لا دييز",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0dcb4765-a429-446e-8d2d-307db907bb23",
@@ -33351,7 +36079,48 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0dcb4765-a429-446e-8d2d-307db907bb23/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "leading tone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "leading note",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "حساس السلم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "fd0ed020-f734-4e15-aead-4dd37c2f04b5",
@@ -33381,7 +36150,36 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/fd0ed020-f734-4e15-aead-4dd37c2f04b5/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "harmonic",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "overtone",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2fd2a379-6b4b-426e-8490-e5fd953f9954",
@@ -34001,7 +36799,46 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/87d3f408-1ba8-4e50-b905-32bb0d1eea84/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "harmony",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "هارموني",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا النغمة هارموني.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "التناغم",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "eb047ddc-806b-44d8-9a79-afba4a669ac2",
@@ -34031,7 +36868,24 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/eb047ddc-806b-44d8-9a79-afba4a669ac2/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "harmonica",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3c7f15b7-6ea0-47d7-af08-6c54c9a9dc06",
@@ -34061,7 +36915,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3c7f15b7-6ea0-47d7-af08-6c54c9a9dc06/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "glass harmonica",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "armonica",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "3ab4dfcc-b71b-4fee-b743-126bdbf0db82",
@@ -34091,7 +36970,44 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/3ab4dfcc-b71b-4fee-b743-126bdbf0db82/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "harmonica",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "mouth organ",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "mundharmonika",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "0e03d9bd-ace9-4e87-9770-c157123c2cbc",
@@ -34121,7 +37037,32 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/0e03d9bd-ace9-4e87-9770-c157123c2cbc/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "harmonium",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "reed organ",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "2d2eb30a-4f49-4cde-9a40-6540f2a93d3c",
@@ -34569,8 +37510,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوتار",
@@ -34681,8 +37624,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "وجه العود",
@@ -34907,6 +37852,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -35242,7 +38188,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/84f43fa5-bd6d-44eb-963e-793d77e9a50c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "barbat",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "barbet",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "البربط",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "9de06b26-5b0a-4d48-9068-ade58417d273",
@@ -35272,7 +38253,56 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/9de06b26-5b0a-4d48-9068-ade58417d273/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "mizmar",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "zurna",
+            "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "المزمار",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "زمر",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "4385906b-454c-4ad6-8ffa-fe820c55721c",
@@ -35302,7 +38332,54 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4385906b-454c-4ad6-8ffa-fe820c55721c/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "tanbur",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "tanboor",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الطنبور",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طنبورة",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "هذا آلة موسيقية قديمة تسمى الطنبورة.",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "7719b97a-17c7-46f1-a4b3-2950591fa9d9",
@@ -35332,7 +38409,52 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/7719b97a-17c7-46f1-a4b3-2950591fa9d9/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "B-flat",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "si bémol",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "B♭",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سي بيمول",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "الـ سي بيمول في هذا المقطع الموسيقي.",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     },
     {
       "entry_id": "4fe62caf-48c7-4dea-a8fb-7a0948268860",
@@ -35362,7 +38484,42 @@
       "dictionary_name": "معجم المصطلحات الموسيقية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/b4759d02-40ef-4df5-a818-4081a11c338c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4fe62caf-48c7-4dea-a8fb-7a0948268860/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "G sharp",
+            "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "G♯",
+            "type": "abbreviation",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "صول دييز",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
+        "generated_by": "Qwen/Qwen3.5-4B",
+        "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+      }
     }
   ]
 }

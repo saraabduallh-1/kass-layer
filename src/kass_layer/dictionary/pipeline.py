@@ -41,7 +41,7 @@ def normalize_arabic(text: str) -> str:
     if text is None:
         return ""
     normalized = unicodedata.normalize("NFC", text)
-    normalized = normalized.replace("\u200c", "")
+    normalized = re.sub("[\u200b-\u200f\u202a-\u202e\u2066-\u2069\ufeff]", "", normalized)  # invisible bidi/zero-width marks
     normalized = re.sub(r"\s+", " ", normalized).strip()
     return normalized
 
