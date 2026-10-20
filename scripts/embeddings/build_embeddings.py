@@ -105,7 +105,9 @@ def cmd_build(args) -> None:
     todo = list({item["sha256"]: item for item in items if item["sha256"] not in cached}.values())
     print(f"[1] collected {len(items)} texts: "
           f"{sum(i['kind'] == 'term' for i in items)} terms, {sum(i['kind'] == 'variant' for i in items)} variants")
-    print(f"[2] {len(items) - len(todo)} already encoded (cache), {len(todo)} to encode")
+    unique = len({item["sha256"] for item in items})
+    print(f"[2] {unique} unique texts ({len(items) - unique} repeated across terms); "
+          f"{unique - len(todo)} already encoded, {len(todo)} to encode")
 
     if todo:
         model, device = load_model()

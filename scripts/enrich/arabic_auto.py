@@ -11,6 +11,8 @@ origin=arabic-auto. Every candidate and the reason it was kept or rejected is lo
 variants/raw/arabic_auto/<dictionary_id>.jsonl. A sense with nothing that passes gets no addition.
 
   .venv/bin/python scripts/enrich/arabic_auto.py run [--dictionary ID ...] [--limit N] [--workers 8]
+        [--dry-run] [--votes 1|2] [--min-sim 0.4] [--no-semantic]
+  Pilot first:  run --dictionary 4cd164a7 --limit 30 --dry-run   (then audit pilot-<id>.jsonl)
   .venv/bin/python scripts/enrich/arabic_auto.py status
 """
 from __future__ import annotations
@@ -149,7 +151,25 @@ def _ask(client: QwenClient, system: str, user: str) -> dict:
     return payload if isinstance(payload, dict) else {}
 
 
-def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: QwenClient, judge: QwenClient) -> dict:
+class Semantic:
+    """Optional EmbeddingGemma check: how close a candidate is in meaning to the term + definition."""
+
+    def __init__(self, min_sim: float | None) -> None:
+        from sentence_transformers import SentenceTransformer
+        import torch
+        device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+        self.model = SentenceTransformer("google/embeddinggemma-300m", device=device)
+        self.min_sim = min_sim
+        self.lock = threading.Lock()
+
+    def scores(self, term_text: str, forms: list[str]) -> list[float]:
+        with self.lock:
+            vectors = self.model.encode_document([term_text] + forms, normalize_embeddings=True)
+        return [float(vectors[0] @ v) for v in vectors[1:]]
+
+
+def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: QwenClient, judge: QwenClient,
+            votes: int = 2, semantic: Semantic | None = None) -> dict:
     term = record.get("term_without_diacritics") or record["term"]
     english = record.get("english_term") or ""
     existing = [v["form"] for v in review.get("variants") or []]
@@ -175,7 +195,7 @@ def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: Qwe
         v = proposed[0].get(key) or proposed[1][key]
         form = " ".join(str(v["form"]).split())
         kind = v.get("type") if v.get("type") in ARABIC_TYPES else "informal_synonym"
-        if key not in proposed[0] or key not in proposed[1]:
+        if votes == 2 and (key not in proposed[0] or key not in proposed[1]):
             reject(form, "single_run_only")
         elif _has_latin(form) or not _has_arabic(form):
             reject(form, "not_arabic_script")
@@ -189,11 +209,23 @@ def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: Qwe
             reject(form, "transliteration_mismatch")
         else:
             survivors.append({"form": form, "type": kind,
-                              "confidence": min(str(proposed[0][key].get("confidence", "low")),
-                                                str(proposed[1][key].get("confidence", "low")),
+                              "confidence": min(str(proposed[0].get(key, {}).get("confidence", "low")),
+                                                str(proposed[1].get(key, {}).get("confidence", "low")),
                                                 key=["high", "medium", "low"].index)
-                              if all(str(p[key].get("confidence")) in {"high", "medium", "low"} for p in proposed)
+                              if all(str(p.get(key, {}).get("confidence")) in {"high", "medium", "low"} for p in proposed)
                               else "medium"})
+
+    if survivors and semantic is not None:
+        definition = " ".join((record.get("definition") or "").split())[:300]
+        sims = semantic.scores(f"{term}: {definition}" if definition else term, [s["form"] for s in survivors])
+        passing = []
+        for s, sim in zip(survivors, sims):
+            s["similarity"] = round(sim, 3)
+            if semantic.min_sim is not None and sim < semantic.min_sim:
+                reject(s["form"], f"low_similarity_{sim:.2f}")
+            else:
+                passing.append(s)
+        survivors = passing
 
     kept = []
     if survivors:
@@ -213,8 +245,11 @@ def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: Qwe
                            "ambiguity_note": str(j.get("ambiguity_note") or "") if j.get("ambiguous") else "",
                            "example": str(j.get("example") or "").strip(), "action": "added", "original_form": "",
                            "origin": SOURCE}
+                if "similarity" in s:
+                    variant["similarity"] = s["similarity"]
                 kept.append(variant)
-                audit["candidates"].append({"form": s["form"], "kept": True, "reason": "passed"})
+                audit["candidates"].append({"form": s["form"], "kept": True, "reason": "passed",
+                                            "similarity": s.get("similarity")})
     audit["kept"] = [v["form"] for v in kept]
     return {"audit": audit, "kept": kept}
 
@@ -235,6 +270,9 @@ def cmd_run(args) -> None:
         judge = QwenClient(thinking=False, temperature=0.0, max_tokens=1200)
     except QwenError as error:
         raise SystemExit(str(error))
+    semantic = None if args.no_semantic else Semantic(args.min_sim)
+    print(f"model {gen_a.model}; votes={args.votes}; semantic filter="
+          f"{'off' if semantic is None else ('log only' if args.min_sim is None else f'min {args.min_sim}')}", flush=True)
     AUDIT_DIR.mkdir(parents=True, exist_ok=True)
     lock = threading.Lock()
     dictionaries = [d for d in complete_dictionaries()
@@ -257,7 +295,7 @@ def cmd_run(args) -> None:
 
         def job(item):
             record, review, generation = item
-            return item, process(record, review, name, gen_a, gen_b, judge)
+            return item, process(record, review, name, gen_a, gen_b, judge, args.votes, semantic)
 
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures = [pool.submit(job, item) for item in work]
@@ -275,6 +313,9 @@ def cmd_run(args) -> None:
                             "arabic_pass_model": gen_a.model,
                             "arabic_pass_at": datetime.now(timezone.utc).isoformat()})
                 with lock:
+                    if args.dry_run:  # pilot: audit file only, nothing is marked done or added
+                        append_jsonl(AUDIT_DIR / f"pilot-{dictionary['dictionary_id']}.jsonl", [result["audit"]])
+                        continue
                     append_jsonl(AUDIT_DIR / f"{dictionary['dictionary_id']}.jsonl", [result["audit"]])
                     buffer.append(row)
                     if len(buffer) >= 50:
@@ -286,7 +327,8 @@ def cmd_run(args) -> None:
                     print(f"  {done}/{len(work)}  {stats}", flush=True)
         with lock:
             flush()
-        finalize(complete_dictionaries())
+        if not args.dry_run:
+            finalize(complete_dictionaries())
         print(f"  done {name}: {stats}", flush=True)
 
 
@@ -310,6 +352,13 @@ def main() -> None:
     run.add_argument("--dictionary", action="append")
     run.add_argument("--limit", type=int)
     run.add_argument("--workers", type=int, default=8)
+    run.add_argument("--votes", type=int, choices=[1, 2], default=2,
+                     help="2 = keep only forms both generations propose (strict); 1 = either generation")
+    run.add_argument("--min-sim", type=float, default=None,
+                     help="reject forms whose EmbeddingGemma similarity to the term is below this (default: log only)")
+    run.add_argument("--dry-run", action="store_true",
+                     help="pilot: write the audit to variants/raw/arabic_auto/pilot-<id>.jsonl only, change nothing")
+    run.add_argument("--no-semantic", action="store_true", help="skip the EmbeddingGemma check")
     run.set_defaults(handler=cmd_run)
     commands.add_parser("status").set_defaults(handler=cmd_status)
     args = parser.parse_args()
