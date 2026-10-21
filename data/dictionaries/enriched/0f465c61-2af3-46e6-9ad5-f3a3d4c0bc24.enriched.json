@@ -2,14 +2,14 @@
   "dictionary_id": "0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24",
   "dictionary_name": "معجم المصطلحات القانـونية",
   "source_export": "data/dictionaries/exports/0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24.json",
-  "generated_at": "2026-10-21T14:50:08.459683+00:00",
+  "generated_at": "2026-10-21T16:20:04.491772+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 6107,
     "senses_reviewed": 6107,
     "senses_with_variants": 6104,
-    "variants_accepted": 7518,
-    "variants_needing_review": 6283
+    "variants_accepted": 7529,
+    "variants_needing_review": 6297
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -108703,6 +108703,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "سلوت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -109377,6 +109387,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تايم ستامب",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -111063,6 +111085,19 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تانكي",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "يطلق أيضًا على خزان الماء المنزلي",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -111385,6 +111420,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "غلط",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "none: Qwen reply exceeded max_tokens; Claude review supplies variants",
@@ -111457,6 +111502,18 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "غلط",
+            "type": "informal_synonym",
+            "confidence": "low",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "low_confidence"
             ]
           }
         ],
@@ -113589,6 +113646,19 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "هاكر",
+            "type": "transliteration",
+            "confidence": "low",
+            "ambiguous": true,
+            "ambiguity_note": "يدل على الشخص المخترق لا الفعل",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous",
+              "low_confidence"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -113675,6 +113745,30 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "موتر",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ماطور",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -113759,6 +113853,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "بسكليت",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -115786,6 +115892,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دوا",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "none: Qwen reply exceeded max_tokens; Claude review supplies variants",
@@ -115865,6 +115981,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دوا",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -115944,6 +116070,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دوا",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "none: Qwen reply exceeded max_tokens; Claude review supplies variants",
@@ -117133,6 +117269,30 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "استثمرنا في مشاريع الذكاء الاصطناعي AI.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الذكاء الصناعي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "إيه آي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
@@ -125376,6 +125536,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "كشف درجات",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -125525,6 +125695,16 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تاريخ ائتماني",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -125613,6 +125793,16 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تاريخ ائتماني",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -127703,6 +127893,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "باخرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -129988,6 +130190,16 @@
             "form": "سنبوك",
             "type": "spelling_variant",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سنبوق",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -134218,6 +134430,19 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "المكلف",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "تعني أيضًا من عليه واجب أو تكليف عمومًا",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -134276,6 +134501,19 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "المكلف",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "تعني أيضًا من عليه واجب أو تكليف عمومًا",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "ambiguous"
             ]
           }
         ],
@@ -134415,6 +134653,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "المعاق",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -134483,6 +134731,16 @@
           },
           {
             "form": "الصفة الاعتبارية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الشخصية المعنوية",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -135258,6 +135516,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "الشركات الحكومية",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -135519,6 +135789,18 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الشركة الفرعية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
             ]
           }
         ],
