@@ -2,13 +2,13 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-10-20T11:14:42.782946+00:00",
+  "generated_at": "2026-10-21T06:19:57.414530+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
     "senses_reviewed": 1443,
     "senses_with_variants": 1441,
-    "variants_accepted": 1984,
+    "variants_accepted": 1990,
     "variants_needing_review": 653
   },
   "variant_types": {
@@ -302,6 +302,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تناسق زمني",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -369,6 +379,16 @@
           },
           {
             "form": "اتفاق بين المقيمين",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "توافق المقيمين",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
@@ -543,6 +563,16 @@
               "proposed_for_other_terms",
               "ambiguous"
             ]
+          },
+          {
+            "form": "مكننة",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1542,6 +1572,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "احتمال مشروط",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2180,6 +2220,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "اختبار تورنج",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2621,6 +2671,16 @@
           },
           {
             "form": "العينة الملائمة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "عينة ميسرة",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,

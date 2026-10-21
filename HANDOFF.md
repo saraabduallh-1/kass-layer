@@ -20,6 +20,20 @@ Pipeline (user's order): extract → enrich variants → EmbeddingGemma embeddin
   («المودل تدرب…» put «نموذج» 4th) → extract the candidate word first, then rank only its candidate terms.
   Also: same term repeated across dictionaries; a few weak pass-1 variants (e.g. «have numbers») surfaced.
 
+## Status 2026-10-21: pass 2 runs unattended on the office PC (user away for days)
+Gemma-only judging failed the pilot (accepted «فرصة» for احتمال, rejected good forms), so pass 2 is now
+**Gemma proposes, Claude reviews**: `arabic_auto.py propose` (generations + deterministic filters, no judge, resumable,
+`variants/raw/arabic_auto/proposals/<id>.jsonl`) → `arabic_pass.py show --ready` shows them beside each term →
+Claude writes decisions → `arabic_pass.py apply`. User rule: Arabic-script forms incl. common everyday words
+(عميل for وكيل), only real same-meaning usage, add nothing otherwise.
+`scripts/automation/autopilot.sh` (Task Scheduler "KassLayerAutopilot", every 30 min, via autopilot.vbs) keeps
+propose running (Data & AI → Legal → Contracts → rest), runs a headless Claude review (`review_prompt.md`,
+5×100 senses per run; usage limits just delay to the next run), commits + pushes to `enrichment-pass1`, then:
+all proposals done → decision test `scripts/evaluate/decision_gemma.py` (Gemma yes/no = Jev fallback; user chose
+it, Jev itself is unspecified) → `reports/decision_gemma.md` pushed → `logs/gpu-free.flag`, which the
+arabic-dialect-to-msa autorun waits for → all reviewed → embeddings rebuild → `logs/autopilot.done`.
+Log: `logs/autopilot.log`. Stop: `schtasks /delete /tn KassLayerAutopilot /f`.
+
 ## Next: Arabic enrichment pass 2 (start here on the PC)
 User wants many more Arabic-script variants (مودل، داتا، داشبورد…), precision first: only real, useful forms;
 adding nothing is fine. Tool: `scripts/enrich/arabic_auto.py` — adds on top of current reviews, never deletes.

@@ -13,6 +13,8 @@ variants/raw/arabic_auto/<dictionary_id>.jsonl. A sense with nothing that passes
   .venv/bin/python scripts/enrich/arabic_auto.py run [--dictionary ID ...] [--limit N] [--workers 8]
         [--dry-run] [--votes 1|2] [--min-sim 0.4] [--no-semantic]
   Pilot first:  run --dictionary 4cd164a7 --limit 30 --dry-run   (then audit pilot-<id>.jsonl)
+  .venv/bin/python scripts/enrich/arabic_auto.py propose [--dictionary ID ...] [--limit N] [--workers 4]
+        Generations + filters only, no judge: proposals for the Claude review (arabic_pass.py show). Resumable.
   .venv/bin/python scripts/enrich/arabic_auto.py status
 """
 from __future__ import annotations
@@ -43,11 +45,13 @@ from kass_layer.dictionary.enrichment import (  # noqa: E402
     finalize,
     load_dotenv,
     normalize,
+    read_jsonl,
     review_hash,
 )
 from kass_layer.dictionary.qwen_client import QwenClient, QwenError  # noqa: E402
 
 AUDIT_DIR = OUT_DIR / "raw" / "arabic_auto"
+PROPOSAL_DIR = AUDIT_DIR / "proposals"
 SOURCE = "arabic-auto"
 ARABIC_TYPES = {"transliteration", "informal_synonym", "colloquial", "spelling_variant", "abbreviation"}
 
@@ -57,7 +61,7 @@ GEN_PROMPT = """أنت خبير في اللغة العربية المعاصرة 
 
 الأنواع المقبولة:
 - transliteration: الكلمة الإنجليزية مكتوبة بحروف عربية (مودل، داتا، أوتوميشن، بيغ داتا).
-- informal_synonym: تعبير عربي غير قياسي شائع للمفهوم نفسه (ترجمة حرفية متداولة، مصطلح قديم أو إقليمي).
+- informal_synonym: كلمة أو تعبير عربي شائع يكتبه الناس فعلًا للمفهوم نفسه بدل المصطلح القياسي (مفردة يومية، ترجمة متداولة غير قياسية، مصطلح قديم أو إقليمي).
 - colloquial: صيغة عامية خليجية أو سعودية شائعة.
 - spelling_variant: طريقة إملائية أخرى شائعة للمصطلح نفسه (همزة، تاء مربوطة، فصل أو وصل).
 
@@ -69,6 +73,7 @@ GEN_PROMPT = """أنت خبير في اللغة العربية المعاصرة 
 5. القائمة الفارغة هي الجواب الصحيح لكثير من المصطلحات، خاصة المصطلحات التقنية الطويلة التي لا يعيد أحد صياغتها.
 
 أمثلة:
+- وكيل (agent) ← [{"form": "عميل", "type": "informal_synonym", "confidence": "medium"}]
 - نموذج (model) ← [{"form": "مودل", "type": "transliteration", "confidence": "high"}, {"form": "موديل", "type": "transliteration", "confidence": "high"}]
 - بيانات ضخمة (big data) ← [{"form": "بيغ داتا", "type": "transliteration", "confidence": "high"}, {"form": "البيانات الكبيرة", "type": "informal_synonym", "confidence": "medium"}]
 - مؤشر أداء رئيسي (KPI) ← [{"form": "كي بي آي", "type": "transliteration", "confidence": "medium"}]
@@ -80,7 +85,7 @@ GEN_PROMPT_B = """You list how Arabic writers in Saudi Arabia and the Gulf actua
 
 Give only forms you are sure are in real use with exactly the same meaning:
 - transliteration: the English word in Arabic letters (e.g. model -> مودل, data -> داتا, dashboard -> داشبورد)
-- informal_synonym: a common non-standard Arabic wording for the same concept
+- informal_synonym: a common everyday Arabic word or wording people really use for the same concept (e.g. agent -> عميل)
 - colloquial: a common Gulf/Saudi dialect form
 - spelling_variant: a common alternative spelling of the term
 Never invent, never translate yourself, no broader/narrower concepts, no plurals or added ال, never the term itself or the forms already listed. Most long technical terms have no such forms: answer with an empty list then.
@@ -168,14 +173,13 @@ class Semantic:
         return [float(vectors[0] @ v) for v in vectors[1:]]
 
 
-def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: QwenClient, judge: QwenClient,
-            votes: int = 2, semantic: Semantic | None = None) -> dict:
+def candidates(record: dict, existing: list[str], block: str, gen_a: QwenClient, gen_b: QwenClient,
+               votes: int) -> tuple[list[dict], dict]:
+    """Both generations + the deterministic filters; returns (survivors, audit with the rejections)."""
     term = record.get("term_without_diacritics") or record["term"]
     english = record.get("english_term") or ""
-    existing = [v["form"] for v in review.get("variants") or []]
     taken = {normalize(f) for f in existing} | {article_free_key(f) for f in existing}
     term_keys = {normalize(term), article_free_key(term)}
-    block = _term_block(record, existing, name)
 
     runs = [_ask(gen_a, GEN_PROMPT, block).get("variants") or [], _ask(gen_b, GEN_PROMPT_B, block).get("variants") or []]
     proposed: list[dict[str, dict]] = []
@@ -214,6 +218,18 @@ def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: Qwe
                                                 key=["high", "medium", "low"].index)
                               if all(str(p.get(key, {}).get("confidence")) in {"high", "medium", "low"} for p in proposed)
                               else "medium"})
+    return survivors, audit
+
+
+def process(record: dict, review: dict, name: str, gen_a: QwenClient, gen_b: QwenClient, judge: QwenClient,
+            votes: int = 2, semantic: Semantic | None = None) -> dict:
+    existing = [v["form"] for v in review.get("variants") or []]
+    block = _term_block(record, existing, name)
+    survivors, audit = candidates(record, existing, block, gen_a, gen_b, votes)
+    term = audit["term"]
+
+    def reject(form: str, reason: str) -> None:
+        audit["candidates"].append({"form": form, "kept": False, "reason": reason})
 
     if survivors and semantic is not None:
         definition = " ".join((record.get("definition") or "").split())[:300]
@@ -332,6 +348,58 @@ def cmd_run(args) -> None:
         print(f"  done {name}: {stats}", flush=True)
 
 
+
+def cmd_propose(args) -> None:
+    """Gemma generations + deterministic filters only (no judge): proposals for the Claude review in arabic_pass.py."""
+    load_dotenv()
+    try:
+        gen_a = QwenClient(thinking=False, temperature=0.2, max_tokens=800)
+        gen_b = QwenClient(thinking=False, temperature=0.7, max_tokens=800)
+    except QwenError as error:
+        raise SystemExit(str(error))
+    print(f"model {gen_a.model}; proposals only (votes=1, no judge)", flush=True)
+    PROPOSAL_DIR.mkdir(parents=True, exist_ok=True)
+    lock = threading.Lock()
+    for dictionary in complete_dictionaries():
+        if args.dictionary and not any(dictionary["dictionary_id"].startswith(p) for p in args.dictionary):
+            continue
+        path = PROPOSAL_DIR / f"{dictionary['dictionary_id']}.jsonl"
+        done = {row["sense_id"] for row in read_jsonl(path)} if path.exists() else set()
+        work = [(record, review) for record, review, _ in _pending(dictionary) if record["sense_id"] not in done]
+        if args.limit is not None:
+            work = work[: args.limit]
+        if not work:
+            continue
+        name = dictionary_name(dictionary)
+        print(f"== {name}: {len(work)} senses ({len(done)} already proposed)", flush=True)
+        stats = {"senses": 0, "with_proposals": 0, "proposals": 0, "failed": 0}
+
+        def job(item):
+            record, review = item
+            existing = [v["form"] for v in review.get("variants") or []]
+            return candidates(record, existing, _term_block(record, existing, name), gen_a, gen_b, votes=1)
+
+        with ThreadPoolExecutor(max_workers=args.workers) as pool:
+            futures = [pool.submit(job, item) for item in work]
+            for count, future in enumerate(as_completed(futures), start=1):
+                try:
+                    survivors, audit = future.result()
+                except (QwenError, json.JSONDecodeError, KeyError, TypeError, ValueError) as error:
+                    stats["failed"] += 1
+                    print(f"  failed: {str(error)[:120]}", flush=True)
+                    continue
+                row = {"sense_id": audit["sense_id"], "term": audit["term"], "model": gen_a.model,
+                       "proposals": survivors, "rejected": audit["candidates"]}
+                with lock:
+                    append_jsonl(path, [row])
+                stats["senses"] += 1
+                stats["with_proposals"] += bool(survivors)
+                stats["proposals"] += len(survivors)
+                if count % 100 == 0 or count == len(work):
+                    print(f"  {count}/{len(work)}  {stats}", flush=True)
+        print(f"  done {name}: {stats}", flush=True)
+
+
 def cmd_status(args) -> None:
     total_done = total = 0
     for dictionary in complete_dictionaries():
@@ -360,6 +428,11 @@ def main() -> None:
                      help="pilot: write the audit to variants/raw/arabic_auto/pilot-<id>.jsonl only, change nothing")
     run.add_argument("--no-semantic", action="store_true", help="skip the EmbeddingGemma check")
     run.set_defaults(handler=cmd_run)
+    propose = commands.add_parser("propose")
+    propose.add_argument("--dictionary", action="append")
+    propose.add_argument("--limit", type=int)
+    propose.add_argument("--workers", type=int, default=4)
+    propose.set_defaults(handler=cmd_propose)
     commands.add_parser("status").set_defaults(handler=cmd_status)
     args = parser.parse_args()
     args.handler(args)

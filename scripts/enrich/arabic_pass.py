@@ -1,11 +1,14 @@
 """Second enrichment pass: add Arabic-script variants on top of each sense's current Claude review.
 
   .venv/bin/python scripts/enrich/arabic_pass.py show <dictionary_id> [--limit 300] [--width 0]
-      Prints the next senses not yet covered by the Arabic pass: term | english | current variants.
+      Prints the next senses not yet covered by the Arabic pass: term | english | current variants
+      [|| gemma: proposals from `arabic_auto.py propose`, when present].
   .venv/bin/python scripts/enrich/arabic_pass.py apply <dictionary_id> <decisions.txt>
       Same line syntax as session_review.py (<n> TAB form|type|conf ; ... or <n> TAB -).
       The new forms are merged into the current review (existing variants are kept) and the
       sense is marked as covered by the Arabic pass, then everything is finalized.
+  .venv/bin/python scripts/enrich/arabic_pass.py ready
+      Per dictionary: <ready for review> TAB <pending> TAB <id prefix>  (used by scripts/automation/autopilot.sh).
   .venv/bin/python scripts/enrich/arabic_pass.py status
       Senses covered by the Arabic pass per dictionary.
 """
@@ -35,6 +38,7 @@ from kass_layer.dictionary.enrichment import (  # noqa: E402
 from session_review import REVIEWER, parse_decision  # noqa: E402
 
 SELECTION_DIR = OUT_DIR / "session"
+PROPOSAL_DIR = OUT_DIR / "raw" / "arabic_auto" / "proposals"  # Gemma proposals from arabic_auto.py propose
 SOURCE_PREFIX = "arabic-pass"
 
 
@@ -57,9 +61,24 @@ def _pending(dictionary: dict) -> list[tuple[dict, dict]]:
             and not str(reviews[record["sense_id"]].get("source", "")).startswith(SOURCE_PREFIX)]
 
 
+def _proposals(dictionary: dict) -> dict[str, list[dict]]:
+    path = PROPOSAL_DIR / f"{dictionary['dictionary_id']}.jsonl"
+    proposals = {}
+    for line in path.read_text(encoding="utf-8").splitlines() if path.exists() else []:
+        try:  # `propose` may be appending while we read: skip a half-written last line
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        proposals[row["sense_id"]] = row["proposals"]
+    return proposals
+
+
 def cmd_show(args) -> None:
     dictionary = _dictionary(args.dictionary)
     pending = _pending(dictionary)
+    proposals = _proposals(dictionary)
+    if args.ready:
+        pending = [(record, review) for record, review in pending if record["sense_id"] in proposals]
     pairs = pending[: args.limit]
     write_json(SELECTION_DIR / f"arabic-{dictionary['dictionary_id']}.json", [r["sense_id"] for r, _ in pairs])
     print(f"# {dictionary['dictionary_name'].strip()} — {len(pending)} pending, showing {len(pairs)}")
@@ -67,8 +86,10 @@ def cmd_show(args) -> None:
         current = " ; ".join(v["form"] for v in review.get("variants") or []) or "-"
         definition = " ".join((record.get("definition") or "").split())[: args.width]
         tail = f" | {definition}" if args.width else ""
+        gemma = proposals.get(record["sense_id"])
+        gemma_tail = "" if gemma is None else " || gemma: " + (" ; ".join(p["form"] for p in gemma) or "-")
         print(f"{n}\t{record.get('term_without_diacritics') or record['term']} | {record.get('english_term') or ''}"
-              f"{tail} || {current}")
+              f"{tail} || {current}{gemma_tail}")
 
 
 def cmd_apply(args) -> None:
@@ -106,6 +127,15 @@ def cmd_status(args) -> None:
         print(f"{done:>6}/{len(dictionary['records']):<6} {dictionary['dictionary_id'][:8]}  {dictionary['dictionary_name'].strip()}")
 
 
+def cmd_ready(args) -> None:
+    """Per dictionary: senses pending the Arabic pass whose Gemma proposals exist (ready for review)."""
+    for dictionary in complete_dictionaries():
+        proposals = _proposals(dictionary)
+        pending = _pending(dictionary)
+        ready = sum(record["sense_id"] in proposals for record, _ in pending)
+        print(f"{ready}\t{len(pending)}\t{dictionary['dictionary_id'][:8]}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -113,7 +143,9 @@ def main() -> None:
     show.add_argument("dictionary")
     show.add_argument("--limit", type=int, default=300)
     show.add_argument("--width", type=int, default=0)
+    show.add_argument("--ready", action="store_true", help="only senses that already have Gemma proposals")
     show.set_defaults(handler=cmd_show)
+    commands.add_parser("ready").set_defaults(handler=cmd_ready)
     apply = commands.add_parser("apply")
     apply.add_argument("dictionary")
     apply.add_argument("decisions")
