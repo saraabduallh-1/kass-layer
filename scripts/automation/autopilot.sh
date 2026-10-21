@@ -34,7 +34,8 @@ if ! mkdir "$LOCK" 2>/dev/null; then
     rm -rf "$LOCK" && mkdir "$LOCK" || exit 1
 fi
 trap 'rm -rf "$LOCK"' EXIT
-[ -f logs/autopilot.done ] && exit 0
+[ -f logs/autopilot.done ] && { bash scripts/automation/dialect_watch.sh; exit 0; }
+
 
 push() {
     git add -A data/dictionaries scripts reports HANDOFF.md
@@ -149,6 +150,7 @@ fi
 
 # 4. publish
 push
+bash scripts/automation/dialect_watch.sh
 
 # 6. finished?
 if [ "$PENDING" -eq 0 ] && [ -f logs/gpu-free.flag ]; then

@@ -27,8 +27,10 @@ Gemma-only judging failed the pilot (accepted «فرصة» for احتمال, rej
 Claude writes decisions → `arabic_pass.py apply`. User rule: Arabic-script forms incl. common everyday words
 (عميل for وكيل), only real same-meaning usage, add nothing otherwise.
 `scripts/automation/autopilot.sh` (Task Scheduler "KassLayerAutopilot", every 30 min, via autopilot.vbs) keeps
-propose running (Data & AI → Legal → Contracts → rest), runs a headless Claude review (`review_prompt.md`,
-5×100 senses per run; usage limits just delay to the next run), commits + pushes to `enrichment-pass1`, then:
+propose running (Data & AI → Legal → Contracts → rest), and at most every 90 min runs the Claude review as one
+tool-less `claude -p` call per batch (`review_system.md`, 5×100 senses; ~1 min per batch). A limit pauses the review
+until the next slot; a WEEKLY limit stops it for good (`logs/review-stopped.flag`, delete to resume — user's wish:
+keep Claude usage low). Commits + pushes to `enrichment-pass1`, then:
 all proposals done → decision test `scripts/evaluate/decision_gemma.py` (Gemma yes/no = Jev fallback; user chose
 it, Jev itself is unspecified) → `reports/decision_gemma.md` pushed → `logs/gpu-free.flag`, which the
 arabic-dialect-to-msa autorun waits for → all reviewed → embeddings rebuild → `logs/autopilot.done`.
