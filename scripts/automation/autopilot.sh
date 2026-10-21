@@ -105,7 +105,7 @@ review_batch() {  # $1 = dictionary prefix; returns 1 to stop reviewing in this 
     [ "$n" -gt 0 ] || return 1
     out="$(echo "$list" | timeout 30m "$CLAUDE" -p --model claude-opus-5-5 --system-prompt "$(cat scripts/automation/review_system.md)" \
         --tools "" --strict-mcp-config --disable-slash-commands --no-session-persistence --output-format json 2>&1)"
-    echo "$out" | tail -c 3000 > logs/claude-last.json
+    echo "$out" > logs/claude-last.json
     result="$(echo "$out" | $PY -c "import json, sys
 try:
     d = json.loads(sys.stdin.read())
