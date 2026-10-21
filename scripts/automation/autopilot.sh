@@ -4,7 +4,8 @@
 # only delays the work until the next run after the limit resets.
 #   1. keep Ollama up
 #   2. keep one Gemma `propose` running, dictionary by dictionary (priority: Data & AI, Legal, Contracts, rest)
-#   3. when proposals are ready, run a headless Claude review (scripts/automation/review_prompt.md)
+#   3. when proposals are ready, at most every REVIEW_EVERY minutes: Claude review, one tool-less call per
+#      batch (scripts/automation/review_system.md); a weekly limit stops the review (logs/review-stopped.flag)
 #   4. commit and push everything to origin/enrichment-pass1
 #   5. once every Gemma proposal exists: run the decision test (scripts/evaluate/decision_gemma.py, the Jev
 #      fallback), push its report, and write logs/gpu-free.flag — the arabic-dialect-to-msa autorun waits for
@@ -20,6 +21,7 @@ LOG=logs/autopilot.log
 PY=.venv/Scripts/python
 BRANCH=enrichment-pass1
 BATCHES=${BATCHES:-5}
+REVIEW_EVERY=90  # minutes between Claude reviews
 PRIORITY="4cd164a7 0f465c61 89af196b"
 OLLAMA="$(cygpath "$LOCALAPPDATA")/Programs/Ollama/ollama.exe"
 
@@ -93,24 +95,55 @@ if [ "$MISSING" -eq 0 ] && [ ! -f logs/gpu-free.flag ] && ! propose_running; the
     fi
 fi
 
-# 3. Claude review of ready proposals
-if [ "$READY" -gt 0 ]; then
+# 3. Claude review of ready proposals: at most once per REVIEW_EVERY minutes, one small tool-less call per batch
+#    (the list goes in on stdin, only decision lines come back). A weekly-limit answer stops the review for good
+#    (logs/review-stopped.flag); any other limit just ends this run's review.
+review_batch() {  # $1 = dictionary prefix; returns 1 to stop reviewing in this run
+    local p=$1 list n out file result
+    list="$($PY scripts/enrich/arabic_pass.py show "$p" --ready --limit 100 --width 120 2>> "$LOG")" || return 1
+    n=$(($(echo "$list" | wc -l) - 1))
+    [ "$n" -gt 0 ] || return 1
+    out="$(echo "$list" | timeout 30m "$CLAUDE" -p --model claude-opus-5-5 --system-prompt "$(cat scripts/automation/review_system.md)" \
+        --tools "" --strict-mcp-config --disable-slash-commands --no-session-persistence --output-format json 2>&1)"
+    echo "$out" | tail -c 3000 > logs/claude-last.json
+    result="$(echo "$out" | $PY -c "import json, sys
+try:
+    d = json.loads(sys.stdin.read())
+except ValueError:
+    print('ERROR'); sys.exit()
+print('ERROR' if d.get('is_error') else 'OK'); print(d.get('result') or '')")"
+    if [ "$(echo "$result" | head -1)" != OK ]; then
+        if echo "$out" | grep -qi 'weekly'; then
+            date '+%F %T' > logs/review-stopped.flag
+            log "claude WEEKLY limit reached: review stopped for good (delete logs/review-stopped.flag to resume)"
+        else
+            log "claude limit/error, review paused until the next review slot: $(echo "$out" | tail -c 300 | tr '\n' ' ')"
+        fi
+        return 1
+    fi
+    file="logs/decisions/$p-$(date '+%Y%m%d-%H%M%S').txt"
+    echo "$result" | tail -n +2 | tr -d '\r' | grep -E $'^[0-9]+\t' \
+        | awk -F'\t' -v n="$n" '$1 >= 1 && $1 <= n && !seen[$1]++' > "$file"
+    if ! $PY scripts/enrich/arabic_pass.py apply "$p" "$file" >> "$LOG" 2>&1; then
+        log "apply failed for $file (its terms stay pending)"
+        return 1
+    fi
+    log "reviewed $p: $(wc -l < "$file")/$n lines, $(grep -vc $'\t-$' "$file") with additions"
+}
+if [ "$READY" -gt 0 ] && [ ! -f logs/review-stopped.flag ] \
+        && { [ ! -f logs/last-review ] || [ -n "$(find logs/last-review -mmin +$((REVIEW_EVERY - 1)))" ]; }; then
     CLAUDE="$(ls -d "$HOME"/.vscode/extensions/anthropic.claude-code-*-win32-x64/resources/native-binary/claude.exe \
         2>/dev/null | sort -V | tail -1)"
     if [ -z "$CLAUDE" ]; then
         log "claude.exe not found"
     else
-        PROMPT="$(sed "s/{BATCHES}/$BATCHES/" scripts/automation/review_prompt.md)"
-        OUT="$(timeout 4h "$CLAUDE" -p "$PROMPT" --model claude-opus-5-5 --permission-mode acceptEdits \
-            --allowedTools "Bash(.venv/Scripts/python scripts/enrich/arabic_pass.py:*)" "Read" "Write" "Edit" \
-            --output-format json 2>&1)"
-        CODE=$?
-        echo "$OUT" | tail -c 2000 > logs/claude-last.json
-        if echo "$OUT" | grep -qiE 'usage limit|limit reached|hit your limit|rate.?limit|overloaded'; then
-            log "claude limit/overload (exit $CODE); retrying next run"
-        else
-            log "claude review finished (exit $CODE): $(echo "$OUT" | grep -o '"result":"[^"]*' | head -c 300)"
-        fi
+        touch logs/last-review
+        for _ in $(seq "$BATCHES"); do
+            STATE="$($PY scripts/enrich/arabic_pass.py ready 2>> "$LOG")" || break
+            NEXT=""
+            for p in $(ordered); do [ "$(field "$p" 1)" -gt 0 ] && { NEXT=$p; break; }; done
+            [ -n "$NEXT" ] && review_batch "$NEXT" || break
+        done
     fi
 fi
 
