@@ -1987,3 +1987,820 @@
 {"sense_id":"d23ba680-348d-4206-b047-d898d6a1d187:0","term":"مسافة تجنب الدوي","model":"gemma3:12b","proposals":[{"form":"مسافة تخفيف الدوي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
 {"sense_id":"d263c6ad-e087-49cf-a364-01d12919b55d:0","term":"مقعد الحلاق","model":"gemma3:12b","proposals":[],"rejected":[]}
 {"sense_id":"d2d85b75-4dec-4f7e-b788-99ef73dfd716:0","term":"شحن كتلي","model":"gemma3:12b","proposals":[{"form":"شحنة جماعية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d2f106a4-435a-48fc-84e1-f81159473e29:0","term":"جذع الريشة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"جذر الريشة","kept":false,"reason":"already_present"}]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:0","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"شفرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:1","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"شُرفَة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:2","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"شفرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:3","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"ريش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:4","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"ريش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:5","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"ريش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:6","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"رداد","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"ريشة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:7","term":"ريشة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ريشة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:8","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"ريشة توجيه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:9","term":"ريشة","model":"gemma3:12b","proposals":[{"form":"مِرْوَحَة","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"ريشة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d30495ae-48d9-4c1c-8028-82fa9a085ecd:10","term":"ريشة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ريشة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d3c10b11-ea2b-4b1a-8ca6-deccb8a776aa:0","term":"مسجل مصور","model":"gemma3:12b","proposals":[{"form":"جهاز تصوير","type":"informal_synonym","confidence":"medium"},{"form":"كاميرا ريكوردر","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d41ccf5e-34cf-45a2-92d7-130865a3f4c2:0","term":"محرك ذو إمرار جانبي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"d44e64ff-e341-4e3b-a78b-019d2c0f2b59:0","term":"تحويلة","model":"gemma3:12b","proposals":[{"form":"طريج ثانوي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d44e64ff-e341-4e3b-a78b-019d2c0f2b59:1","term":"تحويلة","model":"gemma3:12b","proposals":[{"form":"طريق بديل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d45eadaf-3b30-4643-81c3-5ec4bf64d89f:0","term":"قارب طائر","model":"gemma3:12b","proposals":[{"form":"طائرة بحرية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d5a4f07b-7050-43a6-aaea-4572a5b6eb3f:0","term":"إنشاء كتلي","model":"gemma3:12b","proposals":[{"form":"تجميع مكعب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d5e5379d-43eb-46ee-b764-fddb54640207:0","term":"غلاية","model":"gemma3:12b","proposals":[{"form":"غلاية بخار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d5e5379d-43eb-46ee-b764-fddb54640207:1","term":"غلاية","model":"gemma3:12b","proposals":[{"form":"عنفة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d68d167b-9ec1-4ef4-a5e4-2bf79e38bb8c:0","term":"معدن بابيت","model":"gemma3:12b","proposals":[{"form":"بابيت","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d68d6ea2-6905-4e01-9104-4cdbbba2325b:0","term":"مدخل الهواء","model":"gemma3:12b","proposals":[{"form":"باب شفط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d72f2d35-a9ec-4fac-a028-bc79d6c59bc0:0","term":"شمعة احتراق","model":"gemma3:12b","proposals":[{"form":"شمعة الإشعال","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d7a93326-4344-4243-848c-5879f20ef40c:0","term":"باروسفير","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"d7bbf09d-6642-4834-9d10-313ad186ad80:0","term":"مفتاح أزرق","model":"gemma3:12b","proposals":[{"form":"بلو كي","type":"transliteration","confidence":"medium"}],"rejected":[{"form":"مفتاح أزرق","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d80f6555-6b35-45a5-acd7-dbaae2138db3:0","term":"ثقالة","model":"gemma3:12b","proposals":[{"form":"أثقال","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d80f6555-6b35-45a5-acd7-dbaae2138db3:1","term":"ثقالة","model":"gemma3:12b","proposals":[{"form":"أوزان","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d84a1f03-895f-4826-ad75-e83a5d934766:0","term":"تبرقع","model":"gemma3:12b","proposals":[{"form":"تلوّن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d84c9eec-e8df-4e6f-889b-8e1477761086:0","term":"محفظة لاسائلية","model":"gemma3:12b","proposals":[{"form":"مُخْطَفَة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d8a97f15-2040-4dec-a29c-eaa6effc3eb0:0","term":"انفجار","model":"gemma3:12b","proposals":[{"form":"انتفاخ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"d953ee81-4447-480d-8500-411a7b580ab8:0","term":"بطارية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"بطارية","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"d95d55c6-2ff4-4e19-85a3-1b517457cfea:0","term":"مرشح تمرير نطاقي","model":"gemma3:12b","proposals":[{"form":"فلتر نطاقي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"da0eb354-d2fb-4271-9702-80204807beaf:0","term":"خلل","model":"gemma3:12b","proposals":[{"form":"خَلَّة","type":"spelling_variant","confidence":"medium"},{"form":"عطل","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"خلل","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"da119cb7-a24b-46d5-96ae-a31022f95b53:0","term":"كبح القاعدة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كبح القاعدة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"da4c1578-d30c-4f30-8b9b-894cbb903a6e:0","term":"موجه الصورة على الشاشة","model":"gemma3:12b","proposals":[{"form":"راسم العلامات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"da58b1bb-2478-4585-a694-b37173020a7d:0","term":"شريحة التكسير","model":"gemma3:12b","proposals":[{"form":"شريط التكسير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dab23429-6655-4983-b7ce-fe659f0c31a1:0","term":"طائرة أحادية ـ ثنائية الجناح","model":"gemma3:12b","proposals":[{"form":"طائرة أحادية وجناح ثاني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dad85750-b161-4e89-a360-ce0176fd2b25:0","term":"صلادة برنل","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"db095f4c-0b70-4ae3-854a-a4b6e816c799:0","term":"مقياس بوفور","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مقياس بوفور","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"db33a5ec-3e07-4af9-818e-40a2fd20098e:0","term":"لزار","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"db363fcb-0045-4195-9374-01b87380366a:0","term":"انضمام","model":"gemma3:12b","proposals":[{"form":"تكتُّل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"db5e99d5-cbb0-4e9b-a32c-5add24fd22e5:0","term":"نفاخة","model":"gemma3:12b","proposals":[{"form":"نفخة","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dbbaf1b4-25d0-4ac9-87f4-c2534289a0b4:0","term":"عيب","model":"gemma3:12b","proposals":[{"form":"زلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dbc1fd73-e90e-47a6-a8cf-9e5c3d700596:0","term":"ذخيرة خلبية","model":"gemma3:12b","proposals":[{"form":"طلقات وهمية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dbc80bc9-8d00-459a-a9cf-0434b59e7f51:0","term":"مخزون قضيبي","model":"gemma3:12b","proposals":[{"form":"قضبان","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dc27621d-cdea-4118-b03c-5fac0b8bb200:0","term":"قانون بايز ـ بالو","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dc4bc246-da49-4af5-9ad8-cdc642616398:0","term":"مدى الدوي","model":"gemma3:12b","proposals":[{"form":"مدى رمي الموجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dc8700d8-e8f1-4fd8-95e2-f0640bf71922:0","term":"سد الرذاذ المتبثر","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dca5778c-e442-474c-a98f-dc70879330b8:0","term":"دوامة مقيدة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dca5778c-e442-474c-a98f-dc70879330b8:1","term":"دوامة مقيدة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dcc1e731-1edb-4d31-8d56-6a1fb232be7f:0","term":"مراجعة نضدية","model":"gemma3:12b","proposals":[{"form":"فحص أرضي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd018abe-c880-41fa-8682-f84a8c38a079:0","term":"خزان البارجة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dd08d5a6-bf3a-4c8d-a31c-2e962994c576:0","term":"نقطة التعادل","model":"gemma3:12b","proposals":[{"form":"نقطة التوازن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd08d5a6-bf3a-4c8d-a31c-2e962994c576:1","term":"نقطة التعادل","model":"gemma3:12b","proposals":[{"form":"نقطة الصفر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd2d0a18-90b7-41d9-95a8-ce05298fc20a:0","term":"ميل جانبي","model":"gemma3:12b","proposals":[{"form":"انحراف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd43d374-3a79-4e24-bb99-92ee6c1178fc:0","term":"وزن تشغيل أساس","model":"gemma3:12b","proposals":[{"form":"وزن التشغيل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd58770f-5b16-45f0-8221-6fcba08d8498:0","term":"جناح محدب","model":"gemma3:12b","proposals":[{"form":"جناح مقوس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dd913941-169e-4961-b8aa-e5631e36f465:0","term":"كرة سوداء","model":"gemma3:12b","proposals":[{"form":"كرة الأفق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ddd5f428-0e81-4787-966a-6be4b3a18767:0","term":"مسنن بيير","model":"gemma3:12b","proposals":[{"form":"بيير","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"de7f9b90-8112-4086-a058-6f004ed8e60c:0","term":"إمرار جانبي","model":"gemma3:12b","proposals":[{"form":"تجاوز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"df17b4fe-aa55-4384-bce2-c6fae5a68bd3:0","term":"حجرة الركاب","model":"gemma3:12b","proposals":[{"form":"مقصورة الركاب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"df8ecec1-d9e9-4815-9b28-ed73f0ced326:0","term":"يودع","model":"gemma3:12b","proposals":[],"rejected":[{"form":"إعارة","kept":false,"reason":"already_present"}]}
+{"sense_id":"df8ecec1-d9e9-4815-9b28-ed73f0ced326:1","term":"يودع","model":"gemma3:12b","proposals":[{"form":"إعارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"df92a04c-93c0-4ffd-9e27-79f5f2c57f6a:0","term":"صامد للقنابل","model":"gemma3:12b","proposals":[{"form":"واقي من القنابل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dfa8a3f0-52c3-429f-b85a-605eb7ffcbf1:0","term":"مشرف الدفيف","model":"gemma3:12b","proposals":[{"form":"نقطة بداية الدفيف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dfc5592e-ed20-4cc3-bdb8-30a9a3af61a6:0","term":"جانبي","model":"gemma3:12b","proposals":[{"form":"جناب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"dff2b2e5-dccf-4052-aab7-e391a42b0c87:0","term":"محور باع الريشة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"dff2b2e5-dccf-4052-aab7-e391a42b0c87:1","term":"محور باع الريشة","model":"gemma3:12b","proposals":[{"form":"محور طول الريشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e01b47ee-719b-4c5f-af04-c1e53bae0703:0","term":"حط معمى","model":"gemma3:12b","proposals":[{"form":"هبوط أعمى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e0215a53-e43f-44ed-a117-93c5afb11e9a:0","term":"هزاز الموجة المرتدة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e02f13a6-0e6e-4a6b-8c77-c40a02f387ba:0","term":"حمولة القنابل","model":"gemma3:12b","proposals":[{"form":"حملة قنابل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e02f13a6-0e6e-4a6b-8c77-c40a02f387ba:1","term":"حمولة القنابل","model":"gemma3:12b","proposals":[{"form":"حِمل السلاح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e032f9c1-9e3a-47c7-a09b-6acbe9baa8a8:0","term":"نطاق الخطأ","model":"gemma3:12b","proposals":[{"form":"هامش الخطأ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e092b484-aa83-44c1-91ee-40b17dcb2787:0","term":"تردد الحجب","model":"gemma3:12b","proposals":[{"form":"تردد الإعاقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e0b99f59-c17c-4ddd-8c79-9565c2edbfdc:0","term":"نسبة عرض الريشة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e0d68d9e-54cd-45ab-922f-b7b57316876c:0","term":"ثنيات","model":"gemma3:12b","proposals":[{"form":"مرض الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e0f8a095-ea6d-4ef6-8019-363ee3eb7419:0","term":"مبين العطوف والانعطاف","model":"gemma3:12b","proposals":[{"form":"مؤشر الميل والالتفاف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e1a155f1-e830-493d-856c-26f63e335e4d:0","term":"سطيح موازنة","model":"gemma3:12b","proposals":[{"form":"سطاح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e1b546af-baf1-4538-8ea5-34c566f07a6a:0","term":"دعم","model":"gemma3:12b","proposals":[{"form":"بديل","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"e1b546af-baf1-4538-8ea5-34c566f07a6a:1","term":"دعم","model":"gemma3:12b","proposals":[{"form":"إحتياط","type":"informal_synonym","confidence":"high"},{"form":"احتياطي","type":"spelling_variant","confidence":"high"},{"form":"بديل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e1b546af-baf1-4538-8ea5-34c566f07a6a:2","term":"دعم","model":"gemma3:12b","proposals":[{"form":"احتياط","type":"informal_synonym","confidence":"medium"},{"form":"بديل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e1b546af-baf1-4538-8ea5-34c566f07a6a:3","term":"دعم","model":"gemma3:12b","proposals":[{"form":"احتياط","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"دعم احتياطي","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"e1b99b9d-bee6-4a2f-9ef4-3a9da07a50b8:0","term":"ظلة إشارة العين","model":"gemma3:12b","proposals":[{"form":"غطاء عين","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e1d5ba40-148c-461d-8026-b44da2814ca9:0","term":"صبير","model":"gemma3:12b","proposals":[{"form":"سحابة راية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e202b0c9-6b28-4167-bec8-1717c6662a02:0","term":"ردفان","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e26ee7a6-05ac-4322-b8d3-87d1c32bb18b:0","term":"كبسولة قذفية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كبسولة باليستية","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"e2c5f75a-ba5a-461c-919b-3aab8539e310:0","term":"بنزول","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e307e243-0e7d-4c2f-8bf6-d32ec723cfe9:0","term":"مكبح","model":"gemma3:12b","proposals":[],"rejected":[{"form":"بريك","kept":false,"reason":"already_present"}]}
+{"sense_id":"e395fa54-4bd0-4f30-b0ee-903a22fa1186:0","term":"عتبة الدروجة","model":"gemma3:12b","proposals":[{"form":"حامل الدروجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e3c470c8-a572-4719-82ae-79db3f7963c4:0","term":"شريحة ثنائية المعدن","model":"gemma3:12b","proposals":[{"form":"شريط ثنائي المعدن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e3d21617-a0d5-40fd-8c0d-fbeecd200506:0","term":"مخطط كتلي","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مخطط بلوك","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"e3e849be-d848-40a4-ae4f-de899f48b788:0","term":"اجتراف الريشة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e3f00cd5-a1ab-44da-8b3c-fe652128eb9d:0","term":"ربط","model":"gemma3:12b","proposals":[{"form":"تثبيت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e3f00cd5-a1ab-44da-8b3c-fe652128eb9d:1","term":"ربط","model":"gemma3:12b","proposals":[{"form":"تثبيت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e4c3aa1c-cb30-421c-a9f0-32961b2711d8:0","term":"مغلاق","model":"gemma3:12b","proposals":[{"form":"خلفية المدفع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e4d6d8d0-b7a6-4dd3-8a0f-5ea90476b734:0","term":"دورية برجية","model":"gemma3:12b","proposals":[{"form":"دورية انتظار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e53157f9-479b-4fae-88a6-4992b67d8b95:0","term":"إحباط الحط","model":"gemma3:12b","proposals":[{"form":"إلغاء الهبوط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e55f13e7-2b83-47a4-8640-3b07cd2252c3:0","term":"طيار الأدغال","model":"gemma3:12b","proposals":[{"form":"طيار المنطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e59b7b77-3f03-4a0d-8e6c-838981b46f87:0","term":"منطاد غير جاسئ","model":"gemma3:12b","proposals":[{"form":"بلِمب","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e5b52b26-8f20-4e04-a0a4-cd1b2daa420d:0","term":"تحميل الريشة","model":"gemma3:12b","proposals":[{"form":"وزن الشفرات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e643f411-70a5-49a9-a014-5066253263c4:0","term":"انكشاف","model":"gemma3:12b","proposals":[{"form":"نقطة الخروج","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e65b6c1c-ca12-4299-b9b0-50fab4886970:0","term":"طائرة بوسمان مزدوجة الأجنحة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e6669b47-4b1d-4dc1-b02c-9177b3168402:0","term":"يزيد الحجم","model":"gemma3:12b","proposals":[{"form":"يملّي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e67d3a15-32b9-40e2-92ed-555311ef8c9a:0","term":"منصب القنابل","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حامل القنابل","kept":false,"reason":"already_present"}]}
+{"sense_id":"e6828f3b-447e-4fd6-a85c-a1cbf7ae2226:0","term":"مصورة قذائف","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كاميرا باليستية","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"e695f95f-6745-4a23-ba3f-09d24c5c560c:0","term":"استقبال الضربان","model":"gemma3:12b","proposals":[],"rejected":[{"form":"استقبال الهتروداين","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"e6e4b2bf-cdbe-41ab-a387-f20038dc90b5:0","term":"استكشاف نهوض","model":"gemma3:12b","proposals":[{"form":"استكشاف أولي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e6eb4bfe-53d6-40cb-9d46-981f8558dd2d:0","term":"ارتطام الطائر","model":"gemma3:12b","proposals":[{"form":"اصطدام عصفور","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e6ec1cb1-5ee4-4f0c-9746-073aaf5117ea:0","term":"كمون الانهيار","model":"gemma3:12b","proposals":[{"form":"جهد التحمل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e7092396-bc7f-4fd7-a185-6348232ce847:0","term":"توازن","model":"gemma3:12b","proposals":[],"rejected":[{"form":"توازن","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"e72c1aa2-1fff-4e06-8d18-fc5e504410e7:0","term":"ترميز بو","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ترميز بو","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"e770aa95-e63f-4a0b-bb36-8650707d4781:0","term":"ضوء كالفرت","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e7c2c1b5-4ceb-4a22-80fc-35fb7ad316ba:0","term":"علامة الحدود","model":"gemma3:12b","proposals":[{"form":"علامات تحديد","type":"informal_synonym","confidence":"medium"},{"form":"علامات حدود","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"علامة حدود","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"e7c2c1b5-4ceb-4a22-80fc-35fb7ad316ba:1","term":"علامة الحدود","model":"gemma3:12b","proposals":[{"form":"علامة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e802ec99-0f0c-4e94-9203-2a8cc0c4a962:0","term":"منبه","model":"gemma3:12b","proposals":[{"form":"بِيْب","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e816335e-cb5a-41b6-9058-f007b621c030:0","term":"فتيل الضغط الجوي","model":"gemma3:12b","proposals":[{"form":"فتيل الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e82744f5-7742-4fc2-b576-46d6ad1731a6:0","term":"مضخة معززة","model":"gemma3:12b","proposals":[{"form":"مضخة دفع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e82744f5-7742-4fc2-b576-46d6ad1731a6:1","term":"مضخة معززة","model":"gemma3:12b","proposals":[{"form":"مضخة رفع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e875e834-5a60-4632-b00e-ed61aa20666c:0","term":"ثنائي السمع","model":"gemma3:12b","proposals":[{"form":"استريو","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e87bb06b-ee4d-48ab-9128-9d31536beb1c:0","term":"هيكل بانجوي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"e8c7c29a-4cb1-4f4c-b8de-2678c552b700:0","term":"تحدب","model":"gemma3:12b","proposals":[{"form":"كرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e8f2f0b2-25bc-449f-9c04-e26ca28c93d7:0","term":"طائرة مزدوجة الأجنحة","model":"gemma3:12b","proposals":[{"form":"طائرة بأجنحة مزدوجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e9293d81-2393-4f3d-af09-95a9ee8e0a74:0","term":"حاجز نيران","model":"gemma3:12b","proposals":[{"form":"وابل نيران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e95c8a3c-525e-4505-804b-2c30222a8fcf:0","term":"هدف علمي","model":"gemma3:12b","proposals":[{"form":"هدف مسحوب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e9a7ecd8-da51-462c-a28d-5a51b12992b6:0","term":"نموذج ملاحي مفرود","model":"gemma3:12b","proposals":[{"form":"برَاسبورد","type":"transliteration","confidence":"medium"},{"form":"بروتوتايب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e9e38443-2cd8-4f0f-b32c-978f7de8faa0:0","term":"دعامة","model":"gemma3:12b","proposals":[{"form":"ذيل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"e9ed477a-a01a-4fd6-b474-2b57e27b36f4:0","term":"رافعة القنابل","model":"gemma3:12b","proposals":[],"rejected":[{"form":"رافعة القنابل","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"ea020f8f-4f1e-4435-b881-bc406b805e59:0","term":"نداء الرقم","model":"gemma3:12b","proposals":[{"form":"رقم استدعاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ea2df5c7-d3fa-4ab0-a4b7-96d7c358c899:0","term":"أداة تشكيل","model":"gemma3:12b","proposals":[{"form":"بلاك جاك","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ea3a854f-b6e2-4b02-8b91-3ecabb07b07e:0","term":"يسف في الطيران","model":"gemma3:12b","proposals":[{"form":"طيران منخفض","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ea56992a-b231-4290-8eda-742fd851a8fe:0","term":"قاطع الأسلاك","model":"gemma3:12b","proposals":[],"rejected":[{"form":"قاطع أسلاك","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"ea94d556-33db-4153-bbb0-d624126058d1:0","term":"أنبوب بوردون","model":"gemma3:12b","proposals":[{"form":"أنبوب بورْدن","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"eaad2fa2-197b-4efd-a6e6-db08760ef6e7:0","term":"مصورة تسديد","model":"gemma3:12b","proposals":[{"form":"كاميرا تسديد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"eac3503c-3502-4b20-af44-d9b916ce4466:0","term":"مخمد الريشة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مخمّد الريشة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"eadf9b18-caa9-40f5-a0d5-581e6f3faa0a:0","term":"ضوء تحديد المنارة","model":"gemma3:12b","proposals":[{"form":"ضوء تعريف المنارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"eaf854b7-0fc0-4ff6-841e-f43ee048a4fd:0","term":"أهليلجات كبحية","model":"gemma3:12b","proposals":[{"form":"مدارات الكبح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"eb234eb9-a3e2-4305-812c-69c33b7431cc:0","term":"راسم الضغط الجوي","model":"gemma3:12b","proposals":[{"form":"راسم الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"eb491329-a89f-4b73-aec7-a06f7c8df0d7:0","term":"نتوء تكسير الجليد","model":"gemma3:12b","proposals":[],"rejected":[{"form":"جزمة تكسير الجليد","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"eb572385-de96-48c4-b11d-3c86bd371b01:0","term":"انزلاق والتفاف فقاعي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"eb93acf6-9f6c-4e63-9e6a-04e585b318d8:0","term":"مرجل","model":"gemma3:12b","proposals":[],"rejected":[{"form":"غلاية","kept":false,"reason":"already_present"}]}
+{"sense_id":"ec51bce5-0469-437c-bbb8-6d84b27c16d2:0","term":"غرفة فحص التسديد","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"ecb2ee1c-7599-438f-ac4c-72e12c9d9400:0","term":"بطانة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"بوش","kept":false,"reason":"already_present"}]}
+{"sense_id":"ecb2ee1c-7599-438f-ac4c-72e12c9d9400:1","term":"بطانة","model":"gemma3:12b","proposals":[{"form":"كسة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ecc0fa4f-8d13-426e-a7c4-122f6392e0b0:0","term":"فرارة","model":"gemma3:12b","proposals":[{"form":"بولتر","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ecf8eee3-db1e-45e7-a6ae-6c3b119fa68c:0","term":"ضغط غرفة الاحتراق الوسطي","model":"gemma3:12b","proposals":[{"form":"ضغط الحجرة الوسطى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ed267dce-45b2-47bb-a4d9-7f1cde8141de:0","term":"حجيرة القنابل","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"ed5537d4-3beb-4345-8fce-9588e8657903:0","term":"مقبس بذراع","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مقبس البوم","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"ed60602b-792f-4d67-a4b7-8d44ca23f716:0","term":"علامة معايرة","model":"gemma3:12b","proposals":[{"form":"علامة تحديد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ed68df49-aecb-4358-8fcb-2630503a05a8:0","term":"باب إعاقة","model":"gemma3:12b","proposals":[{"form":"باب تحويل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ed71e1f0-33d7-4d1d-ac67-14d2c724a343:0","term":"صاروخ تعزيز","model":"gemma3:12b","proposals":[{"form":"صاروخ دفع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ee534cc9-5f66-48e9-81a4-4536835843c8:0","term":"نقطة بابينت","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"ee9f5a4c-7aab-4a15-9d30-e6cd8a4089ef:0","term":"استعجل","model":"gemma3:12b","proposals":[{"form":"انطلق","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"فُلْ بَوِر","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"eeb17d41-16e6-4198-a14b-3df8400080cf:0","term":"كلام متداخل","model":"gemma3:12b","proposals":[{"form":"ثرثرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ef3fc4be-178c-48b2-8f17-5d487f83349c:0","term":"تشكيل الأغفال","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"ef8d2ab4-3957-4706-b080-f89d6076f400:0","term":"كيس المصدم","model":"gemma3:12b","proposals":[{"form":"كيس الواقي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"efdc8663-8732-48fe-846d-ce7450ed63fb:0","term":"صمام المصورة","model":"gemma3:12b","proposals":[{"form":"صمام التلفزيون","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f011c5f3-1838-411e-afbd-21cb4b5f60e3:0","term":"قذيفة","model":"gemma3:12b","proposals":[{"form":"طلقة","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"قذيفة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"f1377c1f-cb81-42ae-96f7-24c60c0e3dfa:0","term":"وحدة الحرارة البريطانية","model":"gemma3:12b","proposals":[{"form":"وحدة حرارية","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"بي تي يو","kept":false,"reason":"already_present"}]}
+{"sense_id":"f20e08ad-19e2-404e-b07c-bfc05858f4d5:0","term":"موجة مرتدة","model":"gemma3:12b","proposals":[{"form":"موجة رجعية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f215aa91-62a1-42f6-8d76-6cdacc31ae3e:0","term":"بثق خلفي","model":"gemma3:12b","proposals":[{"form":"بثق عكسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f2ac9172-6197-4b2b-b43a-d98c85279040:0","term":"رذاذ متبثر","model":"gemma3:12b","proposals":[{"form":"رشاش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f2cd9179-4815-4fe2-86b2-7928c741dbd1:0","term":"حاجز إنشائي","model":"gemma3:12b","proposals":[{"form":"حاجز عرضي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f2d2c086-56fe-4c9c-bc57-b06bc588bdaf:0","term":"فتيلة نفخية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f2ff7b19-94e4-4b5a-a4da-69c9047a184e:0","term":"انحياز","model":"gemma3:12b","proposals":[{"form":"فولتية التحيز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f310e8f1-0f48-4cea-946c-acfcab207f09:0","term":"أفضل سرعة للبقاء","model":"gemma3:12b","proposals":[{"form":"أحسن سرعة طيران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f3172907-5413-4c5d-98fc-d6b2205a2a67:0","term":"غصب مناري","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f37e1e7d-17bf-4d25-8c53-230522008ae7:0","term":"عين الثور","model":"gemma3:12b","proposals":[],"rejected":[{"form":"جرميت","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"f3b0ad8e-be1f-4794-88bd-a5ae99164013:0","term":"اتجاه العتبة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f3dd1352-b342-4a06-912c-99a26ca9cead:0","term":"صفيف متعامد","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f3f37751-f220-4560-9974-4cd225f8e630:0","term":"ناقل","model":"gemma3:12b","proposals":[{"form":"ناقل كهربائي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f3f37751-f220-4560-9974-4cd225f8e630:1","term":"ناقل","model":"gemma3:12b","proposals":[{"form":"باص","type":"colloquial","confidence":"medium"},{"form":"حافلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f3f37751-f220-4560-9974-4cd225f8e630:2","term":"ناقل","model":"gemma3:12b","proposals":[{"form":"باِس","type":"transliteration","confidence":"medium"},{"form":"باص","type":"transliteration","confidence":"medium"},{"form":"حافلة","type":"informal_synonym","confidence":"medium"},{"form":"حافلة بيانات","type":"informal_synonym","confidence":"medium"},{"form":"مسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f3f37751-f220-4560-9974-4cd225f8e630:3","term":"ناقل","model":"gemma3:12b","proposals":[{"form":"باص","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f448b0d9-dee3-44ef-aa9d-4c76d72c2965:0","term":"استنزاف الطبقة الحدية","model":"gemma3:12b","proposals":[{"form":"شفط الطبقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f461c651-9a50-4ec4-b029-68c167a12323:0","term":"توجيه بركوب الحزمة","model":"gemma3:12b","proposals":[{"form":"توجيه بالاشعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f478e241-5af3-49a8-b9a1-eb513099a090:0","term":"دورة برايتون","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f483dcef-2608-4da6-a261-f1691a477dc2:0","term":"تأرجح","model":"gemma3:12b","proposals":[{"form":"هز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f483dcef-2608-4da6-a261-f1691a477dc2:1","term":"تأرجح","model":"gemma3:12b","proposals":[{"form":"تذبذب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f483dcef-2608-4da6-a261-f1691a477dc2:2","term":"تأرجح","model":"gemma3:12b","proposals":[{"form":"تذبذب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f483dcef-2608-4da6-a261-f1691a477dc2:3","term":"تأرجح","model":"gemma3:12b","proposals":[{"form":"تردد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f483dcef-2608-4da6-a261-f1691a477dc2:4","term":"تأرجح","model":"gemma3:12b","proposals":[{"form":"تذبذب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f48b662e-75a5-4409-b74e-1d3642331026:0","term":"طائرة قاذفة","model":"gemma3:12b","proposals":[{"form":"طائرة مقصفة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f62967bf-2ef8-4294-8ace-f1544a4ae324:0","term":"ارتفاع حجرة الركاب","model":"gemma3:12b","proposals":[{"form":"ارتفاع الضغط الداخلي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:0","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"نطاق ترددي","kept":false,"reason":"already_present"}]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:1","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:2","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:3","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:4","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6545e3d-ac38-4206-a597-46778debbc35:5","term":"نطاق","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f67fead3-1ec0-49ba-af61-053673546221:0","term":"علم الفضاء الحيوي","model":"gemma3:12b","proposals":[{"form":"علم الأحياء الفضائي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f68a39bc-cddd-47ea-be64-19e56e98a97b:0","term":"غليان مستكمل","model":"gemma3:12b","proposals":[{"form":"تسرب التبخر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6dbfedf-24bf-453f-bb77-2524f7cfd71e:0","term":"منتجات نفطية ضخمة","model":"gemma3:12b","proposals":[{"form":"منتجات بترول بالجملة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6e4770d-d738-462b-b1c4-74057c8c7f53:0","term":"ارتفاع الحجيرة الأقصى","model":"gemma3:12b","proposals":[{"form":"ارتفاع الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f6e68367-f3b3-4b44-b483-3f9d12737eec:0","term":" عامل فاعلية الريشة","model":"gemma3:12b","proposals":[{"form":"معامل نشاط الريشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f750642c-65fb-4bea-8f9a-778e860b5b3b:0","term":"مصنف سمتي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f783a8b8-6906-43e1-b363-c57a5d4819e1:0","term":"مظلة ذات فراغ","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"f790f7aa-9d9b-47ba-95ed-39ea2a10f7d0:0","term":"محسات الجسم","model":"gemma3:12b","proposals":[{"form":"أجهزة استشعار الجسم","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"حساسات الجسم","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"f8062f6f-b31b-4cb4-b8fb-3a19720d70a6:0","term":"مشبك","model":"gemma3:12b","proposals":[{"form":"شريط إضاءة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f821fcd7-eb96-4c19-ac16-708b3cce64c3:0","term":"دليل الميل الكروي","model":"gemma3:12b","proposals":[{"form":"دليل الانزلاق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f865ce1f-ff58-4228-a286-342e0887911f:0","term":"تمفصل الريشة","model":"gemma3:12b","proposals":[{"form":"توصيل الريشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f888b749-3104-4dc5-801a-2caae82781ee:0","term":"خط القذف","model":"gemma3:12b","proposals":[{"form":"خط القصف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f9a2e993-1cee-4e7f-aef8-ccdff8b496bc:0","term":"مأوى حيوي","model":"gemma3:12b","proposals":[{"form":"بيو باك","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"f9faedc2-6f19-4acc-9791-1e455f5da503:0","term":"ثنائي الاستقرار","model":"gemma3:12b","proposals":[{"form":"ثنائي حاله","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa2484a0-58e4-4392-8d07-b8c2b8542f23:0","term":"معدن أساس","model":"gemma3:12b","proposals":[{"form":"المعدن الرئيسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa2484a0-58e4-4392-8d07-b8c2b8542f23:1","term":"معدن أساس","model":"gemma3:12b","proposals":[{"form":"معدن أصل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa2af7c2-fe2f-450e-bd40-ecda3263c2ff:0","term":"عاتق","model":"gemma3:12b","proposals":[{"form":"منطقة التجاوز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa2af7c2-fe2f-450e-bd40-ecda3263c2ff:1","term":"عاتق","model":"gemma3:12b","proposals":[{"form":"جرم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa3c5d70-9669-4aee-ba2b-b2bffed12546:0","term":"جسم أسود","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"fa5f9401-758b-49f1-9c51-ed7e2ecda837:0","term":"حائل","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حاجز","kept":false,"reason":"already_present"}]}
+{"sense_id":"fa5f9401-758b-49f1-9c51-ed7e2ecda837:1","term":"حائل","model":"gemma3:12b","proposals":[],"rejected":[{"form":"درع","kept":false,"reason":"already_present"}]}
+{"sense_id":"fa628d05-02f3-4eeb-85fc-2e1315aec46b:0","term":"ارتفاع القصف","model":"gemma3:12b","proposals":[{"form":"ارتفاع التسليم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fa9d5b3a-73cb-4df3-b0fe-1bc1acae960f:0","term":"محدب الوجهين","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"fafc6589-1294-46cb-ae42-06e7abb74550:0","term":"برشام أعمى","model":"gemma3:12b","proposals":[{"form":"برشام مقلوب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fb26c592-ffa6-4507-b84b-ee0f39eb3e87:0","term":"تحدب","model":"gemma3:12b","proposals":[{"form":"انحناء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fb26c592-ffa6-4507-b84b-ee0f39eb3e87:1","term":"تحدب","model":"gemma3:12b","proposals":[{"form":"انحناء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fb26c592-ffa6-4507-b84b-ee0f39eb3e87:2","term":"تحدب","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"fb26c592-ffa6-4507-b84b-ee0f39eb3e87:3","term":"تحدب","model":"gemma3:12b","proposals":[{"form":"ميل العجلات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fb2b9fe1-90c4-431a-bd4f-a236c651eec7:0","term":"تدريب برافو","model":"gemma3:12b","proposals":[],"rejected":[{"form":"تدريب برافو","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"fb2e21d9-16a8-4cc7-a5fc-eff60caccd7a:0","term":"رقم بيرستو","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"fb60ba9e-7efd-447f-a72f-e2c7565db740:0","term":"ضربان","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"fb65262f-891a-41a0-adb9-ee8561c7f135:0","term":"خطوط ردفية","model":"gemma3:12b","proposals":[{"form":"خطوط العرض","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fbd9c752-4554-4bfa-8d6f-e26b67772d21:0","term":"توقف الاحتراق","model":"gemma3:12b","proposals":[{"form":"انطفاء المحرك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fc17d026-0fae-4d03-80c9-47a45fc3e3a4:0","term":"خواص المنارة","model":"gemma3:12b","proposals":[{"form":"صفات المنارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fc1df639-991a-4341-baa8-3d6fb6b109e7:0","term":"مذكرة دم","model":"gemma3:12b","proposals":[{"form":"مذكرة تنازل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fc1df639-991a-4341-baa8-3d6fb6b109e7:1","term":"مذكرة دم","model":"gemma3:12b","proposals":[{"form":"ورقة إنقاذ","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"مذكرة دم","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"fca96158-9eaa-4659-ac60-ab878cf7e8d5:0","term":"نمط حائلي","model":"gemma3:12b","proposals":[{"form":"نمط عائق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fcd5e9d8-2387-4581-a0d4-da3e9dc19ec2:0","term":"عربة الوقود","model":"gemma3:12b","proposals":[{"form":"صهريج","type":"informal_synonym","confidence":"medium"},{"form":"صهريج بنزين","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd1e63e5-8ba3-4d69-b0c8-24e2875f6c08:0","term":"ظهر الريشة","model":"gemma3:12b","proposals":[{"form":"وجه الشفط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd3a4df5-e0f6-4a8a-ae5f-e99c8d2bf062:0","term":"متوسط الضغط الفعال المكبحي","model":"gemma3:12b","proposals":[{"form":"متوسط ضغط المكبس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd50faf7-bed0-4a91-a116-f84d6a8cc00a:0","term":"عطوف","model":"gemma3:12b","proposals":[{"form":"ميل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd55e24f-e3e5-4c9a-aaea-f65bd85e5e16:0","term":"متحكم متردد","model":"gemma3:12b","proposals":[{"form":"متحكم متذبذب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd606116-9cd7-40e9-b44b-abe0897311cb:0","term":"منصتة","model":"gemma3:12b","proposals":[{"form":"جهاز تجسس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd84d522-e0ab-4e14-be45-a1be118e29ac:0","term":"رقم بوفور","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"7ebfdb82-06c1-4471-a1db-a7aa21f567f3:0","term":"هيئة الطيران المدني","model":"gemma3:12b","proposals":[{"form":"السعودية المدنية","type":"informal_synonym","confidence":"medium"},{"form":"مدني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"7fc37bde-7a25-4722-853a-e79fdfff313c:0","term":"نظرية بوسمان","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"7fdd693f-aa8a-496f-928d-29e5f21ab6af:0","term":"طريقة الحاصرة","model":"gemma3:12b","proposals":[{"form":"حاسرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"7fe8adff-5fe5-44fc-80eb-e15322f7a396:0","term":"معادلة بوسينسك","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"806f390a-07f9-413a-af1e-f0e8309e3f51:0","term":"تجعد","model":"gemma3:12b","proposals":[{"form":"تحدب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"806fac48-49df-4adc-bdd5-5bebfc8d9b40:0","term":"بيتا","model":"gemma3:12b","proposals":[],"rejected":[{"form":"بيتا","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"8086bdaa-1d70-42be-8e02-33c47d5aefa6:0","term":"ظاهرة الانقطاع","model":"gemma3:12b","proposals":[{"form":"شعور الانعزال","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"80c6f77e-7b79-46ec-bf87-09e881b6c690:0","term":"عودة قذفية","model":"gemma3:12b","proposals":[{"form":"رجعة قذيفة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"81975aec-24d8-4d18-9bea-4e2a0cd7ccc5:0","term":"صقل","model":"gemma3:12b","proposals":[{"form":"تلميع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"81a49c49-2121-43cf-aec2-d9b983f0a2b7:0","term":"حمل أساس","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حِمل أساسي","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"81cde680-e140-458a-bfda-df208746b742:0","term":"برشام طاسي الرأس","model":"gemma3:12b","proposals":[{"form":"برشام راس عريض","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"81d3d652-4a36-411f-8ecb-f211b1251e7d:0","term":"غطاء حاجب","model":"gemma3:12b","proposals":[{"form":"غطاء المحرك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"81ff8197-508c-4f15-8950-5a2f2800f3d4:0","term":"صمام فراشي","model":"gemma3:12b","proposals":[{"form":"صمام فراشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"821bd75f-ff4b-4a88-b25b-c1b75f9a7847:0","term":"مساندة","model":"gemma3:12b","proposals":[{"form":"دعم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"82e8c0e6-98dd-40cf-9101-d5a813e3e746:0","term":"تعاقب التوقيت والأساس","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"830229ea-d0a2-410c-963e-146b99d62087:0","term":"منضدة","model":"gemma3:12b","proposals":[{"form":"طاولة","type":"informal_synonym","confidence":"medium"},{"form":"طاولة شغل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"83647f1b-b14a-472b-9f74-821d0478f62d:0","term":"مقطع برميلي","model":"gemma3:12b","proposals":[{"form":"مقطع أسطواني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"83647f1b-b14a-472b-9f74-821d0478f62d:1","term":"مقطع برميلي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"8371658b-cbc9-499a-a84b-35365bd95bdc:0","term":"حصن","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حصن","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"83a792db-78c9-4470-b466-d683da773739:0","term":"صمام تخفيف ثابت الضغط","model":"gemma3:12b","proposals":[{"form":"صمام ترويس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"83bdf594-66df-4ea8-8412-b7d4b5093b6f:0","term":"معادلة بولتسمان","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"847e0b86-2457-40fd-b694-2bc1a3597d30:0","term":"دروجة","model":"gemma3:12b","proposals":[{"form":"دريشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"853714ac-0825-46a3-85bb-db06b55b08ce:0","term":"سحب إلى الشاطئ","model":"gemma3:12b","proposals":[{"form":"تسحب للطاسة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"853833f4-1552-4296-a9a0-0962f4324007:0","term":"سحب متقطعة","model":"gemma3:12b","proposals":[{"form":"غيوم متباعدة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"85a0748c-6603-44cb-9100-36a5c36b3440:0","term":"قنبلة","model":"gemma3:12b","proposals":[{"form":"قنابل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"85a0748c-6603-44cb-9100-36a5c36b3440:1","term":"قنبلة","model":"gemma3:12b","proposals":[{"form":"هدف مسحوب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"85aceff2-6db8-4132-9cf9-6f5d0f5f90b2:0","term":"قالب كتلي","model":"gemma3:12b","proposals":[{"form":"بلوك تيمبليت","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"02f272ae-9282-4fc3-a208-78f1ea4f145e:0","term":"مقياس الميل","model":"gemma3:12b","proposals":[{"form":"مقياس الإطالة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"02f78206-e492-4795-99f6-a9c08a426335:0","term":"مقياس الارتفاعات التلامسي","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مقياس الارتفاع اللي يوصل الكهرب","kept":false,"reason":"length"}]}
+{"sense_id":"033c753c-f95e-4f9e-966c-75cd86989131:0","term":"مقصورة القيادة","model":"gemma3:12b","proposals":[{"form":"الكابينة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"03575e5b-36e4-41d2-b471-12f42db310f1:0","term":"نابض انضغاط","model":"gemma3:12b","proposals":[{"form":"سبرينج","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"050dc3d8-8b20-42f9-b775-33cf7fd2625d:0","term":"اتصالات","model":"gemma3:12b","proposals":[{"form":"تواصلات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"05204b4d-d036-4caa-99d3-5d4f38e3e519:0","term":"مجال جوي مراقب","model":"gemma3:12b","proposals":[{"form":"منطقة مراقبة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"053936c6-96b8-42ba-9665-19f96c5948fa:0","term":"قوة سحب التبريد","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"055c8bd6-8adc-4efd-bac7-60679191485a:0","term":"لحام عنقودي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"05a2df57-a16f-407b-a726-185e23dc13fa:0","term":"منطقة المراقبة","model":"gemma3:12b","proposals":[{"form":"منطقة التحكم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"05bee1f5-1649-4038-bb95-13e426b8392f:0","term":"نظام تفادي الاصطدام","model":"gemma3:12b","proposals":[{"form":"نظام تجنب الاصطدام","type":"informal_synonym","confidence":"high"},{"form":"نظام منع التصادم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"05d903b7-832c-4200-b646-0bfa4571248d:0","term":"قيادة","model":"gemma3:12b","proposals":[{"form":"توجيه","type":"informal_synonym","confidence":"medium"},{"form":"حِكْم","type":"informal_synonym","confidence":"medium"},{"form":"دَوّار","type":"colloquial","confidence":"medium"}],"rejected":[]}
+{"sense_id":"063b8035-f9e4-483a-8765-9521cebb2413:0","term":"قصف المسطحات","model":"gemma3:12b","proposals":[{"form":"القصف الموسع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0648250a-9262-47c2-8685-290b9020a1da:0","term":"خطوة كبيرة","model":"gemma3:12b","proposals":[{"form":"خطوة عريضة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06a66fe5-46f6-431b-ac17-b3a9d6fb71f3:0","term":"عاكس شلشلي","model":"gemma3:12b","proposals":[{"form":"عاكس متسلسل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06b259e7-4c9c-4611-a55f-f3bf4947c267:0","term":"نظيف","model":"gemma3:12b","proposals":[],"rejected":[{"form":"نظيف","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"06b27717-a8a0-4f70-8d45-30d556ad57eb:0","term":"ترتيب الاقتراب بمساعدة الحاسب","model":"gemma3:12b","proposals":[{"form":"ترتيب الطيارات بمساعدة الحاسب","type":"informal_synonym","confidence":"medium"},{"form":"تَرْتِيب مُسَاعَدَة حَاسُوب","type":"informal_synonym","confidence":"medium"},{"form":"تَرْتِيب مُعَاوَن بِالْحَاسُوب","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"تَرْتِيب حَاسُوبِيّ","kept":false,"reason":"transliteration_mismatch"},{"form":"تَسْقِيف حَاسُوبِيّ","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"06dd501d-2406-4088-a069-f50a8fc5d28e:0","term":"لوحة الخرائط","model":"gemma3:12b","proposals":[{"form":"طاولة الخرائط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06debc62-1922-4f0e-b448-d94020132cfd:0","term":"تعارض","model":"gemma3:12b","proposals":[{"form":"تضارب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06f0c0c2-8b26-428e-b252-c49f56f5e843:0","term":"تقارب","model":"gemma3:12b","proposals":[{"form":"اتفاق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06f0c0c2-8b26-428e-b252-c49f56f5e843:1","term":"تقارب","model":"gemma3:12b","proposals":[{"form":"اتفاق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06f0c0c2-8b26-428e-b252-c49f56f5e843:2","term":"تقارب","model":"gemma3:12b","proposals":[{"form":"اتفاق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"06f976ec-0577-41bc-9b37-4905da8330f9:0","term":"صعود خارج المدرج","model":"gemma3:12b","proposals":[{"form":"صعود بعد الإقلاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0731db7d-2969-4a3a-ad52-5ca7949e157c:0","term":"عصا الخطران الجماعي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"074aaa3a-45f6-4add-80ae-0122d32cc13c:0","term":"دوريات الطيران المدني","model":"gemma3:12b","proposals":[{"form":"دوريات جوية مدنية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"077fdaa4-edfa-4405-b7fb-add68094ea66:0","term":"كودان","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كودان","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"080f1ef9-ea58-42a2-8a74-85c2a8b7c5d6:0","term":"رادار مترابط النبضات","model":"gemma3:12b","proposals":[{"form":"رادار نبضات مترابط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0828db57-b810-438a-975a-62f9b0c4911c:0","term":"جذاذة","model":"gemma3:12b","proposals":[{"form":"شريحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0828db57-b810-438a-975a-62f9b0c4911c:1","term":"جذاذة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"شريحة","kept":false,"reason":"already_present"}]}
+{"sense_id":"0828db57-b810-438a-975a-62f9b0c4911c:2","term":"جذاذة","model":"gemma3:12b","proposals":[{"form":"شريحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"084d72cc-9894-450d-bec8-279262ca35ef:0","term":"قادوس بارد","model":"gemma3:12b","proposals":[{"form":"كولد باكيت","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0884785d-1367-4411-9865-c29d45d691e8:0","term":"مصورة قتالية","model":"gemma3:12b","proposals":[{"form":"كاميرا قتالية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"08be5800-2970-4a0d-822b-2419da06a150:0","term":"دورات طيران وحط","model":"gemma3:12b","proposals":[{"form":"دوران وحط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0978b430-444e-4e52-ba11-1cb2fccca297:0","term":"يسمح","model":"gemma3:12b","proposals":[{"form":"يخلي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0983def5-17c5-4b96-be7c-e3c23f20d24e:0","term":"تحكم التسارع","model":"gemma3:12b","proposals":[{"form":"تحكم بالسرعة","type":"informal_synonym","confidence":"medium"},{"form":"تنظيم التسارع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"09954d81-8cb5-43b8-a17d-59ec8fba4d4a:0","term":"إجهاد قص متمم","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"09ada7a4-42a9-41d1-aa7b-008c250db97e:0","term":"سنتيمتر زئبق","model":"gemma3:12b","proposals":[{"form":"سنتيمتر زيادة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0a0790cd-e8ae-4115-8d10-e909294f8ded:0","term":"غرفة السحاب","model":"gemma3:12b","proposals":[{"form":"غرفة غامضة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0a455d5b-9675-4a82-82fd-d6e3c669f5da:0","term":"ممنوع","model":"gemma3:12b","proposals":[{"form":"مصنف","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0a671648-8139-43f5-8e92-897bb3a4e200:0","term":"استنفار المقصورة","model":"gemma3:12b","proposals":[{"form":"تجهيز قمرة القيادة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0ae3275b-bde6-4482-8d1d-6e5d89a6b19e:0","term":"مانع انفجار التلامس","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"0aec9cb5-106b-4e1a-99e6-dbec4840259f:0","term":"مركز اللي","model":"gemma3:12b","proposals":[{"form":"مركز الفتل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0b0c3a94-0958-42f9-8fae-580ea6f69abc:0","term":"مركبة","model":"gemma3:12b","proposals":[{"form":"جزء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0b55f9f2-7508-46ba-a502-a72ad20646cd:0","term":"يوم مدني","model":"gemma3:12b","proposals":[{"form":"يوم شمسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0b55fd12-f08d-46fd-b2f0-fd0d01befc36:0","term":"داسر متغير الخطران","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"0b6522ba-346c-45b9-acd0-93d4b0b1c106:0","term":"وقود كيماوي","model":"gemma3:12b","proposals":[{"form":"وقود كيميائي","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0bf1fbe0-1bb2-407c-b4e1-495db806e0ea:0","term":"انتشار قتالي","model":"gemma3:12b","proposals":[{"form":"تشكيل قتالي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0bff31b3-4a39-400c-96ba-e4f0283c09eb:0","term":"حاملة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حاملة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"0bff31b3-4a39-400c-96ba-e4f0283c09eb:1","term":"حاملة","model":"gemma3:12b","proposals":[{"form":"حاملة الموجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0bff31b3-4a39-400c-96ba-e4f0283c09eb:2","term":"حاملة","model":"gemma3:12b","proposals":[{"form":"حامل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0bff31b3-4a39-400c-96ba-e4f0283c09eb:3","term":"حاملة","model":"gemma3:12b","proposals":[{"form":"حامل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0c10c56e-de5f-430d-b57c-93e3bc7247d6:0","term":"قوة ضغط","model":"gemma3:12b","proposals":[{"form":"قوة انضغاط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0c12d744-e705-4f83-aeb4-25674159efc7:0","term":"شفرة ـ ج","model":"gemma3:12b","proposals":[{"form":"كود سي","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0c188dd3-c69d-40ba-a3c5-19ec3f87bbb4:0","term":"إسقاط ممتثل","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"0c49cd7a-f6f0-490e-a70e-e446abbaca54:0","term":"نقطة تحكم","model":"gemma3:12b","proposals":[{"form":"نقطة مرجعية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0c685eca-a400-45e4-b6e1-a7d6f687eb79:0","term":"مواد مستهلكة","model":"gemma3:12b","proposals":[{"form":"المعدات اللي تستهلك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0c9dbf10-611a-4143-94ed-78ef298200bd:0","term":"مربع الاتجاه الثابت","model":"gemma3:12b","proposals":[{"form":"مربع الاتجاه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0cd5da4d-0359-469c-a5f8-d343eb95050b:0","term":"أضواء الاتصال","model":"gemma3:12b","proposals":[{"form":"أضواء التلامس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0d109562-13e8-4b93-b8fe-7a7cc3dd4f39:0","term":"صفيحة باردة","model":"gemma3:12b","proposals":[{"form":"لوح تبريد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0d191bf6-0e64-4fe8-9626-1e57cc3f46af:0","term":"جزء رئيس","model":"gemma3:12b","proposals":[{"form":"قطعة رئيسية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0d3a4678-fce0-4966-9871-b8073360a302:0","term":"مظلة هبوط","model":"gemma3:12b","proposals":[{"form":"مظليّة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0d3ae282-6532-4178-97ba-6dbe76d9f422:0","term":"أمر","model":"gemma3:12b","proposals":[{"form":"أوامر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0d7af426-e212-4abc-8356-2a718fad0f5f:0","term":"دائرة خط العرض","model":"gemma3:12b","proposals":[{"form":"دائرة عرض","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0dd17ba7-042b-44a5-b089-2b6c810ce4aa:0","term":"توجيه","model":"gemma3:12b","proposals":[{"form":"تحكم","type":"informal_synonym","confidence":"medium"},{"form":"دورة","type":"colloquial","confidence":"medium"}],"rejected":[{"form":"توجيه","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"0dd17ba7-042b-44a5-b089-2b6c810ce4aa:1","term":"توجيه","model":"gemma3:12b","proposals":[{"form":"اتجاه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0e2967ba-08d6-4e78-90f4-6296695d2a36:0","term":"دائرة المبدأ","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"0e684ba1-0664-415f-a76e-6df20efec63e:0","term":"مخطط","model":"gemma3:12b","proposals":[{"form":"رسم بياني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0ef08f81-3159-46d4-80c4-0e17c5dd9414:0","term":"رادار التحذير من الاصطدام","model":"gemma3:12b","proposals":[{"form":"رادار التحذير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0f10a7fe-3669-4fba-a7b7-d9966bf3a096:0","term":"نظام تحكم","model":"gemma3:12b","proposals":[{"form":"نظام قيادة","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"نظام التحكم","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"0fe000c2-d087-43da-8c18-0207a50d9821:0","term":"مردود الاحتراق","model":"gemma3:12b","proposals":[{"form":"كفاءة الاحتراق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"0ff0aab9-a1da-4322-bc6a-050f405be739:0","term":"عصافة تشويش","model":"gemma3:12b","proposals":[{"form":"عصافة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1018a94c-f014-4e10-b934-26c7e9efc967:0","term":"تحقق","model":"gemma3:12b","proposals":[{"form":"تأكد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1018a94c-f014-4e10-b934-26c7e9efc967:1","term":"تحقق","model":"gemma3:12b","proposals":[{"form":"تأكد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1018a94c-f014-4e10-b934-26c7e9efc967:2","term":"تحقق","model":"gemma3:12b","proposals":[{"form":"تأكّد","type":"informal_synonym","confidence":"medium"},{"form":"تأكيد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1018a94c-f014-4e10-b934-26c7e9efc967:3","term":"تحقق","model":"gemma3:12b","proposals":[{"form":"تأكد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"103025dc-d055-4f22-b053-65f0ca6d58df:0","term":"قطع","model":"gemma3:12b","proposals":[{"form":"فتحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"103025dc-d055-4f22-b053-65f0ca6d58df:1","term":"قطع","model":"gemma3:12b","proposals":[{"form":"إختفاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"103025dc-d055-4f22-b053-65f0ca6d58df:2","term":"قطع","model":"gemma3:12b","proposals":[{"form":"هزة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"10bfd2a5-e597-4854-9be3-e40d0cababc0:0","term":"تحميل الجناح للطائرة المقاتلة","model":"gemma3:12b","proposals":[{"form":"حِمل الجناح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1132ffbd-ff6e-429c-9ee9-e79a5d23b9a1:0","term":"درجة ميل الصعود","model":"gemma3:12b","proposals":[{"form":"زاوية الصعود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"12c50912-5386-4c73-b994-effcb8f0b51e:0","term":"متسق","model":"gemma3:12b","proposals":[],"rejected":[{"form":"متوافق","kept":false,"reason":"already_present"}]}
+{"sense_id":"13763d7f-fc3a-44a7-b23f-9cde1917c5a8:0","term":"خطأ البوصلة التسارعي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"1386c1e6-5268-4bd2-b8d3-7df3c8a647a6:0","term":"شركة طيران للمسافرين اليوميين","model":"gemma3:12b","proposals":[{"form":"شركة طيران داخلية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"13ca3b68-3055-49a3-a8c2-a15de42c2426:0","term":"هوائي مخدد","model":"gemma3:12b","proposals":[{"form":"هواياي جبنة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"13dc40f9-1d5d-4326-9524-96948b99c376:0","term":"قاعدة طيران الاقتراب","model":"gemma3:12b","proposals":[{"form":"قاعدة الأولوية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"141ed3f7-f6e3-409b-a45e-35caaf001769:0","term":"صمام الأشعة المهبطية","model":"gemma3:12b","proposals":[{"form":"شاشة إلكترونية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"14854af2-cf03-4868-ba7f-87443ab87098:0","term":"ممر الصعود","model":"gemma3:12b","proposals":[{"form":"ممر للطيران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"14d8206b-a30b-408c-9408-f7a9e7853b82:0","term":"ضغط الانضغاط","model":"gemma3:12b","proposals":[{"form":"ضغط التحضير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"153bd078-0131-4a26-b79c-26637d7f99bb:0","term":"نقطة إسناد سماوية","model":"gemma3:12b","proposals":[{"form":"تحديد سماوي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"154b73f9-e930-4cce-8301-c723a699de0a:0","term":"جسم مصاحب","model":"gemma3:12b","proposals":[{"form":"جسم مرافق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"15746746-b95f-4e0b-9263-b93b8dfd96ae:0","term":"عربة القيادة","model":"gemma3:12b","proposals":[{"form":"حجرة القيادة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"15cec08e-4538-48db-bc1e-8e1c0ddcda5f:0","term":"تجديد بيانات المواد المستهلكة","model":"gemma3:12b","proposals":[{"form":"تحديث استهلاك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"15d0ac3f-fd39-48e1-8052-251a6d8e6ec9:0","term":"موضع التدقيق","model":"gemma3:12b","proposals":[{"form":"مكان الفحص","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"15eeffe2-5955-4bac-87cb-1ae4c98dadbf:0","term":"رقاقة","model":"gemma3:12b","proposals":[{"form":"شريحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"16340f60-8d53-4cd0-b667-1682e2ae38f6:0","term":"مقياس سلزيوس","model":"gemma3:12b","proposals":[{"form":"السيلزيوس","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"168000c5-8902-4544-928c-027b69077145:0","term":"طبع تلامسي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"16ec586a-fbb2-42ad-8ecd-f99afaaf5bcc:0","term":"صاروخ الغاز البارد","model":"gemma3:12b","proposals":[{"form":"صاروخ غاز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"172d4a74-aa01-451d-9997-6ca0d8bb9cb8:0","term":"وتريا","model":"gemma3:12b","proposals":[{"form":"بالوتر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1740d625-bfb6-4b41-b1cd-a56e8326459f:0","term":"مسجل صوت المقصورة","model":"gemma3:12b","proposals":[{"form":"مسجل صوت الطيارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1744375a-6254-4083-9235-58b3a2fda5d3:0","term":"ضاغط","model":"gemma3:12b","proposals":[{"form":"ضاغط هواء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1807f240-8d7a-400e-8ed3-810e79274d94:0","term":"موحد","model":"gemma3:12b","proposals":[{"form":"مُوحد زجاج","type":"spelling_variant","confidence":"medium"}],"rejected":[{"form":"مُوحد","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"181cae64-b9dd-4238-939d-805c96c8c83c:0","term":"مستوى الثقة","model":"gemma3:12b","proposals":[{"form":"مستوى اليقين","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"18563fd7-e183-476f-8b89-6208e7d4e48d:0","term":"مركز الالتواء","model":"gemma3:12b","proposals":[{"form":"مركز الفتل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"188f1ea4-d324-4670-ab47-3b47699df95a:0","term":"ريشة الضاغط","model":"gemma3:12b","proposals":[{"form":"ريش الضاغط","type":"spelling_variant","confidence":"medium"}],"rejected":[{"form":"ريشة الضاغط","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"18efea08-7f39-4795-ba9c-b0f25d52664f:0","term":"استخبارات الاتصالات","model":"gemma3:12b","proposals":[{"form":"تجسس على الاتصالات","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"استخبارات اتصالات","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"19469bc1-7bb8-439d-a0f3-d3b8e30b6106:0","term":"ارتفاعات ألفية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"19703026-0a75-4b48-8b48-4f53d662946e:0","term":"خطة طيران مركبة","model":"gemma3:12b","proposals":[{"form":"خطة طيران مدمجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"19bb038c-1292-4964-9772-0e8d42404290:0","term":"مشطوف","model":"gemma3:12b","proposals":[{"form":"مُشَطَّف","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"19ced399-dc7a-4482-b785-fb156dba824c:0","term":"قارن","model":"gemma3:12b","proposals":[{"form":"موصل","type":"informal_synonym","confidence":"medium"},{"form":"وصلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"19e0059e-a5c2-4c25-b3ab-8525a94a2128:0","term":"عريش","model":"gemma3:12b","proposals":[{"form":"غطاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1a7ce48e-7a49-4685-b710-ab209b71b608:0","term":"طائرة مسافرين يوميين","model":"gemma3:12b","proposals":[{"form":"طائرة داخلية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1ac5938c-98dc-43fe-b185-dcd4596eeed6:0","term":"مهداف مدفع حاسبي","model":"gemma3:12b","proposals":[{"form":"مهدف كمبيوتر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1ae720fa-91e9-4da9-b7f6-dd850cae9945:0","term":"كابري","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"1affb6a8-6024-470e-8fa0-f2bfb5eb0983:0","term":"إنشاء التسهيلات","model":"gemma3:12b","proposals":[{"form":"تجهيزات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1b4cbbb3-441a-4c5c-817b-e306fc9c5e71:0","term":"حجم مطاوع","model":"gemma3:12b","proposals":[{"form":"حجم مرن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1bad7fe8-fa7d-4864-9a81-a8c8a8485aa0:0","term":"عمود إدارة الحدبات","model":"gemma3:12b","proposals":[{"form":"كام شافت","type":"transliteration","confidence":"medium"}],"rejected":[{"form":"عمود الكامات","kept":false,"reason":"already_present"}]}
+{"sense_id":"1bc69341-c987-4b7b-8e92-a637271a500f:0","term":"مغير","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مُحوِّل","kept":false,"reason":"already_present"}]}
+{"sense_id":"1bd9d857-4c7c-479f-b203-0bfbc75e9a2a:0","term":"زاوية المخروط","model":"gemma3:12b","proposals":[{"form":"زاوية القُمع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1c247cce-21d8-496e-95bb-550c6048de28:0","term":"كاشف الجذاذة","model":"gemma3:12b","proposals":[{"form":"كاشف الشظايا","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1cce0bce-30da-4e07-9207-4621c491e681:0","term":"تضليل الاتصالات","model":"gemma3:12b","proposals":[{"form":"تشويش الاتصالات","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"تضليل اتصالات","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"1d5b63fa-156c-4e2b-8eb5-97685027693a:0","term":"مستوى الطيران المصرح","model":"gemma3:12b","proposals":[{"form":"مستوى الطيران المسموح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1daac73e-1ad0-4c0c-af9d-0762391d70d6:0","term":"معدل شفري","model":"gemma3:12b","proposals":[{"form":"كوديم","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1e92ace8-05f9-4194-8436-5e9a9796d536:0","term":"سرعة العادم المميزة","model":"gemma3:12b","proposals":[{"form":"سرعة خروج الغاز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1edd103a-2081-4fce-834f-a8f60de1123b:0","term":"مركز اللف","model":"gemma3:12b","proposals":[{"form":"نقطة الدوران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f0e920e-9361-4e6e-9a1c-32cd580cdd6e:0","term":"غطاء الضاغط","model":"gemma3:12b","proposals":[{"form":"غطاء الكومبريسر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f475d70-97b3-4509-8a69-11ff918ff919:0","term":"مظلة الكرسي","model":"gemma3:12b","proposals":[{"form":"مظلة مقعد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f5c138a-a3ee-47c6-8d52-5c53ce8c4f24:0","term":"دورة ثابتة الأداء","model":"gemma3:12b","proposals":[{"form":"دورة مستمرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f61c975-1586-4faa-8da3-d1599282b3d1:0","term":"غطاء محاري","model":"gemma3:12b","proposals":[{"form":"غطاء بلح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f61c975-1586-4faa-8da3-d1599282b3d1:1","term":"غطاء محاري","model":"gemma3:12b","proposals":[{"form":"غطاء بلح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1f61c975-1586-4faa-8da3-d1599282b3d1:2","term":"غطاء محاري","model":"gemma3:12b","proposals":[{"form":"غطاء محارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"1ffffb71-5305-4063-8235-2c51259ad454:0","term":"قمر صناعي للاتصالات","model":"gemma3:12b","proposals":[{"form":"قمر للإتصالات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"20148caf-6538-4df6-89cf-b1a1617f670e:0","term":"خدمة عامة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"خدمة عامة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"2041224c-168f-4e26-b2a0-2c0f222e2563:0","term":"اعتراض محكوم بدقة","model":"gemma3:12b","proposals":[{"form":"اعتراض مُدار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"208d184d-84fe-4db8-a9e4-867fad30966b:0","term":"إشعال بالانضغاط","model":"gemma3:12b","proposals":[{"form":"إشتعال بالكبس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"208e116a-ab21-45ee-bfd2-f557e7bd049d:0","term":"معوض","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مُعَوِّض","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"20bcb711-ee5a-4eeb-b910-fd97c357f43c:0","term":"محرك إشعال انضغاطي","model":"gemma3:12b","proposals":[{"form":"محرك ديزل مكبسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2119e3d0-79fe-4fbc-8544-e19c41361c30:0","term":"إجماع","model":"gemma3:12b","proposals":[{"form":"اتفاق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"213a75bf-6bb3-44e7-a22f-7672204af422:0","term":"خصائص","model":"gemma3:12b","proposals":[{"form":"صفات","type":"informal_synonym","confidence":"medium"},{"form":"مواصفات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"213a75bf-6bb3-44e7-a22f-7672204af422:1","term":"خصائص","model":"gemma3:12b","proposals":[{"form":"مواصفات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"21558f17-a595-418e-80d3-971bcf848e3c:0","term":"طيران منسوبي","model":"gemma3:12b","proposals":[{"form":"طيران التضاريس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"21ae5658-61da-4ba3-832f-6e12b622f839:0","term":"خطران كبير","model":"gemma3:12b","proposals":[{"form":"زاوية ميل كبيرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"21c49bbb-8767-4837-97a2-501d452804ae:0","term":"علامة دائرية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"علامة دائرية","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"21d94de7-150e-470a-9522-46aeacdc7fd1:0","term":"ذراع التوصيل","model":"gemma3:12b","proposals":[{"form":"جرمك","type":"colloquial","confidence":"medium"},{"form":"وصلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"21e0d8c4-f2a2-47a3-be76-75599e45237c:0","term":"مؤقتة مضبوطة","model":"gemma3:12b","proposals":[{"form":"ساعة دقيقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"22279f7b-4a58-4e85-87cb-4ea66bf2892e:0","term":"دوران","model":"gemma3:12b","proposals":[{"form":"لف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"22279f7b-4a58-4e85-87cb-4ea66bf2892e:1","term":"دوران","model":"gemma3:12b","proposals":[{"form":"دورة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"22279f7b-4a58-4e85-87cb-4ea66bf2892e:2","term":"دوران","model":"gemma3:12b","proposals":[{"form":"دوران الجو","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"22861ac3-b1df-4ef0-a5f4-60bdc5be5395:0","term":"تأسيس عام","model":"gemma3:12b","proposals":[{"form":"بنية تحتية مشتركة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"231e81f9-c33c-4511-8954-e335acad26e0:0","term":"متقارب","model":"gemma3:12b","proposals":[{"form":"مطفأ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"231f38a9-7335-4c20-beaf-c7f8bcab1873:0","term":"ارتفاع الاتصال","model":"gemma3:12b","proposals":[{"form":"ارتفاع التلامس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"235eb85c-7d31-493e-b88c-2e8178c92b58:0","term":"علامة الفقرة","model":"gemma3:12b","proposals":[{"form":"بلوك","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"23688361-0691-4b98-849e-57c2b2940a67:0","term":"فسيفساء متحكم بها","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"2374cb2d-cb62-463e-aaaa-ee473b334432:0","term":"نفق هوائي مغلق النفث","model":"gemma3:12b","proposals":[{"form":"نفق نفث مغلق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"23a5e4e0-a181-4161-b026-3d3221a95ce9:0","term":"دالف مهبطي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"23ac158d-2178-4160-98f9-4c21480b97c2:0","term":"مجمع","model":"gemma3:12b","proposals":[{"form":"مجموعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"23f0c320-998f-4abf-a428-8572ce6923f6:0","term":"نظرية كاستيليانو","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"244def9a-35ab-4d38-8286-22ca7b7ecc57:0","term":"فاصل طاردي","model":"gemma3:12b","proposals":[{"form":"طرد مركزي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"24646bb4-8c2e-4a7c-8a23-dd6b38f08182:0","term":"ارتفاع سماوي","model":"gemma3:12b","proposals":[{"form":"ارتفاع النجم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"24cff1cd-e942-47cb-b4be-331ac8a796c9:0","term":"دائرة خط الطول","model":"gemma3:12b","proposals":[{"form":"دائرة الطول","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2503baaa-050e-404a-bd2f-dbd1345040d3:0","term":"لوحة التحكم","model":"gemma3:12b","proposals":[{"form":"الكونترول","type":"transliteration","confidence":"medium"},{"form":"الكونترول بانل","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"256c45a0-cb8d-4d38-a4aa-bb934185267c:0","term":"فحص","model":"gemma3:12b","proposals":[{"form":"تفتيش","type":"informal_synonym","confidence":"high"},{"form":"مراجعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"256c45a0-cb8d-4d38-a4aa-bb934185267c:1","term":"فحص","model":"gemma3:12b","proposals":[{"form":"تفتيش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"256c45a0-cb8d-4d38-a4aa-bb934185267c:2","term":"فحص","model":"gemma3:12b","proposals":[{"form":"تفتيش","type":"informal_synonym","confidence":"medium"},{"form":"تَفْقُد","type":"informal_synonym","confidence":"medium"},{"form":"تَفْقِيد","type":"informal_synonym","confidence":"medium"},{"form":"مُراجَعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"256c45a0-cb8d-4d38-a4aa-bb934185267c:3","term":"فحص","model":"gemma3:12b","proposals":[{"form":"تعديل","type":"informal_synonym","confidence":"medium"},{"form":"تَفْقُد","type":"informal_synonym","confidence":"medium"},{"form":"تَفْقُد عَلَى","type":"informal_synonym","confidence":"medium"},{"form":"تَفْقِيد","type":"informal_synonym","confidence":"medium"},{"form":"مُرَاجَعَة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"256c45a0-cb8d-4d38-a4aa-bb934185267c:4","term":"فحص","model":"gemma3:12b","proposals":[{"form":"تأكيد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"25e7b35a-e01e-4b5a-877e-c3cf1207cb11:0","term":"اتصال","model":"gemma3:12b","proposals":[{"form":"اتصال مرئي","type":"informal_synonym","confidence":"medium"},{"form":"تلامس","type":"informal_synonym","confidence":"medium"},{"form":"تواصل بصري","type":"colloquial","confidence":"medium"},{"form":"تَوَصُّل","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"25e7b35a-e01e-4b5a-877e-c3cf1207cb11:1","term":"اتصال","model":"gemma3:12b","proposals":[{"form":"تواصل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"25e7b35a-e01e-4b5a-877e-c3cf1207cb11:2","term":"اتصال","model":"gemma3:12b","proposals":[{"form":"تواصل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"25e7b35a-e01e-4b5a-877e-c3cf1207cb11:3","term":"اتصال","model":"gemma3:12b","proposals":[{"form":"تواصل","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"263d5230-d80c-4e3d-874a-279e834ee337:0","term":"ليزر كيماوي","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ليزر كيميائي","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"264b4814-0ac4-4202-b286-00caa8c5dfc5:0","term":"يزيل","model":"gemma3:12b","proposals":[{"form":"يفضي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"264b4814-0ac4-4202-b286-00caa8c5dfc5:1","term":"يزيل","model":"gemma3:12b","proposals":[{"form":"يرفّش","type":"colloquial","confidence":"medium"},{"form":"يفك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"264b4814-0ac4-4202-b286-00caa8c5dfc5:2","term":"يزيل","model":"gemma3:12b","proposals":[{"form":"ينظف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"264b4814-0ac4-4202-b286-00caa8c5dfc5:3","term":"يزيل","model":"gemma3:12b","proposals":[{"form":"ينظف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"265aa136-7776-4627-9e43-c27089cb5ad6:0","term":"مبين الموالفة المهبطي","model":"gemma3:12b","proposals":[{"form":"مؤشر ضبط الكاثود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2675ab70-87ca-47c3-8a2f-ce3889b36274:0","term":"طائرة عمودية مختلطة","model":"gemma3:12b","proposals":[{"form":"طائرة هيلكوبتر مركبة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2683789b-cb6f-489e-8810-8c6859ada9a2:0","term":"صعود أولي","model":"gemma3:12b","proposals":[{"form":"صعود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"26b3ccb9-a075-4ab0-8d9a-23c0b2d81777:0","term":"متوافق","model":"gemma3:12b","proposals":[],"rejected":[{"form":"متوافق","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"26e06332-609f-4599-ab07-18462f75786e:0","term":"تصفيح","model":"gemma3:12b","proposals":[{"form":"تغطية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"27045fe9-789e-48be-836b-d5e6f938f832:0","term":"مهمة قتالية","model":"gemma3:12b","proposals":[{"form":"عملية قتالية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"270b7985-655e-4cee-b2e3-b98fab84332b:0","term":"دورة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"دورة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"270b7985-655e-4cee-b2e3-b98fab84332b:1","term":"دورة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"دورة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"270b7985-655e-4cee-b2e3-b98fab84332b:2","term":"دورة","model":"gemma3:12b","proposals":[{"form":"لفّة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2746303a-ae2e-4f0c-a002-52d8b1487a38:0","term":"سحابة","model":"gemma3:12b","proposals":[{"form":"غيامة","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"غيوم","kept":false,"reason":"already_present"}]}
+{"sense_id":"2768de19-6226-4909-9fa4-091e58353dd4:0","term":"ملاحة فلكية","model":"gemma3:12b","proposals":[{"form":"ملاحة بالنجوم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"27afcbf6-5769-4bf9-8547-f7617f00624f:0","term":"اقتراب أدنى","model":"gemma3:12b","proposals":[{"form":"أقرب مسافة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"27d1eff1-1825-4916-bfb8-91298e6f855f:0","term":"مهمة باردة","model":"gemma3:12b","proposals":[{"form":"مهمة سهلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"28057217-6597-4be3-ac27-6612c56ce314:0","term":"إجهاد ضاغط","model":"gemma3:12b","proposals":[{"form":"ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"28c28011-aa77-4be2-a6c6-27ec8b1056e6:0","term":"خياشيم التبريد","model":"gemma3:12b","proposals":[{"form":"قلاّبات","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"خياشيم","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"2943ab97-099b-4b9d-8c5e-6050e4e3bc59:0","term":"اختبار بارد","model":"gemma3:12b","proposals":[{"form":"تجربة برد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2943cb24-a8e8-4c2d-815b-468b5dc6bad4:0","term":"تحويل إلى شحن","model":"gemma3:12b","proposals":[{"form":"تحويل للبضاعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"294bba3c-300f-4bd8-9c30-107636c202b8:0","term":"صلب الكروم","model":"gemma3:12b","proposals":[{"form":"كروم ستيل","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"29a1694a-df72-44e3-8f7e-ac1e1a4b24b4:0","term":"مركز التحكم","model":"gemma3:12b","proposals":[{"form":"مراقبة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"29ea0b99-2178-4b37-999e-b366a95a9918:0","term":"ميناء البوصلة","model":"gemma3:12b","proposals":[{"form":"وردة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"29ecfbe1-75d2-4b46-a90f-6de37a31fac5:0","term":"مركز مراقبة وإخبار","model":"gemma3:12b","proposals":[{"form":"مركز تحكم وإبلاغ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2a05fcb9-efa9-4795-9331-3b8f2cb41d13:0","term":"مركز الفتل","model":"gemma3:12b","proposals":[{"form":"نقطة الفتل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2a16a23b-faa8-4eb9-a983-97c8ad403607:0","term":"مطار مراقبة","model":"gemma3:12b","proposals":[{"form":"مطار مُراقب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2a3809ac-47d3-4090-9a3a-830bcca8b8ee:0","term":"قبعة مثلثية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"2a81694d-2540-488c-9626-a41a94784429:0","term":"منطقة قتال","model":"gemma3:12b","proposals":[{"form":"منطقة عمليات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2a81694d-2540-488c-9626-a41a94784429:1","term":"منطقة قتال","model":"gemma3:12b","proposals":[{"form":"منطقة عمليات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2a90922f-658e-4661-b43e-f8e2740731ac:0","term":"مخروط التشويش","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"2aa41806-64f2-4edd-aecd-701e621c59ce:0","term":"قضبان الأوامر","model":"gemma3:12b","proposals":[{"form":"أزرار التحكم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ad7b87a-8724-49c5-9c7c-14b11b9b65ad:0","term":"مظلة هبوط صدرية","model":"gemma3:12b","proposals":[{"form":"مظلة صدر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ade7721-0698-4a66-89ff-087a7fff32b2:0","term":"زاوية التحويل","model":"gemma3:12b","proposals":[{"form":"زاوية الانعطاف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2b00377d-3793-4464-a0f8-a1e70ec83222:0","term":"سمحاقي","model":"gemma3:12b","proposals":[{"form":"سماقي","type":"spelling_variant","confidence":"medium"}],"rejected":[{"form":"سمحاقي","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"2b0dc5d0-eb52-4426-88a9-8a09bc6f22cd:0","term":"جناح مقصوص","model":"gemma3:12b","proposals":[{"form":"جناح مقطوع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2bbf0da7-6a82-4675-bda4-bcbbc92f49ae:0","term":"حلقة الحدبة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حلقة الكام","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"2bf86bf3-1d25-4a15-a29b-4d93f0aa675d:0","term":"ظهر مائل","model":"gemma3:12b","proposals":[{"form":"السطح المائل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2c100d8f-8c0b-4e9f-be86-78a5a12ad244:0","term":"خطاف","model":"gemma3:12b","proposals":[{"form":"مخلة","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2c15249e-dc5a-4776-8ce7-13274b355e68:0","term":"جبنين","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كازين","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"2ce4063c-0856-4590-b984-68257e087ed4:0","term":"زاوية الانخراط","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"2d5ccf27-2a3d-48a0-b637-c9610d2640ce:0","term":"بالون المستوى الثابت","model":"gemma3:12b","proposals":[{"form":"بالون ثابت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ded7345-acce-4e42-b0ef-41a46f313011:0","term":"سقف","model":"gemma3:12b","proposals":[{"form":"ارتفاع أقصى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ded7345-acce-4e42-b0ef-41a46f313011:1","term":"سقف","model":"gemma3:12b","proposals":[{"form":"ارتفاع الغيوم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2dfa130f-e670-440a-8ee1-54ff8f09cd07:0","term":"مطار مراقب","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مطار مُراقب","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"2e28a0b5-c2e5-472c-b0df-14dfe5b66c95:0","term":"قلنسوة","model":"gemma3:12b","proposals":[{"form":"طرف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2e28a0b5-c2e5-472c-b0df-14dfe5b66c95:1","term":"قلنسوة","model":"gemma3:12b","proposals":[{"form":"غطاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2e2cda61-7d27-4f2e-acc1-b3b5117a281b:0","term":"جهات أصلية","model":"gemma3:12b","proposals":[{"form":"نقاط أساسية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2e687f9f-8e8a-44e1-98b1-29ad5ed887af:0","term":"مجمع","model":"gemma3:12b","proposals":[{"form":"جامع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ea5f606-db4f-48c4-9f9e-139593a7a48a:0","term":"جابذ","model":"gemma3:12b","proposals":[{"form":"قُطري","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2ea88a2b-f5dd-4b91-bb20-314b8b3aba5c:0","term":"محدد موقع بوصلي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"2f67b3a6-8538-48e4-af1e-8450a5e58d64:0","term":"قوة ضاغطة","model":"gemma3:12b","proposals":[{"form":"قوة انضغاط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"2f6d7b04-019a-4480-81a1-24002d6e67b5:0","term":"قالب مركب","model":"gemma3:12b","proposals":[{"form":"قالب مدمج","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3085f9db-c3bd-4306-bc0a-abd7e7c6769b:0","term":"قابل للبرمجة الآلية","model":"gemma3:12b","proposals":[{"form":"متحكم فيه بالحاسب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"308a36dd-67f2-4693-ac51-0687111be88a:0","term":"انحدار الصعود","model":"gemma3:12b","proposals":[{"form":"ميل الصعود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"30bc537a-63a3-4241-8475-7abdaf3dfbab:0","term":"دولاب العربة","model":"gemma3:12b","proposals":[{"form":"دُولاب السيارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"30c31eb1-b01f-421f-b533-1fa61624e79e:0","term":"يتخلص من","model":"gemma3:12b","proposals":[{"form":"يطرد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"30c7cefa-4c09-4a13-95cb-cb3d8fe8699a:0","term":"قمر الغطاء السحابي","model":"gemma3:12b","proposals":[{"form":"قمر الأرصاد الجوية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"30cd6c12-7093-4dae-bd05-0428f77cc919:0","term":"أنواع","model":"gemma3:12b","proposals":[{"form":"أصناف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"31333a21-bc70-46f8-9f3b-47e82f13da39:0","term":"دوار الضاغط","model":"gemma3:12b","proposals":[{"form":"دوار الكمبروسر","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"314b827f-ec64-44fb-bd60-6e1d5486e5da:0","term":"وزن المقاتلة الإجمالي","model":"gemma3:12b","proposals":[{"form":"وزن التشغيل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"31508134-b235-4e25-a68c-c7290087a766:0","term":"انكماش","model":"gemma3:12b","proposals":[{"form":"تقلص","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"31d46ca5-ea36-474c-808c-f6a09ac09859:0","term":"طريق سالك","model":"gemma3:12b","proposals":[{"form":"منطقة خالية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"321f82d8-4943-4c06-9ab5-b298aedb3906:0","term":"قوى مهام الحاملة","model":"gemma3:12b","proposals":[{"form":"قوة حاملة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3274c629-ec3e-45d1-be2e-3972fbebb91d:0","term":"بوصلة لوحية","model":"gemma3:12b","proposals":[{"form":"بوصلة قديمة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"33785d98-4160-48d7-893a-01f7d1cae7f3:0","term":"انفعال الانضغاط","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"33f277b5-9c2b-4b24-9c9a-1f188c92a2fa:0","term":"غطاء القمرة","model":"gemma3:12b","proposals":[{"form":"غطاء الطيارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"33f77f84-ecfc-4bbe-9416-cb53ca8f2fbe:0","term":"حلقة تجميع","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حلقة تجميع","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"33f77f84-ecfc-4bbe-9416-cb53ca8f2fbe:1","term":"حلقة تجميع","model":"gemma3:12b","proposals":[{"form":"حلقة التحميل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"34b9cd2f-237b-4db8-ba30-0c52ac6bc70f:0","term":"عدم الاستقرار المشروط","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"354355d7-297e-4909-b534-21dbbd67c62f:0","term":"خط منسوب","model":"gemma3:12b","proposals":[{"form":"خط مستوى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"354355d7-297e-4909-b534-21dbbd67c62f:1","term":"خط منسوب","model":"gemma3:12b","proposals":[{"form":"خط تساوي الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"35672415-8fa1-40c4-adda-2dca7a067f4e:0","term":"نطاق ـ ج","model":"gemma3:12b","proposals":[],"rejected":[{"form":"سي باند","kept":false,"reason":"already_present"}]}
+{"sense_id":"3634df63-1cc0-483f-92af-c3dd0f450c82:0","term":"خزف ـ سبيكة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"363f34ff-b4e2-4b0c-9999-ef799c7cb4ce:0","term":"طائرة تجارية","model":"gemma3:12b","proposals":[{"form":"طائرة جوية","type":"informal_synonym","confidence":"medium"},{"form":"طائرة ركاب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"364291ac-7fd1-4c3a-9c98-59a8480649cd:0","term":"نسبة الكابول","model":"gemma3:12b","proposals":[{"form":"نسبة الانحراف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"36510423-e9f8-415f-9715-7434d997cda4:0","term":"فئات","model":"gemma3:12b","proposals":[{"form":"تصنيفات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3680a815-e064-467f-abe6-ddf07b60dd63:0","term":"وصلة","model":"gemma3:12b","proposals":[{"form":"موصل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"36cfe31d-d110-4320-a406-d95f8dbceb61:0","term":"هوائيات الصفيف الممتثل","model":"gemma3:12b","proposals":[{"form":"هوائيات مدمجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3720800c-19e3-4152-b7c1-c8fd5cda1a2b:0","term":"حجم الاحتراق","model":"gemma3:12b","proposals":[{"form":"حجم غرفة الاحتراق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3799470e-6f49-43e2-afc3-cd49fe87c19d:0","term":"حلقة تركيز","model":"gemma3:12b","proposals":[{"form":"دائرة تركيز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"37d04c8f-7d10-40b5-9d69-65b8d994c234:0","term":"تصوير كاشف لعمليات التمويه","model":"gemma3:12b","proposals":[{"form":"تصوير بالأشعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"37d51653-cfe0-4f8b-bd16-b204cfa688ca:0","term":"رادار ترابطي","model":"gemma3:12b","proposals":[{"form":"رادار متناسق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"37e06fef-e038-44de-b99b-ca2f1f976991:0","term":"كبسولة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كبسولة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"37e06fef-e038-44de-b99b-ca2f1f976991:1","term":"كبسولة","model":"gemma3:12b","proposals":[{"form":"كبينة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"37e06fef-e038-44de-b99b-ca2f1f976991:2","term":"كبسولة","model":"gemma3:12b","proposals":[{"form":"كبينة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"37f9110e-fd92-49b2-aa9b-f150075f57f1:0","term":"تقلص","model":"gemma3:12b","proposals":[],"rejected":[{"form":"انكماش","kept":false,"reason":"already_present"}]}
+{"sense_id":"38c41139-b833-4be0-8260-c56389dd10c7:0","term":"اتجاه الوتر","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"393c9111-3e9c-45ee-b904-ab78366d69bf:0","term":"حجرة الاحتراق","model":"gemma3:12b","proposals":[{"form":"غرفة الحرق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"394d12d8-6ef7-4178-9f02-cc0f61ef5c77:0","term":"مرشح طاردي","model":"gemma3:12b","proposals":[{"form":"فلتر طرد مركزي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3954bda1-024d-4d98-84f0-1ad753c99745:0","term":"وقود دافع مركب","model":"gemma3:12b","proposals":[{"form":"وقود مُركَّب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"39855d15-d019-4092-a470-d3eb1d6684a8:0","term":"مركز هندسي","model":"gemma3:12b","proposals":[{"form":"نقطة المنتصف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"39ac8d9e-6c03-42bf-810c-836554132a87:0","term":"ترابط","model":"gemma3:12b","proposals":[{"form":"متوافق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"39bb5230-ee8d-4b9a-8a07-de486382256a:0","term":"منحن قلبي","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كارديود","kept":false,"reason":"already_present"}]}
+{"sense_id":"39f5051e-a81c-43b2-9ec8-3214c03a5b70:0","term":"طائرة عمودية مركبة","model":"gemma3:12b","proposals":[{"form":"طائرة عمودية مدمجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a164fdf-ab26-4332-96d9-d40212b5a947:0","term":"غطاء المقصورة","model":"gemma3:12b","proposals":[{"form":"غطاء الطيار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a1c9aec-5aed-4d67-b65c-6a78d35a7b9c:0","term":"طوق","model":"gemma3:12b","proposals":[{"form":"غطاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a1c9aec-5aed-4d67-b65c-6a78d35a7b9c:1","term":"طوق","model":"gemma3:12b","proposals":[{"form":"حافة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a1c9aec-5aed-4d67-b65c-6a78d35a7b9c:2","term":"طوق","model":"gemma3:12b","proposals":[{"form":"حافة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a4245c0-10fb-404e-98b4-ba1e6ac7fab0:0","term":"مدفع السلسلة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مدفع السلسلة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"3a4a19be-76f7-42a6-a29b-e4b0e484fd00:0","term":"طريق الصعود","model":"gemma3:12b","proposals":[{"form":"طريق سالك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a50a990-cad5-4c12-ac1f-8a7930843040:0","term":"متوائم","model":"gemma3:12b","proposals":[{"form":"متوافق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3a6a2600-5458-4777-aa75-c3f58326ab7c:0","term":"دورة معلبة","model":"gemma3:12b","proposals":[{"form":"دورة جاهزة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3aa7ad56-6d1f-4b1d-9c40-17dbf70b2a65:0","term":"مركز الطفو","model":"gemma3:12b","proposals":[{"form":"نقطة الطفو","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ac53bcc-f9fd-41d7-998f-6ce6b1bfe6b2:0","term":"إدارة ثابتة السرعة","model":"gemma3:12b","proposals":[{"form":"مُثَبِّت السرعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ae3806d-dbb1-4cc4-b190-f7c9deb1288c:0","term":"كفاءة الاحتراق","model":"gemma3:12b","proposals":[{"form":"مردود الحرق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3af62d9c-df09-4341-beb5-1825b2f46a2d:0","term":"عنقود","model":"gemma3:12b","proposals":[{"form":"مجموعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3b1724cf-b144-42fc-b47e-684ad356ade3:0","term":"خزف ـ معدن","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"3b377487-0092-480a-8f70-e862d6dd02b5:0","term":"موجة مستمرة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"موجة مستمرة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"3b586c8a-08fc-49ac-9334-af428524e746:0","term":"موثق","model":"gemma3:12b","proposals":[{"form":"قاطع","type":"colloquial","confidence":"medium"},{"form":"كلام","type":"spelling_variant","confidence":"medium"},{"form":"كليب","type":"transliteration","confidence":"medium"}],"rejected":[{"form":"كلامب","kept":false,"reason":"already_present"},{"form":"مشبك","kept":false,"reason":"already_present"}]}
+{"sense_id":"3b7f407b-c549-47b1-af41-506d0f4c4c8a:0","term":"إجهاد ضغطي","model":"gemma3:12b","proposals":[{"form":"ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3bb01d9b-e3f5-4e87-9b5e-b7dee3a71da1:0","term":"خطة طارئة","model":"gemma3:12b","proposals":[{"form":"خطة بديلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3c3572bf-1383-4362-9405-8f9b690e0fd5:0","term":"كربنة","model":"gemma3:12b","proposals":[{"form":"تكرير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3c8557f4-3413-4bfd-8336-dbe4569be04d:0","term":"انثناء","model":"gemma3:12b","proposals":[{"form":"قوس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3d210da2-da29-464e-91fa-21062ada9cc6:0","term":"صامولة القناة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"3d594ca8-e2b3-4df4-894d-5f1607878773:0","term":"طائرة مركبة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"طائرة مركبة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"3d594ca8-e2b3-4df4-894d-5f1607878773:1","term":"طائرة مركبة","model":"gemma3:12b","proposals":[],"rejected":[{"form":"طائرة كومباوند","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"3dab7833-74c5-4243-9789-bd103cdc71ae:0","term":"أمن الاتصالات","model":"gemma3:12b","proposals":[{"form":"أمن معلومات الاتصال","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ddcb93e-31f8-4a9b-9c00-47f5f245ed6e:0","term":"مركز الرفع التحريكي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"3dfde3c8-e9d7-47af-885d-62156d619370:0","term":"رحلة طيران مراقبة","model":"gemma3:12b","proposals":[{"form":"رحلة موجهة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3e068933-b93e-4cbd-85c0-674bbcc5d592:0","term":"عمود الصعود","model":"gemma3:12b","proposals":[{"form":"ممر السلم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3e089d44-27fa-475d-8ba8-ef2233ac6804:0","term":"تباين","model":"gemma3:12b","proposals":[{"form":"تضارب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3e2023c5-fb21-4918-8a81-52667029c4d7:0","term":"جناح مجزوز","model":"gemma3:12b","proposals":[{"form":"جناح مقصوص","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ea78813-3e3d-4ed2-abdf-4933ab804de3:0","term":"سعر الشحن النوعي","model":"gemma3:12b","proposals":[{"form":"سعر البضاعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ec38de4-7f90-497e-a5ef-2e8016ae2135:0","term":"برنامج مشترك","model":"gemma3:12b","proposals":[{"form":"برنامج تعاوني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ed61efc-c100-44d7-adc4-52a18a227305:0","term":"عتبة مركبة","model":"gemma3:12b","proposals":[{"form":"شريط مركب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3ed61efc-c100-44d7-adc4-52a18a227305:1","term":"عتبة مركبة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"3f3745d6-a3ed-469d-ad4b-6698620049b6:0","term":"إمساك","model":"gemma3:12b","proposals":[{"form":"تثبيت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3f3745d6-a3ed-469d-ad4b-6698620049b6:1","term":"إمساك","model":"gemma3:12b","proposals":[{"form":"تثبيت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3f3745d6-a3ed-469d-ad4b-6698620049b6:2","term":"إمساك","model":"gemma3:12b","proposals":[{"form":"تتبع","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"3f3745d6-a3ed-469d-ad4b-6698620049b6:3","term":"إمساك","model":"gemma3:12b","proposals":[{"form":"التقاط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3f89e171-fa58-4936-a5cb-7f77f3d2305b:0","term":"انضغاطية","model":"gemma3:12b","proposals":[{"form":"قابلية للضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3f8b164b-f08d-43c3-af24-db4c76b9e651:0","term":"طيران انحداري","model":"gemma3:12b","proposals":[{"form":"انحدار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3fd52653-c67f-44a0-9678-9fdf267b8ae2:0","term":"تحذير السحاب","model":"gemma3:12b","proposals":[{"form":"تنبيه السحب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"3fdddd84-ce68-44cb-897b-24649f9478eb:0","term":"حزمة ضوئية مركزة","model":"gemma3:12b","proposals":[{"form":"شعاع مركز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4003d99d-9c87-40d9-941c-441d173056c5:0","term":"تابع الحدبة","model":"gemma3:12b","proposals":[{"form":"متابع الكامة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"40b487bd-ab19-43b8-8c9f-bedc92d7e149:0","term":"مراقبة","model":"gemma3:12b","proposals":[{"form":"تتبع","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"40ed14fd-3101-4d70-ae46-4449b99548b4:0","term":"أضواء تحذير الاصطدام","model":"gemma3:12b","proposals":[{"form":"أضواء الاصطدام","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"41cdbd27-d245-4fef-b163-3d912dffddd5:0","term":"عتبة مستمرة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"428383f1-a354-4d9c-8a5d-fc9c1b54d328:0","term":"حد الاستجابة","model":"gemma3:12b","proposals":[{"form":"الحد الأقصى للوقت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"42a22f98-4b8b-489e-88e7-2e3ee96478c6:0","term":"نقاط البوصلة","model":"gemma3:12b","proposals":[{"form":"اتجاهات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"42e41213-8e88-4f3e-9205-dc41f7013607:0","term":"لوحة الأجهزة","model":"gemma3:12b","proposals":[{"form":"شاشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"431288fa-0cca-4120-b759-7e17002910fe:0","term":"بالون الارتفاع الأقصى","model":"gemma3:12b","proposals":[{"form":"بالون قياس الارتفاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"43c8b331-3c3f-405d-8684-2b8f00ed56ce:0","term":"خرامة مركزية","model":"gemma3:12b","proposals":[{"form":"مِثْقَبَة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"44bbd6f2-18a7-4aad-83ae-3d4345c425ff:0","term":"ثنائي الأساس مركب","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"44e67adc-fbc4-4357-9f70-6f1e23a931f3:0","term":"مفتاح اتصال","model":"gemma3:12b","proposals":[{"form":"كونتاكتر","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"450ff98b-d4d7-4f5b-a95e-c23b3e6a8d8c:0","term":"طخروري ـ طبقي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"45119f1e-c0e5-410a-83a1-56a3cc941609:0","term":"عموم","model":"gemma3:12b","proposals":[{"form":"قابلية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"45119f1e-c0e5-410a-83a1-56a3cc941609:1","term":"عموم","model":"gemma3:12b","proposals":[{"form":"قابلية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4522b5bd-cd61-4bf3-a74f-5f59e9df77a4:0","term":"قاعدة وسيطة","model":"gemma3:12b","proposals":[{"form":"سرير المحفز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"454490af-af6d-4aa4-84d8-a216d3214d4c:0","term":"تغاير بوصلي","model":"gemma3:12b","proposals":[{"form":"انحراف مغناطيسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"454596b3-27f0-4f9e-8b74-16c93ea57dc4:0","term":"فوهة مائلة","model":"gemma3:12b","proposals":[{"form":"فوهة منحرفة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"457b91b6-592b-4757-a52f-9744c766790c:0","term":"إحداثيات ديكارتية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"إحداثيات كارتيزية","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"4584a59b-af57-454b-8a9e-32074b5552d1:0","term":"يسامت","model":"gemma3:12b","proposals":[{"form":"تَوْسِيَة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"458c122f-8c96-4f25-8a77-ebd68a98e86e:0","term":"حمولة","model":"gemma3:12b","proposals":[{"form":"بضاعة","type":"informal_synonym","confidence":"high"}],"rejected":[{"form":"حمولة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"458c122f-8c96-4f25-8a77-ebd68a98e86e:1","term":"حمولة","model":"gemma3:12b","proposals":[{"form":"حِمل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"458c122f-8c96-4f25-8a77-ebd68a98e86e:2","term":"حمولة","model":"gemma3:12b","proposals":[{"form":"وقود إضافي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"458c122f-8c96-4f25-8a77-ebd68a98e86e:3","term":"حمولة","model":"gemma3:12b","proposals":[{"form":"تزود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"46262cd1-ec20-4c48-9eba-9dae5e731375:0","term":"تكهف","model":"gemma3:12b","proposals":[{"form":"تكهيف","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"462665a4-2e96-46de-8653-ee23cf2a7b20:0","term":"كهرباء تجارية","model":"gemma3:12b","proposals":[{"form":"كهرباء ركاب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"465eb05d-9743-4677-9be2-647b077a81f9:0","term":"اقتراب دائري","model":"gemma3:12b","proposals":[{"form":"دوران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4675863b-9ab9-458c-9082-12e27fb938b1:0","term":"غرفة احتراق","model":"gemma3:12b","proposals":[{"form":"غرفة حرق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"469a700c-9104-46a6-b259-90b99db548f3:0","term":"لوحة بيان","model":"gemma3:12b","proposals":[{"form":"لوحة الإيضاح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"470a1e34-5190-42e5-836f-924bf736f0af:0","term":"لوحة واضحة الرؤية","model":"gemma3:12b","proposals":[{"form":"لوحة رؤية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"472d59b5-b260-484f-9d5c-d8b8f69ac39b:0","term":"خريطة الألوان","model":"gemma3:12b","proposals":[{"form":"جدول الألوان","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"47998c2b-5168-4d28-ba19-39a97c0c7962:0","term":"مواصفات كانوكس","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"47a19772-3c18-44b0-b5a5-f80bae2d9518:0","term":"معامل عزم مركز الضغط","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"47aa66d8-2892-4bf5-adb4-7c5b8d044c96:0","term":"شفق مدني","model":"gemma3:12b","proposals":[{"form":"شفق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4876851e-0fd5-424d-8dc0-de1fc15e0f6b:0","term":"أثر التكثيف","model":"gemma3:12b","proposals":[{"form":"أثر البخار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"489d8e69-1b4e-4a80-9d52-75f48be3a50b:0","term":"دمام سلولوزي","model":"gemma3:12b","proposals":[{"form":"ديما سيلولوز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"49110427-fd00-4c50-b1de-603a38e0a99c:0","term":"تجانس دائري","model":"gemma3:12b","proposals":[{"form":"متساوي الاتجاهات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"499a2630-3f19-4c93-baec-437f560ba991:0","term":"تسرب متحكم به","model":"gemma3:12b","proposals":[{"form":"تسريب محسوب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"49b28b84-fdef-4cb5-a7cc-e26b19147995:0","term":"إخلاء طارئ","model":"gemma3:12b","proposals":[{"form":"إخلاء طبي عسكري","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"49feb5c6-eac5-43f5-b228-a30a1c37971a:0","term":"طبعة منسوبية","model":"gemma3:12b","proposals":[{"form":"قالب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4a0f3d21-e12a-45f8-9257-f6634481098e:0","term":"جبهة باردة","model":"gemma3:12b","proposals":[{"form":"جبهة برد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4a4c651d-7bab-4153-acd8-62cfc4086276:0","term":"رقعة قنوية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"4a97167e-84c1-42ff-a74a-e9cf5eca1e99:0","term":"دفاع المدار المعاكس","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"4ace7fc8-3bcb-404c-b4dd-9495f656ed37:0","term":"مدخل ذقني","model":"gemma3:12b","proposals":[{"form":"مدخل تحت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4b8b064e-1d71-49f1-90fe-9dbc51fa7fcf:0","term":"تبريد","model":"gemma3:12b","proposals":[{"form":"تلطيف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4b99fe8d-2196-46b3-8d76-38e81abec7eb:0","term":"لافتة تحذير","model":"gemma3:12b","proposals":[{"form":"علامة تحذير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4ba5ce92-78a3-4791-a0b8-d4456aa0feab:0","term":"اختبار الضغط","model":"gemma3:12b","proposals":[{"form":"ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4bb9b8b4-8209-4bbf-b294-761c52832bfc:0","term":"اقتناص","model":"gemma3:12b","proposals":[{"form":"إمسك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4bc690a2-2b2a-4d24-a490-62137d70edd9:0","term":"شرارة تفريغ المكثف","model":"gemma3:12b","proposals":[{"form":"شمعة التفريغ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4bced68a-c594-4ec6-b274-b36fae81e06d:0","term":"ميكانيك سماوي","model":"gemma3:12b","proposals":[{"form":"علم حركة الكواكب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4bfe431d-f85c-478c-bb12-1539d17fab2b:0","term":"هابطة","model":"gemma3:12b","proposals":[{"form":"أيون موجب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4c51613c-f998-4d91-b1ce-fed622bb3ed8:0","term":"منصة اختبار البوصلة","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"4cbc69da-026d-4b1a-b1ba-9fb9a5128c34:0","term":"مقطع مركزي","model":"gemma3:12b","proposals":[{"form":"الجزء الأوسط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4cc9c7e7-be37-4b1c-9647-1d059d41d0e5:0","term":"شكل عام","model":"gemma3:12b","proposals":[{"form":"تكوين","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4cd81a53-4b57-4f73-b4b0-b4bcc71ef30b:0","term":"نظام مراقبة وإخبار","model":"gemma3:12b","proposals":[{"form":"نظام الإنذار والإبلاغ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4cec89dc-877b-40a9-9f3c-354324e2d5c8:0","term":"حمض الكروميك","model":"gemma3:12b","proposals":[{"form":"حمض الكروم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4de73867-5f91-4c13-a14d-6133939c89c0:0","term":"تأثيرات الانضغاطية","model":"gemma3:12b","proposals":[{"form":"تأثيرات الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4e87065e-6e0a-49cd-9519-997fd460827d:0","term":"مسار بوصلي","model":"gemma3:12b","proposals":[{"form":"اتجاه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4e92e48e-7c0a-441c-b0ad-70140a9d2dce:0","term":"دائرة الاحتمالات المتساوية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"4e9e6173-a01f-42dc-8e17-f8fe00a83b5d:0","term":"منوار الارتفاع الأقصى","model":"gemma3:12b","proposals":[{"form":"جهاز قياس الغيوم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"4fdb3e75-6dbf-42ff-a0f3-f1e68f46ca35:0","term":"ممشى القط","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ممشى","kept":false,"reason":"already_present"}]}
+{"sense_id":"504856f3-5947-4603-ac61-0e6bd82dd720:0","term":"حدود المناطق المأهولة","model":"gemma3:12b","proposals":[{"form":"حدود المدن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5119b23f-b648-4dae-b7ff-63e5a0d81c9f:0","term":"غطاء غشائي","model":"gemma3:12b","proposals":[{"form":"غطاء واقي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"516bc2d8-4cc0-45d5-9a17-a02db1aaf152:0","term":"صمام غير مرجع","model":"gemma3:12b","proposals":[{"form":"صمام اتجاه واحد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"51960746-ae94-47c6-8bfa-e15c5a273070:0","term":"مركز الجاذبية","model":"gemma3:12b","proposals":[{"form":"نقطة التوازن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"519b4b44-eb7f-4d78-9672-1c46f9ae9ea7:0","term":"توجيه سماوي","model":"gemma3:12b","proposals":[{"form":"توجيه بالنجوم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"51fdf0d9-9be1-48bc-b2e0-eea475250ecf:0","term":"معادلة البوصلة","model":"gemma3:12b","proposals":[{"form":"تعويض البوصلة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5286fdbe-34bf-4997-94e3-bbfacd79cc5b:0","term":"سقف ورؤية غير محدودين","model":"gemma3:12b","proposals":[{"form":"سما غير محدود","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5311a515-49c9-48c2-8428-628cc2a848d5:0","term":"أصناف","model":"gemma3:12b","proposals":[{"form":"أنواع","type":"informal_synonym","confidence":"medium"},{"form":"مجموعات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5311a515-49c9-48c2-8428-628cc2a848d5:1","term":"أصناف","model":"gemma3:12b","proposals":[{"form":"أنواع","type":"informal_synonym","confidence":"medium"},{"form":"مجموعات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5311a515-49c9-48c2-8428-628cc2a848d5:2","term":"أصناف","model":"gemma3:12b","proposals":[{"form":"مستويات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5342fea4-79a1-44bb-9777-d0795a1fbc5c:0","term":"جريان متصل","model":"gemma3:12b","proposals":[{"form":"تدفق مستمر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"534f6e43-2530-449a-b87f-57f9579b797a:0","term":"دورة تحريك حراري مغلقة","model":"gemma3:12b","proposals":[{"form":"دورة حرارية مغلقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"535d3200-1ada-42c5-ba10-4754a7ab3c79:0","term":"احتواء","model":"gemma3:12b","proposals":[{"form":"حجز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5369e391-cc04-4df1-8550-0bbc37b43f13:0","term":"منسجم","model":"gemma3:12b","proposals":[{"form":"متوافق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5369e391-cc04-4df1-8550-0bbc37b43f13:1","term":"منسجم","model":"gemma3:12b","proposals":[{"form":"متوافق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"53755b82-b097-4e5f-9d28-9a72723d9c5f:0","term":"طول الدارة","model":"gemma3:12b","proposals":[{"form":"طول المسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"538f4666-e5c3-4141-bcd9-e6e6b0567224:0","term":"مبرد","model":"gemma3:12b","proposals":[{"form":"مِيّه التبريد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5396c5fd-21fd-4cc7-ab20-7bc1d3d99f0b:0","term":"إطار ذو حافة","model":"gemma3:12b","proposals":[{"form":"إطار مع قناة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"53fab944-5177-4c98-b64c-40c4c537afea:0","term":"جائز ناتئ","model":"gemma3:12b","proposals":[{"form":"كابول","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"541ffbe3-4963-4671-89d7-957ec1b4c8f1:0","term":"صاف","model":"gemma3:12b","proposals":[{"form":"نظيف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"54828618-8393-4759-a0cd-c82ff95cf838:0","term":"موجة ضغط","model":"gemma3:12b","proposals":[{"form":"موجة انضغاط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5496438e-7be5-43c4-bde7-69a0f285ee4d:0","term":"تشتيت دائري","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"5507d529-256c-4686-ab5c-f46d19f8e43e:0","term":"قلابة كوندا","model":"gemma3:12b","proposals":[{"form":"قلابة كوندة","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"55a4a02e-b698-4ec5-b26d-40e4a474f0eb:0","term":"تحجيم","model":"gemma3:12b","proposals":[],"rejected":[{"form":"تشيرب","kept":false,"reason":"already_present"},{"form":"تشيربينج","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"55da7551-f77f-484e-afc8-b5b309c21dba:0","term":"معلومات مفشية","model":"gemma3:12b","proposals":[{"form":"مفضوحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"55e86283-7776-4876-b061-040677399b7f:0","term":"مركبة اختبار الاحتراق","model":"gemma3:12b","proposals":[{"form":"صاروخ اختبار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5634a6f1-8da0-4de9-9197-56b7ff81e081:0","term":"استجابة","model":"gemma3:12b","proposals":[{"form":"التزام","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"56a4c2d7-4523-4c9d-8db5-144e63c22cae:0","term":"طائرة حلقية","model":"gemma3:12b","proposals":[{"form":"طائرة حلق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"56a9e520-43c9-4102-96f9-338ec5222e6b:0","term":"بذر الغمام","model":"gemma3:12b","proposals":[{"form":"تلقيح الغيم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"56f6035a-ffa4-417d-b39e-91b5c028ccf5:0","term":"ثابت الجاذبية الأرضية","model":"gemma3:12b","proposals":[{"form":"ثابت الجاذبية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5738d62f-6b73-4f01-b030-b139a3c51213:0","term":"فقد الاتصال","model":"gemma3:12b","proposals":[{"form":"اختفاء الإشارة","type":"informal_synonym","confidence":"medium"},{"form":"فقدنا الإشارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"574d04ac-37be-4ebd-8c58-9219886033ed:0","term":"اقتراب بصري","model":"gemma3:12b","proposals":[{"form":"اقتراب بالعين","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"577b4349-628d-4589-bcb7-e800dcc48d75:0","term":"مادة مركبة","model":"gemma3:12b","proposals":[{"form":"مركبات","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"مادة مركبة","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"57c05d02-2a7c-4014-b034-49510b0c4b58:0","term":"مركز الرفع الكلي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"5826c95c-3cff-4dc7-97a4-d10f9ccbe77c:0","term":"رفع الانضغاط","model":"gemma3:12b","proposals":[{"form":"رفع ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"585b2622-53ea-4f19-8f27-be30235f2825:0","term":"عكس","model":"gemma3:12b","proposals":[{"form":"تبديل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"58f4a37b-149c-43c5-934d-75b7fd510d90:0","term":"تكثف","model":"gemma3:12b","proposals":[{"form":"تكتّف","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"597199c0-7e6c-443a-b17c-5cc1a8bc9c69:0","term":"جائز مستمر","model":"gemma3:12b","proposals":[{"form":"جسر مستمر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"59ced114-69de-4b57-9dfc-29e8ebbcb763:0","term":"مجلس الطيران المدني","model":"gemma3:12b","proposals":[{"form":"هيئة الطيران المدني","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a10ec10-8e3e-4c35-b6b1-cb27589ad1be:0","term":"ينقشع","model":"gemma3:12b","proposals":[{"form":"يتضح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a84dca9-c0f1-4bd4-af4b-ecb3b4c461c6:0","term":"مستوى ضوضاء الموطن","model":"gemma3:12b","proposals":[{"form":"ضوضاء المنطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a913cbf-05ca-4f81-8dde-09ca8e981ad2:0","term":"طيران اتصالي","model":"gemma3:12b","proposals":[{"form":"طيران بصري","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a922ac1-bdb7-4fad-a0c5-b7d8217137b9:0","term":"قدرة منسوبية","model":"gemma3:12b","proposals":[{"form":"إرتفاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a922ac1-bdb7-4fad-a0c5-b7d8217137b9:1","term":"قدرة منسوبية","model":"gemma3:12b","proposals":[{"form":"عرض منسوب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5a941499-3d65-446a-98a4-e23c32d94044:0","term":"ارتفاع موعود","model":"gemma3:12b","proposals":[{"form":"ارتفاع الإقلاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5acd26a9-1c97-476f-b6ff-1be0716921d9:0","term":"نقطة التغييم","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"5aefa9a7-307c-4d57-aa7b-cd51aa236439:0","term":"مؤشر الصعود","model":"gemma3:12b","proposals":[{"form":"مؤشر السرعة الرأسية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b1cd603-cdb1-46f5-81fb-52bd5327eed2:0","term":"انتقال بالحمل","model":"gemma3:12b","proposals":[{"form":"حركة هواء","type":"informal_synonym","confidence":"medium"},{"form":"حمل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b1f31fe-766d-4684-9594-672bff63a5a4:0","term":"انتقال مركز الضغط","model":"gemma3:12b","proposals":[{"form":"مسافة مركز الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b1f31fe-766d-4684-9594-672bff63a5a4:1","term":"انتقال مركز الضغط","model":"gemma3:12b","proposals":[{"form":"مسافة مركز الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b49afb1-7d9a-4188-b4c8-ece03269bd93:0","term":"ساندة","model":"gemma3:12b","proposals":[{"form":"حُقْن","type":"colloquial","confidence":"medium"},{"form":"حُقْنَةْ","type":"colloquial","confidence":"medium"},{"form":"حواجز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b49afb1-7d9a-4188-b4c8-ece03269bd93:1","term":"ساندة","model":"gemma3:12b","proposals":[{"form":"دولي","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5b49afb1-7d9a-4188-b4c8-ece03269bd93:2","term":"ساندة","model":"gemma3:12b","proposals":[{"form":"دولي","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5c01ea37-2ff2-4265-a774-efeffc11fecf:0","term":"زاوية المخروطية","model":"gemma3:12b","proposals":[{"form":"زاوية الانحراف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5c12ef0f-0f58-4d7f-9c1b-2b620f3d8ec2:0","term":"دارة تطابقية","model":"gemma3:12b","proposals":[{"form":"دارة تزامنية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5c360b2d-bf01-4200-9eba-a91d2422739b:0","term":"كابول","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كابولي","kept":false,"reason":"already_present"}]}
+{"sense_id":"5c49529e-180e-483d-8003-b4678638d82b:0","term":"داسر هراوي","model":"gemma3:12b","proposals":[{"form":"مروحة نادي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5caab07b-ca77-43d8-80d3-1cc9be2ef26e:0","term":"قناة","model":"gemma3:12b","proposals":[{"form":"ممر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5caab07b-ca77-43d8-80d3-1cc9be2ef26e:1","term":"قناة","model":"gemma3:12b","proposals":[{"form":"مجرى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5caab07b-ca77-43d8-80d3-1cc9be2ef26e:2","term":"قناة","model":"gemma3:12b","proposals":[{"form":"مسار","type":"informal_synonym","confidence":"medium"},{"form":"ممر","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"5caab07b-ca77-43d8-80d3-1cc9be2ef26e:3","term":"قناة","model":"gemma3:12b","proposals":[{"form":"مسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5caab07b-ca77-43d8-80d3-1cc9be2ef26e:4","term":"قناة","model":"gemma3:12b","proposals":[{"form":"مسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5ccea8e6-1dd7-4e38-bbdc-3e2a4dd56f82:0","term":"صاروخ كيماوي","model":"gemma3:12b","proposals":[{"form":"صاروخ كيميائي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5d2d48c7-1a77-4315-83bb-b613eba5884e:0","term":"شريط محفوظ","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كاسيت","kept":false,"reason":"already_present"}]}
+{"sense_id":"5d95d694-ffce-4cf6-aece-2262b092d201:0","term":"برشام تشري","model":"gemma3:12b","proposals":[{"form":"مسمار أعمى","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5d989c4b-7af2-479c-9cd9-9704a9adba5d:0","term":"فريق تشغيل الطائرات المقاتلة","model":"gemma3:12b","proposals":[{"form":"فريق التحكم في الطائرات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5dcf2de7-6067-4bd2-a486-18052e4e672c:0","term":"نقطة التغيم","model":"gemma3:12b","proposals":[{"form":"نقطة التلبد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5dddd66e-19c2-48c6-8649-a0d577ff9c49:0","term":"طائرة الكنار","model":"gemma3:12b","proposals":[{"form":"كنار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5e40bdc9-70d3-4d27-a2ca-c7614f6ee1ea:0","term":"آثار عرضية","model":"gemma3:12b","proposals":[{"form":"تداعيات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5e7fa8af-b505-4d69-9b2a-aad02b80a662:0","term":"مخروط السكون","model":"gemma3:12b","proposals":[{"form":"مخروط الصمت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5e8092e8-1ed9-4ab2-9f5a-95c89966b08f:0","term":"سحابة عدسية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"سحابة بانر","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"5ecb3da5-6803-4674-b0eb-33e83669c43a:0","term":"شاشة مركبة","model":"gemma3:12b","proposals":[{"form":"شاشة مدمجة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5ed10c96-3faf-40f6-8feb-6abb5c4ccb97:0","term":"رفع انضغاطي","model":"gemma3:12b","proposals":[{"form":"رفع ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5fa3087b-c396-40bb-842b-429a92cf8085:0","term":"زاوية سطح التحكم","model":"gemma3:12b","proposals":[{"form":"زاوية التوجيه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"5fc5b226-96fd-49d4-a402-d01ab8873689:0","term":"تشكيل بالضغط","model":"gemma3:12b","proposals":[{"form":"صياغة بالضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"تشكيل بالضغط","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"602f707d-3fe4-4e07-bada-15cdecd474cf:0","term":"تثبيت","model":"gemma3:12b","proposals":[],"rejected":[{"form":"تثبيت","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"602f707d-3fe4-4e07-bada-15cdecd474cf:1","term":"تثبيت","model":"gemma3:12b","proposals":[],"rejected":[{"form":"تثبيت","kept":false,"reason":"same_as_term"},{"form":"ربط","kept":false,"reason":"already_present"}]}
+{"sense_id":"6048e5e8-4c99-4671-8172-b38d2e9d6b38:0","term":"جهاز القيادة","model":"gemma3:12b","proposals":[{"form":"أدوات التحكم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6066df62-79dd-4a72-8589-6b9cbf6661b4:0","term":"موجة باردة","model":"gemma3:12b","proposals":[{"form":"موجة جليد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6081f746-4bf4-4f33-8f8d-493293979f24:0","term":"جرم سماوي","model":"gemma3:12b","proposals":[{"form":"شيء في الفضاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"608b8190-2cbf-4ef8-a3eb-fa7d900e6c0f:0","term":"وجهة بوصلية","model":"gemma3:12b","proposals":[{"form":"اتجاه","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"608d46bf-444a-494f-a414-434f20a029ae:0","term":"فعالية الاحتراق","model":"gemma3:12b","proposals":[{"form":"كفاءة الاحتراق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"60b0c28d-db4d-460c-bdf4-0a08a387da25:0","term":"عاكس التيار","model":"gemma3:12b","proposals":[{"form":"مُبَدِّل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"60d6f4f4-61a5-42f1-ae92-e9f407215a99:0","term":"محرك متعاكس الجريان","model":"gemma3:12b","proposals":[{"form":"محرك عكسي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"61a2e44a-9407-4926-909b-f93ae97314a5:0","term":"منجنيق","model":"gemma3:12b","proposals":[{"form":"قاذف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"61c49281-4761-479a-a0fc-1c73918ae20c:0","term":"طيران مطرد صاعد","model":"gemma3:12b","proposals":[{"form":"صعود مستمر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"61d18eda-0373-4544-ac0d-0cb1928a9cab:0","term":"وقود دافع غروي","model":"gemma3:12b","proposals":[{"form":"وقود جزيئات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"62056a0e-29e0-474c-a1e3-0afaa24ede1b:0","term":"خط المحور","model":"gemma3:12b","proposals":[{"form":"المنتصف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"62056a0e-29e0-474c-a1e3-0afaa24ede1b:1","term":"خط المحور","model":"gemma3:12b","proposals":[{"form":"الخط الأوسط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"622cd0b4-b0d6-4da7-8368-1b0732e243ca:0","term":"خط الوتر","model":"gemma3:12b","proposals":[{"form":"خط السطح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"62473f82-8467-4113-9133-93fdd928f306:0","term":"متحد المركز","model":"gemma3:12b","proposals":[{"form":"متمركز","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"629a9eb7-303e-4d91-8c14-1d60c2989d8d:0","term":"ملصوق بالغلاف","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"62beb26e-a8fb-4815-a887-a29bfc586da7:0","term":"تسامح","model":"gemma3:12b","proposals":[{"form":"تجاوز","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"62beb26e-a8fb-4815-a887-a29bfc586da7:1","term":"تسامح","model":"gemma3:12b","proposals":[{"form":"هامش الخطأ","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"62dbd8f5-3484-4c1c-8730-44fdfe143c90:0","term":"نابذة","model":"gemma3:12b","proposals":[{"form":"طاردة","type":"informal_synonym","confidence":"medium"},{"form":"طردة","type":"informal_synonym","confidence":"medium"},{"form":"طردة مركزي","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"630350c1-f25e-4e15-a97b-2364eb168cd2:0","term":"حمل مركز","model":"gemma3:12b","proposals":[],"rejected":[{"form":"حِمل مُركَّز","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"63285375-652a-48c0-ba7d-7fdba566afae:0","term":"ظهر السحاب","model":"gemma3:12b","proposals":[{"form":"غطاء السحاب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"632f0f85-aae8-4eb8-93ed-448c9480ce62:0","term":"انحناء مركب","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"63627e4a-6378-48b8-9255-d84f35a93cfc:0","term":"انتقال مركز الثقل","model":"gemma3:12b","proposals":[{"form":"حركة مركز الثقل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"639451b6-2dbd-4c85-b402-bd6e737fe20a:0","term":"ضلع انضغاط","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"64a46e23-20ec-48b0-81f9-ff13703c3eb8:0","term":"مشط","model":"gemma3:12b","proposals":[],"rejected":[{"form":"مشط","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"64a46e23-20ec-48b0-81f9-ff13703c3eb8:1","term":"مشط","model":"gemma3:12b","proposals":[{"form":"شُعب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"64e7ae7d-88d7-4304-a82a-1588615571d8:0","term":"حمل ضاغط","model":"gemma3:12b","proposals":[{"form":"حمل انضغاط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"65051875-c252-456a-87df-7a9ee0e8ed92:0","term":"إدارة الطيران المدني","model":"gemma3:12b","proposals":[{"form":"إدارة الطيران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"65436f14-84ad-479b-beb4-767482654017:0","term":"موضع الوتر","model":"gemma3:12b","proposals":[{"form":"موقع الوتر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"654a2f1f-00d4-46b3-939e-0a7bdd11b661:0","term":"صامولة نابية","model":"gemma3:12b","proposals":[{"form":"صامولة برجية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"65515a0c-f026-43bc-92a9-40129d1dfece:0","term":"انعكاس التحكم","model":"gemma3:12b","proposals":[{"form":"عكس التحكم","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"65950573-812f-4c5a-a063-24f3d2443ddf:0","term":"مناورة الرؤية","model":"gemma3:12b","proposals":[{"form":"مناورة التوضيح","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"659bdd6f-37c9-4b26-8a3e-a51d98d34af2:0","term":"خطأ دائري محتمل","model":"gemma3:12b","proposals":[{"form":"دائرة خطأ محتملة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"65e32c32-16e0-4ebd-936b-f119192f41ea:0","term":"إطار كومباكتا","model":"gemma3:12b","proposals":[{"form":"إطار كومباكت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6611c813-7c4f-4b57-a1d1-ec0b463ade64:0","term":"مزلاج كاملوك","model":"gemma3:12b","proposals":[{"form":"كاملوك","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6613da10-7e6a-47c6-b075-f1d46f22493b:0","term":"قص","model":"gemma3:12b","proposals":[{"form":"تقطيع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6613da10-7e6a-47c6-b075-f1d46f22493b:1","term":"قص","model":"gemma3:12b","proposals":[{"form":"تقليل التردد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6613da10-7e6a-47c6-b075-f1d46f22493b:2","term":"قص","model":"gemma3:12b","proposals":[{"form":"تقطيع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6613da10-7e6a-47c6-b075-f1d46f22493b:3","term":"قص","model":"gemma3:12b","proposals":[{"form":"تقطيع","type":"informal_synonym","confidence":"high"}],"rejected":[]}
+{"sense_id":"662185fe-99c0-428b-936e-0991420a4ca9:0","term":"سطح توجيه","model":"gemma3:12b","proposals":[],"rejected":[{"form":"سطح توجيه","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"664dde8e-3f1b-438e-85dc-46722747218a:0","term":"ظاهرة كوندا","model":"gemma3:12b","proposals":[],"rejected":[{"form":"تأثير كواندا","kept":false,"reason":"already_present"}]}
+{"sense_id":"6698533f-7f18-462e-b63a-874055b9e7d1:0","term":"ميلي راديان دائري","model":"gemma3:12b","proposals":[{"form":"ميل راديان","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"66c69d45-8f16-43ae-8b24-1977afeced6c:0","term":"مكان الفحص","model":"gemma3:12b","proposals":[{"form":"محطة الفحص","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"66c69d45-8f16-43ae-8b24-1977afeced6c:1","term":"مكان الفحص","model":"gemma3:12b","proposals":[{"form":"نقطة الفحص","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"66df8541-5c92-468d-aafb-2b80860e7981:0","term":"تحديد","model":"gemma3:12b","proposals":[{"form":"تقصير","type":"informal_synonym","confidence":"medium"}],"rejected":[{"form":"تحديد","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"66e2619d-e66a-4732-85af-b19b741a170c:0","term":"مراحل مناورة الرؤية","model":"gemma3:12b","proposals":[{"form":"إجراءات الإقلاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"67088486-f35f-4701-bdd3-9bea3721cd42:0","term":"نادي كاتربلر","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"673316ad-c847-448b-a978-8ac9750d6747:0","term":"التقاء","model":"gemma3:12b","proposals":[{"form":"تلاقي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6765f87d-b9da-46da-abdb-40d61d37d23d:0","term":"ضبط التمركز","model":"gemma3:12b","proposals":[{"form":"تثبيت","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"679b35cb-4317-4c24-9e88-b7c102e097dc:0","term":"ارتفاع مخصص","model":"gemma3:12b","proposals":[{"form":"ارتفاع الإقلاع","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"67a56313-7469-44ca-8e9b-9beabce9facf:0","term":"سعة بالطن ـ ميل","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"68934318-aa6e-4859-a375-116484f445a9:0","term":"قرص البوصلة","model":"gemma3:12b","proposals":[{"form":"وردة الميليمتر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"68c41753-3e2a-48c0-91e0-4983b769cb19:0","term":"منفث متقارب - متباعد","model":"gemma3:12b","proposals":[{"form":"منفث مخروطي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"68d84f2b-915d-40cb-9d7f-100862f7e3a5:0","term":"أبعاد بصرية مترافقة","model":"gemma3:12b","proposals":[{"form":"نقاط التقاء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"692a9d0b-1d27-4100-bff6-63d25cea0823:0","term":"سحب على البارد","model":"gemma3:12b","proposals":[{"form":"السحب البارد","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6a888dd8-8d49-496d-a890-ad71a393b4c5:0","term":"متغير الأمر","model":"gemma3:12b","proposals":[{"form":"بارامتر","type":"transliteration","confidence":"medium"},{"form":"باراميتر","type":"transliteration","confidence":"high"},{"form":"معامل","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6ad0d3fa-491a-4e14-9283-8e831c8d295d:0","term":"جائز مرافق","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"6b4fc9bd-648f-49a8-96a5-33301ed16c35:0","term":"مدوار","model":"gemma3:12b","proposals":[{"form":"دوار","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6b81fbf5-eb82-4bf1-90a7-f06b3c34bc8e:0","term":"راسم الاهتزاز بالأشعة المهبطية","model":"gemma3:12b","proposals":[{"form":"راسم الموجات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6c14508a-efc9-45d6-91ec-b5a9d6841706:0","term":"طائرة قابلة للتحويل","model":"gemma3:12b","proposals":[{"form":"طائرة متحولة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6c20e842-deed-401a-91df-0760c54f0b11:0","term":"مفصل خطافي","model":"gemma3:12b","proposals":[{"form":"وصلة شوكة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6c9e2734-2e73-4b17-a88d-ee13326cdf00:0","term":"علامات حجيرات الشحن","model":"gemma3:12b","proposals":[{"form":"علامات الأقسام","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6cbcd5c9-8b52-4572-8b5d-577ee7406269:0","term":"دفع بارد","model":"gemma3:12b","proposals":[{"form":"دفع جاف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6dc5a26e-3f0b-419d-b3c7-a96050fff2e8:0","term":"مركز الثقل","model":"gemma3:12b","proposals":[{"form":"نقطة توازن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6dc8b82a-255b-41ff-80c0-27b1a6677268:0","term":"توجيه بعصا القيادة","model":"gemma3:12b","proposals":[{"form":"دريشة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6de9acf8-a11d-4d6f-bac9-ee7055420b93:0","term":"نفق هوائي مغلق الدارة","model":"gemma3:12b","proposals":[{"form":"نفق هوائي مغلق","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6df9082d-74ef-49a3-88b8-a6f55773d69f:0","term":"معدل بارد","model":"gemma3:12b","proposals":[{"form":"معدل الجفاف","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6e455450-3204-449f-bdd5-be747beb57c5:0","term":"ألياف كربونية","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ألياف كربون","kept":false,"reason":"already_present"},{"form":"فايبر كاربون","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"6ea6d74f-38e9-4c61-a4e6-7e6184287138:0","term":"مخطط الضغوط الثابتة","model":"gemma3:12b","proposals":[{"form":"خريطة الضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6ede38c3-b6b9-40a1-820f-db87e9b56138:0","term":"كمية السحب","model":"gemma3:12b","proposals":[],"rejected":[{"form":"غيم","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"6f3054c2-aaa2-4c6d-803e-861294aa57fd:0","term":"إنهاء خطة الطيران","model":"gemma3:12b","proposals":[{"form":"إغلاق خطة الطيران","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6f46bdc1-5cc8-4a21-b195-2d7e8223b3bc:0","term":"ألغى","model":"gemma3:12b","proposals":[{"form":"أوقف","type":"informal_synonym","confidence":"medium"},{"form":"ملغي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6f46bdc1-5cc8-4a21-b195-2d7e8223b3bc:1","term":"ألغى","model":"gemma3:12b","proposals":[],"rejected":[{"form":"ألغي","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"6fcea347-c117-4b76-a94b-8309eacd12c0:0","term":"أستات السلولوز","model":"gemma3:12b","proposals":[{"form":"السيلوز أسيتات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6fef9ea8-4317-4c20-98a0-e5624e50bb1e:0","term":"استقبال قلبي","model":"gemma3:12b","proposals":[{"form":"استقبال على شكل قلب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"6ff87fa4-785d-4f3d-b506-defbfaa0b12a:0","term":"يوم فلكي","model":"gemma3:12b","proposals":[{"form":"يوم أرضي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"702fbd9f-bbca-4d1f-9a05-d1df24b53e69:0","term":"بالون مقيد","model":"gemma3:12b","proposals":[{"form":"بالون مربوط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"7038934c-a453-47d7-afac-7e445fa35c3e:0","term":"محدد الخطران الكبير","model":"gemma3:12b","proposals":[{"form":"محدد الخطوات الكبيرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"70767e46-59ea-4c40-9407-f51501cd9f72:0","term":"صعود شمعداني","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"7087211d-7fb0-4fc4-b25f-017bf94a744a:0","term":"سقف ورؤية جيدان","model":"gemma3:12b","proposals":[{"form":"سقف وريحة كويس","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"70cb806a-83d5-48a0-8128-08227029ffb2:0","term":"غيم مركب","model":"gemma3:12b","proposals":[{"form":"غيوم مركبة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"711544e3-c2b4-4654-8181-6bb30bb21970:0","term":"خرطوشة متهرئة","model":"gemma3:12b","proposals":[{"form":"احتراق عشوائي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"715916ea-398b-4a8b-9e1d-20dba4998f84:0","term":"سعة","model":"gemma3:12b","proposals":[{"form":"حجم","type":"informal_synonym","confidence":"medium"},{"form":"مساحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"71890e9c-6091-406b-99fa-34f4cb678cff:0","term":"متراكب الإنشاء","model":"gemma3:12b","proposals":[{"form":"مُتْرَاكِب","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"71f70dcc-95cf-43ae-bcd4-7cf139f0c864:0","term":"قوى متلاقية","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"72304456-ae14-4004-8dcb-ace746e7c289:0","term":"آثار طارئة","model":"gemma3:12b","proposals":[{"form":"تداعيات","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"727a23a4-cec3-446f-aae4-58d2526743fd:0","term":"أنوية التكثيف","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"737fea39-d159-42b4-88e4-b8dcbe189960:0","term":"طائرات تدريب استئنافية","model":"gemma3:12b","proposals":[{"form":"طائرة استعادة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"73a53433-9fce-476d-9e06-7ed7dad42e6b:0","term":"قطب سماوي","model":"gemma3:12b","proposals":[],"rejected":[]}
+{"sense_id":"73d23b7c-1941-48a1-b6cb-37b46a063801:0","term":"تدريب الاصطفاف","model":"gemma3:12b","proposals":[{"form":"كوكو","type":"transliteration","confidence":"medium"}],"rejected":[]}
+{"sense_id":"73d99c58-0c1e-4b2f-9f43-5f2eb0ed2930:0","term":"خطة متزامنة","model":"gemma3:12b","proposals":[{"form":"تزامن","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"7402bcbd-b906-4246-beb0-3cbf2ca4e20a:0","term":"ضغط الغرفة","model":"gemma3:12b","proposals":[{"form":"ضغط الحجرة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:0","term":"ممر","model":"gemma3:12b","proposals":[{"form":"مسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:1","term":"ممر","model":"gemma3:12b","proposals":[{"form":"منحدر","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:2","term":"ممر","model":"gemma3:12b","proposals":[{"form":"مسار","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:3","term":"ممر","model":"gemma3:12b","proposals":[{"form":"ممر التشويش","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:4","term":"ممر","model":"gemma3:12b","proposals":[{"form":"منطقة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74beafd6-d1ce-45f5-8bf2-484816efa9e6:5","term":"ممر","model":"gemma3:12b","proposals":[{"form":"ممر جوي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"74dfea75-6005-4384-b121-7fffae1e3bd7:0","term":"نسبة الضغط للضاغط","model":"gemma3:12b","proposals":[{"form":"نسبة ضغط الضاغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"7520cfb1-fc20-4261-aef6-12f0cb460f49:0","term":"شحن","model":"gemma3:12b","proposals":[{"form":"بضاعة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"752c2dde-ff4c-4168-ba07-a16fc6b231dc:0","term":"خطران جماعي","model":"gemma3:12b","proposals":[{"form":"خطران مشترك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"75904c44-8c50-4823-84cb-792c3d970462:0","term":"أنف دائري","model":"gemma3:12b","proposals":[{"form":"أنف مدور","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"75ebaaa4-5e11-4ee3-9f67-f0141c2804f7:0","term":"حمل انضغاط","model":"gemma3:12b","proposals":[{"form":"حمل ضغط","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"75fb820b-7f4b-446b-9eac-7ea1bcb864f4:0","term":"دوريات الطائرات المقاتلة","model":"gemma3:12b","proposals":[{"form":"دوريات جوية","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fd86428d-cbd5-44a1-9de6-3a2f761536d1:0","term":"موصل صندوقي","model":"gemma3:12b","proposals":[],"rejected":[{"form":"كونكتر بوكس","kept":false,"reason":"transliteration_mismatch"}]}
+{"sense_id":"fdfc8ed1-4ccc-4d3f-9845-b740f6ee9823:0","term":"منشط الطبقة الحدية","model":"gemma3:12b","proposals":[{"form":"منشط الهواء","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fe064238-ff09-43ed-9808-cdd8413309a7:0","term":"تلف المعركة","model":"gemma3:12b","proposals":[{"form":"تلف الاشتباك","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fe775e19-9c2b-4085-b171-cea608971d62:0","term":"طيران أعمى","model":"gemma3:12b","proposals":[],"rejected":[{"form":"طيران أعمى","kept":false,"reason":"same_as_term"}]}
+{"sense_id":"fea69bd4-8874-403d-bc17-6eabd7a97c9e:0","term":"طرد بالتسخين","model":"gemma3:12b","proposals":[{"form":"تبخير","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fea9a659-89ce-4697-8d74-6722e590f8a7:0","term":"محور التناظر","model":"gemma3:12b","proposals":[],"rejected":[{"form":"محور التماثل","kept":false,"reason":"already_present"}]}
+{"sense_id":"feca353d-0f98-47f7-b0cb-ec27acaf1135:0","term":"ضغط حجرة الركاب","model":"gemma3:12b","proposals":[{"form":"ضغط داخل الطيارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"feca353d-0f98-47f7-b0cb-ec27acaf1135:1","term":"ضغط حجرة الركاب","model":"gemma3:12b","proposals":[{"form":"ضغط داخل الطيارة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fed1210a-f7ed-4af1-82d2-a4b568d4f56a:0","term":"غطاء","model":"gemma3:12b","proposals":[{"form":"غطو","type":"spelling_variant","confidence":"medium"}],"rejected":[]}
+{"sense_id":"fee3b6cf-343d-4980-8213-ae60a769d1a1:0","term":"لوحة الطيران الأعمى","model":"gemma3:12b","proposals":[{"form":"لوحة الطيران الآلي","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ff15f722-c3e0-470c-96f3-63fb00a9f0f6:0","term":"مناورة النطحة","model":"gemma3:12b","proposals":[{"form":"النطحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ff15f722-c3e0-470c-96f3-63fb00a9f0f6:1","term":"مناورة النطحة","model":"gemma3:12b","proposals":[{"form":"النطحة","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
+{"sense_id":"ffe9975c-709d-40f0-8d47-7bdb263cdab4:0","term":"تفتح","model":"gemma3:12b","proposals":[{"form":"توهج","type":"informal_synonym","confidence":"medium"}],"rejected":[]}
