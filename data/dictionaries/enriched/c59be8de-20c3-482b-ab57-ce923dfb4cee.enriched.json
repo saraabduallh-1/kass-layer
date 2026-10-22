@@ -2,7 +2,7 @@
   "dictionary_id": "c59be8de-20c3-482b-ab57-ce923dfb4cee",
   "dictionary_name": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
   "source_export": "data/dictionaries/exports/c59be8de-20c3-482b-ab57-ce923dfb4cee.json",
-  "generated_at": "2026-10-22T02:50:32.003783+00:00",
+  "generated_at": "2026-10-22T04:20:53.313823+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 825,
@@ -39865,7 +39865,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],

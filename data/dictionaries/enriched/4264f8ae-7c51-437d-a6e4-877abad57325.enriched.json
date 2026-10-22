@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-10-22T02:50:26.543034+00:00",
+  "generated_at": "2026-10-22T04:20:48.009671+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1419,
-    "variants_accepted": 1264,
-    "variants_needing_review": 1301
+    "variants_accepted": 1263,
+    "variants_needing_review": 1302
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -86709,8 +86709,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
