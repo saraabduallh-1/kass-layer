@@ -2,14 +2,14 @@
   "dictionary_id": "0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24",
   "dictionary_name": "معجم المصطلحات القانـونية",
   "source_export": "data/dictionaries/exports/0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24.json",
-  "generated_at": "2026-10-22T05:50:53.843322+00:00",
+  "generated_at": "2026-10-22T07:21:22.383458+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 6107,
     "senses_reviewed": 6107,
     "senses_with_variants": 6104,
-    "variants_accepted": 7773,
-    "variants_needing_review": 6415
+    "variants_accepted": 7772,
+    "variants_needing_review": 6416
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -30865,7 +30865,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -322753,8 +322754,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "عقد البناء والتشغيل ونقل الملكية",
