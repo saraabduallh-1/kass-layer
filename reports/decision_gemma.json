@@ -1,0 +1,6063 @@
+{
+ "generated_at": "2026-10-22T15:22:44.931588+00:00",
+ "model": "gemma3:12b",
+ "judge": "gemma yes/no (Jev fallback)",
+ "summary": {
+  "cases": 600,
+  "answered": 600,
+  "errors": 0,
+  "tp": 256,
+  "fp": 160,
+  "fn": 44,
+  "tn": 140,
+  "accuracy": 0.66,
+  "precision": 0.615,
+  "recall": 0.853,
+  "thresholds": [
+   {
+    "threshold": 0.5,
+    "auto": 416,
+    "auto_share": 0.693,
+    "auto_precision": 0.615,
+    "wrong_auto_replacements": 160
+   },
+   {
+    "threshold": 0.6,
+    "auto": 416,
+    "auto_share": 0.693,
+    "auto_precision": 0.615,
+    "wrong_auto_replacements": 160
+   },
+   {
+    "threshold": 0.7,
+    "auto": 416,
+    "auto_share": 0.693,
+    "auto_precision": 0.615,
+    "wrong_auto_replacements": 160
+   },
+   {
+    "threshold": 0.8,
+    "auto": 416,
+    "auto_share": 0.693,
+    "auto_precision": 0.615,
+    "wrong_auto_replacements": 160
+   },
+   {
+    "threshold": 0.9,
+    "auto": 414,
+    "auto_share": 0.69,
+    "auto_precision": 0.614,
+    "wrong_auto_replacements": 160
+   },
+   {
+    "threshold": 0.95,
+    "auto": 414,
+    "auto_share": 0.69,
+    "auto_precision": 0.614,
+    "wrong_auto_replacements": 160
+   }
+  ]
+ },
+ "results": [
+  {
+   "sentence": "الـ scan الراداري كشف عن الهدف.",
+   "form": "scan",
+   "term": "مسح راداري",
+   "english": "radar scan",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا mic مناسب جداً للبودكاست.",
+   "form": "mic",
+   "term": "ميكروفون البودكاست",
+   "english": "Podcast Microphone",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يحتاج النظام إلى خزان زيت جديد.",
+   "form": "خزان",
+   "term": "مستودع",
+   "english": "reservoir",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يطير بطائرة jet.",
+   "form": "jet",
+   "term": "نفاث",
+   "english": "jet",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظامنا يدعم عملية Incident Closure تلقائياً.",
+   "form": "Incident Closure",
+   "term": "إغلاق الحادث",
+   "english": "Incident Closure",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الالتزام بالسياسات الداخلية ضروري.",
+   "form": "الالتزام",
+   "term": "الامتثال",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تركيب ترانسيفر جديد في المحطة.",
+   "form": "ترانسيفر",
+   "term": "مرسل/ مستقبل",
+   "english": "transmitter/ receiver",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سيارتنا تعمل بالبنزين.",
+   "form": "بنزين",
+   "term": "جازولين",
+   "english": "Gasoline",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الوقت DEP هو 10 صباحاً.",
+   "form": "DEP",
+   "term": "مغادرة",
+   "english": "DEP",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قيمة Q في الدائرة عالية جداً.",
+   "form": "Q",
+   "term": "رقم الاستحقاق",
+   "english": "Q-factor",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لا تدع التراش يجمع عليك.",
+   "form": "تراش",
+   "term": "هطف",
+   "english": "trash",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج للوصول إلى break even point قريبًا.",
+   "form": "break even point",
+   "term": "نقطة التعادل",
+   "english": "Break-Even Point",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا الطلاء الكومبوزيت مقاوم للحرارة.",
+   "form": "كومبوزيت",
+   "term": "مادة مركبة",
+   "english": "composite material",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تسليم أول RPH في الموقع الأسبوع الماضي.",
+   "form": "RPH",
+   "term": "طائرة عمودية مقادة من بعد",
+   "english": "RPH",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب ضبط نسبة الغاز في GCM بدقة.",
+   "form": "GCM",
+   "term": "طين مخفف بالغاز",
+   "english": "Gas Cut Mud (GCM)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سرعة دوران المحرك 3000 دورة في الدقيقة.",
+   "form": "دورة في الدقيقة",
+   "term": "الدوران في الدقيقة",
+   "english": "Revolutions Per Minute (RPM)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يدير فريق SOC العمليات اليومية.",
+   "form": "SOC",
+   "term": "مركز عمليات الأمن السيبراني",
+   "english": "Cybersecurity Operation Center",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد تم اختصار الاسم إلى GRP في التقرير.",
+   "form": "GRP",
+   "term": "لدائن مقواة بالألياف الزجاجية",
+   "english": "GRP",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظرت في خيار شراء منزل بـ ARM.",
+   "form": "ARM",
+   "term": "الرهن العقاري ذو المعدل القابل للتعديل",
+   "english": "Adjustable-Rate Mortgage (ARM)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "شهدت المنطقة نمواً كبيراً في التطوير العقاري.",
+   "form": "التطوير",
+   "term": "التنمية",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.85
+  },
+  {
+   "sentence": "المقياس يستخدم وحدات ستوكس.",
+   "form": "ستوكس",
+   "term": "ستوك",
+   "english": "stoke",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يُشار إلى الاتفاقية اختصاراً بـ FCTC.",
+   "form": "FCTC",
+   "term": "اتفاقية منظمة الصحة العالمية بشأن مكافحة التبغ",
+   "english": "FCTC",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هناك route (خط) من الرياض إلى جدة.",
+   "form": "route",
+   "term": "خط",
+   "english": "line",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أدخل الكود في القائمة للحصول على سلاح.",
+   "form": "كود",
+   "term": "شفرة الغش",
+   "english": "cheat code",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "البنك المركزي يحدد الحد الأقصى لـ APR في البطاقات الائتمانية.",
+   "form": "APR",
+   "term": "معدل النسبة السنوي",
+   "english": "Annual Percentage Rate \"APR\"",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذه المنظمة تسمى رابطة دول جنوب شرق آسيا.",
+   "form": "رابطة دول جنوب شرق آسيا",
+   "term": "آسيان",
+   "english": "ASEAN",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظام MTO مفضل في هذا القطاع.",
+   "form": "MTO",
+   "term": "الإنتاج حسب الطلب",
+   "english": "Built-To-Order (BTO) Supply Chain",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب إجراء معايرة العداد قبل التسليم.",
+   "form": "معايرة العداد",
+   "term": "معايرة التحقق من العداد",
+   "english": "Meter Proving",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "وقت الطيران لهذه الرحلة كان طويلاً.",
+   "form": "وقت الطيران",
+   "term": "مدة الطيران",
+   "english": "flight time",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هناك تقاطع كبير في المدينة.",
+   "form": "تقاطع",
+   "term": "تقاطع مروري",
+   "english": "",
+   "dictionary": "معجم مصطلحات الطرق",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تأكد من إعدادات IP بشكل صحيح.",
+   "form": "IP",
+   "term": "معيار الإنترنت",
+   "english": "Internet Protocol",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هناك قيود على استخدام النظام.",
+   "form": "قيود",
+   "term": "محددات",
+   "english": "Limitations",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الترددات Ku تستخدم في الأقمار الصناعية.",
+   "form": "Ku",
+   "term": "نطاق Ku",
+   "english": "Ku Band",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "لدينا خطة بديلة في حال توقف النظام.",
+   "form": "خطة بديلة",
+   "term": "خطة طوارئ",
+   "english": "Contingency Plan",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "في الدراسات الفرنسية، نستخدم كلمة cellule للجناح.",
+   "form": "cellule",
+   "term": "خلية جناح",
+   "english": "wing cell",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سيارة تحتوي على نظام AEB.",
+   "form": "AEB",
+   "term": "نظام الفرملة الطارئة الذكي",
+   "english": "Automatic Emergency Braking (AEB)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب أن تكون لديك رخصة قيادة سارية.",
+   "form": "رخصة قيادة",
+   "term": "رخص القيادة",
+   "english": "Driver's license",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظامنا يدعم استخدام Digital Certificate.",
+   "form": "Digital Certificate",
+   "term": "شهادة التصديق الرقمي",
+   "english": "Digital Certificate",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ holding point في المطار مخصص للطائرات.",
+   "form": "holding point",
+   "term": "نقطة استحواذ",
+   "english": "holding point",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المركبة في مدار prograde حول الأرض.",
+   "form": "prograde",
+   "term": "مدار تدريجي",
+   "english": "prograde",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الزبون طلب خدمة إلكترونية.",
+   "form": "الزبون",
+   "term": "العميل",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المعايير الصينية (GB 38031) صارمة جداً.",
+   "form": "GB 38031",
+   "term": "المعيار الوطني الصيني ",
+   "english": "Chinese National Standard (GB 38031)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تمتلك الشركة حصتها في صندوق VC.",
+   "form": "VC",
+   "term": "رأس مال استثماري",
+   "english": "Venture Capital",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يُصلح الراتب الفعلي إلى مبلغ معين.",
+   "form": "الراتب الفعلي",
+   "term": "أجر فعلي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "غرفة الاحتراق في المحرك تسمى حارق.",
+   "form": "غرفة الاحتراق",
+   "term": "حارق",
+   "english": "burner",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الشحن اللاسلكي يوافق مع J2954.",
+   "form": "J2954",
+   "term": "معيار J2954",
+   "english": "SAE J2954",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تاريخ استرجاع (recovery) الطائرة.",
+   "form": "recovery",
+   "term": "استخلاص",
+   "english": "recovery",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "في المحاكاة، نستخدم white noise كمصدر للإشارات.",
+   "form": "white noise",
+   "term": "ضجيج أبيض",
+   "english": "white noise",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "قبل الاستثمار، يجب إثبات الفكرة أولاً.",
+   "form": "إثبات الفكرة",
+   "term": "إثبات المفهوم",
+   "english": "Proof of Concept (PoC)",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "أصبح الرئيس التنفيذي الجديد في الشركة.",
+   "form": "الرئيس التنفيذي",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المادة تعتبر PBT حسب التصنيف.",
+   "form": "PBT",
+   "term": "مواد كيميائية سامة متراكمة الأحيائية الثابتة ",
+   "english": "Persistent Bio Accumulative Toxic (PBT)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام التتبع يضمن جودة المنتجات.",
+   "form": "التتبع",
+   "term": "التتبع والتعقب",
+   "english": "Traceability and Tracking",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظامنا يستخدم BOM لإدارة المخزون.",
+   "form": "BOM",
+   "term": "فاتورة اللوازم والمعدات",
+   "english": "(BOM)   Bill Of Materials",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم هذا النموذج تجريبيًا لجمع الملاحظات.",
+   "form": "نموذج تجريبي",
+   "term": "نموذج مبدئي",
+   "english": "Prototype",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام exciter يعمل بكفاءة عالية.",
+   "form": "exciter",
+   "term": "محرض",
+   "english": "eXciter",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ فيزا معلقة في الجواز.",
+   "form": "فيزا",
+   "term": "التأشيرة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج إلى تحديث المولد الجرافيكس.",
+   "form": "جرافيكس",
+   "term": "مولد الجرافيك",
+   "english": "Graphics Generator",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تشكيل هيئة سونار للبحث عن الغواصات بعد الحرب العالمية الثانية.",
+   "form": "سونار",
+   "term": "هيئة بحث التقصي ضد الغواصات",
+   "english": "asdic",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نوع من dredging يستخدم في مشاريع الملاحة.",
+   "form": "dredging",
+   "term": "التجريف",
+   "english": "Dredging",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ SLA يحدد وقت الاستجابة.",
+   "form": "SLA",
+   "term": "اتفاقية مستوى الخدمة",
+   "english": "(SLA) Service Level Agreement",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تقنية green transportation تعتمد على الهيدروجين.",
+   "form": "green transportation",
+   "term": "نقل أخضر",
+   "english": "Green Transportation",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الفلتر يعمل بكفاءة عالية.",
+   "form": "فلتر",
+   "term": "ترشيح",
+   "english": "filtering",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أضفنا Temperature أعلى لجعل الإجابات أكثر تنوعًا.",
+   "form": "Temperature",
+   "term": "معامل حرارة النموذج",
+   "english": "Model Temperature",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المراجعة السنوية أظهرت مشاكل في التدقيق.",
+   "form": "مراجعة",
+   "term": "مراجعة فحص وتدقيق",
+   "english": "Audit",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الغش في الأسواق المالية يعرض المستثمرين للخسارة.",
+   "form": "غش",
+   "term": "الإحتيال",
+   "english": "Fraud",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "شراء باكات متعددة.",
+   "form": "باك",
+   "term": "حزمة",
+   "english": "pack",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التوقيع جاء من CEO الشركة.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ musician يهتم بتأليف الأغاني.",
+   "form": "musician",
+   "term": "موسيقار",
+   "english": "musician",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا المجال هو Graph Data Science.",
+   "form": "Graph Data Science",
+   "term": "علم البيانات الشبكي",
+   "english": "Graph Data Science",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يرجى مراجعة ملف Performance Reports المرفق.",
+   "form": "Performance Reports",
+   "term": "تقارير الأداء",
+   "english": "Performance Reports",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـlander مصمم لهبوط آمن.",
+   "form": "lander",
+   "term": "مركبة حاطة",
+   "english": "lander",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم هذا الدائرة pentode في تضخيم الصوت.",
+   "form": "pentode",
+   "term": "صمام خماسي الالكترودات",
+   "english": "pentode",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "وجود شق (slot) في الجناح يحسّن الأداء.",
+   "form": "slot",
+   "term": "شق الجناح",
+   "english": "wing slot",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد تم تحديث مدونة CoP لهذا العام.",
+   "form": "CoP",
+   "term": "مدونة الممارسات",
+   "english": "Code Of Practice (CoP)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم Scaling لتغيير نطاق الخصائص.",
+   "form": "Scaling",
+   "term": "مواءمة الخصائص",
+   "english": "Feature Scaling",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا التطبيق يعمل كروبوت محادثة ذكي.",
+   "form": "روبوت محادثة",
+   "term": "روبوت الدردشة",
+   "english": "Chatbot",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "القطار لديه قدرة جر عالية بـ 400 حصان.",
+   "form": "حصان",
+   "term": "القدرة الحصانية",
+   "english": "Horsepower (HP)",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذا الموقع يدعم ARIA.",
+   "form": "ARIA",
+   "term": "تقنيات تطبيقات الإنترنت الغنية سهلة الاستخدام",
+   "english": "Accessible Rich Internet Applications (ARIA)",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الزبون طلب تأجيل الدفع.",
+   "form": "الزبون",
+   "term": "العميل",
+   "english": "Consumer",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تقييد حركة المشتبه به في المكان.",
+   "form": "تقييد",
+   "term": "التكبيل",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "عملية الأكسدة تسمى أحياناً oxidation في التقارير التقنية.",
+   "form": "oxidation",
+   "term": "أكسدة",
+   "english": "oXidation",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "اتخاذ القرار الصحيح يتطلب تحليل البيانات.",
+   "form": "اتخاذ القرار",
+   "term": "صناعة القرار",
+   "english": "Decision Making",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ spoiler في الطائرة يخفض السرعة.",
+   "form": "spoiler",
+   "term": "متلف",
+   "english": "spoiler",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "في هذه الوثيقة، تم التعامل مع المثليات ككيان واحد.",
+   "form": "المثليات",
+   "term": "الأشياء المثلية",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الـ pass كان سريعاً جداً.",
+   "form": "pass",
+   "term": "تمرير",
+   "english": "Pass",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "القطعة مكتوبة بـ duple meter.",
+   "form": "duple meter",
+   "term": "إيقاع مزدوج",
+   "english": "Duple Meter",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "دراسة السلوكيات البشرية.",
+   "form": "سلوكيات",
+   "term": "سلوك",
+   "english": "behavior",
+   "dictionary": "معجم مصطلحات القطاع غير الربحي",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "شاهدنا بث عالي الدقة على التلفاز.",
+   "form": "بث عالي الدقة",
+   "term": "بث بجودة عالية",
+   "english": "High-Definition Broadcast",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم منهجية RAG لتتبع حالة المشروع.",
+   "form": "RAG",
+   "term": "أسلوب الدفع ",
+   "english": "Traffic Light (Or RAG) Method",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم الـ NLG لتحويل البيانات إلى نصوص.",
+   "form": "NLG",
+   "term": "توليد اللغات الطبيعية",
+   "english": "Natural Language Generation (NLG)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذه مواقف السيارات الخاصة.",
+   "form": "مواقف",
+   "term": "مواقف السيارات",
+   "english": "",
+   "dictionary": "معجم مصطلحات الطرق",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "البث المباشر عبر منصة ستريم.",
+   "form": "ستريم",
+   "term": "بث مباشر",
+   "english": "Stream",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "كثافة الهيليوم منخفضة جداً.",
+   "form": "هيليوم",
+   "term": "هليوم",
+   "english": "helium",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ impact test هو المعيار الدولي.",
+   "form": "impact test",
+   "term": "اختبار الصدم",
+   "english": "impact test",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يحتوي الصاج على قطعتين.",
+   "form": "صاج",
+   "term": "صاجة",
+   "english": "",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المادة المستخدمة هي Teflon.",
+   "form": "Teflon",
+   "term": "تفلون",
+   "english": "Teflon",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب التأكد من صحة العقد قبل التوقيع عليه.",
+   "form": "صحة",
+   "term": "سلامة",
+   "english": "Soundness",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أوديت المنتج قبل إطلاقه.",
+   "form": "أوديت",
+   "term": "تدقيق",
+   "english": "Audit",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المنطقة أصبحت مشتعل من الدخان.",
+   "form": "مشتعل",
+   "term": "ملتهب",
+   "english": "ablaze",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الالتزام الجمركي يتطلب تقديم أوراق كاملة.",
+   "form": "الالتزام الجمركي",
+   "term": "الامتثال الجمركي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا النوع من الزجاج يسمى E-glass.",
+   "form": "E-glass",
+   "term": "زجاج إي",
+   "english": "E-glass",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تتفق الشركات على عقود التوريد الشهرية.",
+   "form": "عقود التوريد",
+   "term": "عقود الإمداد",
+   "english": "Supply Contracts",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أصدر المركز تقرير DXI سنوي.",
+   "form": "DXI",
+   "term": "مؤشر التجربة الرقمية",
+   "english": "Digital Experience Index",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام GPS يحدد موقع القطار بدقة.",
+   "form": "GPS",
+   "term": "نظام تحديد المواقع العالمي",
+   "english": "Global Positioning System",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المستلم استلم البضاعة في مقره.",
+   "form": "المستلم",
+   "term": "المرسل إليه",
+   "english": "Consignee",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تقرير GRED يظهر ارتفاعاً في الديون.",
+   "form": "GRED",
+   "term": "دين الجهة ذات الصلة بالحكومة",
+   "english": "Government Related Entity Debt (GRED)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم إصدار ترخيص جديد للمشروع.",
+   "form": "ترخيص",
+   "term": "الرخصة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تستخدم الطائرات صور رادارية لتحديد الأهداف في الليل.",
+   "form": "صور رادارية",
+   "term": "تخيلات رادارية",
+   "english": "radar imagery",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا النص يستهلك 50 بايت من الذاكرة.",
+   "form": "بايت",
+   "term": "وحدة كلمات",
+   "english": "byte",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الجهة المختصة ستقوم بالتحقيق.",
+   "form": "الجهة",
+   "term": "الهيئة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تحويل الأموال إلى USDT.",
+   "form": "USDT",
+   "term": "عملة مستقرة",
+   "english": "Stable Coin",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب علينا دراسة القانون الجديد.",
+   "form": "القانون",
+   "term": "النظام",
+   "english": "Law",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب تركيب جهاز AFCI في لوحة التوزيع.",
+   "form": "AFCI",
+   "term": "قاطع دائرة خطأ القوس ",
+   "english": "Arc-Fault Circuit Interrupter (AFCI)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "التسويق عبر سوشيال ميديا حقق مبيعات قياسية.",
+   "form": "سوشيال ميديا",
+   "term": "إعلام اجتماعي",
+   "english": "Social Media",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أرسلني لبوست في اللعبة.",
+   "form": "بوست",
+   "term": "تعزيز",
+   "english": "Boosting",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمت الشركة تقنية جديدة لإدارة المخزون.",
+   "form": "تقنية",
+   "term": "تكنولوجيا",
+   "english": "Technology",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشركة تخطط لرفع قيمة REIT.",
+   "form": "REIT",
+   "term": "صندوق الاستثمار العقاري",
+   "english": "Real estate investment trust (REIT)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام الـ spoiler يفسد الجريان محلياً.",
+   "form": "spoiler",
+   "term": "متلف",
+   "english": "spoiler",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الظاهرة المعروفة بالـ interference في الفيزياء.",
+   "form": "interference",
+   "term": "تداخل موجي",
+   "english": "wave interference",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "استخدمت turn في بداية المقطع.",
+   "form": "turn",
+   "term": "بناء",
+   "english": "Turn",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تتولى الجهة مسؤولية الرقابة.",
+   "form": "الجهة",
+   "term": "الهيئة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تم توقيع عقد BOT لتطوير الميناء الجديد.",
+   "form": "BOT",
+   "term": "عقد البناء والتشغيل والتحويل",
+   "english": "Build-Operate-Transfer Contract \"BOT\"",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الاتجاه الرياح في الشمال.",
+   "form": "اتجاه الرياح",
+   "term": "اتجاه الريح",
+   "english": "wind direction",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم حساب قيمة الواردات بنظام CIF.",
+   "form": "CIF",
+   "term": " قيمة الواردات (سيف) ",
+   "english": "Imports Value (CIF)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تظهر التقارير مستوى عالٍ من Economic Flexibility.",
+   "form": "Economic Flexibility",
+   "term": "مرونة اقتصادية",
+   "english": "Economic Flexibility",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تمت عملية الصعود على الجبل بنجاح.",
+   "form": "صعود",
+   "term": "تسلق",
+   "english": "climb",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الطريقة التي يودل بها الريفية في جبال الألب.",
+   "form": "يودل",
+   "term": "شدو يودل",
+   "english": "yodel",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا الرسم هو فان آرت رائع لشخصية اللعبة.",
+   "form": "فان آرت",
+   "term": "إبداعات المعجبين",
+   "english": "Fan art",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشركة حصلت على شهادة EFQM.",
+   "form": "EFQM",
+   "term": " نموذج المنظمة الأوروبية لإدارة الجودة",
+   "english": "European Organization for Quality Management Model",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "التوقيع من قبل CEO الشركة.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "لقد حصلت على لوت رائع في الخريطة.",
+   "form": "لوت",
+   "term": "مغانم",
+   "english": "loot",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الآلة تسمى darabukka في الكتب الأجنبية.",
+   "form": "darabukka",
+   "term": "دربكة",
+   "english": "darabukka",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "جنرال موتورز طورت سيارة كهربائية جديدة.",
+   "form": "جنرال موتورز",
+   "term": "شركة جنرال موتورز",
+   "english": "General Motors (GM)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الميزانية مخصصة لـ R&D في الشركة.",
+   "form": "R&D",
+   "term": "بحث وتطوير",
+   "english": "research and development (R & D)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أخلاقيات المهنة في القطاع الصحي.",
+   "form": "أخلاقيات المهنة",
+   "term": "أخلاقيات الوظيفة ",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سيتم تسليم ملف SMO قريباً.",
+   "form": "SMO",
+   "term": "مكتب إدارة الإستراتيجية",
+   "english": "Strategy Management Office (SMO)",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "القيمة المعلنة بالسيف تشمل تكلفة الشحن والتأمين.",
+   "form": "سيف",
+   "term": " قيمة الواردات (سيف) ",
+   "english": "Imports Value (CIF)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "حصل المخترع على براءة.",
+   "form": "براءة",
+   "term": "براءة اختراع",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "ضبطنا LR ليكون 0.001.",
+   "form": "LR",
+   "term": "معدل التعلم",
+   "english": "Learning Rate",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التفاعل الكيميائي ينتج SiO2.",
+   "form": "SiO2",
+   "term": "سيليكا",
+   "english": "silica",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المتداول يفتح عقد CFD على الذهب.",
+   "form": "CFD",
+   "term": "\tعقد فروقات",
+   "english": "Contract for Differences",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "لقد قام المستثمر بالتحوط على الذهب لتجنب انخفاض الأسعار.",
+   "form": "تحوط",
+   "term": "تحوط أو طوق",
+   "english": "Hedge",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سيتم استخدام بروتوكول CAN FD في هذا النظام.",
+   "form": "CAN FD",
+   "term": "نظام شبكة تحكم مرنة المعدل",
+   "english": "CAN Flexible Data-Rate (CAN-FD)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "انضمنا إلى IBAA.",
+   "form": "IBAA",
+   "term": "اتحاد طائرات الأعمال الدولية",
+   "english": "IBAA",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تسريع الإجراءات للحصول على القرض.",
+   "form": "تسريع",
+   "term": "التعجيل",
+   "english": "Expedite",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قاموا بإجراء survey للطائرة بعد الاصطدام.",
+   "form": "survey",
+   "term": "استقصاء",
+   "english": "survey ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تعمل الجمعيات الخيرية في مجال التعليم.",
+   "form": "الجمعيات الخيرية",
+   "term": "المؤسسات الخيرية",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قيمة التفريغ في المرحلة الأولى هي blowdown.",
+   "form": "blowdown",
+   "term": "تفريغ",
+   "english": "blowdown",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم أدوات لاستخراج البيانات من السجلات القديمة.",
+   "form": "استخراج البيانات",
+   "term": "تنقيب في البيانات",
+   "english": "Data Mining",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "أظهرت KPIs ارتفاعاً ملحوظاً في الربع الأخير.",
+   "form": "KPIs",
+   "term": "مؤشرات الأداء الرئيسة",
+   "english": "Key Performance Indicators (KPIs)",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نحتاج لتحليل الـ Lagging Indicators.",
+   "form": "Lagging Indicators",
+   "term": "مؤشرات أداء تابعة",
+   "english": "Lagging Indicators",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المصدر الطاقة يحتاج صيانة دورية.",
+   "form": "مصدر الطاقة",
+   "term": "مزود الطاقة",
+   "english": "Power Supply",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم الأرجون في عمليات اللحام.",
+   "form": "أرجون",
+   "term": "أرغون",
+   "english": "argon",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا الجهاز أوسيلاتور يستخدم في الدوائر الإلكترونية.",
+   "form": "أوسيلاتور",
+   "term": "مذبذب",
+   "english": "oscillator",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يتم استخدام imagery لإعادة تمثيل الأهداف بواسطة وسائل ضوئية.",
+   "form": "imagery",
+   "term": "تمثيل الصورة",
+   "english": "imagery",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا الكوبوت يساعد العمال في رفع الأحمال.",
+   "form": "كوبوت",
+   "term": "روبوت تعاوني",
+   "english": "Collaborative Robot (Cobot)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام HV في السيارة يتطلب فحص دوري.",
+   "form": "HV",
+   "term": "الجهد العالي (HV)",
+   "english": "High Voltage (HV)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استثمرنا في شركات ناشئة واعدة.",
+   "form": "شركات ناشئة",
+   "term": "شركات مبتدئة ",
+   "english": "Start-Up Companies",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "فحص ما قبل الطيران يجرى في الصيانة.",
+   "form": "فحص ما قبل الطيران",
+   "term": "تفتيش ماقبل الرحلة",
+   "english": "before-flight inspection",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد قمت بربط التطبيق عبر الـ API.",
+   "form": "API",
+   "term": "واجهة التطبيقات البرمجية ",
+   "english": "Application Programming Interface (API)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الأكسدة بدأت تظهر على السطح.",
+   "form": "أكسدة",
+   "term": "صدأ",
+   "english": "Rust",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سعر هذا guitar مرتفع قليلاً.",
+   "form": "guitar",
+   "term": "غيتار",
+   "english": "guitar",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تحتاج إلى تغيير الفونت في إعدادات الطابعة.",
+   "form": "فونت",
+   "term": "مجموعة حروف",
+   "english": "font",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم القبض على المجرم في مكان الحادث.",
+   "form": "المجرم",
+   "term": "الجاني",
+   "english": "Offender",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تمرير المنتج بعد اجتياز اختبار QC.",
+   "form": "QC",
+   "term": "مراقبة الجودة",
+   "english": "Quality Control",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "خوارزمية المسح الشجري هي نوع من Tree Traversal.",
+   "form": "Tree Traversal",
+   "term": "مسح شجري",
+   "english": "Tree Traversal",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "البرنامج يركز على humane conduct.",
+   "form": "humane conduct",
+   "term": "سلوك إنساني",
+   "english": "Humane Conduct",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم نظام CBM لمراقبة حالة الآلات.",
+   "form": "CBM",
+   "term": "صيانة حسب الحالة",
+   "english": "Condition-Based Maintenance (CBM)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "البيانات تعاني من تحيز العينة لأنها لم تُجمع عشوائياً.",
+   "form": "تحيز العينة",
+   "term": "تحيز أخذ العينات",
+   "english": "Sampling Bias",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الطعام يحتوي على سعرة حرارية عالية.",
+   "form": "سعرة حرارية",
+   "term": "كالوري",
+   "english": "cal",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "صنعت الشركة تترود جديدة.",
+   "form": "تترود",
+   "term": "صمام رباعي القطب",
+   "english": "tetrode",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم الإعلان عن يوم الاقتراع قبل أسبوع.",
+   "form": "يوم الاقتراع",
+   "term": "موعد الاقتراع",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المحرك يظهر سلوك hunting عند زيادة الحمل.",
+   "form": "hunting",
+   "term": "تأرجح",
+   "english": "hunting",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تحركات الطائرة تعرف بـ ATM.",
+   "form": "ATM",
+   "term": "تحركات الطائرة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هناك فقاعة في السوق.",
+   "form": "فقاعة",
+   "term": "فقاعة اقتصادية",
+   "english": "Economic Bubble",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "رحلة جوية من الرياض إلى جدة.",
+   "form": "رحلة جوية",
+   "term": "رحلة",
+   "english": "flight ---(3)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الاحتباس الحراري هو السبب الرئيسي لارتفاع درجات الحرارة.",
+   "form": "الاحتباس الحراري",
+   "term": "الاحترار العالمي",
+   "english": "Global Warming",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أعد تشغيل البرنامج عند breakpoint.",
+   "form": "breakpoint",
+   "term": "نقطة اقتضاب",
+   "english": "breakpoint",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تم قبول العرض من قبل لجنة المناقصات.",
+   "form": "عرض",
+   "term": "عطاء",
+   "english": "Bid",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تمت الموافقة من قبل CAA البريطانية.",
+   "form": "CAA",
+   "term": "هيئة الطيران المدني",
+   "english": "CAA",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نحتاج لتسمية صحيحة لكل صورة.",
+   "form": "تسمية",
+   "term": "اسم",
+   "english": "Label",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "نستخدم منهجية HITL لتحسين دقة النموذج.",
+   "form": "HITL",
+   "term": "إنسان في الحلقة",
+   "english": "Human-in-the-Loop (HITL)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تحديد حدود الأداء ضروري للمراقبة.",
+   "form": "حدود الأداء",
+   "term": "عتبات",
+   "english": "Thresholds",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الآلة الموسيقية تغطي مدى الترددات من 100 إلى 1000 هرتز.",
+   "form": "مدى الترددات",
+   "term": "نطاق النغم",
+   "english": "gamut",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد اشتريت دروناً للعبة.",
+   "form": "درون",
+   "term": "طائرة موجهة",
+   "english": "drone",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج إلى الوصول إلى سورس كود المشروع.",
+   "form": "سورس كود",
+   "term": "شفرة مصدرية",
+   "english": "Source Code",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تتميز هذه الـ NGO بالاستقلالية.",
+   "form": "NGO",
+   "term": "منظمة غير حكومية",
+   "english": "Non-Governmental Organization  (NGO)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الطيار ينظر إلى F-display للتأكد من الاتجاه.",
+   "form": "F-display",
+   "term": "شاشة ­ إف",
+   "english": "F-display",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام Az/El يستخدم في الرادار.",
+   "form": "Az/El",
+   "term": "آز­إل",
+   "english": "Az-El، Az/El",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "رأيت اسم اللاعب مكتوباً كـ TOTW في القائمة.",
+   "form": "TOTW",
+   "term": "فريق الأسبوع",
+   "english": "TOTW",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قامت الهيئة بفحص المنشأة للتأكد من السلامة.",
+   "form": "فحص",
+   "term": "التفتيش",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "يجب علينا فرز النفايات في المنزل.",
+   "form": "فرز النفايات",
+   "term": "فصل النفايات",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشركة هي المستفيد الرئيسي من الخدمة البريدية.",
+   "form": "المستفيد",
+   "term": "العميل",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "اشتريت شيلد جديد.",
+   "form": "شيلد",
+   "term": "حماية",
+   "english": "Shield",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "مخططات PERT تساعد في جدولة المهام.",
+   "form": "PERT",
+   "term": "بيرت",
+   "english": "PERT",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الطائرة تدخل منطقة جو غير متجانس عند ارتفاعات عالية.",
+   "form": "جو غير متجانس",
+   "term": "جو متغاير",
+   "english": "heterosphere",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "هذا الميتريك مهم جداً في التحليل.",
+   "form": "ميتريك",
+   "term": "مقياس كمي",
+   "english": "Metric",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "في تقريرنا، نستخدم اختصار ANI لوصف نوع الذكاء.",
+   "form": "ANI",
+   "term": "ذكاء ضيق اصطناعي",
+   "english": "Artificial Narrow Intelligence (ANI)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "انضمنا إلى الشات للحصول على المساعدة فوراً.",
+   "form": "شات",
+   "term": "دردشة فورية",
+   "english": "",
+   "dictionary": "معجم مصطلحات الموارد البشرية والتنمية الاجتماعية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سيارة جديدة تحتوي على نظام eCall.",
+   "form": "eCall",
+   "term": "نظام الاستجابة الطارئة (eCall)",
+   "english": "Emergency Call System (eCall)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نحن بحاجة لإجراء PoC قبل البدء في التطوير الكامل.",
+   "form": "PoC",
+   "term": "إثبات المفهوم",
+   "english": "Proof of Concept (PoC)",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ flat يوضع على اليسار.",
+   "form": "flat",
+   "term": "علامة الخفض",
+   "english": "flat",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لاحظنا ارتفاع معدل دوران الموظفين في قسم المبيعات هذا العام.",
+   "form": "دوران الموظفين",
+   "term": "اضطراب الموظفين ",
+   "english": "Staff Churn",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تصفية الشاشة CRT كانت ضرورية في تلك الحقبة.",
+   "form": "CRT",
+   "term": "صمام الأشعة المهبطية",
+   "english": "cathode ray tube, CRT",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استسلام اللاعب قبل انتهاء الوقت.",
+   "form": "استسلام",
+   "term": "انسحاب",
+   "english": "Forfeit",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ instrument rating يسمح بالطيران في الضباب.",
+   "form": "instrument rating",
+   "term": "تقدير آلي",
+   "english": "instrument rating",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب أن يشمل تقييم الأداء جميع جوانب العمل.",
+   "form": "تقييم الأداء",
+   "term": "تقويم الأداء",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذه الأجهزة إنترنت الأشياء.",
+   "form": "أجهزة إنترنت الأشياء",
+   "term": "جهاز إنترنت الأشياء",
+   "english": "Internet of Things (IoT) Device",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "يستخدم النظام بروتوكول CAN للاتصال.",
+   "form": "CAN",
+   "term": "شبكة التحكم",
+   "english": "Controller area network (CAN)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "طاقم الطائرة نفذت إجراءات السلامة بفعالية.",
+   "form": "طاقم الطائرة",
+   "term": "ركب جوي",
+   "english": "aircrew",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "العملية تتطلب لحام كهربائي عالي الجودة.",
+   "form": "لحام كهربائي",
+   "term": "لحام بالكهرباء",
+   "english": "electric welding",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يوجد بوابة هوائية في مؤخرة الطائرة لتفريغ الضغط.",
+   "form": "بوابة",
+   "term": "منفذ",
+   "english": "gateway",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تقارير الجودة تشير إلى انخفاض Cpk.",
+   "form": "Cpk",
+   "term": "مؤشر قدرة العملية",
+   "english": "Process Capability Index",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام إدارة البطارية BMS يضبط شحن الخلايا تلقائياً.",
+   "form": "BMS",
+   "term": "نظام إدارة البطارية (BMS)",
+   "english": "Battery Management System (BMS)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "مؤشر Organizational Excellence مرتفع.",
+   "form": "Organizational Excellence",
+   "term": "تميز مؤسسي ",
+   "english": "Organizational Excellence",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذا النوع من الطيور معروف بـ ترنيمه.",
+   "form": "ترنيم",
+   "term": "ترنم",
+   "english": "Trilling",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الانتظام في الحضور يعكس جديتك.",
+   "form": "الانتظام",
+   "term": "المواظبة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الوزن النسبي لهذا المؤشر هو 25%.",
+   "form": "الوزن النسبي",
+   "term": "الوزن",
+   "english": "Weight",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تعمل BSI Group على تطوير معايير جديدة.",
+   "form": "BSI Group",
+   "term": "معهد المعايير البريطانية مجموعة BSI ",
+   "english": "British Standards Institution (BSI Group)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نستخدم موجز RSS لنشر المحتوى.",
+   "form": "RSS",
+   "term": "موجز RSS",
+   "english": "RSS  Feed",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تعمل هذه المنظمات على تطوير منظمات المجتمع المدني في المنطقة.",
+   "form": "منظمات المجتمع المدني",
+   "term": "مؤسسات المجتمع المدني",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا النظام متوافق مع البروتوكولات الجديدة.",
+   "form": "متوافق",
+   "term": "متسق",
+   "english": "compatible",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تعمل ISO على تطوير معايير عالمية.",
+   "form": "ISO",
+   "term": "منظمة دولية للمقاييس",
+   "english": "International Organization For Standardization",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نستخدم BSC Perspectives لتقييم الأداء.",
+   "form": "BSC Perspectives",
+   "term": "مناظير بطاقة الأداء المتوازن",
+   "english": "Balanced Scorecard Perspectives",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "اللاعب في مركز AM قوي جداً.",
+   "form": "AM",
+   "term": "صانع لعب",
+   "english": "AM",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تفادي النار دي مهمة.",
+   "form": "تفادي",
+   "term": "مناورة",
+   "english": "dodge",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "استثمرنا في مشاريع الذكاء الاصطناعي AI.",
+   "form": "AI",
+   "term": "الذكاء الاصطناعي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "صنع السياسات الجديدة سيؤثر على الاقتصاد.",
+   "form": "صنع السياسات",
+   "term": "صنع السياسة",
+   "english": "Policymaking",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أضفت الفريند الجديد في اللعبة.",
+   "form": "فريند",
+   "term": "زميل",
+   "english": "Mate/ friend",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "مستوى SOC الحالي هو 80%.",
+   "form": "SOC",
+   "term": "حالة الشحن (SOC)",
+   "english": "State of Charge (SOC)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "في حالة عدم توفر المستندات، لن يتم قبول الطلب.",
+   "form": "في حالة",
+   "term": "في حال",
+   "english": "in case of / if",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "ركزت الشركة على مؤشرات الأداء الرئيسية لتحسين الجودة.",
+   "form": "مؤشرات الأداء الرئيسية",
+   "term": "مؤشرات الأداء",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "مشروعنا يعتمد على RAG.",
+   "form": "RAG",
+   "term": "توليد معزز بالاسترجاع",
+   "english": "Retrieval-Augmented Generation (RAG)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمت ADS للدقة القصوى.",
+   "form": "ADS",
+   "term": "التصويب بالمنظار",
+   "english": "Aim Down Sights (ADS)",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب إجراء فحص شامل للمحرك قبل الصيانة.",
+   "form": "فحص",
+   "term": "تفتيش",
+   "english": "inspection",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أجرت الطائرة مناورة بوب أب للتحول للأعلى.",
+   "form": "بوب أب",
+   "term": "ارتفاع فجائي",
+   "english": "pop-up",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لا تخرج من القاعدة بدون mats كافية.",
+   "form": "mats",
+   "term": "الموارد",
+   "english": "mats",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استمرّ في ممارسة نشاطه التجاري.",
+   "form": "ممارسة",
+   "term": "مزاولة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب على الشركة الالتزام بمعايير ISO 14001.",
+   "form": "ISO",
+   "term": "منظمة دولية للتوحيد القياسي",
+   "english": "ISO",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تتبع BAeA جميع قواعد السلامة الجديدة.",
+   "form": "BAeA",
+   "term": "جمعية الطيران البهلواني البريطانية",
+   "english": "BAeA",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الترويج عبر social media.",
+   "form": "social media",
+   "term": "وسائل التواصل الاجتماعي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يتم تركيب jet-turbine powerplant في المحرك.",
+   "form": "jet-turbine powerplant",
+   "term": "مجموعة المحرك العنفي النفاث",
+   "english": "jet-turbine powerplant",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب سداد رسوم الخدمة قبل الوصول.",
+   "form": "رسوم",
+   "term": "الأجور",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "النصف العلوي من الكوكب يُسمى upper limb.",
+   "form": "upper limb",
+   "term": "حافة علوية",
+   "english": "upper limb",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب أن يوقع الرئيس التنفيذي على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تم إبرام العقد بتوقيع الطرفين.",
+   "form": "توقيع",
+   "term": "إبرام",
+   "english": "Conclude",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أفضل أداء تم الحصول عليه باستخدام Ensemble من عدة نماذج.",
+   "form": "Ensemble",
+   "term": "تجميع النماذج",
+   "english": "Ensemble",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سجلت في نصف ماراثون الأسبوع الماضي.",
+   "form": "نصف ماراثون",
+   "term": "نصف المارثون",
+   "english": "Half marathon",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أدى الاستثمار في الرقمنة إلى تحسين كفاءة العمليات.",
+   "form": "الرقمنة",
+   "term": "التحول الرقمي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.85
+  },
+  {
+   "sentence": "أصدرت الجهة قراراً جديداً.",
+   "form": "الجهة",
+   "term": "الهيئة",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "جزء الوصلة (drogue) على سفينة أبولو.",
+   "form": "drogue",
+   "term": "قمع",
+   "english": "drogue",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نوع الطبلات في هذا الأوركسترا هو drums.",
+   "form": "drums",
+   "term": "درامز",
+   "english": "drums",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المستفيد من هذا العقد هو البنك.",
+   "form": "المستفيد",
+   "term": "العميل",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الـ release في شهر أكتوبر.",
+   "form": "release",
+   "term": "إصدار",
+   "english": "release",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمنا درون لتفقد حالة الطريق.",
+   "form": "درون",
+   "term": "طائرة بدون طيار",
+   "english": "",
+   "dictionary": "معجم مصطلحات الطرق",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تأثير الـ monsoon على الزراعة واضح.",
+   "form": "monsoon",
+   "term": "مونسون",
+   "english": "monsoon",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب على الشركة الالتزام بجميع القوانين الجديدة.",
+   "form": "الالتزام",
+   "term": "الامتثال",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "المتجر يستخدم تقنية upselling لزيادة المبيعات.",
+   "form": "upselling",
+   "term": "صعود",
+   "english": "Upselling",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "ارتكب الموظف خطأ في الحساب.",
+   "form": "خطأ",
+   "term": "أخطاء",
+   "english": "A Wrongful Act",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تطبيقات الفينتك ساعدت في تسهيل الدفع.",
+   "form": "فينتك",
+   "term": "تقنية مالية",
+   "english": "Financial Technology (Fintech)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "البطارية تحتاج إلى تبريد مائي جيد.",
+   "form": "تبريد مائي",
+   "term": "نظام التبريد بالماء",
+   "english": "water-cooling system",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم توزيع بواسون لحساب عدد الحوادث.",
+   "form": "توزيع بواسون",
+   "term": "توزيع السم",
+   "english": "Poisson Distribution",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب أن تظل داخل الزون المحدد.",
+   "form": "زون",
+   "term": "منطقة",
+   "english": "zone",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "توقعات الأرصاد تشير إلى موجة برد قادمة الأسبوع القادم.",
+   "form": "موجة برد",
+   "term": "موجة باردة",
+   "english": "cold wave",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الطائرة نفذت zoom قبل الهبوط.",
+   "form": "zoom",
+   "term": "تسلق فجائي",
+   "english": "zoom ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "استخدمنا مركبة ROV لجمع البيانات في الأعماق.",
+   "form": "ROV",
+   "term": "المركبة المشغلة عن بعد",
+   "english": "Remotely Operated Vehicle  (ROV)",
+   "dictionary": "معجم مصطلحات الحياة الفطرية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا جيمر يربح كل مرة.",
+   "form": "جيمر",
+   "term": "ممارس الألعاب الإلكترونية",
+   "english": "Gamer",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "رميت قنبلة على العدو.",
+   "form": "قنبلة",
+   "term": "قنبلة يدوية",
+   "english": "Grenade / Nade",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "البيانات تأتي من six-component balance.",
+   "form": "six-component balance",
+   "term": "ميزان المركبات الست",
+   "english": "siX-component balance",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم الملاحق البارومتر لتحديد الارتفاع.",
+   "form": "بارومتر",
+   "term": "مقياس الضغط الجوي",
+   "english": "barometer",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الطاقة المتجددة توفر MWh يومياً.",
+   "form": "MWh",
+   "term": "ميجا‭ ‬واط‭ ‬- ساعة",
+   "english": "Megawatt Hour (MWH)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نستخدم نظام RFQ لإدارة العروض الواردة.",
+   "form": "RFQ",
+   "term": "طلب عرض أسعار",
+   "english": "Request For Quotation  (RFQ)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يدير الشركة الرئيس التنفيذي (CEO) الحالي.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظرنا إلى Yield to Maturity قبل اتخاذ القرار.",
+   "form": "Yield to Maturity",
+   "term": "العائد حتى تاريخ الاستحقاق",
+   "english": "Return to Maturity (YTM)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظام الطيران يكتشف blip في المسار.",
+   "form": "blip",
+   "term": "يومض",
+   "english": "blip ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "المدفع ينفذ 600 shots per minute.",
+   "form": "shots per minute",
+   "term": "طلقة في الدقيقة",
+   "english": "spm",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "توظيف ديزاينر جرافيك للموقع الجديد.",
+   "form": "ديزاينر",
+   "term": "مصمم جرافيك",
+   "english": "Graphic Designer",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب الالتزام بقوانين تقسيم المناطق الجديدة.",
+   "form": "تقسيم المناطق",
+   "term": "تقسيم",
+   "english": "Zoning",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشخصية حصلت على إنفورم بعد المباراة.",
+   "form": "إنفورم",
+   "term": "تطور مشروط",
+   "english": "Inform",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لزمنا تلميع سطح السيارة ليصبح براقاً.",
+   "form": "تلميع",
+   "term": "الصقل",
+   "english": "Polishing",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "CEO الشركة هو أحمد محمد.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "CEO",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "البوش هنا يوفر حماية جيدة.",
+   "form": "بوش",
+   "term": "غطاء نباتي",
+   "english": "Bush",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "وقف الشيخ يمول المستشفيات.",
+   "form": "وقف",
+   "term": "أوقاف",
+   "english": "Endowments",
+   "dictionary": "معجم مصطلحات القطاع غير الربحي",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "مساحة الأرض كبيرة جداً.",
+   "form": "مساحة الأرض",
+   "term": "مساحة الموقع",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تم تشكيل لجنة ad hoc للبحث عن الحلول.",
+   "form": "ad hoc",
+   "term": "مخصصة",
+   "english": "Ad Hoc",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أخذ النصل من الحقيبة.",
+   "form": "نصل",
+   "term": "نصل السيف",
+   "english": "Blade",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": true,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "دراسة عن تكلفة المعيشة في المدن الكبرى.",
+   "form": "تكلفة المعيشة",
+   "term": "التكاليف المعيشية",
+   "english": "Cost of Living",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تؤثر مجموعات الضغط على قرارات الحكومة.",
+   "form": "مجموعات الضغط",
+   "term": "جماعات الضغط",
+   "english": "",
+   "dictionary": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أداءه في المباراة كان goated.",
+   "form": "goated",
+   "term": "أسطوري",
+   "english": "goated",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أثر المحرك النفاث عند الإقلاع هو plume.",
+   "form": "plume",
+   "term": "ذيل المحرك",
+   "english": "plume",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سجلت فريقنا في بطولة MLBB.",
+   "form": "MLBB",
+   "term": "أساطير الجوال: بانج بانج",
+   "english": "Mobile Legends: Bang Bang",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المدير المالي قدم Financial Forecast للمجلس.",
+   "form": "Financial Forecast",
+   "term": "توقعات مالية",
+   "english": "Financial Forecast",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أدوات الرقابة على حالة المحركات.",
+   "form": "رقابة",
+   "term": "مراقبة",
+   "english": "Monitoring",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "حصلت على راتب إضافي لساعات إضافية.",
+   "form": "ساعات إضافية",
+   "term": "العمل الإضافي",
+   "english": "",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج لرفع الـ KPIs.",
+   "form": "KPIs",
+   "term": "مؤشر الأداء الرئيسي",
+   "english": "Key Performance Indicator (KPI)",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم توقيع الاتفاق بين الطرفين.",
+   "form": "توقيع الاتفاق",
+   "term": "إبرام الاتفاق",
+   "english": "Conclusion of The Agreement",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تأخر الشحن أثر على سلسلة التوريد بالكامل.",
+   "form": "سلسلة التوريد",
+   "term": "سلسلة الإمداد",
+   "english": "Supply Chain",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تأكد من مراجعة المانيفست قبل تحميل البضائع.",
+   "form": "مانيفست",
+   "term": "المنافيست",
+   "english": "Manifest",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المؤسسة تلتزم بمعايير RBA الجديدة.",
+   "form": "RBA",
+   "term": "النهج القائم على المخاطر",
+   "english": "Risk-Based Approach",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قامت المنصة بمزاد إلكتروني تنازلي لبيع البضاعة.",
+   "form": "مزاد إلكتروني تنازلي",
+   "term": "مزاد إلكتروني عكسي",
+   "english": "Reverse E-Auction",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": true,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "بسبب التأخير في التسليم، قرر الطرف الأول إنهاء العقد.",
+   "form": "إنهاء العقد",
+   "term": "الإنهاء",
+   "english": "Termination",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لدينا خطة لرفع KPIs المبيعات.",
+   "form": "KPIs",
+   "term": "مؤشر الأداء الرئيسي",
+   "english": "Key Performance Indicator (KPI)",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أداة الـ gyro تعمل بشكل ممتاز.",
+   "form": "gyro",
+   "term": "جيروسكوب",
+   "english": "gyroscope",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هناك تداخل كبير بين اللقطتين في المنطقة الوسطى.",
+   "form": "تداخل",
+   "term": "لغط",
+   "english": "crosstalk",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.7
+  },
+  {
+   "sentence": "تطبيقات AR تضيف معلومات على الشاشة.",
+   "form": "AR",
+   "term": "أرغون",
+   "english": "argon",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نحتاج إلى تقليل variation في الإنتاج.",
+   "form": "variation",
+   "term": "تغيير العقد",
+   "english": "Contract Change",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "يستخدم آلة peen لتشكيل القطع.",
+   "form": "peen",
+   "term": "مطرقة تشكيل",
+   "english": "setting hammer",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تخزين LPG في الخزانات.",
+   "form": "LPG",
+   "term": "بيوتان سائل",
+   "english": "Butane (LPG)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تدخل الشهرة التجارية في الميزانية العمومية.",
+   "form": "الشهرة",
+   "term": "شهرة إلى قيمة النوايا الطيبة",
+   "english": "Goodwill",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تتبع الشركة التطورات في مجال FTA.",
+   "form": "FTA",
+   "term": "منطقة التجارة الحرة",
+   "english": "Free Trade Area",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تفاعل Cs مع الماء ينتج غاز هيدروجين.",
+   "form": "Cs",
+   "term": "عدد الوحوش المقتولة",
+   "english": "Creep Score",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "في هذا المشروع، نستخدم نموذج FPI لتحديد هامش الربح.",
+   "form": "FPI",
+   "term": "استثمار المحافظ الأجنبية",
+   "english": "Foreign Portfolio Investment (FPI)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هناك bug كبير في التحديث.",
+   "form": "bug",
+   "term": "علة",
+   "english": "bug ---(3)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "مسار track على اللوحة الإلكترونية.",
+   "form": "track",
+   "term": "موطئ",
+   "english": "tread",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نركز على تحسين KPI.",
+   "form": "KPI",
+   "term": "مقياس الأداء",
+   "english": "Performance Measure",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظام TCO يوقف الشحن عند 45 درجة.",
+   "form": "TCO",
+   "term": "نمذجة التكلفة الإجمالية",
+   "english": "Total Cost Modelling",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الميزانية مخصصة لـ R&D في الشركة.",
+   "form": "R&D",
+   "term": "البحث والتطوير",
+   "english": "(R & D) Research And Development",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "ميزت الشركة بين CAPEX و OPEX.",
+   "form": "OPEX",
+   "term": "إنفاق‭ ‬تشغيلي",
+   "english": "Operational Expenditure (OPEX)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المنزل يعتمد على الطاقة الناتجة عن solar cell.",
+   "form": "solar cell",
+   "term": "خلية كهرضوئية",
+   "english": "photoelectric cell",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم هذا النظام بروتوكول CAN للتواصل بين الوحدات.",
+   "form": "CAN",
+   "term": "علبة",
+   "english": "can",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "العلماء يتوقعون تحقيق AGI خلال العقود القادمة.",
+   "form": "AGI",
+   "term": "ذكاء اصطناعي عام",
+   "english": "General Artificial Intelligence",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سأقوم بفحص الوثائق اليوم.",
+   "form": "فحص",
+   "term": "مراجعة",
+   "english": "check",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "أقرت SAMA قواعد جديدة للرقابة.",
+   "form": "SAMA",
+   "term": "البنك المركزي السعودي",
+   "english": "Saudi Central Bank",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمت درعاً للدفاع.",
+   "form": "درع",
+   "term": "حائل",
+   "english": "shielding ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أظهرت بيانات Brent ارتفاعاً في الأسعار.",
+   "form": "Brent",
+   "term": "بترول خام برنت",
+   "english": "Brent Crude Oil",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ offset الخاص بالوزارة يغطي 20% من التكلفة.",
+   "form": "offset",
+   "term": "بعد",
+   "english": "offset ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم النظام بروتوكول CAN للاتصال.",
+   "form": "CAN",
+   "term": "شبكة منطقة التحكم",
+   "english": "Control Area Network",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تمت معالجة القضية عبر ET.",
+   "form": "ET",
+   "term": "معامل المرونة المماسي",
+   "english": "tangent modulus",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تعيين الرئيس التنفيذي الجديد اليوم.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نقوم برفع البيانات على كلاود.",
+   "form": "كلاود",
+   "term": "معلومات سحابية",
+   "english": "Cloud Information",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام ESP يمنع الانزلاق عند المنعطفات.",
+   "form": "ESP",
+   "term": "مضخة كهربائية غاطسة",
+   "english": "Electric Submersible Pump (ESP)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أرسلنا طلب معلومات (RFI) للموردين المحتملين.",
+   "form": "RFI",
+   "term": "المؤسسة المالية المبلغة",
+   "english": "Reporting Financial Institution",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نستخدم مؤشر الأداء لقياس نجاح المشروع.",
+   "form": "مؤشر الأداء",
+   "term": "مؤشر أداء السلامة",
+   "english": "Performance Index",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المصنع يعمل بنظام mass production.",
+   "form": "mass production",
+   "term": "إنتاج متسلسل",
+   "english": "series production",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمت الشركة SPV لتسهيل التمويل.",
+   "form": "SPV",
+   "term": "\tمنشأة ذات أغراض خاصة",
+   "english": "Special Purposes Entity",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام الإنذار موجود داخل cockpit الطائرة.",
+   "form": "cockpit",
+   "term": "حجرة الطيران",
+   "english": "flight compartment",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تعرفة الدخول إلى المتحف مرتفعة.",
+   "form": "تعرفة",
+   "term": "تعريفة",
+   "english": "Tariff",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب الموافقة على أمر الشراء (PR) قبل التنفيذ.",
+   "form": "PR",
+   "term": "رقم قياسي في رفع الأثقال",
+   "english": "PR",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "عند تجاوز Threshold معين، يتم إرسال تنبيه.",
+   "form": "Threshold",
+   "term": "حد التصنيف",
+   "english": "Classification Threshold",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أنا أريد pass.",
+   "form": "pass",
+   "term": "فترة اتصال",
+   "english": "pass ---(5)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام الـ float يسمح للطائرة بالارتفاع ببطء.",
+   "form": "float",
+   "term": "طوف",
+   "english": "pontoon",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "حجم Population الدراسة كبير.",
+   "form": "Population",
+   "term": "عشيرة",
+   "english": "clan",
+   "dictionary": "معجم مصطلحات الحياة الفطرية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سعة البطارية 60 كيلوواط ساعة.",
+   "form": "كيلوواط ساعة",
+   "term": "كيلو‭ ‬واط‭ ‬ - ساعة",
+   "english": "Kilowatt-Hour (KWH)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "حصلت الشركة على شهادة ISO.",
+   "form": "ISO",
+   "term": "مشغل‭ ‬النظام‭ ‬المستقل",
+   "english": "Independent System Operator",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "علماء يدرسون meteorite الذي وجد في الصحراء.",
+   "form": "meteorite",
+   "term": "حجر نيزكي",
+   "english": "meteorite",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج إلى تقليل الـ lead time في سلسلة التوريد.",
+   "form": "lead time",
+   "term": "مهلة الزمنية",
+   "english": "Lead Time",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تم استخدام الطائرة الساحبة tug لسحب الطائرة الشراعية.",
+   "form": "tug",
+   "term": "مركبة قاطرة",
+   "english": "tug ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المظلة الصغيرة (drogue) أعطت استقراراً جيداً.",
+   "form": "drogue",
+   "term": "مظلة كبح",
+   "english": "drag chute",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا النظام مكون من باك واحد.",
+   "form": "باك",
+   "term": "ربطة",
+   "english": "pack ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "ارتفع مؤشر أسعار المستهلك (CPI) هذا الشهر.",
+   "form": "CPI",
+   "term": " الرقم القياسي لأسعار المستهلك ",
+   "english": "Consumer Price Index",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يتم فحص وحدة CCU قبل شحن السيارة.",
+   "form": "CCU",
+   "term": "إعادة‭ ‬استخدام‭ ‬ثاني‭ ‬أكسيد‭ ‬الكربون",
+   "english": "CO2 Reuse",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا الغناء جميل جداً، النوتة جميلة.",
+   "form": "نوتة",
+   "term": "رموز الموسيقى",
+   "english": "Musical Notes",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أصدرت CMA قراراً جديداً بشأن التداول.",
+   "form": "CMA",
+   "term": "هيئة المنافسة والأسواق",
+   "english": "Competitions And Markets Authority (CMA)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج إلى حل مشكلة Alignment في نماذجنا.",
+   "form": "Alignment",
+   "term": "يوافق",
+   "english": "align",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أدخل الكود في القائمة للحصول على سلاح.",
+   "form": "كود",
+   "term": "نداء الواجب: الحرب الحديثة 3",
+   "english": "Call of Duty: Modern Warfare III",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الكود هنا هو المصدرية وليس المجمع.",
+   "form": "كود",
+   "term": "نداء الواجب: الحرب الحديثة 3",
+   "english": "Call of Duty: Modern Warfare III",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "المقام الكورد يبدأ بدرجة معينة.",
+   "form": "كورد",
+   "term": "أكورد",
+   "english": "accord",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المعايير الدولية من منظمة ISO.",
+   "form": "ISO",
+   "term": "مشغل‭ ‬النظام‭ ‬المستقل",
+   "english": "Independent System Operator",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المحركات القديمة تستخدم زيت الغاز (gas oil) كوقود أساسي.",
+   "form": "gas oil",
+   "term": "زيت غاز",
+   "english": "Gasoil",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "استخدمت الشركة شات بوتاً للرد على استفسارات العملاء.",
+   "form": "شات بوت",
+   "term": "روبوتات المحادثة",
+   "english": "Chat Bots",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب إدخال الـ PIN الصحيح للدخول إلى النظام.",
+   "form": "PIN",
+   "term": "إشعار المعلومات المسبقة ",
+   "english": "Prior Information Notice",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "أحتاج لزيادة مانا للهجوم.",
+   "form": "مانا",
+   "term": "النقاط السحرية",
+   "english": "MP",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام VoIP يدعم حركة مرور عالية دون تأخير.",
+   "form": "VoIP",
+   "term": "اشتراكات نقل الصوت بواسطة بروتوكول الإنترنت(VoIP)",
+   "english": "VoIP Subscriptions",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم نقل الصلاحيات إلى CTC.",
+   "form": "CTC",
+   "term": "رئيس وحدة التحكم بالقطارات",
+   "english": "Chief Traffic Controller",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هدفنا تحقيق CI في جميع المشاريع.",
+   "form": "CI",
+   "term": "ذكاء حوسبي",
+   "english": "Computational Intelligence (CI)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام AmI يراقب حالة المريض بشكل مستمر.",
+   "form": "AmI",
+   "term": "عداد‭ ‬ذكي",
+   "english": "Smart Meter",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المحرك يعمل بـ 1000 HP.",
+   "form": "HP",
+   "term": "حصان",
+   "english": "hp",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الوحدة المستخدمة هي L.",
+   "form": "L",
+   "term": "طول مميز",
+   "english": "characteristic length",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يستخدم الوكيل Replay Buffer لحفظ التجارب السابقة.",
+   "form": "Replay Buffer",
+   "term": "إعادة تشغيل التجربة",
+   "english": "Experience Replay",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الموديل الجديد يدعم تقنية FSD بالكامل.",
+   "form": "FSD",
+   "term": "القدرة الكاملة على القيادة الذاتية",
+   "english": "Full Self-Driving Capability",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ idle يعني توقف الشخصية.",
+   "form": "idle",
+   "term": "دوران بطيء",
+   "english": "idling",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "سجلت البئر إنتاجها الأولي IP.",
+   "form": "IP",
+   "term": "نقطة البدء",
+   "english": "initial point",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج إلى فوت لاختيار الخريطة.",
+   "form": "فوت",
+   "term": "قدم",
+   "english": "foot",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام البلوك تشين يضمن شفافية المعاملات.",
+   "form": "بلوك تشين",
+   "term": "تقنية سلسلة الكتل",
+   "english": "Blockchain Technology",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ autopilot حافظ على مسار الطائرة.",
+   "form": "autopilot",
+   "term": "طيار جيروسكوبي",
+   "english": "gyropilot",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم إرسال طلب الإرسال عن بعد (RTR) من المحطة.",
+   "form": "RTR",
+   "term": "اتصالات عن بعد",
+   "english": "remote communications",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "في مشروعنا نستخدم تقنية NER لاستخراج الأسماء.",
+   "form": "NER",
+   "term": " نسبة القيد الصافي",
+   "english": "Net Enrollment Ratio",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "استخدام الـ AI في التحليلات التنبؤية.",
+   "form": "AI",
+   "term": "الانسجام",
+   "english": "Ai",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "التي في الطريق كان مزدحمًا.",
+   "form": "تي",
+   "term": "نغمة \"سي\"",
+   "english": "B",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "يحتاج اللوح panel إلى صيانة دورية.",
+   "form": "panel",
+   "term": "لوح",
+   "english": "panel ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نوع المحرك هو turbofan.",
+   "form": "turbofan",
+   "term": "محرك ذو إمرار جانبي",
+   "english": "bypass engine",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المحرك هو جزء من pack الدفع.",
+   "form": "pack",
+   "term": "ربطة",
+   "english": "pack ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "أنا في tilt الآن ولا أستطيع اللعب.",
+   "form": "tilt",
+   "term": "ميلان",
+   "english": "heeling",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نوع الوقود المستخدم في المحركات هو سولار.",
+   "form": "سولار",
+   "term": "الطاقة الشمسية",
+   "english": "Solar Energy (Thermal, Photovoltaic)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "نحتاج لمعرفة الـ secondary structure بدقة.",
+   "form": "secondary structure",
+   "term": "إنشاء ثانوي",
+   "english": "secondary structure",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "اللعبة تحتوي على عدة أحداث تتطلب QTE.",
+   "form": "QTE",
+   "term": "اتجاه زاوي لاسلكي",
+   "english": "radio bearing",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تصميم الذيل يؤثر بشكل كبير على استقرار الطائرة.",
+   "form": "الذيل",
+   "term": "زعنفة الذيل",
+   "english": "tail fin",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "شركة النفط تعلن عن توزيعات الأرباح السنوية.",
+   "form": "توزيعات الأرباح",
+   "term": "أرباح الأسهم",
+   "english": "Stock Profits",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "فحص مستوى الزيت في الخزان الهيدروليكي.",
+   "form": "خزان",
+   "term": "صهريج",
+   "english": "tank",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "ذهبنا إلى مركز التزلج لتجربة سكيت.",
+   "form": "سكيت",
+   "term": "أحذية التزلج بعجلات",
+   "english": "Inline skates",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم توقيع عقد PPP جديد مع شركة بناء.",
+   "form": "PPP",
+   "term": "الناتج المحلي الإجمالي بأساس مماثلات القوة الشرائية",
+   "english": "Current GDP at PPP",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يعتبر FCEV من أحدث تقنيات السيارات الكهربائية.",
+   "form": "FCEV",
+   "term": "مركبة‭ ‬هيدروجينية",
+   "english": "Hydrogen Vehicle",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "لا يوجد CB في هذا القطار.",
+   "form": "CB",
+   "term": "قاطع الدارة",
+   "english": "circuit breaker",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تستخدم الطاقة الحرارية الأرضية في التدفئة المنزلية.",
+   "form": "الطاقة الحرارية الأرضية",
+   "term": "نظام‭ ‬الطاقة‭ ‬الحرارية‭ ‬الأرضية",
+   "english": "Geothermal System",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تأكد من إعدادات IP بشكل صحيح.",
+   "form": "IP",
+   "term": "أوفست  المشاركة الصناعية ",
+   "english": "Offset/Industrial Participation",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "قيمة Q في الدائرة عالية جداً.",
+   "form": "Q",
+   "term": "ضغط السرعة",
+   "english": "velocity head ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "القدرة الإنتاجية للمصنع تضاعفت.",
+   "form": "القدرة",
+   "term": "إمكانية",
+   "english": "Capability",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد قام المستثمر بالتحوط على الذهب لتجنب انخفاض الأسعار.",
+   "form": "تحوط",
+   "term": "تحوط استثماري",
+   "english": "Investment Hedging",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "توقيع الرئيس التنفيذي على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أفضل الألعاب تتطلب بطاقة رسوميات قوية (GPU).",
+   "form": "GPU",
+   "term": "منشط خارجي",
+   "english": "eXternal energizer",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "البنك المركزي يحدد الحد الأقصى لـ APR في البطاقات الائتمانية.",
+   "form": "APR",
+   "term": "مسجل جانبية التضاريس",
+   "english": "terrain-profile recorder",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نستخدم نموذج ETL لنقل البيانات.",
+   "form": "ETL",
+   "term": "رفع انتقالي",
+   "english": "translational lift",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تتطلب إدارة الانبعاثات مراقبة مستويات VOC في الهواء.",
+   "form": "VOC",
+   "term": "صوت المستفيد ",
+   "english": "Voice of Beneficiary",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "يجب مراجعة ملف DRP سنوياً.",
+   "form": "DRP",
+   "term": "خطة التعافي من كوارث تقنية المعلومات",
+   "english": "IT Disaster Recovery Plan",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تُظهر التقارير أن قيمة المعرضة للخطر (VaR) للمحفظة مرتفعة.",
+   "form": "VaR",
+   "term": "مدى بصري ـ سمعي",
+   "english": "VAR",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التردد المُضمَّن في إشارة FM يختلف عن الحاملة.",
+   "form": "FM",
+   "term": "نموذج أساس",
+   "english": "Baseline Model",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تغير اتجاه الرياح إلى backing.",
+   "form": "backing",
+   "term": "مساندة",
+   "english": "backing ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا اللوحة تحتوي على ADC للبيانات.",
+   "form": "ADC",
+   "term": "حاسب معطيات الهواء",
+   "english": "air-data computer",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج ملء خزان LPG للمطبخ.",
+   "form": "LPG",
+   "term": "بيوتان سائل",
+   "english": "Butane (LPG)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "القوات تستخدم UAV للمراقبة.",
+   "form": "UAV",
+   "term": "طائرة بلا طيار",
+   "english": "pilotless aircraft",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "التردد 50 Hz.",
+   "form": "Hz",
+   "term": "تردد",
+   "english": "Frequency",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تداول crypto في السوق.",
+   "form": "crypto",
+   "term": "عملات رقمية ",
+   "english": "Digital Currencies",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ feeder في الفريق يحتاج إلى تدريب.",
+   "form": "feeder",
+   "term": "خط نقل كهربائي",
+   "english": "transmission line",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يُعتبر الطرف المقابل المركزي (CCP) طرفًا مقابلًا للتداولات.",
+   "form": "CCP",
+   "term": "\tمركز المقاصة",
+   "english": "Central Counterparty (CCP)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سعة القناة تعتمد على bandwidth.",
+   "form": "bandwidth",
+   "term": "عرض‭ ‬النطاق‭ ‬الترددي",
+   "english": "Bandwidth",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "انزلاق الـ spoiler خفض السرعة.",
+   "form": "spoiler",
+   "term": "متلف",
+   "english": "destructor",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قاموا بإجراء survey للطائرة بعد الاصطدام.",
+   "form": "survey",
+   "term": "المسح",
+   "english": "Surveying",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تداولت العقود على Brent.",
+   "form": "Brent",
+   "term": "أسعار نفط البرنت",
+   "english": "Brent Oil Prices",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الجهة طلبت من الشركات تقديم عروض عبر RFP.",
+   "form": "RFP",
+   "term": "طلب عرض",
+   "english": "Request For Proposal (RFP)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ combo الأخير كان خارقاً.",
+   "form": "combo",
+   "term": "نظام الشحن المشترك \"الكوبيو\"",
+   "english": "SAE COMBO (CCS)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الذكاء الاصطناعي أعطى تنبيهاً بوجود عدو.",
+   "form": "تنبيه",
+   "term": "إشعار",
+   "english": "Notification",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام tracking يضمن جودة المنتجات.",
+   "form": "tracking",
+   "term": "يقتفي",
+   "english": "track ---(3)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "التعديل على turbocharger يتطلب أدوات خاصة.",
+   "form": "turbocharger",
+   "term": "شحان عنفي",
+   "english": "turbo ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هناك مشكلة في الـ bug هذه.",
+   "form": "bug",
+   "term": "عطل",
+   "english": "BUG",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "السيارة من نوع RHD.",
+   "form": "RHD",
+   "term": "رمز القيادة اليمنى",
+   "english": "Right-Hand Drive Symbol (RHD)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام CTC يدير حركة القطارات.",
+   "form": "CTC",
+   "term": "التحكم المركزي بحركة المرور",
+   "english": "Central Traffic Control",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سأستخدم جهاز GPS لمعرفة موقعي.",
+   "form": "GPS",
+   "term": "نظام تحديد المواقع العالمي",
+   "english": "Global Positioning System",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ spoiler في الطائرة يخفض السرعة.",
+   "form": "spoiler",
+   "term": "معترضة",
+   "english": "intercepter, interceptor ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الوحدة المستخدمة في الهندسة هي psi.",
+   "form": "psi",
+   "term": "تكامل‭ ‬قطاع‭ ‬الكهرباء",
+   "english": "Power Sector Integration (PSI)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أبعتك رسالة عبر المكبر في المحطة.",
+   "form": "مكبر",
+   "term": "مضخم",
+   "english": "amplifier",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "يحتاجون تلميع السطح قبل الطلاء.",
+   "form": "تلميع",
+   "term": "الصقل",
+   "english": "Polishing",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.7
+  },
+  {
+   "sentence": "هذا controller يدير الحرارة.",
+   "form": "controller",
+   "term": "المسيطر",
+   "english": "Controller",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تلتزم الشركة بمعايير GMP في الإنتاج.",
+   "form": "GMP",
+   "term": "التعهد‭ ‬العالمي‭ ‬بشأن‭ ‬الميثان",
+   "english": "Global Methane Pledge",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "المشروع يعتمد على منهجية LCC.",
+   "form": "LCC",
+   "term": "شركات طيران منخفضة التكلفة",
+   "english": "Low-Cost Carriers",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ buffer يعمل على منع التداخل بين الدارتين.",
+   "form": "buffer",
+   "term": "صف",
+   "english": "queue",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تستخدم الشركة نظام P2P لإدارة الفواتير والدفع.",
+   "form": "P2P",
+   "term": "شراء للدفع",
+   "english": "Purchase To Pay  (P2P)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الموقع المحدد في الموانئ هو terminal.",
+   "form": "terminal",
+   "term": "نقطة طرفية",
+   "english": "terminal ---(3)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نعمل على تطبيق منهجية RBM في برنامجنا الجديد.",
+   "form": "RBM",
+   "term": "آلة بولتزمان المقيدة",
+   "english": "Restricted Boltzmann Machine (RBM)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المركبة تستخدم ديزل كوقود.",
+   "form": "ديزل",
+   "term": "مادة الديزل (زيت الوقود)",
+   "english": "Diesel / Fuel Oil",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ producer يهتم بترتيب المقاطع.",
+   "form": "producer",
+   "term": "الصانع",
+   "english": "Manufacturer",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا counter يقيس النبضات.",
+   "form": "counter",
+   "term": "معداد",
+   "english": "scaler",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قمت بطلب clearance من برج المراقبة.",
+   "form": "clearance",
+   "term": "رفع الرقابة",
+   "english": "Clearance",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام الـ rotation مفيد.",
+   "form": "rotation",
+   "term": "دوران",
+   "english": "curl",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام الـ nav متطور جداً في الطائرات الحديثة.",
+   "form": "nav",
+   "term": "صافي قيمة الأصول ",
+   "english": "Net Asset Value",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الصدى في القاعة الكبير استمر طويلاً.",
+   "form": "صدى",
+   "term": "صدى راداري",
+   "english": "radar echo",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ tilt في الطائرة يجب أن يكون صفراً.",
+   "form": "tilt",
+   "term": "زاوية ميل",
+   "english": "tip ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المشغل لاحظ وجود blip على الشاشة.",
+   "form": "blip",
+   "term": "يومض",
+   "english": "blip ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يحتاج المحرك إلى yoke قوي.",
+   "form": "yoke",
+   "term": "عمود القيادة",
+   "english": "control column",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام standardization في المصنع.",
+   "form": "standardization",
+   "term": "عموم",
+   "english": "commonalty",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب أن تظل داخل الزون المحدد.",
+   "form": "زون",
+   "term": "دفاع عن المنطقة",
+   "english": "Zone defence",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تعتبر الذكاء الاصطناعي (AI) من أهم التقنيات الحديثة.",
+   "form": "AI",
+   "term": "اعتراض جوي",
+   "english": "air interception",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الشركة تعمل على تطوير EI.",
+   "form": "EI",
+   "term": "سطح الدخول",
+   "english": "entry interface",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "كود الإشارة.",
+   "form": "كود",
+   "term": "نداء الواجب: الحرب الحديثة 3",
+   "english": "Call of Duty: Modern Warfare III",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قيمة Working Capital للشركة سلبية هذا الربع.",
+   "form": "Working Capital",
+   "term": "رأس المال التشغيلي",
+   "english": "Operating Capital",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الفنيون فحصوا landing gear الطائرة.",
+   "form": "landing gear",
+   "term": "عجلات الحط",
+   "english": "undercarriage",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الاندلاع الشمسي flare سبب في اضطراب الاتصالات.",
+   "form": "flare",
+   "term": "إمساك الحط",
+   "english": "holding off",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "غشاء الجناح (wing skin) يجب أن يكون خفيفاً.",
+   "form": "skin",
+   "term": "سطح خارجي",
+   "english": "skin",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نوع المحرك المستخدم هو turboshaft وليس turbine.",
+   "form": "turboshaft",
+   "term": "عنفة عمود",
+   "english": "shaft turbine",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الشاشة تدعم نظام RGB.",
+   "form": "RGB",
+   "term": "ثلاثي الألوان",
+   "english": "trichromatic",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سرعة المحرك هي 8000 RPM.",
+   "form": "RPM",
+   "term": "الدوران في الدقيقة",
+   "english": "Revolutions Per Minute (RPM)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أرسلني لبوست في اللعبة.",
+   "form": "بوست",
+   "term": "تدعيم",
+   "english": "boost",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "حساب الموقع عند null.",
+   "form": "null",
+   "term": "موضع الصفر",
+   "english": "null position",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المعيار المعتمد من GSO.",
+   "form": "GSO",
+   "term": "تحسين سرب الدودة المضيئة",
+   "english": "Glowworm Swarm Optimization (GSO)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "غرفة أكوستيك مجهزة جيداً.",
+   "form": "أكوستيك",
+   "term": "صوتي",
+   "english": "acoustic",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا KPI هو الأهم لهذا الربع.",
+   "form": "KPI",
+   "term": "مؤشر أداء رئيسي",
+   "english": "Key Performance Indicator",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يمكن تلخيص الإحصائيات في جدول واحد.",
+   "form": "إحصائيات",
+   "term": "بيانات إحصائية",
+   "english": "Statistical Data",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب ألا يتجاوز وقت التعطل MTPD المحدد.",
+   "form": "MTPD",
+   "term": "فترة الاضطراب القصوى",
+   "english": "Maximum tolerable period of disruption",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تتوافق هذه التعديلات مع مبادئ PFMI.",
+   "form": "PFMI",
+   "term": "\tمبادئ البنية التحتية للسوق المالية",
+   "english": "Principles for Financial Market Infrastructures",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "نظام الطيران يكتشف blip في المسار.",
+   "form": "blip",
+   "term": "موضع",
+   "english": "position",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تعمل ISO على تطوير معايير عالمية.",
+   "form": "ISO",
+   "term": "منظمة دولية للتوحيد القياسي",
+   "english": "ISO",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "برنامج FSD الكيني يدعم الأسواق المالية.",
+   "form": "FSD",
+   "term": "قيادة ذاتية كاملة ",
+   "english": "Full Self-Driving (FSD)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "جرافيكس اللعبة يبدو أفضل من المنافسين.",
+   "form": "جرافيكس",
+   "term": "بيانات",
+   "english": "graphics",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "يجب على الشركة الالتزام بمعايير ISO 14001.",
+   "form": "ISO",
+   "term": "مشغل‭ ‬النظام‭ ‬المستقل",
+   "english": "Independent System Operator",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "هذا model يعمل بكفاءة عالية.",
+   "form": "model",
+   "term": "نموذج مقياسي",
+   "english": "scale model",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام ERP يدمج جميع أقسام الشركة في قاعدة بيانات واحدة.",
+   "form": "ERP",
+   "term": "تخطيط‭ ‬موارد‭ ‬المؤسسة",
+   "english": "Enterprise Resource Planning (ERP)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سيرفر اللعبة متعطل.",
+   "form": "سيرفر",
+   "term": "راكب الأمواج",
+   "english": "Wave Rider",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أحب قراءة الكتب باللغة R.",
+   "form": "R",
+   "term": "معدل الانعراج",
+   "english": "rate of yaw",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "سنتشرف بزيارتنا لبطولة ماسترز القادمة.",
+   "form": "ماسترز",
+   "term": "الرياضي المحترف أكبر من ٣٥ سنة",
+   "english": "Master Athlete",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "احتفظنا بـ احتياطي مالي كبير.",
+   "form": "احتياطي",
+   "term": "بديل",
+   "english": "standby, stand-by",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تصنيف POM للمركبات العضوية.",
+   "form": "POM",
+   "term": "المادة العضوية الجسيمية",
+   "english": "Particulate organic matter (POM)",
+   "dictionary": "معجم مصطلحات الحياة الفطرية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "خوارزمية NER تكتشف الأسماء في المقالات.",
+   "form": "NER",
+   "term": " نسبة القيد الصافي",
+   "english": "Net Enrollment Ratio",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تستخدم السيارة بروتوكول CAN للاتصال بين المحرك والمقود.",
+   "form": "CAN",
+   "term": "شبكة منطقة التحكم",
+   "english": "Control Area Network",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام ESP يحلل البيانات فور وصولها.",
+   "form": "ESP",
+   "term": "الإدراك الخارق",
+   "english": "Extra Sensory Perception (ESP)",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التسويق عبر سوشيال ميديا حقق مبيعات قياسية.",
+   "form": "سوشيال ميديا",
+   "term": "وسائل تواصل اجتماعية",
+   "english": "Social Media Platforms",
+   "dictionary": "معجم مصطلحات الإعلام",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أدوا تفتيشاً على جودة المنتجات.",
+   "form": "تفتيش",
+   "term": "استقصاء",
+   "english": "survey ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الـ leverage في هذا الاستثمار كان ممتازًا.",
+   "form": "leverage",
+   "term": "تأثير إيجابي",
+   "english": "Leverage",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ holding point في المطار مخصص للطائرات.",
+   "form": "holding point",
+   "term": "نقطة المدار",
+   "english": "orbit point",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المحرك عانى من backfire أثناء التشغيل.",
+   "form": "backfire",
+   "term": "اشتعال خلفي",
+   "english": "flashback",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يعتمد النظام على بروتوكول MCP للتواصل.",
+   "form": "MCP",
+   "term": "خرج مستمر أقصى",
+   "english": "maXimum continuous output",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام CPD الجديد سيعتمد على الدورات الإلكترونية.",
+   "form": "CPD",
+   "term": "تطوير المهني المستمر ",
+   "english": "Continuing Professional Development",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام GPS في السيارة يخبرنا بموقعها الدقيق.",
+   "form": "GPS",
+   "term": "النظام العالمي لتحديد المواقع ",
+   "english": "Global Positioning System (GPS)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الـ release في البولينج مهم.",
+   "form": "release",
+   "term": "إصدار",
+   "english": "release",
+   "dictionary": "معجم مصطلحات الرياضات الإلكترونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا النظام يعتمد على LLM.",
+   "form": "LLM",
+   "term": "نموذج لغوي كبير",
+   "english": "Large Language Model (LLM)",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "يجب التأكد من أن الـ coupling يعمل بشكل صحيح.",
+   "form": "coupling",
+   "term": "قرن",
+   "english": "coupling ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم توقيع عقد M&A بين الشركتين.",
+   "form": "M&A",
+   "term": "اندماج",
+   "english": "Merger",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم حساب الفجوة باستخدام PPP.",
+   "form": "PPP",
+   "term": "الشراكة بين القطاعين العام والخاص",
+   "english": "Public-Private Partnership (PPP)",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ zoom في الفيديو كان سريعاً جداً.",
+   "form": "zoom",
+   "term": "صعود مفاجئ",
+   "english": "pull up",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ cover مهم جداً.",
+   "form": "cover",
+   "term": "مخبأ",
+   "english": "cover ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "البطاقة تستخدم تقنية RFID.",
+   "form": "RFID",
+   "term": "تعريف التردد اللاسلكي",
+   "english": "Radio-Frequency Identification",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تعتبر Disruption عاملاً مؤثرًا في الأداء.",
+   "form": "Disruption",
+   "term": "تغيير التخريبي",
+   "english": "Disruptive Change",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أظهرت البيانات ارتفاعاً في مؤشرات FPI.",
+   "form": "FPI",
+   "term": "حافز السعر الثابت",
+   "english": "(FPI) Fixed Price Incentive",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أكد الطيار أن الطائرة جاهزة للإقلاع.",
+   "form": "جاهز",
+   "term": "عنصر جاهز",
+   "english": "Off-The-Shelf",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التشويش في الإرسال بسبب الضوضاء.",
+   "form": "تشويش",
+   "term": "غير متحرك",
+   "english": "static",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ mode الخاص بالقتال السريع.",
+   "form": "mode",
+   "term": "نمط",
+   "english": "mode",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يجب حساب التكلفة الإجمالية باستخدام APR.",
+   "form": "APR",
+   "term": "معدل النسبة السنوي",
+   "english": "Annual Percentage Rate",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أجرينا BIA لتقييم مخاطر الانقطاع.",
+   "form": "BIA",
+   "term": "تحليل تأثير الأعمال",
+   "english": "Business Impact Analysis (BIA)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "CEO الشركة هو أحمد محمد.",
+   "form": "CEO",
+   "term": "الرئيس التنفيذي",
+   "english": "Executive Director",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المشروع يهدف إلى خفض الانبعاثات الكربونية.",
+   "form": "خفض الانبعاثات",
+   "term": "الحد‭ ‬من‭ ‬انبعاثات‭ ‬الكربون‭ ‬",
+   "english": "Decarbonization",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا السيارة تدعم تقنية V2V.",
+   "form": "V2V",
+   "term": "نظام التحكم في الشحن التبادلي",
+   "english": "Vehicle-to-Vehicle (V2V) Charging",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المروحة تعمل بسرعة عالية.",
+   "form": "مروحة",
+   "term": "داسر",
+   "english": "airscrew",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "ما عندنا إلا بنزين عادي.",
+   "form": "بنزين",
+   "term": "الوقود",
+   "english": "Fuel",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج لرفع الـ KPIs.",
+   "form": "KPIs",
+   "term": "مقاييس",
+   "english": "Metrics",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ igniter ضروري لبدء المحرك.",
+   "form": "igniter",
+   "term": "شمعة المشعل",
+   "english": "igniter plug",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الطائرة في مرحلة هبوط.",
+   "form": "هبوط",
+   "term": "انخفاض",
+   "english": "Decline",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "غرفة الاحتراق في المحرك تسمى حارق.",
+   "form": "غرفة الاحتراق",
+   "term": "حجرة الاحتراق",
+   "english": "combustion chamber",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشركة تركز على برامج CSR.",
+   "form": "CSR",
+   "term": "مسؤولية اجتماعية",
+   "english": "Social Responsibility",
+   "dictionary": "معجم مصطلحات القطاع غير الربحي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "CEO الجديد سيصل غداً.",
+   "form": "CEO",
+   "term": "الرئيس التنفيذي",
+   "english": "Executive Director",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذا الجزء من نوع يوك.",
+   "form": "يوك",
+   "term": "عمود القيادة",
+   "english": "control column",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد تم تحديث مدونة CoP لهذا العام.",
+   "form": "CoP",
+   "term": "معامل‭ ‬الأداء",
+   "english": "Coefficient of Performance (COP)",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الطيران عبر هذا trunk الجوي يربط المدن الكبرى.",
+   "form": "trunk",
+   "term": "مجرى جذعي",
+   "english": "trunk ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تمت الموافقة على مشروع PPP.",
+   "form": "PPP",
+   "term": "شراكات بين القطاعين العام والخاص",
+   "english": "Public–Private Partnerships  (Ppps)",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تستخدم الطائرات الحديثة توربين غازي قوي جداً.",
+   "form": "توربين غازي",
+   "term": "عنفة",
+   "english": "turbine",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قراءة السونار تشير إلى عمق كبير.",
+   "form": "سونار",
+   "term": "هيئة بحث التقصي ضد الغواصات",
+   "english": "asdic",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "النظام يعتمد على detonator لتفعيل الدفع.",
+   "form": "detonator",
+   "term": "أصبع متفجرة",
+   "english": "squib",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تسجيل حالة الإفلاس في المحكمة.",
+   "form": "إفلاس",
+   "term": "إعسار",
+   "english": "Insolvency",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الفريق يعمل على إصلاح hush kit التالف.",
+   "form": "hush kit",
+   "term": "خامد الضجيج",
+   "english": "noise suppressor",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المحرك يعمل بـ athodyd.",
+   "form": "athodyd",
+   "term": "أنبوبة التنور الطائرة",
+   "english": "flying stovepipe",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الرئيس التنفيذي للهيئة وافق على القرار.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام TMS يساعدنا في تتبع الشحنات بدقة.",
+   "form": "TMS",
+   "term": "نظام الإدارة الحرارية",
+   "english": "Thermal Management System",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المبرد داخل المحرك يعمل بكفاءة.",
+   "form": "مبرد",
+   "term": "مبرد دقيق",
+   "english": "mill file",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لعبت TFT مع أصدقائي الليلة.",
+   "form": "TFT",
+   "term": "الترانزستور ذو الأغشية الرقيقة",
+   "english": "Thin Film Transistor",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "نركز على تطوير R&D في قسمنا الجديد.",
+   "form": "R&D",
+   "term": "بحث وتطوير",
+   "english": "research and development (R & D)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "شركة X تستخدم تقنية IDP لأتمتة المستندات.",
+   "form": "IDP",
+   "term": "ذكاء المستندات",
+   "english": "Document Intelligence",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الأسلاك يجب أن تكون بمقاس AWG 12.",
+   "form": "AWG",
+   "term": "محدد قياس الأسلاك",
+   "english": "wire gauge ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تحذير من surge في الوقود.",
+   "form": "surge",
+   "term": "تموج",
+   "english": "surging",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم استخدام DCF لتقييم المشروع.",
+   "form": "DCF",
+   "term": "نقدية مخصومة",
+   "english": "Discounted Cash",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "جزء الوصلة (drogue) على سفينة أبولو.",
+   "form": "drogue",
+   "term": "مرساة بحرية عائمة",
+   "english": "sea anchor",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أجبنا على استبيان BIA قبل بدء الاستجابة للطوارئ.",
+   "form": "BIA",
+   "term": "تحليل الأثر على الأعمال",
+   "english": "Business Impact Analysis",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "اللاعب يستخدم ESP لرؤية الخرائط المخفية.",
+   "form": "ESP",
+   "term": "نظام التحكم في التوجيه (ESP)",
+   "english": "Electronic Stability Program (ESP)",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "شاشة النظام تعرض جميع البيانات الحية.",
+   "form": "شاشة",
+   "term": "وحدة بيان بصري",
+   "english": "VDU",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "شركة التقنية تعتمد على نموذج SaaS لتقديم أدواتها.",
+   "form": "SaaS",
+   "term": "البرمجيات السحابية",
+   "english": "Cloud Software",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "البوش هنا يوفر حماية جيدة.",
+   "form": "بوش",
+   "term": "جلبة",
+   "english": "bush, bushing",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هذا المستوى EZ.",
+   "form": "EZ",
+   "term": "منطقة استخراج",
+   "english": "eXtraction zone",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظامنا يستخدم Thresholds لتحديد الحالات الحرجة.",
+   "form": "Thresholds",
+   "term": "حدود",
+   "english": "Limits",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تهدف الدولة إلى زيادة حصة الطاقة النظيفة في مزيجها الكهربائي.",
+   "form": "الطاقة النظيفة",
+   "term": "طاقة متجددة",
+   "english": "Renewable Energy",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "التقرير التقني يشير إلى نجاح الـ flight test.",
+   "form": "flight test",
+   "term": "طيران اختباري",
+   "english": "test flight",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "فشل نظام التوزيع الكهربائي (EDS) في السيارة.",
+   "form": "EDS",
+   "term": "نظام الإدارة الكهربائية",
+   "english": "Electric Drive System",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "النموذج يحتاج إلى Calibration قبل النشر.",
+   "form": "Calibration",
+   "term": "معايرة",
+   "english": "Calibration",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الوقت DEP هو 10 صباحاً.",
+   "form": "DEP",
+   "term": "موضع العين المرجعي",
+   "english": "reference eye position",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لديك مود معين تفضل لعبه؟",
+   "form": "مود",
+   "term": "مقام أيولي",
+   "english": "aeolian mode",
+   "dictionary": "معجم المصطلحات الموسيقية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ safety factor المطلوب هو 1.5.",
+   "form": "safety factor",
+   "term": "عامل الأمان",
+   "english": "factor of safety",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "استخدمنا أداة BI لتحليل المبيعات.",
+   "form": "BI",
+   "term": "الرؤى السلوكية",
+   "english": "Behavioral Insights",
+   "dictionary": "معجم مصطلحات علم السلوك",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "برنامج SCORE يساعد الشركات على التحسين.",
+   "form": "SCORE",
+   "term": "تقييم",
+   "english": "Scoring",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "نظام ASR يحول الصوت إلى نص تلقائياً.",
+   "form": "ASR",
+   "term": "رادار مراقبة المطار",
+   "english": "airfield surveillance radar",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ pitch في الطائرة يعني الدوران حول المحور الطولي.",
+   "form": "pitch",
+   "term": "خطوة",
+   "english": "pitch ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قسم الموارد البشرية HR سيعمل على التوظيف.",
+   "form": "HR",
+   "term": "الموارد البشرية",
+   "english": "Human Resources",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "ارتفع الناتج المحلي الإجمالي (GDP) بنسبة 5%.",
+   "form": "GDP",
+   "term": " الناتج المحلي الإجمالي (بطريقة الإنفاق) ",
+   "english": "GDP (Expenditure Approach)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "الطائرة تستخدم نظام ILS للحط الآمن.",
+   "form": "ILS",
+   "term": "خدمات لوجستية متكاملة",
+   "english": "Integrated Logistics",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.99
+  },
+  {
+   "sentence": "المكبر في الغرفة يعمل بصوت عالٍ.",
+   "form": "مكبر",
+   "term": "مكبر صوت",
+   "english": "Loud speaker",
+   "dictionary": "معجم مصطلحات الخطوط الحديدية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم استبدال المكثف بكلاسترون (klystron) لتحسين الأداء.",
+   "form": "klystron",
+   "term": "تضمين السرعة",
+   "english": "velocity modulation",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تشتت الضوء في الغلاف الجوي بسبب الغبار.",
+   "form": "تشتت",
+   "term": "تشتيت",
+   "english": "Dispersion",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ baseline للتكلفة.",
+   "form": "baseline",
+   "term": "خط القاعدة",
+   "english": "base line",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "نظام الـ transponder يعمل بكفاءة عالية.",
+   "form": "transponder",
+   "term": "مستجيب",
+   "english": "responder",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "قدمت الشركة أسيست للمشاريع الجديدة.",
+   "form": "أسيست",
+   "term": " تمريرة حاسمة",
+   "english": "Assists",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظام FlexRay يضمن اتصالاً سريعاً.",
+   "form": "FlexRay",
+   "term": "بروتوكول فليكس راي",
+   "english": "FlexRay Protocol",
+   "dictionary": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "في الدراسات الفرنسية، نستخدم كلمة cellule للجناح.",
+   "form": "cellule",
+   "term": "خلية صغيرة",
+   "english": "cellule",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم تعيين الرئيس التنفيذي الجديد في الاجتماع.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الفيديو يحفظ كل ما يحدث على المحطة.",
+   "form": "فيديو",
+   "term": "ترئية الصور",
+   "english": "video ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الوكالة نشرت طلب RFP للموردين.",
+   "form": "RFP",
+   "term": "كراسة الشروط والمواصفات",
+   "english": "Tender Specifications",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المخروط (drogue) يعمل كمرساة للطائرة المائية.",
+   "form": "drogue",
+   "term": "مظلة كبح",
+   "english": "drag chute",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لاحظنا ارتفاع معدل دوران الموظفين في قسم المبيعات هذا العام.",
+   "form": "دوران الموظفين",
+   "term": "معدل دوران الموظفين",
+   "english": "Staff Turnover",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نحتاج لتحديث نظام Cyber Security.",
+   "form": "Cyber Security",
+   "term": "أمن سيبراني",
+   "english": "Cybersecurity",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "أحسنت في الباص.",
+   "form": "باص",
+   "term": "الحافلة",
+   "english": "Bus",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ KPIات مرتفعة جداً.",
+   "form": "KPI",
+   "term": "مراقبة مؤشراتالأداء الرئيسية",
+   "english": "KPI Monitoring",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "شركة الفضاء أطلقت طائرة بدون طيار للمراقبة.",
+   "form": "طائرة بدون طيار",
+   "term": "طائرة موجهة",
+   "english": "drone",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الـ shield قوي جداً.",
+   "form": "shield",
+   "term": "وقاء",
+   "english": "shielding ---(1)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "تستخدم البلوك تشين لتسجيل المعاملات بشكل آمن.",
+   "form": "بلوك تشين",
+   "term": "تقنية البلوك تشين",
+   "english": "Blockchain Technology",
+   "dictionary": "معجم المصطلحات الإنمائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يتم الاسترجاع للمال المفقود.",
+   "form": "استرجاع",
+   "term": "الاسترداد",
+   "english": "Recovery",
+   "dictionary": "معجم المصطلحات القانـونية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.7
+  },
+  {
+   "sentence": "يُستخدم الكيروسين كوقود أساسي في المحركات النفاثة.",
+   "form": "كيروسين",
+   "term": "زيت تسخين",
+   "english": "Heating Oil",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "الفرامل في الطائرة تعمل عبر brake.",
+   "form": "brake",
+   "term": "مكبس ثني",
+   "english": "bending brake",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "الشركات بدأت تتبنى استراتيجية impact investing.",
+   "form": "impact investing",
+   "term": "استثمار مؤثر",
+   "english": "Impact Investment",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نظامنا يعتمد على منصة لتسهيل العمليات.",
+   "form": "منصة",
+   "term": "المنصة الرقمية",
+   "english": "Digital Platform",
+   "dictionary": "معجم مصطلحات الحكـومــة الـرقميـــة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد نفذنا فحص QC قبل الشحن.",
+   "form": "QC",
+   "term": "طائرة سريعة التبديل",
+   "english": "quick-change aircraft",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "يحتاج هذا النوع من المحركات إلى باك قوي.",
+   "form": "باك",
+   "term": "مجموعة متكاملة",
+   "english": "pack ---(2)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "هذا النوع من المنتجات مفضل.",
+   "form": "نوع",
+   "term": "طراز",
+   "english": "type",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "اللاعب في مركز AM قوي جداً.",
+   "form": "AM",
+   "term": "تضمين سعوي",
+   "english": "amplitude modulation (AM)",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نجح متجرنا في مجال e-commerce.",
+   "form": "e-commerce",
+   "term": "البيع والشراء عبر الإنترنت",
+   "english": "Sale and Purchase Via Internet",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "هل يمكنك منحني WP؟",
+   "form": "WP",
+   "term": "حزمة شغل",
+   "english": "work package",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "حسبنا IRR للمشروع قبل الاستثمار فيه.",
+   "form": "IRR",
+   "term": "تقنيات تقييم الاستثمار",
+   "english": "Investment Appraisal Techniques",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "أضفنا Temperature أعلى لجعل الإجابات أكثر تنوعًا.",
+   "form": "Temperature",
+   "term": "درجة العشوائية",
+   "english": "Temperature",
+   "dictionary": "معجم البيانات والذكاء الاصطناعي",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تقارير الجودة تشير إلى انخفاض Cpk.",
+   "form": "Cpk",
+   "term": "قدرة عملية",
+   "english": "Process Capability",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "المعلومات التي جمعناها مفيدة جدًا.",
+   "form": "معلومات",
+   "term": "معلومة",
+   "english": "Information",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.8
+  },
+  {
+   "sentence": "نظام المتابعة يكتشف الأعطال مبكرًا.",
+   "form": "متابعة",
+   "term": "متابعة الكرة",
+   "english": "Rebound",
+   "dictionary": "معجم المصطلحات الرياضية",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "تم اعتماد نموذج PPP في عدة دول عربية.",
+   "form": "PPP",
+   "term": "الشراكات بين القطاعين العام والخاص",
+   "english": "Public-Private Partnerships (PPP)",
+   "dictionary": "معجم المصطلحات المالية والاقتصادية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تقرير الناتج المحلي الإجمالي يوضح النمو الاقتصادي.",
+   "form": "الناتج المحلي الإجمالي",
+   "term": "الناتج المحلي الإجمالي (بأسعار السوق) ",
+   "english": "GDP (At Market Prrices)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "تم تعيين الرئيس التنفيذي الجديد في اليوم.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "dictionary": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "توقعات الـ GDP لهذا العام تتجاوز التوقعات السابقة.",
+   "form": "GDP",
+   "term": " الناتج المحلي الإجمالي (مليار دولار) ",
+   "english": "Gross Domestic Product (billion USD)",
+   "dictionary": "معجم المصطلحات الإحصائية",
+   "expected": false,
+   "replace": true,
+   "confidence": 1.0
+  },
+  {
+   "sentence": "هذا العقد باطل ولا يُلزم أحدًا.",
+   "form": "باطل",
+   "term": "فارغ",
+   "english": "Void",
+   "dictionary": "قاموس العقود والمشتريات وسلاسل الإمداد",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "نطاق ترددي واسع يغطي جميع القنوات.",
+   "form": "نطاق ترددي",
+   "term": "نطاق التردد",
+   "english": "frequency band",
+   "dictionary": "معجم مصطلحات علوم هندسة الطيران والفضاء",
+   "expected": false,
+   "replace": true,
+   "confidence": 0.95
+  },
+  {
+   "sentence": "لقد تم اكتشاف كميات من NORM في الموقع.",
+   "form": "NORM",
+   "term": "نويدات‭ ‬مشعة‭ ‬طبيعية‭ ‬المنشأ",
+   "english": "Radionuclides of Natural Origin",
+   "dictionary": "معجم مصطلحات الطاقة",
+   "expected": false,
+   "replace": false,
+   "confidence": 0.95
+  }
+ ]
+}
