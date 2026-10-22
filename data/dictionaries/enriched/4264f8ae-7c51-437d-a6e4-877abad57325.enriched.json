@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-10-22T22:20:23.167700+00:00",
+  "generated_at": "2026-10-22T23:50:24.936265+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
-    "senses_with_variants": 1419,
-    "variants_accepted": 1253,
-    "variants_needing_review": 1312
+    "senses_with_variants": 1423,
+    "variants_accepted": 1273,
+    "variants_needing_review": 1318
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1062,7 +1062,18 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/f2708cbb-81d1-447e-bb60-34322d71a251/get-public-entry",
       "enrichment": {
-        "variants": [],
+        "variants": [
+          {
+            "form": "إجراءات فنية",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -1344,7 +1355,18 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/50b0895f-96f0-4992-8da5-85e44bc6d2c9/get-public-entry",
       "enrichment": {
-        "variants": [],
+        "variants": [
+          {
+            "form": "احتمال ضئيل",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -1378,7 +1400,18 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/4003e774-c6ce-40ca-a94c-c3267bf92d80/get-public-entry",
       "enrichment": {
-        "variants": [],
+        "variants": [
+          {
+            "form": "احتمال معتدل",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -1444,6 +1477,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "فيدرالي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "صفة بمعنى اتحادي",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1479,7 +1524,18 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/6c5f0784-a7f0-4a2d-bffb-a6f323a6d081/get-public-entry",
       "enrichment": {
-        "variants": [],
+        "variants": [
+          {
+            "form": "احتياطات حكومية",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          }
+        ],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -4289,6 +4345,20 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "استطلاع",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "الاستكشاف أو الاستطلاع العسكري",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4806,6 +4876,16 @@
             "form": "استحواذ بالرافعة المالية",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "شراء بالرافعة المالية",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -9108,6 +9188,16 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "إل سي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9890,6 +9980,16 @@
             "example": "نمو اقتصاد العمل الحر في المدن الكبرى.",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "اقتصاد العمل المستقل",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9995,6 +10095,16 @@
           },
           {
             "form": "اقتصاد غير رسمي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اقتصاد موازي",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
@@ -10153,6 +10263,16 @@
           {
             "form": "Supply-Side Economics",
             "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اقتصاديات جانب العرض",
+            "type": "spelling_variant",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -10473,6 +10593,28 @@
               "proposed_for_other_terms",
               "low_confidence"
             ]
+          },
+          {
+            "form": "اقتصاد دائري للكربون",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "اقتصاد الكربون الدائري",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10634,6 +10776,16 @@
           },
           {
             "form": "دول متقدمة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اقتصادات متطورة",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
@@ -11644,6 +11796,29 @@
             "review_reasons": [
               "ambiguous"
             ]
+          },
+          {
+            "form": "ميراث",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إرث",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11865,6 +12040,16 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الضريبة المؤجلة ستُدفع في العام القادم.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "التزام ضريبي مؤجل",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
             "status": "accepted",
             "review_reasons": []
           }
@@ -12201,6 +12386,26 @@
             "form": "كونتاكتلس",
             "type": "transliteration",
             "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الدفع بدون تلامس",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الدفع دون تلامس",
+            "type": "spelling_variant",
+            "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -12947,6 +13152,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "رهن عقاري بفائدة متغيرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13208,6 +13423,16 @@
           },
           {
             "form": "سند بفائدة متغيرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سند بفائدة عائمة",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
@@ -14365,6 +14590,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "القيمة المتبقية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14539,6 +14774,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "الشركة الأم النهائية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15022,6 +15267,18 @@
             "example": "المزايدة العكسية هي الطريقة المفضلة للشراء الجماعي.",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "مزاد عكسي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15799,6 +16056,19 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "مصاريف",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16235,6 +16505,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "أمر دفع مرتجع",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
