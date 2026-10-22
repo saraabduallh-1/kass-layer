@@ -2,14 +2,14 @@
   "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
   "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
   "source_export": "data/dictionaries/exports/97ac5360-d65f-425f-974f-9118f09d13a6.json",
-  "generated_at": "2026-10-21T23:50:33.824541+00:00",
+  "generated_at": "2026-10-22T01:20:11.604377+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 130,
     "senses_reviewed": 130,
     "senses_with_variants": 129,
-    "variants_accepted": 106,
-    "variants_needing_review": 184
+    "variants_accepted": 105,
+    "variants_needing_review": 185
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -6062,8 +6062,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يجب رفع شهادة رقمية معك عند التسجيل.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
