@@ -2,14 +2,14 @@
   "dictionary_id": "c59be8de-20c3-482b-ab57-ce923dfb4cee",
   "dictionary_name": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
   "source_export": "data/dictionaries/exports/c59be8de-20c3-482b-ab57-ce923dfb4cee.json",
-  "generated_at": "2026-10-22T01:20:15.077910+00:00",
+  "generated_at": "2026-10-22T02:50:32.003783+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 825,
     "senses_reviewed": 825,
     "senses_with_variants": 810,
-    "variants_accepted": 570,
-    "variants_needing_review": 912
+    "variants_accepted": 569,
+    "variants_needing_review": 913
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -35580,8 +35580,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الظروف القاهرة",
