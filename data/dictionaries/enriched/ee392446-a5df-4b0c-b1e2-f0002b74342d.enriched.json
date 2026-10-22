@@ -2,14 +2,14 @@
   "dictionary_id": "ee392446-a5df-4b0c-b1e2-f0002b74342d",
   "dictionary_name": "معجم المصطلحات الإحصائية",
   "source_export": "data/dictionaries/exports/ee392446-a5df-4b0c-b1e2-f0002b74342d.json",
-  "generated_at": "2026-10-22T17:50:42.570444+00:00",
+  "generated_at": "2026-10-22T19:21:01.054443+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1390,
     "senses_reviewed": 1390,
     "senses_with_variants": 1023,
-    "variants_accepted": 1075,
-    "variants_needing_review": 694
+    "variants_accepted": 1074,
+    "variants_needing_review": 695
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -2464,8 +2464,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -43428,7 +43430,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
