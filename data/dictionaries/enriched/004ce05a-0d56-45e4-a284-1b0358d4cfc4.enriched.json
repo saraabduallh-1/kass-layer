@@ -2,14 +2,14 @@
   "dictionary_id": "004ce05a-0d56-45e4-a284-1b0358d4cfc4",
   "dictionary_name": "معجم مصطلحات علم السلوك",
   "source_export": "data/dictionaries/exports/004ce05a-0d56-45e4-a284-1b0358d4cfc4.json",
-  "generated_at": "2026-10-22T10:20:38.004828+00:00",
+  "generated_at": "2026-10-22T11:50:26.972792+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 205,
     "senses_reviewed": 205,
     "senses_with_variants": 205,
-    "variants_accepted": 237,
-    "variants_needing_review": 104
+    "variants_accepted": 244,
+    "variants_needing_review": 105
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -705,6 +705,26 @@
           },
           {
             "form": "الإشراط الفعال",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الاشتراط الإجرائي",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "التكييف الإجرائي",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
@@ -1631,6 +1651,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "التجربة المعشاة ذات الشواهد",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "التجربة العشوائية المنضبطة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2398,6 +2438,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "جيميفيكيشن",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4099,6 +4149,19 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "القصور الذاتي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4669,6 +4732,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "نظرية الآفاق",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4954,6 +5027,16 @@
             "form": "False Consensus",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تأثير الإجماع الزائف",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",

@@ -2,14 +2,14 @@
   "dictionary_id": "b60a0505-57cb-436a-8a07-75b062de8013",
   "dictionary_name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
   "source_export": "data/dictionaries/exports/b60a0505-57cb-436a-8a07-75b062de8013.json",
-  "generated_at": "2026-10-22T10:20:43.651844+00:00",
+  "generated_at": "2026-10-22T11:50:32.762348+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 16215,
     "senses_reviewed": 16215,
     "senses_with_variants": 16214,
-    "variants_accepted": 18698,
-    "variants_needing_review": 16372
+    "variants_accepted": 18697,
+    "variants_needing_review": 16373
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -364632,7 +364632,8 @@
             "example": "يوجد بوابة هوائية في مؤخرة الطائرة لتفريغ الضغط.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -440619,8 +440620,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مهلة التوريد",

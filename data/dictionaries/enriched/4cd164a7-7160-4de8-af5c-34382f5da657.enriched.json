@@ -2,14 +2,14 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-10-22T10:20:40.652008+00:00",
+  "generated_at": "2026-10-22T11:50:29.663941+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
     "senses_reviewed": 1443,
     "senses_with_variants": 1441,
-    "variants_accepted": 2237,
-    "variants_needing_review": 702
+    "variants_accepted": 2236,
+    "variants_needing_review": 703
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -97775,8 +97775,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "سنقوم بتدريب المودل على مجموعة البيانات الجديدة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "موديل",

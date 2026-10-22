@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-10-22T10:20:40.272338+00:00",
+  "generated_at": "2026-10-22T11:50:29.287294+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1419,
-    "variants_accepted": 1255,
-    "variants_needing_review": 1310
+    "variants_accepted": 1254,
+    "variants_needing_review": 1311
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -30305,7 +30305,8 @@
             "example": "تعرفة الدخول إلى المتحف مرتفعة.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -88167,8 +88168,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أوبكس",
