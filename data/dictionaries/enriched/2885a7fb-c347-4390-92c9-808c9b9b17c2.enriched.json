@@ -2,14 +2,14 @@
   "dictionary_id": "2885a7fb-c347-4390-92c9-808c9b9b17c2",
   "dictionary_name": "معجم مصطلحات القطاع غير الربحي",
   "source_export": "data/dictionaries/exports/2885a7fb-c347-4390-92c9-808c9b9b17c2.json",
-  "generated_at": "2026-10-22T20:49:55.983403+00:00",
+  "generated_at": "2026-10-22T22:20:22.749934+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 521,
     "senses_reviewed": 521,
     "senses_with_variants": 521,
-    "variants_accepted": 655,
-    "variants_needing_review": 317
+    "variants_accepted": 654,
+    "variants_needing_review": 318
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -20699,8 +20699,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
