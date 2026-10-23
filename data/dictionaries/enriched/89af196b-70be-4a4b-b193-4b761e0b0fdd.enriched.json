@@ -2,7 +2,7 @@
   "dictionary_id": "89af196b-70be-4a4b-b193-4b761e0b0fdd",
   "dictionary_name": "قاموس العقود والمشتريات وسلاسل الإمداد",
   "source_export": "data/dictionaries/exports/89af196b-70be-4a4b-b193-4b761e0b0fdd.json",
-  "generated_at": "2026-10-23T04:21:18.292298+00:00",
+  "generated_at": "2026-10-23T05:50:04.105399+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 2284,
@@ -536,7 +536,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
