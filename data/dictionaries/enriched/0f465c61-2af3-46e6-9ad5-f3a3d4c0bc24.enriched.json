@@ -2,14 +2,14 @@
   "dictionary_id": "0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24",
   "dictionary_name": "معجم المصطلحات القانـونية",
   "source_export": "data/dictionaries/exports/0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24.json",
-  "generated_at": "2026-10-23T10:20:55.605972+00:00",
+  "generated_at": "2026-10-23T11:50:37.516272+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 6107,
     "senses_reviewed": 6107,
     "senses_with_variants": 6104,
-    "variants_accepted": 7757,
-    "variants_needing_review": 6431
+    "variants_accepted": 7754,
+    "variants_needing_review": 6434
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -74379,8 +74379,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "استثمرنا في ماركتنج قوي.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ماركتينج",
@@ -74448,8 +74450,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "في مشاريع ماركتنج.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -74507,8 +74511,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "التسويق المجاني.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
