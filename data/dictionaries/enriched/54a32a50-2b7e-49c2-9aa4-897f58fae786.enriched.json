@@ -2,14 +2,14 @@
   "dictionary_id": "54a32a50-2b7e-49c2-9aa4-897f58fae786",
   "dictionary_name": "معجم مصطلحات الرياضات الإلكترونية",
   "source_export": "data/dictionaries/exports/54a32a50-2b7e-49c2-9aa4-897f58fae786.json",
-  "generated_at": "2026-10-23T07:20:37.324958+00:00",
+  "generated_at": "2026-10-23T08:50:43.260694+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 507,
     "senses_reviewed": 507,
     "senses_with_variants": 507,
-    "variants_accepted": 931,
-    "variants_needing_review": 467
+    "variants_accepted": 933,
+    "variants_needing_review": 468
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -32407,6 +32407,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "وارد",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "تعني أيضًا: ممكن أو قادم",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32457,6 +32469,16 @@
             "form": "rez",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ريز",
+            "type": "transliteration",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -32569,6 +32591,16 @@
             "form": "كلتش",
             "type": "transliteration",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كلاتش",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
