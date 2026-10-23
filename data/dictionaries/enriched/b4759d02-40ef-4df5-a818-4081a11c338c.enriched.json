@@ -2,14 +2,14 @@
   "dictionary_id": "b4759d02-40ef-4df5-a818-4081a11c338c",
   "dictionary_name": "معجم المصطلحات الموسيقية",
   "source_export": "data/dictionaries/exports/b4759d02-40ef-4df5-a818-4081a11c338c.json",
-  "generated_at": "2026-10-23T16:21:32.056188+00:00",
+  "generated_at": "2026-10-23T17:50:36.200225+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 700,
     "senses_reviewed": 700,
     "senses_with_variants": 614,
-    "variants_accepted": 855,
-    "variants_needing_review": 459
+    "variants_accepted": 854,
+    "variants_needing_review": 460
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -35545,8 +35545,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
