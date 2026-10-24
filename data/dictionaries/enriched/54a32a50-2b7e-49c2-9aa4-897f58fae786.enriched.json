@@ -2,14 +2,14 @@
   "dictionary_id": "54a32a50-2b7e-49c2-9aa4-897f58fae786",
   "dictionary_name": "معجم مصطلحات الرياضات الإلكترونية",
   "source_export": "data/dictionaries/exports/54a32a50-2b7e-49c2-9aa4-897f58fae786.json",
-  "generated_at": "2026-10-24T02:50:39.144581+00:00",
+  "generated_at": "2026-10-24T04:20:30.505354+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 507,
     "senses_reviewed": 507,
     "senses_with_variants": 507,
-    "variants_accepted": 932,
-    "variants_needing_review": 469
+    "variants_accepted": 931,
+    "variants_needing_review": 470
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -25649,8 +25649,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "السيارة ذات الكامبر جيدة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مكمكم",
