@@ -2,14 +2,14 @@
   "dictionary_id": "ae041c6d-79e6-42c3-b54b-ffbf28c88b9a",
   "dictionary_name": "معجم المصطلحات الرياضية",
   "source_export": "data/dictionaries/exports/ae041c6d-79e6-42c3-b54b-ffbf28c88b9a.json",
-  "generated_at": "2026-10-24T05:50:56.061982+00:00",
+  "generated_at": "2026-10-24T07:20:42.766420+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 981,
     "senses_reviewed": 981,
     "senses_with_variants": 981,
-    "variants_accepted": 1635,
-    "variants_needing_review": 711
+    "variants_accepted": 1634,
+    "variants_needing_review": 712
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4894,8 +4894,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السيطرة على الكرة",
