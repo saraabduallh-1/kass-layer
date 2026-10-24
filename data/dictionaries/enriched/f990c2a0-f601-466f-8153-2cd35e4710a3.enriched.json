@@ -2,7 +2,7 @@
   "dictionary_id": "f990c2a0-f601-466f-8153-2cd35e4710a3",
   "dictionary_name": "معجم مصطلحات الطاقة",
   "source_export": "data/dictionaries/exports/f990c2a0-f601-466f-8153-2cd35e4710a3.json",
-  "generated_at": "2026-10-24T11:50:56.718708+00:00",
+  "generated_at": "2026-10-24T13:20:51.647458+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1575,
@@ -92659,7 +92659,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
