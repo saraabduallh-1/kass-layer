@@ -2,14 +2,14 @@
   "dictionary_id": "ae041c6d-79e6-42c3-b54b-ffbf28c88b9a",
   "dictionary_name": "معجم المصطلحات الرياضية",
   "source_export": "data/dictionaries/exports/ae041c6d-79e6-42c3-b54b-ffbf28c88b9a.json",
-  "generated_at": "2026-10-24T08:50:14.739957+00:00",
+  "generated_at": "2026-10-24T10:20:51.391476+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 981,
     "senses_reviewed": 981,
     "senses_with_variants": 981,
-    "variants_accepted": 1634,
-    "variants_needing_review": 712
+    "variants_accepted": 1633,
+    "variants_needing_review": 713
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -47232,8 +47232,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

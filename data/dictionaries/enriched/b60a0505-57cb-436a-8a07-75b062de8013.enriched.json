@@ -2,14 +2,14 @@
   "dictionary_id": "b60a0505-57cb-436a-8a07-75b062de8013",
   "dictionary_name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
   "source_export": "data/dictionaries/exports/b60a0505-57cb-436a-8a07-75b062de8013.json",
-  "generated_at": "2026-10-24T08:50:16.078333+00:00",
+  "generated_at": "2026-10-24T10:20:52.715662+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 16215,
     "senses_reviewed": 16215,
     "senses_with_variants": 16214,
-    "variants_accepted": 18981,
-    "variants_needing_review": 16613
+    "variants_accepted": 19011,
+    "variants_needing_review": 16659
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -109484,8 +109484,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -198262,6 +198264,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -231814,8 +231817,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -238839,8 +238844,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تيار مستمر",
@@ -240990,6 +240997,45 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "طائرة بدون طيار",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "طائرة مسيرة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "مسيرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "مظاهرة أو موكب",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -241390,6 +241436,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دي سي",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -241499,6 +241557,16 @@
             "form": "الاستقرار الديناميكي",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ثبات ديناميكي",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -241905,6 +241973,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "ديوتي سايكل",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -241952,6 +242030,26 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دورة العمل",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ديوتي سايكل",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -242113,6 +242211,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "فك التضمين",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -242349,6 +242457,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تشابه ديناميكي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -242430,6 +242548,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "إجراءات مضادة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -242891,6 +243021,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "ديكا",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -244419,6 +244561,16 @@
             "form": "قاعدة إطلاق",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كوزمودروم",
+            "type": "transliteration",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -246226,6 +246378,18 @@
             "form": "decoding",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "فك الشفرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -251284,6 +251448,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "قمع الدفاعات الجوية",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -251599,6 +251773,40 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "معطل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "خربان",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خارج الخدمة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -251725,6 +251933,38 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "وصلة بيانات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "رابط بيانات",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "داتا لينك",
+            "type": "transliteration",
+            "confidence": "low",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "low_confidence"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -251853,6 +252093,28 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "طيار مساعد",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "كو بايلوت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -252045,6 +252307,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "ميل مغناطيسي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -252339,6 +252613,18 @@
             "review_reasons": [
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "نقر",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "النقر بمعنى الضرب الخفيف أو النقر بالفأرة",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
             ]
           }
         ],
@@ -252691,6 +252977,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ضغط ديناميكي",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -252899,6 +253195,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "درق",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
               "proposed_for_other_terms"
             ]
           }
@@ -253916,8 +254224,24 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سحب",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "سحب بمعنى الجر أو السحاب",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -254487,6 +254811,16 @@
           },
           {
             "form": "الهبوط على الماء",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "هبوط اضطراري على الماء",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -256106,6 +256440,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "صاروخ جوال",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -256436,6 +256782,19 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "كروز",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "صاروخ كروز",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -256695,6 +257054,19 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "اضمحلال",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -256807,8 +257179,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -257668,6 +258042,30 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "سبويلر",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "مفسد الرفع",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -257803,6 +258201,18 @@
             "form": "ground spoiler",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "سبويلر",
+            "type": "transliteration",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -257971,6 +258381,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "حمولة مفيدة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -258021,6 +258441,26 @@
             "form": "twin ignition",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اشتعال مزدوج",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إشعال مزدوج",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -258470,6 +258910,19 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "وقت التوقف",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -258528,6 +258981,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ديسبلاي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
               "proposed_for_other_terms"
             ]
           }
@@ -260900,6 +261365,30 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "درجة سياحية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "إيكونومي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -260957,6 +261446,20 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "سحب",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "يعني أيضاً الجر أو السحب اليومي",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -261118,6 +261621,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "منطقة النضوب",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -261241,6 +261754,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "مغادرة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -261363,6 +261888,26 @@
             "form": "الاتزان الديناميكي",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "توازن ديناميكي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اتزان ديناميكي",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -261824,6 +262369,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "دينامومتر",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -262148,6 +262703,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "صمام تفريغ",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -262414,6 +262979,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "دامبر",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -262677,6 +263254,19 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "زبون",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -262893,6 +263483,19 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "كلفة",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -262998,6 +263601,16 @@
             "form": "guard frequency",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تردد الطوارئ",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -264400,6 +265013,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "معطل",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -264877,6 +265502,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "معالجة بيانات موزعة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -264935,6 +265572,30 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "معالجة بيانات موزعة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "حوسبة موزعة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -264996,6 +265657,16 @@
             "form": "محرك متوقف",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "محرك معطل",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -265379,6 +266050,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ستكر",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -265679,6 +266360,19 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "ليونة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "تعني أيضاً الطراوة والمرونة عامة",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -265793,6 +266487,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "توربو فان",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -266011,6 +266715,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ديناميكية الموائع",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -266120,6 +266834,18 @@
             "form": "flameout",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "انطفاء",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -266253,6 +266979,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تشويش كهربائي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -266293,6 +267029,16 @@
             "form": "equivalent drag area",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مساحة السحب المكافئة",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -266693,6 +267439,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "أكسيد الإيثيلين",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "أوكسيد الإيثيلين",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -266882,6 +267648,28 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "طبقة مميعة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "سرير مميع",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -266921,6 +267709,16 @@
           {
             "form": "ekman layer",
             "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طبقة إيكمان",
+            "type": "spelling_variant",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -267246,6 +268044,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "طريقة العناصر المحدودة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طريقة العناصر المنتهية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -267501,6 +268319,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "إليكترون",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -268435,6 +269263,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "زاوية الفلاب",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -268598,6 +269436,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "انطفاء",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -268656,6 +269506,18 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ممرضة طيران",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -271012,8 +271874,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -703932,8 +704796,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
