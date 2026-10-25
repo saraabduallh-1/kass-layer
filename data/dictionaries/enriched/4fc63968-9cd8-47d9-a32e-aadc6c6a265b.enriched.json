@@ -2,14 +2,14 @@
   "dictionary_id": "4fc63968-9cd8-47d9-a32e-aadc6c6a265b",
   "dictionary_name": "معجم مصطلحات الموارد البشرية والتنمية الاجتماعية",
   "source_export": "data/dictionaries/exports/4fc63968-9cd8-47d9-a32e-aadc6c6a265b.json",
-  "generated_at": "2026-10-25T22:20:27.409459+00:00",
+  "generated_at": "2026-10-25T23:50:19.109507+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 446,
     "senses_reviewed": 446,
     "senses_with_variants": 446,
-    "variants_accepted": 382,
-    "variants_needing_review": 474
+    "variants_accepted": 381,
+    "variants_needing_review": 475
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -15748,8 +15748,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
