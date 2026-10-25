@@ -2,7 +2,7 @@
   "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
   "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
   "source_export": "data/dictionaries/exports/97ac5360-d65f-425f-974f-9118f09d13a6.json",
-  "generated_at": "2026-10-25T04:21:53.809379+00:00",
+  "generated_at": "2026-10-25T05:51:11.675971+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 130,
@@ -4515,7 +4515,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
