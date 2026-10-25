@@ -2,14 +2,14 @@
   "dictionary_id": "c59be8de-20c3-482b-ab57-ce923dfb4cee",
   "dictionary_name": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
   "source_export": "data/dictionaries/exports/c59be8de-20c3-482b-ab57-ce923dfb4cee.json",
-  "generated_at": "2026-10-25T20:50:50.886188+00:00",
+  "generated_at": "2026-10-25T22:20:32.186625+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 825,
     "senses_reviewed": 825,
-    "senses_with_variants": 810,
-    "variants_accepted": 566,
-    "variants_needing_review": 916
+    "senses_with_variants": 811,
+    "variants_accepted": 588,
+    "variants_needing_review": 932
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -544,6 +544,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "الاندماج الوظيفي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -590,6 +600,18 @@
             "form": "الأطراف المعنية",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الأطراف ذات العلاقة",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -826,6 +848,18 @@
             "form": "Balanced Scorecard",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "بطاقة الأداء المتوازنة",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -1366,6 +1400,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "الاقتصاد الموازي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1659,6 +1705,18 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "سوفت وير",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1891,6 +1949,16 @@
               "proposed_for_other_terms",
               "ambiguous"
             ]
+          },
+          {
+            "form": "كوتشينج",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2745,6 +2813,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "إجراءات التشغيل القياسية",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2808,6 +2886,16 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "إرغونوميكس",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -3435,7 +3523,21 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/c59be8de-20c3-482b-ab57-ce923dfb4cee",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/46a9f696-f84e-47ee-9be7-ec5f95896bc0/get-public-entry",
       "enrichment": {
-        "variants": [],
+        "variants": [
+          {
+            "form": "خصخصة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          }
+        ],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -4787,6 +4889,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "اجتماع افتراضي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4985,6 +5097,18 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "إدارة الصراع",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -6066,6 +6190,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "إتش آر",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
               "proposed_for_other_terms"
             ]
           }
@@ -7221,6 +7357,18 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "انفوغرافيك",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7428,6 +7576,28 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تحليل الاحتياجات التدريبية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تحديد الاحتياجات التدريبية",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7892,6 +8062,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "أذونات الخزانة",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8157,6 +8337,28 @@
           {
             "form": "Programs",
             "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "برامج الكمبيوتر",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سوفت وير",
+            "type": "transliteration",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -10647,6 +10849,18 @@
               "proposed_for_other_terms",
               "ambiguous"
             ]
+          },
+          {
+            "form": "تطوير الأداء",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10792,6 +11006,26 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "تدريب أونلاين",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تدريب عبر الإنترنت",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10843,6 +11077,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تدوير الموظفين",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10950,6 +11194,16 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "إجازة غير مدفوعة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10983,6 +11237,26 @@
           {
             "form": "Paid Leave",
             "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إجازة مدفوعة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إجازة مدفوعة الأجر",
+            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -11073,6 +11347,16 @@
           {
             "form": "Participative Management",
             "type": "foreign",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "إدارة تشاركية",
+            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -12087,6 +12371,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تصنيف قسري",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12133,6 +12427,18 @@
             "form": "فيدباك",
             "type": "transliteration",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "فيد باك",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -12204,6 +12510,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "آي تي",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
               "proposed_for_other_terms"
             ]
           }
@@ -13219,6 +13537,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تخفيف الأعباء",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13542,6 +13870,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "الصندوق العقاري",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13582,6 +13920,18 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "ضريبة السلع الانتقائية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -13697,6 +14047,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ربط الأنظمة",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14009,6 +14369,16 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
+          },
+          {
+            "form": "النمو السكاني",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14188,6 +14558,31 @@
           {
             "form": "Shadow Economy",
             "type": "foreign",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "اقتصاد الظل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الاقتصاد الموازي",
+            "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -14398,6 +14793,26 @@
             "form": "Operating Costs",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تكاليف التشغيل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "مصاريف التشغيل",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
