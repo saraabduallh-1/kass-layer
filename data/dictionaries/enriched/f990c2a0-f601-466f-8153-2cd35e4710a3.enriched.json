@@ -2,14 +2,14 @@
   "dictionary_id": "f990c2a0-f601-466f-8153-2cd35e4710a3",
   "dictionary_name": "معجم مصطلحات الطاقة",
   "source_export": "data/dictionaries/exports/f990c2a0-f601-466f-8153-2cd35e4710a3.json",
-  "generated_at": "2026-10-26T04:21:05.400980+00:00",
+  "generated_at": "2026-10-26T05:50:43.943324+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1575,
     "senses_reviewed": 1575,
     "senses_with_variants": 1575,
-    "variants_accepted": 2464,
-    "variants_needing_review": 1133
+    "variants_accepted": 2517,
+    "variants_needing_review": 1146
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -109,6 +109,16 @@
             "form": "أحماض النفثينيك",
             "type": "transliteration",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "أحماض نفثينية",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -659,6 +669,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "حفر بالهواء",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1186,6 +1206,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "استخلاص معزز للنفط",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "استخلاص محسن للنفط",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1457,6 +1497,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "استهلاك الطاقة الأولية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1909,6 +1959,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "أسفلت نفطي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4632,6 +4692,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ألمونيوم",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6020,6 +6092,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "أنشطة الاستكشاف",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7039,6 +7121,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "نفط خام ثقيل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام ثقيل",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7104,6 +7206,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "نفط خام خفيف",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام خفيف",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7162,6 +7284,16 @@
           },
           {
             "form": "خام غرب تكساس",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام غرب تكساس الوسيط",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -7234,6 +7366,16 @@
             "example": "تطورت أسعار النفط الصخري في أمريكا بشكل ملحوظ.",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "نفط صخري",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7296,6 +7438,16 @@
             "form": "العربي الثقيل",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام عربي ثقيل",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -7370,6 +7522,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "خام عربي خفيف",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7430,6 +7592,16 @@
             "form": "العربي الخفيف جدا",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام عربي خفيف جدا",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -7502,6 +7674,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "خام عربي متوسط",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7564,6 +7746,16 @@
             "form": "العربي الممتاز",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خام عربي ممتاز",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -8153,6 +8345,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "بقعة نفط",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8521,6 +8723,26 @@
             "form": "wildcat well",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بئر استكشافي",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بئر استكشاف",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -9120,6 +9342,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "بئر عمودية",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9177,6 +9409,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "بئر ميتة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9444,6 +9686,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "بئر منحرفة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9494,6 +9746,26 @@
             "form": "1,3-butadiene",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بوتادايين",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بوتادين",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -9709,6 +9981,16 @@
             "form": "بيوتين",
             "type": "transliteration",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بوتيلين",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -10141,6 +10423,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "جمع العينات",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10380,6 +10672,30 @@
             "form": "PCA",
             "type": "abbreviation",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تحليل المكونات الرئيسية",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "تحليل المكونات الأساسية",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -10975,6 +11291,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "تثبيت النفط الخام",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11239,6 +11565,16 @@
           },
           {
             "form": "تسرب نفطي",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "انسكاب نفطي",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -11949,6 +12285,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تصدير النفط الخام",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12136,6 +12482,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تخلص جيولوجي",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -13062,6 +13418,16 @@
             "form": "pressure distillation",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "تقطير تحت الضغط",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -14671,6 +15037,16 @@
             "example": "المواصفات الفنية للـ Steam Turbine.",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "توربينة بخارية",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15110,6 +15486,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "إل إي دي",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15330,6 +15718,16 @@
           },
           {
             "form": "بنزين خال من الرصاص",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بنزين بدون رصاص",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -15726,6 +16124,16 @@
             "form": "بنزين 95",
             "type": "colloquial",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "بنزين سوبر",
+            "type": "colloquial",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -16362,6 +16770,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "فاصل الغاز",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16524,6 +16942,18 @@
             "form": "فولتميتر",
             "type": "transliteration",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "فولتمتر",
+            "type": "spelling_variant",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -17159,6 +17589,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "حد مصرح به",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17574,6 +18014,16 @@
           },
           {
             "form": "حظر النفط",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "حظر نفطي",
             "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
@@ -18618,6 +19068,26 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "ذروة الحمل",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "ذروة الاستهلاك",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19099,6 +19569,20 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "أسفلت",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "يطلق أيضا على البيتومين نفسه",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19263,6 +19747,16 @@
             "form": "تنك البنزين",
             "type": "colloquial",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "خزان بنزين",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -20492,6 +20986,19 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "أوكتان",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -22024,6 +22531,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "نفط خام",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22647,6 +23166,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "زيت موتور",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23021,6 +23550,28 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "فيول",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": true,
+            "ambiguity_note": "يطلق أحيانا على الوقود عموما",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
+          },
+          {
+            "form": "فيول أويل",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24848,6 +25399,16 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "شبكة محطات البنزين",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -25783,6 +26344,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "فالف",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26110,6 +26681,28 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "حقن المياه",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "ضخ المياه",
+            "type": "spelling_variant",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26180,6 +26773,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "ضغط الخزان",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -26340,6 +26945,18 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "ضغط الخزان",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26699,6 +27316,16 @@
             "form": "الرفع الاصطناعي",
             "type": "informal_synonym",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "رفع صناعي",
+            "type": "informal_synonym",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -27064,6 +27691,16 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نوع الطين polymer mud يستخدم في عمليات الحفر.",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "طين بوليمري",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
             "status": "accepted",
             "review_reasons": []
           }
@@ -28109,6 +28746,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تكرير البترول",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28286,6 +28933,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "تقطير النفط الخام",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28721,6 +29378,18 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "بوتاجاز",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": true,
+            "ambiguity_note": "موقد الغاز",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "ambiguous"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29012,6 +29681,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "غاز غني",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29720,6 +30399,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "غاز خام",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
