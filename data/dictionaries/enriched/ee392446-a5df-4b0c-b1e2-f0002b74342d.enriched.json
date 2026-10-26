@@ -2,14 +2,14 @@
   "dictionary_id": "ee392446-a5df-4b0c-b1e2-f0002b74342d",
   "dictionary_name": "معجم المصطلحات الإحصائية",
   "source_export": "data/dictionaries/exports/ee392446-a5df-4b0c-b1e2-f0002b74342d.json",
-  "generated_at": "2026-10-26T05:50:43.619765+00:00",
+  "generated_at": "2026-10-26T07:20:35.063031+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1390,
     "senses_reviewed": 1390,
     "senses_with_variants": 1027,
-    "variants_accepted": 1220,
-    "variants_needing_review": 773
+    "variants_accepted": 1219,
+    "variants_needing_review": 774
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -45951,8 +45951,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كوك بترولي",
