@@ -2,14 +2,14 @@
   "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
   "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
   "source_export": "data/dictionaries/exports/97ac5360-d65f-425f-974f-9118f09d13a6.json",
-  "generated_at": "2026-10-26T02:50:34.515225+00:00",
+  "generated_at": "2026-10-26T04:21:01.217440+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 130,
     "senses_reviewed": 130,
     "senses_with_variants": 129,
-    "variants_accepted": 119,
-    "variants_needing_review": 205
+    "variants_accepted": 118,
+    "variants_needing_review": 206
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4422,8 +4422,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
