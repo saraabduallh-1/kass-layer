@@ -1,0 +1,701 @@
+<title>خصص</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alexandria:wght@700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: centred hero (wordmark → tagline → composer card) over a faint diamond field, then examples, features, results */
+:root {
+  --bg: #f6f7f2; --bg-2: #eef2ea; --surface: #ffffff; --ink: #14231d; --muted: #5b6b63; --line: #dde5dd;
+  --green: #0b4b33; --green-2: #12633f; --mint: #e5efe7; --mint-2: #d5e6da; --on-green: #ffffff; --deco: #0b4b33;
+  --replace: #1b7448; --replace-bg: #e1f1e7; --review: #94620a; --review-bg: #f8edd6; --std: #3d5d74; --std-bg: #e4ecf2;
+  --display: "Alexandria", "IBM Plex Sans Arabic", Tahoma, sans-serif;
+  --body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1613; --bg-2: #131c18; --surface: #18221e; --ink: #e5ece8; --muted: #9db0a6; --line: #26332d;
+  --green: #4fb487; --green-2: #63c697; --mint: #1b2a23; --mint-2: #22362c; --on-green: #0b1410; --deco: #63c697;
+  --replace: #74d4a2; --replace-bg: #183427; --review: #efb95c; --review-bg: #3a2c13; --std: #9fc0d8; --std-bg: #1c2b36; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1613; --bg-2: #131c18; --surface: #18221e; --ink: #e5ece8; --muted: #9db0a6; --line: #26332d;
+  --green: #4fb487; --green-2: #63c697; --mint: #1b2a23; --mint-2: #22362c; --on-green: #0b1410; --deco: #63c697;
+  --replace: #74d4a2; --replace-bg: #183427; --review: #efb95c; --review-bg: #3a2c13; --std: #9fc0d8; --std-bg: #1c2b36; color-scheme: dark }
+* { box-sizing: border-box }
+html { scroll-behavior: smooth }
+body { background: radial-gradient(1200px 520px at 50% -10%, var(--bg-2), var(--bg)); background-color: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: 16px; line-height: 1.75; overflow-x: hidden }
+.wrap { max-width: 1120px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+a { color: inherit }
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 6px }
+
+/* header */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--line) }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none }
+.brand .word { font-family: var(--display); font-weight: 800; font-size: 2rem; color: var(--green); line-height: 1 }
+.brand .academy { height: 44px; width: auto; display: block }
+.brand .sep { width: 1px; height: 34px; background: var(--line) }
+nav.links { display: flex; gap: 6px }
+nav.links a { text-decoration: none; padding: 8px 16px; border-radius: 10px; color: var(--muted); font-weight: 500 }
+nav.links a.on { background: var(--mint); color: var(--green); font-weight: 600; box-shadow: inset 0 -2px 0 var(--green) }
+.cta { display: inline-flex; align-items: center; gap: 8px; background: var(--green); color: var(--on-green); text-decoration: none;
+  font-weight: 600; padding: 10px 22px; border-radius: 12px }
+@media (max-width: 720px) { nav.links { display: none } .brand .academy { height: 34px } }
+
+/* hero */
+.hero { position: relative; isolation: isolate; text-align: center; padding-block: 56px 28px }
+.deco { position: absolute; inset: 0; z-index: -1; pointer-events: none; overflow: hidden }
+.deco i { position: absolute; width: var(--s); height: var(--s); background: var(--deco); opacity: .07; transform: rotate(45deg); border-radius: 4px }
+.wordmark { font-family: var(--display); font-weight: 800; font-size: clamp(3.6rem, 11vw, 6.4rem); color: var(--green); line-height: 1.1; margin: 0;
+  display: inline-flex; align-items: flex-start; gap: 6px }
+.wordmark svg { width: .42em; height: .42em; margin-top: .05em }
+.tag { margin: 14px auto 0; max-width: 46ch; font-size: clamp(1.02rem, 2.3vw, 1.3rem); line-height: 1.9; text-wrap: balance }
+
+/* composer */
+.composer { margin: 30px auto 0; max-width: 1000px; background: var(--surface); border: 1px solid var(--mint-2); border-radius: 22px;
+  padding: 10px; box-shadow: 0 18px 50px -30px rgba(11,75,51,.35); text-align: start }
+.composer .inner { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px 12px }
+textarea { width: 100%; min-height: 120px; resize: vertical; border: 0; outline: 0; background: transparent; color: var(--ink);
+  font: inherit; font-size: 1.05rem; line-height: 1.9 }
+textarea::placeholder { color: var(--muted) }
+.bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-top: 8px }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; min-width: 0 }
+.chip { display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 500; font-size: .95rem; color: var(--ink);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; cursor: pointer }
+.chip svg { width: 18px; height: 18px; color: var(--green) }
+.chip[aria-pressed="true"] { background: var(--mint); border-color: var(--green); color: var(--green); font-weight: 600 }
+.send { width: 56px; height: 56px; border-radius: 50%; border: 0; background: var(--green); color: var(--on-green); cursor: pointer;
+  display: grid; place-items: center; flex: none }
+.send svg { width: 24px; height: 24px; transform: scaleX(-1) }
+.send:disabled { opacity: .5; cursor: wait }
+.hint { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: .88rem; padding: 10px 8px 2px }
+.hint svg { width: 18px; height: 18px; flex: none }
+
+/* examples + features */
+.ex-head { display: flex; align-items: center; gap: 16px; justify-content: center; margin: 34px 0 14px; font-weight: 600 }
+.ex-head::before, .ex-head::after { content: ""; height: 1px; width: 120px; background: var(--line) }
+.examples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px }
+.example { display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: start; font: inherit; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; cursor: pointer }
+.example .go { flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--mint); color: var(--green); display: grid; place-items: center }
+.example .go svg { width: 16px; height: 16px }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 36px }
+.feature { display: flex; align-items: center; gap: 14px; padding: 8px 22px; min-width: 0 }
+.feature + .feature { border-inline-start: 1px solid var(--line) }
+.feature .ic { flex: none; width: 56px; height: 56px; border-radius: 50%; background: var(--mint); color: var(--green); display: grid; place-items: center }
+.feature .ic svg { width: 26px; height: 26px }
+.feature b { display: block; color: var(--green); font-size: 1.05rem }
+.feature span { color: var(--muted); font-size: .9rem }
+@media (max-width: 820px) { .examples, .features { grid-template-columns: 1fr } .feature + .feature { border-inline-start: 0; border-top: 1px solid var(--line) } .feature { padding: 12px 4px } }
+
+/* results */
+.results { margin-top: 40px; display: grid; gap: 22px }
+.results h2 { font-family: var(--display); font-weight: 700; font-size: 1.25rem; color: var(--green); margin: 0 }
+.status { color: var(--muted); font-size: .92rem; text-align: center; margin-top: 12px; min-height: 1.6em }
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; min-width: 0 }
+.stat .k { font-size: .8rem; color: var(--muted) }
+.stat .v { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums }
+.stat.domain { grid-column: span 2; background: var(--mint); border-color: var(--mint-2) }
+.stat.domain .v { font-size: 1.1rem; line-height: 1.5; color: var(--green) }
+.stat .alt { font-size: .82rem; color: var(--muted) }
+@media (max-width: 520px) { .stat.domain { grid-column: 1 / -1 } }
+.block { display: grid; gap: 10px }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; line-height: 2.15; min-width: 0; overflow-wrap: anywhere }
+mark { border-radius: 5px; padding: 1px 4px; color: inherit; cursor: help }
+mark.replace { background: var(--replace-bg); box-shadow: inset 0 -2px 0 var(--replace) }
+mark.review { background: var(--review-bg); box-shadow: inset 0 -2px 0 var(--review) }
+mark.std { background: var(--std-bg) }
+.actions { display: flex; flex-wrap: wrap; gap: 8px }
+.legend .tip::before { display: none }
+.doc { position: relative }
+.sw { font: inherit; color: inherit; border: 0; cursor: pointer; border-radius: 5px; padding: 1px 5px; line-height: inherit;
+  display: inline; background: var(--replace-bg); box-shadow: inset 0 -2px 0 var(--replace) }
+.sw.review { background: var(--review-bg); box-shadow: inset 0 -2px 0 var(--review) }
+.sw svg { width: .8em; height: .8em; margin-inline-start: 4px; vertical-align: -.05em; opacity: .75 }
+.sw.on { color: var(--replace); font-weight: 700; background: var(--replace-bg); box-shadow: inset 0 0 0 1.5px var(--replace) }
+.sw:hover { filter: brightness(.97) }
+.menu { position: absolute; z-index: 5; min-width: 210px; max-width: calc(100% - 16px); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; padding: 6px; display: grid; gap: 2px; box-shadow: 0 14px 34px -18px rgba(0,0,0,.4); line-height: 1.6 }
+.menu .h { font-size: .78rem; color: var(--muted); padding: 4px 10px 2px }
+.menu button { font: inherit; text-align: start; color: var(--ink); background: transparent; border: 0; border-radius: 8px; padding: 7px 10px; cursor: pointer }
+.menu button:hover, .menu button[aria-checked="true"] { background: var(--mint); color: var(--green) }
+.menu button small { color: var(--muted); font-size: .78rem; margin-inline-start: 6px }
+.opts { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px }
+.opt { font: inherit; font-size: .88rem; font-weight: 600; color: var(--green); background: transparent; border: 1px solid var(--green); border-radius: 8px; padding: 3px 12px; cursor: pointer }
+.opt[aria-pressed="true"] { background: var(--green); color: var(--on-green) }
+.new { background: var(--replace-bg); color: var(--replace); font-weight: 700; border-radius: 5px; padding: 1px 4px }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: .84rem; color: var(--muted) }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-inline-end: 6px; vertical-align: middle }
+.l-replace::before { background: var(--replace) } .l-review::before { background: var(--review) } .l-std::before { background: var(--std) }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between }
+.ghost { font: inherit; font-weight: 600; color: var(--green); background: transparent; border: 1px solid var(--green); border-radius: 10px; padding: 6px 16px; cursor: pointer }
+.items { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px }
+.item { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; min-width: 0 }
+.item.replace { border-top-color: var(--replace) } .item.review { border-top-color: var(--review) } .item.std { border-top-color: var(--std) }
+.item .t { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline }
+.from { font-weight: 700 } .arrow { color: var(--muted) } .to { font-weight: 700; color: var(--replace) }
+.pill { font-size: .74rem; padding: 1px 10px; border-radius: 99px; font-weight: 600 }
+.pill.replace { background: var(--replace-bg); color: var(--replace) } .pill.review { background: var(--review-bg); color: var(--review) } .pill.std { background: var(--std-bg); color: var(--std) }
+.meta { font-size: .85rem; color: var(--muted) }
+.en { font-family: var(--mono); font-size: .82rem; direction: ltr; unicode-bidi: isolate }
+.choices { font-size: .88rem } .choices b { color: var(--review) }
+.empty { color: var(--muted) }
+
+/* about + faq */
+.info { margin-top: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-block: 28px 48px; border-top: 1px solid var(--line) }
+.info h2 { font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--green); margin: 0 0 6px }
+.info p { margin: 0 0 10px; color: var(--muted); max-width: 60ch }
+details { border-bottom: 1px solid var(--line); padding-block: 8px }
+summary { cursor: pointer; font-weight: 600 }
+@media (max-width: 820px) { .info { grid-template-columns: 1fr } }
+@media (prefers-reduced-motion: no-preference) { .results.fresh { animation: rise .3s ease-out } @keyframes rise { from { transform: translateY(6px) } to { transform: none } } }
+</style>
+
+<div dir="rtl" lang="ar">
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="#home" aria-label="خصص">
+        <span class="word">خصص</span>
+      </a>
+      <nav class="links" aria-label="التنقل">
+        <a class="on" href="#home">الرئيسية</a>
+        <a href="#about">عن خصص</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </nav>
+      <a class="cta" href="#composer">ابدأ الآن
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      </a>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="deco" aria-hidden="true">
+        <i style="--s:54px; top:8%; right:4%"></i><i style="--s:38px; top:30%; right:12%"></i><i style="--s:70px; top:56%; right:2%"></i>
+        <i style="--s:46px; top:12%; left:7%"></i><i style="--s:64px; top:42%; left:2%"></i><i style="--s:30px; top:70%; left:12%"></i>
+      </div>
+      <h1 class="wordmark">خصص
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M20 2c1.5 9 4 12.5 13 14-9 1.5-11.5 5-13 14-1.5-9-4-12.5-13-14 9-1.5 11.5-5 13-14z"/><path fill="currentColor" opacity=".8" d="M37 26c.8 4.6 2 6.4 6.5 7.2-4.5.8-5.7 2.6-6.5 7.2-.8-4.6-2-6.4-6.5-7.2 4.5-.8 5.7-2.6 6.5-7.2z"/></svg>
+      </h1>
+      <p class="tag">طبقة لغوية متخصصة تحدد مجال نصك، وتقترح المصطلحات العربية المعتمدة بدلًا من الألفاظ الدارجة والدخيلة.</p>
+
+      <form class="composer" id="composer">
+        <div class="inner">
+          <label for="text" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">النص</label>
+          <textarea id="text" spellcheck="false" placeholder="اكتب نصك هنا…">درّبنا المودل على الداتا اللي جمعناها بالسكرابينج من مواقع المتاجر، وبعدين سوينا داشبورد يعرض أهم المؤشرات للإدارة. الفريق يبي يستخدم البيغ داتا لتحسين قرارات التسعير، وطلب منا الاستشاري نسوي كي فولد قبل ما نعتمد النتائج.</textarea>
+          <div class="bar">
+            <div class="chips" id="chips" role="group" aria-label="المجال"></div>
+            <button class="send" id="go" type="submit" disabled aria-label="حلّل النص">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6 3.3 10.2 15 12 3.3 13.8z"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01" stroke-linecap="round"/></svg>
+          <span>اختر مجال نصك أولًا، فيجري التحليل في معاجم هذا المجال وحدها.</span>
+        </div>
+      </form>
+      <p class="status" id="status" role="status">جارٍ تحميل المعاجم…</p>
+    </section>
+
+    <div class="ex-head">جرّب هذه الأمثلة</div>
+    <div class="examples" id="examples"></div>
+
+    <div class="features">
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6" stroke-linecap="round"/></svg></div><div><b>صياغة أدق</b><span>بالمصطلح المعتمد في مجال نصك</span></div></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11 2c.9 5.4 2.4 7.5 7.8 8.4-5.4.9-6.9 3-7.8 8.4-.9-5.4-2.4-7.5-7.8-8.4C8.6 9.5 10.1 7.4 11 2z"/><path d="M19 15c.4 2.3 1 3.2 3.3 3.6-2.3.4-2.9 1.3-3.3 3.6-.4-2.3-1-3.2-3.3-3.6 2.3-.4 2.9-1.3 3.3-3.6z"/></svg></div><div><b>40,102 مصطلحًا</b><span>من 22 معجمًا متخصصًا في سِوار</span></div></div>
+      <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></svg></div><div><b>متعدد المجالات</b><span>ستة مجالات تغطي 22 معجمًا</span></div></div>
+    </div>
+
+    <div class="results" id="out" hidden>
+      <div class="summary" id="summary"></div>
+      <div class="block">
+        <div class="row"><h2>النص</h2>
+          <div class="actions"><button class="ghost" id="all" type="button">استبدال كل المقترح</button><button class="ghost" id="reset" type="button">إعادة النص الأصلي</button><button class="ghost" id="copy" type="button">نسخ النص</button></div>
+        </div>
+        <div class="legend"><span class="l-replace">مصطلح مقترح</span><span class="l-review">يحتاج اختيارًا</span><span class="l-std">مصطلح معتمد مستخدم</span><span class="tip">اضغط الكلمة المظللة لاستبدالها، واضغطها مرة أخرى للتراجع.</span></div>
+        <div class="panel doc" id="doc"></div>
+      </div>
+      <div class="block">
+        <h2>تفاصيل المصطلحات</h2>
+        <div class="items" id="items"></div>
+      </div>
+    </div>
+
+    <section class="info">
+      <div id="about">
+        <h2>عن خصص</h2>
+        <p>خصص نموذج أولي لطبقة مصطلحات عربية. يبحث في النص عن الألفاظ الدارجة والإنجليزية والمكتوبة بحروف عربية، مثل «المودل» و«الداتا» و«سكليف»، ويقترح مكانها المصطلح المعتمد في معاجم سِوار.</p>
+        <p>تعتمد هذه النسخة على 40,102 مصطلح من 22 معجمًا، أُثريت بأكثر من 87 ألف صيغة بديلة روجعت كلها.</p>
+      </div>
+      <div id="faq">
+        <h2>الأسئلة الشائعة</h2>
+        <details><summary>كيف يعمل اختيار المجال؟</summary><p>تختار مجال نصك، فيبحث خصص في معاجم هذا المجال وحدها. وداخل المجال يرتّب المعاجم بحسب المصطلحات التي ظهرت في النص، ويعرض أقربها.</p></details>
+        <details><summary>هل يُستبدل النص تلقائيًا؟</summary><p>لا. يبقى النص كما كتبته، وتظهر المصطلحات المقترحة مظللة. تضغط الكلمة لتستبدلها، وتضغطها مرة أخرى للتراجع، أو تستخدم «استبدال كل المقترح».</p></details>
+        <details><summary>متى يُقترح الاستبدال ومتى يحتاج اللفظ تدقيقًا؟</summary><p>يُقترح الاستبدال حين يقابل اللفظ مصطلحًا واحدًا في المجال المختار. ويحتاج تدقيقًا إذا احتمل أكثر من مصطلح، أو كان له معنى آخر شائع، أو جاء من معجم غير أقرب معاجم المجال إلى النص.</p></details>
+        <details><summary>هل يضبط النحو بعد الاستبدال؟</summary><p>ليس بعد. قد تحتاج الجملة بعد الاستبدال إلى ضبط في التذكير أو الجمع أو أداة التعريف، وهذه مرحلة قادمة في المشروع.</p></details>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const TYPE = { f: "صيغة إنجليزية", t: "كتابة صوتية", a: "اختصار", i: "مرادف غير رسمي", c: "عامية", s: "اختلاف إملائي", "": "" };
+  const PREFIXES = ["وبال", "وال", "بال", "فال", "كال", "ولل", "لل", "ال", "و", "ف", "ب", "ل", "ك"];
+  const DIAC = /[ؐ-ًؚ-ٰٟۖ-ۭـ​-‏‪-‮⁦-⁩﻿]/g;
+  const PUNCT = /["'«»“”‘’()\[\]{}.,،؛:!?؟]/g;
+  const ICON = {
+    culture: '<path d="M4 5.5C6.5 4.5 9.5 4.5 12 6c2.5-1.5 5.5-1.5 8-.5V19c-2.5-1-5.5-1-8 .5-2.5-1.5-5.5-1.5-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>',
+    legal: '<path d="M12 3v18M7 21h10M5 7h14M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>',
+    tech: '<path d="m8 8-5 4 5 4M16 8l5 4-5 4M14 5l-4 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>',
+    finance: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+    media: '<path d="M3 10v4h3l7 4V6L6 10zM17 9a4 4 0 0 1 0 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>',
+    eng: '<path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>'
+  };
+  const DOMAINS = [
+    { id: "legal", label: "قانوني", keys: ["القانونية", "العقود"] },
+    { id: "tech", label: "تقني", keys: ["البيانات والذكاء", "الحكومة الرقمية"] },
+    { id: "finance", label: "مالي وإداري", keys: ["المالية", "العقود", "الإحصائية", "الإدارية", "الموارد البشرية", "قياس أداء", "غير الربحي", "الإنمائية"] },
+    { id: "media", label: "إعلامي", keys: ["الإعلام"] },
+    { id: "eng", label: "هندسي", keys: ["الطيران", "السيارات", "الطاقة", "الخطوط الحديدية", "الطرق"] },
+    { id: "culture", label: "علمي وثقافي", keys: ["علم السلوك", "الحياة الفطرية", "المصطلحات الرياضية", "الموسيقية", "الرياضات الإلكترونية"] }
+  ];
+  const EXAMPLES = [
+    { label: "نص تقني بألفاظ دارجة", domain: "tech", text: document.getElementById("text").value },
+    { label: "طلب إداري فيه عامية", domain: "legal", text: "قدّمت سكليف يومين، وبعد ما رجعت طلب مني المدير أراجع الأجندة وأتأكد من بنود الكونتراكت قبل التوقيع، ونحسب الأوفر تايم للموظفين." },
+    { label: "تقرير مالي بمصطلحات دخيلة", domain: "finance", text: "الشركة حققت إيبيتدا أعلى من المتوقع هالسنة، والكاش فلو تحسن بعد ما راجعنا الكي بي آي مع الفريق ووضعنا تارقت جديد للمبيعات." }
+  ];
+  let DATA = null, current = "tech", LAST = { text: "", items: [] }, CHOICE = [];
+
+  const normalize = t => (t || "").replace(DIAC, "").replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
+    .toLowerCase().replace(PUNCT, " ").split(/\s+/).filter(Boolean).join(" ");
+  const STOP = new Set(["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون"].map(w => normalize(w)));
+  const termKey = t => { const n = normalize(t).split(" "); if (n[0] && n[0].startsWith("ال") && n[0].length > 3) n[0] = n[0].slice(2); return n.join(" "); };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const pct = (a, b) => Math.round(100 * a / b);
+
+  function tokenize(text) {
+    const out = []; const re = /[\p{L}\p{N}][\p{L}\p{N}\p{M}_\-']*/gu; let m;
+    while ((m = re.exec(text))) out.push({ s: m.index, e: m.index + m[0].length, n: normalize(m[0]) });
+    return out;
+  }
+
+  // ---- phonetic matching: Arabic-letter spellings of English words already listed in the dictionaries
+  const AR2LAT = { "ب": "b", "پ": "b", "ت": "t", "ث": "t", "ج": "k", "ح": "h", "خ": "k", "د": "d", "ذ": "z", "ر": "r", "ز": "z", "س": "s",
+    "ش": "s", "ص": "s", "ض": "d", "ط": "t", "ظ": "z", "غ": "k", "ف": "f", "ڤ": "f", "ق": "k", "ك": "k", "گ": "k", "ل": "l", "م": "m",
+    "ن": "n", "ه": "h" };
+  AR2LAT["ز"] = "s";  // Arabic writes English s/z sounds with either letter (نيوز = news)
+  const collapse = t => t.replace(/(.)\1+/g, "$1").replace(/h$/, "");
+  const arSkel = w => collapse([...w].map(c => AR2LAT[c] || "").join(""));
+  function enSkels(w) {
+    let base = w.toLowerCase().replace(/[^a-z]/g, "");
+    base = base.replace(/[ts]ion/g, "shn").replace(/sch/g, "sk").replace(/ph/g, "f").replace(/sh/g, "s").replace(/ck/g, "k").replace(/qu/g, "k").replace(/gh/g, "")
+      .replace(/x/g, "ks").replace(/c(?=[eiy])/g, "s").replace(/q/g, "k").replace(/p/g, "b").replace(/v/g, "f").replace(/[jg]/g, "k").replace(/c/g, "k");
+    let out = [base];
+    if (base.includes("kh")) out = out.flatMap(b => [b.replace(/kh/g, "s"), b.replace(/kh/g, "ts"), b.replace(/kh/g, "k")]); // "ch" became "kh"
+    if (base.includes("th")) out = out.flatMap(b => [b.replace(/th/g, "t"), b.replace(/th/g, "z"), b.replace(/th/g, "s")]);
+    return [...new Set(out.map(b => collapse(b.replace(/z/g, "s").replace(/[aeiouwy]/g, ""))))];
+  }
+  function lev(a, b) {
+    const m = a.length, n = b.length, d = Array.from({ length: n + 1 }, (_, j) => j);
+    for (let i = 1; i <= m; i++) { let prev = d[0]; d[0] = i;
+      for (let j = 1; j <= n; j++) { const t = d[j]; d[j] = Math.min(d[j] + 1, d[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = t; } }
+    return d[n];
+  }
+  let PHON = null, PHON_WC = null, PHON_EN = null;  // skeleton -> rows / word counts / the English phrases it came from
+  const addPhon = (sk, rows, wc, en) => {
+    if (!PHON.has(sk)) { PHON.set(sk, []); PHON_WC.set(sk, new Set()); PHON_EN.set(sk, new Set()); }
+    PHON.get(sk).push(...rows); PHON_WC.get(sk).add(wc); PHON_EN.get(sk).add(en);
+  };
+  const wordCount = en => en.split(/[\s\-]+/).filter(Boolean).length;
+  function buildPhon() {
+    PHON = new Map(); PHON_WC = new Map(); PHON_EN = new Map();
+    for (const [key, rows] of Object.entries(DATA.forms)) {
+      if (!/^[a-z][a-z0-9 .\-]*$/.test(key)) continue;
+      for (const sk of enSkels(key)) if (sk.length >= 3) addPhon(sk, rows, wordCount(key), key);
+    }
+    DATA.senses.forEach((sense, i) => {
+      const en = (sense[2] || "").replace(/\([^)]*\)/g, " ").toLowerCase().trim();
+      if (!en || en.split(/\s+/).length > 3) return;
+      for (const sk of enSkels(en)) if (sk.length >= 3) addPhon(sk, [[i, 1, "f"]], wordCount(en), en);
+    });
+  }
+  const NATIVE = /[عحصضظذثءؤئة]/;
+  const bare = w => w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
+  // looks like an English word spelled in Arabic letters: no letters foreign spellings avoid, long vowels, unknown to the dictionaries' Arabic
+  const verbShape = w => /^[يتن].{2,}(ون|وا|ين)$/.test(w) || /^.{3,}(وا|تم|تن)$/.test(w) || /^ا.{2,}يت$/.test(w) || /^.{2,3}نا$/.test(w);
+  const native = w => NATIVE.test(w) || /ه$/.test(w) || STOP.has(w) || verbShape(w) || Math.max(DATA.vocab[bare(w)] || 0, DATA.vocab[w] || 0) >= 3;
+  const vowels = w => (w.match(/[اوي]/g) || []).length;
+  const foreignLooking = (w, lead = true) => !native(w) && (lead ? vowels(w) >= 2 || (vowels(w) >= 1 && arSkel(w).length >= 5) : vowels(w) >= 1 || arSkel(w).length >= 3);
+  // no long vowel at all (بدجت، بزنس): foreign only if no Arabic stem shows up once common endings/prefixes are removed (كتبت → كتب)
+  const stems = w => [w, w.replace(/(ت|ن|نا|وا|ه|ها)$/, ""), w.replace(/^[وفبلك]/, "")].filter(x => x.length >= 3);
+  const bareForeign = w => !native(w) && vowels(w) <= 1 && arSkel(w).length >= 4 && !stems(w).some(x => DATA.vocab[x] || DATA.vocab[bare(x)] || DATA.forms[x] || DATA.forms[bare(x)]);  // exact matches only
+  const unseen = x => !(DATA.vocab[x] || DATA.vocab[bare(x)] || DATA.forms[x] || DATA.forms[bare(x)]);
+  const arabicPattern = x => /^.ا..$/.test(x) || /^..اي.$/.test(x) || /^م.ا..$/.test(x);  // فاعل، فعايل، مفاعل
+  const looksBorrowed = w => /^[a-z]{3,}$/.test(w) && !STOP.has(w)
+    || /^[\u0621-\u064a]{4,}$/.test(w) && stems(w).every(x => !native(x) && unseen(x) && !arabicPattern(bare(x))) && foreignLooking(bare(w.replace(/^[وفبلك](?=ال)/, ""))) && vowels(w) >= 2;
+  // English prefixes Arabic writers often split off (أوت سورسنق, بري بروسيسنج, سب كونتراكتور)
+  const PARTICLES = new Set(["اوت", "بري", "سب", "اوفر", "ري", "اب", "داون", "ان", "انتر", "ميكرو", "ميني", "ملتي", "سوبر"].map(w => normalize(w)));
+  function phonetic(word, allowed, words = 1, loose = false, particle = false) {
+    const sk = arSkel(word); if (sk.length < (words > 1 ? 4 : 4)) return null;
+    const keep = rows => { const r = rows.filter(x => !allowed || allowed.has(DATA.senses[x[0]][1])); return r.length ? r : null; };
+    const fits = k => loose || words === 1 || PHON_WC.get(k).has(words) || (particle && PHON_WC.get(k).has(words - 1));  // «الطيار أبلغ» (2 words) may not match «tribology» (1 word)
+    const exact = PHON.get(sk) && fits(sk) && keep(PHON.get(sk));
+    if (exact) return { rows: exact, how: "exact", key: sk };
+    if (sk.length < 6) return null;
+    let best = null, bestScore = 0, bestKey = null;
+    for (const [k, rows] of PHON) {
+      if (Math.abs(k.length - sk.length) > 1 || !fits(k)) continue;
+      const score = 1 - lev(sk, k) / Math.max(k.length, sk.length);
+      if (score > bestScore) { const r = keep(rows); if (r) { best = r; bestScore = score; bestKey = k; } }
+    }
+    return bestScore >= 0.85 ? { rows: best, how: "near", key: bestKey } : null;
+  }
+
+  let VEC = null;  // senses.vec: 128-d int8 meaning vector per sense (EmbeddingGemma, precomputed), loaded after the dictionaries
+  const vecOf = i => VEC && VEC.subarray(i * 128, i * 128 + 128);
+  function centroid(rows) {  // average meaning of the given senses
+    if (!VEC || !rows.length) return null;
+    const c = new Float32Array(128);
+    for (const i of rows) { const v = vecOf(i); for (let k = 0; k < 128; k++) c[k] += v[k]; }
+    let n = 0; for (let k = 0; k < 128; k++) n += c[k] * c[k];
+    n = Math.sqrt(n) || 1; for (let k = 0; k < 128; k++) c[k] /= n;
+    return c;
+  }
+  const simTo = (i, c) => { const v = vecOf(i); let s = 0; for (let k = 0; k < 128; k++) s += v[k] * c[k]; return s / 127; };
+  let CTX = null;  // context.json: distinctive keywords per sense, loaded after the dictionaries
+  const ctxWords = text => new Set((normalize(text).match(/[\u0621-\u064a]{3,}/g) || []).map(w => {
+    w = w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
+    return "وبل".includes(w[0]) && w.length > 4 && w[1] !== "ا" ? w.slice(1) : w;
+  }));
+  function contextScore(senseIdx, words, own) {
+    if (!CTX || !CTX[senseIdx]) return 0;
+    let sc = 0;
+    for (const w of CTX[senseIdx].split(" ")) if (w && words.has(w) && !own.has(w)) sc += Math.log(40102 / Math.max(1, DATA.vocab[w] || 1));
+    return Math.min(1.5, sc / 6);
+  }
+  const SUFFIXES = [["ات", "plural"], ["ين", "plural"], ["ون", "plural"], ["ها", "pron"], ["هم", "pron"], ["نا", "pron"], ["كم", "pron"], ["هن", "pron"], ["ه", "pron"], ["ز", "plural-en"], ["س", "plural-en"]];  // ز/س: English plural s (مودلز، سيرفرز)
+  const isLatin = t => /^[a-z0-9][a-z0-9.\-]*$/.test(t);
+  const LETTERS = {};
+  [["ايه", "a"], ["اي", "ia"], ["بي", "bp"], ["سي", "c"], ["دي", "d"], ["اف", "f"], ["جي", "g"], ["اتش", "h"], ["اتش", "h"], ["جيه", "j"],
+   ["كي", "k"], ["ال", "l"], ["ام", "m"], ["ان", "n"], ["او", "o"], ["كيو", "q"], ["ار", "r"], ["اس", "s"], ["تي", "t"], ["يو", "u"],
+   ["في", "v"], ["دبليو", "w"], ["اكس", "x"], ["واي", "y"], ["زد", "z"], ["زي", "z"]].forEach(([n, l]) => { LETTERS[normalize(n)] = (LETTERS[normalize(n)] || "") + l; });
+  function acronymAt(tokens, i, text, allowed) {
+    // 2-5 letter names in a row; the first may carry ال / و / ب / ل
+    for (let n = Math.min(5, tokens.length - i); n >= 2; n--) {
+      const span = tokens.slice(i, i + n);
+      if (span.some((t, j) => j > 0 && /\S/.test(text.slice(span[j - 1].e, t.s)))) continue;
+      for (const prefix of ["", "ال", "وال", "بال", "لل", "و", "ب", "ل"]) {
+        const first = span[0].n.startsWith(prefix) ? span[0].n.slice(prefix.length) : null;
+        if (first === null || (prefix && !first)) continue;
+        const names = [first, ...span.slice(1).map(t => t.n)];
+        if (!names.every(w => LETTERS[w])) continue;
+        let combos = [""];
+        for (const w of names) combos = combos.flatMap(c => [...LETTERS[w]].map(l => c + l));
+        for (const c of combos.slice(0, 32)) {
+          let rows = DATA.forms[c];
+          if (rows && allowed) rows = rows.filter(r => allowed.has(DATA.senses[r[0]][1]));
+          if (rows && rows.length) return { n, s: span[0].s, e: span[n - 1].e, prefix, suffix: "", sufKind: "", head: c, rows, how: "acronym" };
+        }
+      }
+    }
+    return null;
+  }
+
+  function variantsOf(first, rest) {
+    const out = [["", first, "", ""]];
+    for (const p of PREFIXES) {
+      if (!first.startsWith(p)) continue;
+      const head = first.slice(p.length);
+      const min = rest ? 2 : isLatin(head) ? 2 : p.length === 1 ? 4 : 3;
+      if (head.length >= min) out.push([p, head, "", ""]);
+    }
+    if (!rest) for (const [p, head] of out.slice()) for (const [suf, kind] of SUFFIXES)
+      if (!isLatin(head) && head.endsWith(suf) && head.length - suf.length >= (kind === "plural-en" ? 3 : suf.length === 1 ? 5 : 4)) out.push([p, head.slice(0, -suf.length), suf, kind]);
+    return out;
+  }
+
+  function findMatches(tokens, text, allowed) {
+    const found = []; let i = 0;
+    const filt = rows => rows && allowed ? rows.filter(r => allowed.has(DATA.senses[r[0]][1])) : rows;
+    while (i < tokens.length) {
+      let hit = null;
+      for (let n = Math.min(6, tokens.length - i); n >= 1 && !hit; n--) {
+        const span = tokens.slice(i, i + n);
+        if (span.some((t, j) => j > 0 && /\S/.test(text.slice(span[j - 1].e, t.s)))) continue;
+        const rest = span.slice(1).map(t => t.n).join(" "), first = span[0].n;
+        for (const [prefix, head, suffix, sufKind] of variantsOf(first, rest)) {
+          const key = rest ? head + " " + rest : head;
+          if (key.length < 2 || (n === 1 && (/^[a-z]$/.test(key) || STOP.has(key) || STOP.has(first)))) continue;
+          const noAl = n > 1 ? key.split(" ").map(w => bare(w)).join(" ") : key;
+          let rows = filt(DATA.forms[key]); if (!(rows && rows.length) && noAl !== key) rows = filt(DATA.forms[noAl]);
+          if (rows && sufKind === "plural-en") rows = rows.filter(r => r[2] === "t");
+          if (rows && rows.length && n === 1 && !rows.some(r => r[1] & 4) && rows.every(r => !/[tfa]/.test(r[2]))
+              && /^[؀-ۿ]+$/.test(head) && (DATA.vocab[bare(head)] || 0) >= 25) rows = null; // everyday word, not a term
+          if (rows && rows.length) { hit = { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: [head, ...span.slice(1).map(t => t.n)].join(""), rows, how: "dict" }; break; }
+        }
+      }
+      if (!hit) hit = acronymAt(tokens, i, text, allowed);
+      // nothing in the dictionaries (or only a one-word hit followed by more foreign words, as in «سولار بانلز»):
+      // try a phonetic match of an Arabic-letter spelling of 1-3 words written together or apart
+      const dictHit = hit, minN = hit && hit.n === 1 && tokens[i + 1] && foreignLooking(tokens[i + 1].n, false) ? 2 : 1;
+      if (minN === 2) hit = null;
+      for (let n = Math.min(3, tokens.length - i); n >= minN && !hit; n--) {
+        const span = tokens.slice(i, i + n);
+        if (span.some((t, j) => j > 0 && /\S/.test(text.slice(span[j - 1].e, t.s)))) continue;
+        if (span.some(t => !/^[؀-ۿ]+$/.test(t.n))) continue;
+        if (span.slice(1).some(t => !foreignLooking(t.n, false))) continue;
+        let bestPh = null;  // try every prefix/suffix reading; an exact sound match beats a near one, a stripped reading beats the raw word
+        if (/ه$/.test(span[0].n) && n === 1) continue;
+        for (const [prefix, head, suffix, sufKind] of variantsOf(span[0].n, n > 1 ? "x" : "")) {
+          if (suffix === "ه") continue;
+          const word = [head, ...span.slice(1).map(t => t.n)].join("");
+          // in a phrase the first word may itself be a known transliteration (سولار); judge its letters, and the phrase as a whole
+          const strictOnly = n === 1 && !foreignLooking(head) && bareForeign(head);
+          const headOk = n === 1 ? foreignLooking(head) || strictOnly : !NATIVE.test(head) && !STOP.has(head) && !verbShape(head) && vowels(head) + arSkel(head).length >= 3;
+          if (!headOk || (n > 1 && !foreignLooking(word))) continue;
+          const ph = phonetic(word, allowed, n, false, n > 1 && PARTICLES.has(bare(head)));
+          if (!ph || (strictOnly && ph.how !== "exact")) continue;
+          if (n > 1 && !PARTICLES.has(bare(head))) {  // «سولار بانلز» starts like «solar panels»; «التزم بالكونتراكت» does not start like «simple contract»
+            const lead = arSkel(head);
+            // compare with the start of the English (goalkeeper starts like «قول»)
+            const near = (x, y) => 1 - lev(x, y) / Math.max(x.length, y.length, 1) >= 0.6;
+            const agrees = [...PHON_EN.get(ph.key)].some(en => enSkels(en.split(/[\s\-]+/)[0]).some(sk =>
+              lead[0] === sk[0] && [lead.length - 1, lead.length, lead.length + 1].some(L => L > 0 && near(lead, sk.slice(0, L)))));
+            if (!agrees) continue;
+          }
+          const score = (ph.how === "exact" ? 10 : 0) + prefix.length + suffix.length;
+          if (!bestPh || score > bestPh.score) bestPh = { score, hit: { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: word, rows: ph.rows, how: ph.how } };
+        }
+        if (bestPh) hit = bestPh.hit;
+      }
+      if (!hit) hit = dictHit;
+      if (hit && hit.how === "dict") {
+        const w = hit.head;
+        if (/^[؀-ۿ]+$/.test(w) && foreignLooking(w)) {
+          const ph = phonetic(w, allowed, hit.n, true);  // only adds candidates to rank; the match itself came from the dictionary
+          if (ph) { const seen = new Set(hit.rows.map(r => r[0])); hit.rows = hit.rows.concat(ph.rows.filter(r => !seen.has(r[0]))); }
+        }
+      }
+      if (hit) { found.push(hit); i += hit.n; } else i++;
+    }
+    return found;
+  }
+
+  let EMB_W = 2;  // weight of meaning-closeness to the sentence's other terms
+  function analyse(text) {
+    const allowed = DOMAINS.find(d => d.id === current).dicts;
+    const tokens = tokenize(text), matches = findMatches(tokens, text, allowed);
+    const score = new Map();
+    for (const m of matches) {
+      const stdOnly = m.rows.every(r => r[1] & 4), w = stdOnly ? (m.n > 1 ? 0.6 : 0.25) : 1;
+      const dicts = new Set(m.rows.map(r => DATA.senses[r[0]][1]));
+      for (const d of dicts) score.set(d, (score.get(d) || 0) + w / dicts.size);
+    }
+    const ranked = [...score.entries()].sort((a, b) => b[1] - a[1]);
+    const total = ranked.reduce((a, b) => a + b[1], 0) || 1, domain = ranked.length ? ranked[0][0] : null;
+    const top3 = new Set(ranked.slice(0, 3).map(r => r[0]));
+    const textWords = ctxWords(text);
+    // the meaning of each match: its sense when unambiguous, else the average of its senses
+    const matchRows = matches.map(m => [...new Set(m.rows.map(r => r[0]))].slice(0, 12));
+    const items = matches.map((m, mi) => {
+      const anchors = matchRows.flatMap((rows, j) => j === mi || (matches[j].s < m.e && matches[j].e > m.s) ? [] : rows.length <= 3 ? rows : []);
+      const ctxVec = centroid(anchors);
+      const inDomain = m.rows.filter(r => DATA.senses[r[0]][1] === domain);
+      const pool = m.rows;  // every dictionary of the chosen domain; the nearest dictionary only adds to the ranking
+      const isStd = m.rows.some(r => r[1] & 4); // a standard term somewhere in the chosen domain: leave it
+      if (isStd && m.n === 1 && !inDomain.length) return null;
+      const byTerm = new Map();
+      const allKey = t => normalize(t.replace(/\([^)]*\)/g, " ")).split(" ").map(w => bare(w)).join(" ");
+      for (const r of pool) { const k = allKey(DATA.senses[r[0]][0]); if (!byTerm.has(k) || (r[1] & 1 && !(byTerm.get(k)[1] & 1))) byTerm.set(k, r); }
+      const surf = (() => { const p = m.head || ""; return /^[؀-ۿ]+$/.test(p) ? arSkel(p) : (/^[a-z0-9.\- ]+$/.test(p) ? enSkels(p)[0] : ""); })();
+      const rank = r => {
+        const sense = DATA.senses[r[0]], en = (sense[2] || "").replace(/\([^)]*\)/g, " ");
+        let sound = 0;
+        if (surf && en) for (const sk of enSkels(en)) sound = Math.max(sound, 1 - lev(surf, sk) / Math.max(surf.length, sk.length, 1));
+        const acr = m.how === "acronym" && new RegExp("\\(" + m.head + "s?\\)|^" + m.head + "$", "i").test(sense[2] || "") ? 1 : 0;
+        const ctx = contextScore(r[0], textWords, ctxWords(text.slice(m.s, m.e)));
+        return acr + ctx + sound * 2 + (r[1] & 1 ? 0.3 : 0) + (sense[1] === domain ? 0.3 : top3.has(sense[1]) ? 0.1 : 0) - sense[0].length / 200;
+      };
+      const sims = ctxVec ? new Map([...byTerm.values()].map(r => [r[0], simTo(r[0], ctxVec)])) : null;
+      const meanSim = sims ? [...sims.values()].reduce((a, b) => a + b, 0) / sims.size : 0;
+      const rank0 = rank, rankM = r => rank0(r) + (sims ? (sims.get(r[0]) - meanSim) * EMB_W : 0);
+      const choices = [...byTerm.values()].sort((a, b) => rankM(b) - rankM(a)), best = choices[0], reasons = [];
+      if (choices.length > 1 && rankM(choices[0]) - rankM(choices[1]) < 0.5) reasons.push("يحتمل أكثر من مصطلح");
+      if (best[1] & 2) reasons.push("له معنى آخر شائع في الاستعمال اليومي");
+      if (m.how === "near") reasons.push("كتابة قريبة من صيغة معروفة، تحقّق منها");
+      const notes = [];
+      if (m.how === "acronym") notes.push(`اختصار مكتوب بأسماء الحروف (${m.head.toUpperCase()})`);
+      else if (m.how !== "dict") notes.push("اكتُشفت بالمطابقة الصوتية مع الصيغة الإنجليزية");
+      if (m.sufKind === "plural" || m.sufKind === "plural-en") notes.push("وردت بصيغة الجمع، فراجع صيغة المصطلح بعد الاستبدال");
+      return { m, original: text.slice(m.s, m.e), state: isStd ? "std" : reasons.length ? "review" : "replace", sense: DATA.senses[best[0]], best, choices, reasons, notes };
+    }).filter(Boolean);
+    // words that look borrowed but match nothing in the chosen domain: shown as a note, never replaced
+    const covered = t => matches.some(m => t.s < m.e && t.e > m.s);
+    const seen = new Set(), unknown = [];
+    for (const t of tokens) {
+      const word = text.slice(t.s, t.e);
+      if (covered(t) || seen.has(word) || !looksBorrowed(t.n)) continue;
+      seen.add(word);
+      // does another domain know it? (search all dictionaries for this one word)
+      const elsewhere = findMatches([{ ...t, s: 0, e: word.length }], word, null)
+        .flatMap(m => m.rows.map(r => DATA.senses[r[0]][1]));
+      const domains = DOMAINS.filter(d => d.id !== current && elsewhere.some(x => d.dicts.has(x))).map(d => d.label);
+      unknown.push({ word, domains });
+    }
+    return { tokens, items, ranked, total, domain, unknown };
+  }
+
+  function adaptArticle(term, prefix, original) {
+    const words = term.split(" ");
+    const lead = prefix.replace(/ال$|لل$/, m => m === "لل" ? "ل" : "");
+    if (words.length > 1) return lead + term;
+    const hadAl = /ال$/.test(prefix) || prefix === "لل" || prefix === "ولل" || (!prefix && normalize(original).startsWith("ال"));
+    if (hadAl && !words[0].startsWith("ال")) words[0] = "ال" + words[0];
+    if (!hadAl && words[0].startsWith("ال") && words[0].length > 3) words[0] = words[0].slice(2);
+    const out = words.join(" ");
+    if (prefix === "لل" || prefix === "ولل") return (prefix === "ولل" ? "و" : "") + "لل" + out.slice(2);
+    return lead + out;
+  }
+
+  function render(text, res) {
+    const { items, ranked, total, domain, tokens } = res;
+    const count = s => items.filter(x => x.state === s).length;
+    const alt = ranked.slice(1, 3).map(([d, s]) => `${esc(DATA.dictionaries[d])} (${pct(s, total)}%)`).join("، ");
+    $("summary").innerHTML = `
+      <div class="stat domain"><div class="k">المجال المختار</div><div class="v">${esc(DOMAINS.find(d => d.id === current).label)}</div><div class="alt">${domain === null ? "لا مصطلحات من معاجم هذا المجال في النص" : `أقرب معجم: ${esc(DATA.dictionaries[domain])} (${pct(ranked[0][1], total)}%)${alt ? `، يليه ${alt}` : ""}`}</div></div>
+      <div class="stat"><div class="k">عدد الكلمات</div><div class="v">${tokens.length}</div></div>
+      <div class="stat"><div class="k">استبدال مقترح</div><div class="v" style="color:var(--replace)">${count("replace")}</div></div>
+      <div class="stat"><div class="k">يحتاج تدقيقًا</div><div class="v" style="color:var(--review)">${count("review")}</div></div>
+      <div class="stat"><div class="k">تم استبداله</div><div class="v" id="done" style="color:var(--green)">0</div></div>
+      <div class="stat"><div class="k">مصطلحات معتمدة مستخدمة</div><div class="v" style="color:var(--std)">${count("std")}</div></div>`;
+    LAST = { text, items, unknown: res.unknown }; CHOICE = items.map(() => null);
+    draw();
+    const out = $("out"); out.hidden = false; out.classList.remove("fresh"); void out.offsetWidth; out.classList.add("fresh");
+  }
+
+  const SWAP = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg>';
+  const termOf = r => DATA.senses[r[0]][0];
+  function withSuffix(word, m) {
+    if (m.sufKind !== "pron" || word.includes(" ")) return word;
+    return (word.endsWith("ة") ? word.slice(0, -1) + "ت" : word) + m.suffix;
+  }
+  const shown = (x, chosen) => chosen ? withSuffix(adaptArticle(chosen, x.m.prefix, x.original), x.m) : x.original;
+
+  function currentText() {
+    const { text, items } = LAST; let out = "", pos = 0;
+    items.forEach((x, i) => { out += text.slice(pos, x.m.s) + shown(x, CHOICE[i]); pos = x.m.e; });
+    return out + text.slice(pos);
+  }
+
+  function draw() {
+    const { text, items } = LAST; let html = "", pos = 0;
+    items.forEach((x, i) => {
+      html += esc(text.slice(pos, x.m.s));
+      if (x.state === "std") html += `<mark class="std" title="مصطلح معتمد">${esc(x.original)}</mark>`;
+      else {
+        const c = CHOICE[i], multi = x.choices.length > 1;
+        const tip = c ? `الكلمة الأصلية: ${x.original} — اضغط للتراجع` : multi ? "اضغط لاختيار المصطلح المناسب" : `اضغط لاستبدالها بـ «${x.sense[0]}»`;
+        html += `<button type="button" class="sw ${x.state}${c ? " on" : ""}" data-i="${i}" title="${esc(tip)}" aria-label="${esc(tip)}"${multi ? ' aria-haspopup="menu"' : ` aria-pressed="${!!c}"`}>${esc(shown(x, c))}${SWAP}</button>`;
+      }
+      pos = x.m.e;
+    });
+    html += esc(text.slice(pos));
+    $("doc").innerHTML = (html || '<span class="empty">لا يوجد نص.</span>') + '<div class="menu" id="menu" role="menu" hidden></div>';
+    const d = $("done"); if (d) d.textContent = CHOICE.filter(Boolean).length;
+    drawItems();
+  }
+
+  function drawItems() {
+    const { items } = LAST;
+    const order = { replace: 0, review: 1, std: 2 }, label = { replace: "مصطلح مقترح", review: "يحتاج اختيارًا", std: "مصطلح معتمد" };
+    const idx = items.map((x, i) => i).sort((a, b) => order[items[a].state] - order[items[b].state]);
+    $("items").innerHTML = items.length ? idx.map(i => {
+      const x = items[i], s = x.sense, kind = TYPE[x.best[2]] || "", c = CHOICE[i];
+      let controls = "";
+      if (x.state !== "std") {
+        controls = x.choices.length > 1
+          ? `<div class="opts">${x.choices.slice(0, 6).map(r => `<button type="button" class="opt" data-i="${i}" data-term="${esc(termOf(r))}" aria-pressed="${c === termOf(r)}">${esc(termOf(r))}</button>`).join("")}<button type="button" class="opt" data-i="${i}" data-term="" aria-pressed="${!c}">الكلمة الأصلية</button></div>`
+          : `<div class="opts"><button type="button" class="opt" data-i="${i}" data-term="${c ? "" : esc(s[0])}" aria-pressed="${!!c}">${c ? "تراجع" : "استبدال"}</button></div>`;
+      }
+      return `<div class="item ${x.state}">
+        <div class="t"><span class="from">${esc(x.original)}</span>${x.state !== "std" ? `<span class="arrow">←</span><span class="to">${esc(c || s[0])}</span>` : ""}<span class="pill ${x.state}">${label[x.state]}</span></div>
+        <div class="meta">${esc(DATA.dictionaries[s[1]])}${kind ? " · " + kind : ""}${s[2] ? ` · <span class="en">${esc(s[2])}</span>` : ""}</div>
+        ${s[3] ? `<div>${esc(s[3])}</div>` : ""}
+        ${x.state === "review" ? `<div class="meta">السبب: ${x.reasons.join("، ")}</div>` : ""}${x.notes && x.notes.length ? `<div class="meta">${x.notes.join("، ")}</div>` : ""}${controls}</div>`;
+    }).join("") : '<p class="empty">لم يُعثر على مصطلحات من معاجم هذا المجال في النص.</p>';
+    if (LAST.unknown && LAST.unknown.length) $("items").innerHTML += `<div class="item unknown"><div class="t"><span class="pill review">كلمات تبدو دخيلة</span></div>${LAST.unknown.map(u => `<div><span class="from">${esc(u.word)}</span>${u.domains.length ? ` <span class="meta">— موجودة في مجال: ${esc(u.domains.join("، "))}</span>` : ""}</div>`).join("")}<div class="meta">لم نجد لها مصطلحًا في معاجم هذا المجال، فراجعها يدويًا أو جرّب المجال المقترح.</div></div>`;
+  }
+
+  function openMenu(btn, i) {
+    const x = LAST.items[i], menu = $("menu"), doc = $("doc");
+    menu.innerHTML = `<div class="h">اختر المصطلح المناسب لـ «${esc(x.original)}»</div>` +
+      x.choices.slice(0, 6).map(r => `<button type="button" role="menuitemradio" data-i="${i}" data-term="${esc(termOf(r))}" aria-checked="${CHOICE[i] === termOf(r)}">${esc(termOf(r))}<small>${esc(DATA.dictionaries[DATA.senses[r[0]][1]].replace(/^(معجم|قاموس) (مصطلحات |المصطلحات )?/, ""))}</small></button>`).join("") +
+      `<button type="button" role="menuitemradio" data-i="${i}" data-term="" aria-checked="${!CHOICE[i]}">إبقاء الكلمة الأصلية</button>`;
+    menu.hidden = false;
+    const top = btn.offsetTop + btn.offsetHeight + 6, w = menu.offsetWidth, max = doc.clientWidth - w - 8;
+    menu.style.top = top + "px";
+    menu.style.left = Math.max(8, Math.min(btn.offsetLeft + btn.offsetWidth - w, max)) + "px";
+    menu.querySelector("button").focus();
+  }
+  const closeMenu = () => { const m = $("menu"); if (m) m.hidden = true; };
+  function choose(i, term) { CHOICE[i] = term || null; draw(); }
+
+  function run() {
+    if (!DATA) return;
+    const t0 = performance.now();
+    render($("text").value, analyse($("text").value));
+    $("status").textContent = `اكتمل التحليل في ${Math.max(1, Math.round(performance.now() - t0))} ملّي ثانية.`;
+  }
+
+  function setDomain(id) {
+    current = id;
+    document.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.id === id)));
+  }
+
+  $("chips").innerHTML = DOMAINS.map(d => `<button type="button" class="chip" data-id="${d.id}" aria-pressed="${d.id === current}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICON[d.id]}</svg>${d.label}</button>`).join("");
+  $("chips").addEventListener("click", e => { const c = e.target.closest(".chip"); if (c) { setDomain(c.dataset.id); run(); } });
+  $("examples").innerHTML = EXAMPLES.map((x, i) => `<button type="button" class="example" data-i="${i}"><span>${esc(x.label)}</span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M17 17 7 7M7 15V7h8"/></svg></span></button>`).join("");
+  $("examples").addEventListener("click", e => {
+    const b = e.target.closest(".example"); if (!b) return;
+    const x = EXAMPLES[+b.dataset.i]; $("text").value = x.text; setDomain(x.domain); run();
+    $("out").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  });
+  $("composer").addEventListener("submit", e => { e.preventDefault(); run(); });
+  $("doc").addEventListener("click", e => {
+    const item = e.target.closest(".menu button");
+    if (item) { choose(+item.dataset.i, item.dataset.term); return; }
+    const b = e.target.closest(".sw"); if (!b) { closeMenu(); return; }
+    const i = +b.dataset.i, x = LAST.items[i];
+    if (x.choices.length > 1) openMenu(b, i); else choose(i, CHOICE[i] ? "" : x.sense[0]);
+  });
+  $("items").addEventListener("click", e => { const b = e.target.closest(".opt"); if (b) choose(+b.dataset.i, b.dataset.term); });
+  document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+  document.addEventListener("click", e => { if (!e.target.closest("#doc")) closeMenu(); });
+  $("all").addEventListener("click", () => { LAST.items.forEach((x, i) => { if (x.state === "replace") CHOICE[i] = x.sense[0]; }); draw(); });
+  $("reset").addEventListener("click", () => { CHOICE = LAST.items.map(() => null); draw(); });
+  $("copy").addEventListener("click", () => {
+    const t = currentText();
+    navigator.clipboard.writeText(t).then(() => $("status").textContent = "نُسخ النص بحالته الحالية.", () => {
+      const r = document.createRange(); r.selectNodeContents($("doc")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      $("status").textContent = "حدّد النص وانسخه يدويًا.";
+    });
+  });
+
+  fetch("index.json").then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }).then(d => {
+    DATA = d; buildPhon();
+    fetch("senses.txt").then(r => r.ok ? r.text() : null).then(t => {  // base64 of the int8 vectors
+      if (!t) return;
+      const raw = atob(t.replace(/\s+/g, "")), v = new Int8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) v[i] = raw.charCodeAt(i);
+      if (v.length === DATA.senses.length * 128) { VEC = v; if (LAST.text) run(); }
+    }).catch(() => {});
+    fetch("context.json").then(r => r.ok ? r.json() : null).then(c => { if (c) { CTX = c.kw; if (LAST.text) run(); } }).catch(() => {});
+    const names = d.dictionaries.map(n => normalize(n));
+    for (const dom of DOMAINS) if (dom.keys) dom.dicts = new Set(names.flatMap((n, i) => dom.keys.some(k => n.includes(normalize(k))) ? [i] : []));
+    $("go").disabled = false;
+    $("status").textContent = `جاهز: ${d.senses.length.toLocaleString("ar-SA")} مصطلح من ${d.dictionaries.length} معجمًا.`;
+    run();
+  }).catch(() => { $("status").textContent = "تعذّر تحميل بيانات المعاجم. أعد تحميل الصفحة."; });
+})();
+</script>

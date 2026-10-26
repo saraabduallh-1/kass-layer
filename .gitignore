@@ -9,3 +9,6 @@ logs/
 
 # EmbeddingGemma vectors (rebuild with scripts/embeddings/build_embeddings.py build)
 data/embeddings/
+
+# local demo copy (published from the gh-pages branch)
+demo_local/
