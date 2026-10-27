@@ -382,17 +382,21 @@ summary { cursor: pointer; font-weight: 600 }
     const w = [...ctxWords(words[0])][0];
     return w !== undefined && WORDS.has(w) && WORD_GEN[WORDS.get(w)] / GEN_TOTAL >= GENERAL_RATE;
   }
-  function everydayEvidence(text, m, domainId, senses) {  // [typicality, closeness to each sense] of the text around an everyday word
+  // [typicality, closeness to each sense] of the text around an everyday word;
+  // found: the terms already recognised in the text (المودل → نموذج), so borrowed words count as context too
+  function everydayEvidence(text, m, domainId, senses, found = "") {
     if (!WORD_DOM) return [-9, null];
-    const own = ctxWords(text.slice(m.s, m.e));
-    const ids = [...ctxWords(text)].filter(w => !own.has(w) && WORDS.has(w)).map(w => WORDS.get(w));
+    const own = ctxWords(text.slice(m.s, m.e).split(/\s+/)[0]);  // the rest of a phrase (عميل «الذكاء الاصطناعي») is context too
+    // found terms count towards the domain but do not steer the sense (a found «المستفيد» would pull «عميل» its way)
+    const textWords = ctxWords(text), inText = [...textWords].filter(w => !own.has(w) && WORDS.has(w)).map(w => WORDS.get(w));
+    const ids = inText.concat([...ctxWords(found)].filter(w => !textWords.has(w) && !own.has(w) && WORDS.has(w)).map(w => WORDS.get(w)));
     if (!ids.length) return [-9, null];
     const j = WORD_DOMS.indexOf(domainId), k = WORD_DOMS.length;
     const typical = ids.reduce((a, i) => a + WORD_DOM[i * k + j], 0) / ids.length / 16;
     let close = null;
     if (WORD_VEC && VEC) {
       const c = new Float64Array(128);
-      for (const i of ids) for (let d = 0; d < 128; d++) c[d] += WORD_VEC[i * 128 + d];
+      for (const i of (inText.length ? inText : ids)) for (let d = 0; d < 128; d++) c[d] += WORD_VEC[i * 128 + d];
       let n = 0; for (let d = 0; d < 128; d++) n += c[d] * c[d];
       n = Math.sqrt(n) || 1;
       for (let d = 0; d < 128; d++) c[d] /= n;
@@ -550,7 +554,7 @@ summary { cursor: pointer; font-weight: 600 }
       let wordSims = null;
       if (m.how === "everyday") {
         const rows = m.rows.filter(r => !generalWord(DATA.senses[r[0]][0]));
-        const [typical, close] = everydayEvidence(text, m, current, rows.map(r => r[0]));
+        const [typical, close] = everydayEvidence(text, m, current, rows.map(r => r[0]), anchors.map(a => DATA.senses[a][0]).join(" "));
         if (!rows.length || typical < EVERYDAY_TYPICAL) return null;
         wordSims = close; m = { ...m, rows };
       }
