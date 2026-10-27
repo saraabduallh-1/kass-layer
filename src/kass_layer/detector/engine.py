@@ -444,19 +444,22 @@ class Detector:
         w = next(iter(ctx_words(words[0])), None)
         return w in self.words and self.word_gen[self.words[w]] / self.gen_total >= self.GENERAL_RATE
 
-    def everyday_evidence(self, text: str, m: dict, domain_id: str, senses: list[int]) -> tuple[float, dict]:
-        """How strongly the text around an everyday word leans to the domain, and how close its meaning is to each sense."""
+    def everyday_evidence(self, text: str, m: dict, domain_id: str, senses: list[int], found: str = "") -> tuple[float, dict]:
+        """How strongly the text around an everyday word leans to the domain, and how close its meaning is to each sense.
+        `found`: the terms already recognised in the text (المودل → نموذج), so borrowed words count towards the domain
+        (they do not steer the choice of sense: a found «المستفيد» would pull «عميل» its way)."""
         if self.word_dom is None:
             return (-9.0, {})
-        own = ctx_words(text[m["s"]:m["e"]])
-        ids = [self.words[w] for w in ctx_words(text) if w not in own and w in self.words]
+        own = ctx_words(text[m["s"]:m["e"]].split()[0])  # the rest of a phrase (عميل «الذكاء الاصطناعي») is context too
+        in_text = [self.words[w] for w in ctx_words(text) if w not in own and w in self.words]
+        ids = in_text + [self.words[w] for w in ctx_words(found) - ctx_words(text) if w not in own and w in self.words]
         if not ids:
             return (-9.0, {})
         j = self.word_doms.index(domain_id)
         typical = float(self.word_dom[ids, j].astype(np.float64).mean()) / 16
         close = {}
         if self.word_vec is not None and self.vec is not None:
-            c = self.word_vec[ids].astype(np.float64).sum(axis=0)
+            c = self.word_vec[in_text or ids].astype(np.float64).sum(axis=0)
             c /= (np.linalg.norm(c) or 1)
             close = {i: float(self.vec[i].astype(np.float64) @ c) / 127 for i in senses}
         return (typical, close)
@@ -492,7 +495,8 @@ class Detector:
             word_sims = None
             if m["how"] == "everyday":
                 rows = [r for r in m["rows"] if not self.general_word(self.senses[r[0]][0])]
-                typical, word_sims = self.everyday_evidence(text, m, domain_id, [r[0] for r in rows])
+                found = " ".join(self.senses[a][0] for a in anchors)
+                typical, word_sims = self.everyday_evidence(text, m, domain_id, [r[0] for r in rows], found)
                 if not rows or typical < self.EVERYDAY_TYPICAL:
                     continue
                 m = dict(m, rows=rows)

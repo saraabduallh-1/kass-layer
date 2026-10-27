@@ -42,5 +42,6 @@ def test_everyday_arabic_word_follows_context(client):
     def found(text):
         items = client.post("/analyse", json={"text": text, "domain": "tech"}).json()["items"]
         return {i["original"]: i["suggestion"]["term"] for i in items if i["state"] != "std"}
-    assert found("بنينا عميل ذكي يرد على استفسارات المستخدمين باستخدام نموذج لغوي كبير").get("عميل") == "وكيل"
+    assert found("بنينا عميل ذكي يرد على استفسارات المستخدمين باستخدام نموذج لغوي كبير").get("عميل ذكي") == "وكيل ذكي"
+    assert found("المودل والعميل يشتغلون مع بعض").get("والعميل") == "وكيل"  # a borrowed term (المودل) is context too
     assert "العميل" not in found("نحرص على رضا العميل في كل مراحل المشروع")
