@@ -6,8 +6,7 @@ let js = html.split("<script>")[1].split("</script>")[0];
 js = js.replace(/\}\)\(\);\s*$/, "globalThis.K = { analyse, setDomain: id => { current = id }, D: () => DATA }; })();");
 const stub = () => ({ addEventListener() {}, textContent: "", innerHTML: "", hidden: true, disabled: true, value: "", classList: { add() {}, remove() {} }, style: {} });
 const els = {}; global.document = { getElementById: id => els[id] || (els[id] = stub()), querySelectorAll: () => [], addEventListener() {} };
-global.fetch = u => Promise.resolve({ ok: true, text: () => fs.readFileSync(DATA_DIR + "/senses.txt", "utf8"),
-  json: () => JSON.parse(fs.readFileSync(DATA_DIR + "/" + (String(u).includes("context") ? "context.json" : "index.json"), "utf8")) });
+global.fetch = u => { const p = DATA_DIR + "/" + String(u); return Promise.resolve(fs.existsSync(p) ? { ok: true, text: () => fs.readFileSync(p, "utf8"), json: () => JSON.parse(fs.readFileSync(p, "utf8")) } : { ok: false }); };
 global.performance = { now: () => 0 };
 eval(js);
 setTimeout(() => {
@@ -18,4 +17,4 @@ setTimeout(() => {
       out.push({ domain: g.domain, text: g.text, items: r.items.map(x => ({ original: x.original, state: x.state, choices: x.choices.slice(0, 6).map(c => S[c[0]][0]), reasons: x.reasons, notes: x.notes })), unknown: r.unknown });
     }
   process.stdout.write(JSON.stringify(out));
-}, 2500);
+}, 6000);

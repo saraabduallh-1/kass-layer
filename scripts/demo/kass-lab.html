@@ -330,6 +330,8 @@ summary { cursor: pointer; font-weight: 600 }
   // no long vowel at all (بدجت، بزنس): foreign only if no Arabic stem shows up once common endings/prefixes are removed (كتبت → كتب)
   const stems = w => [w, w.replace(/(ت|ن|نا|وا|ه|ها)$/, ""), w.replace(/^[وفبلك]/, "")].filter(x => x.length >= 3);
   const bareForeign = w => !native(w) && vowels(w) <= 1 && arSkel(w).length >= 4 && !stems(w).some(x => DATA.vocab[x] || DATA.vocab[bare(x)] || DATA.forms[x] || DATA.forms[bare(x)]);  // exact matches only
+  // a common word of the dictionaries' Arabic, not a listed transliteration (سولار)
+  const knownArabic = w => (DATA.vocab[bare(w)] || 0) >= 3 && !(DATA.forms[bare(w)] || []).some(r => r[2] === "t");
   const unseen = x => !(DATA.vocab[x] || DATA.vocab[bare(x)] || DATA.forms[x] || DATA.forms[bare(x)]);
   const arabicPattern = x => /^.ا..$/.test(x) || /^..اي.$/.test(x) || /^م.ا..$/.test(x);  // فاعل، فعايل، مفاعل
   const looksBorrowed = w => /^[a-z]{3,}$/.test(w) && !STOP.has(w)
@@ -363,6 +365,36 @@ summary { cursor: pointer; font-weight: 600 }
     return c;
   }
   const simTo = (i, c) => { const v = vecOf(i); let s = 0; for (let k = 0; k < 128; k++) s += v[k] * c[k]; return s / 127; };
+  // words.json + words.txt: how typical each word is of each domain, and its meaning vector (same space as senses.txt)
+  let WORDS = null, WORD_DOM = null, WORD_DOMS = null, WORD_VEC = null, WORD_GEN = null, GEN_TOTAL = 1;
+  const EVERYDAY_TYPICAL = 0.6;  // words around an everyday word must lean towards the chosen domain at least this much
+  const EVERYDAY_VOCAB = 10;     // a word seen this often in the dictionaries' Arabic is ordinary Arabic, not a borrowed form
+  const EVERYDAY_W = 6;          // weight of meaning-closeness when choosing the sense of an everyday word
+  const GENERAL_RATE = 6e-5;     // a one-word term this frequent in general articles is an ordinary word (يجب، مجموعة), not a term
+  function generalWord(term) {
+    const words = normalize(term.replace(/\([^)]*\)/g, " ")).split(" ").filter(Boolean);
+    if (words.length !== 1 || !WORD_GEN) return false;
+    const w = [...ctxWords(words[0])][0];
+    return w !== undefined && WORDS.has(w) && WORD_GEN[WORDS.get(w)] / GEN_TOTAL >= GENERAL_RATE;
+  }
+  function everydayEvidence(text, m, domainId, senses) {  // [typicality, closeness to each sense] of the text around an everyday word
+    if (!WORD_DOM) return [-9, null];
+    const own = ctxWords(text.slice(m.s, m.e));
+    const ids = [...ctxWords(text)].filter(w => !own.has(w) && WORDS.has(w)).map(w => WORDS.get(w));
+    if (!ids.length) return [-9, null];
+    const j = WORD_DOMS.indexOf(domainId), k = WORD_DOMS.length;
+    const typical = ids.reduce((a, i) => a + WORD_DOM[i * k + j], 0) / ids.length / 16;
+    let close = null;
+    if (WORD_VEC && VEC) {
+      const c = new Float64Array(128);
+      for (const i of ids) for (let d = 0; d < 128; d++) c[d] += WORD_VEC[i * 128 + d];
+      let n = 0; for (let d = 0; d < 128; d++) n += c[d] * c[d];
+      n = Math.sqrt(n) || 1;
+      for (let d = 0; d < 128; d++) c[d] /= n;
+      close = new Map(senses.map(sIdx => { const v = vecOf(sIdx); let s = 0; for (let d = 0; d < 128; d++) s += v[d] * c[d]; return [sIdx, s / 127]; }));
+    }
+    return [typical, close];
+  }
   let CTX = null;  // context.json: distinctive keywords per sense, loaded after the dictionaries
   const ctxWords = text => new Set((normalize(text).match(/[\u0621-\u064a]{3,}/g) || []).map(w => {
     w = w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
@@ -419,8 +451,8 @@ summary { cursor: pointer; font-weight: 600 }
     const found = []; let i = 0;
     const filt = rows => rows && allowed ? rows.filter(r => allowed.has(DATA.senses[r[0]][1])) : rows;
     while (i < tokens.length) {
-      let hit = null;
-      for (let n = Math.min(6, tokens.length - i); n >= 1 && !hit; n--) {
+      let hit = null, everyday = null;
+      for (let n = Math.min(6, tokens.length - i); n >= 1 && !hit && !(everyday && everyday.n > 1); n--) {
         const span = tokens.slice(i, i + n);
         if (span.some((t, j) => j > 0 && /\S/.test(text.slice(span[j - 1].e, t.s)))) continue;
         const rest = span.slice(1).map(t => t.n).join(" "), first = span[0].n;
@@ -430,8 +462,14 @@ summary { cursor: pointer; font-weight: 600 }
           const noAl = n > 1 ? key.split(" ").map(w => bare(w)).join(" ") : key;
           let rows = filt(DATA.forms[key]); if (!(rows && rows.length) && noAl !== key) rows = filt(DATA.forms[noAl]);
           if (rows && sufKind === "plural-en") rows = rows.filter(r => r[2] === "t");
-          if (rows && rows.length && n === 1 && !rows.some(r => r[1] & 4) && rows.every(r => !/[tfa]/.test(r[2]))
-              && /^[؀-ۿ]+$/.test(head) && (DATA.vocab[bare(head)] || 0) >= 25) rows = null; // everyday word, not a term
+          const words = [head, ...span.slice(1).map(t => t.n)];
+          // colloquial forms (c: دوام) are always worth replacing, so they stay ordinary matches
+          if (rows && rows.length && !rows.some(r => r[1] & 4) && rows.every(r => !/[tfac]/.test(r[2]))
+              && words.every(w => /^[؀-ۿ]+$/.test(w) && (STOP.has(w) || (DATA.vocab[bare(w)] || 0) >= EVERYDAY_VOCAB)) && !words.every(w => STOP.has(w))) {
+            // everyday Arabic word or phrase (عميل، على الهواء): a term only when the context says so, decided in analyse()
+            if (!everyday) everyday = { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: words.join(""), rows, how: "everyday" };
+            rows = null;
+          }
           if (rows && rows.length) { hit = { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: [head, ...span.slice(1).map(t => t.n)].join(""), rows, how: "dict" }; break; }
         }
       }
@@ -452,7 +490,8 @@ summary { cursor: pointer; font-weight: 600 }
           const word = [head, ...span.slice(1).map(t => t.n)].join("");
           // in a phrase the first word may itself be a known transliteration (سولار); judge its letters, and the phrase as a whole
           const strictOnly = n === 1 && !foreignLooking(head) && bareForeign(head);
-          const headOk = n === 1 ? foreignLooking(head) || strictOnly : !NATIVE.test(head) && !STOP.has(head) && !verbShape(head) && vowels(head) + arSkel(head).length >= 3;
+          const headOk = n === 1 ? foreignLooking(head) || strictOnly : !NATIVE.test(head) && !STOP.has(head) && !verbShape(head) && vowels(head) + arSkel(head).length >= 3
+            && (PARTICLES.has(bare(head)) || !knownArabic(head));  // «الطيار أنهى» is not «late turn»
           if (!headOk || (n > 1 && !foreignLooking(word))) continue;
           const ph = phonetic(word, allowed, n, false, n > 1 && PARTICLES.has(bare(head)));
           if (!ph || (strictOnly && ph.how !== "exact")) continue;
@@ -469,7 +508,7 @@ summary { cursor: pointer; font-weight: 600 }
         }
         if (bestPh) hit = bestPh.hit;
       }
-      if (!hit) hit = dictHit;
+      if (!hit) hit = dictHit || everyday;
       if (hit && hit.how === "dict") {
         const w = hit.head;
         if (/^[؀-ۿ]+$/.test(w) && foreignLooking(w)) {
@@ -488,6 +527,7 @@ summary { cursor: pointer; font-weight: 600 }
     const tokens = tokenize(text), matches = findMatches(tokens, text, allowed);
     const score = new Map();
     for (const m of matches) {
+      if (m.how === "everyday") continue;
       const stdOnly = m.rows.every(r => r[1] & 4), w = stdOnly ? (m.n > 1 ? 0.6 : 0.25) : 1;
       const dicts = new Set(m.rows.map(r => DATA.senses[r[0]][1]));
       for (const d of dicts) score.set(d, (score.get(d) || 0) + w / dicts.size);
@@ -497,36 +537,48 @@ summary { cursor: pointer; font-weight: 600 }
     const top3 = new Set(ranked.slice(0, 3).map(r => r[0]));
     const textWords = ctxWords(text);
     // the meaning of each match: its sense when unambiguous, else the average of its senses
-    const matchRows = matches.map(m => [...new Set(m.rows.map(r => r[0]))].slice(0, 12));
+    const matchRows = matches.map(m => m.how === "everyday" ? [] : [...new Set(m.rows.map(r => r[0]))].slice(0, 12));
     const items = matches.map((m, mi) => {
       const anchors = matchRows.flatMap((rows, j) => j === mi || (matches[j].s < m.e && matches[j].e > m.s) ? [] : rows.length <= 3 ? rows : []);
       const ctxVec = centroid(anchors);
       const inDomain = m.rows.filter(r => DATA.senses[r[0]][1] === domain);
-      const pool = m.rows;  // every dictionary of the chosen domain; the nearest dictionary only adds to the ranking
+      let wordSims = null;
+      if (m.how === "everyday") {
+        const rows = m.rows.filter(r => !generalWord(DATA.senses[r[0]][0]));
+        const [typical, close] = everydayEvidence(text, m, current, rows.map(r => r[0]));
+        if (!rows.length || typical < EVERYDAY_TYPICAL) return null;
+        wordSims = close; m = { ...m, rows };
+      }
+      if (m.how === "everyday" && m.rows.some(r => sameTerm(text.slice(m.s, m.e), DATA.senses[r[0]][0]))) return null;  // already the term, in another form
       const isStd = m.rows.some(r => r[1] & 4); // a standard term somewhere in the chosen domain: leave it
       if (isStd && m.n === 1 && !inDomain.length) return null;
       const byTerm = new Map();
       const allKey = t => normalize(t.replace(/\([^)]*\)/g, " ")).split(" ").map(w => bare(w)).join(" ");
-      for (const r of pool) { const k = allKey(DATA.senses[r[0]][0]); if (!byTerm.has(k) || (r[1] & 1 && !(byTerm.get(k)[1] & 1))) byTerm.set(k, r); }
-      const surf = (() => { const p = m.head || ""; return /^[؀-ۿ]+$/.test(p) ? arSkel(p) : (/^[a-z0-9.\- ]+$/.test(p) ? enSkels(p)[0] : ""); })();
+      // candidates from every dictionary of the chosen domain; the nearest dictionary only adds to the ranking
+      for (const r of m.rows) { const k = allKey(DATA.senses[r[0]][0]); if (!byTerm.has(k) || (r[1] & 1 && !(byTerm.get(k)[1] & 1))) byTerm.set(k, r); }
+      const everyday = m.how === "everyday";  // an Arabic word: no sound match, and its sense comes from the words around it
+      const surf = everyday ? "" : (() => { const p = m.head || ""; return /^[؀-ۿ]+$/.test(p) ? arSkel(p) : (/^[a-z0-9.\- ]+$/.test(p) ? enSkels(p)[0] : ""); })();
       const rank = r => {
         const sense = DATA.senses[r[0]], en = (sense[2] || "").replace(/\([^)]*\)/g, " ");
         let sound = 0;
         if (surf && en) for (const sk of enSkels(en)) sound = Math.max(sound, 1 - lev(surf, sk) / Math.max(surf.length, sk.length, 1));
         const acr = m.how === "acronym" && new RegExp("\\(" + m.head + "s?\\)|^" + m.head + "$", "i").test(sense[2] || "") ? 1 : 0;
-        const ctx = contextScore(r[0], textWords, ctxWords(text.slice(m.s, m.e)));
+        const ctx = everyday ? 0 : contextScore(r[0], textWords, ctxWords(text.slice(m.s, m.e)));
         return acr + ctx + sound * 2 + (r[1] & 1 ? 0.3 : 0) + (sense[1] === domain ? 0.3 : top3.has(sense[1]) ? 0.1 : 0) - sense[0].length / 200;
       };
-      const sims = ctxVec ? new Map([...byTerm.values()].map(r => [r[0], simTo(r[0], ctxVec)])) : null;
+      // meaning closeness: to the other terms found; for an everyday word, to all the words around it
+      const sims = wordSims && wordSims.size ? wordSims : ctxVec ? new Map([...byTerm.values()].map(r => [r[0], simTo(r[0], ctxVec)])) : null;
       const meanSim = sims ? [...sims.values()].reduce((a, b) => a + b, 0) / sims.size : 0;
-      const rank0 = rank, rankM = r => rank0(r) + (sims ? (sims.get(r[0]) - meanSim) * EMB_W : 0);
+      const wSim = everyday ? EVERYDAY_W : EMB_W;
+      const rank0 = rank, rankM = r => rank0(r) + (sims ? (sims.get(r[0]) - meanSim) * wSim : 0);
       const choices = [...byTerm.values()].sort((a, b) => rankM(b) - rankM(a)), best = choices[0], reasons = [];
       if (choices.length > 1 && rankM(choices[0]) - rankM(choices[1]) < 0.5) reasons.push("يحتمل أكثر من مصطلح");
       if (best[1] & 2) reasons.push("له معنى آخر شائع في الاستعمال اليومي");
       if (m.how === "near") reasons.push("كتابة قريبة من صيغة معروفة، تحقّق منها");
+      if (m.how === "everyday") reasons.push("كلمة عامة لها مصطلح تخصصي في هذا السياق");
       const notes = [];
       if (m.how === "acronym") notes.push(`اختصار مكتوب بأسماء الحروف (${m.head.toUpperCase()})`);
-      else if (m.how !== "dict") notes.push("اكتُشفت بالمطابقة الصوتية مع الصيغة الإنجليزية");
+      else if (m.how !== "dict" && m.how !== "everyday") notes.push("اكتُشفت بالمطابقة الصوتية مع الصيغة الإنجليزية");
       if (m.sufKind === "plural" || m.sufKind === "plural-en") notes.push("وردت بصيغة الجمع، فراجع صيغة المصطلح بعد الاستبدال");
       return { m, original: text.slice(m.s, m.e), state: isStd ? "std" : reasons.length ? "review" : "replace", sense: DATA.senses[best[0]], best, choices, reasons, notes };
     }).filter(Boolean);
@@ -544,6 +596,12 @@ summary { cursor: pointer; font-weight: 600 }
       unknown.push({ word, domains });
     }
     return { tokens, items, ranked, total, domain, unknown };
+  }
+
+  const lightStem = w => { w = bare(w); return w.length > 4 ? w.replace(/(ات|ين|ون|يه|ه|ي)$/, "") : w; };
+  function sameTerm(original, term) {  // the text already uses the term, only in another form (الشبكات العصبية / شبكة عصبية)
+    const a = normalize(original).split(" ").map(lightStem), b = normalize(term.replace(/\([^)]*\)/g, " ")).split(" ").map(lightStem);
+    return a.length === b.length && a.every((x, i) => Math.min(x.length, b[i].length) >= 3 && (x.startsWith(b[i]) || b[i].startsWith(x)));
   }
 
   function adaptArticle(term, prefix, original) {
@@ -689,6 +747,12 @@ summary { cursor: pointer; font-weight: 600 }
       const raw = atob(t.replace(/\s+/g, "")), v = new Int8Array(raw.length);
       for (let i = 0; i < raw.length; i++) v[i] = raw.charCodeAt(i);
       if (v.length === DATA.senses.length * 128) { VEC = v; if (LAST.text) run(); }
+    }).catch(() => {});
+    fetch("words.json").then(r => r.ok ? r.json() : null).then(w => {
+      if (!w) return;
+      const b64 = t => { const raw = atob(t.replace(/\s+/g, "")), v = new Int8Array(raw.length); for (let i = 0; i < raw.length; i++) v[i] = raw.charCodeAt(i); return v; };
+      WORDS = new Map(w.words.map((x, i) => [x, i])); WORD_DOMS = w.domains; WORD_DOM = b64(w.dom); WORD_GEN = w.gen || null; GEN_TOTAL = w.gen_total || 1;
+      fetch("words.txt").then(r => r.ok ? r.text() : null).then(t => { if (t) { const v = b64(t); if (v.length === WORDS.size * 128) WORD_VEC = v; } if (LAST.text) run(); }).catch(() => {});
     }).catch(() => {});
     fetch("context.json").then(r => r.ok ? r.json() : null).then(c => { if (c) { CTX = c.kw; if (LAST.text) run(); } }).catch(() => {});
     const names = d.dictionaries.map(n => normalize(n));

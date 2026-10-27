@@ -12,3 +12,6 @@ data/embeddings/
 
 # local demo copy (published from the gh-pages branch)
 demo_local/
+
+# Wikipedia corpus for word statistics (rebuild with scripts/corpus/fetch_wikipedia.py)
+data/corpus/

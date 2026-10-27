@@ -5,7 +5,7 @@ let js = html.split("<script>")[1].split("</script>")[0];
 js = js.replace("let EMB_W = 2", "let EMB_W = " + (process.env.EMB_W || 2)); js = js.replace(/\}\)\(\);\s*$/, "globalThis.__sense = r => DATA.senses[r[0]][0]; globalThis.K = { analyse, setDomain: id => { current = id }, termKey, normalize }; })();");
 const stub = () => ({ addEventListener() {}, textContent: "", innerHTML: "", hidden: true, disabled: true, value: "", classList: { add() {}, remove() {} }, style: {} });
 const els = {}; global.document = { getElementById: id => els[id] || (els[id] = stub()), querySelectorAll: () => [], addEventListener() {} };
-global.fetch = u => Promise.resolve({ ok: true, text: () => fs.readFileSync(__dirname + "/../../../demo_local/senses.txt", "utf8"), json: () => JSON.parse(fs.readFileSync(__dirname + "/../../../demo_local/" + (String(u).includes("context") ? "context.json" : "index.json"), "utf8")) });
+global.fetch = u => { const p = __dirname + "/../../../demo_local" + "/" + String(u); return Promise.resolve(fs.existsSync(p) ? { ok: true, text: () => fs.readFileSync(p, "utf8"), json: () => JSON.parse(fs.readFileSync(p, "utf8")) } : { ok: false }); };
 global.performance = { now: () => 0 }; global.matchMedia = () => ({ matches: false });
 eval(js);
 setTimeout(() => {
@@ -34,4 +34,4 @@ setTimeout(() => {
     console.log("\nWRONG:\n  " + wrongs.join("\n  "));
     console.log("\nEXTRA:\n  " + extras.join("\n  "));
   }
-}, 2500);
+}, 6000);

@@ -66,6 +66,14 @@ Data (`KASS_DATA_DIR`, default `demo_local/`): `index.json`, `context.json`, `se
 `POST /analyse {"text", "domain"}` → items (position, state replace/review/std, suggestion, choices, reasons),
 `unknown` borrowed-looking words, `suggested_text` (confident replacements only). Also `GET /domains`, `GET /health`.
 Keep page and Python in step: `scripts/demo/tests/parity.py` must report every gold sentence identical.
+Everyday Arabic words (عميل → وكيل, التوقع → تنبؤ, القضية → الدعوى) are proposed (state review) only when the words
+around them lean towards the chosen domain: `words.json`/`words.txt` from `scripts/demo/build_word_index.py`, built on
+~3,540 Arabic Wikipedia articles (`scripts/corpus/fetch_wikipedia.py --per-domain 500`: 500 per domain + ~1,500
+general) plus the dictionary definitions. One-word terms common in general articles (يجب، مجموعة) are never proposed
+this way, nor a term the text already uses in another form (الشبكات العصبية / شبكة عصبية); colloquial forms (دوام) are
+always ordinary matches. Remaining errors come mostly from weak everyday→term pairs in the enrichment data
+(e.g. بحضور → المواظبة): next step is an audit of those ~11k pairs.
+Gold sets for this: `gold-arabic-tuning.json`, `gold-arabic-heldout.json`; Python scores: `tests/run_tests.py`.
 Live demo page: https://saraabduallh-1.github.io/kass-layer/ (branch `gh-pages`).
 
 ## Office PC setup (Windows 11, RTX 3080 10 GB, Python 3.11)

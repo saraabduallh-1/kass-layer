@@ -166,6 +166,19 @@ class Detector:
             v = np.frombuffer(base64.b64decode("".join(vec.read_text().split())), dtype=np.int8)
             if v.size == len(self.senses) * 128:
                 self.vec = v.reshape(-1, 128)
+        self.words, self.word_dom, self.word_vec = {}, None, None
+        wj = data_dir / "words.json"
+        if wj.exists():
+            w = json.loads(wj.read_text(encoding="utf-8"))
+            self.words = {x: i for i, x in enumerate(w["words"])}
+            self.word_doms = w["domains"]
+            self.word_dom = np.frombuffer(base64.b64decode(w["dom"]), dtype=np.int8).reshape(-1, len(w["domains"]))
+            self.word_gen, self.gen_total = w.get("gen"), w.get("gen_total") or 1
+            wv = data_dir / "words.txt"
+            if wv.exists():
+                v = np.frombuffer(base64.b64decode("".join(wv.read_text().split())), dtype=np.int8)
+                if v.size == len(self.words) * 128:
+                    self.word_vec = v.reshape(-1, 128)
         names = [normalize(n) for n in self.dictionaries]
         self.domains = [dict(dom, dicts={i for i, n in enumerate(names) if any(normalize(k) in n for k in dom["keys"])}) for dom in DOMAINS]
         self._build_phon()
@@ -184,6 +197,10 @@ class Detector:
 
     def unseen(self, x: str) -> bool:
         return not (self.vocab.get(x) or self.vocab.get(bare(x)) or self.forms.get(x) or self.forms.get(bare(x)))
+
+    def known_arabic(self, w: str) -> bool:  # a common word of the dictionaries' Arabic, not a listed transliteration (سولار)
+        b = bare(w)
+        return self.vocab.get(b, 0) >= 3 and not any(r[2] == "t" for r in self.forms.get(b, []))
 
     def bare_foreign(self, w: str) -> bool:  # no long vowel (بدجت، بزنس): foreign only if no Arabic stem shows up (كتبت → كتب)
         return not self.native(w) and vowels(w) <= 1 and len(ar_skel(w)) >= 4 and all(self.unseen(x) for x in stems(w))
@@ -302,9 +319,9 @@ class Detector:
         found, i = [], 0
         filt = lambda rows: [r for r in rows if self.senses[r[0]][1] in allowed] if rows and allowed is not None else rows
         while i < len(tokens):
-            hit = None
+            hit, everyday = None, None
             for n in range(min(6, len(tokens) - i), 0, -1):
-                if hit:
+                if hit or (everyday and everyday["n"] > 1):
                     break
                 span = tokens[i:i + n]
                 if any(gap(text, span[j - 1], span[j]) for j in range(1, n)):
@@ -320,9 +337,16 @@ class Detector:
                         rows = filt(self.forms.get(no_al))
                     if rows and suf_kind == "plural-en":
                         rows = [r for r in rows if r[2] == "t"]
-                    if rows and n == 1 and not any(r[1] & 4 for r in rows) and all(not re.search("[tfa]", r[2]) for r in rows) \
-                            and ARABIC_WORD.search(head) and self.vocab.get(bare(head), 0) >= 25:
-                        rows = None  # everyday word, not a term
+                    words = [head] + [t["n"] for t in span[1:]]
+                    # colloquial forms (c: دوام) are always worth replacing, so they stay ordinary matches
+                    if rows and not any(r[1] & 4 for r in rows) and all(not re.search("[tfac]", r[2]) for r in rows) \
+                            and all(ARABIC_WORD.search(w) and (w in STOP or self.vocab.get(bare(w), 0) >= self.EVERYDAY_VOCAB) for w in words) \
+                            and not all(w in STOP for w in words):
+                        # everyday Arabic word or phrase (عميل، على الهواء): a term only when the context says so, decided in analyse()
+                        if everyday is None:
+                            everyday = {"n": n, "s": span[0]["s"], "e": span[-1]["e"], "prefix": prefix, "suffix": suffix, "sufKind": suf_kind,
+                                        "head": "".join(words), "rows": rows, "how": "everyday"}
+                        rows = None
                     if rows:
                         hit = {"n": n, "s": span[0]["s"], "e": span[-1]["e"], "prefix": prefix, "suffix": suffix, "sufKind": suf_kind,
                                "head": "".join([head] + [t["n"] for t in span[1:]]), "rows": rows, "how": "dict"}
@@ -355,7 +379,8 @@ class Detector:
                     # in a phrase the first word may itself be a known transliteration (سولار); judge its letters, and the phrase as a whole
                     strict_only = n == 1 and not self.foreign_looking(head) and self.bare_foreign(head)
                     head_ok = (self.foreign_looking(head) or strict_only) if n == 1 else \
-                        not NATIVE.search(head) and head not in STOP and not verb_shape(head) and vowels(head) + len(ar_skel(head)) >= 3
+                        not NATIVE.search(head) and head not in STOP and not verb_shape(head) and vowels(head) + len(ar_skel(head)) >= 3 \
+                        and (bare(head) in PARTICLES or not self.known_arabic(head))  # «الطيار أنهى» is not «late turn»
                     if not head_ok or (n > 1 and not self.foreign_looking(word)):
                         continue
                     ph = self.phonetic(word, allowed, n, False, n > 1 and bare(head) in PARTICLES)
@@ -375,7 +400,7 @@ class Detector:
                 if best_ph:
                     hit = best_ph[1]
             if not hit:
-                hit = dict_hit
+                hit = dict_hit or everyday
             if hit and hit["how"] == "dict":
                 w = hit["head"]
                 if ARABIC_WORD.search(w) and self.foreign_looking(w):
@@ -407,6 +432,35 @@ class Detector:
         sc = sum(math.log(40102 / max(1, self.vocab.get(w, 0) or 1)) for w in self.ctx[sense_idx].split(" ") if w and w in words and w not in own)
         return min(1.5, sc / 6)
 
+    EVERYDAY_TYPICAL = 0.6  # context words must lean towards the chosen domain at least this much (mean log-odds)
+    EVERYDAY_VOCAB = 10     # a word seen this often in the dictionaries' Arabic is ordinary Arabic, not a borrowed form
+    EVERYDAY_W = 6          # weight of meaning-closeness when choosing the sense of an everyday word
+    GENERAL_RATE = 6e-5     # a one-word term this frequent in general articles is an ordinary word (يجب، مجموعة), not a term
+
+    def general_word(self, term: str) -> bool:
+        words = normalize(re.sub(r"\([^)]*\)", " ", term)).split()
+        if len(words) != 1 or not self.word_gen:
+            return False
+        w = next(iter(ctx_words(words[0])), None)
+        return w in self.words and self.word_gen[self.words[w]] / self.gen_total >= self.GENERAL_RATE
+
+    def everyday_evidence(self, text: str, m: dict, domain_id: str, senses: list[int]) -> tuple[float, dict]:
+        """How strongly the text around an everyday word leans to the domain, and how close its meaning is to each sense."""
+        if self.word_dom is None:
+            return (-9.0, {})
+        own = ctx_words(text[m["s"]:m["e"]])
+        ids = [self.words[w] for w in ctx_words(text) if w not in own and w in self.words]
+        if not ids:
+            return (-9.0, {})
+        j = self.word_doms.index(domain_id)
+        typical = float(self.word_dom[ids, j].astype(np.float64).mean()) / 16
+        close = {}
+        if self.word_vec is not None and self.vec is not None:
+            c = self.word_vec[ids].astype(np.float64).sum(axis=0)
+            c /= (np.linalg.norm(c) or 1)
+            close = {i: float(self.vec[i].astype(np.float64) @ c) / 127 for i in senses}
+        return (typical, close)
+
     def analyse(self, text: str, domain_id: str = "tech") -> dict:
         dom = next(d for d in self.domains if d["id"] == domain_id)
         allowed = dom["dicts"]
@@ -414,6 +468,8 @@ class Detector:
         matches = self.find_matches(tokens, text, allowed)
         score: dict[int, float] = {}
         for m in matches:
+            if m["how"] == "everyday":
+                continue
             std_only = all(r[1] & 4 for r in m["rows"])
             w = (0.6 if m["n"] > 1 else 0.25) if std_only else 1
             dicts = list(dict.fromkeys(self.senses[r[0]][1] for r in m["rows"]))
@@ -425,7 +481,7 @@ class Detector:
         top3 = {d for d, _ in ranked[:3]}
         text_words = ctx_words(text)
         # the meaning of each match: its sense when unambiguous, else the average of its senses
-        match_rows = [list(dict.fromkeys(r[0] for r in m["rows"]))[:12] for m in matches]
+        match_rows = [[] if m["how"] == "everyday" else list(dict.fromkeys(r[0] for r in m["rows"]))[:12] for m in matches]
         all_key = lambda t: " ".join(bare(w) for w in normalize(re.sub(r"\([^)]*\)", " ", t)).split(" "))
         items = []
         for mi, m in enumerate(matches):
@@ -433,6 +489,15 @@ class Detector:
                        if not (j == mi or (matches[j]["s"] < m["e"] and matches[j]["e"] > m["s"])) and len(rows) <= 3 for x in rows]
             ctx_vec = self.centroid(anchors)
             in_domain = [r for r in m["rows"] if self.senses[r[0]][1] == domain]
+            word_sims = None
+            if m["how"] == "everyday":
+                rows = [r for r in m["rows"] if not self.general_word(self.senses[r[0]][0])]
+                typical, word_sims = self.everyday_evidence(text, m, domain_id, [r[0] for r in rows])
+                if not rows or typical < self.EVERYDAY_TYPICAL:
+                    continue
+                m = dict(m, rows=rows)
+            if m["how"] == "everyday" and any(same_term(text[m["s"]:m["e"]], self.senses[r[0]][0]) for r in m["rows"]):
+                continue  # already the term, in another form
             is_std = any(r[1] & 4 for r in m["rows"])  # a standard term somewhere in the chosen domain: leave it
             if is_std and m["n"] == 1 and not in_domain:
                 continue
@@ -442,7 +507,8 @@ class Detector:
                 if k not in by_term or (r[1] & 1 and not by_term[k][1] & 1):
                     by_term[k] = r
             p = m.get("head") or ""
-            surf = ar_skel(p) if ARABIC_WORD.search(p) else (en_skels(p)[0] if re.search(r"^[a-z0-9.\- ]+$", p) else "")
+            everyday = m["how"] == "everyday"  # an Arabic word: no sound match, and its sense comes from the words around it
+            surf = "" if everyday else ar_skel(p) if ARABIC_WORD.search(p) else (en_skels(p)[0] if re.search(r"^[a-z0-9.\- ]+$", p) else "")
             own = ctx_words(text[m["s"]:m["e"]])
 
             def rank(r):
@@ -453,13 +519,15 @@ class Detector:
                     for sk in en_skels(en):
                         sound = max(sound, sim(surf, sk))
                 acr = 1 if m["how"] == "acronym" and re.search(r"\(" + m["head"] + r"s?\)|^" + m["head"] + "$", sense[2] or "", re.I) else 0
-                ctx = self.context_score(r[0], text_words, own)
+                ctx = 0 if everyday else self.context_score(r[0], text_words, own)
                 return acr + ctx + sound * 2 + (0.3 if r[1] & 1 else 0) + (0.3 if sense[1] == domain else 0.1 if sense[1] in top3 else 0) - len(sense[0]) / 200
 
             vals = list(by_term.values())
-            sims = {r[0]: self.sim_to(r[0], ctx_vec) for r in vals} if ctx_vec is not None else None
+            # meaning closeness: to the other terms found; for an everyday word, to all the words around it
+            sims = word_sims or ({r[0]: self.sim_to(r[0], ctx_vec) for r in vals} if ctx_vec is not None else None)
             mean_sim = sum(sims.values()) / len(sims) if sims else 0
-            scores = {id(r): rank(r) + ((sims[r[0]] - mean_sim) * self.EMB_W if sims else 0) for r in vals}
+            w_sim = self.EVERYDAY_W if everyday else self.EMB_W
+            scores = {id(r): rank(r) + ((sims[r[0]] - mean_sim) * w_sim if sims else 0) for r in vals}
             choices = sorted(vals, key=lambda r: -scores[id(r)])
             best, reasons = choices[0], []
             if len(choices) > 1 and scores[id(choices[0])] - scores[id(choices[1])] < 0.5:
@@ -468,10 +536,12 @@ class Detector:
                 reasons.append("له معنى آخر شائع في الاستعمال اليومي")
             if m["how"] == "near":
                 reasons.append("كتابة قريبة من صيغة معروفة، تحقّق منها")
+            if m["how"] == "everyday":
+                reasons.append("كلمة عامة لها مصطلح تخصصي في هذا السياق")
             notes = []
             if m["how"] == "acronym":
                 notes.append(f"اختصار مكتوب بأسماء الحروف ({m['head'].upper()})")
-            elif m["how"] != "dict":
+            elif m["how"] not in ("dict", "everyday"):
                 notes.append("اكتُشفت بالمطابقة الصوتية مع الصيغة الإنجليزية")
             if m["sufKind"] in ("plural", "plural-en"):
                 notes.append("وردت بصيغة الجمع، فراجع صيغة المصطلح بعد الاستبدال")
@@ -488,6 +558,19 @@ class Detector:
             elsewhere = {self.senses[r[0]][1] for m in self.find_matches([dict(t, s=0, e=len(word))], word, None) for r in m["rows"]}
             unknown.append({"word": word, "domains": [d["label"] for d in self.domains if d["id"] != domain_id and elsewhere & d["dicts"]]})
         return {"tokens": tokens, "items": items, "ranked": ranked, "total": total, "domain": domain, "unknown": unknown}
+
+
+def light_stem(w: str) -> str:
+    w = bare(w)
+    return re.sub("(ات|ين|ون|يه|ه|ي)$", "", w) if len(w) > 4 else w
+
+
+def same_term(original: str, term: str) -> bool:
+    """The text already uses the term, only in another form (الشبكات العصبية / شبكة عصبية, وسائل الإعلام / وسائل إعلامية)."""
+    a = [light_stem(w) for w in normalize(original).split()]
+    b = [light_stem(w) for w in normalize(re.sub(r"\([^)]*\)", " ", term)).split()]
+    return len(a) == len(b) and all(x.startswith(y) or y.startswith(x) for x, y in zip(a, b) if min(len(x), len(y)) >= 3) \
+        and all(min(len(x), len(y)) >= 3 for x, y in zip(a, b))
 
 
 def adapt_article(term: str, prefix: str, original: str) -> str:
