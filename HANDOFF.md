@@ -76,6 +76,19 @@ always ordinary matches. Remaining errors come mostly from weak everyday→term 
 Gold sets for this: `gold-arabic-tuning.json`, `gold-arabic-heldout.json`; Python scores: `tests/run_tests.py`.
 Live demo page: https://saraabduallh-1.github.io/kass-layer/ (branch `gh-pages`).
 
+## Next (2026-10-28, office PC): everyday-Arabic enrichment pass 3
+Goal (user): for every specialist term, the everyday Arabic word writers use instead (عميل → وكيل, غلاء الأسعار → تضخم).
+Done by hand so far: `scripts/enrich/topic_pass.py` + decision files in `data/dictionaries/enriched/variants/topic/`
+(~70 forms over the 1,128 most-used terms; most common words were already covered by passes 1–2).
+Plan on the PC (Gemma proposes, Claude reviews in small batches, as in pass 2):
+1. Proposals: Gemma 3 12B gives, per term (term + definition + English), everyday Arabic words used with the same
+   meaning in reports/articles; deterministic filters (Arabic script, not the term or an existing form, not another
+   sense's standard term). Start with the dictionaries of the six demo domains; skip generic words defined per law.
+2. Review: Claude keeps only real same-meaning usage → `topic_pass.py <dict> <file>`.
+3. Audit of weak everyday→term pairs from pass 1 (~11k, e.g. بحضور → المواظبة, ملحن → مفاتيح الضبط): Gemma yes/no +
+   review; drop rejected pairs (needs a withdraw path for non-topic forms — add it to topic_pass.py first).
+4. Then rebuild `build_demo_index.py demo_local`, run `scripts/demo/tests/run_tests.py` and `parity.py`, update gh-pages.
+
 ## Office PC setup (Windows 11, RTX 3080 10 GB, Python 3.11)
 ```
 git clone -b enrichment-pass1 https://github.com/saraabduallh-1/kass-layer.git
