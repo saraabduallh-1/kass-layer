@@ -1,0 +1,5 @@
+# Term detector API (src/kass_layer/detector). Free and CPU-only: no GPU, no model at query time.
+numpy>=1.26
+regex>=2024.0
+fastapi>=0.110
+uvicorn>=0.30

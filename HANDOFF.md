@@ -55,6 +55,19 @@ until an audit clears them. Qwen3.5-4B failed (invented forms; thinking mode nev
    Jev decision with thresholds (auto / ask user / skip; shared & ambiguous variants always ask), Qwen minimal edit,
    evaluation on real paragraphs. Test Jev on Arabic first; fallback = local Gemma as yes/no judge.
 
+## Term detector API (2026-10-26)
+`src/kass_layer/detector/engine.py` is a line-by-line port of the demo page's engine (`scripts/demo/kass-lab.html`);
+`api.py` serves it with FastAPI. CPU only, no model at query time: ~1 s load, ~200 MB RAM, 2–150 ms per sentence.
+Data (`KASS_DATA_DIR`, default `demo_local/`): `index.json`, `context.json`, `senses.txt` from `scripts/demo/build_*.py`.
+```
+.venv/bin/pip install -r requirements-api.txt
+.venv/bin/uvicorn kass_layer.detector.api:app --app-dir src --port 8000     (docs: /docs)
+```
+`POST /analyse {"text", "domain"}` → items (position, state replace/review/std, suggestion, choices, reasons),
+`unknown` borrowed-looking words, `suggested_text` (confident replacements only). Also `GET /domains`, `GET /health`.
+Keep page and Python in step: `scripts/demo/tests/parity.py` must report every gold sentence identical.
+Live demo page: https://saraabduallh-1.github.io/kass-layer/ (branch `gh-pages`).
+
 ## Office PC setup (Windows 11, RTX 3080 10 GB, Python 3.11)
 ```
 git clone -b enrichment-pass1 https://github.com/saraabduallh-1/kass-layer.git
