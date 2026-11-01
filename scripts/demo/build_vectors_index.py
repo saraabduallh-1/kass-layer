@@ -1,12 +1,13 @@
 """Pack EmbeddingGemma term vectors into a small binary for the demo: 128 dims (Matryoshka cut), int8.
 
   .venv/bin/python scripts/demo/build_vectors_index.py <out_dir>
-Reads data/embeddings/embeddinggemma-300m/ (kind=term rows) and writes <out_dir>/senses.vec: one 128-byte row per
-sense, in index.json order (matched by sense_id). Used only to rank candidate terms by closeness to the standard
+Reads data/embeddings/embeddinggemma-300m/ (kind=term rows) and writes <out_dir>/senses.vec and its base64 copy senses.txt
+(the one the page and engine read): one 128-byte row per sense, in index.json order (matched by sense_id). Used only to rank candidate terms by closeness to the standard
 terms already found in the text — no model runs when analysing. Senses without a vector get zeros.
 """
 from __future__ import annotations
 
+import base64
 import json
 import sys
 from pathlib import Path
@@ -37,6 +38,7 @@ def main(out_dir: str) -> None:
         found += 1
     path = Path(out_dir) / "senses.vec"
     path.write_bytes(out.tobytes())
+    (Path(out_dir) / "senses.txt").write_text(base64.b64encode(out.tobytes()).decode())
     print(f"{found}/{len(order)} senses with vectors, {path.stat().st_size / 1e6:.1f} MB")
 
 

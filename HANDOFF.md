@@ -10,6 +10,11 @@ The user works with Claude Code on the office PC from now on. Do, in order:
 Baseline to beat (`node scripts/demo/tests/run_tests.js <gold file>`, 2026-11-01):
 tuning 93.8/86.5 · heldout-1 81.0/63.0 · heldout-2 94.7/100 · ambiguity 71.4/58.8 · arabic-tuning 71.0/56.4 ·
 arabic-heldout 83.3/50.0 (recall/precision %); `parity.py` 212/212 identical.
+Baseline rebuilt on the office PC (2026-11-01), the one to compare with here (see `reports/pc_decisions.md`):
+tuning 93.8/84.9 · heldout-1 81.0/63.0 · heldout-2 94.7/100 · ambiguity 71.4/58.8 · arabic-tuning 67.7/53.8 ·
+arabic-heldout 83.3/52.6; parity 212/212. Audit tool: `scripts/enrich/audit_pairs.py` (Gemma yes/no, then Claude
+reviews the "no" answers and applies them with `topic_pass.py --audit`). Standing approval on the PC: push to
+`enrichment-pass1` without asking when the tests do not get worse; never to `main`.
 
 Arabic terminology layer: rewrites non-specialist Arabic text to the standard SIWAR dictionary terms,
 e.g. «المودل تدرب على بيانات» → «النموذج تدرب على بيانات».
