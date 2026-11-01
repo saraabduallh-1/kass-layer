@@ -1,0 +1,24 @@
+# خصص on arai.center (podman compose, same layout as the other apps). Image built on the server:
+#   cd ~/apps/kass && podman build --format docker -t kass:latest src && podman compose up -d
+# Joins siwar_default so the arai_center__nginx container reaches it as kass_app:8000 (deploy/kass.conf).
+name: kass
+
+networks:
+  siwar_default:
+    external: true
+
+services:
+  app:
+    image: localhost/kass:latest
+    container_name: kass_app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3945:8000"
+    networks:
+      - siwar_default
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=2)"]
+      interval: 30s
+      timeout: 3s
+      retries: 5
+      start_period: 20s

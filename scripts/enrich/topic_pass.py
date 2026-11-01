@@ -4,7 +4,8 @@
 
 decisions.txt: one term per line,  <standard term> TAB <form|type|conf ; form|type|conf ...>
 (types and confidence as in session_review.py; lines starting with # are notes). A chunk "!form" withdraws a form
-that an earlier topic pass added to that term (forms from other passes cannot be removed this way). The forms are merged into the
+that an earlier topic pass added to that term; with --audit it may withdraw any wrong form (e.g. a weak pass-1 pair
+such as بحضور → المواظبة), listed in the row's "audit_withdrawn" (the older rows stay in the append-only file). The forms are merged into the
 term's current review (existing variants are kept, duplicates skipped) and everything is finalized. Original
 term files are never touched. Refuses a form that is already the standard term of another sense in the dictionary.
 """
@@ -38,6 +39,7 @@ def main() -> None:
     ap.add_argument("dictionary")
     ap.add_argument("decisions")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--audit", action="store_true", help='"!form" may withdraw forms from any pass, not only topic passes')
     args = ap.parse_args()
     dictionary = next((d for d in complete_dictionaries() if d["dictionary_id"].startswith(args.dictionary)), None)
     if dictionary is None:
@@ -64,9 +66,15 @@ def main() -> None:
         row = rows.get(sense_id) or dict(reviews[sense_id], variants=list(reviews[sense_id].get("variants") or []))
         withdraw = {normalize(c.strip()[1:]) for c in text.split(";") if c.strip().startswith("!")}
         mine = {normalize(f) for f in row.get("topic_pass_added", [])}
-        for key in withdraw - mine:
-            problems.append(f"{term}: {key} was not added by a topic pass, kept")
-        withdraw &= mine
+        present = {normalize(v["form"]) for v in row["variants"]}
+        for key in withdraw - present:
+            problems.append(f"{term}: {key} is not a form of this term")
+        allowed = present if args.audit else mine
+        for key in (withdraw & present) - allowed:
+            problems.append(f"{term}: {key} was not added by a topic pass, kept (use --audit)")
+        withdraw &= allowed
+        row["audit_withdrawn"] = row.get("audit_withdrawn", []) + [v["form"] for v in row["variants"]
+                                                                   if normalize(v["form"]) in withdraw - mine]
         row["variants"] = [v for v in row["variants"] if normalize(v["form"]) not in withdraw]
         row["topic_pass_added"] = [f for f in row.get("topic_pass_added", []) if normalize(f) not in withdraw]
         text = ";".join(c for c in text.split(";") if not c.strip().startswith("!"))
@@ -89,7 +97,9 @@ def main() -> None:
     for p in problems:
         print("  !", p)
     added = sum(len(r["topic_pass_added"]) for r in rows.values())  # this pass's forms on the touched terms
-    print(f"topic pass: {len(rows)} terms, {added} forms {'would be ' if args.dry_run else ''}added "
+    withdrawn = sum(len(r.get("audit_withdrawn", [])) for r in rows.values())
+    print(f"topic pass: {len(rows)} terms, {added} forms {'would be ' if args.dry_run else ''}added, "
+          f"{withdrawn} audit-withdrawn "
           f"in {dictionary['dictionary_name'].strip()}")
     if not args.dry_run and rows:
         append_jsonl(REVIEW_DIR / f"{dictionary['dictionary_id']}.jsonl", list(rows.values()))

@@ -4,10 +4,10 @@ const DATA_DIR = process.argv[2] || __dirname + "/../../../demo_local";
 const html = fs.readFileSync(__dirname + "/../kass-lab.html", "utf8");
 let js = html.split("<script>")[1].split("</script>")[0];
 js = js.replace(/\}\)\(\);\s*$/, "globalThis.K = { analyse, setDomain: id => { current = id }, D: () => DATA }; })();");
-const stub = () => ({ addEventListener() {}, textContent: "", innerHTML: "", hidden: true, disabled: true, value: "", classList: { add() {}, remove() {} }, style: {} });
-const els = {}; global.document = { getElementById: id => els[id] || (els[id] = stub()), querySelectorAll: () => [], addEventListener() {} };
+const stub = () => ({ addEventListener() {}, textContent: "", innerHTML: "", hidden: true, disabled: true, value: "", classList: { add() {}, remove() {} }, style: {}, setAttribute() {}, focus() {} });
+const els = {}; global.document = { getElementById: id => els[id] || (els[id] = stub()), querySelectorAll: () => [], addEventListener() {}, documentElement: { dataset: {} } };
 global.fetch = u => { const p = DATA_DIR + "/" + String(u); return Promise.resolve(fs.existsSync(p) ? { ok: true, text: () => fs.readFileSync(p, "utf8"), json: () => JSON.parse(fs.readFileSync(p, "utf8")) } : { ok: false }); };
-global.performance = { now: () => 0 };
+global.performance = { now: () => 0 }; global.matchMedia = () => ({ matches: false });
 eval(js);
 setTimeout(() => {
   const out = [];

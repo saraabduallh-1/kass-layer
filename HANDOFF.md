@@ -1,4 +1,15 @@
-# Handoff — Kass Layer (updated 2026-10-20)
+# Handoff — Kass Layer (updated 2026-11-01)
+
+## START HERE (office PC, 2026-11-01)
+The user works with Claude Code on the office PC from now on. Do, in order:
+1. `git pull` on branch `enrichment-pass1`, then the setup checks in "Office PC setup" below (skip what is already installed).
+2. Continue **"Next: everyday-Arabic enrichment pass 3"** below — first the audit of weak pass-1 pairs (step 3 there),
+   because it is what lowers the wrong suggestions users see today (precision 50% on `gold-arabic-heldout.json`),
+   then the proposals for new everyday forms (steps 1–2).
+3. After each dictionary: rebuild the page data, run the tests (step 4), report the numbers to the user, ask before pushing.
+Baseline to beat (`node scripts/demo/tests/run_tests.js <gold file>`, 2026-11-01):
+tuning 93.8/86.5 · heldout-1 81.0/63.0 · heldout-2 94.7/100 · ambiguity 71.4/58.8 · arabic-tuning 71.0/56.4 ·
+arabic-heldout 83.3/50.0 (recall/precision %); `parity.py` 212/212 identical.
 
 Arabic terminology layer: rewrites non-specialist Arabic text to the standard SIWAR dictionary terms,
 e.g. «المودل تدرب على بيانات» → «النموذج تدرب على بيانات».
@@ -74,7 +85,8 @@ this way, nor a term the text already uses in another form (الشبكات ال�
 always ordinary matches. Remaining errors come mostly from weak everyday→term pairs in the enrichment data
 (e.g. بحضور → المواظبة): next step is an audit of those ~11k pairs.
 Gold sets for this: `gold-arabic-tuning.json`, `gold-arabic-heldout.json`; Python scores: `tests/run_tests.py`.
-Live demo page: https://saraabduallh-1.github.io/kass-layer/ (branch `gh-pages`).
+Live site: **https://kass.arai.center** (academy server, see "Deployment"). The old GitHub Pages copy
+(`gh-pages`) is outdated — leave it, the server replaces it.
 
 ## Next (2026-10-28, office PC): everyday-Arabic enrichment pass 3
 Goal (user): for every specialist term, the everyday Arabic word writers use instead (عميل → وكيل, غلاء الأسعار → تضخم).
@@ -85,9 +97,32 @@ Plan on the PC (Gemma proposes, Claude reviews in small batches, as in pass 2):
    meaning in reports/articles; deterministic filters (Arabic script, not the term or an existing form, not another
    sense's standard term). Start with the dictionaries of the six demo domains; skip generic words defined per law.
 2. Review: Claude keeps only real same-meaning usage → `topic_pass.py <dict> <file>`.
-3. Audit of weak everyday→term pairs from pass 1 (~11k, e.g. بحضور → المواظبة, ملحن → مفاتيح الضبط): Gemma yes/no +
-   review; drop rejected pairs (needs a withdraw path for non-topic forms — add it to topic_pass.py first).
-4. Then rebuild `build_demo_index.py demo_local`, run `scripts/demo/tests/run_tests.py` and `parity.py`, update gh-pages.
+3. Audit of weak everyday→term pairs from pass 1 (~11k, e.g. بحضور → المواظبة, الكود → الشفرات المصدرية): Gemma yes/no +
+   review; drop rejected pairs with `topic_pass.py <dict> <file> --audit` and a chunk `!form` (done 2026-10-28:
+   withdrawn forms are listed in the row's `audit_withdrawn`; try `--dry-run` first). Judge in context: «الحضور» is a
+   fine form of المواظبة, only the sentence «بحضور المحامي» was wrong — drop a pair only when it is never the same meaning.
+   Keep Claude usage low: small batches, one dictionary at a time, Data & AI / Legal / Contracts first.
+4. Then rebuild `build_demo_index.py demo_local` (and `build_word_index.py` if words changed), run
+   `node scripts/demo/tests/run_tests.js <gold file>` for every gold set and `parity.py`, compare with the baseline at the
+   top. Copy `scripts/demo/kass-lab.html` to `demo_local/index.html` if the page changed. Push (after asking); the user
+   updates the live site from the Mac (see "Deployment").
+
+## Demo page and Deployment (2026-10-29)
+- Page source: `scripts/demo/kass-lab.html` (full HTML document). `demo_local/` (git-ignored) holds the built data and a
+  copy as `index.html`. UI: logo right, name left, dark/light toggle, clear button, every proposed term opens a
+  dropdown (choices + «إبقاء الكلمة الأصلية»); the result card shows the dictionary, English and definition of the
+  chosen term. Test harnesses in `scripts/demo/tests/*.js` stub the DOM (incl. theme) — keep them in step with the page.
+- Server: `ssh renad@arai.center` (no sudo, podman, shared network `siwar_default`; other apps live there — touch only
+  kass). One container `kass_app` = `Dockerfile` (FastAPI API + the page at `/`, `KASS_SERVE_PAGE=1`), compose file
+  `deploy/docker-compose.yml` (127.0.0.1:3945), nginx site `deploy/kass.conf` in `~/docker-nginx/conf.d/` (no-cache
+  header so updates show at once). Build context on the server: `~/apps/kass/src/` (Dockerfile, requirements-api.txt,
+  `src/kass_layer`, `demo_local`). Update:
+  ```
+  rsync -a demo_local/ renad@arai.center:apps/kass/src/demo_local/      (and src/kass_layer if the engine changed)
+  ssh renad@arai.center 'cd ~/apps/kass && podman build -q --format docker -t kass:latest src && podman compose up -d --force-recreate app'
+  ```
+  The SSH key lives on the user's Mac, so deployment is done from the Mac unless the user sets up a key on the PC.
+- Report for the academy: `reports/تقرير_طبقة_خصص.docx/.pdf` (Arabic progress report dated ١٧ جمادى الأولى ١٤٤٨ هـ).
 
 ## Office PC setup (Windows 11, RTX 3080 10 GB, Python 3.11)
 ```
@@ -110,6 +145,7 @@ QWEN_MODEL=gemma3:12b
 (The variable names say QWEN for history; any OpenAI-compatible endpoint works, including Ollama.)
 
 ## Working rules from the user
-- Ask before every git commit/push. Keys only in `.env`, never in chat.
+- Ask before every git commit/push. Keys only in `.env`, never in chat. Explain in Arabic; the user is learning.
+- Keep Claude usage low (small batches); heavy model work runs locally on the PC GPU (Gemma via Ollama).
 - Never modify the original term files. Delete unneeded files. Minimal user involvement.
 - Quality over quantity for every variant. Explain each step when teaching (the user wants to learn).

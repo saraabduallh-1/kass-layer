@@ -2,7 +2,7 @@
 
 Run:  .venv/bin/uvicorn kass_layer.detector.api:app --app-dir src --port 8000
 Data: KASS_DATA_DIR (default demo_local/) holding index.json, context.json, senses.txt.
-Docs: http://localhost:8000/docs
+Docs: http://localhost:8000/docs   (KASS_SERVE_PAGE=1 also serves the demo page at /)
 """
 
 from __future__ import annotations
@@ -77,3 +77,10 @@ def analyse(req: AnalyseRequest):
         "suggested_text": "".join(out),
         "ms": round((time.perf_counter() - t0) * 1000, 1),
     }
+
+
+# KASS_SERVE_PAGE=1 also serves the demo page and its data files from KASS_DATA_DIR at "/" (one container, no GitHub Pages)
+if os.environ.get("KASS_SERVE_PAGE") == "1":
+    from fastapi.staticfiles import StaticFiles
+
+    app.mount("/", StaticFiles(directory=DATA_DIR, html=True), name="page")
