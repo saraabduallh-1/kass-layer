@@ -2,14 +2,14 @@
   "dictionary_id": "94d205e3-6e93-4b6b-a245-1d5304b3ed7d",
   "dictionary_name": "معجم مصطلحات الطرق",
   "source_export": "data/dictionaries/exports/94d205e3-6e93-4b6b-a245-1d5304b3ed7d.json",
-  "generated_at": "2026-11-02T12:45:27.003139+00:00",
+  "generated_at": "2026-11-02T12:47:22.660545+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 387,
     "senses_reviewed": 387,
     "senses_with_variants": 387,
-    "variants_accepted": 567,
-    "variants_needing_review": 420
+    "variants_accepted": 568,
+    "variants_needing_review": 419
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -21628,10 +21628,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

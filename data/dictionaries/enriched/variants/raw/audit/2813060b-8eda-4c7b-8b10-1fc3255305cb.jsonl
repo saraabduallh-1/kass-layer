@@ -365,3 +365,120 @@
 {"sense_id":"c88e4f9f-a5fe-4d82-a9a1-7c63b3e3ac77:0","form":"كيلو في الساعة","term":"كيلومتر  في الساعة (كم/س)","english":"Kilometres per Hour (km/h)","definition":"وحدة قياس السرعة في النظام المتري.","same_meaning":false,"relation":"broader","reason":"كيلو في الساعة لا تحدد الوحدة بشكل كامل، وقد تشير إلى مسافة كبيرة في الساعة بشكل عام.","model":"gemma3:12b","prompt":2}
 {"sense_id":"5b6a5c4c-c848-466f-b9df-0de1d242e433:0","form":"مصفوفة المسؤوليات","term":"مصفوفة الصلاحيات RACI","english":"RACI (RACI Matrix)","definition":"أداة إدارية تنظيمية تُستخدم لتحديد الأدوار والمسؤوليات وتوزيعها في تنفيذ الأنشطة أو العمليات، بحيث توضح لكل مهمة، وتهدف المصفوفة إلى تعزيز وضوح الصلاحيات، منع تضارب المسؤوليات، تحسين الحوكمة والتنسيق المؤسسي.","same_meaning":true,"relation":"exact","reason":"مصفوفة المسؤوليات هي الاسم الشائع لمصفوفة RACI، وتعكس نفس الوظيفة والهدف.","model":"gemma3:12b","prompt":2}
 {"sense_id":"0f048bb6-74d6-46a5-8e89-b926a5c5099f:0","form":"خط جانبي","term":"تخزين (خط جانبي)","english":"Siding","definition":"خط ثانوي متفرع يستخدم لترتيب أو إيواء أو تحميل أو تفريغ أو صيانة العربات بعيدًا عن الخطوط الحديدية الرئيسية.","same_meaning":true,"relation":"exact","reason":"الكلمة اليومية تعبر عن نفس المفهوم الأساسي للمصطلح.","model":"gemma3:12b","prompt":2}
+{"sense_id":"a7e9f4fa-fece-4200-8d12-f31ee93c6cfd:0","form":"اختبار أونلاين","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"818532df-2a2d-4978-898e-dead7a1a98ee:0","form":"إشارة إنذار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"c3441e0b-7016-4232-a890-db07aee65610:0","form":"الكشافات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"5cea7381-8e27-4ef0-994b-5d76638cf6c3:0","form":"تأهيل","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"05ade751-d7a0-4e72-9da7-3b40cd60f47b:0","form":"العمرة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"342cf52f-a2d2-4b28-b91d-fe840117b9f2:0","form":"المجمع العلوي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a1b66b68-e31f-4dcc-9853-29c4c5e8b18a:0","form":"الشركة التابعة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a9d6f32f-d31a-47b7-ad80-b9fe757f99a1:0","form":"بوابات التذاكر","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"59a0bc86-ba20-40f1-925e-6dc26d453065:0","form":"عنوان ماك","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"4e9291c3-4aad-4441-a408-b7cac1937b05:0","form":"شاشة TFT","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"584e8a33-c535-40ab-b872-ed1a78a60d62:0","form":"الكهرباء الساكنة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"74990557-9b50-4f54-b23a-d4a03c4a9deb:0","form":"برق","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"bdd747a5-44b1-42d9-9e1e-4aa41f292414:0","form":"الدفع للخلف","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"1f0f4a60-2d5d-4156-b3e8-6c71e42d08d5:0","form":"سكة القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"5f9909e1-fdb8-4a43-8215-323eefa70463:0","form":"القطارات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"ef58c261-53ab-42f3-8ce5-f2e1c371e6b1:0","form":"السرعة القصوى","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"3c7eb9d3-1dfe-4408-b6ef-b230ac94acf8:0","form":"شحن القطارات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"ad9421ee-81f2-4c25-8488-e61747073931:0","form":"حادثة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"aa2efb17-cbc4-4a0d-96fd-cabb3f7ecb99:0","form":"المكونات المادية","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"352ad927-329e-4a92-808c-fcbe14c758a7:0","form":"فاقون","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a81feca4-b681-4894-8b7e-529bb8179bb8:0","form":"رأس القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"7b434f3f-adec-41a4-8e89-264853b4e679:0","form":"حصان","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0627178e-90a5-4ee5-bb27-b59272f5e51e:0","form":"الوحدات المتحركة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0627178e-90a5-4ee5-bb27-b59272f5e51e:0","form":"العربات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"d3e67c14-105c-4cf1-982a-a45557ec2e6e:0","form":"عبارة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"d3e67c14-105c-4cf1-982a-a45557ec2e6e:0","form":"عبارة تصريف","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"9a6e142d-770f-4653-be88-8611f23fcba1:0","form":"برج الاتصالات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"dd5e020c-bbbb-4ee8-9a71-740861b7e2bf:0","form":"القضبان","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f12e88e9-63db-4a8d-b36e-fb372c2b7aca:0","form":"تقاطر","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"52209f67-c1a0-4fa0-9461-6695525be956:0","form":"العفش","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"d1678546-10e9-4ca6-a18e-598c48cf8de9:0","form":"جرس الإنذار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8c0aa155-16b0-4818-afec-c6783194121c:0","form":"حصى","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8c0aa155-16b0-4818-afec-c6783194121c:0","form":"زلط","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"489131fc-5a7f-4eb3-89a5-5a9364db0edf:0","form":"صدأ","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"59778aae-e37d-4d94-bafd-1a6ad5dadda2:0","form":"مناوبة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a4b4ca1f-ed4f-4874-afc6-bd4293dc676d:0","form":"محولة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a4b4ca1f-ed4f-4874-afc6-bd4293dc676d:0","form":"مفتاح التحويل","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"9d47ec55-9fe4-43f7-8f12-5f860d4c3374:0","form":"تذكرة القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f82ea16f-b95f-44d0-8fd9-7092b6e5e234:0","form":"تقاطع","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"77fb78a9-0065-44cf-8e73-ca31be24710f:0","form":"رقم القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2d1bf84b-3881-4fbc-9e99-1b0ae0c3f50f:0","form":"تقييم غير معلن","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"cb920f55-7edf-43e1-9d94-c8be28640199:0","form":"تيار مستمر","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"d6ad6825-89b9-4fcc-a881-89e9b48aafb3:0","form":"جدول المواعيد","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"03df038c-6db3-4c31-bd09-020b2cb5bbf8:0","form":"لاسلكي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f283f985-9eff-4186-b9fb-712c74aacce0:0","form":"لاسلكي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"6c70b1c6-260e-481a-bfec-ec6a146accd0:0","form":"الوكالة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"3e8d8ccb-bc27-43a6-8560-b8c5e6fb8068:0","form":"هاتف","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"3e8d8ccb-bc27-43a6-8560-b8c5e6fb8068:0","form":"سماعة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2e0018f3-289b-42a8-b24c-48eccc5df175:0","form":"حادثة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"ce459a4d-9840-4fae-9d4c-1cb05b5f06bb:0","form":"مناورة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"54e83ef4-5da1-4399-bda4-850cefbb134d:0","form":"معطل","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"e9bb5b82-7591-4c54-8394-cdf9e044f8c0:0","form":"الطوارئ","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"e9bb5b82-7591-4c54-8394-cdf9e044f8c0:0","form":"الإسعاف والدفاع المدني","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"e6432790-cb4a-4255-9824-77d5e7430864:0","form":"مخاطرة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2e86264e-a5bb-4666-a581-d459b81dce9e:0","form":"كاميرات المراقبة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"1fb4d12a-30af-4ba4-8ac6-8584e8e3fa4e:0","form":"درجة رجال الأعمال","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"6aeaa459-7297-4015-ba04-3197d2520050:0","form":"صبة العجلة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"7dd10c27-0c36-4042-8977-2e66ce03b9e4:0","form":"ساعة الذروة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"7dd10c27-0c36-4042-8977-2e66ce03b9e4:0","form":"وقت الزحمة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"005d17b3-a44f-4800-ae33-215810ec601b:0","form":"مقدمة القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"94c15d08-37a6-4ad9-b836-14280af823f4:0","form":"مشوار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"028dcec9-915f-4c42-98f9-f26ec5664536:0","form":"بن كود","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"99d1a9c5-c9ad-4348-89ad-bf484292b4eb:0","form":"تريلا","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"858046ec-af24-4469-b0a3-cc179b746019:0","form":"شبكة القطارات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f9493899-032d-4103-ada8-8aaf75573c5d:0","form":"أكسدة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0e75714b-86a6-4d91-bd2d-58fca9a9cdf4:0","form":"بلف","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0e75714b-86a6-4d91-bd2d-58fca9a9cdf4:0","form":"صمام","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"98c1790c-4064-4b25-910d-d384e2c5bc00:0","form":"الطاقة النظيفة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"b3735171-e32e-469d-bec7-e40bf67f3f26:0","form":"عامل السكة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"c1b80095-f2a6-480b-ae64-e45414a583e8:0","form":"فاقون شحن","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"3efad4f8-0ec5-4756-8f73-e3d1e67ad7d9:0","form":"كافتيريا القطار","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"fd3ec47b-bcae-42eb-8f36-a824de20535c:0","form":"غرفة المعدات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"9f394889-b8a0-4251-bd19-8000c0fa22db:0","form":"فني القطارات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"06799184-e77f-4bbb-8d23-ec35fc84459d:0","form":"قاطع صغير","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"1f878781-31f2-4bed-9b5b-cca5a666c397:0","form":"قطار فاضي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2cf28d07-f852-4a39-bc2c-bb23de854ade:0","form":"مثبت القضيب","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"621dd879-04d1-4859-b466-7f8138dbbcb3:0","form":"أنظمة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"21eee18d-2706-4791-85a5-7875dc60d262:0","form":"كيلو","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"589dfdbf-7c99-4e64-932a-ae73a9d57ace:0","form":"لوحة إنذار الحريق","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2d65a182-5a18-435d-9dfa-e4e595a2f652:0","form":"ريموت المكيف","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"ef861838-92f6-408a-99d4-8f922418a9d2:0","form":"سنترال","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"18f3bd39-f5ca-4aef-93a6-a2b99dba9c69:0","form":"بوردة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"18f3bd39-f5ca-4aef-93a6-a2b99dba9c69:0","form":"اللوحة الإلكترونية","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f6a87dee-3c9e-466a-98b0-445ecdf596b2:0","form":"زر الطوارئ","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"9835ed76-fb34-41bd-87e9-f1f481d65144:0","form":"برج الجوال","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"230ed668-5b22-4a88-b004-969a69f50f6d:0","form":"محطة البضائع","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"c31eac9a-0ab3-4c30-a3fa-e66d58205ee2:0","form":"مخالفة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"446f3f33-d252-4590-9594-d6cb339a876b:0","form":"إشارة خضراء","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0dafd3b7-cc5e-45ff-a3fb-e1defcc3eb18:0","form":"رقابة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0dafd3b7-cc5e-45ff-a3fb-e1defcc3eb18:0","form":"متابعة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"edcdbdc8-b1a2-4422-b0f2-b096dcf9c577:0","form":"ورشة القطارات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"4da19228-6663-4a21-b945-b9b49c213654:0","form":"غرفة التحكم","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"4da19228-6663-4a21-b945-b9b49c213654:1","form":"غرفة العمليات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"4da19228-6663-4a21-b945-b9b49c213654:1","form":"غرفة التحكم","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8156d32a-5916-4262-9b22-c81c088001b9:0","form":"سنكرة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8e9f6a6b-b294-4792-a446-578bc3d9b770:0","form":"فيديو","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8e9f6a6b-b294-4792-a446-578bc3d9b770:0","form":"جهاز الفيديو","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"4e0c5472-e1ce-4cc9-9411-fabf00d376d6:0","form":"ضبط","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"14188cce-dab0-401a-9e3d-619c7232ee8e:0","form":"أدوات السلامة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"88f8593c-66d1-49b3-912d-05cfa7d1434b:0","form":"سماعة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"52184172-8b76-4f0a-8ca7-a9a27604dbdd:0","form":"نفق مشاة","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"52184172-8b76-4f0a-8ca7-a9a27604dbdd:0","form":"نفق","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0153e012-c362-4ab6-b14b-a8f3b737dc0f:0","form":"جسر علوي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"0153e012-c362-4ab6-b14b-a8f3b737dc0f:0","form":"كوبري","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"c6621ecd-98f1-4a78-95d7-d67a603bfc34:0","form":"مؤشرات الأداء","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"be46da05-e37c-4dea-9d75-4623db630059:0","form":"سلك الأرضي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"8d76848e-be7c-451c-acc3-9995584c9bae:0","form":"فاز","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"f7f201bc-6529-4b20-9faf-e4d7698aebe8:0","form":"الأسلاك الهوائية","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"281f61fa-653b-454a-aff8-794c43a57868:0","form":"الخط الأرضي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"281f61fa-653b-454a-aff8-794c43a57868:0","form":"هاتف أرضي","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"32888721-907c-4211-81c3-368f75d9cc86:0","form":"نظام النداء","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"58a41052-e266-4f74-933b-73223bd7b6a2:0","form":"شاشات المعلومات","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"2a5d9221-c37b-49f7-a17e-9bbab31db9c7:0","form":"راوتر الفايبر","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"a9f76bad-7580-426f-9901-bb93049d9ebd:0","form":"إريال","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"418e3a17-79ac-4eb5-a518-11f98bfc30fb:0","form":"الصندوق الأسود","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"93c62ffd-023f-47ef-8d0c-42d82f7de1bd:0","form":"رام","reviewed":true,"decisions":"rail-audit-1.txt"}
+{"sense_id":"c88e4f9f-a5fe-4d82-a9a1-7c63b3e3ac77:0","form":"كيلو في الساعة","reviewed":true,"decisions":"rail-audit-1.txt"}

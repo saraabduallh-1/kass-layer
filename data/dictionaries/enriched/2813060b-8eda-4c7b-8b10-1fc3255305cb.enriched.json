@@ -2,14 +2,14 @@
   "dictionary_id": "2813060b-8eda-4c7b-8b10-1fc3255305cb",
   "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
   "source_export": "data/dictionaries/exports/2813060b-8eda-4c7b-8b10-1fc3255305cb.json",
-  "generated_at": "2026-11-02T12:45:24.452968+00:00",
+  "generated_at": "2026-11-02T12:47:20.104426+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 856,
     "senses_reviewed": 856,
     "senses_with_variants": 856,
-    "variants_accepted": 1305,
-    "variants_needing_review": 683
+    "variants_accepted": 1290,
+    "variants_needing_review": 663
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1681,16 +1681,6 @@
             "form": "distant signal",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "إشارة إنذار",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -4482,16 +4472,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "بوابات التذاكر",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4720,18 +4700,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "عنوان ماك",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يقصد به عنوان الجهاز لا طبقة التحكم",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4841,16 +4809,6 @@
             "form": "thin film transistor",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "شاشة TFT",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -7150,16 +7108,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "القطارات",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9414,29 +9362,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "عبارة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "عبارة تصريف",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -10235,16 +10160,6 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "القضبان",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "تم استبدال القضبان التالفة.",
             "status": "accepted",
             "review_reasons": []
           },
@@ -14098,20 +14013,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "صدأ",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "الصدأ نوع من التآكل خاص بالحديد",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14386,18 +14287,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "مناوبة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -15548,19 +15437,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "تقاطع",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15610,16 +15486,6 @@
           {
             "form": "train describer",
             "type": "foreign",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "رقم القطار",
-            "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -18482,19 +18348,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الوكالة",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18540,30 +18393,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "هاتف",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "استخدم الهاتف للتواصل مع المراقب.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
-          },
-          {
-            "form": "سماعة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20567,18 +20396,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "معطل",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -20680,18 +20497,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الطوارئ",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -22078,19 +21883,6 @@
             "review_reasons": []
           },
           {
-            "form": "درجة رجال الأعمال",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": true,
-            "ambiguity_note": "درجة مختلفة في بعض القطارات",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous",
-              "low_confidence"
-            ]
-          },
-          {
             "form": "فيرست كلاس",
             "type": "transliteration",
             "confidence": "medium",
@@ -22166,16 +21958,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "صبة العجلة",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24851,19 +24633,6 @@
             ]
           },
           {
-            "form": "تريلا",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "التريلا شاحنة بمقطورة خاصة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
-          },
-          {
             "form": "لوري",
             "type": "transliteration",
             "confidence": "medium",
@@ -26466,20 +26235,6 @@
             "example": "الصدأ الحديد أضر بالهيكل.",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "أكسدة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "الأكسدة أعم من الصدأ",
-            "example": "الأكسدة بدأت تظهر على السطح.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26616,19 +26371,6 @@
             "review_reasons": [
               "proposed_for_other_terms",
               "ambiguous"
-            ]
-          },
-          {
-            "form": "صمام",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "الصمام لا يعمل بشكل صحيح.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
             ]
           }
         ],
@@ -27143,19 +26885,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الطاقة النظيفة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -32094,16 +31823,6 @@
             "review_reasons": []
           },
           {
-            "form": "مثبت القضيب",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "مشبك",
             "type": "informal_synonym",
             "confidence": "low",
@@ -33332,19 +33051,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "ريموت المكيف",
-            "type": "colloquial",
-            "confidence": "low",
-            "ambiguous": true,
-            "ambiguity_note": "الريموت جهاز تحكم عن بعد لا لوحة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous",
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35060,16 +34766,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "زر الطوارئ",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35933,19 +35629,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مخالفة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36268,16 +35951,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "إشارة خضراء",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36558,19 +36231,6 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "متابعة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "نظام المتابعة يكتشف الأعطال مبكرًا.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36752,16 +36412,6 @@
           {
             "form": "ديبو",
             "type": "transliteration",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "ورشة القطارات",
-            "type": "colloquial",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -38279,18 +37929,6 @@
             "review_reasons": []
           },
           {
-            "form": "فيديو",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "الفيديو يحفظ كل ما يحدث على المحطة.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "جهاز الفيديو",
             "type": "colloquial",
             "confidence": "high",
@@ -39769,18 +39407,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "أدوات السلامة",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45355,16 +44981,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الأسلاك الهوائية",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45956,16 +45572,6 @@
             "form": "passenger information system",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "شاشات المعلومات",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -46917,16 +46523,6 @@
             "form": "optical network termination",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "راوتر الفايبر",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
