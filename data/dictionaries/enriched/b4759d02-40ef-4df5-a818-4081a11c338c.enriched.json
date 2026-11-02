@@ -2,14 +2,14 @@
   "dictionary_id": "b4759d02-40ef-4df5-a818-4081a11c338c",
   "dictionary_name": "معجم المصطلحات الموسيقية",
   "source_export": "data/dictionaries/exports/b4759d02-40ef-4df5-a818-4081a11c338c.json",
-  "generated_at": "2026-11-02T12:43:31.800225+00:00",
+  "generated_at": "2026-11-02T12:45:27.448091+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 700,
     "senses_reviewed": 700,
     "senses_with_variants": 618,
-    "variants_accepted": 874,
-    "variants_needing_review": 508
+    "variants_accepted": 871,
+    "variants_needing_review": 486
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -20371,19 +20371,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "موسيقار",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "تطلق أيضا على المؤلف الموسيقي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26651,20 +26638,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "نغمة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "تطلق أيضا على الصوت الموسيقي الواحد",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27118,18 +27091,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "نبر",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -28880,18 +28841,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "قلطة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29265,20 +29214,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "دخل",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "low_confidence"
             ]
           }
         ],
@@ -29807,10 +29742,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29884,28 +29817,14 @@
             ]
           },
           {
-            "form": "مرشح إيقاف النطاق",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "مرشح تمرير النطاق",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29965,18 +29884,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "مرشح تمرير النطاق",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30026,16 +29933,6 @@
           {
             "form": "أتنيوايتر",
             "type": "transliteration",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "مخفض الإشارة",
-            "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -30278,20 +30175,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "ناي",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": true,
-            "ambiguity_note": "آلة نفخ مختلفة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous",
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30408,16 +30291,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "بعد صوتي",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30566,31 +30439,6 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "أوبريت",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "الأوبريت نوع قصير خفيف من المسرح الموسيقي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
-          },
-          {
-            "form": "فرس",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "حيوان الحصان",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30631,18 +30479,6 @@
             "form": "bridge",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "فرس",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -30707,18 +30543,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مرافقة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           },
           {
             "form": "أكومبانيمنت",
@@ -30989,31 +30813,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "مغني",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "مطرب طربي",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -31053,16 +30852,6 @@
           {
             "form": "open string",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "وتر مطلق",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -31234,16 +31023,6 @@
           {
             "form": "effects processor",
             "type": "foreign",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "إفكت",
-            "type": "colloquial",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -31717,41 +31496,14 @@
             "review_reasons": []
           },
           {
-            "form": "مقام",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يستعمل في الموسيقى العربية لمعنى أوسع",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous"
-            ]
-          },
-          {
-            "form": "سلم",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
-          },
-          {
             "form": "مفتاح دو",
             "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -31807,18 +31559,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مفتاح دو",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -32524,18 +32264,6 @@
             ]
           },
           {
-            "form": "مكبر",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "مكبر صوت",
             "type": "spelling_variant",
             "confidence": "high",
@@ -32838,18 +32566,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "زند",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يطلق أيضا على رقبة الآلة كاملة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33590,16 +33306,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "مؤثرات",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "الـ مؤثرات في الأغنية قوية جداً.",
-            "status": "accepted",
-            "review_reasons": []
           },
           {
             "form": "ساوند إفكت",
@@ -38804,16 +38510,6 @@
             "form": "رقبة العود",
             "type": "informal_synonym",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "زند العود",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
