@@ -2,14 +2,14 @@
   "dictionary_id": "f990c2a0-f601-466f-8153-2cd35e4710a3",
   "dictionary_name": "معجم مصطلحات الطاقة",
   "source_export": "data/dictionaries/exports/f990c2a0-f601-466f-8153-2cd35e4710a3.json",
-  "generated_at": "2026-11-02T10:06:15.701074+00:00",
+  "generated_at": "2026-11-02T10:36:21.821054+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1575,
     "senses_reviewed": 1575,
     "senses_with_variants": 1575,
-    "variants_accepted": 2630,
-    "variants_needing_review": 1193
+    "variants_accepted": 2624,
+    "variants_needing_review": 1172
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -3017,19 +3017,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "عجلة",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "عجلة السيارة مصممة لتدويرها بسهولة.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6840,8 +6827,7 @@
             "example": "يعتمد المشروع على توصيل خطوط الغاز.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -11107,19 +11093,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "تصريح",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -14343,16 +14316,6 @@
             "form": "تكوينات السجيل",
             "type": "informal_synonym",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الصخر الزيتي",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -19461,29 +19424,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "توصيل",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "تطبيقات النقل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22262,18 +22202,6 @@
             ]
           },
           {
-            "form": "زيت",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "زيوت التشحيم",
             "type": "informal_synonym",
             "confidence": "high",
@@ -22284,16 +22212,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
-          },
-          {
-            "form": "شحم",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30333,18 +30251,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الغاز",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -31748,19 +31654,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حديد",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "بناء الجسر من الحديد.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -33463,18 +33356,6 @@
             "form": "solar panels",
             "type": "foreign",
             "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "ألواح شمسية",
-            "type": "colloquial",
-            "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -47194,18 +47075,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "أسعار مدعومة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -47981,19 +47850,6 @@
             "review_reasons": []
           },
           {
-            "form": "طاقة متجددة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "تستخدم الدولة طاقة متجددة لتوليد الكهرباء.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "مصادر الطاقة البديلة",
             "type": "informal_synonym",
             "confidence": "high",
@@ -48663,18 +48519,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "شرارة كهربائية",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -50961,19 +50805,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "معامل القدرة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -51311,16 +51142,6 @@
             "form": "CO2",
             "type": "abbreviation",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "كربون",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -52291,18 +52112,6 @@
             "form": "بريكر",
             "type": "transliteration",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "طبلون",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -56758,10 +56567,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "لوحة كهرباء",
@@ -57002,18 +56809,6 @@
             "review_reasons": []
           },
           {
-            "form": "دفع رباعي",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
-          },
-          {
             "form": "نظام الدفع",
             "type": "informal_synonym",
             "confidence": "high",
@@ -57197,19 +56992,6 @@
           {
             "form": "التأريض",
             "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "إرث",
-            "type": "colloquial",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -59066,10 +58848,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "توفير الكهرباء",
@@ -59308,16 +59088,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "فاتورة الكهرباء",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -60361,18 +60131,6 @@
           {
             "form": "EE",
             "type": "abbreviation",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "ترشيد الاستهلاك",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -66945,16 +66703,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الأجهزة الكهربائية",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -70240,16 +69988,6 @@
             ]
           },
           {
-            "form": "الكيلو",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "كيلو وات ساعة",
             "type": "spelling_variant",
             "confidence": "high",
@@ -72716,16 +72454,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الرقابة على الأسواق",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -85022,19 +84750,6 @@
             "review_reasons": []
           },
           {
-            "form": "التحلية",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "مؤسسة تحلية المياه",
             "type": "informal_synonym",
             "confidence": "high",
@@ -85510,18 +85225,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "التضخم",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -90223,18 +89926,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "عازل",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -95042,19 +94733,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "كفاءة",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
