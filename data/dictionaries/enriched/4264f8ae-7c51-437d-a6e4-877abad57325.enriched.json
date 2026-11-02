@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-11-02T09:06:11.088370+00:00",
+  "generated_at": "2026-11-02T09:36:13.735148+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
-    "senses_with_variants": 1429,
-    "variants_accepted": 1381,
-    "variants_needing_review": 1389
+    "senses_with_variants": 1428,
+    "variants_accepted": 1376,
+    "variants_needing_review": 1366
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -3861,18 +3861,6 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "كوبون",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -6141,19 +6129,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "توريد",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "قد تعني تزويد السلع محليًا وليس الاستيراد من الخارج",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous"
             ]
           }
         ],
@@ -9738,19 +9713,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "التصفية",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -13515,20 +13477,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
-          },
-          {
-            "form": "تخصيص",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "قد تعني التخصيص بمعنى تحديد حصة لشيء",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15918,18 +15866,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الناتج القومي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يقصد به اصطلاحًا الناتج القومي الإجمالي GNP وهو مفهوم مختلف",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
             ]
           }
         ],
@@ -19033,19 +18969,6 @@
             "example": "نقاط القصور يجب معالجتها.",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "هدر",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "قد يعني الضياع عمومًا",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19092,20 +19015,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "أسهم",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أخص من الأوراق المالية",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           }
         ],
@@ -29778,18 +29687,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "تصنيف ائتماني سيادي",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -31936,18 +31833,6 @@
             "example": "سجل الموظف تطور وظيفي كبير خلال العام الماضي.",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مسار وظيفي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -35354,16 +35239,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "تمويل صغير",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -40862,18 +40737,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "دخل الفرد",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -45912,19 +45775,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الأساسي",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -47303,16 +47153,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "رسوم إدارية",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -48251,16 +48091,6 @@
             "example": "شهد السوق ركوداً ملحوظاً في الربع الأخير.",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "كساد",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -48598,18 +48428,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "التمويل العقاري",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -51588,20 +51406,6 @@
       "enrichment": {
         "variants": [
           {
-            "form": "نمو",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة تعني الزيادة والتطور",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
-          },
-          {
             "form": "Parallel Market",
             "type": "foreign",
             "confidence": "medium",
@@ -53924,18 +53728,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "محضر الاستلام",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -59368,18 +59160,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "خطة طوارئ",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -59425,19 +59205,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الطاقة النظيفة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           },
@@ -60181,18 +59948,6 @@
             "form": "Request for Proposals",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "كراسة الشروط",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -66947,18 +66702,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "فجوة الدخل",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -67789,19 +67532,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "فاتورة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           }
         ],
@@ -76627,16 +76357,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "لائحة دعوى",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -78364,16 +78084,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "مسار النمو",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -85288,20 +84998,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "منشآت",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "اسم الهيئة العامة للمنشآت الصغيرة والمتوسطة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -85437,20 +85133,7 @@
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/4264f8ae-7c51-437d-a6e4-877abad57325",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/b167998e-8aee-4715-ae34-e96b1eee9961/get-public-entry",
       "enrichment": {
-        "variants": [
-          {
-            "form": "انتفاع",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة تعني الاستفادة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
-          }
-        ],
+        "variants": [],
         "generated_by": "Qwen/Qwen3.5-4B",
         "reviewed_by": "claude-opus-5-5 (Claude Code session)"
       }
@@ -85586,18 +85269,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "منطقة حرة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -91883,20 +91554,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "اختراق",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أعم من الهجوم وقد يعني الاختراق الرياضي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           },
           {
