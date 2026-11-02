@@ -2,14 +2,14 @@
   "dictionary_id": "928f4f87-b98c-4b2d-b31d-0b45c6747644",
   "dictionary_name": "معجم مصطلحات الإعلام",
   "source_export": "data/dictionaries/exports/928f4f87-b98c-4b2d-b31d-0b45c6747644.json",
-  "generated_at": "2026-11-02T13:09:08.822902+00:00",
+  "generated_at": "2026-11-02T13:10:37.801894+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 833,
     "senses_reviewed": 833,
     "senses_with_variants": 788,
-    "variants_accepted": 1117,
-    "variants_needing_review": 478
+    "variants_accepted": 1118,
+    "variants_needing_review": 477
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -14151,10 +14151,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "أخبار مضللة",

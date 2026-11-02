@@ -2,14 +2,14 @@
   "dictionary_id": "004ce05a-0d56-45e4-a284-1b0358d4cfc4",
   "dictionary_name": "معجم مصطلحات علم السلوك",
   "source_export": "data/dictionaries/exports/004ce05a-0d56-45e4-a284-1b0358d4cfc4.json",
-  "generated_at": "2026-11-02T13:09:05.206846+00:00",
+  "generated_at": "2026-11-02T13:10:34.134861+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 205,
     "senses_reviewed": 205,
     "senses_with_variants": 205,
-    "variants_accepted": 308,
-    "variants_needing_review": 111
+    "variants_accepted": 305,
+    "variants_needing_review": 108
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -781,16 +781,6 @@
           {
             "form": "Checklists",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "قوائم التحقق",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -2212,16 +2202,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "التعزيز الإيجابي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2721,16 +2701,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الإيحاء",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2917,18 +2887,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الحاسة السادسة",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أعم وقد تعني القدرة الخارقة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4975,18 +4933,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "واضح",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -9780,18 +9726,6 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تجنب قراءة fake news من مصادر غير موثوقة.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "أخبار كاذبة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"

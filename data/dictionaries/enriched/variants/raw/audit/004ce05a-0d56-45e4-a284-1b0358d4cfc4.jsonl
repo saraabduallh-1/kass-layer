@@ -118,3 +118,41 @@
 {"sense_id":"dc1fcf78-cf23-4079-9690-9daef8fa6744:0","form":"نية الشراء","term":"استعدادية الشراء","english":"Willingness-to-buy","definition":"مصطلح اقتصادي يشير إلى استعداد المستهلك أو رغبته في شراء منتج أو خدمة معينة. ويعكس هذا المصطلح نية المستهلك الفعلية في الشراء، ويعتمد على عدة عوامل، مثل: السعر، وجودة المنتج، والتفضيلات الشخصية، والعوامل الاقتصادية الأخرى.","same_meaning":false,"relation":"broader","reason":"نية الشراء أعم وتشمل استعدادية الشراء، لكنها لا تتضمن بالضرورة الرغبة الفعلية والاعتبارات الاقتصادية المذكورة في التعريف.","model":"gemma3:12b","prompt":2}
 {"sense_id":"dc1fcf78-cf23-4079-9690-9daef8fa6744:0","form":"الرغبة في الشراء","term":"استعدادية الشراء","english":"Willingness-to-buy","definition":"مصطلح اقتصادي يشير إلى استعداد المستهلك أو رغبته في شراء منتج أو خدمة معينة. ويعكس هذا المصطلح نية المستهلك الفعلية في الشراء، ويعتمد على عدة عوامل، مثل: السعر، وجودة المنتج، والتفضيلات الشخصية، والعوامل الاقتصادية الأخرى.","same_meaning":true,"relation":"exact","reason":"الرغبة في الشراء تعبر عن نفس المفهوم وتغطي نفس الجوانب التي يغطيها استعدادية الشراء.","model":"gemma3:12b","prompt":2}
 {"sense_id":"dc1fcf78-cf23-4079-9690-9daef8fa6744:0","form":"استعداد للشراء","term":"استعدادية الشراء","english":"Willingness-to-buy","definition":"مصطلح اقتصادي يشير إلى استعداد المستهلك أو رغبته في شراء منتج أو خدمة معينة. ويعكس هذا المصطلح نية المستهلك الفعلية في الشراء، ويعتمد على عدة عوامل، مثل: السعر، وجودة المنتج، والتفضيلات الشخصية، والعوامل الاقتصادية الأخرى.","same_meaning":true,"relation":"exact","reason":"تعبيران لهما نفس المعنى الدقيق في السياق الاقتصادي.","model":"gemma3:12b","prompt":2}
+{"sense_id":"03fc0197-906c-4837-98f1-40578b9e4211:0","form":"نكز","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"64dad1ee-e1f7-4eb5-8e78-6c556aeb002d:0","form":"الحنين للماضي","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"d4a1c97c-d92c-431d-8775-a5c660b3ee16:0","form":"قوائم التحقق","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"69c731c0-7bb4-47d9-841e-84b9f691cc6c:0","form":"العادات الاجتماعية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"6a04ed7d-e412-4db2-b1b3-dabebd4d2c02:0","form":"النكز","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"6a04ed7d-e412-4db2-b1b3-dabebd4d2c02:0","form":"التنبيه السلوكي","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"f16865ed-c95f-4154-88a8-e4f90d86af6f:0","form":"تأثير التأطير","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"ae4213c2-0c0f-4b94-aebe-a7a9ee74dd09:0","form":"التجربة العشوائية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"5399501a-1d61-4e59-89fb-ab38e84a8a5d:0","form":"حراسة البوابة","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"5751df0d-61d5-4bc3-ad06-4b678a75ef10:0","form":"التعزيز الإيجابي","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"de8f056f-1021-42b3-ad02-411f075dabe3:0","form":"الكسل الاجتماعي","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"2da0ff70-a6bf-4fa7-b26f-fba5e51e05f6:0","form":"الصورة النمطية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"09e05963-d343-476c-b9e8-bb770f52a1e2:0","form":"التمهيد","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"09e05963-d343-476c-b9e8-bb770f52a1e2:0","form":"الإيحاء","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"2e92800c-44aa-4073-9688-a1c6e8348064:0","form":"الحاسة السادسة","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"8a1799a5-22f8-4d30-ba74-91aaa2551aa8:0","form":"الرفاهية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"cd69689d-c493-452c-8e69-ebee1fc0c552:0","form":"عادات","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"f5553292-c018-40ed-8be7-c5dde29adede:0","form":"الصحة النفسية والجسدية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"72faa7e9-d553-4315-97c7-04591c29af5f:0","form":"الجمود","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"6b291fc7-58d5-4fe6-960c-c9611403a295:0","form":"مغالطة منطقية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"687b90b5-1ebf-43ae-9ec8-afe1704fbd63:0","form":"نظرية التوقع","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"47e16142-bdcc-44a7-8c22-314934a07a42:0","form":"واضح","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"24104e4e-3dd0-4974-bd01-a86454b8b750:0","form":"عقلية القطيع","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"9fb86dcd-20d3-4a45-9349-6c0d694b8e2b:0","form":"العلاج الوهمي","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"f2d825e2-4435-410e-98cf-d0b980d65eb9:0","form":"تحليل العواطف","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"df09c3a0-f792-44eb-b369-4dd267c1dca7:0","form":"تحيز الرغبة الاجتماعية","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"44627b14-2f43-4117-894d-8f9c9cc74dc2:0","form":"تحيز التفاؤل","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"7357325c-cd13-4e95-b268-d0d7ec4590cc:0","form":"ثقة مفرطة","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"9b3e548b-10bd-44dc-be03-046ec28e5641:0","form":"تحيز البقاء","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"19164a81-5a78-45c0-ac4e-092e334ddbcb:0","form":"تصميم الوظيفة","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"53be7c96-6f7f-4041-bbbc-f1db6559ff5c:0","form":"ضغط الزملاء","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"40323c4c-2d98-4936-a48c-ec6f65655da3:0","form":"مغالطة العالم العادل","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"b1987fc1-e596-47a9-80ea-c4b8ef82dda6:0","form":"مفارقة الاختيار","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"44fd297e-843e-4009-b49e-ed54fdbe8ba2:0","form":"قاعدة الإبهام","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"ac699851-f166-4990-b917-fb8d79259375:0","form":"مطرقة ماسلو","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"41e99e2a-419b-45c1-8c98-9558b68b46be:0","form":"أخبار كاذبة","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"9d208be7-5617-4b43-8df3-61fc746a9ffa:0","form":"مركز التحكم","reviewed":true,"decisions":"behavior-audit-1.txt"}
+{"sense_id":"dc1fcf78-cf23-4079-9690-9daef8fa6744:0","form":"نية الشراء","reviewed":true,"decisions":"behavior-audit-1.txt"}
