@@ -2,13 +2,13 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-11-02T15:07:28.692940+00:00",
+  "generated_at": "2026-11-02T16:07:46.221828+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
     "senses_reviewed": 1443,
     "senses_with_variants": 1441,
-    "variants_accepted": 2242,
+    "variants_accepted": 2243,
     "variants_needing_review": 711
   },
   "variant_types": {
@@ -17112,6 +17112,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "برنامج دردشة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
