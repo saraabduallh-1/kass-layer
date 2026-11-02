@@ -2,14 +2,14 @@
   "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
   "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
   "source_export": "data/dictionaries/exports/97ac5360-d65f-425f-974f-9118f09d13a6.json",
-  "generated_at": "2026-11-02T13:10:38.014761+00:00",
+  "generated_at": "2026-11-02T13:12:10.039947+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 130,
     "senses_reviewed": 130,
     "senses_with_variants": 129,
-    "variants_accepted": 118,
-    "variants_needing_review": 206
+    "variants_accepted": 116,
+    "variants_needing_review": 203
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -127,18 +127,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "إبداع",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أعم ويعني الإبداع الفني أيضًا",
-            "example": "المؤسسة تشجع على الإبداع في حل المشكلات.",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
             ]
           }
         ],
@@ -727,16 +715,6 @@
           {
             "form": "hosted",
             "type": "foreign",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الاستضافة السحابية",
-            "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -1829,18 +1807,6 @@
             ]
           },
           {
-            "form": "الرقمنة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "التحول الإلكتروني",
             "type": "informal_synonym",
             "confidence": "high",
@@ -2303,16 +2269,6 @@
             "form": "Emerging Tech",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "التقنيات الحديثة",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -6522,20 +6478,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "قياس",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "اسم مركز قياس أداء الأجهزة العامة وكلمة عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           }
         ],

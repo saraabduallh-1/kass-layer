@@ -75,3 +75,30 @@
 {"sense_id":"0d27c038-16d8-4a72-9dee-8370962701c6:0","form":"إتلاف المعلومات","term":"إتلاف البيانات","english":"Destruction Data","definition":"أي إجراء يتم على البيانات الشخصية ويجعل الاطلاع عليها أو استعادتها أو معرفة صاحبها متعذراً","same_meaning":true,"relation":"exact","reason":"الكلمتان تعنيان نفس الشيء، وتصفان نفس العملية.","model":"gemma3:12b","prompt":2}
 {"sense_id":"ea6c75ba-0af9-48de-9577-a671bb2c0aba:0","form":"إثبات الفكرة","term":"إثبات المفهوم","english":"Proof of Concept (PoC)","definition":"عملية اختبار فكرة قید التطوير على نطاق ضيق لإثبات الجدوى من تنفيذها وأثرها، قبل الانتقال إلى مرحلة المنتج الأولي.","same_meaning":true,"relation":"exact","reason":"تصف 'إثبات الفكرة' نفس العملية الأساسية لـ 'إثبات المفهوم'.","model":"gemma3:12b","prompt":2}
 {"sense_id":"de24c1a0-5aed-470c-8f2b-5b03bb00d036:0","form":"استمرارية العمل","term":"استمرارية الأعمال","english":"Business Continuity (BC)","definition":"الموارد والإمكانات والقدرات والإجراءات والأعمال اللازمة للاستمرار في تقديم الخدمات الأساسية والمنتجات الضرورية بمستويات محددة مسبقًا وبإطار زمني مقبول في حال التعرض للتعطل أو حدوث انقطاع.","same_meaning":true,"relation":"exact","reason":"الكلمة اليومية هي ترجمة شائعة ومقبولة للمصطلح القياسي.","model":"gemma3:12b","prompt":2}
+{"sense_id":"e1f5ec10-fa3a-48da-b1c5-65b998a34389:0","form":"إبداع","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"000c1ffd-6563-4e9f-802c-6540f2587fda:0","form":"الاستضافة السحابية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"741f1478-034a-42f0-b81e-3cfb1316165d:0","form":"الاقتصاد الإلكتروني","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"d2ba7ac1-bed4-4a62-822b-2f841f412c59:0","form":"عطل","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"d2ba7ac1-bed4-4a62-822b-2f841f412c59:0","form":"توقف الخدمة","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"6fdd04ea-e54c-4d05-93d9-c9977cb8a605:0","form":"الرقمنة","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"6fdd04ea-e54c-4d05-93d9-c9977cb8a605:0","form":"التحول الإلكتروني","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"fa62dd0d-c85b-4daf-b2f2-19da614b1a64:0","form":"التعافي من الكوارث","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"970e3594-5087-4123-adc5-f761160db264:0","form":"التقنيات الحديثة","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"41b397fd-b53e-485b-b175-83d565391754:0","form":"الجهات الرسمية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"41b397fd-b53e-485b-b175-83d565391754:0","form":"الدوائر الحكومية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"a286f090-4cea-4eb3-89d6-cbcb2b07fc5d:0","form":"الحكومة الإلكترونية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"4e268868-471e-4152-86a9-18c70d1258a4:0","form":"السحابة","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"ab76a15f-6569-4d34-844e-744db55997a7:0","form":"الخدمة الإلكترونية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"67f86070-6cfd-47a3-add0-92add0c4301d:0","form":"رقمي","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"b3a25311-b7fd-4d0c-a6c6-658ef59590da:0","form":"الأخطار","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"b85dbc4e-5f96-49b9-8add-0723b958e733:0","form":"المستفيد","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"8be2f408-4ff0-4701-8795-e39e2924f407:0","form":"عميل","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"8be2f408-4ff0-4701-8795-e39e2924f407:0","form":"المستخدم","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"c792c3c2-17dc-4bc3-964a-9ff6f38fbd47:0","form":"المهارات التقنية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"e972edff-0809-48a0-aeaf-2e69fdacb2eb:0","form":"استمرارية الأعمال","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"01100c61-beb2-42dd-8c23-97fadb71922e:0","form":"البيئة التجريبية","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"937c5659-4ab8-42c8-91b1-35f17e99a832:0","form":"تجربة العميل","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"522945c0-2f53-44ad-8e2a-fd8400141bbf:0","form":"تطبيق موبايل","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"702f5414-dd5e-4117-902c-7a474e725771:0","form":"سفراء المخاطر","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"3402c56e-2b3d-4f3f-965a-841499f16aac:0","form":"قياس","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
+{"sense_id":"9bf2a97b-782d-47da-9dcc-2c27057a3664:0","form":"تحمل المخاطر","reviewed":true,"decisions":"digitalgov-audit-1.txt"}
