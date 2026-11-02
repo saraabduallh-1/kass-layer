@@ -1,0 +1,4863 @@
+{
+ "generated_at": "2026-11-02T22:28:05.572653+00:00",
+ "model": "Cloudflare/clef-flash",
+ "bits": 4,
+ "seconds_per_case": 0.211,
+ "summary": {
+  "cases": 600,
+  "thresholds": [
+   {
+    "threshold": 0.5,
+    "kept": 484,
+    "precision": 0.597,
+    "recall": 0.963,
+    "wrong_kept": 195
+   },
+   {
+    "threshold": 0.6,
+    "kept": 467,
+    "precision": 0.612,
+    "recall": 0.953,
+    "wrong_kept": 181
+   },
+   {
+    "threshold": 0.7,
+    "kept": 443,
+    "precision": 0.625,
+    "recall": 0.923,
+    "wrong_kept": 166
+   },
+   {
+    "threshold": 0.8,
+    "kept": 408,
+    "precision": 0.637,
+    "recall": 0.867,
+    "wrong_kept": 148
+   },
+   {
+    "threshold": 0.9,
+    "kept": 294,
+    "precision": 0.704,
+    "recall": 0.69,
+    "wrong_kept": 87
+   },
+   {
+    "threshold": 0.95,
+    "kept": 78,
+    "precision": 0.718,
+    "recall": 0.187,
+    "wrong_kept": 22
+   },
+   {
+    "threshold": 0.99,
+    "kept": 0,
+    "precision": null,
+    "recall": 0.0,
+    "wrong_kept": 0
+   }
+  ],
+  "accuracy": 0.657
+ },
+ "results": [
+  {
+   "sentence": "حدثنا عن surge في الشبكة.",
+   "form": "surge",
+   "term": "تمور",
+   "english": "surge",
+   "expected": true,
+   "p": 0.9099
+  },
+  {
+   "sentence": "أبعتك رسالة عبر المكبر في المحطة.",
+   "form": "مكبر",
+   "term": "مكبر صوت",
+   "english": "Loud speaker",
+   "expected": true,
+   "p": 0.6197
+  },
+  {
+   "sentence": "حجم Population الدراسة كبير.",
+   "form": "Population",
+   "term": "مجتمع إحصائي",
+   "english": "Statistical Population",
+   "expected": true,
+   "p": 0.9241
+  },
+  {
+   "sentence": "المكبر في الغرفة يعمل بصوت عالٍ.",
+   "form": "مكبر",
+   "term": "مضخم",
+   "english": "Amplifier",
+   "expected": true,
+   "p": 0.9047
+  },
+  {
+   "sentence": "هذا الجهاز يدعم منفذ DisplayPort فقط.",
+   "form": "DisplayPort",
+   "term": "منفذ شاشة عرض",
+   "english": "Display Port",
+   "expected": true,
+   "p": 0.6424
+  },
+  {
+   "sentence": "شراء جيتار جديد للعب فيه.",
+   "form": "جيتار",
+   "term": "غيتار",
+   "english": "guitar",
+   "expected": true,
+   "p": 0.9433
+  },
+  {
+   "sentence": "انظر @( line service).",
+   "form": "line service",
+   "term": "خط",
+   "english": "line",
+   "expected": true,
+   "p": 0.7982
+  },
+  {
+   "sentence": "المنطقة 2nd high هي الأكثر أمانًا.",
+   "form": "2nd high",
+   "term": "مرتفع ثان",
+   "english": "2nd high",
+   "expected": true,
+   "p": 0.9294
+  },
+  {
+   "sentence": "هذه مواقف السيارات الخاصة.",
+   "form": "مواقف",
+   "term": "مواقف السيارات",
+   "english": "",
+   "expected": true,
+   "p": 0.9047
+  },
+  {
+   "sentence": "يُحسب الراتب الأساسي قبل خصم الضرائب.",
+   "form": "الراتب الأساسي",
+   "term": "أجر أساسي",
+   "english": "",
+   "expected": true,
+   "p": 0.9161
+  },
+  {
+   "sentence": "الشركة تتبع أفضل الممارسات في إدارة الموارد البشرية.",
+   "form": "أفضل الممارسات",
+   "term": "الممارسات المثلى",
+   "english": "Best Practices",
+   "expected": true,
+   "p": 0.9372
+  },
+  {
+   "sentence": "نستخدم تقنية إزالة الضوضاء لتحسين جودة الصور.",
+   "form": "إزالة الضوضاء",
+   "term": "إزالة التشويش",
+   "english": "Denoising",
+   "expected": true,
+   "p": 0.8615
+  },
+  {
+   "sentence": "تأثير الـ monsoon على الزراعة واضح.",
+   "form": "monsoon",
+   "term": "مونسون",
+   "english": "monsoon",
+   "expected": true,
+   "p": 0.9005
+  },
+  {
+   "sentence": "تداول crypto في السوق.",
+   "form": "crypto",
+   "term": "عملة مشفرة",
+   "english": "Cryptocurrency",
+   "expected": true,
+   "p": 0.9466
+  },
+  {
+   "sentence": "لقد قمنا بتقييم المخاطر Risk Assessment.",
+   "form": "Risk Assessment",
+   "term": "تقييم المخاطر",
+   "english": "Risk Assessment",
+   "expected": true,
+   "p": 0.9677
+  },
+  {
+   "sentence": "تكلفة الإطلاق للطائرة الجديدة تجاوزت الميزانية.",
+   "form": "تكلفة الإطلاق",
+   "term": "تكاليف الإطلاق",
+   "english": "launch cost",
+   "expected": true,
+   "p": 0.5737
+  },
+  {
+   "sentence": "التوقيع من قبل CEO الشركة.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "CEO",
+   "expected": true,
+   "p": 0.8597
+  },
+  {
+   "sentence": "العازف إيقاع يحدد سرعة الضرب.",
+   "form": "عازف إيقاع",
+   "term": "عازف إيقاعي",
+   "english": "drummer",
+   "expected": true,
+   "p": 0.9005
+  },
+  {
+   "sentence": "تم اعتراض طائرة حربية فوق الحدود.",
+   "form": "طائرة حربية",
+   "term": "طائرة عسكرية",
+   "english": "military aircraft",
+   "expected": true,
+   "p": 0.9334
+  },
+  {
+   "sentence": "سعر الـ PC مرتفع.",
+   "form": "PC",
+   "term": "جهاز الحاسوب",
+   "english": "Computer",
+   "expected": true,
+   "p": 0.906
+  },
+  {
+   "sentence": "اشتريت أسهمي في البورصة اليوم.",
+   "form": "البورصة",
+   "term": "سوق الأوراق المالية",
+   "english": "Stock Market",
+   "expected": true,
+   "p": 0.9546
+  },
+  {
+   "sentence": "الطائرة نفذت zoom قبل الهبوط.",
+   "form": "zoom",
+   "term": "تسلق فجائي",
+   "english": "zoom ---(1)",
+   "expected": true,
+   "p": 0.9161
+  },
+  {
+   "sentence": "تم وقف التصرفات المالية حتى صدور القرار.",
+   "form": "وقف",
+   "term": "التعليق",
+   "english": "Suspension",
+   "expected": true,
+   "p": 0.9047
+  },
+  {
+   "sentence": "استخدموا تكتيكاً مفاجئاً.",
+   "form": "تكتيك",
+   "term": "تخطيط",
+   "english": "Strategies",
+   "expected": true,
+   "p": 0.7364
+  },
+  {
+   "sentence": "تتميز الشركة بامتدادها في MBI.",
+   "form": "MBI",
+   "term": "شراء الإدارة ",
+   "english": "Management Buy-In (MBI)",
+   "expected": true,
+   "p": 0.9274
+  },
+  {
+   "sentence": "التعاقد على Service Level Agreement يضمن الجودة.",
+   "form": "Service Level Agreement",
+   "term": "اتفاقية مستوى الخدمة ",
+   "english": "Service Level Agreement",
+   "expected": true,
+   "p": 0.9519
+  },
+  {
+   "sentence": "تغطي هذه الصحيفة أخباراً عن صحافة السفر والوجهات السياحية.",
+   "form": "صحافة السفر",
+   "term": "صحافة سياحية",
+   "english": "Tourism Journalism",
+   "expected": true,
+   "p": 0.9598
+  },
+  {
+   "sentence": "أدخلت gasket جديد في المحرك.",
+   "form": "gasket",
+   "term": "لبوس",
+   "english": "gasket",
+   "expected": true,
+   "p": 0.848
+  },
+  {
+   "sentence": "أصبح مهندس معماري في إحدى الشركات الكبرى.",
+   "form": "مهندس معماري",
+   "term": "معماري",
+   "english": "",
+   "expected": true,
+   "p": 0.8222
+  },
+  {
+   "sentence": "المادة الدراسية هي جزء من الخطة.",
+   "form": "المادة الدراسية",
+   "term": "المقرر الدراسي",
+   "english": "",
+   "expected": true,
+   "p": 0.849
+  },
+  {
+   "sentence": "نزلت الأمطار وأصبحت الرمال ناعمة.",
+   "form": "الرمال",
+   "term": "الرمل",
+   "english": "Sand",
+   "expected": true,
+   "p": 0.8311
+  },
+  {
+   "sentence": "يجب حفظ الدفاتر المحاسبية بدقة.",
+   "form": "الدفاتر المحاسبية",
+   "term": "السجلات المحاسبية",
+   "english": "Accounting Records",
+   "expected": true,
+   "p": 0.9274
+  },
+  {
+   "sentence": "تتطلب إدارة الانبعاثات مراقبة مستويات VOC في الهواء.",
+   "form": "VOC",
+   "term": "مركب عضوي متطاير",
+   "english": "VOC",
+   "expected": true,
+   "p": 0.9466
+  },
+  {
+   "sentence": "مستثمرو الصناديق يراقبون NAV الصندوق يوميًا.",
+   "form": "NAV",
+   "term": "صافي قيمة الأصول ",
+   "english": "Net Asset Value",
+   "expected": true,
+   "p": 0.9585
+  },
+  {
+   "sentence": "يجب الالتزام باحتياطات السلامة عند التعامل مع السيارة الكهربائية.",
+   "form": "احتياطات السلامة",
+   "term": "احتياطات استخدام السيارة الكهربائية",
+   "english": "Electric Vehicle Precautions",
+   "expected": true,
+   "p": 0.821
+  },
+  {
+   "sentence": "المحرك عانى من backfire أثناء التشغيل.",
+   "form": "backfire",
+   "term": "اشتعال مرتد",
+   "english": "backfire",
+   "expected": true,
+   "p": 0.9408
+  },
+  {
+   "sentence": "لا يحب اللاعب int في المباريات الرسمية.",
+   "form": "int",
+   "term": "تعمد الخسارة (خيانة)",
+   "english": "Inting",
+   "expected": true,
+   "p": 0.4244
+  },
+  {
+   "sentence": "الـ musician يهتم بتأليف الأغاني.",
+   "form": "musician",
+   "term": "موسيقار",
+   "english": "musician",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "سرعة المحرك هي 8000 RPM.",
+   "form": "RPM",
+   "term": "دورة في الدقيقة",
+   "english": "RPM, r.p.m.",
+   "expected": true,
+   "p": 0.9588
+  },
+  {
+   "sentence": "الـ pass كان سريعاً جداً.",
+   "form": "pass",
+   "term": "تمرير",
+   "english": "Pass",
+   "expected": true,
+   "p": 0.9196
+  },
+  {
+   "sentence": "هذا الجهاز يسمى e-skateboard ويعمل بالبطارية.",
+   "form": "e-skateboard",
+   "term": "لوح التزلج الكهربائي",
+   "english": "Electric Skateboard",
+   "expected": true,
+   "p": 0.9621
+  },
+  {
+   "sentence": "شركة أجنبية تفضل استخدام مصطلح Quality Control في عقودهم.",
+   "form": "Quality Control",
+   "term": "مراقبة الجودة",
+   "english": "Quality Control",
+   "expected": true,
+   "p": 0.9381
+  },
+  {
+   "sentence": "تساهم غازات الدفيئة في ارتفاع حرارة الأرض.",
+   "form": "غازات الدفيئة",
+   "term": "غازات الاحتباس الحراري ",
+   "english": "Greenhouse Gases (GHG)",
+   "expected": true,
+   "p": 0.9679
+  },
+  {
+   "sentence": "السكوات هو تمرين أساسي في اللياقة البدنية.",
+   "form": "سكوات",
+   "term": "قرفصاء",
+   "english": "Squats",
+   "expected": true,
+   "p": 0.9325
+  },
+  {
+   "sentence": "يتم تفعيل فحص ذاتي تلقائي عند تشغيل المحرك.",
+   "form": "فحص ذاتي",
+   "term": "الفحص الذاتي للنظام",
+   "english": "Auto-Check System",
+   "expected": true,
+   "p": 0.9019
+  },
+  {
+   "sentence": "تم القبض على المجرم في مكان الحادث.",
+   "form": "المجرم",
+   "term": "الجاني",
+   "english": "Offender",
+   "expected": true,
+   "p": 0.848
+  },
+  {
+   "sentence": "تم إشراك الأطراف المعنية في اجتماع اليوم.",
+   "form": "الأطراف المعنية",
+   "term": "جميع المعنيين",
+   "english": "All Concerned",
+   "expected": true,
+   "p": 0.9086
+  },
+  {
+   "sentence": "هذا النغمة هارموني.",
+   "form": "هارموني",
+   "term": "هارمونية",
+   "english": "harmony",
+   "expected": true,
+   "p": 0.8099
+  },
+  {
+   "sentence": "نظام أيزو 9000 يضمن جودة المنتج.",
+   "form": "أيزو 9000",
+   "term": "آيزو",
+   "english": "ISO 9000",
+   "expected": true,
+   "p": 0.8991
+  },
+  {
+   "sentence": "استثمرنا في تقنيات EOR لزيادة الإنتاج.",
+   "form": "EOR",
+   "term": "استخلاص معزز للبترول",
+   "english": "Enhanced Oil Recovery",
+   "expected": true,
+   "p": 0.9497
+  },
+  {
+   "sentence": "وجه الطائرة نحو الشرق.",
+   "form": "وجه",
+   "term": "جانب",
+   "english": "face",
+   "expected": true,
+   "p": 0.8872
+  },
+  {
+   "sentence": "أخذت trickshot رائعاً في المباراة.",
+   "form": "trickshot",
+   "term": "طلقة فنية",
+   "english": "Trickshot",
+   "expected": true,
+   "p": 0.9073
+  },
+  {
+   "sentence": "هناك تضارب في المصالح بين الطرفين.",
+   "form": "تضارب",
+   "term": "تعارض",
+   "english": "Conflict",
+   "expected": true,
+   "p": 0.8176
+  },
+  {
+   "sentence": "المدة المتفق عليها لاجتياز الاختبار هي فترة قصيرة.",
+   "form": "مدة",
+   "term": "فترة",
+   "english": "Term",
+   "expected": true,
+   "p": 0.2502
+  },
+  {
+   "sentence": "أكوستيكس هو العلم الذي يدرس الصوت.",
+   "form": "أكوستيكس",
+   "term": "علم السمعيات",
+   "english": "acoustics",
+   "expected": true,
+   "p": 0.9386
+  },
+  {
+   "sentence": "تم اعتماد منصة e-learning الجديدة.",
+   "form": "e-learning",
+   "term": "التعليم الإلكتروني",
+   "english": "",
+   "expected": true,
+   "p": 0.9598
+  },
+  {
+   "sentence": "استخدمت turn في بداية المقطع.",
+   "form": "turn",
+   "term": "بناء",
+   "english": "Turn",
+   "expected": true,
+   "p": 0.8013
+  },
+  {
+   "sentence": "قام الفريق بإجراء airdrop في الخريطة.",
+   "form": "airdrop",
+   "term": "إسقاط جوي",
+   "english": "airdrop",
+   "expected": true,
+   "p": 0.9137
+  },
+  {
+   "sentence": "تُعد البرمجيات جزءًا من البنية التحتية التقنية.",
+   "form": "البرمجيات",
+   "term": "برامج الحاسب الآلي",
+   "english": "",
+   "expected": true,
+   "p": 0.9214
+  },
+  {
+   "sentence": "نستخدم هذه السمة في النموذج.",
+   "form": "سمة",
+   "term": "خاصية",
+   "english": "Feature",
+   "expected": true,
+   "p": 0.9526
+  },
+  {
+   "sentence": "هذا المطاط مصنوع من سيليكون عالي الجودة.",
+   "form": "سيليكون",
+   "term": "سيلاستيك",
+   "english": "Silastic",
+   "expected": true,
+   "p": 0.6137
+  },
+  {
+   "sentence": "يمكن تلخيص الإحصائيات في جدول واحد.",
+   "form": "إحصائيات",
+   "term": "لإحصائيات",
+   "english": "Statistics",
+   "expected": true,
+   "p": 0.6215
+  },
+  {
+   "sentence": "الـ checkpoint التالي هو في مطار الرياض.",
+   "form": "checkpoint",
+   "term": "نقطة مراجعة",
+   "english": "check point, checkpoint",
+   "expected": true,
+   "p": 0.7886
+  },
+  {
+   "sentence": "تصنيف المركبات كـ salvage يمنع دخولها للسوق.",
+   "form": "salvage",
+   "term": "مركبات السالفج",
+   "english": "Salvage",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "الموقع المحدد في الموانئ هو terminal.",
+   "form": "terminal",
+   "term": "الفرضة",
+   "english": "Terminal",
+   "expected": true,
+   "p": 0.8824
+  },
+  {
+   "sentence": "الـ pitch circle مهم في الحسابات.",
+   "form": "pitch circle",
+   "term": "دائرة الخطوة",
+   "english": "pitch circle",
+   "expected": true,
+   "p": 0.9615
+  },
+  {
+   "sentence": "هذه الفرقة مليئة بالسكرب.",
+   "form": "سكرب",
+   "term": "ضعيف",
+   "english": "Scrub",
+   "expected": true,
+   "p": 0.9305
+  },
+  {
+   "sentence": "تم إرسال إشعار لجميع الجهات المعنية بالقرار.",
+   "form": "الجهات المعنية",
+   "term": "أصحاب المصلحة",
+   "english": "",
+   "expected": true,
+   "p": 0.9019
+  },
+  {
+   "sentence": "يجب إتمام التسجيل في السجل المدني خلال شهر.",
+   "form": "التسجيل",
+   "term": "القيد",
+   "english": "",
+   "expected": true,
+   "p": 0.8741
+  },
+  {
+   "sentence": "نطبق إطار عمل XPP لتحسين الأداء.",
+   "form": "XPP",
+   "term": "عملية التنفيذ المتميز (XPP)",
+   "english": "Execution Premium Process (XPP)",
+   "expected": true,
+   "p": 0.8933
+  },
+  {
+   "sentence": "اضغط على زر reset في البرنامج.",
+   "form": "reset",
+   "term": "يضبط ثانية",
+   "english": "reset",
+   "expected": true,
+   "p": 0.8808
+  },
+  {
+   "sentence": "تم الإعلان عن يوم الاقتراع قبل أسبوع.",
+   "form": "يوم الاقتراع",
+   "term": "موعد الاقتراع",
+   "english": "",
+   "expected": true,
+   "p": 0.9196
+  },
+  {
+   "sentence": "حدث انفصال في الجريان حول الأجنحة.",
+   "form": "انفصال",
+   "term": "فصل",
+   "english": "separation",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "نحتاج إلى nerf هذا النظام.",
+   "form": "nerf",
+   "term": "إنقاص القوة",
+   "english": "nerf",
+   "expected": true,
+   "p": 0.9482
+  },
+  {
+   "sentence": "يستخدم الإيثانول كمصدر بديل للوقود في الطائرات.",
+   "form": "إيثانول",
+   "term": "كحول الإثيل",
+   "english": "ethyl alcohol",
+   "expected": true,
+   "p": 0.9219
+  },
+  {
+   "sentence": "نحتاج إلى تطوير business relationship مع البنوك.",
+   "form": "business relationship",
+   "term": "علاقة العمل",
+   "english": "Business relationship",
+   "expected": true,
+   "p": 0.8723
+  },
+  {
+   "sentence": "القوات استخدمت صاروخ ذكي لقتل الهدف بدقة.",
+   "form": "صاروخ ذكي",
+   "term": "صاروخ فطن",
+   "english": "intelligent missile",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "الشركة تستخدم مخزن كبير لتخزين البضائع.",
+   "form": "مخزن",
+   "term": "مستودع",
+   "english": "Warehouse",
+   "expected": true,
+   "p": 0.9263
+  },
+  {
+   "sentence": "التعاقد على باكيج كامل.",
+   "form": "باكيج",
+   "term": "عقد متكامل",
+   "english": "package ---(2)",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "تعتبر Disruption عاملاً مؤثرًا في الأداء.",
+   "form": "Disruption",
+   "term": "الانقطاع",
+   "english": "Disruption",
+   "expected": true,
+   "p": 0.8129
+  },
+  {
+   "sentence": "ساهمت الدولة في تسريع عملية الرقمنة في الخدمات الحكومية.",
+   "form": "الرقمنة",
+   "term": "التحول الرقمي",
+   "english": "",
+   "expected": true,
+   "p": 0.7046
+  },
+  {
+   "sentence": "هذا موظف جديد في القسم.",
+   "form": "موظف",
+   "term": "عامل",
+   "english": "",
+   "expected": true,
+   "p": 0.8758
+  },
+  {
+   "sentence": "نوع Gunk يستخدم كمذيب للزيوت.",
+   "form": "Gunk",
+   "term": "جنك",
+   "english": "Gunk",
+   "expected": true,
+   "p": 0.9033
+  },
+  {
+   "sentence": "سويت عليه في الجولة.",
+   "form": "سويت عليه",
+   "term": "قضيت عليه",
+   "english": "got him",
+   "expected": true,
+   "p": 0.705
+  },
+  {
+   "sentence": "المادة المستخدمة هي Teflon.",
+   "form": "Teflon",
+   "term": "تفلون",
+   "english": "Teflon",
+   "expected": true,
+   "p": 0.9417
+  },
+  {
+   "sentence": "يستخدم هذا النظام بروتوكول CAN للتواصل بين الوحدات.",
+   "form": "CAN",
+   "term": "نظام كان",
+   "english": "controller area network (CAN)",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "يجب الحفاظ على اتزان المركبة أثناء الإقلاع.",
+   "form": "اتزان",
+   "term": "توازن",
+   "english": "balance ---(1)",
+   "expected": true,
+   "p": 0.7394
+  },
+  {
+   "sentence": "أهمية إدارة الحرارة في تشغيل المحركات الكهربائية.",
+   "form": "إدارة الحرارة",
+   "term": "الإدارة الحرارية",
+   "english": "Thermal Management",
+   "expected": true,
+   "p": 0.9284
+  },
+  {
+   "sentence": "نظام Digital Trust Services يحمي البيانات.",
+   "form": "Digital Trust Services",
+   "term": "خدمات الثقة الرقمية",
+   "english": "Digital Trust Services",
+   "expected": true,
+   "p": 0.9161
+  },
+  {
+   "sentence": "المادة هي silica النقية.",
+   "form": "silica",
+   "term": "سيليكا",
+   "english": "silica",
+   "expected": true,
+   "p": 0.9604
+  },
+  {
+   "sentence": "المشروع يعتمد على crowdsourcing.",
+   "form": "crowdsourcing",
+   "term": "التوريد  التحويل الجماعي",
+   "english": "Crowdsourcing",
+   "expected": true,
+   "p": 0.8888
+  },
+  {
+   "sentence": "شركة IT تقدم حلولاً مبتكرة.",
+   "form": "IT",
+   "term": "تقنية المعلومات",
+   "english": "",
+   "expected": true,
+   "p": 0.9185
+  },
+  {
+   "sentence": "أدخل بياناتك في الأكاونت لتسجيل الدخول.",
+   "form": "أكاونت",
+   "term": "الحساب",
+   "english": "Account",
+   "expected": true,
+   "p": 0.8615
+  },
+  {
+   "sentence": "نستخدم Scaling لتغيير نطاق الخصائص.",
+   "form": "Scaling",
+   "term": "مواءمة الخصائص",
+   "english": "Feature Scaling",
+   "expected": true,
+   "p": 0.9019
+  },
+  {
+   "sentence": "تم نشر المستخلصات في مجلة IAA.",
+   "form": "IAA",
+   "term": "مستخلصات الطيران والفضاء الدولية",
+   "english": "IAA",
+   "expected": true,
+   "p": 0.867
+  },
+  {
+   "sentence": "تأكد من تحديث برامجك لمنع أي هجوم إلكتروني محتمل.",
+   "form": "هجوم إلكتروني",
+   "term": "هجوم الانترنت",
+   "english": "Cyber Attack",
+   "expected": true,
+   "p": 0.8176
+  },
+  {
+   "sentence": "تكلفة المشروع زادت مقارنة بالميزانية.",
+   "form": "تكلفة",
+   "term": "ثمن",
+   "english": "cost",
+   "expected": true,
+   "p": 0.9047
+  },
+  {
+   "sentence": "تم إبرام العقد بتوقيع الطرفين.",
+   "form": "توقيع",
+   "term": "إبرام",
+   "english": "Conclude",
+   "expected": true,
+   "p": 0.7905
+  },
+  {
+   "sentence": "خوارزمية SVM تعمل بكفاءة عالية على البيانات الصغيرة.",
+   "form": "SVM",
+   "term": "آلة المتجهات الداعمة",
+   "english": "Support Vector Machine (SVM)",
+   "expected": true,
+   "p": 0.9526
+  },
+  {
+   "sentence": "أخبرهم بـ split قبل بدء الجولة.",
+   "form": "split",
+   "term": "تقسيم",
+   "english": "Splitting",
+   "expected": true,
+   "p": 0.8129
+  },
+  {
+   "sentence": "يتم فحص وحدة CCU قبل شحن السيارة.",
+   "form": "CCU",
+   "term": "وحدة التحكم في الشاحن (CCU)",
+   "english": "Charging Control Unit (CCU)",
+   "expected": true,
+   "p": 0.9546
+  },
+  {
+   "sentence": "العملية تتطلب لحام كهربائي عالي الجودة.",
+   "form": "لحام كهربائي",
+   "term": "لحام بالكهرباء",
+   "english": "electric welding",
+   "expected": true,
+   "p": 0.9173
+  },
+  {
+   "sentence": "الـ droop nose ساعدنا على الرؤية.",
+   "form": "droop nose",
+   "term": "مقدمة متدلية",
+   "english": "droop nose",
+   "expected": true,
+   "p": 0.9592
+  },
+  {
+   "sentence": "الوحدة المطلوبة هي IR detector وليس كاشف آخر.",
+   "form": "IR detector",
+   "term": "كاشف الأشعة تحت الحمراء",
+   "english": "IR detector",
+   "expected": true,
+   "p": 0.9592
+  },
+  {
+   "sentence": "نستخدم خدمة AIaaS لإدارة التحليلات.",
+   "form": "AIaaS",
+   "term": "ذكاء اصطناعي كخدمة",
+   "english": "Artificial Intelligence as a Service (AIaaS)",
+   "expected": true,
+   "p": 0.9604
+  },
+  {
+   "sentence": "قسم IT في الشركة يركز على تطوير البرمجيات.",
+   "form": "IT",
+   "term": "تقنية المعلومات",
+   "english": "Information Technology (IT)",
+   "expected": true,
+   "p": 0.9325
+  },
+  {
+   "sentence": "تختلف الأدوار حسب الجندر في بعض المجتمعات.",
+   "form": "الجندر",
+   "term": "النوع الاجتماعي",
+   "english": "Gender",
+   "expected": true,
+   "p": 0.9526
+  },
+  {
+   "sentence": "يتم تصنيف جميع المكونات E/E في السيارة.",
+   "form": "E/E",
+   "term": "الكهربائية/الإلكترونية",
+   "english": "E/E (Electrical/Electronic)",
+   "expected": true,
+   "p": 0.9621
+  },
+  {
+   "sentence": "شركة البناء تدير المشروع بنظام EPCM.",
+   "form": "EPCM",
+   "term": "عقد الهندسة والمشتريات وإدارة البناء",
+   "english": "Procurement And  Engineering Construction Management (EPCM) Contract",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "ضبطنا LR ليكون 0.001.",
+   "form": "LR",
+   "term": "معدل التعلم",
+   "english": "Learning Rate",
+   "expected": true,
+   "p": 0.9504
+  },
+  {
+   "sentence": "PAC ممتازة جداً.",
+   "form": "PAC",
+   "term": "سرعة",
+   "english": "PAC",
+   "expected": true,
+   "p": 0.9033
+  },
+  {
+   "sentence": "المعالج الجديد يدعم 64 بت.",
+   "form": "المعالج",
+   "term": "وحدة المعالجة المركزية",
+   "english": "Central Processing Unit (CPU)",
+   "expected": true,
+   "p": 0.9417
+  },
+  {
+   "sentence": "الأسواق تتفاعل مع مؤشر الخوف المرتفع.",
+   "form": "مؤشر الخوف",
+   "term": "مؤشر التقلبات",
+   "english": "Volatilities Index (VIX)",
+   "expected": true,
+   "p": 0.9585
+  },
+  {
+   "sentence": "سيارة تحتوي على نظام AEB.",
+   "form": "AEB",
+   "term": "نظام الفرملة الطارئة الذكي",
+   "english": "Automatic Emergency Braking (AEB)",
+   "expected": true,
+   "p": 0.9519
+  },
+  {
+   "sentence": "نوع flux المستخدم في هذه العملية خاص جداً.",
+   "form": "flux",
+   "term": "صهيرة لحام",
+   "english": "welding fluX",
+   "expected": true,
+   "p": 0.9408
+  },
+  {
+   "sentence": "نستخدم خوارزمية OR لحل هذه المسألة.",
+   "form": "OR",
+   "term": "بحوث تشغيلية",
+   "english": "operational research",
+   "expected": true,
+   "p": 0.1316
+  },
+  {
+   "sentence": "حصلت على رخصة ممارسة المهنة.",
+   "form": "رخصة",
+   "term": "الترخيص",
+   "english": "License",
+   "expected": true,
+   "p": 0.9252
+  },
+  {
+   "sentence": "هذا الجزء من نوع يوك.",
+   "form": "يوك",
+   "term": "مقرن",
+   "english": "yoke",
+   "expected": true,
+   "p": 0.8808
+  },
+  {
+   "sentence": "الحل win-win هو الأفضل هنا.",
+   "form": "win-win",
+   "term": "فوز",
+   "english": "Win-Win",
+   "expected": true,
+   "p": 0.9372
+  },
+  {
+   "sentence": "قال له TYT.",
+   "form": "TYT",
+   "term": "خذ وقتك",
+   "english": "TYT",
+   "expected": true,
+   "p": 0.939
+  },
+  {
+   "sentence": "أصدرت FOMC بياناً حول أسعار الفائدة.",
+   "form": "FOMC",
+   "term": "اللجنة‭ ‬الفيدرالية‭ ‬للسوق‭ ‬المفتوحة",
+   "english": "The Federal Open Market Committee ( FOMC)",
+   "expected": true,
+   "p": 0.956
+  },
+  {
+   "sentence": "تطبيقات الفينتك ساعدت في تسهيل الدفع.",
+   "form": "فينتك",
+   "term": "تقنية مالية",
+   "english": "Financial Technology (Fintech)",
+   "expected": true,
+   "p": 0.9315
+  },
+  {
+   "sentence": "تخضع DNFBPs لرقابة صارمة.",
+   "form": "DNFBPs",
+   "term": "الأعمال والمهن غير المالية المحددة",
+   "english": "Designated Non-Financial Businesses or Professions \"DNFBPs\"",
+   "expected": true,
+   "p": 0.939
+  },
+  {
+   "sentence": "تحدث مع روبوت محادثة لطلب خدمة.",
+   "form": "روبوت محادثة",
+   "term": "بوت محادثة",
+   "english": "",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "فريق العمل يقوم بتصحيح الأخطاء في الخوارزمية.",
+   "form": "تصحيح الأخطاء",
+   "term": "ينزع العلة",
+   "english": "debug",
+   "expected": true,
+   "p": 0.8963
+  },
+  {
+   "sentence": "هذا الـ map صعب جداً.",
+   "form": "map",
+   "term": "الخريطة",
+   "english": "Map",
+   "expected": true,
+   "p": 0.9149
+  },
+  {
+   "sentence": "تطبيق القانون الجديد في القطاع النووي.",
+   "form": "القانون",
+   "term": "النظام",
+   "english": "Law",
+   "expected": true,
+   "p": 0.6615
+  },
+  {
+   "sentence": "شهدت أسعار الذهب هبوطاً ملحوظاً هذا الأسبوع.",
+   "form": "هبوط",
+   "term": "انخفاض",
+   "english": "Decline",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "لقد تم تدمير البيانات الشخصية بشكل آمن.",
+   "form": "تدمير البيانات",
+   "term": "إتلاف البيانات",
+   "english": "Destruction Data",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "نركز على تحسين KPI.",
+   "form": "KPI",
+   "term": "مراقبة مؤشراتالأداء الرئيسية",
+   "english": "KPI Monitoring",
+   "expected": true,
+   "p": 0.3951
+  },
+  {
+   "sentence": "استخدمنا أداة أوتوميشن للمهام المتكررة.",
+   "form": "أوتوميشن",
+   "term": "أتمتة",
+   "english": "Automation",
+   "expected": true,
+   "p": 0.9263
+  },
+  {
+   "sentence": "المحور الجايرو يثبت الاتجاه.",
+   "form": "جايرو",
+   "term": "جيرو",
+   "english": "gyro",
+   "expected": true,
+   "p": 0.7506
+  },
+  {
+   "sentence": "مستوى اللاعب لو في البداية.",
+   "form": "لو",
+   "term": "مستوى منخفض",
+   "english": "low",
+   "expected": true,
+   "p": 0.1408
+  },
+  {
+   "sentence": "المحللون يتابعون تحركات فوتسي بانتباه.",
+   "form": "فوتسي",
+   "term": "مؤشر فوتسي",
+   "english": "FTSE 100",
+   "expected": true,
+   "p": 0.9526
+  },
+  {
+   "sentence": "تتولى الجهة مسؤولية الرقابة.",
+   "form": "الجهة",
+   "term": "الهيئة",
+   "english": "",
+   "expected": true,
+   "p": 0.9252
+  },
+  {
+   "sentence": "الرسم في 3D واقعي.",
+   "form": "3D",
+   "term": "ثلاثي الأبعاد",
+   "english": "3D",
+   "expected": true,
+   "p": 0.9553
+  },
+  {
+   "sentence": "استخدمت هذا الـ emulator لتشغيل اللعبة القديمة.",
+   "form": "emulator",
+   "term": "محاك",
+   "english": "Emulator",
+   "expected": true,
+   "p": 0.945
+  },
+  {
+   "sentence": "هذا النوع من الطيور معروف بـ ترنيمه.",
+   "form": "ترنيم",
+   "term": "ترنم",
+   "english": "Trilling",
+   "expected": true,
+   "p": 0.6658
+  },
+  {
+   "sentence": "نستخدم مادة RP في التصنيع.",
+   "form": "RP",
+   "term": "لدائن مقواة",
+   "english": "RP",
+   "expected": true,
+   "p": 0.9263
+  },
+  {
+   "sentence": "نظام الـ spot يضمن جاهزية الطائرات للإقلاع.",
+   "form": "spot",
+   "term": "يكتشف",
+   "english": "spot ---(2)",
+   "expected": true,
+   "p": 0.2024
+  },
+  {
+   "sentence": "المنطقة أصبحت مشتعل من الدخان.",
+   "form": "مشتعل",
+   "term": "ملتهب",
+   "english": "ablaze",
+   "expected": true,
+   "p": 0.7759
+  },
+  {
+   "sentence": "نظام HVAC يسيطر على الحرارة.",
+   "form": "HVAC",
+   "term": "نظام التدفئة والتهوية (HVAC)",
+   "english": "Heating, Ventilation, and Air Conditioning (HVAC)",
+   "expected": true,
+   "p": 0.9511
+  },
+  {
+   "sentence": "المادة المستخدمة هي Araldite.",
+   "form": "Araldite",
+   "term": "أرالدايت",
+   "english": "Araldite",
+   "expected": true,
+   "p": 0.9408
+  },
+  {
+   "sentence": "استثمرنا في منصة P2P للإقراض.",
+   "form": "P2P",
+   "term": "إقراض بين النظراء",
+   "english": "Peer-to-Peer Lending",
+   "expected": true,
+   "p": 0.9489
+  },
+  {
+   "sentence": "الطرف متصل بمصدر الجهد.",
+   "form": "طرف",
+   "term": "طرف توصيل",
+   "english": "terminal ---(3)",
+   "expected": true,
+   "p": 0.8615
+  },
+  {
+   "sentence": "ارتفع الناتج المحلي هذا العام بشكل ملحوظ.",
+   "form": "الناتج المحلي",
+   "term": "الناتج المحلي الإجمالي",
+   "english": "Gross Domestic Product (GDP)",
+   "expected": true,
+   "p": 0.9219
+  },
+  {
+   "sentence": "اتخاذ القرار الصحيح يتطلب تحليل البيانات.",
+   "form": "اتخاذ القرار",
+   "term": "صناعة القرار",
+   "english": "Decision Making",
+   "expected": true,
+   "p": 0.8578
+  },
+  {
+   "sentence": "يستخدم النظام إنفرتر لتحويل التيار.",
+   "form": "إنفرتر",
+   "term": "عاكس التيار",
+   "english": "inverter",
+   "expected": true,
+   "p": 0.9592
+  },
+  {
+   "sentence": "الآلة تعطي نغمة باس منخفضة.",
+   "form": "باس",
+   "term": "جهير",
+   "english": "Bass",
+   "expected": true,
+   "p": 0.1339
+  },
+  {
+   "sentence": "يا ريت تشتري دراجة عشان تمشي في الشارع.",
+   "form": "دراجة",
+   "term": "دراجة هوائية",
+   "english": "",
+   "expected": true,
+   "p": 0.9173
+  },
+  {
+   "sentence": "الـ sweated joint في اللحام يتطلب تدخلاً خاصاً.",
+   "form": "sweated joint",
+   "term": "وصلة لحام ارتشاحي",
+   "english": "sweated joint",
+   "expected": true,
+   "p": 0.939
+  },
+  {
+   "sentence": "تم تمرير المنتج بعد اجتياز اختبار QC.",
+   "form": "QC",
+   "term": "مراقبة الجودة",
+   "english": "Quality Control",
+   "expected": true,
+   "p": 0.939
+  },
+  {
+   "sentence": "سجلت في نصف ماراثون الأسبوع الماضي.",
+   "form": "نصف ماراثون",
+   "term": "نصف المارثون",
+   "english": "Half marathon",
+   "expected": true,
+   "p": 0.9576
+  },
+  {
+   "sentence": "المشروع يهدف إلى خفض الانبعاثات الكربونية.",
+   "form": "خفض الانبعاثات",
+   "term": "تخفيض‭ ‬الانبعاثات",
+   "english": "Reducing Emissions",
+   "expected": true,
+   "p": 0.9442
+  },
+  {
+   "sentence": "نظام الإنذار موجود داخل cockpit الطائرة.",
+   "form": "cockpit",
+   "term": "غرفة القيادة",
+   "english": "flight deck ---(1)",
+   "expected": true,
+   "p": 0.906
+  },
+  {
+   "sentence": "في البرمجة، نستخدم Deductive Reasoning للتحقق من الشروط.",
+   "form": "Deductive Reasoning",
+   "term": "استدلال استنباطي",
+   "english": "Deductive Reasoning",
+   "expected": true,
+   "p": 0.9511
+  },
+  {
+   "sentence": "تحتاج إلى تغيير الفونت في إعدادات الطابعة.",
+   "form": "فونت",
+   "term": "مجموعة حروف",
+   "english": "font",
+   "expected": true,
+   "p": 0.9137
+  },
+  {
+   "sentence": "منح المدير الموظف صلاحيات التخويل في التعامل مع الموردين.",
+   "form": "التخويل",
+   "term": "التفويض",
+   "english": "",
+   "expected": true,
+   "p": 0.6943
+  },
+  {
+   "sentence": "لاحظت شرخاً صغيراً في الباب.",
+   "form": "شرخ",
+   "term": "شدخ",
+   "english": "crack ---(1)",
+   "expected": true,
+   "p": 0.8459
+  },
+  {
+   "sentence": "لعبت في مباراة PUBG أمس.",
+   "form": "PUBG",
+   "term": "ببجي",
+   "english": "PUBG",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "المدفع ينفذ 600 spm.",
+   "form": "spm",
+   "term": "طلقة في الدقيقة",
+   "english": "spm",
+   "expected": true,
+   "p": 0.9433
+  },
+  {
+   "sentence": "تم قبول العرض من قبل لجنة المناقصات.",
+   "form": "عرض",
+   "term": "عطاء",
+   "english": "Bid",
+   "expected": true,
+   "p": 0.8856
+  },
+  {
+   "sentence": "لا تفعل باك ستاب.",
+   "form": "باك ستاب",
+   "term": "هجوم خلفي",
+   "english": "Backstab",
+   "expected": true,
+   "p": 0.9274
+  },
+  {
+   "sentence": "الضغط ينخفض داخل الـ venturi.",
+   "form": "venturi",
+   "term": "أنبوب ڤنتشوري",
+   "english": "venturi tube",
+   "expected": true,
+   "p": 0.8872
+  },
+  {
+   "sentence": "لقد استخدمنا محاكاة مونت كارلو لتقييم المخاطر.",
+   "form": "محاكاة مونت كارلو",
+   "term": "نموذج مونت كارلو",
+   "english": "Monte Carlo Model",
+   "expected": true,
+   "p": 0.7684
+  },
+  {
+   "sentence": "تعطلت وحدة التحكم في البطارية BCU في السيارة.",
+   "form": "BCU",
+   "term": "وحدة التحكم في البطارية (BCU)",
+   "english": "Battery Control Unit (BCU)",
+   "expected": true,
+   "p": 0.9425
+  },
+  {
+   "sentence": "لدينا خطة بديلة في حال توقف النظام.",
+   "form": "خطة بديلة",
+   "term": "خطة طوارئ",
+   "english": "Contingency Plan",
+   "expected": true,
+   "p": 0.9334
+  },
+  {
+   "sentence": "المركبة تستخدم ديزل كوقود.",
+   "form": "ديزل",
+   "term": "قطارة",
+   "english": "distillate",
+   "expected": true,
+   "p": 0.7982
+  },
+  {
+   "sentence": "هدفنا تحقيق CI في جميع المشاريع.",
+   "form": "CI",
+   "term": "التحسين المستمر",
+   "english": "Continuous Improvement",
+   "expected": true,
+   "p": 0.9553
+  },
+  {
+   "sentence": "هذا النظامي قانوني بالكامل.",
+   "form": "قانوني",
+   "term": "النظامي",
+   "english": "Statutory/ legally",
+   "expected": true,
+   "p": 0.5205
+  },
+  {
+   "sentence": "التقارير المالية تستخدم الـ VDT للتفسير.",
+   "form": "VDT",
+   "term": "نموذج مسببات القيمة",
+   "english": "Value Driver Tree",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "لاحظنا انهيار النموذج بعد استخدام البيانات المولدة له.",
+   "form": "انهيار النموذج",
+   "term": "تدهور النموذج",
+   "english": "Model Collapse",
+   "expected": true,
+   "p": 0.9149
+  },
+  {
+   "sentence": "حصل المخترع على براءة.",
+   "form": "براءة",
+   "term": "براءة اختراع",
+   "english": "",
+   "expected": true,
+   "p": 0.9099
+  },
+  {
+   "sentence": "إجمالي الإنفاق على السلع والخدمات وصل إلى مليون دولار.",
+   "form": "إجمالي الإنفاق",
+   "term": "إنفاق كلي",
+   "english": "Aggregate Expenditure",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "استخدمت أداة لتحويل الصوت إلى نص للمؤتمرات.",
+   "form": "تحويل الصوت إلى نص",
+   "term": "تحويل الكلام إلى نص",
+   "english": "Speech-to-Text (STT)",
+   "expected": true,
+   "p": 0.8963
+  },
+  {
+   "sentence": "تم إرسال إشعار رسمي عن تغيير الموعد.",
+   "form": "إشعار",
+   "term": "تنويه  إشعار",
+   "english": "Notice",
+   "expected": true,
+   "p": 0.8955
+  },
+  {
+   "sentence": "وقعنا على اتفاقية SLA جديدة مع المورد.",
+   "form": "SLA",
+   "term": "اتفاقية مستوى الخدمة",
+   "english": "Service Level Agreement",
+   "expected": true,
+   "p": 0.9627
+  },
+  {
+   "sentence": "المنظمة تتبع نموذج التميز الأوروبي في تقييم الجودة.",
+   "form": "نموذج التميز الأوروبي",
+   "term": " نموذج المنظمة الأوروبية لإدارة الجودة",
+   "english": "European Organization for Quality Management Model",
+   "expected": true,
+   "p": 0.9005
+  },
+  {
+   "sentence": "الـ slush يغطي الأرض بالكامل.",
+   "form": "slush",
+   "term": "ثلج مائي",
+   "english": "slush",
+   "expected": true,
+   "p": 0.9381
+  },
+  {
+   "sentence": "أنا أستخدم لابتوب للعمل.",
+   "form": "لابتوب",
+   "term": "جهاز الحاسوب",
+   "english": "Computer",
+   "expected": true,
+   "p": 0.7417
+  },
+  {
+   "sentence": "الرئيس التنفيذي يوقع على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "الرئيس",
+   "english": "CEO",
+   "expected": true,
+   "p": 0.9005
+  },
+  {
+   "sentence": "نشرنا المنشور على سوشيال ميديا.",
+   "form": "سوشيال ميديا",
+   "term": "وسائل تواصل اجتماعية",
+   "english": "Social Media Platforms",
+   "expected": true,
+   "p": 0.9033
+  },
+  {
+   "sentence": "تم اكتشافه أثناء inting ضد الفريق.",
+   "form": "inting",
+   "term": "تعمد الخسارة (خيانة)",
+   "english": "Inting",
+   "expected": true,
+   "p": 0.8652
+  },
+  {
+   "sentence": "إشعار وكالة الرقابة.",
+   "form": "إشعار",
+   "term": "إخطار",
+   "english": "Notice",
+   "expected": true,
+   "p": 0.6893
+  },
+  {
+   "sentence": "استهلاك الكهرباء في المنزل ارتفع هذا الشهر.",
+   "form": "الكهرباء",
+   "term": "الطاقة الكهربائية",
+   "english": "Electrical Energy",
+   "expected": true,
+   "p": 0.85
+  },
+  {
+   "sentence": "فعالية الموظف في العمل.",
+   "form": "فعالية",
+   "term": "فاعلية",
+   "english": "Potency",
+   "expected": true,
+   "p": 0.5789
+  },
+  {
+   "sentence": "نظام predictor الجديد يحسب مسارات الطائرات بدقة.",
+   "form": "predictor",
+   "term": "متوقع",
+   "english": "predictor",
+   "expected": true,
+   "p": 0.867
+  },
+  {
+   "sentence": "شركة التأمين ساعدت في استرجاع الأصول.",
+   "form": "استرجاع الأصول",
+   "term": "استرداد الأصول",
+   "english": "Recovery of Assets",
+   "expected": true,
+   "p": 0.9208
+  },
+  {
+   "sentence": "قمت بتحميل ملف البيج داتا.",
+   "form": "بيج داتا",
+   "term": "البيانات الضخمة",
+   "english": "Big Data",
+   "expected": true,
+   "p": 0.9579
+  },
+  {
+   "sentence": "اشتريت راديو قديم للاستماع إلى الأخبار.",
+   "form": "راديو",
+   "term": "جهاز الراديو",
+   "english": "Radio Set",
+   "expected": true,
+   "p": 0.9294
+  },
+  {
+   "sentence": "المراجعة السنوية أظهرت مشاكل في التدقيق.",
+   "form": "مراجعة",
+   "term": "مراجعة فحص وتدقيق",
+   "english": "Audit",
+   "expected": true,
+   "p": 0.9033
+  },
+  {
+   "sentence": "السيارة تستخدم بروتوكول RS485 للاتصال.",
+   "form": "RS485",
+   "term": "بروتوكول اتصال تسلسلي غير متزامن، وثنائي السلكين، وثنائي الإنجاه",
+   "english": "RS485",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "التوقعات تشير إلى زيادة الطلب في الربع القادم.",
+   "form": "توقع",
+   "term": "تنبؤ ",
+   "english": "Forecast",
+   "expected": true,
+   "p": 0.8918
+  },
+  {
+   "sentence": "اشتريت سكين جديد للعبة.",
+   "form": "سكين",
+   "term": "مظهر",
+   "english": "skin",
+   "expected": true,
+   "p": 0.8397
+  },
+  {
+   "sentence": "توقيع الرئيس التنفيذي على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "الرئيس",
+   "english": "CEO",
+   "expected": true,
+   "p": 0.8926
+  },
+  {
+   "sentence": "الشركة أعلنت عن توزيعات الأرباح.",
+   "form": "توزيعات الأرباح",
+   "term": "أرباح الأسهم",
+   "english": "Stock Profits",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "استخدمنا لغة Prolog لحل هذه المسألة المنطقية.",
+   "form": "Prolog",
+   "term": "برولوج",
+   "english": "",
+   "expected": true,
+   "p": 0.9381
+  },
+  {
+   "sentence": "صدى الصوت في القاعة استمر طويلاً.",
+   "form": "صدى",
+   "term": "إصداء",
+   "english": "reverberation",
+   "expected": true,
+   "p": 0.9325
+  },
+  {
+   "sentence": "المنهجية الجديدة تعتمد على Augmented Intelligence.",
+   "form": "Augmented Intelligence",
+   "term": "ذكاء معزز",
+   "english": "Augmented Intelligence",
+   "expected": true,
+   "p": 0.9664
+  },
+  {
+   "sentence": "تعتمد إدارة الخط على إشارات السكة لتنظيم حركة القطارات.",
+   "form": "إشارات السكة",
+   "term": "إشارات الخطوط الحديدية",
+   "english": "railway signal",
+   "expected": true,
+   "p": 0.9504
+  },
+  {
+   "sentence": "نحتاج لتحليل الـ Lagging Indicators.",
+   "form": "Lagging Indicators",
+   "term": "مؤشرات أداء تابعة",
+   "english": "Lagging Indicators",
+   "expected": true,
+   "p": 0.956
+  },
+  {
+   "sentence": "المهمة نفذت بواسطة UAV.",
+   "form": "UAV",
+   "term": "طائرة بلا طيار",
+   "english": "pilotless aircraft",
+   "expected": true,
+   "p": 0.9305
+  },
+  {
+   "sentence": "فشل نظام التوزيع الكهربائي (EDS) في السيارة.",
+   "form": "EDS",
+   "term": "نظام التوزيع الكهربائي",
+   "english": "EDS (Electrical Distribution System)",
+   "expected": true,
+   "p": 0.9519
+  },
+  {
+   "sentence": "تؤثر التغيرات في أثر الحافة على التنوع البيولوجي.",
+   "form": "أثر الحافة",
+   "term": "أثر الحد البيئي",
+   "english": "Edge effect",
+   "expected": true,
+   "p": 0.9425
+  },
+  {
+   "sentence": "نقطة الـ check point مهمة جداً.",
+   "form": "check point",
+   "term": "نقطة مراجعة",
+   "english": "check point, checkpoint",
+   "expected": true,
+   "p": 0.7866
+  },
+  {
+   "sentence": "نظام GFS هو المرجع الأساسي للمقارنة الدولية.",
+   "form": "GFS",
+   "term": "نظام إحصاءات مالية الحكومة",
+   "english": "Government Finance Statistics (GFS)",
+   "expected": true,
+   "p": 0.9604
+  },
+  {
+   "sentence": "زيادة productivity تعني تحسين الأداء.",
+   "form": "productivity",
+   "term": "الإنتاجية ",
+   "english": "Productivity",
+   "expected": true,
+   "p": 0.945
+  },
+  {
+   "sentence": "أدوات AIOps ساعدتنا في المراقبة.",
+   "form": "AIOps",
+   "term": "ذكاء اصطناعي للعمليات",
+   "english": "Artificial Intelligence Operations (AIOps)",
+   "expected": true,
+   "p": 0.9466
+  },
+  {
+   "sentence": "يجب أن يكون موظف خدمة العملاء متدرباً جيداً.",
+   "form": "موظف خدمة العملاء",
+   "term": "ممثل خدمة العملاء",
+   "english": "",
+   "expected": true,
+   "p": 0.9425
+  },
+  {
+   "sentence": "النظام يحتاج إلى requalification ليعمل في البيئة الجديدة.",
+   "form": "requalification",
+   "term": "زيادة التأهيل",
+   "english": "requalification",
+   "expected": true,
+   "p": 0.923
+  },
+  {
+   "sentence": "تقنية الليثيوم هواء لا تزال قيد البحث.",
+   "form": "ليثيوم هواء",
+   "term": "بطارية الليثيوم-الهواء",
+   "english": "lithium-air battery",
+   "expected": true,
+   "p": 0.9433
+  },
+  {
+   "sentence": "الهدف هو تحقيق الجودة الشاملة.",
+   "form": "الجودة الشاملة",
+   "term": "إدارة الجودة الشاملة",
+   "english": "",
+   "expected": true,
+   "p": 0.7773
+  },
+  {
+   "sentence": "أنا أسرد تجاربي في مدونتي blog.",
+   "form": "blog",
+   "term": "مدونة",
+   "english": "Blog",
+   "expected": true,
+   "p": 0.9566
+  },
+  {
+   "sentence": "يتم قياس العرض النقدي بمؤشر M1.",
+   "form": "M1",
+   "term": " عرض النقود بمفهومه الضيق M1",
+   "english": "Money supply in its narrow definition M1\r\nMoney (MI) (Currency in circulation + Demand Deposits)",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "الهيكل الجوي للطائرة يحتوي على T-tail.",
+   "form": "T-tail",
+   "term": "ذيل بشكل T",
+   "english": "T-tail",
+   "expected": true,
+   "p": 0.9566
+  },
+  {
+   "sentence": "التطبيق هو برنامج ينفذ المهام.",
+   "form": "برنامج",
+   "term": "التطبيق",
+   "english": "",
+   "expected": true,
+   "p": 0.8056
+  },
+  {
+   "sentence": "الجهاز الميكسر يقوم بإيصال الإشارة.",
+   "form": "ميكسر",
+   "term": "خلاط",
+   "english": "miXer",
+   "expected": true,
+   "p": 0.8888
+  },
+  {
+   "sentence": "استخدمنا مكتبة NumPy للحسابات الرياضية.",
+   "form": "NumPy",
+   "term": "نمباي",
+   "english": "",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "يناقش الفريق دور PM في الجدول الزمني.",
+   "form": "PM",
+   "term": "مدير المشروع",
+   "english": "",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "استخدمنا FTP لنقل الملفات.",
+   "form": "FTP",
+   "term": "بروتوكول نقل الملفات",
+   "english": "(FTP) File Transfer Protocol",
+   "expected": true,
+   "p": 0.9504
+  },
+  {
+   "sentence": "تُعد Human-AI Collaboration هي المستقبل في الصناعة.",
+   "form": "Human-AI Collaboration",
+   "term": "تعاون الإنسان والذكاء الاصطناعي",
+   "english": "Human-AI Collaboration",
+   "expected": true,
+   "p": 0.9576
+  },
+  {
+   "sentence": "الـ social worker يعمل في منظمة غير ربحية.",
+   "form": "social worker",
+   "term": "الأخصائي الاجتماعي",
+   "english": "Social Worker",
+   "expected": true,
+   "p": 0.923
+  },
+  {
+   "sentence": "الـ ميترونوم يساعد في التدريب.",
+   "form": "ميترونوم",
+   "term": "ضابط السرعة",
+   "english": "metronome",
+   "expected": true,
+   "p": 0.945
+  },
+  {
+   "sentence": "تصدرت عاجل خبر الحريق في المدينة.",
+   "form": "عاجل",
+   "term": "أخبارعاجلة",
+   "english": "Breaking News",
+   "expected": true,
+   "p": 0.9274
+  },
+  {
+   "sentence": "خيارات ADR متعددة.",
+   "form": "ADR",
+   "term": "الحل البديل للنزاعات ",
+   "english": "Alternative Dispute Resolution (ADR)",
+   "expected": true,
+   "p": 0.906
+  },
+  {
+   "sentence": "لديك ستاتس قوية في الهجوم.",
+   "form": "ستاتس",
+   "term": "الإحصائيات",
+   "english": "Stats",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "نظام الأسهم يمنح preemptive right للشركاء.",
+   "form": "preemptive right",
+   "term": "الأولوية",
+   "english": "Preemptive Right",
+   "expected": true,
+   "p": 0.9208
+  },
+  {
+   "sentence": "أحتاج إلى ضبط استمرار الصوت في هذا العزف.",
+   "form": "استمرار الصوت",
+   "term": "استدامة الصوت",
+   "english": "Sustain",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "هذا نوع من الملابس يسمى بيتا.",
+   "form": "بيتا",
+   "term": "نسخة بيتا",
+   "english": "Beta",
+   "expected": true,
+   "p": 0.1152
+  },
+  {
+   "sentence": "يتم استخدام DSLAM لتوسيع الاتصال في المحطات الجانبية.",
+   "form": "DSLAM",
+   "term": "معدد وصول خط المشترك الرقمي",
+   "english": "DSL Access Multiplexer",
+   "expected": true,
+   "p": 0.9579
+  },
+  {
+   "sentence": "وقع الطرفان مذكرة تفاهم للتعاون التجاري.",
+   "form": "مذكرة تفاهم",
+   "term": "مذكرة التعاون",
+   "english": "",
+   "expected": true,
+   "p": 0.8459
+  },
+  {
+   "sentence": "الفلتر يعمل بكفاءة عالية.",
+   "form": "فلتر",
+   "term": "ترشيح",
+   "english": "filtering",
+   "expected": true,
+   "p": 0.4239
+  },
+  {
+   "sentence": "الأكسيد النيتروز مصدر للأكسجين.",
+   "form": "أكسيد النيتروز",
+   "term": "أكسيد الآزوتوز",
+   "english": "nitrous oXide",
+   "expected": true,
+   "p": 0.9485
+  },
+  {
+   "sentence": "تعتبر نسبة العائد من أهم مؤشرات جدوى الاستثمار.",
+   "form": "نسبة العائد",
+   "term": "معدل العائد",
+   "english": "Rate Of Return",
+   "expected": true,
+   "p": 0.9241
+  },
+  {
+   "sentence": "نظام الوقود يعتمد على خلية bacon cell.",
+   "form": "bacon cell",
+   "term": "خلية بيكون",
+   "english": "Bacon cell",
+   "expected": true,
+   "p": 0.6732
+  },
+  {
+   "sentence": "سعة القناة تعتمد على bandwidth.",
+   "form": "bandwidth",
+   "term": "عرض النطاق",
+   "english": "bandwidth, band width",
+   "expected": true,
+   "p": 0.9149
+  },
+  {
+   "sentence": "يستخدم زيت الموز في دِمام الطائرات.",
+   "form": "زيت الموز",
+   "term": "خلات الأميل",
+   "english": "amyl acetate",
+   "expected": true,
+   "p": 0.9474
+  },
+  {
+   "sentence": "الشاشة في غرفة التحكم تظهر الإشارات.",
+   "form": "شاشة",
+   "term": "شاشة عرض",
+   "english": "Display Screen",
+   "expected": true,
+   "p": 0.9161
+  },
+  {
+   "sentence": "التكلفة الإجمالية حسب BOQ.",
+   "form": "BOQ",
+   "term": "فاتورة الكميات",
+   "english": "Bill Of Quantities",
+   "expected": true,
+   "p": 0.9372
+  },
+  {
+   "sentence": "تظهر التقارير مستوى عالٍ من Economic Flexibility.",
+   "form": "Economic Flexibility",
+   "term": "مرونة اقتصادية",
+   "english": "Economic Flexibility",
+   "expected": true,
+   "p": 0.9579
+  },
+  {
+   "sentence": "المدفع ينفذ 600 shots per minute.",
+   "form": "shots per minute",
+   "term": "طلقة في الدقيقة",
+   "english": "spm",
+   "expected": true,
+   "p": 0.9511
+  },
+  {
+   "sentence": "سعة Ebatt في البطارية 60 كيلوواط ساعة.",
+   "form": "Ebatt",
+   "term": "سعة تيار البطارية (كيلوواط ساعة)",
+   "english": "Ebatt",
+   "expected": true,
+   "p": 0.9466
+  },
+  {
+   "sentence": "تعمل ISO على تطوير معايير عالمية.",
+   "form": "ISO",
+   "term": "منظمة دولية للمقاييس",
+   "english": "International Organization For Standardization",
+   "expected": true,
+   "p": 0.947
+  },
+  {
+   "sentence": "هذا هو الاستخدام الوحيد لـ QFD في تخطيط المنتج.",
+   "form": "QFD",
+   "term": "دار نشر وظيفة الجودة  الجودة",
+   "english": "House Of Quality/Quality Function Deployment (QFD)",
+   "expected": true,
+   "p": 0.8267
+  },
+  {
+   "sentence": "كثافة الهيليوم منخفضة جداً.",
+   "form": "هيليوم",
+   "term": "هليوم",
+   "english": "helium",
+   "expected": true,
+   "p": 0.945
+  },
+  {
+   "sentence": "الطائرة أدّت دوراناً سريعاً قبل الهبوط.",
+   "form": "دوران",
+   "term": "لفة",
+   "english": "turn",
+   "expected": true,
+   "p": 0.7642
+  },
+  {
+   "sentence": "لاحظنا ارتفاع معدل دوران الموظفين في قسم المبيعات هذا العام.",
+   "form": "دوران الموظفين",
+   "term": "اضطراب الموظفين ",
+   "english": "Staff Churn",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "أفضل الألعاب تتطلب بطاقة رسوميات قوية (GPU).",
+   "form": "GPU",
+   "term": "وحدة معالجة الرسوميات",
+   "english": "Graphics Processing Unit (GPU)",
+   "expected": true,
+   "p": 0.961
+  },
+  {
+   "sentence": "هذا العقد باطل ولا يُلزم أحدًا.",
+   "form": "باطل",
+   "term": "باطل ولاغ",
+   "english": "Null and void",
+   "expected": true,
+   "p": 0.9219
+  },
+  {
+   "sentence": "سيرفر اللعبة متعطل.",
+   "form": "سيرفر",
+   "term": "خادم",
+   "english": "server",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "انتظر صفه في طابور التسجيل.",
+   "form": "صف",
+   "term": "رتل",
+   "english": "queue",
+   "expected": true,
+   "p": 0.8539
+  },
+  {
+   "sentence": "يُستخدم الكيروسين كوقود أساسي في المحركات النفاثة.",
+   "form": "كيروسين",
+   "term": "كاز",
+   "english": "kerosine",
+   "expected": true,
+   "p": 0.8311
+  },
+  {
+   "sentence": "حسبنا IRR للمشروع قبل الاستثمار فيه.",
+   "form": "IRR",
+   "term": "معدل العائد الداخلي",
+   "english": "Internal Rate Of Return (IRR)",
+   "expected": true,
+   "p": 0.9672
+  },
+  {
+   "sentence": "المقياس يستخدم وحدة sone لقياس الصوت.",
+   "form": "sone",
+   "term": "سون",
+   "english": "sone",
+   "expected": true,
+   "p": 0.954
+  },
+  {
+   "sentence": "يدير فريق SOC العمليات اليومية.",
+   "form": "SOC",
+   "term": "مركز عمليات الأمن السيبراني",
+   "english": "Cybersecurity Operation Center",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "كانت المشكلة هي التنمر عبر الإنترنت ضد زميلها.",
+   "form": "التنمر عبر الإنترنت",
+   "term": "التنمر الإلكتروني",
+   "english": "",
+   "expected": true,
+   "p": 0.9654
+  },
+  {
+   "sentence": "الـ build الخاص باللاعب يحتاج إلى مهارات عالية.",
+   "form": "build",
+   "term": "تشكيل",
+   "english": "character build",
+   "expected": true,
+   "p": 0.9305
+  },
+  {
+   "sentence": "الـ قناص في اللعبة قوي جداً.",
+   "form": "قناص",
+   "term": "قناصة",
+   "english": "sniper",
+   "expected": true,
+   "p": 0.8856
+  },
+  {
+   "sentence": "تعمل الشركة على تحويل مكتبها إلى بيئة بدون ورق.",
+   "form": "بدون ورق",
+   "term": "لا ورقي",
+   "english": "Paperless",
+   "expected": true,
+   "p": 0.9124
+  },
+  {
+   "sentence": "أصبح مسؤول السوشيال ميديا هو الشخص الرئيسي للتواصل مع الجمهور.",
+   "form": "مسؤول السوشيال ميديا",
+   "term": "مسؤول وسائل التواصل الاجتماعي",
+   "english": "Social Media Manager",
+   "expected": true,
+   "p": 0.9607
+  },
+  {
+   "sentence": "نظامنا يدير عملية tasking تلقائياً.",
+   "form": "tasking",
+   "term": "تخصيص المهام",
+   "english": "tasking",
+   "expected": true,
+   "p": 0.939
+  },
+  {
+   "sentence": "الـ combo الأخير كان خارقاً.",
+   "form": "combo",
+   "term": "تسلسل حركي",
+   "english": "combo",
+   "expected": true,
+   "p": 0.9408
+  },
+  {
+   "sentence": "ارتفع مؤشر VIX مع التوترات الجيوسياسية.",
+   "form": "VIX",
+   "term": "مؤشر التقلبات",
+   "english": "Volatilities Index (VIX)",
+   "expected": true,
+   "p": 0.9601
+  },
+  {
+   "sentence": "حصل الوكيل على عمولة من عملية البيع.",
+   "form": "عمولة",
+   "term": "عمولة البيع",
+   "english": "Sales Commission",
+   "expected": true,
+   "p": 0.9344
+  },
+  {
+   "sentence": "سبب تدهور البيئة في المنطقة هو التصنيع غير المنظم.",
+   "form": "تدهور البيئة",
+   "term": "التدهور البيئي",
+   "english": "Environmental Degradation",
+   "expected": true,
+   "p": 0.9425
+  },
+  {
+   "sentence": "الخوارزمية تعتمد على decision tree.",
+   "form": "decision tree",
+   "term": "شجرة القرار ",
+   "english": "Decision Tree",
+   "expected": true,
+   "p": 0.961
+  },
+  {
+   "sentence": "الوقاية من الأمراض مهمة جدًا.",
+   "form": "الوقاية",
+   "term": "الوقاية الصحية",
+   "english": "Health Prevention",
+   "expected": true,
+   "p": 0.8824
+  },
+  {
+   "sentence": "المحرك jet يوفر قوة دفع هائلة.",
+   "form": "jet",
+   "term": "نفاث",
+   "english": "jet",
+   "expected": true,
+   "p": 0.9033
+  },
+  {
+   "sentence": "تم تحديث إعدادات launchpad في اللعبة.",
+   "form": "launchpad",
+   "term": "منصة الانطلاق",
+   "english": "launch pad",
+   "expected": true,
+   "p": 0.9047
+  },
+  {
+   "sentence": "استراتيجيتنا تركز على Win-Back العملاء المفقودين.",
+   "form": "Win-Back",
+   "term": "استرجاع العملاء",
+   "english": "Customer Win-Back",
+   "expected": true,
+   "p": 0.9353
+  },
+  {
+   "sentence": "يجب المرور بنقطة تفتيش قبل الإقلاع.",
+   "form": "نقطة تفتيش",
+   "term": "نقطة مراجعة",
+   "english": "check point, checkpoint",
+   "expected": true,
+   "p": 0.8459
+  },
+  {
+   "sentence": "تستخدم الطائرات صور رادارية لتحديد الأهداف في الليل.",
+   "form": "صور رادارية",
+   "term": "تخيلات رادارية",
+   "english": "radar imagery",
+   "expected": true,
+   "p": 0.9363
+  },
+  {
+   "sentence": "الحصول على تمويل لمشروع جديد.",
+   "form": "تمويل",
+   "term": "دعم مالي",
+   "english": "Financial support",
+   "expected": true,
+   "p": 0.8597
+  },
+  {
+   "sentence": "دوري الدوري.",
+   "form": "دوري",
+   "term": "بطولة الدوري",
+   "english": "League Championship",
+   "expected": true,
+   "p": 0.3961
+  },
+  {
+   "sentence": "يجب سداد رسوم الخدمة قبل الوصول.",
+   "form": "رسوم",
+   "term": "الأجور",
+   "english": "",
+   "expected": true,
+   "p": 0.3612
+  },
+  {
+   "sentence": "هذا المشروع يعتمد على Citizen Data Science.",
+   "form": "Citizen Data Science",
+   "term": "علم البيانات لغير المختصين",
+   "english": "Citizen Data Science",
+   "expected": true,
+   "p": 0.961
+  },
+  {
+   "sentence": "أوسيلوسكوب",
+   "form": "أوسيلوسكوب",
+   "term": "راسم الذبذبات",
+   "english": "oscilloscope",
+   "expected": true,
+   "p": 0.9466
+  },
+  {
+   "sentence": "أحتاج لزيادة مانا للهجوم.",
+   "form": "مانا",
+   "term": "قوة سحرية",
+   "english": "Mana",
+   "expected": true,
+   "p": 0.9497
+  },
+  {
+   "sentence": "قبل إطلاق المنتج، صممنا نموذج أولي للاختبار.",
+   "form": "نموذج أولي",
+   "term": "نموذج مبدئي",
+   "english": "Prototype",
+   "expected": true,
+   "p": 0.9284
+  },
+  {
+   "sentence": "تم إصلاح محرك الديزل في الطائرة.",
+   "form": "ديزل",
+   "term": "محرك ديزل",
+   "english": "diesel engine",
+   "expected": true,
+   "p": 0.7535
+  },
+  {
+   "sentence": "نظام التحكم يعاني من مشكلة هانتنج عند السرعات العالية.",
+   "form": "هانتنج",
+   "term": "تأرجح",
+   "english": "hunting",
+   "expected": true,
+   "p": 0.8615
+  },
+  {
+   "sentence": "المناورة تسمى بالإنجليزية pop-up.",
+   "form": "pop-up",
+   "term": "ارتفاع فجائي",
+   "english": "pop-up",
+   "expected": true,
+   "p": 0.923
+  },
+  {
+   "sentence": "لدينا خطة عمل لـ BCMS.",
+   "form": "BCMS",
+   "term": "نظام إدارة استمرارية الأعمال",
+   "english": "Business Continuity Management System (BCMS)",
+   "expected": true,
+   "p": 0.9621
+  },
+  {
+   "sentence": "تعتبر الذكاء الاصطناعي (AI) من أهم التقنيات الحديثة.",
+   "form": "AI",
+   "term": "ذكاء اصطناعي",
+   "english": "Artificial Intelligence (AI)",
+   "expected": true,
+   "p": 0.956
+  },
+  {
+   "sentence": "المواصفات تقبل وحدة hp.",
+   "form": "hp",
+   "term": "قدرة حصانية",
+   "english": "horsepower",
+   "expected": true,
+   "p": 0.954
+  },
+  {
+   "sentence": "هذا تمرين تاباتا.",
+   "form": "تاباتا",
+   "term": "تمرين مكثف",
+   "english": "Tabata",
+   "expected": true,
+   "p": 0.8775
+  },
+  {
+   "sentence": "تم اكتشاف العيوب الخفية في الجدران أثناء الفحص.",
+   "form": "العيوب الخفية",
+   "term": "العيب الخفي",
+   "english": "",
+   "expected": true,
+   "p": 0.9294
+  },
+  {
+   "sentence": "شركة Virtual Reality تطلق ألعاباً جديدة.",
+   "form": "Virtual Reality",
+   "term": "الواقع الافتراضي",
+   "english": "Virtual Reality",
+   "expected": true,
+   "p": 0.8808
+  },
+  {
+   "sentence": "أنا أريد pass.",
+   "form": "pass",
+   "term": "تمرير",
+   "english": "Pass",
+   "expected": true,
+   "p": 0.7454
+  },
+  {
+   "sentence": "في هذا الإعلان، استخدموا موسيقى خلفية هادئة.",
+   "form": "موسيقى خلفية",
+   "term": "موسيقى تصويرية",
+   "english": "Soundtrack",
+   "expected": true,
+   "p": 0.9241
+  },
+  {
+   "sentence": "يستخدم الوكيل Replay Buffer لحفظ التجارب السابقة.",
+   "form": "Replay Buffer",
+   "term": "ذاكرة إعادة التشغيل",
+   "english": "Replay Buffer",
+   "expected": true,
+   "p": 0.9482
+  },
+  {
+   "sentence": "تم استخدام الراتنج الإيبوكسي في تصنيع الجناح.",
+   "form": "إيبوكسي",
+   "term": "راتنج إيبوكسي",
+   "english": "epoXy resin",
+   "expected": true,
+   "p": 0.9315
+  },
+  {
+   "sentence": "يجب أن تلتزم الشركة بمعايير GAAP في إعدادها المالي.",
+   "form": "GAAP",
+   "term": "مبادئ المحاسبة المقبولة عموما",
+   "english": "GAAP",
+   "expected": true,
+   "p": 0.9632
+  },
+  {
+   "sentence": "أنا في tilt الآن ولا أستطيع اللعب.",
+   "form": "tilt",
+   "term": "فقدان التركيز",
+   "english": "Tilt",
+   "expected": true,
+   "p": 0.9274
+  },
+  {
+   "sentence": "سيتم استخدام بروتوكول CAN FD في هذا النظام.",
+   "form": "CAN FD",
+   "term": "نظام شبكة تحكم مرنة المعدل",
+   "english": "CAN Flexible Data-Rate (CAN-FD)",
+   "expected": true,
+   "p": 0.9208
+  },
+  {
+   "sentence": "بعد التأكد من SoM، أذن النظام للقطار بالحركة.",
+   "form": "SoM",
+   "term": "بداية المهمة ",
+   "english": "Start of Mission (SoM)",
+   "expected": true,
+   "p": 0.9315
+  },
+  {
+   "sentence": "أدخل البيانات في الحاسوب.",
+   "form": "حاسوب",
+   "term": "الحاسب الآلي",
+   "english": "Computer",
+   "expected": true,
+   "p": 0.9485
+  },
+  {
+   "sentence": "الرياضة المفضلة لدي هي الغوص بالمعدات أو ما يسمى بالسكوبا.",
+   "form": "سكوبا",
+   "term": "الغوص بالمعدات",
+   "english": "Scuba Diving",
+   "expected": true,
+   "p": 0.9208
+  },
+  {
+   "sentence": "المحفظة تحتوي على الكثير من loot.",
+   "form": "loot",
+   "term": "مغانم",
+   "english": "loot",
+   "expected": true,
+   "p": 0.9417
+  },
+  {
+   "sentence": "المحول transformer في اللوحة الرئيسية.",
+   "form": "transformer",
+   "term": "محول",
+   "english": "transformer",
+   "expected": true,
+   "p": 0.9442
+  },
+  {
+   "sentence": "نظام الـ float يسمح للطائرة بالارتفاع ببطء.",
+   "form": "float",
+   "term": "سلاك",
+   "english": "Slack",
+   "expected": false,
+   "p": 0.1722
+  },
+  {
+   "sentence": "أحسنت في الباص.",
+   "form": "باص",
+   "term": "ناقل",
+   "english": "bus",
+   "expected": false,
+   "p": 0.906
+  },
+  {
+   "sentence": "الطيران عبر هذا trunk الجوي يربط المدن الكبرى.",
+   "form": "trunk",
+   "term": "مجرى جذعي",
+   "english": "trunk ---(1)",
+   "expected": false,
+   "p": 0.1772
+  },
+  {
+   "sentence": "نظام الـ nav متطور جداً في الطائرات الحديثة.",
+   "form": "nav",
+   "term": "\tصافي قيمة الأصول",
+   "english": "Net Assets Value",
+   "expected": false,
+   "p": 0.0619
+  },
+  {
+   "sentence": "تتطلب إدارة الانبعاثات مراقبة مستويات VOC في الهواء.",
+   "form": "VOC",
+   "term": "أساليب الأخذ بآراء المستفيدين",
+   "english": "Beneficiary Feedback",
+   "expected": false,
+   "p": 0.0246
+  },
+  {
+   "sentence": "المتداول يفتح عقد CFD على الذهب.",
+   "form": "CFD",
+   "term": "عقد الإفتراق",
+   "english": "Contract For Difference (CFD)",
+   "expected": false,
+   "p": 0.9526
+  },
+  {
+   "sentence": "الـ spoiler في الطائرة يخفض السرعة.",
+   "form": "spoiler",
+   "term": "معترضة",
+   "english": "intercepter, interceptor ---(2)",
+   "expected": false,
+   "p": 0.3469
+  },
+  {
+   "sentence": "نظام الـ transponder يعمل بكفاءة عالية.",
+   "form": "transponder",
+   "term": "ناقل فضائي",
+   "english": "Satellite Transponder",
+   "expected": false,
+   "p": 0.9408
+  },
+  {
+   "sentence": "التصميم الجديد للـ cavity magnetron يحسن الكفاءة.",
+   "form": "cavity magnetron",
+   "term": "مغنيطرون الموجات المتنقلة",
+   "english": "travelling-wave magnetron",
+   "expected": false,
+   "p": 0.7712
+  },
+  {
+   "sentence": "حماية حقوق الملكية الفكرية (IP) في الشركة.",
+   "form": "IP",
+   "term": "نقطة البدء",
+   "english": "initial point",
+   "expected": false,
+   "p": 0.0386
+  },
+  {
+   "sentence": "يستخدم هذا النظام بروتوكول CAN للتواصل بين الوحدات.",
+   "form": "CAN",
+   "term": "شبكة CAN",
+   "english": "CAN Bus",
+   "expected": false,
+   "p": 0.8418
+  },
+  {
+   "sentence": "تطبيقات AR تضيف معلومات على الشاشة.",
+   "form": "AR",
+   "term": "ذمم مدينة",
+   "english": "Accounts Receivable",
+   "expected": false,
+   "p": 0.0271
+  },
+  {
+   "sentence": "أجبرنا على تفريغ الوقود بسبب العاصفة.",
+   "form": "تفريغ",
+   "term": "تصريف",
+   "english": "blowdown",
+   "expected": false,
+   "p": 0.373
+  },
+  {
+   "sentence": "لدينا خطة لرفع KPIs المبيعات.",
+   "form": "KPIs",
+   "term": "مؤشر الأداء الرئيسي",
+   "english": "Key Performance Indicator (KPI)",
+   "expected": false,
+   "p": 0.945
+  },
+  {
+   "sentence": "نسبة الـ ROI تتجاوز 20%.",
+   "form": "ROI",
+   "term": "عائد على الاستثمار",
+   "english": "Return on Investment (ROI)",
+   "expected": false,
+   "p": 0.9654
+  },
+  {
+   "sentence": "نظام tracking يضمن جودة المنتجات.",
+   "form": "tracking",
+   "term": "يتتبع",
+   "english": "track ---(3)",
+   "expected": false,
+   "p": 0.3107
+  },
+  {
+   "sentence": "يتم قياس العرض النقدي بمؤشر M1.",
+   "form": "M1",
+   "term": "عرض النقود (ن1)",
+   "english": "Money Supply (M1)",
+   "expected": false,
+   "p": 0.9363
+  },
+  {
+   "sentence": "إشعار وكالة الرقابة.",
+   "form": "إشعار",
+   "term": "تنبيه",
+   "english": "Alert",
+   "expected": false,
+   "p": 0.6105
+  },
+  {
+   "sentence": "نظام ESP يمنع الانزلاق عند المنعطفات.",
+   "form": "ESP",
+   "term": "ترسيب كهرساكن",
+   "english": "electrostatic precipitation",
+   "expected": false,
+   "p": 0.0695
+  },
+  {
+   "sentence": "برنامج SCORE يساعد الشركات على التحسين.",
+   "form": "SCORE",
+   "term": "نوتة موسيقية",
+   "english": "sheet music",
+   "expected": false,
+   "p": 0.1016
+  },
+  {
+   "sentence": "يجب على الشركة الالتزام بمعايير ISO 14001.",
+   "form": "ISO",
+   "term": "المنظمة الدولية للمعايير",
+   "english": "International Organization for Standardization (ISO)",
+   "expected": false,
+   "p": 0.9433
+  },
+  {
+   "sentence": "أخلاقيات المهنة تتطلب النزاهة والشفافية.",
+   "form": "أخلاقيات المهنة",
+   "term": "الأخلاق المهنية ",
+   "english": "Ethics",
+   "expected": false,
+   "p": 0.9284
+  },
+  {
+   "sentence": "الوقت TTS لهذه المحطة هو 45 دقيقة.",
+   "form": "TTS",
+   "term": "توليد الكلام",
+   "english": "Speech Synthesis",
+   "expected": false,
+   "p": 0.6388
+  },
+  {
+   "sentence": "مسار track على اللوحة الإلكترونية.",
+   "form": "track",
+   "term": "موطئ",
+   "english": "tread",
+   "expected": false,
+   "p": 0.1246
+  },
+  {
+   "sentence": "هذا الخط (line) يحتاج إلى ضبط.",
+   "form": "line",
+   "term": "سطر",
+   "english": "trace ---(2)",
+   "expected": false,
+   "p": 0.4388
+  },
+  {
+   "sentence": "ميزت الشركة بين CAPEX و OPEX.",
+   "form": "OPEX",
+   "term": "إنفاق‭ ‬تشغيلي",
+   "english": "Operational Expenditure (OPEX)",
+   "expected": false,
+   "p": 0.9573
+  },
+  {
+   "sentence": "أضافت السيارة 50 كم من Rex خلال ساعة الشحن.",
+   "form": "Rex",
+   "term": "موسع المدى",
+   "english": "range extender",
+   "expected": false,
+   "p": 0.6749
+  },
+  {
+   "sentence": "تم تنظيف pitot head قبل الصيانة.",
+   "form": "pitot head",
+   "term": "رأس پيتو",
+   "english": "pitot head",
+   "expected": false,
+   "p": 0.9511
+  },
+  {
+   "sentence": "نحتاج إلى فوت لاختيار الخريطة.",
+   "form": "فوت",
+   "term": "قدم",
+   "english": "foot",
+   "expected": false,
+   "p": 0.8032
+  },
+  {
+   "sentence": "سجلت البئر إنتاجها الأولي IP.",
+   "form": "IP",
+   "term": "نقطة البدء",
+   "english": "initial point",
+   "expected": false,
+   "p": 0.1432
+  },
+  {
+   "sentence": "تجربة سيارة هيدروجين جديدة في الرياض.",
+   "form": "سيارة هيدروجين",
+   "term": "سيارة خلية الوقود ",
+   "english": "Fuel Cell Electric Vehicle (FCEV)",
+   "expected": false,
+   "p": 0.9325
+  },
+  {
+   "sentence": "نظام CTC يدير حركة القطارات.",
+   "form": "CTC",
+   "term": "التحكم المركزي بحركة المرور",
+   "english": "Central Traffic Control",
+   "expected": false,
+   "p": 0.7607
+  },
+  {
+   "sentence": "أفضل الألعاب تتطلب بطاقة رسوميات قوية (GPU).",
+   "form": "GPU",
+   "term": "وحدة قدرة أرضية ثلاثية الخرج",
+   "english": "triple-output ground power unit",
+   "expected": false,
+   "p": 0.0685
+  },
+  {
+   "sentence": "استخدمنا أداة BI لتحليل المبيعات.",
+   "form": "BI",
+   "term": "ذكاء الأعمال  المعلومات المهنية ",
+   "english": "Business Intelligence (BI)",
+   "expected": false,
+   "p": 0.9553
+  },
+  {
+   "sentence": "لقد اشتريت دروناً للعبة.",
+   "form": "درون",
+   "term": "طائرة بلا طيار",
+   "english": "pilotless aircraft",
+   "expected": false,
+   "p": 0.867
+  },
+  {
+   "sentence": "نظامها المالي يتبع قواعد PLC.",
+   "form": "PLC",
+   "term": "دورة حياة المنتج",
+   "english": "Product Life Cycle",
+   "expected": false,
+   "p": 0.9137
+  },
+  {
+   "sentence": "يجب إدخال الـ PIN الصحيح للدخول إلى النظام.",
+   "form": "PIN",
+   "term": "إشعار المعلومات المسبقة ",
+   "english": "Prior Information Notice",
+   "expected": false,
+   "p": 0.0927
+  },
+  {
+   "sentence": "هذا KPI هو الأهم لهذا الربع.",
+   "form": "KPI",
+   "term": "مؤشر الأداء الرئيسي ",
+   "english": "Key Performance Indicator (KPI)",
+   "expected": false,
+   "p": 0.9573
+  },
+  {
+   "sentence": "أصدرت CMA قراراً جديداً بشأن التداول.",
+   "form": "CMA",
+   "term": "هيئة المنافسة والأسواق",
+   "english": "Competitions And Markets Authority (CMA)",
+   "expected": false,
+   "p": 0.954
+  },
+  {
+   "sentence": "تم تمرير المنتج بعد اجتياز اختبار QC.",
+   "form": "QC",
+   "term": "طائرة سريعة التبديل",
+   "english": "quick-change aircraft",
+   "expected": false,
+   "p": 0.1264
+  },
+  {
+   "sentence": "الـ tilt في الطائرة يجب أن يكون صفراً.",
+   "form": "tilt",
+   "term": "ميلان",
+   "english": "heeling",
+   "expected": false,
+   "p": 0.6624
+  },
+  {
+   "sentence": "هدفنا تحقيق CI في جميع المشاريع.",
+   "form": "CI",
+   "term": "نطاق الثقة",
+   "english": "Confidence Interval",
+   "expected": false,
+   "p": 0.8918
+  },
+  {
+   "sentence": "الطائرة نفذت zoom قبل الهبوط.",
+   "form": "zoom",
+   "term": "صعود مفاجئ",
+   "english": "pull up",
+   "expected": false,
+   "p": 0.884
+  },
+  {
+   "sentence": "نركز على تحسين KPI.",
+   "form": "KPI",
+   "term": "مقياس الأداء",
+   "english": "Performance Measure",
+   "expected": false,
+   "p": 0.8578
+  },
+  {
+   "sentence": "خوارزمية NER تكتشف الأسماء في المقالات.",
+   "form": "NER",
+   "term": " صافي نسب الالتحاق في التعليم الابتدائي حسب الجنس",
+   "english": "Net Enrolment Ratio (NER) in Primary Education, by Sex",
+   "expected": false,
+   "p": 0.0891
+  },
+  {
+   "sentence": "استخدام الـ AI في التحليلات التنبؤية.",
+   "form": "AI",
+   "term": "الانسجام",
+   "english": "Ai",
+   "expected": false,
+   "p": 0.1895
+  },
+  {
+   "sentence": "أعدت إعدادات zoom في الكاميرا.",
+   "form": "zoom",
+   "term": "صعود حاد",
+   "english": "zoom ---(1)",
+   "expected": false,
+   "p": 0.0675
+  },
+  {
+   "sentence": "نظام GPS في السيارة يخبرنا بموقعها الدقيق.",
+   "form": "GPS",
+   "term": "ملاحة تابع",
+   "english": "satnav",
+   "expected": false,
+   "p": 0.8176
+  },
+  {
+   "sentence": "تصنيف المركبات كـ salvage يمنع دخولها للسوق.",
+   "form": "salvage",
+   "term": "استخلاص",
+   "english": "recovery",
+   "expected": false,
+   "p": 0.1613
+  },
+  {
+   "sentence": "قيمة Q في الدائرة عالية جداً.",
+   "form": "Q",
+   "term": "رطوبة نوعية",
+   "english": "specific humidity",
+   "expected": false,
+   "p": 0.9099
+  },
+  {
+   "sentence": "تستخدم الشركة نظام P2P لإدارة الفواتير والدفع.",
+   "form": "P2P",
+   "term": "نقطة إلى نقطة",
+   "english": "point to point",
+   "expected": false,
+   "p": 0.1281
+  },
+  {
+   "sentence": "استخدمنا EDI للتواصل مع الموردين.",
+   "form": "EDI",
+   "term": "تبادل البيانات الإلكترونية",
+   "english": "(EDI) Electronic Data Interchange",
+   "expected": false,
+   "p": 0.9592
+  },
+  {
+   "sentence": "هذا الغناء جميل جداً، النوتة جميلة.",
+   "form": "نوتة",
+   "term": "نغمة",
+   "english": "tone",
+   "expected": false,
+   "p": 0.3259
+  },
+  {
+   "sentence": "الطيار يقوم بتعديل التريم أثناء الطيران.",
+   "form": "تريم",
+   "term": "ضبط التوازن",
+   "english": "trim ---(3)",
+   "expected": false,
+   "p": 0.9019
+  },
+  {
+   "sentence": "هذا التطبيق يعمل كروبوت محادثة ذكي.",
+   "form": "روبوت محادثة",
+   "term": "روبوتات المحادثة",
+   "english": "Chat Bots",
+   "expected": false,
+   "p": 0.9566
+  },
+  {
+   "sentence": "سيارة تحتوي على نظام AEB.",
+   "form": "AEB",
+   "term": "نظام الفرامل النشط",
+   "english": "Active braking system",
+   "expected": false,
+   "p": 0.8808
+  },
+  {
+   "sentence": "أعد تشغيل الكمبيوتر.",
+   "form": "كمبيوتر",
+   "term": "حاسوب شخصي",
+   "english": "Personal Computer",
+   "expected": false,
+   "p": 0.8856
+  },
+  {
+   "sentence": "المعايير الدولية من منظمة ISO.",
+   "form": "ISO",
+   "term": "شهادة الآيزو ",
+   "english": "ISO",
+   "expected": false,
+   "p": 0.7621
+  },
+  {
+   "sentence": "هذا model يعمل بكفاءة عالية.",
+   "form": "model",
+   "term": "نموذج مقياسي",
+   "english": "scale model",
+   "expected": false,
+   "p": 0.214
+  },
+  {
+   "sentence": "قرر المدير إيقاف التشغيل بعد إغلاق المنشأة.",
+   "form": "إيقاف التشغيل",
+   "term": "إيقاف",
+   "english": "shutdown",
+   "expected": false,
+   "p": 0.5283
+  },
+  {
+   "sentence": "الجاز له تأثير كبير.",
+   "form": "جاز",
+   "term": "كيروسين",
+   "english": "kerosene",
+   "expected": false,
+   "p": 0.446
+  },
+  {
+   "sentence": "نستخدم طائرة بدون طيار للمراقبة.",
+   "form": "طائرة بدون طيار",
+   "term": "طائرة بلا طيار",
+   "english": "pilotless aircraft",
+   "expected": false,
+   "p": 0.9202
+  },
+  {
+   "sentence": "جدولنا للصيانة الدورية (PM) ينطلق كل شهر.",
+   "form": "PM",
+   "term": "علم المعادن المسحوقة",
+   "english": "powder metallurgy",
+   "expected": false,
+   "p": 0.0573
+  },
+  {
+   "sentence": "هذا فيلم إنتاج مشترك co-production بين شركتين.",
+   "form": "co-production",
+   "term": "تساند",
+   "english": "Co-Creation",
+   "expected": false,
+   "p": 0.4106
+  },
+  {
+   "sentence": "جزء الوصلة (drogue) على سفينة أبولو.",
+   "form": "drogue",
+   "term": "مظلة كبح",
+   "english": "drag chute",
+   "expected": false,
+   "p": 0.8872
+  },
+  {
+   "sentence": "نظام الـ spoiler يفسد الجريان محلياً.",
+   "form": "spoiler",
+   "term": "مخفف",
+   "english": "dipper",
+   "expected": false,
+   "p": 0.3311
+  },
+  {
+   "sentence": "المحطة تدعم نظام CCS.",
+   "form": "CCS",
+   "term": "أمر التحكم والإشارات",
+   "english": "Control Command Signaling",
+   "expected": false,
+   "p": 0.6901
+  },
+  {
+   "sentence": "نحتاج لتقليل lead time في سلسلة التوريد.",
+   "form": "lead time",
+   "term": "مهلة طلب الشراء",
+   "english": "Purchase Order Lead",
+   "expected": false,
+   "p": 0.3711
+  },
+  {
+   "sentence": "يجب تحديث خطة BCP سنوياً.",
+   "form": "BCP",
+   "term": "تخطيط استمرارية الأعمال",
+   "english": "Business Continuity Planning (BCP)",
+   "expected": false,
+   "p": 0.9519
+  },
+  {
+   "sentence": "الـ KPIات مرتفعة جداً.",
+   "form": "KPI",
+   "term": "مؤشر أداء رئيسي",
+   "english": "Key Performance Indicator",
+   "expected": false,
+   "p": 0.954
+  },
+  {
+   "sentence": "تعمل ISO على تطوير معايير عالمية.",
+   "form": "ISO",
+   "term": "منظمة دولية للتوحيد القياسي",
+   "english": "ISO",
+   "expected": false,
+   "p": 0.9442
+  },
+  {
+   "sentence": "نظام ASR يحول الصوت إلى نص تلقائياً.",
+   "form": "ASR",
+   "term": "إنقاذ بحري بالطائرات",
+   "english": "air/sea rescue",
+   "expected": false,
+   "p": 0.0494
+  },
+  {
+   "sentence": "تستخدم السيارة بروتوكول CAN للاتصال بين المحرك والمقود.",
+   "form": "CAN",
+   "term": "علبة",
+   "english": "can",
+   "expected": false,
+   "p": 0.1071
+  },
+  {
+   "sentence": "استخدمت الشركة SPV لتسهيل التمويل.",
+   "form": "SPV",
+   "term": "منشأة ذات أغراض خاصة",
+   "english": "Special Purposes Entity",
+   "expected": false,
+   "p": 0.9466
+  },
+  {
+   "sentence": "يُطلق على المادة اسم البيتومين أو القار.",
+   "form": "بيتومين",
+   "term": "أسفلت قار",
+   "english": "Asphaltic Bitumen",
+   "expected": false,
+   "p": 0.9149
+  },
+  {
+   "sentence": "توقيع الرئيس التنفيذي على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.8872
+  },
+  {
+   "sentence": "الاندلاع الشمسي flare سبب في اضطراب الاتصالات.",
+   "form": "flare",
+   "term": "اتساع للخارج",
+   "english": "flare ---(4)",
+   "expected": false,
+   "p": 0.1259
+  },
+  {
+   "sentence": "البنك المركزي يحدد الحد الأقصى لـ APR في البطاقات الائتمانية.",
+   "form": "APR",
+   "term": "مسجل جانبية التضاريس",
+   "english": "terrain-profile recorder",
+   "expected": false,
+   "p": 0.0334
+  },
+  {
+   "sentence": "الطائرة في مرحلة هبوط.",
+   "form": "هبوط",
+   "term": "حط",
+   "english": "landing",
+   "expected": false,
+   "p": 0.8044
+  },
+  {
+   "sentence": "تعتبر الذكاء الاصطناعي (AI) من أهم التقنيات الحديثة.",
+   "form": "AI",
+   "term": "الانسجام",
+   "english": "Ai",
+   "expected": false,
+   "p": 0.0786
+  },
+  {
+   "sentence": "غرفة الاحتراق في المحرك تسمى حارق.",
+   "form": "غرفة الاحتراق",
+   "term": "حجرة الاحتراق",
+   "english": "combustion chamber",
+   "expected": false,
+   "p": 0.7417
+  },
+  {
+   "sentence": "تُعتبر هذه البرمجيات Open Source.",
+   "form": "Open Source",
+   "term": "البرمجيات الحرة  ومفتوحة المصدر",
+   "english": "Open Source Software",
+   "expected": false,
+   "p": 0.9196
+  },
+  {
+   "sentence": "تتميز الدولة باستثمار كبير في clean energy.",
+   "form": "clean energy",
+   "term": "طاقة‭ ‬خضراء",
+   "english": "Green Energy",
+   "expected": false,
+   "p": 0.9073
+  },
+  {
+   "sentence": "البيانات تحتوي على نسبة عالية من النويز.",
+   "form": "نويز",
+   "term": "ضجيج",
+   "english": "noise ---(1)",
+   "expected": false,
+   "p": 0.8977
+  },
+  {
+   "sentence": "يجب أن يكون هناك تنسيق بين جميع أقسام الطائرة.",
+   "form": "تنسيق",
+   "term": "صيغة",
+   "english": "format",
+   "expected": false,
+   "p": 0.4494
+  },
+  {
+   "sentence": "المصابيح LED توفر طاقة أقل.",
+   "form": "LED",
+   "term": "صمام ثنائي مصدر للضوء",
+   "english": "light-emitting diode",
+   "expected": false,
+   "p": 0.884
+  },
+  {
+   "sentence": "تم إرسال طلب الإرسال عن بعد (RTR) من المحطة.",
+   "form": "RTR",
+   "term": "اتصالات عن بعد",
+   "english": "remote communications",
+   "expected": false,
+   "p": 0.2351
+  },
+  {
+   "sentence": "لقد قمت بربط التطبيق عبر الـ API.",
+   "form": "API",
+   "term": "معهد البترول الأمريكي",
+   "english": "American Petroleum Institute (Api)",
+   "expected": false,
+   "p": 0.0421
+  },
+  {
+   "sentence": "الـ zoom في الفيديو كان سريعاً جداً.",
+   "form": "zoom",
+   "term": "صعود مفاجئ",
+   "english": "pull up",
+   "expected": false,
+   "p": 0.1375
+  },
+  {
+   "sentence": "الموديل الجديد يدعم تقنية FSD بالكامل.",
+   "form": "FSD",
+   "term": "تطوير القياس الكامل",
+   "english": "full-scale development",
+   "expected": false,
+   "p": 0.8311
+  },
+  {
+   "sentence": "عند تجاوز Threshold معين، يتم إرسال تنبيه.",
+   "form": "Threshold",
+   "term": "عتبة",
+   "english": "Threshold",
+   "expected": false,
+   "p": 0.8634
+  },
+  {
+   "sentence": "أبعتك رسالة عبر المكبر في المحطة.",
+   "form": "مكبر",
+   "term": "مضخم",
+   "english": "Amplifier",
+   "expected": false,
+   "p": 0.3513
+  },
+  {
+   "sentence": "نظام الإنذار موجود داخل cockpit الطائرة.",
+   "form": "cockpit",
+   "term": "حجرة الطيران",
+   "english": "flight compartment",
+   "expected": false,
+   "p": 0.4854
+  },
+  {
+   "sentence": "هذا النوع من rotorcraft يستخدم في النقل.",
+   "form": "rotorcraft",
+   "term": "طائرة الدوار",
+   "english": "rotaplane",
+   "expected": false,
+   "p": 0.848
+  },
+  {
+   "sentence": "الـ mode الخاص بالقتال السريع.",
+   "form": "mode",
+   "term": "نسق",
+   "english": "mode",
+   "expected": false,
+   "p": 0.3057
+  },
+  {
+   "sentence": "سعة القناة تعتمد على bandwidth.",
+   "form": "bandwidth",
+   "term": "عرض‭ ‬النطاق‭ ‬الترددي",
+   "english": "Bandwidth",
+   "expected": false,
+   "p": 0.9363
+  },
+  {
+   "sentence": "مدة البقاء في المحطة الفضائية طويلة.",
+   "form": "مدة",
+   "term": "فترة",
+   "english": "Term",
+   "expected": false,
+   "p": 0.1738
+  },
+  {
+   "sentence": "تصنيف POM للمركبات العضوية.",
+   "form": "POM",
+   "term": "المادة العضوية الجسيمية",
+   "english": "Particulate organic matter (POM)",
+   "expected": false,
+   "p": 0.9526
+  },
+  {
+   "sentence": "يتم ضبط toe في نظام متابعة التضاريس.",
+   "form": "toe",
+   "term": "طرف سفلي",
+   "english": "toe ---(2)",
+   "expected": false,
+   "p": 0.8056
+  },
+  {
+   "sentence": "المهمة نفذت بواسطة UAV.",
+   "form": "UAV",
+   "term": "غير مأهول",
+   "english": "unmanned",
+   "expected": false,
+   "p": 0.9137
+  },
+  {
+   "sentence": "الجهاز الميكسر يقوم بإيصال الإشارة.",
+   "form": "ميكسر",
+   "term": "لوحة المزج",
+   "english": "Mixing Console",
+   "expected": false,
+   "p": 0.9399
+  },
+  {
+   "sentence": "يستخدم النظام بروتوكول CAN للاتصال.",
+   "form": "CAN",
+   "term": "علبة",
+   "english": "can",
+   "expected": false,
+   "p": 0.1242
+  },
+  {
+   "sentence": "التكلفة الإجمالية حسب BOQ.",
+   "form": "BOQ",
+   "term": "جدوال الكميات",
+   "english": "Table of Quantities",
+   "expected": false,
+   "p": 0.9363
+  },
+  {
+   "sentence": "الشركة حصلت على شهادة ISO.",
+   "form": "ISO",
+   "term": "مشغل‭ ‬النظام‭ ‬المستقل",
+   "english": "Independent System Operator",
+   "expected": false,
+   "p": 0.0726
+  },
+  {
+   "sentence": "يعتمد النظام على بروتوكول MCP للتواصل.",
+   "form": "MCP",
+   "term": "خرج طارئ أقصى",
+   "english": "maXimum contingency output",
+   "expected": false,
+   "p": 0.1446
+  },
+  {
+   "sentence": "ذهبنا إلى مركز التزلج لتجربة سكيت.",
+   "form": "سكيت",
+   "term": "أحذية التزلج بعجلات",
+   "english": "Inline skates",
+   "expected": false,
+   "p": 0.9005
+  },
+  {
+   "sentence": "يستخدم الطيارون أنبوب بيتو لقياس سرعة الطائرة.",
+   "form": "أنبوب بيتو",
+   "term": "رأس پيتو",
+   "english": "pitot head",
+   "expected": false,
+   "p": 0.5254
+  },
+  {
+   "sentence": "مستثمرو الصناديق يراقبون NAV الصندوق يوميًا.",
+   "form": "NAV",
+   "term": "ملاحة",
+   "english": "nav",
+   "expected": false,
+   "p": 0.0544
+  },
+  {
+   "sentence": "الظاهرة المعروفة بالـ interference في الفيزياء.",
+   "form": "interference",
+   "term": "تداخل",
+   "english": "interference",
+   "expected": false,
+   "p": 0.9315
+  },
+  {
+   "sentence": "تطبيق P2P جديد للعب.",
+   "form": "P2P",
+   "term": "نقطة إلى نقطة",
+   "english": "point to point",
+   "expected": false,
+   "p": 0.0706
+  },
+  {
+   "sentence": "نحتاج إلى تقليل الـ lead time في سلسلة التوريد.",
+   "form": "lead time",
+   "term": "مهلة الزمنية",
+   "english": "Lead Time",
+   "expected": false,
+   "p": 0.945
+  },
+  {
+   "sentence": "الـ pitch في الطائرة يعني الدوران حول المحور الطولي.",
+   "form": "pitch",
+   "term": "خطوة",
+   "english": "pitch ---(2)",
+   "expected": false,
+   "p": 0.5804
+  },
+  {
+   "sentence": "يدير الشركة الرئيس التنفيذي (CEO) الحالي.",
+   "form": "CEO",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.7976
+  },
+  {
+   "sentence": "الـ baseline للتكلفة.",
+   "form": "baseline",
+   "term": "قاعدة",
+   "english": "base",
+   "expected": false,
+   "p": 0.1661
+  },
+  {
+   "sentence": "الشاشة تدعم نظام RGB.",
+   "form": "RGB",
+   "term": "ثلاثي الألوان",
+   "english": "trichromatic",
+   "expected": false,
+   "p": 0.852
+  },
+  {
+   "sentence": "تعمل FAA على تنظيم الطيران في الولايات المتحدة.",
+   "form": "FAA",
+   "term": "إدارة الطيران الاتحادية",
+   "english": "FAA",
+   "expected": false,
+   "p": 0.961
+  },
+  {
+   "sentence": "تمريرة بالـ pass.",
+   "form": "pass",
+   "term": "دورة مدارية",
+   "english": "pass ---(3)",
+   "expected": false,
+   "p": 0.2822
+  },
+  {
+   "sentence": "البوش هنا يوفر حماية جيدة.",
+   "form": "بوش",
+   "term": "هجوم",
+   "english": "push",
+   "expected": false,
+   "p": 0.2926
+  },
+  {
+   "sentence": "الـ METEOR جيد.",
+   "form": "METEOR",
+   "term": "نيزك",
+   "english": "meteor",
+   "expected": false,
+   "p": 0.8688
+  },
+  {
+   "sentence": "يعتبر FCEV من أحدث تقنيات السيارات الكهربائية.",
+   "form": "FCEV",
+   "term": "مركبة‭ ‬هيدروجينية",
+   "english": "Hydrogen Vehicle",
+   "expected": false,
+   "p": 0.9124
+  },
+  {
+   "sentence": "استخدمت الشركة عقد CDS لتأمين مخاطر الائتمان.",
+   "form": "CDS",
+   "term": "إسقاط الحاويات",
+   "english": "container delivery",
+   "expected": false,
+   "p": 0.0451
+  },
+  {
+   "sentence": "نستخدم مؤشر الأداء لقياس نجاح المشروع.",
+   "form": "مؤشر الأداء",
+   "term": "مؤشر أداء السلامة",
+   "english": "Performance Index",
+   "expected": false,
+   "p": 0.5804
+  },
+  {
+   "sentence": "هناك bug كبير في التحديث.",
+   "form": "bug",
+   "term": "خلل",
+   "english": "Glitch",
+   "expected": false,
+   "p": 0.9137
+  },
+  {
+   "sentence": "أحتاج إلى recall سريع للنجاة.",
+   "form": "recall",
+   "term": "دقة الحساسية",
+   "english": "Sensitivity",
+   "expected": false,
+   "p": 0.2154
+  },
+  {
+   "sentence": "الطائرة تستخدم نظام ILS للحط الآمن.",
+   "form": "ILS",
+   "term": "مساعدات الاقتراب اللاسلكي",
+   "english": "radio approach aids",
+   "expected": false,
+   "p": 0.3766
+  },
+  {
+   "sentence": "الرأي الذاتي مهم في هذا البحث.",
+   "form": "ذاتي",
+   "term": "مستقل",
+   "english": "autonomous",
+   "expected": false,
+   "p": 0.1451
+  },
+  {
+   "sentence": "نحتاج لتحليل الـ Lagging Indicators.",
+   "form": "Lagging Indicators",
+   "term": "تدابير متأخرة",
+   "english": "Lag Measures",
+   "expected": false,
+   "p": 0.8723
+  },
+  {
+   "sentence": "طول الـ chord مهم لحساب الرفع.",
+   "form": "chord",
+   "term": "أكورد",
+   "english": "accord",
+   "expected": false,
+   "p": 0.884
+  },
+  {
+   "sentence": "المصدر يوصي باستخدام dope بكميات قليلة.",
+   "form": "dope",
+   "term": "يشوب",
+   "english": "contaminate ---(2)",
+   "expected": false,
+   "p": 0.4893
+  },
+  {
+   "sentence": "نستخدم هذه السمة في النموذج.",
+   "form": "سمة",
+   "term": "السجل الائتماني",
+   "english": "Credit Record",
+   "expected": false,
+   "p": 0.6388
+  },
+  {
+   "sentence": "الـ Insolvent يعني عدم القدرة على الوفاء بالديون.",
+   "form": "Insolvent",
+   "term": "المفلس",
+   "english": "Bankrupt",
+   "expected": false,
+   "p": 0.9112
+  },
+  {
+   "sentence": "النموذج يحتاج إلى Calibration قبل النشر.",
+   "form": "Calibration",
+   "term": "معايرة",
+   "english": "Calibration",
+   "expected": false,
+   "p": 0.8933
+  },
+  {
+   "sentence": "CEO الجديد سيصل غداً.",
+   "form": "CEO",
+   "term": "الرئيس التنفيذي",
+   "english": "Executive Director",
+   "expected": false,
+   "p": 0.7356
+  },
+  {
+   "sentence": "يجب مراجعة ملف DRP سنوياً.",
+   "form": "DRP",
+   "term": "خطة التعافي من كوارث تقنية المعلومات",
+   "english": "IT Disaster Recovery Plan",
+   "expected": false,
+   "p": 0.9466
+  },
+  {
+   "sentence": "أخذت الجيج لقياس المسافة.",
+   "form": "جيج",
+   "term": "محدد قياس",
+   "english": "gauge ---(2)",
+   "expected": false,
+   "p": 0.8903
+  },
+  {
+   "sentence": "تُظهر التقارير أن قيمة المعرضة للخطر (VaR) للمحفظة مرتفعة.",
+   "form": "VaR",
+   "term": "قدرة مفاعلة",
+   "english": "wattless power",
+   "expected": false,
+   "p": 0.0647
+  },
+  {
+   "sentence": "المظلة الصغيرة (drogue) أعطت استقراراً جيداً.",
+   "form": "drogue",
+   "term": "سلة",
+   "english": "basket",
+   "expected": false,
+   "p": 0.0854
+  },
+  {
+   "sentence": "الـ tilt حول المحور الطولي.",
+   "form": "tilt",
+   "term": "ميلان",
+   "english": "heeling",
+   "expected": false,
+   "p": 0.3607
+  },
+  {
+   "sentence": "سأستخدم جهاز GPS لمعرفة موقعي.",
+   "form": "GPS",
+   "term": "ملاحة تابع",
+   "english": "satnav",
+   "expected": false,
+   "p": 0.8267
+  },
+  {
+   "sentence": "نوع المحرك هو turboprop.",
+   "form": "turboprop",
+   "term": "محرك عنفي داسري",
+   "english": "turboprop",
+   "expected": false,
+   "p": 0.9615
+  },
+  {
+   "sentence": "تم اعتماد نموذج PPP في عدة دول عربية.",
+   "form": "PPP",
+   "term": " مماثلات القوة الشرائية للنقود ",
+   "english": "Purchasing Power Parity (PPP)",
+   "expected": false,
+   "p": 0.9474
+  },
+  {
+   "sentence": "الـ buffer يعمل على منع التداخل بين الدارتين.",
+   "form": "buffer",
+   "term": "صف",
+   "english": "queue",
+   "expected": false,
+   "p": 0.5185
+  },
+  {
+   "sentence": "نحتاج لزيادة عدد KPIs المقاسة هذا العام.",
+   "form": "KPIs",
+   "term": "مقاييس",
+   "english": "Metrics",
+   "expected": false,
+   "p": 0.8634
+  },
+  {
+   "sentence": "نظام إدارة surge.",
+   "form": "surge",
+   "term": "تموج",
+   "english": "surging",
+   "expected": false,
+   "p": 0.6179
+  },
+  {
+   "sentence": "تم إصلاح runway رقم 09 بعد العاصفة.",
+   "form": "runway",
+   "term": "مدرج",
+   "english": "runway",
+   "expected": false,
+   "p": 0.97
+  },
+  {
+   "sentence": "هذا النظام يعتمد على خوارزميات AI متقدمة.",
+   "form": "AI",
+   "term": "اعتراض جوي",
+   "english": "air interception",
+   "expected": false,
+   "p": 0.0434
+  },
+  {
+   "sentence": "الـ bug الموجود في النظام يحتاج إصلاح.",
+   "form": "bug",
+   "term": "خلل",
+   "english": "bug ---(3)",
+   "expected": false,
+   "p": 0.8824
+  },
+  {
+   "sentence": "هذا skin مميز جداً.",
+   "form": "skin",
+   "term": "غشاء الجناح",
+   "english": "wing skin",
+   "expected": false,
+   "p": 0.4083
+  },
+  {
+   "sentence": "نحتاج لتحسين lead time في التوريد.",
+   "form": "lead time",
+   "term": "زمن التموين",
+   "english": "procurement time",
+   "expected": false,
+   "p": 0.8824
+  },
+  {
+   "sentence": "هذه اللعبة تحتوي على flashback.",
+   "form": "flashback",
+   "term": "ارتداد نفخي",
+   "english": "blowback",
+   "expected": false,
+   "p": 0.1034
+  },
+  {
+   "sentence": "المحرك يعمل بـ 1000 HP.",
+   "form": "HP",
+   "term": "حصان",
+   "english": "hp",
+   "expected": false,
+   "p": 0.9381
+  },
+  {
+   "sentence": "تغيير الـ CF في الدقيقة 60.",
+   "form": "CF",
+   "term": "معامل الاحتكاك السطحي",
+   "english": "skin-friction coefficient",
+   "expected": false,
+   "p": 0.8723
+  },
+  {
+   "sentence": "تم حساب الفجوة باستخدام PPP.",
+   "form": "PPP",
+   "term": "شراكة القطاعين العام والخاص",
+   "english": "Public And Private Sector Partnership     (PPP أو P3)",
+   "expected": false,
+   "p": 0.8991
+  },
+  {
+   "sentence": "يحتاج المحرك إلى yoke قوي.",
+   "form": "yoke",
+   "term": "عمود القيادة",
+   "english": "control column",
+   "expected": false,
+   "p": 0.884
+  },
+  {
+   "sentence": "في مشروعنا نستخدم تقنية NER لاستخراج الأسماء.",
+   "form": "NER",
+   "term": " صافي نسب الالتحاق في التعليم الابتدائي حسب الجنس",
+   "english": "Net Enrolment Ratio (NER) in Primary Education, by Sex",
+   "expected": false,
+   "p": 0.114
+  },
+  {
+   "sentence": "تتبع الشركة التطورات في مجال FTA.",
+   "form": "FTA",
+   "term": "منطقة تجارة حرة",
+   "english": "Free Trade Area",
+   "expected": false,
+   "p": 0.9305
+  },
+  {
+   "sentence": "اضغط على زر reset في البرنامج.",
+   "form": "reset",
+   "term": "يزيل",
+   "english": "clear ---(2)",
+   "expected": false,
+   "p": 0.8439
+  },
+  {
+   "sentence": "شراء تلفاز جديد.",
+   "form": "تلفاز",
+   "term": "رائي",
+   "english": "television",
+   "expected": false,
+   "p": 0.7712
+  },
+  {
+   "sentence": "سعر الـ premium لهذا السند مرتفع جداً.",
+   "form": "premium",
+   "term": "قسط تأمين",
+   "english": "Insurance Premium",
+   "expected": false,
+   "p": 0.939
+  },
+  {
+   "sentence": "الـ stock وصل إلى الحد الأقصى.",
+   "form": "stock",
+   "term": "مخزن الذخيرة",
+   "english": "Stock",
+   "expected": false,
+   "p": 0.1801
+  },
+  {
+   "sentence": "الـ social worker يعمل في منظمة غير ربحية.",
+   "form": "social worker",
+   "term": "مستشار الرعاية الاجتماعية ",
+   "english": "Social care advisor",
+   "expected": false,
+   "p": 0.8075
+  },
+  {
+   "sentence": "المحرك عانى من backfire أثناء التشغيل.",
+   "form": "backfire",
+   "term": "اشتعال خلفي",
+   "english": "flashback",
+   "expected": false,
+   "p": 0.9284
+  },
+  {
+   "sentence": "انزلاق الـ spoiler خفض السرعة.",
+   "form": "spoiler",
+   "term": "مفسد",
+   "english": "spoiler",
+   "expected": false,
+   "p": 0.6334
+  },
+  {
+   "sentence": "بسبب التأخير في التسليم، قرر الطرف الأول إنهاء العقد.",
+   "form": "إنهاء العقد",
+   "term": "الإنهاء",
+   "english": "Termination",
+   "expected": false,
+   "p": 0.852
+  },
+  {
+   "sentence": "الـ producer يهتم بترتيب المقاطع.",
+   "form": "producer",
+   "term": "معد البرامج",
+   "english": "Program Producer",
+   "expected": false,
+   "p": 0.9161
+  },
+  {
+   "sentence": "هذا النوع من المنتجات مفضل.",
+   "form": "نوع",
+   "term": "طراز",
+   "english": "type",
+   "expected": false,
+   "p": 0.7628
+  },
+  {
+   "sentence": "جرب توصيل الكابل DP بين اللابتوب والشاشة.",
+   "form": "DP",
+   "term": "خطوة قطرية",
+   "english": "diametral pitch",
+   "expected": false,
+   "p": 0.0558
+  },
+  {
+   "sentence": "يجب أن يوقع الرئيس التنفيذي على العقد.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.8758
+  },
+  {
+   "sentence": "مرحلة الـ Preprocessing تستغرق وقتاً طويلاً.",
+   "form": "Preprocessing",
+   "term": "خوارزمية قبل المعالجة",
+   "english": "Pre-Processing Algorithm",
+   "expected": false,
+   "p": 0.5722
+  },
+  {
+   "sentence": "تقنية autonomous driving متقدمة جداً في السوق الحالي.",
+   "form": "autonomous driving",
+   "term": "قيادة ذاتية",
+   "english": "Autonomous Driving",
+   "expected": false,
+   "p": 0.9489
+  },
+  {
+   "sentence": "جربنا الـ TTS الجديد في المشروع.",
+   "form": "TTS",
+   "term": "تحويل النص إلى كلام",
+   "english": "Text-to-Speech (TTS)",
+   "expected": false,
+   "p": 0.9511
+  },
+  {
+   "sentence": "هذه لعبة TPS.",
+   "form": "TPS",
+   "term": "وقاية حرارية",
+   "english": "thermal protection",
+   "expected": false,
+   "p": 0.1097
+  },
+  {
+   "sentence": "الـ igniter ضروري لبدء المحرك.",
+   "form": "igniter",
+   "term": "جهاز إشعال",
+   "english": "igniter",
+   "expected": false,
+   "p": 0.9533
+  },
+  {
+   "sentence": "الشاشة في غرفة التحكم تظهر الإشارات.",
+   "form": "شاشة",
+   "term": "وحدة بيان بصري",
+   "english": "VDU",
+   "expected": false,
+   "p": 0.9019
+  },
+  {
+   "sentence": "هذا counter يقيس النبضات.",
+   "form": "counter",
+   "term": "مضاد",
+   "english": "counter ---(3)",
+   "expected": false,
+   "p": 0.1348
+  },
+  {
+   "sentence": "هذا الـ map صعب جداً.",
+   "form": "map",
+   "term": "ضغط المفرع",
+   "english": "manifold pressure",
+   "expected": false,
+   "p": 0.5078
+  },
+  {
+   "sentence": "يجب تركيب CB في كل دائرة رئيسية.",
+   "form": "CB",
+   "term": "قلب الدفاع",
+   "english": "CB",
+   "expected": false,
+   "p": 0.9086
+  },
+  {
+   "sentence": "تم تعيين الرئيس التنفيذي الجديد في اليوم.",
+   "form": "الرئيس التنفيذي",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.8888
+  },
+  {
+   "sentence": "الـ shield قوي جداً.",
+   "form": "shield",
+   "term": "وقاء",
+   "english": "shielding ---(1)",
+   "expected": false,
+   "p": 0.8173
+  },
+  {
+   "sentence": "نظام الشراء الديناميكي (DPS) يسمح بإضافة موردين جدد.",
+   "form": "DPS",
+   "term": "معدل الضرر في الثانية",
+   "english": "DPS",
+   "expected": false,
+   "p": 0.1877
+  },
+  {
+   "sentence": "نوع المحرك المستخدم هو turboshaft وليس turbine.",
+   "form": "turboshaft",
+   "term": "عنفة عمود",
+   "english": "shaft turbine",
+   "expected": false,
+   "p": 0.6549
+  },
+  {
+   "sentence": "قمت بطلب clearance من برج المراقبة.",
+   "form": "clearance",
+   "term": "رفع الرقابة",
+   "english": "Clearance",
+   "expected": false,
+   "p": 0.7311
+  },
+  {
+   "sentence": "يُستخدم الكيروسين كوقود أساسي في المحركات النفاثة.",
+   "form": "كيروسين",
+   "term": "أنواع الكيروسين الأخرى",
+   "english": "Other Kerosene",
+   "expected": false,
+   "p": 0.3016
+  },
+  {
+   "sentence": "تمت الموافقة على الخطة النهائية.",
+   "form": "موافقة",
+   "term": "التفويض",
+   "english": "Consent",
+   "expected": false,
+   "p": 0.4756
+  },
+  {
+   "sentence": "الـ cover مهم جداً.",
+   "form": "cover",
+   "term": "موقع",
+   "english": "cover ---(2)",
+   "expected": false,
+   "p": 0.2651
+  },
+  {
+   "sentence": "الـ reboot حل مشكلة التجميد.",
+   "form": "reboot",
+   "term": "البدء ثانية",
+   "english": "restart",
+   "expected": false,
+   "p": 0.8044
+  },
+  {
+   "sentence": "نحتاج إلى المزيد من feedback من العملاء لتحسين الخدمة.",
+   "form": "feedback",
+   "term": "تغذية راجعة من المستفيد",
+   "english": "Customer Feedback",
+   "expected": false,
+   "p": 0.9263
+  },
+  {
+   "sentence": "يجب التأكد من أن الـ coupling يعمل بشكل صحيح.",
+   "form": "coupling",
+   "term": "قرن",
+   "english": "coupling ---(1)",
+   "expected": false,
+   "p": 0.5317
+  },
+  {
+   "sentence": "تتميز هذه الـ NGO بالاستقلالية.",
+   "form": "NGO",
+   "term": "جمعية أهلية",
+   "english": "Civil associations",
+   "expected": false,
+   "p": 0.8001
+  },
+  {
+   "sentence": "قاموا ببناء حاجز من الخرسانة لحماية المنطقة.",
+   "form": "حاجز",
+   "term": "عائق",
+   "english": "barrier",
+   "expected": false,
+   "p": 0.6645
+  },
+  {
+   "sentence": "الـ host في اللعبة مسؤول عن إدارة الشبكة.",
+   "form": "host",
+   "term": "حاسب حاشد",
+   "english": "host computer",
+   "expected": false,
+   "p": 0.4003
+  },
+  {
+   "sentence": "الموقع المحدد في الموانئ هو terminal.",
+   "form": "terminal",
+   "term": "مبنى المحطة",
+   "english": "terminal building",
+   "expected": false,
+   "p": 0.6095
+  },
+  {
+   "sentence": "التي في الطريق كان مزدحمًا.",
+   "form": "تي",
+   "term": "نغمة \"سي\"",
+   "english": "B",
+   "expected": false,
+   "p": 0.0577
+  },
+  {
+   "sentence": "نظام FlexRay يضمن اتصالاً سريعاً.",
+   "form": "FlexRay",
+   "term": "بروتوكول فليكس راي",
+   "english": "FlexRay Protocol",
+   "expected": false,
+   "p": 0.5404
+  },
+  {
+   "sentence": "تمتلك الشركة حصتها في صندوق VC.",
+   "form": "VC",
+   "term": "حاوية افتراضية",
+   "english": "Virtual Container",
+   "expected": false,
+   "p": 0.3433
+  },
+  {
+   "sentence": "يجب أن ننتبه لتطبيق الـ Normalization بشكل صحيح في قاعدة البيانات.",
+   "form": "Normalization",
+   "term": "مواءمة الخصائص",
+   "english": "Feature Scaling",
+   "expected": false,
+   "p": 0.5775
+  },
+  {
+   "sentence": "تغير اتجاه الرياح إلى backing.",
+   "form": "backing",
+   "term": "مساندة",
+   "english": "backing ---(1)",
+   "expected": false,
+   "p": 0.1883
+  },
+  {
+   "sentence": "الـ release في البولينج مهم.",
+   "form": "release",
+   "term": "إصدار",
+   "english": "release",
+   "expected": false,
+   "p": 0.8056
+  },
+  {
+   "sentence": "الـ offset الخاص بالوزارة يغطي 20% من التكلفة.",
+   "form": "offset",
+   "term": "تعويض مقاصة",
+   "english": "Offset Compensation",
+   "expected": false,
+   "p": 0.8418
+  },
+  {
+   "sentence": "الاستثمار في عقود CFD في سوق النفط.",
+   "form": "CFD",
+   "term": "\tعقد فروقات",
+   "english": "Contract for Differences",
+   "expected": false,
+   "p": 0.9482
+  },
+  {
+   "sentence": "يعتمد هذا المشروع على منهجية MoJo في التغطية.",
+   "form": "MoJo",
+   "term": "صحافة متنقلة",
+   "english": "Mobile Journalism",
+   "expected": false,
+   "p": 0.9458
+  },
+  {
+   "sentence": "يستخدم المصممون أحياناً كتابة الستاتور بدلاً من الثابت.",
+   "form": "ستاتور",
+   "term": "ثابت",
+   "english": "stator",
+   "expected": false,
+   "p": 0.9381
+  },
+  {
+   "sentence": "الـ safety factor المطلوب هو 1.5.",
+   "form": "safety factor",
+   "term": "عامل التحميل",
+   "english": "load factor",
+   "expected": false,
+   "p": 0.5015
+  },
+  {
+   "sentence": "المخروط (drogue) يعمل كمرساة للطائرة المائية.",
+   "form": "drogue",
+   "term": "مظلة موازنة",
+   "english": "stabilizing parachute",
+   "expected": false,
+   "p": 0.3785
+  },
+  {
+   "sentence": "التقرير التقني يشير إلى نجاح الـ flight test.",
+   "form": "flight test",
+   "term": "طيران اختباري",
+   "english": "test flight",
+   "expected": false,
+   "p": 0.9294
+  },
+  {
+   "sentence": "يحتاج اللوح panel إلى صيانة دورية.",
+   "form": "panel",
+   "term": "اللجنة",
+   "english": "Committee",
+   "expected": false,
+   "p": 0.0761
+  },
+  {
+   "sentence": "CEO الشركة يعمل من المنزل.",
+   "form": "CEO",
+   "term": "الرئيس",
+   "english": "President",
+   "expected": false,
+   "p": 0.5908
+  },
+  {
+   "sentence": "تأكد من إعدادات IP بشكل صحيح.",
+   "form": "IP",
+   "term": "ملكية فكرية",
+   "english": "Intellectual Property (IP)",
+   "expected": false,
+   "p": 0.0882
+  },
+  {
+   "sentence": "تتولى الجهات الحكومية ترخيص محطات الشحن الجديدة.",
+   "form": "الجهات الحكومية",
+   "term": "أجهزة عامة",
+   "english": "Public Entities",
+   "expected": false,
+   "p": 0.9005
+  },
+  {
+   "sentence": "نقوم ببناء ODS جديد.",
+   "form": "ODS",
+   "term": "المواد المستنفدة لطبقة الأوزون",
+   "english": "Ozone-Depleting Substances",
+   "expected": false,
+   "p": 0.8129
+  },
+  {
+   "sentence": "نظام TCO يوقف الشحن عند 45 درجة.",
+   "form": "TCO",
+   "term": "التكلفة الإجمالية للملكية",
+   "english": "(TCO) Total Cost Of Ownership",
+   "expected": false,
+   "p": 0.0688
+  },
+  {
+   "sentence": "خطة الإنترنت تقدم سرعة 50 M Kbps.",
+   "form": "Kbps",
+   "term": "معدل البث الصوتي",
+   "english": "Audio Bitrate",
+   "expected": false,
+   "p": 0.3128
+  },
+  {
+   "sentence": "المغني يستخدم الباص في الأجزاء الأولى.",
+   "form": "باص",
+   "term": "الحافلة",
+   "english": "Bus",
+   "expected": false,
+   "p": 0.9325
+  },
+  {
+   "sentence": "نحتاج إلى بوش سريع.",
+   "form": "بوش",
+   "term": "جلبة",
+   "english": "bush, bushing",
+   "expected": false,
+   "p": 0.3775
+  },
+  {
+   "sentence": "CEO الشركة هو المدير العام.",
+   "form": "CEO",
+   "term": "الرئيس التنفيذي",
+   "english": "Executive Director",
+   "expected": false,
+   "p": 0.8267
+  },
+  {
+   "sentence": "حصلت على موافقة لبدء المشروع.",
+   "form": "موافقة",
+   "term": "التفويض",
+   "english": "Consent",
+   "expected": false,
+   "p": 0.6123
+  },
+  {
+   "sentence": "يحتوي المركب على مستشعرات متعددة.",
+   "form": "مستشعر",
+   "term": "جهاز إحساس",
+   "english": "sensor",
+   "expected": false,
+   "p": 0.9482
+  },
+  {
+   "sentence": "احتفظنا بـ احتياطي مالي كبير.",
+   "form": "احتياطي",
+   "term": "بديل",
+   "english": "alternate",
+   "expected": false,
+   "p": 0.1422
+  },
+  {
+   "sentence": "شكل بدن الطائرة يؤثر على السرعة.",
+   "form": "بدن الطائرة",
+   "term": "جذع المركبة",
+   "english": "fuselage",
+   "expected": false,
+   "p": 0.8991
+  },
+  {
+   "sentence": "نظام ESP يحلل البيانات فور وصولها.",
+   "form": "ESP",
+   "term": "الإدراك الخارق",
+   "english": "Extra Sensory Perception (ESP)",
+   "expected": false,
+   "p": 0.6307
+  },
+  {
+   "sentence": "الكاميرا بدأت في الزوم على وجه اللاعب.",
+   "form": "زوم",
+   "term": "تسلق فجائي",
+   "english": "zoom ---(1)",
+   "expected": false,
+   "p": 0.0666
+  },
+  {
+   "sentence": "التراكم هنا يعتبر حالة الـ force fit.",
+   "form": "force fit",
+   "term": "تركيب بالكبس",
+   "english": "press fit",
+   "expected": false,
+   "p": 0.8289
+  },
+  {
+   "sentence": "يجب الموافقة على أمر الشراء (PR) قبل التنفيذ.",
+   "form": "PR",
+   "term": "رقم پراندل",
+   "english": "Prandtl number",
+   "expected": false,
+   "p": 0.0988
+  },
+  {
+   "sentence": "توظيف freelancer للمشاريع المؤقتة.",
+   "form": "freelancer",
+   "term": "العاملون لحسابهم الخاص",
+   "english": "Self-employed",
+   "expected": false,
+   "p": 0.923
+  },
+  {
+   "sentence": "نعمل على تطبيق منهجية RBM في برنامجنا الجديد.",
+   "form": "RBM",
+   "term": "آلة بولتزمان المقيدة",
+   "english": "Restricted Boltzmann Machine (RBM)",
+   "expected": false,
+   "p": 0.9372
+  },
+  {
+   "sentence": "دوران المخزون مرتفع هذا العام مقارنة بالعام الماضي.",
+   "form": "دوران المخزون",
+   "term": "دوران المخزون  معدل دوران المخزون مرتفع أو منخفض ",
+   "english": "Stock Turn/Stock Turnover (High Or Low)",
+   "expected": false,
+   "p": 0.9284
+  },
+  {
+   "sentence": "لقد قمنا بـ bench test للمحرك الجديد.",
+   "form": "bench test",
+   "term": "مراجعة نضدية",
+   "english": "bench check",
+   "expected": false,
+   "p": 0.7387
+  },
+  {
+   "sentence": "نستخدم خوارزمية OR لحل هذه المسألة.",
+   "form": "OR",
+   "term": "استعداد تشغيلي",
+   "english": "operational readiness",
+   "expected": false,
+   "p": 0.0854
+  },
+  {
+   "sentence": "الوقت DEP هو 10 صباحاً.",
+   "form": "DEP",
+   "term": "موقع مرجعي لعين الطيار",
+   "english": "pilot's reference eye position",
+   "expected": false,
+   "p": 0.0554
+  },
+  {
+   "sentence": "تتبنى الشركة استراتيجية ESG قوية.",
+   "form": "ESG",
+   "term": "الاعتبارات البيئية والاجتماعية والحوكمة",
+   "english": "Environmental, Social, and Governance (ESG) Considerations",
+   "expected": false,
+   "p": 0.9489
+  },
+  {
+   "sentence": "استثمرنا في منصة P2P للإقراض.",
+   "form": "P2P",
+   "term": "ادفع لتلعب",
+   "english": "P2P",
+   "expected": false,
+   "p": 0.0957
+  },
+  {
+   "sentence": "هذا العقد باطل ولا يُلزم أحدًا.",
+   "form": "باطل",
+   "term": "ملغى",
+   "english": "Annulled",
+   "expected": false,
+   "p": 0.852
+  },
+  {
+   "sentence": "تستخدم الطاقة الحرارية الأرضية في التدفئة المنزلية.",
+   "form": "الطاقة الحرارية الأرضية",
+   "term": "نظام‭ ‬الطاقة‭ ‬الحرارية‭ ‬الأرضية",
+   "english": "Geothermal System",
+   "expected": false,
+   "p": 0.8775
+  },
+  {
+   "sentence": "مستوى SOC الحالي هو 80%.",
+   "form": "SOC",
+   "term": "مركز عمليات الأمن السيبراني",
+   "english": "Cybersecurity Operation Center",
+   "expected": false,
+   "p": 0.9284
+  },
+  {
+   "sentence": "كان هناك إعلان كبير في الشارع.",
+   "form": "إعلان",
+   "term": "إعلان تجاري",
+   "english": "Commercial Advertisement",
+   "expected": false,
+   "p": 0.8366
+  },
+  {
+   "sentence": "هذا السيارة تدعم تقنية V2V.",
+   "form": "V2V",
+   "term": "نظام التحكم في الشحن التبادلي",
+   "english": "Vehicle-to-Vehicle (V2V) Charging",
+   "expected": false,
+   "p": 0.8963
+  },
+  {
+   "sentence": "الـlander مصمم لهبوط آمن.",
+   "form": "lander",
+   "term": "حاط كوكبي",
+   "english": "planetary lander",
+   "expected": false,
+   "p": 0.9219
+  },
+  {
+   "sentence": "توثيق الأطراف ذات العلاقة في الملف.",
+   "form": "الأطراف ذات العلاقة",
+   "term": "أصحاب المصالح",
+   "english": "Stakeholder",
+   "expected": false,
+   "p": 0.9305
+  },
+  {
+   "sentence": "يجب حساب التكلفة الإجمالية باستخدام APR.",
+   "form": "APR",
+   "term": "معدل النسبة السنوي",
+   "english": "Annual Percentage Rate",
+   "expected": false,
+   "p": 0.9208
+  },
+  {
+   "sentence": "أظهرت البيانات ارتفاعاً في مؤشرات FPI.",
+   "form": "FPI",
+   "term": "حافز السعر الثابت",
+   "english": "(FPI) Fixed Price Incentive",
+   "expected": false,
+   "p": 0.9546
+  },
+  {
+   "sentence": "هذا trunk يربط بين جميع المكاتب الفرعية.",
+   "form": "trunk",
+   "term": "مجرى جذعي",
+   "english": "trunk ---(1)",
+   "expected": false,
+   "p": 0.1848
+  },
+  {
+   "sentence": "أحد KRIs الجديد هو تغير أسعار الصرف.",
+   "form": "KRI",
+   "term": "مؤشر مخاطر رئيسي",
+   "english": "Key Risk Indicator",
+   "expected": false,
+   "p": 0.9526
+  },
+  {
+   "sentence": "نحتاج إلى بيانات الاختبار لتقييم النموذج.",
+   "form": "بيانات الاختبار",
+   "term": "بيانات التقييم",
+   "english": "Evaluation Data",
+   "expected": false,
+   "p": 0.8991
+  },
+  {
+   "sentence": "الطائرة AWACS توفر حماية.",
+   "form": "AWACS",
+   "term": "إنذار مبكر محمول جوا",
+   "english": "airborne early warning",
+   "expected": false,
+   "p": 0.9185
+  },
+  {
+   "sentence": "الـ scan الراداري كشف عن الهدف.",
+   "form": "scan",
+   "term": "مسح",
+   "english": "scan",
+   "expected": false,
+   "p": 0.8706
+  },
+  {
+   "sentence": "تمت الموافقة على مشروع PPP.",
+   "form": "PPP",
+   "term": "الناتج المحلي الإجمالي بأساس مماثلات القوة الشرائية",
+   "english": "Current GDP at PPP",
+   "expected": false,
+   "p": 0.1307
+  },
+  {
+   "sentence": "يجب تحسين KPI الشركة هذا الربع.",
+   "form": "KPI",
+   "term": "مؤشرات الأداء الرئيسية",
+   "english": "Key Performance Indicators (KPIs)",
+   "expected": false,
+   "p": 0.9466
+  },
+  {
+   "sentence": "تستخدم الطائرات الحديثة توربين غازي قوي جداً.",
+   "form": "توربين غازي",
+   "term": "عنفة",
+   "english": "turbine",
+   "expected": false,
+   "p": 0.7318
+  },
+  {
+   "sentence": "الـ valve يحتاج ضبط.",
+   "form": "valve",
+   "term": "صمام",
+   "english": "Valve",
+   "expected": false,
+   "p": 0.9353
+  },
+  {
+   "sentence": "البرامج المستخدمة في Text Mining تتطلب بيانات نظيفة.",
+   "form": "Text Mining",
+   "term": "تحليلات النصوص",
+   "english": "Text Analytics",
+   "expected": false,
+   "p": 0.8317
+  },
+  {
+   "sentence": "التعامل مع risk في السوق.",
+   "form": "risk",
+   "term": "المخاطر",
+   "english": "Risks",
+   "expected": false,
+   "p": 0.5293
+  },
+  {
+   "sentence": "الـ flat يوضع على اليسار.",
+   "form": "flat",
+   "term": "بيمول",
+   "english": "Flat Sign",
+   "expected": false,
+   "p": 0.9325
+  },
+  {
+   "sentence": "أعطيت كفالة لطلب القرض.",
+   "form": "كفالة",
+   "term": "الضمان",
+   "english": "Guarantee",
+   "expected": false,
+   "p": 0.4144
+  },
+  {
+   "sentence": "الـ pass كان سريعاً جداً.",
+   "form": "pass",
+   "term": "انقضاضة",
+   "english": "pass ---(2)",
+   "expected": false,
+   "p": 0.4703
+  },
+  {
+   "sentence": "نظام الـ rotation مفيد.",
+   "form": "rotation",
+   "term": "دوران",
+   "english": "curl",
+   "expected": false,
+   "p": 0.2598
+  },
+  {
+   "sentence": "الميزانية مخصصة لـ R&D في الشركة.",
+   "form": "R&D",
+   "term": "التطوير التجريبي",
+   "english": "Experimental Development",
+   "expected": false,
+   "p": 0.1597
+  },
+  {
+   "sentence": "أداء الـ NLP في هذا المشروع ممتاز.",
+   "form": "NLP",
+   "term": "برمجة لغوية عصبية",
+   "english": "Neuro-Linguistic Programming",
+   "expected": false,
+   "p": 0.7725
+  },
+  {
+   "sentence": "نحتاج إلى تحديث قاعدة بيانات PCA للموردين.",
+   "form": "PCA",
+   "term": "تحليل المكون الرئيس",
+   "english": "Principal Component Analysis (PCA)",
+   "expected": false,
+   "p": 0.9417
+  },
+  {
+   "sentence": "تمت الموافقة من قبل FAA على هذا التغيير.",
+   "form": "FAA",
+   "term": "إدارة الطيران المدني",
+   "english": "Civil Aeronautics Administration",
+   "expected": false,
+   "p": 0.7944
+  },
+  {
+   "sentence": "تمت الموافقة على الرحلة وفقاً لـ VFR.",
+   "form": "VFR",
+   "term": "طيران بصري",
+   "english": "contact flying",
+   "expected": false,
+   "p": 0.9344
+  },
+  {
+   "sentence": "الجهة طلبت من الشركات تقديم عروض عبر RFP.",
+   "form": "RFP",
+   "term": "مسدس ناري سريع",
+   "english": "Rapid Fire Pistol",
+   "expected": false,
+   "p": 0.0354
+  },
+  {
+   "sentence": "اللاعب يستخدم ESP لرؤية الخرائط المخفية.",
+   "form": "ESP",
+   "term": "معالجة تدفق الأحداث",
+   "english": "Event Stream Processing (esp-Español      )",
+   "expected": false,
+   "p": 0.1403
+  },
+  {
+   "sentence": "هذا اللوحة تحتوي على ADC للبيانات.",
+   "form": "ADC",
+   "term": "مغير نظيري",
+   "english": "analog/digital converter",
+   "expected": false,
+   "p": 0.9241
+  },
+  {
+   "sentence": "نظام GPS يحدد موقع القطار بدقة.",
+   "form": "GPS",
+   "term": "النظام العالمي لتحديد المواقع ",
+   "english": "Global Positioning System (GPS)",
+   "expected": false,
+   "p": 0.9579
+  },
+  {
+   "sentence": "استخدمنا باتش كبير لتدريب النموذج.",
+   "form": "باتش",
+   "term": "تحديث",
+   "english": "Patch",
+   "expected": false,
+   "p": 0.2531
+  },
+  {
+   "sentence": "تحذير من surge في الوقود.",
+   "form": "surge",
+   "term": "تموج",
+   "english": "surging",
+   "expected": false,
+   "p": 0.7571
+  },
+  {
+   "sentence": "قراءة السونار تشير إلى عمق كبير.",
+   "form": "سونار",
+   "term": "هيئة بحث التقصي ضد الغواصات",
+   "english": "asdic",
+   "expected": false,
+   "p": 0.8824
+  },
+  {
+   "sentence": "شركة النفط تعلن عن توزيعات الأرباح السنوية.",
+   "form": "توزيعات الأرباح",
+   "term": "أرباح الأسهم",
+   "english": "Stock Profits",
+   "expected": false,
+   "p": 0.8903
+  },
+  {
+   "sentence": "في هذا المشروع، نستخدم نموذج FPI لتحديد هامش الربح.",
+   "form": "FPI",
+   "term": "طريقة زيچلو",
+   "english": "Zyglo",
+   "expected": false,
+   "p": 0.15
+  },
+  {
+   "sentence": "شركة تبيع ألواح LED جديدة.",
+   "form": "LED",
+   "term": "ثنائي باعث للضوء",
+   "english": "Light-Emitting Diodes (LEDs)",
+   "expected": false,
+   "p": 0.8903
+  },
+  {
+   "sentence": "تستخدم التطبيقات نظام BNPL.",
+   "form": "BNPL",
+   "term": "دفع آجل",
+   "english": "Deferred Payment",
+   "expected": false,
+   "p": 0.8539
+  },
+  {
+   "sentence": "الضغط ينخفض داخل الـ venturi.",
+   "form": "venturi",
+   "term": "ڤنتشوري",
+   "english": "venturi",
+   "expected": false,
+   "p": 0.9399
+  },
+  {
+   "sentence": "هناك مشكلة في الـ bug هذه.",
+   "form": "bug",
+   "term": "علامة",
+   "english": "bug ---(1)",
+   "expected": false,
+   "p": 0.1105
+  },
+  {
+   "sentence": "أوسيلوسكوب",
+   "form": "أوسيلوسكوب",
+   "term": "كاشف الاهتزاز بالأشعة المهبطية",
+   "english": "cathode ray oscilloscope",
+   "expected": false,
+   "p": 0.9219
+  },
+  {
+   "sentence": "تم تسليم أول RPH في الموقع الأسبوع الماضي.",
+   "form": "RPH",
+   "term": "المدى/الساعة",
+   "english": "range extension (Rex)",
+   "expected": false,
+   "p": 0.5832
+  },
+  {
+   "sentence": "المحركات القديمة تستخدم زيت الغاز (gas oil) كوقود أساسي.",
+   "form": "gas oil",
+   "term": "سولار (زيت غاز)",
+   "english": "Solar (Gas Oil)",
+   "expected": false,
+   "p": 0.9417
+  },
+  {
+   "sentence": "شاشة النظام تعرض جميع البيانات الحية.",
+   "form": "شاشة",
+   "term": "شاشة عرض",
+   "english": "Display Screen",
+   "expected": false,
+   "p": 0.8117
+  },
+  {
+   "sentence": "وحدة القياس باسكال.",
+   "form": "باسكال",
+   "term": "وحدة‭ ‬قياس‭ ‬الضغط",
+   "english": "Pascal (PA)",
+   "expected": false,
+   "p": 0.9526
+  },
+  {
+   "sentence": "الـ checkpoint التالي هو في مطار الرياض.",
+   "form": "checkpoint",
+   "term": "نقطة حفظ",
+   "english": "Checkpoint",
+   "expected": false,
+   "p": 0.0967
+  },
+  {
+   "sentence": "الـ holding point في المطار مخصص للطائرات.",
+   "form": "holding point",
+   "term": "موضع إيقاف الدروج",
+   "english": "taXi-holding position",
+   "expected": false,
+   "p": 0.8606
+  },
+  {
+   "sentence": "تم توقيع عقد BOT لتطوير الميناء الجديد.",
+   "form": "BOT",
+   "term": "عقد‭ ‬بناء‭ ‬وتشغيل‭ ‬ونقل",
+   "english": "Build-Operate- Transfer Contract (BOT)",
+   "expected": false,
+   "p": 0.9511
+  },
+  {
+   "sentence": "الـ autopilot حافظ على مسار الطائرة.",
+   "form": "autopilot",
+   "term": "طيار جيروسكوبي",
+   "english": "gyropilot",
+   "expected": false,
+   "p": 0.85
+  },
+  {
+   "sentence": "يحتاج هذا النوع من المحركات إلى باك قوي.",
+   "form": "باك",
+   "term": "مجموعة متكاملة",
+   "english": "pack ---(2)",
+   "expected": false,
+   "p": 0.6451
+  },
+  {
+   "sentence": "الـ control الجوي مطلوب.",
+   "form": "control",
+   "term": "التحكم بالكرة",
+   "english": "Control of the ball",
+   "expected": false,
+   "p": 0.413
+  },
+  {
+   "sentence": "جدول PM للمحركات يجب الالتزام به.",
+   "form": "PM",
+   "term": "مغناطيس دائم",
+   "english": "permanent magnet",
+   "expected": false,
+   "p": 0.1744
+  },
+  {
+   "sentence": "تلقينا مساعدة مالية من البنك.",
+   "form": "مساعدة مالية",
+   "term": "إعانة مالية",
+   "english": "Financial aid",
+   "expected": false,
+   "p": 0.9112
+  },
+  {
+   "sentence": "المركبة تستخدم ديزل كوقود.",
+   "form": "ديزل",
+   "term": "محرك ديزل",
+   "english": "diesel engine",
+   "expected": false,
+   "p": 0.095
+  },
+  {
+   "sentence": "الرئيس التنفيذي (CEO) يقرر الميزانية.",
+   "form": "CEO",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.7866
+  },
+  {
+   "sentence": "حساب الموقع عند null.",
+   "form": "null",
+   "term": "موضع الصفر",
+   "english": "null position",
+   "expected": false,
+   "p": 0.2713
+  },
+  {
+   "sentence": "تخطط الدولة لبناء أول مفاعلات نووية مدمجة صغيرة (SMR) في المنطقة.",
+   "form": "SMR",
+   "term": "إعادة‭ ‬تشكيل‭ ‬غاز‭ ‬الميثان‭ ‬بالبخار",
+   "english": "Steam Methane Reforming (SMR)",
+   "expected": false,
+   "p": 0.0967
+  },
+  {
+   "sentence": "الـ spot للطائرات مهم جداً في المجال الجوي.",
+   "form": "spot",
+   "term": "بقعة",
+   "english": "spot ---(1)",
+   "expected": false,
+   "p": 0.2401
+  },
+  {
+   "sentence": "تحتاج إلى شحن الـ MP قبل إطلاق النار.",
+   "form": "MP",
+   "term": "قوة سحرية",
+   "english": "Mana",
+   "expected": false,
+   "p": 0.8808
+  },
+  {
+   "sentence": "نظام TMS يساعدنا في تتبع الشحنات بدقة.",
+   "form": "TMS",
+   "term": "نظام الإدارة الحرارية",
+   "english": "Thermal Management System",
+   "expected": false,
+   "p": 0.116
+  },
+  {
+   "sentence": "تم توقيع عقد M&A بين الشركتين.",
+   "form": "M&A",
+   "term": "اندماج الشركات",
+   "english": "Mergers",
+   "expected": false,
+   "p": 0.6049
+  },
+  {
+   "sentence": "سأقوم بفحص الوثائق اليوم.",
+   "form": "فحص",
+   "term": "تحقق",
+   "english": "check",
+   "expected": false,
+   "p": 0.7372
+  },
+  {
+   "sentence": "نحتاج لرفع الـ KPIs.",
+   "form": "KPIs",
+   "term": "مؤشرات الأداء الرئيسية",
+   "english": "Key Performance Indicators (KPIs)",
+   "expected": false,
+   "p": 0.9433
+  },
+  {
+   "sentence": "يتولى الرئيس التنفيذي (CEO) إدارة الشركة.",
+   "form": "CEO",
+   "term": "المدير التنفيذي",
+   "english": "C-Suite Executive",
+   "expected": false,
+   "p": 0.7892
+  },
+  {
+   "sentence": "الـ pitch circle مهم في الحسابات.",
+   "form": "pitch circle",
+   "term": "خط الخطوة",
+   "english": "pitch line",
+   "expected": false,
+   "p": 0.7642
+  },
+  {
+   "sentence": "غشاء الجناح (wing skin) يجب أن يكون خفيفاً.",
+   "form": "skin",
+   "term": "مظهر",
+   "english": "skin",
+   "expected": false,
+   "p": 0.9019
+  },
+  {
+   "sentence": "السيارة تعمل بـ 2000 RPM.",
+   "form": "RPM",
+   "term": "سرعة المحرك",
+   "english": "engine speed",
+   "expected": false,
+   "p": 0.8824
+  }
+ ]
+}

@@ -404,6 +404,13 @@ summary { cursor: pointer; font-weight: 600 }
   const EVERYDAY_VOCAB = 10;     // a word seen this often in the dictionaries' Arabic is ordinary Arabic, not a borrowed form
   const EVERYDAY_W = 6;          // weight of meaning-closeness when choosing the sense of an everyday word
   const GENERAL_RATE = 6e-5;     // a one-word term this frequent in general articles is an ordinary word (يجب، مجموعة), not a term
+  const EVERYDAY_STRONG = 0.9;   // below this lean towards the domain, the word's meaning must also be close to the sentence
+  const EVERYDAY_CLOSE = 0.6;    // (مقدم الطلب، هذه الفئة من الموظفين are not مذيع، صنف)
+  const EVERYDAY_COMMON = 1.5e-4;  // the written word itself this frequent in general articles is too ordinary to propose (معالجة، الضغط)
+  function commonForm(text, m) {
+    if (!WORD_GEN) return false;
+    return [...ctxWords(text.slice(m.s, m.e).split(/\s+/)[0])].some(w => WORDS.has(w) && WORD_GEN[WORDS.get(w)] / GEN_TOTAL >= EVERYDAY_COMMON);
+  }
   function generalWord(term) {
     const words = normalize(term.replace(/\([^)]*\)/g, " ")).split(" ").filter(Boolean);
     if (words.length !== 1 || !WORD_GEN) return false;
@@ -583,7 +590,8 @@ summary { cursor: pointer; font-weight: 600 }
       if (m.how === "everyday") {
         const rows = m.rows.filter(r => !generalWord(DATA.senses[r[0]][0]));
         const [typical, close] = everydayEvidence(text, m, current, rows.map(r => r[0]), anchors.map(a => DATA.senses[a][0]).join(" "));
-        if (!rows.length || typical < EVERYDAY_TYPICAL) return null;
+        if (!rows.length || typical < EVERYDAY_TYPICAL || commonForm(text, m)) return null;
+        if (close && close.size && typical < EVERYDAY_STRONG && Math.max(...close.values()) < EVERYDAY_CLOSE) return null;
         wordSims = close; m = { ...m, rows };
       }
       if (m.how === "everyday" && m.rows.some(r => sameTerm(text.slice(m.s, m.e), DATA.senses[r[0]][0]))) return null;  // already the term, in another form

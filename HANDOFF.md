@@ -73,6 +73,18 @@ until an audit clears them. Qwen3.5-4B failed (invented forms; thinking mode nev
    Jev decision with thresholds (auto / ask user / skip; shared & ambiguous variants always ask), Qwen minimal edit,
    evaluation on real paragraphs. Test Jev on Arabic first; fallback = local Gemma as yes/no judge.
 
+## Context step (2026-11-03)
+Two rules for everyday Arabic words, adopted by the user, in `engine.py` and `kass-lab.html`: EVERYDAY_STRONG/EVERYDAY_CLOSE (a weak lean to the
+domain needs meaning close to the sentence) and EVERYDAY_COMMON (the written word too frequent in general articles is not proposed).
+New baseline (recall/precision %): tuning 93.8/88.2 · heldout-1 81.0/65.4 · heldout-2 94.7/100 · ambiguity 71.4/62.5 · arabic-tuning 67.7/67.7 ·
+arabic-heldout 66.7/61.5; parity 212/212. Known cost: arabic-heldout recall fell from 83.3 (الفئة → صنف، ميزة → خاصية no longer proposed).
+Article tests: `reports/articles/` (12 Wikipedia extracts: false alarms only; 6 articles written by Claude with its own answers: not independent).
+Real articles with independent answers are still missing, and they are the test that decides readiness.
+Clef-Flash (open, Jev-compatible, `data/models/clef-flash`, git-ignored; `hf download Cloudflare/clef-flash`), 4-bit, 8.5 GB GPU, ~0.2 s per
+suggestion: `scripts/evaluate/decision_clef.py`, `clef_filter.py`, results `reports/clef_filter.md`. As a filter at 0.4 it raises precision (written articles
+67.9 -> 79.2) and separates context traps well, but scores 59.7% on the 600 decision cases, so it is NOT wired into the detector. The user has no Jev key and no GPU
+server: only the office PC is available, and the academy server is CPU only. Automatic replacement is not wanted for now: suggestion mode only.
+
 ## Term detector API (2026-10-26)
 `src/kass_layer/detector/engine.py` is a line-by-line port of the demo page's engine (`scripts/demo/kass-lab.html`);
 `api.py` serves it with FastAPI. CPU only, no model at query time: ~1 s load, ~200 MB RAM, 2–150 ms per sentence.

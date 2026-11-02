@@ -436,6 +436,9 @@ class Detector:
     EVERYDAY_VOCAB = 10     # a word seen this often in the dictionaries' Arabic is ordinary Arabic, not a borrowed form
     EVERYDAY_W = 6          # weight of meaning-closeness when choosing the sense of an everyday word
     GENERAL_RATE = 6e-5     # a one-word term this frequent in general articles is an ordinary word (يجب، مجموعة), not a term
+    EVERYDAY_STRONG = 0.9   # below this lean towards the domain, the word's meaning must also be close to the sentence
+    EVERYDAY_CLOSE = 0.6    # (مقدم الطلب، هذه الفئة من الموظفين are not مذيع، صنف)
+    EVERYDAY_COMMON = 1.5e-4  # the written word itself this frequent in general articles is too ordinary to propose (معالجة، الضغط)
 
     def general_word(self, term: str) -> bool:
         words = normalize(re.sub(r"\([^)]*\)", " ", term)).split()
@@ -443,6 +446,12 @@ class Detector:
             return False
         w = next(iter(ctx_words(words[0])), None)
         return w in self.words and self.word_gen[self.words[w]] / self.gen_total >= self.GENERAL_RATE
+
+    def common_form(self, text: str, m: dict) -> bool:
+        if not self.word_gen:
+            return False
+        own = [self.words[w] for w in ctx_words(text[m["s"]:m["e"]].split()[0]) if w in self.words]
+        return any(self.word_gen[i] / self.gen_total >= self.EVERYDAY_COMMON for i in own)
 
     def everyday_evidence(self, text: str, m: dict, domain_id: str, senses: list[int], found: str = "") -> tuple[float, dict]:
         """How strongly the text around an everyday word leans to the domain, and how close its meaning is to each sense.
@@ -497,7 +506,9 @@ class Detector:
                 rows = [r for r in m["rows"] if not self.general_word(self.senses[r[0]][0])]
                 found = " ".join(self.senses[a][0] for a in anchors)
                 typical, word_sims = self.everyday_evidence(text, m, domain_id, [r[0] for r in rows], found)
-                if not rows or typical < self.EVERYDAY_TYPICAL:
+                if not rows or typical < self.EVERYDAY_TYPICAL or self.common_form(text, m):
+                    continue
+                if word_sims and typical < self.EVERYDAY_STRONG and max(word_sims.values()) < self.EVERYDAY_CLOSE:
                     continue
                 m = dict(m, rows=rows)
             if m["how"] == "everyday" and any(same_term(text[m["s"]:m["e"]], self.senses[r[0]][0]) for r in m["rows"]):
