@@ -44,6 +44,9 @@ def normalize(t: str | None) -> str:
 STOP = {normalize(w) for w in ["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون"]}
 
 
+NEVER_FORMS = {normalize(w) for w in ["بواسطة", "in", "of", "on", "at", "to", "by", "for", "the", "and", "or", "is", "as", "an"]}
+
+
 def tokenize(text: str) -> list[dict]:
     return [{"s": m.start(), "e": m.end(), "n": normalize(m.group())} for m in TOKEN.finditer(text)]
 
@@ -383,6 +386,8 @@ class Detector:
                         and (bare(head) in PARTICLES or not self.known_arabic(head))  # «الطيار أنهى» is not «late turn»
                     if not head_ok or (n > 1 and not self.foreign_looking(word)):
                         continue
+                    if n == 1 and not prefix and re.search("^[وفبك]ال", head):
+                        continue  # an unstripped Arabic word with its article (والقلق) is not a sound match
                     ph = self.phonetic(word, allowed, n, False, n > 1 and bare(head) in PARTICLES)
                     if not ph or (strict_only and ph["how"] != "exact"):
                         continue
@@ -497,6 +502,8 @@ class Detector:
         all_key = lambda t: " ".join(bare(w) for w in normalize(re.sub(r"\([^)]*\)", " ", t)).split(" "))
         items = []
         for mi, m in enumerate(matches):
+            if normalize(text[m["s"]:m["e"]]) in NEVER_FORMS:
+                continue
             anchors = [x for j, rows in enumerate(match_rows)
                        if not (j == mi or (matches[j]["s"] < m["e"] and matches[j]["e"] > m["s"])) and len(rows) <= 3 for x in rows]
             ctx_vec = self.centroid(anchors)
@@ -551,6 +558,10 @@ class Detector:
                 reasons.append("له معنى آخر شائع في الاستعمال اليومي")
             if m["how"] == "near":
                 reasons.append("كتابة قريبة من صيغة معروفة، تحقّق منها")
+            if m["how"] == "exact":
+                reasons.append("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى")
+            if m["how"] == "dict" and m["n"] == 1 and best[2] == "c" and ARABIC_WORD.search(m["head"]):
+                reasons.append("كلمة عامية قد يكون لها معنى آخر هنا")
             if m["how"] == "everyday":
                 reasons.append("كلمة عامة لها مصطلح تخصصي في هذا السياق")
             notes = []

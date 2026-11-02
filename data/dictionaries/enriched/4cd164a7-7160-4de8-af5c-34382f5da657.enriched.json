@@ -2,14 +2,14 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-11-02T16:07:46.221828+00:00",
+  "generated_at": "2026-11-02T23:11:49.235889+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
     "senses_reviewed": 1443,
     "senses_with_variants": 1441,
-    "variants_accepted": 2243,
-    "variants_needing_review": 711
+    "variants_accepted": 2242,
+    "variants_needing_review": 709
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -107595,40 +107595,6 @@
             "example": "GPT هو نموذج مولد قوي.",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "جي بي تي",
-            "type": "transliteration",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "الجيل الجديد من جي بي تي يحسن الدقة.",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "ChatGPT",
-            "type": "foreign",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "اسم منتج محدد قائم على نماذج GPT",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
-          },
-          {
-            "form": "شات جي بي تي",
-            "type": "transliteration",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "اسم منتج محدد قائم على نماذج GPT",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

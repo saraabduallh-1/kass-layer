@@ -404,6 +404,7 @@ summary { cursor: pointer; font-weight: 600 }
   const EVERYDAY_VOCAB = 10;     // a word seen this often in the dictionaries' Arabic is ordinary Arabic, not a borrowed form
   const EVERYDAY_W = 6;          // weight of meaning-closeness when choosing the sense of an everyday word
   const GENERAL_RATE = 6e-5;     // a one-word term this frequent in general articles is an ordinary word (يجب، مجموعة), not a term
+  const NEVER_FORMS = new Set(["بواسطة", "in", "of", "on", "at", "to", "by", "for", "the", "and", "or", "is", "as", "an"].map(w => normalize(w)));
   const EVERYDAY_STRONG = 0.9;   // below this lean towards the domain, the word's meaning must also be close to the sentence
   const EVERYDAY_CLOSE = 0.6;    // (مقدم الطلب، هذه الفئة من الموظفين are not مذيع، صنف)
   const EVERYDAY_COMMON = 1.5e-4;  // the written word itself this frequent in general articles is too ordinary to propose (معالجة، الضغط)
@@ -537,6 +538,7 @@ summary { cursor: pointer; font-weight: 600 }
           const headOk = n === 1 ? foreignLooking(head) || strictOnly : !NATIVE.test(head) && !STOP.has(head) && !verbShape(head) && vowels(head) + arSkel(head).length >= 3
             && (PARTICLES.has(bare(head)) || !knownArabic(head));  // «الطيار أنهى» is not «late turn»
           if (!headOk || (n > 1 && !foreignLooking(word))) continue;
+          if (n === 1 && !prefix && /^[وفبك]ال/.test(head)) continue;  // an unstripped Arabic word with its article (والقلق) is not a sound match
           const ph = phonetic(word, allowed, n, false, n > 1 && PARTICLES.has(bare(head)));
           if (!ph || (strictOnly && ph.how !== "exact")) continue;
           if (n > 1 && !PARTICLES.has(bare(head))) {  // «سولار بانلز» starts like «solar panels»; «التزم بالكونتراكت» does not start like «simple contract»
@@ -583,6 +585,7 @@ summary { cursor: pointer; font-weight: 600 }
     // the meaning of each match: its sense when unambiguous, else the average of its senses
     const matchRows = matches.map(m => m.how === "everyday" ? [] : [...new Set(m.rows.map(r => r[0]))].slice(0, 12));
     const items = matches.map((m, mi) => {
+      if (NEVER_FORMS.has(normalize(text.slice(m.s, m.e)))) return null;
       const anchors = matchRows.flatMap((rows, j) => j === mi || (matches[j].s < m.e && matches[j].e > m.s) ? [] : rows.length <= 3 ? rows : []);
       const ctxVec = centroid(anchors);
       const inDomain = m.rows.filter(r => DATA.senses[r[0]][1] === domain);
@@ -620,6 +623,8 @@ summary { cursor: pointer; font-weight: 600 }
       if (choices.length > 1 && rankM(choices[0]) - rankM(choices[1]) < 0.5) reasons.push("يحتمل أكثر من مصطلح");
       if (best[1] & 2) reasons.push("له معنى آخر شائع في الاستعمال اليومي");
       if (m.how === "near") reasons.push("كتابة قريبة من صيغة معروفة، تحقّق منها");
+      if (m.how === "exact") reasons.push("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى");
+      if (m.how === "dict" && m.n === 1 && best[2] === "c" && /^[؀-ۿ]+$/.test(m.head)) reasons.push("كلمة عامية قد يكون لها معنى آخر هنا");
       if (m.how === "everyday") reasons.push("كلمة عامة لها مصطلح تخصصي في هذا السياق");
       const notes = [];
       if (m.how === "acronym") notes.push(`اختصار مكتوب بأسماء الحروف (${m.head.toUpperCase()})`);

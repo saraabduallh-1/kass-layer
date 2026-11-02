@@ -1,0 +1,382 @@
+[
+ {
+  "source": "مجلة الأستاذ",
+  "domain": "tech",
+  "url": "https://www.jalhss.com/index.php/jalhss/article/view/1020",
+  "form": "جي بي تي",
+  "term": "محول توليدي مدرب سابقا (جي بي تي)",
+  "state": "replace",
+  "verdict": "wrong",
+  "clef": 0.848
+ },
+ {
+  "source": "مجلة الأستاذ",
+  "domain": "tech",
+  "url": "https://www.jalhss.com/index.php/jalhss/article/view/1020",
+  "form": "GPT",
+  "term": "محول توليدي مدرب سابقا (جي بي تي)",
+  "state": "replace",
+  "verdict": "wrong",
+  "clef": 0.833
+ },
+ {
+  "source": "مصراوي",
+  "domain": "finance",
+  "url": "https://www.masrawy.com/news/news_economy/details/2022/9/14/2291413/التضخم-يضرب-البورصات-العالمية-ومخاوف-من-قفزة-في-سعر-الفائدة",
+  "form": "للفيدرالي",
+  "term": "احتياطي فيدرالي",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.81
+ },
+ {
+  "source": "صبار",
+  "domain": "legal",
+  "url": "https://sabbar.com/blog/termination-of-a-saudi-employee-contract",
+  "form": "انتهاء",
+  "term": "انقضاء",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.754
+ },
+ {
+  "source": "V2C",
+  "domain": "eng",
+  "url": "https://v2charge.com/ar/ventajas-energia-solar-ar/",
+  "form": "السيارات الكهربائية",
+  "term": "مركبات كهربائية",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.947
+ },
+ {
+  "source": "V2C",
+  "domain": "eng",
+  "url": "https://v2charge.com/ar/ventajas-energia-solar-ar/",
+  "form": "توليد الكهرباء",
+  "term": "توليد",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.813
+ },
+ {
+  "source": "V2C",
+  "domain": "eng",
+  "url": "https://v2charge.com/ar/ventajas-energia-solar-ar/",
+  "form": "غازات الدفيئة",
+  "term": "غازات الاحتباس الحراري",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.963
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "كأس",
+  "term": "بطولة الكأس",
+  "state": "replace",
+  "verdict": "wrong",
+  "clef": 0.364
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "FIFA",
+  "term": "الاتحاد الدولي لكرة القدم",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.963
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "FIFA",
+  "term": "الاتحاد الدولي لكرة القدم",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.963
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "FIFA",
+  "term": "الاتحاد الدولي لكرة القدم",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.965
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "ألبيرتو زاكيروني",
+  "term": "ملعب التدريب",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.037
+ },
+ {
+  "source": "فيفا",
+  "domain": "culture",
+  "url": "https://inside.fifa.com/ar/talent-development/technical-study-group/news/fifa-tsg-provides-its-first-analysis-of-qatar-2022-ar",
+  "form": "FIFA",
+  "term": "الاتحاد الدولي لكرة القدم",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.968
+ },
+ {
+  "source": "الإمارات اليوم",
+  "domain": "culture",
+  "url": "https://www.emaratalyoum.com/sports/local/2025-01-27-1.1915949",
+  "form": "النادي",
+  "term": "ناد رياضي",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.924
+ },
+ {
+  "source": "هسبريس",
+  "domain": "culture",
+  "url": "https://www.hespress.com/1761494-1761494.html",
+  "form": "بوشكاش",
+  "term": "الحركات الأساسية",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.029
+ },
+ {
+  "source": "هسبريس",
+  "domain": "culture",
+  "url": "https://www.hespress.com/1761494-1761494.html",
+  "form": "الشِّباك",
+  "term": "الشبكة",
+  "state": "replace",
+  "verdict": "wrong",
+  "clef": 0.905
+ },
+ {
+  "source": "IBM",
+  "domain": "tech",
+  "url": "https://www.ibm.com/sa-ar/think/topics/ai-agents",
+  "form": "وكيل الذكاء الاصطناعي",
+  "term": "وكيل",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.812
+ },
+ {
+  "source": "IBM",
+  "domain": "tech",
+  "url": "https://www.ibm.com/sa-ar/think/topics/ai-agents",
+  "form": "LLMs",
+  "term": "نموذج لغوي كبير",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.967
+ },
+ {
+  "source": "IBM",
+  "domain": "tech",
+  "url": "https://www.ibm.com/sa-ar/think/topics/ai-agents",
+  "form": "مدخلات",
+  "term": "بيانات مدخلة (أو مدخلات)",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.824
+ },
+ {
+  "source": "Ultralytics",
+  "domain": "tech",
+  "url": "https://www.ultralytics.com/ar/blog/a-quick-guide-for-beginners-on-how-to-train-an-ai-model",
+  "form": "AI",
+  "term": "ذكاء اصطناعي",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.955
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "والكود",
+  "term": "الشفرات المصدرية",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.725
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "AI",
+  "term": "ذكاء اصطناعي",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.855
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "وكيل الذكاء الاصطناعي",
+  "term": "وكيل",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.887
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "LLMs",
+  "term": "نموذج لغوي كبير",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.957
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "LLMs",
+  "term": "نموذج لغوي كبير",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.968
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "LLMs",
+  "term": "نموذج لغوي كبير",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.968
+ },
+ {
+  "source": "Microsoft",
+  "domain": "tech",
+  "url": "https://microsoft.github.io/ai-agents-for-beginners/translations/ar/01-intro-to-ai-agents/",
+  "form": "LLM",
+  "term": "نموذج لغوي كبير",
+  "state": "replace",
+  "verdict": "right",
+  "clef": 0.951
+ },
+ {
+  "source": "مكتب سهل",
+  "domain": "legal",
+  "url": "https://www.sahalfirm.com/blog/%D8%B9%D8%AF%D9%85-%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9",
+  "form": "قضية",
+  "term": "الدعوى",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.332
+ },
+ {
+  "source": "مكتب سهل",
+  "domain": "legal",
+  "url": "https://www.sahalfirm.com/blog/%D8%B9%D8%AF%D9%85-%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9",
+  "form": "تجديد عقد",
+  "term": "التجديد",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.879
+ },
+ {
+  "source": "مكتب سهل",
+  "domain": "legal",
+  "url": "https://www.sahalfirm.com/blog/%D8%B9%D8%AF%D9%85-%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9",
+  "form": "السعودية",
+  "term": "المملكة",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.869
+ },
+ {
+  "source": "مكتب سهل",
+  "domain": "legal",
+  "url": "https://www.sahalfirm.com/blog/%D8%B9%D8%AF%D9%85-%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9",
+  "form": "تجديد عقد",
+  "term": "التجديد",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.757
+ },
+ {
+  "source": "مكتب سهل",
+  "domain": "legal",
+  "url": "https://www.sahalfirm.com/blog/%D8%B9%D8%AF%D9%85-%D8%AA%D8%AC%D8%AF%D9%8A%D8%AF-%D8%B9%D9%82%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%85%D9%86-%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A9",
+  "form": "لانتهاء",
+  "term": "انقضاء",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.693
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "التوقعات",
+  "term": "تنبؤ",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.807
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "الاتجاه",
+  "term": "منحى",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.867
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "للأسهم",
+  "term": "الأسهم وحصص (حقوق) رأس المال الأخرى",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.817
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "البورصة",
+  "term": "سوق الأوراق المالية",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.946
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "والأسهم",
+  "term": "الأسهم وحصص (حقوق) رأس المال الأخرى",
+  "state": "review",
+  "verdict": "right",
+  "clef": 0.872
+ },
+ {
+  "source": "بانكير",
+  "domain": "finance",
+  "url": "https://banker.news/117180",
+  "form": "اتجاه",
+  "term": "منحى",
+  "state": "review",
+  "verdict": "wrong",
+  "clef": 0.876
+ }
+]

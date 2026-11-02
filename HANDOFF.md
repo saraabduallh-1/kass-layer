@@ -85,6 +85,8 @@ suggestion: `scripts/evaluate/decision_clef.py`, `clef_filter.py`, results `repo
 67.9 -> 79.2) and separates context traps well, but scores 59.7% on the 600 decision cases, so it is NOT wired into the detector. The user has no Jev key and no GPU
 server: only the office PC is available, and the academy server is CPU only. Automatic replacement is not wanted for now: suggestion mode only.
 
+Later on 2026-11-03: sound-only matches (`exact`) and one-word colloquial forms are now always `review`, an unstripped word with its article (والقلق) is no longer a sound match, NEVER_FORMS blocks بواسطة and English stop words; 8 bad pairs withdrawn (`variants/topic/*-audit-2.txt`). Gold numbers above unchanged. First test on 16 real published excerpts: `reports/articles/real_results.md` (about 60% of suggestions right, 6 of 15 wanted words found; judged by Claude, not independent). Texts are in git-ignored `logs/real_articles/`. Main gaps: person names, everyday words (الاتجاه، انتهاء، قضية), and forms missing from the data (البودكاست، روبوتات الدردشة، الكود).
+
 ## Term detector API (2026-10-26)
 `src/kass_layer/detector/engine.py` is a line-by-line port of the demo page's engine (`scripts/demo/kass-lab.html`);
 `api.py` serves it with FastAPI. CPU only, no model at query time: ~1 s load, ~200 MB RAM, 2–150 ms per sentence.
