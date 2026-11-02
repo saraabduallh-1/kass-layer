@@ -2,14 +2,14 @@
   "dictionary_id": "b4759d02-40ef-4df5-a818-4081a11c338c",
   "dictionary_name": "معجم المصطلحات الموسيقية",
   "source_export": "data/dictionaries/exports/b4759d02-40ef-4df5-a818-4081a11c338c.json",
-  "generated_at": "2026-11-02T09:36:15.733276+00:00",
+  "generated_at": "2026-11-02T10:06:12.491771+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 700,
     "senses_reviewed": 700,
     "senses_with_variants": 618,
-    "variants_accepted": 873,
-    "variants_needing_review": 509
+    "variants_accepted": 874,
+    "variants_needing_review": 508
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -33598,10 +33598,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ مؤثرات في الأغنية قوية جداً.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "ساوند إفكت",

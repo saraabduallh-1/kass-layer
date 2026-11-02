@@ -2,14 +2,14 @@
   "dictionary_id": "928f4f87-b98c-4b2d-b31d-0b45c6747644",
   "dictionary_name": "معجم مصطلحات الإعلام",
   "source_export": "data/dictionaries/exports/928f4f87-b98c-4b2d-b31d-0b45c6747644.json",
-  "generated_at": "2026-11-02T09:36:15.206846+00:00",
+  "generated_at": "2026-11-02T10:06:11.952458+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 833,
     "senses_reviewed": 833,
     "senses_with_variants": 788,
-    "variants_accepted": 1124,
-    "variants_needing_review": 494
+    "variants_accepted": 1117,
+    "variants_needing_review": 478
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -418,20 +418,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "تصويت",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أعم ويشمل التصويت الانتخابي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           }
         ],
@@ -2643,20 +2629,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حرية الصحافة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "مبدأ حرية الصحافة لا الإعلام نفسه",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4530,19 +4502,6 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
-              "ambiguous"
-            ]
-          },
-          {
-            "form": "ميديا",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة بمعنى الإعلام",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -7670,10 +7629,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7714,16 +7671,6 @@
             "form": "satellite broadcast",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "فضائي",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -8978,18 +8925,6 @@
           {
             "form": "لايف",
             "type": "transliteration",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "على الهواء",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -14657,18 +14592,6 @@
             "review_reasons": [
               "ambiguous"
             ]
-          },
-          {
-            "form": "عمود صحفي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أخص من التعليق الصحفي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16616,16 +16539,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مراسل ميداني",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -16818,20 +16731,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "متابعة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           }
         ],
@@ -17285,19 +17184,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "عاجل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة بمعنى مستعجل",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19400,16 +19286,6 @@
             "review_reasons": []
           },
           {
-            "form": "رسوم متحركة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "موشن جرافيكس",
             "type": "spelling_variant",
             "confidence": "medium",
@@ -20768,20 +20644,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "شاشة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة لأي شاشة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21081,8 +20943,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -21849,16 +21710,6 @@
             ]
           },
           {
-            "form": "الحلقة الأولى",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "بايلوت",
             "type": "transliteration",
             "confidence": "medium",
@@ -22101,18 +21952,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حملات",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة لأي حملة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -24798,20 +24637,6 @@
             ]
           },
           {
-            "form": "رعاية",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة تعني أيضًا الرعاية الصحية أو الاجتماعية",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
-          },
-          {
             "form": "سبونسر",
             "type": "transliteration",
             "confidence": "high",
@@ -25781,16 +25606,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "التحقق من الأخبار",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           },
           {
             "form": "تقصي الحقائق",
@@ -30910,16 +30725,6 @@
             "review_reasons": []
           },
           {
-            "form": "أخبار المشاهير",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "صحافة المشاهير",
             "type": "informal_synonym",
             "confidence": "medium",
@@ -34075,16 +33880,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "خبر",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "البرنامج خصص ساعة كاملة لشرح الخبر.",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -36138,19 +35933,6 @@
             "review_reasons": []
           },
           {
-            "form": "شاحن",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "أخص في الاستعمال الدارج",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
-          },
-          {
             "form": "أدابتر",
             "type": "transliteration",
             "confidence": "high",
@@ -37829,18 +37611,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "نقد",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -39137,16 +38907,6 @@
           {
             "form": "ميكب آرتست",
             "type": "transliteration",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "خبيرة تجميل",
-            "type": "informal_synonym",
             "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -42141,18 +41901,6 @@
             ]
           },
           {
-            "form": "مؤثرات",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "أضف بعض المؤثرات لزيادة الحماس.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "ساوند إفكت",
             "type": "transliteration",
             "confidence": "medium",
@@ -43200,20 +42948,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "بث",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "البث للمواد المسموعة والمرئية خاصة",
-            "example": "بثنا البرنامج مباشرة.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -44158,19 +43892,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "دش",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "الدش طبق استقبال فضائي وليس الهوائي الأرضي",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           },
           {
