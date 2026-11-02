@@ -231,3 +231,85 @@
 {"sense_id":"23940d35-ca2c-400b-89ff-adac7433cdfc:0","form":"زحمة سير","term":"ازدحام مروري","english":"","definition":"تباطؤ حركة المركبات على الطرق بسبب وجود عدد كبير من السيارات أو العوائق التي تؤدي إلى تكدس المركبات؛ ومن أسبابه مجتمعةً أو منفصلةً: عدم اتساع الطريق للعدد الكافي من المركبات أو الحوادث المرورية أو أعمال الصيانة، وأحيانًا بسبب التغيرات في أنماط الحركة المرورية خلال أوقات الذروة.","same_meaning":true,"relation":"exact","reason":"تصفان نفس الظاهرة المرورية.","model":"gemma3:12b","prompt":2}
 {"sense_id":"23940d35-ca2c-400b-89ff-adac7433cdfc:0","form":"عجقة","term":"ازدحام مروري","english":"","definition":"تباطؤ حركة المركبات على الطرق بسبب وجود عدد كبير من السيارات أو العوائق التي تؤدي إلى تكدس المركبات؛ ومن أسبابه مجتمعةً أو منفصلةً: عدم اتساع الطريق للعدد الكافي من المركبات أو الحوادث المرورية أو أعمال الصيانة، وأحيانًا بسبب التغيرات في أنماط الحركة المرورية خلال أوقات الذروة.","same_meaning":true,"relation":"exact","reason":"تصف 'عجقة' نفس حالة التكدس المروري وتستخدم بشكل شائع كبديل للمصطلح في سياقات غير تقنية.","model":"gemma3:12b","prompt":2}
 {"sense_id":"23940d35-ca2c-400b-89ff-adac7433cdfc:0","form":"اختناق مروري","term":"ازدحام مروري","english":"","definition":"تباطؤ حركة المركبات على الطرق بسبب وجود عدد كبير من السيارات أو العوائق التي تؤدي إلى تكدس المركبات؛ ومن أسبابه مجتمعةً أو منفصلةً: عدم اتساع الطريق للعدد الكافي من المركبات أو الحوادث المرورية أو أعمال الصيانة، وأحيانًا بسبب التغيرات في أنماط الحركة المرورية خلال أوقات الذروة.","same_meaning":true,"relation":"exact","reason":"يصف كلا المصطلحين نفس الظاهرة المرورية.","model":"gemma3:12b","prompt":2}
+{"sense_id":"98f02095-2dd3-4cb5-b7a6-d59d7124dc9b:0","form":"سيقنال","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"413f5750-28bc-4307-a30d-9bcd81d45f3e:0","form":"قار معدل","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"170d209f-70e0-4605-a740-b1edfaca6f09:0","form":"الشاحنات","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3269d3f3-0202-45de-b412-957a6b7a6a83:0","form":"أعمدة الإنارة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3269d3f3-0202-45de-b412-957a6b7a6a83:0","form":"إنارة الشوارع","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"a796fab4-e728-472e-a80d-94419818dd02:0","form":"المرافق العامة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"0657297a-8a98-4244-8858-86a36970bb96:0","form":"تصريف السيول","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"0657297a-8a98-4244-8858-86a36970bb96:0","form":"تصريف مياه الأمطار","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f7a96091-4df1-45ea-8cb2-0d6cf9785324:0","form":"انهيار صخري","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"9a880478-a33c-4045-a6dd-70e33560c315:0","form":"سفلتة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"73efd7df-3897-466e-af0e-3757af112f32:0","form":"هندسة المرور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f3038794-98fd-4502-beeb-f447ae1f5545:0","form":"سفلتة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"5ff4b40b-8484-43dc-863b-a7e542daf821:0","form":"تقاطع","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"5ff4b40b-8484-43dc-863b-a7e542daf821:0","form":"إشارة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"89d9e25b-9361-4684-9c2c-f79ceddcc15e:0","form":"المساحة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"b45f6cd8-9d42-495a-9601-b68a1716ac23:0","form":"جزيرة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"7d09e31e-e11d-4474-9cec-3e4da01f0c29:0","form":"الجزيرة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"a0d6805c-5ef4-4a7d-8630-c632e46dfe3c:0","form":"بلوك خرساني","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f714dd75-1f19-4a39-b88c-90fe47377069:0","form":"السرعة القصوى","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3e54eadd-cdd1-4362-8acb-98038af378c3:0","form":"السير","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"1edff3b6-4edc-4b4f-a917-5cd8795dce2b:0","form":"حفريات","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"0a4f4b0c-523e-4787-a5fc-3d417dc1464a:0","form":"الحواجز الحديدية","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ed044656-60d4-441e-b0ff-64cfe30a5b8c:0","form":"محطة طريق","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"b5820cea-243e-4f5e-8b37-b5afb79ea7aa:0","form":"أسمنت مسلح","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"0c30979d-249c-4c7c-86a6-5661bc02bfdb:0","form":"ماطور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"0c30979d-249c-4c7c-86a6-5661bc02bfdb:0","form":"موتور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"e550bef7-0451-4345-9555-86230ebce4a6:0","form":"عجلة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"5df13a75-d412-43c5-ab65-1f85be31d7ec:0","form":"فحص التربة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"55b0879b-3e2c-433e-b5da-75df6fdaa7c1:0","form":"التخطيط","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"85470eea-ae20-416b-883f-a86f68a9e38a:0","form":"ميدان","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"85470eea-ae20-416b-883f-a86f68a9e38a:0","form":"صينية","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3ed4ea87-882d-4c02-83e3-09cbd4863668:0","form":"لف","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"c9e7ad12-5b4d-4ac7-a00c-264269202201:0","form":"فتحة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"55bff88f-4c80-4c14-8654-e1dfad5d99af:0","form":"سكيورتي","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f54cbec3-8e73-4b27-a2fc-377295cfa0fe:0","form":"المرور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f54cbec3-8e73-4b27-a2fc-377295cfa0fe:0","form":"عسكري مرور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"33b5dce3-80b1-4c13-b988-257e3740265e:0","form":"الرصف الإسفلتي","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ba084e49-557e-485b-befa-917f50578b30:0","form":"الممشى","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"cc563153-cd62-4c80-8baf-081382b392ea:0","form":"بلاط إنترلوك","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"132215db-ed23-47fe-af30-6fe478484b51:0","form":"ونش","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"6e3efb72-a99f-45e9-a2ad-3047c4f4680d:0","form":"موتر","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"7a54c8f8-4c5c-4851-a4e2-ca3c489470c6:0","form":"المجاري","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"28f4fc9c-9b3c-4b0b-a537-4916ec9d02ab:0","form":"المرور","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"83bc85c3-b642-4833-9c60-3d5c7526015e:0","form":"عسكري","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"db10d13e-c6f1-4ede-aede-0b6e75ddd0bd:0","form":"خط","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"db10d13e-c6f1-4ede-aede-0b6e75ddd0bd:0","form":"شارع","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3549a729-d407-4317-ba14-8d54d6b4e06f:0","form":"سرفس","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"5c0e3dd0-960e-4800-8b5e-c35263cedc48:0","form":"الشارع العام","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"b5a5a054-b4d9-4b2e-9fab-299a25e1ded5:0","form":"طريق ترابي","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"cdb02f6d-2cdf-4258-9588-a89fc2335ad7:0","form":"زحمة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ccb1d58d-ddc7-4213-b223-daf6355ce663:0","form":"طريق مسفلت","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ccb1d58d-ddc7-4213-b223-daf6355ce663:0","form":"طريق مزفلت","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"6c9f2c38-f76a-4420-9338-60b71bfa2b60:0","form":"خراب","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"904ebcf6-4790-4fd4-97de-e5c1e9dd59cb:0","form":"مخالفة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"5ca63087-304a-48b0-9e35-7e1bf54c1e3c:0","form":"بالوعة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3d2e22e2-cbfa-4ed8-be2c-8429ce0c8729:0","form":"طعوس","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"c672eaa2-b232-4ad4-89da-aab64dffe654:0","form":"جسر","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"59ab6f73-ccf4-421e-a521-a6a1eb7e50c3:0","form":"لوحة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"79c2d400-3ca9-4704-afd6-d87a26fd5328:0","form":"الفحص الدوري","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"60a14354-87f3-447b-b2b9-53e8d45d2449:0","form":"الميزان","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"6e2bbebc-2d52-4eec-a701-cc788f582661:0","form":"محطة بنزين","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"d8d52063-96a6-4fb4-9d10-4ad9cc3e31f1:0","form":"سيارة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"8995f031-f338-4250-912c-678c0dd6df59:0","form":"بنشر","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"1bb7e92d-360c-4d7e-a6bb-875b22760c3c:0","form":"سايد","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"9b319683-e484-41f6-85aa-cde3daca4c2f:0","form":"درب","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"677491bd-c9e1-4f94-8f1b-6f017f6e57eb:0","form":"هنقر","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"2a3299c7-4d91-4057-ba67-b5e5b98a1e4d:0","form":"جسر مشاة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"2a3299c7-4d91-4057-ba67-b5e5b98a1e4d:0","form":"كوبري مشاة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ac6b19a0-9d8a-4166-bae1-16947c182410:0","form":"عربة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"822c506b-8d57-4f88-873b-c456efedbebd:0","form":"نزلة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"f5f14519-e3c7-42a4-afae-596c31bdcd5c:0","form":"لفة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"9b10efbc-bdc5-4082-9cd7-de050d729053:0","form":"لفة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"9fbb0af6-e3b5-412c-b4b9-08156c50a271:0","form":"منعطفات خطرة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"feb46b53-78ee-4ddd-bb2e-8a7caa32a438:0","form":"مواد البناء","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"8aa57435-583a-41b8-ba46-534009fb6f74:0","form":"اللوكيشن","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"3d90a72a-c1ce-451e-884e-a89447b37bb2:0","form":"كاميرا ساهر","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"63b4f03b-520f-455f-abfe-0af33cd29a2f:0","form":"قوقل ماب","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ac5301bf-c95c-4528-ab04-b6a2019fd535:0","form":"كمين","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"ac5301bf-c95c-4528-ab04-b6a2019fd535:0","form":"حاجز","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"6d6562f3-d02b-4b4b-bf35-6da136cc00bb:0","form":"مواصلات","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"e3fdd8e7-4536-4867-a219-2c0cad843673:0","form":"أدوات السلامة","reviewed":true,"decisions":"roads-audit-1.txt"}
+{"sense_id":"00be0686-2c15-4994-8980-5aad96e78c77:0","form":"لوكيشن","reviewed":true,"decisions":"roads-audit-1.txt"}
