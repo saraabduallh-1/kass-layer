@@ -4,7 +4,7 @@
       Judges pairs not judged yet, append-only in variants/raw/audit/<id>.jsonl. Picks the model from free GPU memory
       (gemma3:12b, else gemma3:4b); below 4 GB it exits without loading anything, so another job keeps the GPU.
   .venv/Scripts/python scripts/enrich/audit_pairs.py show <dictionary> [--limit 40]
-      Prints the next rejected pairs not reviewed yet: <term> TAB <form> | english | definition.
+      Prints the next rejected pairs not reviewed yet: <term> TAB <form> | relation | english | definition.
   .venv/Scripts/python scripts/enrich/audit_pairs.py done <dictionary> <decisions.txt>
       Marks the shown pairs reviewed. decisions.txt is the topic_pass.py --audit file (<term> TAB !form), applied
       separately; pairs absent from it were kept.
@@ -22,6 +22,8 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+
+import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
@@ -41,12 +43,17 @@ from kass_layer.dictionary.qwen_client import QwenClient, QwenError  # noqa: E40
 
 AUDIT_DIR = OUT_DIR / "raw" / "audit"
 WEAK_TYPES = {"informal_synonym", "colloquial"}
+RELATIONS = {"exact", "broader", "narrower", "related", "wrong"}
 ARABIC = re.compile(r"[؀-ۿ]")
-PROMPT = """أنت مدقق مصطلحات. أمامك مصطلح قياسي من معجم متخصص وتعريفه، وكلمة يومية يُفترض أن الكتّاب يستعملونها بدلًا منه.
-هل تُستعمل هذه الكلمة فعلًا بمعنى هذا المصطلح نفسه في سياق واحد على الأقل؟
-أجب same_meaning=false فقط إذا كانت لا تحمل هذا المعنى أبدًا: مفهوم آخر، أو مرتبط به فقط، أو أعم بكثير، أو صيغة مخترعة.
-إذا كانت تحمل المعنى في بعض السياقات وتعني غيره في سياقات أخرى فأجب true.
-أجب بـ JSON فقط: {"same_meaning": true, "reason": "سبب قصير"}"""
+PROMPT_VERSION = 2  # 1 asked "never the same meaning" and let nearly everything through
+PROMPT = """أنت مدقق مصطلحات صارم. أمامك مصطلح قياسي من معجم متخصص وتعريفه، وكلمة يومية يُفترض أن الكتّاب يستعملونها بدلًا منه.
+صنّف علاقة الكلمة بالمصطلح:
+- exact: تعني المفهوم نفسه، ويصح استبدالها بالمصطلح في نص عن هذا المجال دون تغيير المعنى.
+- broader: أعم من المصطلح.
+- narrower: أخص من المصطلح.
+- related: مفهوم مرتبط لكنه ليس المصطلح نفسه.
+- wrong: معنى آخر أو صيغة غير مستعملة.
+أجب بـ JSON فقط: {"relation": "exact", "reason": "سبب قصير"}"""
 
 
 def _dictionary(prefix: str) -> dict:
@@ -82,6 +89,10 @@ def _rows(dictionary: dict) -> list[dict]:
 
 
 def pick_model() -> str | None:
+    loaded = requests.get("http://localhost:11434/api/ps", timeout=10).json().get("models") or []
+    for model in ("gemma3:12b", "gemma3:4b"):  # already in memory (its GPU use is not a reason to wait)
+        if any(m.get("name") == model for m in loaded):
+            return model
     free = int(subprocess.run(["nvidia-smi", "--query-gpu=memory.free", "--format=csv,noheader,nounits"],
                               capture_output=True, text=True, check=True).stdout.split()[0])
     return "gemma3:12b" if free >= 9500 else "gemma3:4b" if free >= 4000 else None
@@ -92,10 +103,10 @@ def judge(client: QwenClient, pair: dict) -> dict:
             f"الكلمة اليومية: {pair['form']}")
     text, _ = client.complete([{"role": "system", "content": PROMPT}, {"role": "user", "content": user}], {})
     payload = extract_json(text)
-    if not isinstance(payload, dict) or not isinstance(payload.get("same_meaning"), bool):
+    if not isinstance(payload, dict) or payload.get("relation") not in RELATIONS:
         raise ValueError(f"unparsed: {text[:100]}")
-    return {**pair, "same_meaning": payload["same_meaning"], "reason": str(payload.get("reason") or "")[:200],
-            "model": client.model}
+    return {**pair, "same_meaning": payload["relation"] == "exact", "relation": payload["relation"],
+            "reason": str(payload.get("reason") or "")[:200], "model": client.model, "prompt": PROMPT_VERSION}
 
 
 def cmd_run(args) -> None:
@@ -104,9 +115,9 @@ def cmd_run(args) -> None:
         raise SystemExit("under 4 GB of GPU memory free: nothing loaded, try later")
     load_dotenv()
     dictionary = _dictionary(args.dictionary)
-    done = {(r["sense_id"], r["form"]) for r in _rows(dictionary) if "same_meaning" in r}
+    done = {(r["sense_id"], r["form"]) for r in _rows(dictionary) if r.get("prompt") == PROMPT_VERSION}
     work = [p for p in pairs(dictionary) if (p["sense_id"], p["form"]) not in done][: args.limit]
-    client = QwenClient(model=model, thinking=False, temperature=0.0, max_tokens=200)
+    client = QwenClient(model=model, thinking=False, temperature=0.0, max_tokens=300)
 
     def safe(pair):
         try:
@@ -150,7 +161,7 @@ def cmd_status(args) -> None:
     for dictionary in complete_dictionaries():
         total = len(pairs(dictionary))
         rows = _rows(dictionary)
-        judged = sum("same_meaning" in r for r in rows)
+        judged = sum(r.get("prompt") == PROMPT_VERSION for r in rows)
         print(f"{judged:>6}/{total:<6} judged, {len(_unreviewed(dictionary)):>5} to review  "
               f"{dictionary['dictionary_id'][:8]}  {dictionary['dictionary_name'].strip()}")
 

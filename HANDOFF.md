@@ -15,6 +15,7 @@ tuning 93.8/84.9 · heldout-1 81.0/63.0 · heldout-2 94.7/100 · ambiguity 71.4/
 arabic-heldout 83.3/52.6; parity 212/212. Audit tool: `scripts/enrich/audit_pairs.py` (Gemma yes/no, then Claude
 reviews the "no" answers and applies them with `topic_pass.py --audit`). Standing approval on the PC: push to
 `enrichment-pass1` without asking when the tests do not get worse; never to `main`.
+Audit progress: Data & AI done 2026-11-02 (590 pairs, 117 reviewed, 17 withdrawn; decisions `variants/topic/ai-audit-1.txt`; tests unchanged). Next: Legal, Contracts, then the rest; then new everyday forms.
 
 Arabic terminology layer: rewrites non-specialist Arabic text to the standard SIWAR dictionary terms,
 e.g. «المودل تدرب على بيانات» → «النموذج تدرب على بيانات».
