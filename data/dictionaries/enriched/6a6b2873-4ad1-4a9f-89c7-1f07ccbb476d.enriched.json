@@ -2,14 +2,14 @@
   "dictionary_id": "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d",
   "dictionary_name": "معجم مصطلحات الحياة الفطرية",
   "source_export": "data/dictionaries/exports/6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d.json",
-  "generated_at": "2026-11-02T12:39:48.589337+00:00",
+  "generated_at": "2026-11-02T12:41:36.904814+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 632,
     "senses_reviewed": 632,
     "senses_with_variants": 632,
-    "variants_accepted": 975,
-    "variants_needing_review": 266
+    "variants_accepted": 966,
+    "variants_needing_review": 261
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -778,19 +778,6 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere"
-            ]
-          },
-          {
-            "form": "الصيد الجائر",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
             ]
           },
           {
@@ -11579,26 +11566,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "المها العربي",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الوضيحي",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11649,28 +11616,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الوعل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "البدن",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11710,16 +11655,6 @@
           {
             "form": "houbara breeding program",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الحبارى",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -16150,18 +16085,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حافة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -18078,16 +18001,6 @@
             "review_reasons": []
           },
           {
-            "form": "الأخطبوط والحبار",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "رأسيات الأرجل",
             "type": "informal_synonym",
             "confidence": "high",
@@ -19626,18 +19539,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حوت",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "يطلق في لهجات الخليج على السمك عامة",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21887,16 +21788,6 @@
             "form": "birds of prey",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الصقور",
-            "type": "colloquial",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -24750,16 +24641,6 @@
           {
             "form": "jellyfish",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الدول",
-            "type": "colloquial",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -28456,16 +28337,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "الرعي الطبيعي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -29017,16 +28888,6 @@
           {
             "form": "kill traps",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "مصيدة فئران",
-            "type": "colloquial",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -31488,19 +31349,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "البيئة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
