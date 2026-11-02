@@ -2,14 +2,14 @@
   "dictionary_id": "2885a7fb-c347-4390-92c9-808c9b9b17c2",
   "dictionary_name": "معجم مصطلحات القطاع غير الربحي",
   "source_export": "data/dictionaries/exports/2885a7fb-c347-4390-92c9-808c9b9b17c2.json",
-  "generated_at": "2026-11-02T12:36:09.578097+00:00",
+  "generated_at": "2026-11-02T12:37:56.967382+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 521,
     "senses_reviewed": 521,
     "senses_with_variants": 521,
-    "variants_accepted": 655,
-    "variants_needing_review": 318
+    "variants_accepted": 646,
+    "variants_needing_review": 312
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -54,16 +54,6 @@
             "form": "donation provisions",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "أحكام الصدقة",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -414,16 +404,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "أخلاقيات العمل التطوعي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -524,16 +504,6 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "إدارة الطوارئ",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "لدينا خطة لإدارة الطوارئ في حال حدوث أي كارثة.",
             "status": "accepted",
             "review_reasons": []
           }
@@ -838,18 +808,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الإرشاد الأسري",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1590,16 +1548,6 @@
             "form": "ambulance",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "إسعافات أولية",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -3996,16 +3944,6 @@
           {
             "form": "charity funds",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "أموال الصدقات",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -7011,19 +6949,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "محو الأمية",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "محو الأمية جزء من تعليم الكبار",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7413,16 +7338,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "اللحمة الوطنية",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7869,18 +7784,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "تطوير الذات",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يستعمل شعبيا بمعنى مختلف",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
             ]
           }
         ],
@@ -17909,16 +17812,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "العلوم الإنسانية",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17968,16 +17861,6 @@
           {
             "form": "community work",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "العمل المجتمعي",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -22461,18 +22344,6 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "روضة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -23084,19 +22955,6 @@
             ]
           },
           {
-            "form": "منحة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "حصلت على منحة دراسية لتغطية تكاليف الدراسة.",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "دعم مالي",
             "type": "informal_synonym",
             "confidence": "medium",
@@ -23442,19 +23300,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "استبيان",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -27172,16 +27017,6 @@
             "form": "endowment",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "حبس",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
