@@ -2,14 +2,14 @@
   "dictionary_id": "0f0ad290-0fa5-4983-bb56-7144c641cc8c",
   "dictionary_name": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
   "source_export": "data/dictionaries/exports/0f0ad290-0fa5-4983-bb56-7144c641cc8c.json",
-  "generated_at": "2026-11-02T13:12:06.302496+00:00",
+  "generated_at": "2026-11-02T15:07:26.525809+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1061,
     "senses_reviewed": 1061,
     "senses_with_variants": 1061,
-    "variants_accepted": 1547,
-    "variants_needing_review": 777
+    "variants_accepted": 1549,
+    "variants_needing_review": 775
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -13635,10 +13635,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -43966,10 +43964,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
