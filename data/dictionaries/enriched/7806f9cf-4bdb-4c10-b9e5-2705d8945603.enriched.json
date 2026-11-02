@@ -2,14 +2,14 @@
   "dictionary_id": "7806f9cf-4bdb-4c10-b9e5-2705d8945603",
   "dictionary_name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
   "source_export": "data/dictionaries/exports/7806f9cf-4bdb-4c10-b9e5-2705d8945603.json",
-  "generated_at": "2026-11-02T12:06:14.872540+00:00",
+  "generated_at": "2026-11-02T12:36:11.084987+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 320,
     "senses_reviewed": 320,
     "senses_with_variants": 311,
-    "variants_accepted": 273,
-    "variants_needing_review": 350
+    "variants_accepted": 274,
+    "variants_needing_review": 349
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -10146,10 +10146,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

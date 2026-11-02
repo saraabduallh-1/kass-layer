@@ -2,14 +2,14 @@
   "dictionary_id": "4fc63968-9cd8-47d9-a32e-aadc6c6a265b",
   "dictionary_name": "معجم مصطلحات الموارد البشرية والتنمية الاجتماعية",
   "source_export": "data/dictionaries/exports/4fc63968-9cd8-47d9-a32e-aadc6c6a265b.json",
-  "generated_at": "2026-11-02T12:06:14.504405+00:00",
+  "generated_at": "2026-11-02T12:36:10.645811+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 446,
     "senses_reviewed": 446,
     "senses_with_variants": 446,
-    "variants_accepted": 380,
-    "variants_needing_review": 478
+    "variants_accepted": 376,
+    "variants_needing_review": 463
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -493,19 +493,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الحفظ",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -1253,16 +1240,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "النفقة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -1508,19 +1485,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere",
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "المعاش",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "يطلق على راتب التقاعد",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "ambiguous"
             ]
           }
         ],
@@ -1881,18 +1845,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مرن",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2473,18 +2425,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "أمن المعلومات",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -3678,19 +3618,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "صدقة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -3848,18 +3775,6 @@
           {
             "form": "customer journey",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "رحلة العميل",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -4062,16 +3977,6 @@
           {
             "form": "attrition analysis",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "معدل الدوران الوظيفي",
-            "type": "informal_synonym",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -4606,16 +4511,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "تدريب صيفي",
-            "type": "colloquial",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -7048,19 +6943,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "إصابة عمل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8700,16 +8582,6 @@
             "form": "job purpose",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "المسمى الوظيفي",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -12191,18 +12063,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "عمل تطوعي",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12325,19 +12185,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "عسكري",
-            "type": "colloquial",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12612,18 +12459,6 @@
           {
             "form": "flexible work",
             "type": "foreign",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "مرن",
-            "type": "colloquial",
             "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
@@ -16670,19 +16505,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "معيد",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": true,
-            "ambiguity_note": "المعيد رتبة جامعية",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous",
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19073,19 +18895,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "مخلص جمركي",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19348,18 +19157,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "محل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -19513,19 +19310,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "مهلة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21666,18 +21450,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "الولاية",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
             ]
           }
         ],
