@@ -261,3 +261,58 @@
 {"sense_id":"f672e1f1-7e2e-483e-8e27-973ea52d0932:0","form":"ورش","term":"ورش العمل التفاعلية","english":"Interactive Workshops","definition":"جلسات تدريبية تركِّز على التفاعل المباشر بين المشاركين والمدرِّبين.","same_meaning":false,"relation":"broader","reason":"ورش تشمل أنواعًا مختلفة من الورش، وليست بالضرورة تفاعلية.","model":"gemma3:12b","prompt":2}
 {"sense_id":"246ad6f3-a09f-430f-a507-32b8b8e7f4e1:0","form":"وكالات الإغاثة","term":"وكالات إنسانية","english":"Humanitarian Agencies","definition":"المنظمات والهيئات الدولية أو الإقليمية أو المحلية المتخصصة في تقديم المساعدات الإنسانية والإغاثية، سواءً كانت تابعة للأمم المتحدة أو منظمات غير حكومية أو جمعيات خيرية، والتي تعمل وفق معايير ومبادئ العمل الإنساني الدولية لتقديم الدعم للمحتاجين والمتضررين","same_meaning":false,"relation":"broader","reason":"وكالات الإغاثة جزء من الوكالات الإنسانية، لكن الأخيرة تشمل نطاقًا أوسع من الأنشطة والمنظمات.","model":"gemma3:12b","prompt":2}
 {"sense_id":"0d6aa436-a9be-481e-b23c-1fc92a99b7a5:0","form":"التعاون فيما بين بلدان الجنوب","term":"التعاون جنوب-جنوب","english":"South-South Cooperation","definition":"الشَّراكة بين الدول النامية لتبادل الخبرات والدعم التنموي.","same_meaning":true,"relation":"exact","reason":"تعبير 'التعاون فيما بين بلدان الجنوب' يصف نفس المفهوم الدقيق للتعاون جنوب-جنوب.","model":"gemma3:12b","prompt":2}
+{"sense_id":"c20cad04-cec8-40c9-aad3-0ff17c7a6a3a:0","form":"الاعتقال","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"c20cad04-cec8-40c9-aad3-0ff17c7a6a3a:0","form":"الحبس","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"2c1b4d63-275b-4927-8168-50e8afeb659c:0","form":"إدارة النقد","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"094dd809-cf83-4228-bd54-4225ea6f6ad5:0","form":"إدارة المستودعات","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"0ed5c19f-50d3-4c20-b5a9-78e9cc3f3b72:0","form":"سلاسل الإمداد","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"ed4b5cd8-915d-45b9-99fd-c4012c1663e4:0","form":"المجاعة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"8c42ec4f-7230-4f46-8871-016dd76cd7ba:0","form":"استهلاك الكهرباء","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"f90068c3-9c5a-4c20-9ae5-b05d58db961c:0","form":"الإبداع","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"5751da72-69f2-462c-a9d4-bc45c1d0a3e9:0","form":"مكننة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"310f299f-1dd4-4a42-8b98-c13a9596cbf7:0","form":"النزاهة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"f9f85d68-a117-4d9d-9652-4963e5040c53:0","form":"التكامل","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"fab39245-cf2b-4a5d-a889-2cae32c446c7:0","form":"التتبع","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"692baf74-d346-4915-89da-e210f8ccadab:0","form":"التوعية الصحية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"a886e76a-ef9b-4f37-ba8a-9071239fc058:0","form":"حسن الإدارة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"4165f0a2-4943-49f9-9cae-d8c11b1c7aee:0","form":"التراث العمراني","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"9d269cb9-1b73-4a82-8e0c-ef1762c4b5a5:0","form":"التعليم الدامج","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"c6f072ca-168f-4294-9254-8cfad94c93ba:0","form":"الاحتباس الحراري","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"20a32a42-58f9-480d-bad9-3a56dcb22979:0","form":"شبكة الأمان الاجتماعي","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"4793e4c9-6bf4-48b5-aeb8-10c343c13df7:0","form":"حوار الحضارات","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"cbbf5b68-adf9-4e3b-a157-f7c06668271c:0","form":"حوكمة الشركات","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"fa9bbe15-43c7-4a17-94dc-086d3c368ee1:0","form":"الطب الاتصالي","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"103c3019-dcd9-4817-bd00-2c13e2d37b9f:0","form":"القوة الناعمة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"ecb980ea-b3c4-495f-b68d-869e289f18b7:0","form":"شراء أخضر","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"99f688e0-1098-4c8c-88d8-06e4afca93ad:0","form":"التعاون","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"6cd961fe-64ed-40b6-87af-982a647b4f19:0","form":"الوضوح","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"03ee6668-d4ad-4200-b0ec-71380512ace3:0","form":"الصناعات الإبداعية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"3fbc0afc-dda2-40df-b0b4-99ce306d2813:0","form":"الطاقة البديلة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"599ab490-b418-4af7-80b5-2b0f1c64cc97:0","form":"الإنصاف","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"70b2d6cd-4dd9-4417-9d38-d85057a2cb54:0","form":"مجتمعات الممارسة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"fc3012ef-0029-40ab-b763-c89f7a1497b7:0","form":"المحاسبة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"7aba324c-f05b-418b-b24e-dc92dca0d1ce:0","form":"الملكية الوطنية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"cf01838c-169d-44c0-818c-df624d2c8a3c:0","form":"ترابط ثلاثي","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"73588f1f-a86a-455a-9f95-58414d34cb37:0","form":"المأوى","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"086d10db-98b7-4319-bd74-325fc2738de6:0","form":"مخالفة القانون","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"1ef9249d-b3f5-42c6-a52c-06e7d2b246ca:0","form":"الأطراف الصناعية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"913374fc-92f4-4d33-9468-036bcf30920f:0","form":"إمكانية الوصول","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"d0fe1d2b-8d4e-4cf8-9bb9-8cf2b303f2a1:0","form":"تنويع مصادر الدخل","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"36772087-5c25-49d4-8747-4c4e53214250:0","form":"سقيا الماء","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"f5454f43-c076-4d92-a30e-09526816cbd4:0","form":"غسيل الكلى","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"700253de-de20-492d-a105-8bf215a5e0a3:0","form":"حشد التمويل","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"90f1a3f5-42a9-4df9-9d32-0f628347006a:0","form":"سقيا","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"9b6cac84-08b1-4a95-bfbe-c74adf010407:0","form":"حقيبة الشتاء","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"517ec3f6-a883-481e-8e0a-c91e78aee445:0","form":"ذوي الاحتياجات الخاصة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"517ec3f6-a883-481e-8e0a-c91e78aee445:0","form":"المعاقين","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"a99fba46-f1fe-413d-be42-87fb9e4ed452:0","form":"التمويل الأصغر","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"a99fba46-f1fe-413d-be42-87fb9e4ed452:0","form":"صندوق التمويل الأصغر","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"7c028270-6cb9-466a-a013-cc11718a4711:0","form":"منشآت","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"a6858a8e-48c5-4efc-9a6f-e24c3f858fd4:0","form":"لاجئون","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"ff3c91fc-0de5-4960-adbd-8c667e196af3:0","form":"الثقافة الرقمية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"4aba53fa-3cca-4d8d-b804-60eb6e9bb3a4:0","form":"الطوارئ","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"052b7a2e-4da4-4811-b40e-af42ad52c7f6:0","form":"نزاهة","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"644e2427-486a-47fa-8411-7b7ecd51e3e5:0","form":"منظمة إغاثية","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"f672e1f1-7e2e-483e-8e27-973ea52d0932:0","form":"ورش العمل","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"f672e1f1-7e2e-483e-8e27-973ea52d0932:0","form":"ورش","reviewed":true,"decisions":"development-audit-1.txt"}
+{"sense_id":"246ad6f3-a09f-430f-a507-32b8b8e7f4e1:0","form":"وكالات الإغاثة","reviewed":true,"decisions":"development-audit-1.txt"}
