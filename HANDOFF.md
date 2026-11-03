@@ -87,6 +87,8 @@ server: only the office PC is available, and the academy server is CPU only. Aut
 
 Later on 2026-11-03: sound-only matches (`exact`) and one-word colloquial forms are now always `review`, an unstripped word with its article (والقلق) is no longer a sound match, NEVER_FORMS blocks بواسطة and English stop words; 8 bad pairs withdrawn (`variants/topic/*-audit-2.txt`). Gold numbers above unchanged. First test on 16 real published excerpts: `reports/articles/real_results.md` (about 60% of suggestions right, 6 of 15 wanted words found; judged by Claude, not independent). Texts are in git-ignored `logs/real_articles/`. Main gaps: person names, everyday words (الاتجاه، انتهاء، قضية), and forms missing from the data (البودكاست، روبوتات الدردشة، الكود).
 
+Usage mining (2026-11-03, user's direction: search real usage rather than ask a model): `scripts/enrich/mine_usage.py` (Wikidata aliases, Arabic Wikipedia redirects, writers' glosses «X (English)», evidence kept in `variants/raw/usage/`), reviewed by Claude and applied with `topic_pass.py`. Data & AI done: 387 senses with candidates, 62 forms added (`variants/topic/ai-usage-1.txt`), gold numbers unchanged. Next: other dictionaries, and Arabic tweets (`data/corpus/tweets/lm_twitter.txt`, pain/Arabic-Tweets, 41 GB, git-ignored) for usage evidence and word vectors with SynoExtractor-style linguistic filters.
+
 ## Term detector API (2026-10-26)
 `src/kass_layer/detector/engine.py` is a line-by-line port of the demo page's engine (`scripts/demo/kass-lab.html`);
 `api.py` serves it with FastAPI. CPU only, no model at query time: ~1 s load, ~200 MB RAM, 2–150 ms per sentence.
