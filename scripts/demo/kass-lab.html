@@ -509,7 +509,7 @@ summary { cursor: pointer; font-weight: 600 }
           if (rows && sufKind === "plural-en") rows = rows.filter(r => r[2] === "t");
           const words = [head, ...span.slice(1).map(t => t.n)];
           // colloquial forms (c: دوام) are always worth replacing, so they stay ordinary matches
-          if (rows && rows.length && !rows.some(r => r[1] & 4) && rows.every(r => !/[tfac]/.test(r[2]))
+          if (rows && rows.length && !rows.some(r => r[1] & 4) && rows.every(r => !/[tfac]/.test(r[2])) && !(n > 1 && rows.some(r => r[2] === "s"))
               && words.every(w => /^[؀-ۿ]+$/.test(w) && (STOP.has(w) || (DATA.vocab[bare(w)] || 0) >= EVERYDAY_VOCAB)) && !words.every(w => STOP.has(w))) {
             // everyday Arabic word or phrase (عميل، على الهواء): a term only when the context says so, decided in analyse()
             if (!everyday) everyday = { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: words.join(""), rows, how: "everyday" };

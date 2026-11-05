@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-11-05T11:24:12.981313+00:00",
+  "generated_at": "2026-11-05T12:48:27.087977+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1428,
-    "variants_accepted": 1400,
-    "variants_needing_review": 1384
+    "variants_accepted": 1399,
+    "variants_needing_review": 1383
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -42286,18 +42286,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "حكامة",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -84871,16 +84859,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
-          },
-          {
-            "form": "غرانت",
-            "type": "transliteration",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

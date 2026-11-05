@@ -342,7 +342,9 @@ class Detector:
                         rows = [r for r in rows if r[2] == "t"]
                     words = [head] + [t["n"] for t in span[1:]]
                     # colloquial forms (c: دوام) are always worth replacing, so they stay ordinary matches
+                    # a phrase spelled differently from its term (دارة كهربائية) needs no context: it can only mean the term
                     if rows and not any(r[1] & 4 for r in rows) and all(not re.search("[tfac]", r[2]) for r in rows) \
+                            and not (n > 1 and any(r[2] == "s" for r in rows)) \
                             and all(ARABIC_WORD.search(w) and (w in STOP or self.vocab.get(bare(w), 0) >= self.EVERYDAY_VOCAB) for w in words) \
                             and not all(w in STOP for w in words):
                         # everyday Arabic word or phrase (عميل، على الهواء): a term only when the context says so, decided in analyse()
