@@ -593,7 +593,7 @@ summary { cursor: pointer; font-weight: 600 }
       if (m.how === "everyday") {
         const rows = m.rows.filter(r => !generalWord(DATA.senses[r[0]][0]));
         const [typical, close] = everydayEvidence(text, m, current, rows.map(r => r[0]), anchors.map(a => DATA.senses[a][0]).join(" "));
-        if (!rows.length || typical < EVERYDAY_TYPICAL || commonForm(text, m)) return null;
+        if (!rows.length || typical < EVERYDAY_TYPICAL || (m.n === 1 && commonForm(text, m))) return null;
         if (close && close.size && typical < EVERYDAY_STRONG && Math.max(...close.values()) < EVERYDAY_CLOSE) return null;
         wordSims = close; m = { ...m, rows };
       }

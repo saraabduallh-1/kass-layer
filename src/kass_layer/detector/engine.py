@@ -515,7 +515,8 @@ class Detector:
                 rows = [r for r in m["rows"] if not self.general_word(self.senses[r[0]][0])]
                 found = " ".join(self.senses[a][0] for a in anchors)
                 typical, word_sims = self.everyday_evidence(text, m, domain_id, [r[0] for r in rows], found)
-                if not rows or typical < self.EVERYDAY_TYPICAL or self.common_form(text, m):
+                # a common first word (مؤسسة, وسائل) says nothing about a whole phrase (مؤسسة النقد السعودي)
+                if not rows or typical < self.EVERYDAY_TYPICAL or (m["n"] == 1 and self.common_form(text, m)):
                     continue
                 if word_sims and typical < self.EVERYDAY_STRONG and max(word_sims.values()) < self.EVERYDAY_CLOSE:
                     continue
