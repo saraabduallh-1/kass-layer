@@ -2,14 +2,14 @@
   "dictionary_id": "b60a0505-57cb-436a-8a07-75b062de8013",
   "dictionary_name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
   "source_export": "data/dictionaries/exports/b60a0505-57cb-436a-8a07-75b062de8013.json",
-  "generated_at": "2026-11-03T00:20:12.567677+00:00",
+  "generated_at": "2026-11-05T11:24:16.182193+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 16215,
     "senses_reviewed": 16215,
     "senses_with_variants": 16214,
-    "variants_accepted": 19842,
-    "variants_needing_review": 17280
+    "variants_accepted": 19839,
+    "variants_needing_review": 17283
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -31834,8 +31834,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أثبتت التجربة أن مقياس سرعة الرياح كان يعمل بشكل صحيح.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "أنيمومتر",
@@ -274288,6 +274290,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -514780,8 +514783,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -710393,7 +710398,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -941960,8 +941966,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

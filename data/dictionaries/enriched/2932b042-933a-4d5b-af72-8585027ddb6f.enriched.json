@@ -2,14 +2,14 @@
   "dictionary_id": "2932b042-933a-4d5b-af72-8585027ddb6f",
   "dictionary_name": "معجم المصطلحات الإنمائية",
   "source_export": "data/dictionaries/exports/2932b042-933a-4d5b-af72-8585027ddb6f.json",
-  "generated_at": "2026-11-03T00:20:09.131567+00:00",
+  "generated_at": "2026-11-05T11:24:12.707579+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 791,
     "senses_reviewed": 791,
     "senses_with_variants": 791,
-    "variants_accepted": 843,
-    "variants_needing_review": 471
+    "variants_accepted": 841,
+    "variants_needing_review": 473
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -17079,8 +17079,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30348,8 +30350,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "رأس المال المخاطر",
