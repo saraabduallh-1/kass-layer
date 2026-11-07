@@ -716,7 +716,7 @@ summary { cursor: pointer; font-weight: 600 }
       <div class="stat domain"><div class="k">المجال المختار</div><div class="v">${esc(DOMAINS.find(d => d.id === current).label)}</div><div class="alt">${domain === null ? "لا مصطلحات من معاجم هذا المجال في النص" : `أقرب معجم: ${esc(DATA.dictionaries[domain])} (${pct(ranked[0][1], total)}%)${alt ? `، يليه ${alt}` : ""}`}</div></div>
       <div class="stat"><div class="k">عدد الكلمات</div><div class="v">${tokens.length}</div></div>
       <div class="stat"><div class="k">استبدال مقترح</div><div class="v" style="color:var(--replace)">${count("replace")}</div></div>
-      <div class="stat"><div class="k">يحتاج تدقيقًا</div><div class="v" style="color:var(--review)">${count("review")}</div></div>
+      <div class="stat"><div class="k">يحتاج تدقيقًا</div><div class="v" id="left" style="color:var(--review)">${count("review")}</div></div>
       <div class="stat"><div class="k">تم استبداله</div><div class="v" id="done" style="color:var(--green)">0</div></div>
       <div class="stat"><div class="k">مصطلحات معتمدة مستخدمة</div><div class="v" style="color:var(--std)">${count("std")}</div></div>`;
     LAST = { text, items, unknown: res.unknown }; CHOICE = items.map(() => null);
@@ -753,6 +753,7 @@ summary { cursor: pointer; font-weight: 600 }
     html += esc(text.slice(pos));
     $("doc").innerHTML = (html || '<span class="empty">لا يوجد نص.</span>') + '<div class="menu" id="menu" role="menu" hidden></div>';
     const d = $("done"); if (d) d.textContent = CHOICE.filter(Boolean).length;
+    const left = $("left"); if (left) left.textContent = items.filter((x, i) => x.state === "review" && !CHOICE[i]).length;  // a chosen term is decided
     drawItems();
   }
 
@@ -767,10 +768,10 @@ summary { cursor: pointer; font-weight: 600 }
         controls = `<div class="opts">${x.choices.slice(0, 6).map(r => `<button type="button" class="opt" data-i="${i}" data-term="${esc(termOf(r))}" aria-pressed="${c === termOf(r)}">${esc(termOf(r))}</button>`).join("")}<button type="button" class="opt" data-i="${i}" data-term="" aria-pressed="${!c}">الكلمة الأصلية</button></div>`;
       }
       return `<div class="item ${x.state}">
-        <div class="t"><span class="from">${esc(x.original)}</span>${x.state !== "std" ? `<span class="arrow">←</span><span class="to">${esc(c || s[0])}</span>` : ""}<span class="pill ${x.state}">${label[x.state]}</span></div>
+        <div class="t"><span class="from">${esc(x.original)}</span>${x.state !== "std" ? `<span class="arrow">←</span><span class="to">${esc(c || s[0])}</span>` : ""}${c ? `<span class="pill replace">تم الاختيار</span>` : `<span class="pill ${x.state}">${label[x.state]}</span>`}</div>
         <div class="meta">${esc(DATA.dictionaries[s[1]])}${s[2] ? ` · بالإنجليزية: <span class="en" dir="ltr">${esc(s[2])}</span>` : ""}</div>
         ${s[3] ? `<div>${esc(s[3])}</div>` : ""}
-        ${x.state === "review" ? `<div class="meta">السبب: ${x.reasons.join("، ")}</div>` : ""}${x.notes && x.notes.length ? `<div class="meta">${x.notes.join("، ")}</div>` : ""}${controls}</div>`;
+        ${x.state === "review" && !c ? `<div class="meta">السبب: ${x.reasons.join("، ")}</div>` : ""}${x.notes && x.notes.length ? `<div class="meta">${x.notes.join("، ")}</div>` : ""}${controls}</div>`;
     }).join("") : '<p class="empty">لم يُعثر على مصطلحات من معاجم هذا المجال في النص.</p>';
     if (LAST.unknown && LAST.unknown.length) $("items").innerHTML += `<div class="item unknown"><div class="t"><span class="pill review">كلمات تبدو دخيلة</span></div>${LAST.unknown.map(u => `<div><span class="from">${esc(u.word)}</span>${u.domains.length ? ` <span class="meta">— موجودة في مجال: ${esc(u.domains.join("، "))}</span>` : ""}</div>`).join("")}<div class="meta">لم نجد لها مصطلحًا في معاجم هذا المجال، فراجعها يدويًا أو جرّب المجال المقترح.</div></div>`;
   }
