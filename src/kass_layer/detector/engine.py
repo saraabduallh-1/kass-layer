@@ -100,6 +100,17 @@ def bare(w: str) -> str:
     return w[2:] if w.startswith("ال") and len(w) > 4 else w
 
 
+def stem_skel(w: str) -> str:
+    """Rough stem for comparing word forms: النماذج and نموذج both give نمذج."""
+    return re.sub("[اويه]", "", bare(re.sub("^[وبلفك](?=ال)", "", w)))
+
+
+def shares_stem(a: str, b: str) -> bool:
+    sa = [s for s in map(stem_skel, normalize(a).split()) if len(s) >= 3]
+    sb = [s for s in map(stem_skel, normalize(b).split()) if len(s) >= 3]
+    return any(x.startswith(y) or y.startswith(x) for x in sa for y in sb)
+
+
 def verb_shape(w: str) -> bool:
     return bool(re.search("^[يتن].{2,}(ون|وا|ين)$", w) or re.search("^.{3,}(وا|تم|تن)$", w)
                 or re.search("^ا.{2,}يت$", w) or re.search("^.{2,3}نا$", w))
@@ -572,6 +583,15 @@ class Detector:
                 reasons.append("صيغة عربية قد تأتي بمعناها العام، فتحقّق من السياق")
             if m["how"] == "everyday":
                 reasons.append("كلمة عامة لها مصطلح تخصصي في هذا السياق")
+            orig = text[m["s"]:m["e"]]
+            if re.search("[A-Za-z]", orig):
+                before, after = text[:m["s"]], text[m["e"]:]
+                if re.search(r"\(\s*$", before) and re.search(r"^\s*\)", after):
+                    # «بورصة الدار البيضاء (CSE)» abbreviates the name before it; «النماذج اللغوية الكبيرة (LLMs)» the term itself
+                    if not shares_stem(" ".join(before.split()[-9:]), self.senses[best[0]][0]):
+                        continue
+                elif re.search(r"[A-Z][A-Za-z]+\s*$", before) or (orig[:1].isupper() and re.search(r"^\s*[A-Z][A-Za-z]+", after)):
+                    continue  # part of a name: Maroc Telecom
             notes = []
             if m["how"] == "acronym":
                 notes.append(f"اختصار مكتوب بأسماء الحروف ({m['head'].upper()})")

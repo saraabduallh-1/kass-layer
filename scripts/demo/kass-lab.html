@@ -355,6 +355,13 @@ summary { cursor: pointer; font-weight: 600 }
   }
   const NATIVE = /[عحصضظذثءؤئة]/;
   const bare = w => w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
+  // rough stem for comparing word forms: النماذج and نموذج both give نمذج
+  const stemSkel = w => bare(w.replace(/^[وبلفك](?=ال)/, "")).replace(/[اويه]/g, "");
+  const sharesStem = (a, b) => {
+    const sk = t => normalize(t).split(" ").map(stemSkel).filter(s => s.length >= 3);
+    const sb = sk(b);
+    return sk(a).some(x => sb.some(y => x.startsWith(y) || y.startsWith(x)));
+  };
   // looks like an English word spelled in Arabic letters: no letters foreign spellings avoid, long vowels, unknown to the dictionaries' Arabic
   const verbShape = w => /^[يتن].{2,}(ون|وا|ين)$/.test(w) || /^.{3,}(وا|تم|تن)$/.test(w) || /^ا.{2,}يت$/.test(w) || /^.{2,3}نا$/.test(w);
   const native = w => NATIVE.test(w) || /ه$/.test(w) || STOP.has(w) || verbShape(w) || Math.max(DATA.vocab[bare(w)] || 0, DATA.vocab[w] || 0) >= 3;
@@ -627,6 +634,14 @@ summary { cursor: pointer; font-weight: 600 }
       if (m.how === "dict" && m.n === 1 && best[2] === "c" && /^[؀-ۿ]+$/.test(m.head)) reasons.push("كلمة عامية قد يكون لها معنى آخر هنا");
       if (m.how === "dict" && (best[2] === "s" || best[2] === "i") && /^[؀-ۿ]+$/.test(m.head)) reasons.push("صيغة عربية قد تأتي بمعناها العام، فتحقّق من السياق");
       if (m.how === "everyday") reasons.push("كلمة عامة لها مصطلح تخصصي في هذا السياق");
+      const orig = text.slice(m.s, m.e);
+      if (/[A-Za-z]/.test(orig)) {
+        const before = text.slice(0, m.s), after = text.slice(m.e);
+        if (/\(\s*$/.test(before) && /^\s*\)/.test(after)) {
+          // «بورصة الدار البيضاء (CSE)» abbreviates the name before it; «النماذج اللغوية الكبيرة (LLMs)» the term itself
+          if (!sharesStem(before.split(/\s+/).filter(Boolean).slice(-9).join(" "), DATA.senses[best[0]][0])) return null;
+        } else if (/[A-Z][A-Za-z]+\s*$/.test(before) || (/^[A-Z]/.test(orig) && /^\s*[A-Z][A-Za-z]+/.test(after))) return null;  // part of a name: Maroc Telecom
+      }
       const notes = [];
       if (m.how === "acronym") notes.push(`اختصار مكتوب بأسماء الحروف (${m.head.toUpperCase()})`);
       else if (m.how !== "dict" && m.how !== "everyday") notes.push("اكتُشفت بالمطابقة الصوتية مع الصيغة الإنجليزية");
