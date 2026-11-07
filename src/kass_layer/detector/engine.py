@@ -100,6 +100,24 @@ def bare(w: str) -> str:
     return w[2:] if w.startswith("ال") and len(w) > 4 else w
 
 
+def arabic_readings(w: str) -> set[str]:
+    """The word without a leading particle and without a pronoun ending: بتقنيات → تقنيات, استراتيجيتك → استراتيجيه."""
+    out = {w}
+    if len(w) > 4 and w[0] in "وفبلك":
+        out.add(w[1:])
+    for x in list(out):
+        m = re.match("^(.{3,}?)(كم|هم|ها|نا|ك|ه)$", x)
+        if m:
+            s = m.group(1)
+            out.add(s[:-1] + "ه" if s.endswith("ت") else s)
+    return out
+
+
+def lite(w: str) -> str:
+    """A word without its particle, article and plural or feminine ending: الوكيل → وكيل, السيارات → سيار."""
+    return re.sub("(ات|ون|ين|ه)$", "", bare(re.sub("^[وبلفك](?=ال)", "", w))) or w
+
+
 def stem_skel(w: str) -> str:
     """Rough stem for comparing word forms: النماذج and نموذج both give نمذج."""
     return re.sub("[اويه]", "", bare(re.sub("^[وبلفك](?=ال)", "", w)))
@@ -466,6 +484,20 @@ class Detector:
         w = next(iter(ctx_words(words[0])), None)
         return w in self.words and self.word_gen[self.words[w]] / self.gen_total >= self.GENERAL_RATE
 
+    @staticmethod
+    def writer_has_term(text: str, m: dict, term: str) -> bool:
+        """The writer already uses the term: «وكيل الذكاء الاصطناعي» starts with it, «السيارات ذاتية القيادة» goes on into
+        it, and in «سيطرح الوكيل أسئلة على العميل» the text has «الوكيل», so «العميل» is someone else (the customer)."""
+        t = [lite(w) for w in normalize(re.sub(r"\([^)]*\)", " ", term)).split()]
+        span = [lite(w) for w in normalize(text[m["s"]:m["e"]]).split()]
+        nxt = [lite(w) for w in normalize(text[m["e"]:m["e"] + 40]).split()[:1]]
+        if not t or not span:
+            return False
+        if len(t) == 1:
+            others = [lite(w) for w in normalize(text[:m["s"]] + " " + text[m["e"]:]).split()]
+            return span[0] == t[0] or (m["n"] == 1 and others.count(t[0]) >= 2)  # used once, it may be a slip
+        return span[0] == t[0] and bool(nxt) and nxt[0] == t[-1]
+
     def common_form(self, text: str, m: dict) -> bool:
         if not self.word_gen:
             return False
@@ -535,6 +567,10 @@ class Detector:
                 m = dict(m, rows=rows)
             if m["how"] == "everyday" and any(same_term(text[m["s"]:m["e"]], self.senses[r[0]][0]) for r in m["rows"]):
                 continue  # already the term, in another form
+            if m["how"] == "everyday":
+                m = dict(m, rows=[r for r in m["rows"] if not self.writer_has_term(text, m, self.senses[r[0]][0])])
+                if not m["rows"]:
+                    continue
             is_std = any(r[1] & 4 for r in m["rows"])  # a standard term somewhere in the chosen domain: leave it
             if is_std and m["n"] == 1 and not in_domain:
                 continue
@@ -573,6 +609,8 @@ class Detector:
                 reasons.append("له معنى آخر شائع في الاستعمال اليومي")
             if m["how"] == "near":
                 reasons.append("كتابة قريبة من صيغة معروفة، تحقّق منها")
+            if m["how"] in ("exact", "near") and m["n"] == 1 and any(self.vocab.get(bare(r), 0) >= 3 for r in arabic_readings(normalize(text[m["s"]:m["e"]]))):
+                continue  # an Arabic word with a particle or an ending (بتقنيات، استراتيجيتك), not a sound-alike of English
             if m["how"] == "exact":
                 reasons.append("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى")
             if m["how"] == "dict" and m["n"] == 1 and best[2] == "c" and ARABIC_WORD.search(m["head"]):

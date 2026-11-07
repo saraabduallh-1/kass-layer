@@ -355,6 +355,27 @@ summary { cursor: pointer; font-weight: 600 }
   }
   const NATIVE = /[عحصضظذثءؤئة]/;
   const bare = w => w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
+  // the word without a leading particle and without a pronoun ending: بتقنيات → تقنيات, استراتيجيتك → استراتيجيه
+  const arabicReadings = w => {
+    const out = new Set([w]);
+    if (w.length > 4 && "وفبلك".includes(w[0])) out.add(w.slice(1));
+    for (const x of [...out]) {
+      const m = x.match(/^(.{3,}?)(كم|هم|ها|نا|ك|ه)$/);
+      if (m) out.add(m[1].endsWith("ت") ? m[1].slice(0, -1) + "ه" : m[1]);
+    }
+    return out;
+  };
+  // a word without its particle, article and plural or feminine ending: الوكيل → وكيل, السيارات → سيار
+  const lite = w => bare(w.replace(/^[وبلفك](?=ال)/, "")).replace(/(ات|ون|ين|ه)$/, "") || w;
+  // the writer already uses the term: «وكيل الذكاء الاصطناعي» starts with it, «السيارات ذاتية القيادة» goes on into it,
+  // and in «سيطرح الوكيل أسئلة على العميل» the text has «الوكيل», so «العميل» is someone else (the customer)
+  const writerHasTerm = (text, m, term) => {
+    const words = s => normalize(s).split(" ").filter(Boolean).map(lite);
+    const t = words(term.replace(/\([^)]*\)/g, " ")), span = words(text.slice(m.s, m.e)), nxt = words(text.slice(m.e, m.e + 40)).slice(0, 1);
+    if (!t.length || !span.length) return false;
+    if (t.length === 1) return span[0] === t[0] || (m.n === 1 && words(text.slice(0, m.s) + " " + text.slice(m.e)).filter(w => w === t[0]).length >= 2);  // used once, it may be a slip
+    return span[0] === t[0] && nxt.length > 0 && nxt[0] === t[t.length - 1];
+  };
   // rough stem for comparing word forms: النماذج and نموذج both give نمذج
   const stemSkel = w => bare(w.replace(/^[وبلفك](?=ال)/, "")).replace(/[اويه]/g, "");
   const sharesStem = (a, b) => {
@@ -605,6 +626,10 @@ summary { cursor: pointer; font-weight: 600 }
         wordSims = close; m = { ...m, rows };
       }
       if (m.how === "everyday" && m.rows.some(r => sameTerm(text.slice(m.s, m.e), DATA.senses[r[0]][0]))) return null;  // already the term, in another form
+      if (m.how === "everyday") {
+        m = { ...m, rows: m.rows.filter(r => !writerHasTerm(text, m, DATA.senses[r[0]][0])) };
+        if (!m.rows.length) return null;
+      }
       const isStd = m.rows.some(r => r[1] & 4); // a standard term somewhere in the chosen domain: leave it
       if (isStd && m.n === 1 && !inDomain.length) return null;
       const byTerm = new Map();
@@ -630,6 +655,7 @@ summary { cursor: pointer; font-weight: 600 }
       if (choices.length > 1 && rankM(choices[0]) - rankM(choices[1]) < 0.5) reasons.push("يحتمل أكثر من مصطلح");
       if (best[1] & 2) reasons.push("له معنى آخر شائع في الاستعمال اليومي");
       if (m.how === "near") reasons.push("كتابة قريبة من صيغة معروفة، تحقّق منها");
+      if ((m.how === "exact" || m.how === "near") && m.n === 1 && [...arabicReadings(normalize(text.slice(m.s, m.e)))].some(r => (DATA.vocab[bare(r)] || 0) >= 3)) return null;  // an Arabic word with a particle or an ending (بتقنيات، استراتيجيتك), not a sound-alike of English
       if (m.how === "exact") reasons.push("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى");
       if (m.how === "dict" && m.n === 1 && best[2] === "c" && /^[؀-ۿ]+$/.test(m.head)) reasons.push("كلمة عامية قد يكون لها معنى آخر هنا");
       if (m.how === "dict" && (best[2] === "s" || best[2] === "i") && /^[؀-ۿ]+$/.test(m.head)) reasons.push("صيغة عربية قد تأتي بمعناها العام، فتحقّق من السياق");
