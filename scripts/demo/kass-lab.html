@@ -557,7 +557,7 @@ summary { cursor: pointer; font-weight: 600 }
       if (!hit) hit = dictHit || everyday;
       if (hit && hit.how === "dict") {
         const w = hit.head;
-        if (/^[؀-ۿ]+$/.test(w) && foreignLooking(w)) {
+        if (/^[؀-ۿ]+$/.test(w) && foreignLooking(w) && !hit.rows.every(r => r[2] === "i" || r[2] === "s")) {
           const ph = phonetic(w, allowed, hit.n, true);  // only adds candidates to rank; the match itself came from the dictionary
           if (ph) { const seen = new Set(hit.rows.map(r => r[0])); hit.rows = hit.rows.concat(ph.rows.filter(r => !seen.has(r[0]))); }
         }
@@ -625,6 +625,7 @@ summary { cursor: pointer; font-weight: 600 }
       if (m.how === "near") reasons.push("كتابة قريبة من صيغة معروفة، تحقّق منها");
       if (m.how === "exact") reasons.push("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى");
       if (m.how === "dict" && m.n === 1 && best[2] === "c" && /^[؀-ۿ]+$/.test(m.head)) reasons.push("كلمة عامية قد يكون لها معنى آخر هنا");
+      if (m.how === "dict" && (best[2] === "s" || best[2] === "i") && /^[؀-ۿ]+$/.test(m.head)) reasons.push("صيغة عربية قد تأتي بمعناها العام، فتحقّق من السياق");
       if (m.how === "everyday") reasons.push("كلمة عامة لها مصطلح تخصصي في هذا السياق");
       const notes = [];
       if (m.how === "acronym") notes.push(`اختصار مكتوب بأسماء الحروف (${m.head.toUpperCase()})`);

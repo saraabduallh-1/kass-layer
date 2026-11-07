@@ -410,7 +410,8 @@ class Detector:
                 hit = dict_hit or everyday
             if hit and hit["how"] == "dict":
                 w = hit["head"]
-                if ARABIC_WORD.search(w) and self.foreign_looking(w):
+                # an Arabic synonym (غاز النشادر → أمونيا) is no borrowed word: its sound must not bring in «gas cylinder»
+                if ARABIC_WORD.search(w) and self.foreign_looking(w) and not all(r[2] in ("i", "s") for r in hit["rows"]):
                     ph = self.phonetic(w, allowed, hit["n"], True)  # only adds candidates to rank; the match came from the dictionary
                     if ph:
                         seen = {r[0] for r in hit["rows"]}
@@ -565,6 +566,10 @@ class Detector:
                 reasons.append("مطابقة صوتية فقط، وقد تكون اسمًا أو كلمة أخرى")
             if m["how"] == "dict" and m["n"] == 1 and best[2] == "c" and ARABIC_WORD.search(m["head"]):
                 reasons.append("كلمة عامية قد يكون لها معنى آخر هنا")
+            # an Arabic synonym or spelling of the term (سهم ممتاز, حد الفقر) can carry its everyday sense: only borrowed
+            # words, acronyms and English are sure enough to replace
+            if m["how"] == "dict" and best[2] in ("s", "i") and ARABIC_WORD.search(m["head"]):
+                reasons.append("صيغة عربية قد تأتي بمعناها العام، فتحقّق من السياق")
             if m["how"] == "everyday":
                 reasons.append("كلمة عامة لها مصطلح تخصصي في هذا السياق")
             notes = []
