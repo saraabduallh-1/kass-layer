@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>بنية طبقة خصص</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0 }
+  body { width: 1900px; background: #f7f8f6; color: #1d2421; font-family: "Segoe UI", Tahoma, Arial, sans-serif; padding: 34px 40px 30px }
+  h1 { font-size: 34px; color: #0d4d3a }
+  .sub { font-size: 18px; color: #4a5752; margin: 6px 0 22px }
+  .lane { margin-bottom: 8px; border-radius: 8px !important }
+  .lane { font-size: 15px; font-weight: 700; padding: 6px 14px; border-radius: 8px 8px 0 0; color: #fff }
+  .lane.build { background: #6b5a2e } .lane.run { background: #0d4d3a }
+  .flow { display: grid; grid-template-columns: 1fr 34px 1.35fr 34px 1fr 34px 1.55fr 34px 1fr; align-items: stretch }
+  .card { background: #fff; border: 1.5px solid #d5dbd7; border-radius: 12px; padding: 14px 15px; font-size: 14.5px; line-height: 1.55 }
+  .card h2 { font-size: 19px; margin-bottom: 8px; display: flex; gap: 8px; align-items: center }
+  .n { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font-size: 15px; flex: none }
+  .b .n { background: #6b5a2e } .r .n { background: #0d4d3a }
+  .b { border-top: 5px solid #6b5a2e } .r { border-top: 5px solid #0d4d3a }
+  .card ul { list-style: none } .card li { padding: 3px 0; border-bottom: 1px dashed #e4e8e5 } .card li:last-child { border: 0 }
+  .tag { display: inline-block; font-size: 12.5px; padding: 0 7px; border-radius: 5px; background: #eef2ef; color: #33413b; margin: 1px 0 }
+  .who { font-weight: 700; color: #0d4d3a }
+  .arrow { display: grid; place-items: center; color: #8a958f; font-size: 30px }
+  .note { font-size: 13px; color: #5b6862; margin-top: 6px }
+  .ex { margin: 18px 0; background: #fff; border: 1.5px solid #d5dbd7; border-radius: 12px; padding: 12px 18px; display: flex; gap: 22px; align-items: center; font-size: 17px }
+  .ex .k { font-weight: 700; color: #0d4d3a; white-space: nowrap }
+  .rep { background: #dff1e8; color: #0b5c3f; padding: 2px 8px; border-radius: 6px; font-weight: 700 }
+  .rev { background: #fbefd5; color: #7a5400; padding: 2px 8px; border-radius: 6px; font-weight: 700 }
+  .std { background: #e3ebf6; color: #234a7a; padding: 2px 8px; border-radius: 6px; font-weight: 700 }
+  .bottom { display: grid; grid-template-columns: 1.25fr 1.15fr 0.8fr 1fr; gap: 14px }
+  .box { background: #fff; border: 1.5px solid #d5dbd7; border-radius: 12px; padding: 14px 16px; font-size: 14.5px; line-height: 1.55 }
+  .box h3 { font-size: 18px; margin-bottom: 8px; color: #0d4d3a }
+  .box.no h3 { color: #8a3b2a } .box.next h3 { color: #6b5a2e }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; margin-top: 4px }
+  td, th { border: 1px solid #e1e6e3; padding: 4px 8px; text-align: right } th { background: #f1f4f2 }
+  .num { font-weight: 700; color: #0b5c3f; direction: ltr; unicode-bidi: isolate }
+  bdi { white-space: nowrap }
+  .foot { margin-top: 14px; font-size: 13px; color: #66726c }
+</style>
+</head>
+<body>
+<h1>طبقة خصص: كيف بُنيت</h1>
+<div class="sub">تقرأ نصًّا عربيًّا كتبه غير متخصص، وتقترح لكل كلمة المصطلح المعتمد في معاجم سوار. المستخدم يختار، ولا يُستبدل شيء تلقائيًّا.</div>
+
+<div class="flow">
+  <div class="lane build" style="grid-column:1/6">البناء: مرة واحدة على جهاز المكتب (كرت <bdi>RTX 3080</bdi>)</div>
+  <div class="lane run" style="grid-column:7/10">التشغيل: لكل نص، داخل المتصفح، دون أي نموذج لغوي</div>
+  <div class="card b">
+    <h2><span class="n">١</span>المصدر</h2>
+    <ul>
+      <li><b>معاجم سوار</b>: 22 معجمًا متخصصًا (ذكاء اصطناعي، مالية، قانون، طاقة، إعلام، رياضة…)</li>
+      <li><span class="num">40,102</span> معنى، لكل معنى: المصطلح، تعريفه، مقابله الإنجليزي</li>
+      <li>المجالات الستة في الواجهة تجمع المعاجم: تقني، مالي وإداري، قانوني، هندسي، إعلامي، علمي وثقافي</li>
+    </ul>
+    <div class="note">الملفات الأصلية لا تُعدَّل أبدًا؛ كل إضافة في ملفات مستقلة.</div>
+  </div>
+  <div class="arrow">←</div>
+
+  <div class="card b">
+    <h2><span class="n">٢</span>الإثراء: ماذا يكتب الناس بدل المصطلح؟</h2>
+    <ul>
+      <li><b>المرحلة ١</b>: <bdi>Qwen3.5-4B</bdi> يولّد صيغًا لكل مصطلح ← <span class="who">مراجعة <bdi>Claude</bdi></span></li>
+      <li><b>المرحلة ٢</b>: <bdi>Gemma 3 12B</bdi> يقترح صيغًا عربية شائعة ← <span class="who">مراجعة <bdi>Claude</bdi></span> (لا يُضاف إلا ما يُستعمل فعلًا بالمعنى نفسه)</li>
+      <li><b>التدقيق</b>: <bdi>Gemma</bdi> يصنّف علاقة كل رابط (مطابق، أعم، أخص، خطأ) ← سحب أكثر من <span class="num">830</span> رابطًا خاطئًا</li>
+      <li><b>الاستعمال الحقيقي</b>: ويكي بيانات + تحويلات ويكيبيديا العربية + شروح الكتّاب «<bdi>X (English)</bdi>» ← فلتر <span class="num">20 <bdi>GB</bdi></span> تغريدات عربية (3 مرات فأكثر) ← مراجعة ← نحو <span class="num">360</span> صيغة</li>
+      <li>أنواع الصيغ: <span class="tag">معرّب: المودل</span> <span class="tag">اختصار: <bdi>LLM</bdi></span> <span class="tag">إنجليزي</span> <span class="tag">عامي</span> <span class="tag">إملاء آخر</span> <span class="tag">مرادف: عميل ← وكيل</span></li>
+    </ul>
+  </div>
+  <div class="arrow">←</div>
+
+  <div class="card b">
+    <h2><span class="n">٣</span>الفهارس الجاهزة</h2>
+    <ul>
+      <li><b>فهرس الصيغ</b>: كل صيغة ← معانيها ونوعها</li>
+      <li><b>فهرس السياق</b>: ميل كل كلمة إلى كل مجال، محسوب من ويكيبيديا العربية</li>
+      <li><b>متجهات المعاني</b>: <bdi>embeddinggemma-300m</bdi> لكل مصطلح مع تعريفه</li>
+      <li><b>متجهات الكلمات</b>: لقياس قرب الكلمات المحيطة من كل معنى</li>
+    </ul>
+    <div class="note">تُحمَّل إلى المتصفح مرة واحدة؛ التحليل نفسه حساب سريع بلا نموذج.</div>
+  </div>
+  <div class="arrow">←</div>
+
+  <div class="card r">
+    <h2><span class="n">٤</span>الكاشف (خطوات تحليل النص)</h2>
+    <ul>
+      <li><b>١ التطبيع</b>: التشكيل، الهمزات، التاء المربوطة، السوابق (ال، و، ب، لل)</li>
+      <li><b>٢ المطابقة</b>: الصيغة الأطول أولًا · الاختصار بأسماء الحروف (جي بي تي) · المطابقة الصوتية للإنجليزي المكتوب بحروف عربية (سولار بانلز) · الكلمات العربية اليومية</li>
+      <li><b>٣ المجال</b>: أقرب معجم إلى النص داخل المجال المختار</li>
+      <li><b>٤ السياق</b> (للكلمة اليومية فقط): هل يميل النص إلى المجال؟ وهل معنى المصطلح قريب من الكلمات حولها؟ والكلمة الشائعة جدًّا لا تُقترح</li>
+      <li><b>٥ المرشّحات</b>: أسماء الأعلام · اختصار بين قوسين لاسم قبله · مصطلح يستعمله الكاتب أصلًا</li>
+      <li><b>٦ الترتيب</b>: عند تعدد المعاني: الصوت + السياق + معجم المجال + قرب المتجهات</li>
+      <li><b>٧ التصنيف</b>: <span class="rep">مقترح</span> معرّب أو اختصار أو إنجليزي · <span class="rev">يحتاج تدقيقًا</span> كلمة عربية قد تأتي بمعنى عام، مع السبب · <span class="std">معتمد</span> لا يُقترح له شيء</li>
+    </ul>
+    <div class="note">نسختان متطابقتان: <bdi>JavaScript</bdi> في الصفحة و<bdi>Python</bdi> في الخادم والاختبارات (212 من 212 جملة).</div>
+  </div>
+  <div class="arrow">←</div>
+
+  <div class="card r">
+    <h2><span class="n">٥</span>الواجهة</h2>
+    <ul>
+      <li>لكل كلمة قائمة: المصطلح، بدائله، أو <b>إبقاء الكلمة الأصلية</b></li>
+      <li>البطاقة تعرض: المعجم، المقابل الإنجليزي، التعريف</li>
+      <li>«تطبيق الكل» يطبّق <span class="rep">مقترح</span> فقط</li>
+      <li>ما يختاره المستخدم يصبح «تم الاختيار»</li>
+    </ul>
+    <div class="note">النشر: <bdi>FastAPI</bdi> والصفحة في حاوية على خادم الأكاديمية (معالج فقط): <bdi>kass.arai.center</bdi></div>
+  </div>
+</div>
+
+<div class="ex">
+  <span class="k">مثال حقيقي من الكاشف (مجال التقنية)</span>
+  <span>«بنينا <span class="rev">عميل ذكي ← وكيل ذكي</span> يستخدم <span class="rep">المودل ← نموذج</span> والـ <span class="rep"><bdi>LLM</bdi> ← نموذج لغوي كبير</span> <span class="std">لتحليل البيانات</span>»</span>
+  <span class="note" style="margin:0">«عميل» تحتاج تدقيقًا لأن لها معنى آخر شائع (الزبون)؛ في «وقع العميل العقد مع البنك» لا يُقترح شيء.</span>
+</div>
+
+<div class="bottom">
+  <div class="box">
+    <h3>التقييم</h3>
+    <table>
+      <tr><th>مجموعة الاختبار</th><th>مقترح</th><th>يحتاج تدقيقًا</th></tr>
+      <tr><td>6 ملفات اختبار (212 جملة)</td><td class="num">90.9%</td><td class="num">77.7%</td></tr>
+      <tr><td>مقالات حقيقية جديدة (دفعتان، 15 مقالًا)</td><td class="num">15/15</td><td class="num">73–75%</td></tr>
+      <tr><td>310 تغريدات (صيغة واحدة لكل تغريدة)</td><td colspan="2">اكتشاف 57%، دقة 62% (نص قصير بلا سياق)</td></tr>
+    </table>
+    <div class="note">الأحكام من <bdi>Claude</bdi>؛ مراجعة مستقلة لعينة 50 حكمًا جارية. كل تعديل يُقبل فقط إذا لم تسُؤ الاختبارات.</div>
+  </div>
+  <div class="box no">
+    <h3>جُرِّب ولم يُعتمد</h3>
+    <ul style="list-style:none">
+      <li>• <bdi>Jev</bdi>: نموذج مغلق، لا يوجد مفتاح</li>
+      <li>• <bdi>Clef-Flash</bdi> حكمًا على السياق: <span class="num">59.7%</span>، ويحتاج كرت شاشة</li>
+      <li>• <bdi>Gemma 12B</bdi> حكمًا: <span class="num">61.5%</span></li>
+      <li>• مقارنة الجملة بتعريف المصطلح (4 نماذج تضمين): <bdi>AUC</bdi> <span class="num">0.55–0.67</span></li>
+      <li>• مصنّف متعلم على سمات الكاشف: لا يعمم بين أنواع النصوص</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h3>أدوات العمل</h3>
+    <ul style="list-style:none">
+      <li>• <bdi>Python + JavaScript</bdi></li>
+      <li>• <bdi>Ollama</bdi> لتشغيل <bdi>Gemma</bdi> محليًّا</li>
+      <li>• <bdi>Claude Code</bdi>: المراجعة والبرمجة والاختبار</li>
+      <li>• <bdi>GitHub</bdi>: كل خطوة موثقة ومختبرة</li>
+    </ul>
+  </div>
+  <div class="box next">
+    <h3>الخطوة التالية</h3>
+    <ul style="list-style:none">
+      <li>• نموذج لغوي عربي كبير يحكم على «يحتاج تدقيقًا» فقط: هل الكلمة بمعنى المصطلح في هذه الجملة؟ والمصطلح يبقى من سوار دائمًا</li>
+      <li>• إثراء «وكيل» و67 مصطلحًا ليس لها اسم إنجليزي</li>
+    </ul>
+  </div>
+</div>
+<div class="foot">طبقة خصص · بيانات المصطلحات: معاجم سوار</div>
+</body>
+</html>
