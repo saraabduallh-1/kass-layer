@@ -2,13 +2,13 @@
   "dictionary_id": "97ac5360-d65f-425f-974f-9118f09d13a6",
   "dictionary_name": "معجم مصطلحات الحكـومــة الـرقميـــة",
   "source_export": "data/dictionaries/exports/97ac5360-d65f-425f-974f-9118f09d13a6.json",
-  "generated_at": "2026-11-08T07:02:41.810001+00:00",
+  "generated_at": "2026-11-08T21:12:34.677058+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 130,
     "senses_reviewed": 130,
     "senses_with_variants": 129,
-    "variants_accepted": 116,
+    "variants_accepted": 119,
     "variants_needing_review": 203
   },
   "variant_types": {
@@ -2685,6 +2685,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "الكلاود",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -4381,6 +4391,26 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "السايت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سايت",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

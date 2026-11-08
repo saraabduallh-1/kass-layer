@@ -2,14 +2,14 @@
   "dictionary_id": "2813060b-8eda-4c7b-8b10-1fc3255305cb",
   "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
   "source_export": "data/dictionaries/exports/2813060b-8eda-4c7b-8b10-1fc3255305cb.json",
-  "generated_at": "2026-11-08T07:02:39.228259+00:00",
+  "generated_at": "2026-11-08T21:12:32.486690+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 856,
     "senses_reviewed": 856,
     "senses_with_variants": 856,
-    "variants_accepted": 1287,
-    "variants_needing_review": 662
+    "variants_accepted": 1289,
+    "variants_needing_review": 663
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -41234,6 +41234,26 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "البريك",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "الفرامل",
+            "type": "colloquial",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -43924,6 +43944,18 @@
               "is_standard_term_elsewhere",
               "proposed_for_other_terms",
               "ambiguous"
+            ]
+          },
+          {
+            "form": "دينامو",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
             ]
           }
         ],

@@ -2,14 +2,14 @@
   "dictionary_id": "0f0ad290-0fa5-4983-bb56-7144c641cc8c",
   "dictionary_name": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
   "source_export": "data/dictionaries/exports/0f0ad290-0fa5-4983-bb56-7144c641cc8c.json",
-  "generated_at": "2026-11-08T07:02:37.802270+00:00",
+  "generated_at": "2026-11-08T21:12:30.835871+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1061,
     "senses_reviewed": 1061,
     "senses_with_variants": 1061,
-    "variants_accepted": 1548,
-    "variants_needing_review": 775
+    "variants_accepted": 1550,
+    "variants_needing_review": 776
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -39259,6 +39259,26 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
+          },
+          {
+            "form": "محطة شحن السيارات",
+            "type": "informal_synonym",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "محطات الشحن",
+            "type": "spelling_variant",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -47229,6 +47249,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -47242,6 +47263,18 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere"
+            ]
+          },
+          {
+            "form": "ماطور",
+            "type": "colloquial",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
             ]
           }
         ],

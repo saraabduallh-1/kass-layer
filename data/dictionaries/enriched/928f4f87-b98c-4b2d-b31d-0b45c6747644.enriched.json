@@ -2,13 +2,13 @@
   "dictionary_id": "928f4f87-b98c-4b2d-b31d-0b45c6747644",
   "dictionary_name": "معجم مصطلحات الإعلام",
   "source_export": "data/dictionaries/exports/928f4f87-b98c-4b2d-b31d-0b45c6747644.json",
-  "generated_at": "2026-11-08T07:02:41.576710+00:00",
+  "generated_at": "2026-11-08T21:12:34.447696+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 833,
     "senses_reviewed": 833,
     "senses_with_variants": 788,
-    "variants_accepted": 1140,
+    "variants_accepted": 1141,
     "variants_needing_review": 487
   },
   "variant_types": {
@@ -7825,6 +7825,16 @@
             "form": "بث حي",
             "type": "informal_synonym",
             "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "اللايف",
+            "type": "transliteration",
+            "confidence": "high",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
