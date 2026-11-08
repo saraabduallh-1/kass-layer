@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-11-08T06:40:44.711122+00:00",
+  "generated_at": "2026-11-08T07:02:39.773526+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1428,
-    "variants_accepted": 1398,
-    "variants_needing_review": 1379
+    "variants_accepted": 1397,
+    "variants_needing_review": 1377
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -26680,18 +26680,6 @@
             "review_reasons": []
           },
           {
-            "form": "خفض",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "البنك أعلن عن تخفيضات في أسعار الفائدة.",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
-            ]
-          },
-          {
             "form": "تقليص",
             "type": "informal_synonym",
             "confidence": "high",
@@ -35669,18 +35657,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "تفعيل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة بمعنى التشغيل",
-            "example": "الرجاء تفعيل الرابط من هنا.",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
             ]
           }
         ],
@@ -95148,16 +95124,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "وسيط مالي",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
           },
           {
             "form": "سمسار",

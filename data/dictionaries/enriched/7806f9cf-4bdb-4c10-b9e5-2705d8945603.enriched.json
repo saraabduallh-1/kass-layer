@@ -2,14 +2,14 @@
   "dictionary_id": "7806f9cf-4bdb-4c10-b9e5-2705d8945603",
   "dictionary_name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
   "source_export": "data/dictionaries/exports/7806f9cf-4bdb-4c10-b9e5-2705d8945603.json",
-  "generated_at": "2026-11-08T06:40:45.896363+00:00",
+  "generated_at": "2026-11-08T07:02:41.009626+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 320,
     "senses_reviewed": 320,
     "senses_with_variants": 311,
     "variants_accepted": 273,
-    "variants_needing_review": 343
+    "variants_needing_review": 341
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -2560,18 +2560,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "التفاوت",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -2993,7 +2981,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms",
               "ambiguous"
             ]
           },
@@ -8108,19 +8095,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "ملاحظات",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "كلمة عامة",
-            "example": "أرسلنا ملاحظات حول أداء الفريق للمدير.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms",
-              "ambiguous"
             ]
           },
           {
