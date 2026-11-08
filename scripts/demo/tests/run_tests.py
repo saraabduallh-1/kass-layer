@@ -26,11 +26,15 @@ for f in files:
                 fn += 1; notes.append(f"  MISS  [{g['domain']}] {surface} → {term}"); continue
             used.add(id(it))
             got = det.senses[it["choices"][0][0]][0]
-            if any(key(got) == key(t) for t in term.split("|")):
+            also = (g.get("also") or {}).get(surface)  # another right answer found when reviewing the output (reports/gold_also.md)
+            if any(key(got) == key(t) for t in (term + ("|" + also if also else "")).split("|")):
                 tp += 1
             else:
                 wrong += 1; notes.append(f"  WRONG [{g['domain']}] {surface} → {got} (want {term})")
         for it in found:
+            ok_extra = (g.get("also") or {}).get(it["original"])
+            if ok_extra and any(key(det.senses[it["best"][0]][0]) == key(t) for t in ok_extra.split("|")):
+                continue  # a right suggestion the gold set did not list: neither correct nor extra
             if id(it) not in used:
                 fp += 1; notes.append(f"  EXTRA [{g['domain']}] {it['original']} → {det.senses[it['best'][0]][0]} ({it['state']})")
     P, R = tp / max(1, tp + wrong + fp), tp / max(1, tp + fn + wrong)

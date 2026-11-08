@@ -10,6 +10,7 @@ global.performance = { now: () => 0 }; global.matchMedia = () => ({ matches: fal
 eval(js);
 setTimeout(() => {
   const gold = JSON.parse(fs.readFileSync(__dirname + "/" + (process.argv[2] || "gold.json"), "utf8"));
+  const akey = t => K.normalize(t).split(" ").map(w => w.startsWith("ال") && w.length > 3 ? w.slice(2) : w).join(" ");
   let tp = 0, fn = 0, fp = 0, wrong = 0; const misses = [], extras = [], wrongs = [];
   for (const g of gold) {
     K.setDomain(g.domain);
@@ -22,10 +23,11 @@ setTimeout(() => {
       used.add(it);
       const terms = it.choices.map(r => K.termKey(K.DATA ? "" : "") || "");
       const allKey = t => K.normalize(t).split(" ").map(w => w.startsWith("ال") && w.length > 3 ? w.slice(2) : w).join(" ");
-      const ok = term.split("|").some(t => allKey(globalThis.__sense(it.choices[0])) === allKey(t));
+      // "also": another right answer found when reviewing the output (see reports/gold_also.md)
+      const ok = (term + (g.also && g.also[surface] ? "|" + g.also[surface] : "")).split("|").some(t => allKey(globalThis.__sense(it.choices[0])) === allKey(t));
       if (ok) tp++; else { wrong++; wrongs.push(`[${g.domain}] ${surface} → got ${it.sense[0]} (want ${term})`); }
     }
-    for (const it of found) if (!used.has(it)) { fp++; extras.push(`[${g.domain}] ${it.original} → ${it.sense[0]} (${it.state})`); }
+    for (const it of found) if (!used.has(it) && !(g.also && g.also[it.original] && g.also[it.original].split("|").some(t => akey(t) === akey(it.sense[0])))) { fp++; extras.push(`[${g.domain}] ${it.original} → ${it.sense[0]} (${it.state})`); }
   }
   const P = tp / Math.max(1, tp + wrong + fp), R = tp / Math.max(1, tp + fn + wrong);
   console.log(`cases ${gold.length} | correct ${tp} | missed ${fn} | wrong term ${wrong} | extra ${fp} | recall ${(100 * R).toFixed(1)}% | precision ${(100 * P).toFixed(1)}%`);
