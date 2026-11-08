@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-11-07T14:22:07.067814+00:00",
+  "generated_at": "2026-11-08T06:40:44.711122+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1428,
-    "variants_accepted": 1399,
-    "variants_needing_review": 1381
+    "variants_accepted": 1398,
+    "variants_needing_review": 1379
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -23969,18 +23969,6 @@
             ]
           },
           {
-            "form": "تجربة العميل",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
             "form": "تجربة العملاء",
             "type": "informal_synonym",
             "confidence": "high",
@@ -30112,16 +30100,6 @@
             "form": "غلاء الأسعار",
             "type": "informal_synonym",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "ارتفاع الأسعار",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -78380,18 +78358,6 @@
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "محاسبة",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": true,
-            "ambiguity_note": "تعني غالبًا علم المحاسبة المالية",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "ambiguous"
             ]
           }
         ],

@@ -2,14 +2,14 @@
   "dictionary_id": "94d205e3-6e93-4b6b-a245-1d5304b3ed7d",
   "dictionary_name": "معجم مصطلحات الطرق",
   "source_export": "data/dictionaries/exports/94d205e3-6e93-4b6b-a245-1d5304b3ed7d.json",
-  "generated_at": "2026-11-07T14:22:08.662033+00:00",
+  "generated_at": "2026-11-08T06:40:46.662566+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 387,
     "senses_reviewed": 387,
     "senses_with_variants": 387,
-    "variants_accepted": 567,
-    "variants_needing_review": 420
+    "variants_accepted": 566,
+    "variants_needing_review": 419
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -6603,19 +6603,6 @@
             "review_reasons": [
               "is_standard_term_elsewhere"
             ]
-          },
-          {
-            "form": "السرعة القصوى",
-            "type": "informal_synonym",
-            "confidence": "medium",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -11004,16 +10991,6 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "إصلاح",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "جرت أعمال إصلاح للطريق بعد المطر.",
             "status": "accepted",
             "review_reasons": []
           }

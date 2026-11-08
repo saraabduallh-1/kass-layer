@@ -2,14 +2,14 @@
   "dictionary_id": "4cd164a7-7160-4de8-af5c-34382f5da657",
   "dictionary_name": "معجم البيانات والذكاء الاصطناعي",
   "source_export": "data/dictionaries/exports/4cd164a7-7160-4de8-af5c-34382f5da657.json",
-  "generated_at": "2026-11-07T14:22:07.418075+00:00",
+  "generated_at": "2026-11-08T06:40:45.293242+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1443,
     "senses_reviewed": 1443,
     "senses_with_variants": 1441,
-    "variants_accepted": 2294,
-    "variants_needing_review": 715
+    "variants_accepted": 2292,
+    "variants_needing_review": 714
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4061,16 +4061,6 @@
             "form": "Likelihood",
             "type": "foreign",
             "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
-            "form": "الإمكان",
-            "type": "informal_synonym",
-            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
@@ -74485,16 +74475,6 @@
             "review_reasons": []
           },
           {
-            "form": "الروبوتات",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "accepted",
-            "review_reasons": []
-          },
-          {
             "form": "روبوتيكس",
             "type": "spelling_variant",
             "confidence": "medium",
@@ -97888,18 +97868,6 @@
             "example": "",
             "status": "accepted",
             "review_reasons": []
-          },
-          {
-            "form": "الكمية",
-            "type": "informal_synonym",
-            "confidence": "low",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "low_confidence"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

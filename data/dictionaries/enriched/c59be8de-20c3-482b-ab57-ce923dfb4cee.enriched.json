@@ -2,14 +2,14 @@
   "dictionary_id": "c59be8de-20c3-482b-ab57-ce923dfb4cee",
   "dictionary_name": "معجم المصطلحات الإدارية في المملكة العربية السعودية",
   "source_export": "data/dictionaries/exports/c59be8de-20c3-482b-ab57-ce923dfb4cee.json",
-  "generated_at": "2026-11-07T14:22:11.722382+00:00",
+  "generated_at": "2026-11-08T06:40:49.901592+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 825,
     "senses_reviewed": 825,
     "senses_with_variants": 811,
     "variants_accepted": 612,
-    "variants_needing_review": 944
+    "variants_needing_review": 942
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -17575,19 +17575,6 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
-          },
-          {
-            "form": "التحفيز",
-            "type": "informal_synonym",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
-            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -26812,19 +26799,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms"
-            ]
-          },
-          {
-            "form": "المركزية",
-            "type": "spelling_variant",
-            "confidence": "high",
-            "ambiguous": false,
-            "ambiguity_note": "",
-            "example": "",
-            "status": "review",
-            "review_reasons": [
-              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
