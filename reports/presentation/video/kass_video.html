@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>آلية خصص</title>
+<!-- Animated explainer of the detector, rendered frame by frame by render_video.py (render(t) draws second t).
+     Every number is what the detector returns for these sentences (demo_local indices), except the ranking bars. -->
+<style>
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Bold.ttf);font-weight:700}
+:root{--bg:#f6f7f2;--bg2:#eef2ea;--surf:#fff;--ink:#14231d;--muted:#5b6b63;--line:#dde5dd;--green:#0b4b33;--green2:#12633f;
+--mint:#e5efe7;--rep:#1b7448;--repbg:#e1f1e7;--rev:#94620a;--revbg:#f8edd6;--std:#3d5d74;--stdbg:#e4ecf2;--red:#8a3b2a;--redbg:#f6e4df}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Plex;color:var(--ink)}
+.scene{position:absolute;inset:0;opacity:0}
+.abs{position:absolute}
+.head{position:absolute;top:56px;right:96px;left:96px;height:90px;display:flex;align-items:center;gap:26px}
+.num{width:84px;height:84px;border-radius:50%;background:var(--green);color:#fff;font:700 40px Plex;display:flex;align-items:center;justify-content:center;flex:none}
+.title{font:700 52px Plex}
+.logo{position:absolute;top:70px;left:96px;height:52px}
+.cap{position:absolute;bottom:0;left:0;right:0;height:132px;background:var(--green);color:#fff;font:600 34px Plex;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 120px}
+.card{background:var(--surf);border:2px solid var(--line);border-radius:22px}
+.sent{position:absolute;right:120px;left:120px;top:190px;height:130px;display:flex;align-items:center;justify-content:center;gap:22px;font:600 50px Plex}
+.tok{position:relative;padding:4px 6px;border-radius:12px;transition:none}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font:600 26px Plex;padding:6px 26px}
+.row{display:flex;align-items:center}
+.muted{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<!-- 0 title -->
+<section class="scene" id="s0" style="background:var(--green)">
+  <img src="../wordmark_white.png" class="abs" id="t0logo" style="left:50%;top:250px;width:520px;transform:translateX(-50%)">
+  <div class="abs" id="t0a" style="top:530px;width:100%;text-align:center;color:#fff;font:700 72px Plex">كيف تعمل طبقة خصص؟</div>
+  <div class="abs" id="t0b" style="top:650px;width:100%;text-align:center;color:#cfe3d7;font:500 40px Plex">من دخول النص إلى اقتراح المصطلح المعتمد</div>
+</section>
+
+<!-- 1 input -->
+<section class="scene" id="s1">
+  <div class="head"><div class="num">١</div><div class="title">يكتب المستخدم النص ويختار المجال</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" style="justify-content:flex-start;padding:0 50px"><span id="typed"></span><span id="caret" style="width:4px;height:60px;background:var(--green)"></span></div>
+  <div class="abs" style="top:420px;right:0;left:0;text-align:center;font:600 30px Plex" class="muted">المجال</div>
+  <div class="abs row" id="doms" style="top:480px;right:0;left:0;justify-content:center;gap:22px"></div>
+  <div class="cap" id="c1">النص كما يكتبه الناس: تعريب، واختصار إنجليزي، وكلمة عربية عامة</div>
+</section>
+
+<!-- 2 normalisation -->
+<section class="scene" id="s2">
+  <div class="head"><div class="num">٢</div><div class="title">التطبيع: توحيد الكتابة قبل البحث</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="norm"></div>
+  <div class="cap">تُزال الفروق التي لا تغيّر الكلمة، حتى تطابق صيغتها في الفهرس</div>
+</section>
+
+<!-- 3 index lookup -->
+<section class="scene" id="s3">
+  <div class="head"><div class="num">٣</div><div class="title">البحث في فهرس الصيغ</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="s3sent"></div>
+  <div class="abs" id="bracket" style="border:5px solid var(--green);border-radius:16px;top:200px;height:110px"></div>
+  <div class="abs card" style="right:120px;top:370px;width:900px;height:520px;padding:26px 34px">
+    <div class="row" style="justify-content:space-between"><div style="font:700 30px Plex">فهرس الصيغ</div><div class="muted" style="font:500 24px Plex">126,141 صيغة لـ 40,102 مصطلح</div></div>
+    <div class="row" style="margin-top:22px;gap:18px;font:600 30px Plex"><span class="muted" style="font-size:26px">يبحث عن:</span>
+      <span id="key" style="background:var(--bg2);border-radius:12px;padding:4px 22px;min-width:200px"></span><span id="verdict" style="font:700 30px Plex"></span></div>
+    <div id="idx" style="margin-top:22px"></div>
+  </div>
+  <div class="abs card" style="left:120px;top:370px;width:640px;height:520px;padding:26px 34px">
+    <div style="font:700 30px Plex">ما وُجد</div>
+    <div id="found" style="margin-top:18px"></div>
+  </div>
+  <div class="cap" id="c3"></div>
+</section>
+
+<!-- 4 dictionary -->
+<section class="scene" id="s4">
+  <div class="head"><div class="num">٤</div><div class="title">المجال والمعجم الأقرب</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs row" id="doms4" style="top:200px;right:0;left:0;justify-content:center;gap:22px"></div>
+  <div class="abs" id="chooser" style="top:290px;right:0;left:0;text-align:center;font:500 28px Plex;color:var(--muted)">المستخدم اختار «تقني»، وفيه معجمان</div>
+  <div id="dicts"></div>
+  <div id="flyers"></div>
+  <div class="cap" id="c4"></div>
+</section>
+
+<!-- 5/6 context gate -->
+<section class="scene" id="s5">
+  <div class="head"><div class="num">٥</div><div class="title" id="g_title">بوابة السياق: للكلمة العربية العامة فقط</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="g_sent" style="top:175px;height:110px;font-size:44px"></div>
+  <div class="abs card" style="right:120px;top:300px;width:820px;height:530px;padding:22px 32px">
+    <div style="font:700 30px Plex">١ ميل النص للمجال <span class="muted" style="font:500 22px Plex">(إحصاءات ويكيبيديا)</span></div>
+    <svg id="lean" width="756" height="380" style="margin-top:8px"></svg>
+    <div id="leanavg" style="font:700 30px Plex;margin-top:4px"></div>
+  </div>
+  <div class="abs card" style="left:120px;top:300px;width:820px;height:530px;padding:22px 32px">
+    <div style="font:700 30px Plex">٢ قرب المعنى <span class="muted" style="font:500 22px Plex">(متجهات embeddinggemma)</span></div>
+    <svg id="vec" width="756" height="290" style="margin-top:0"></svg><div id="vecwords" class="row" style="gap:10px;flex-wrap:wrap;justify-content:center;margin:4px 0 6px"></div>
+    <div id="vecnote" style="font:700 30px Plex"></div>
+  </div>
+  <div class="abs" id="g_verdict" style="right:0;left:0;top:848px;display:flex;justify-content:center"></div>
+  <div class="cap" id="c5"></div>
+</section>
+
+<!-- 7 filters -->
+<section class="scene" id="s7">
+  <div class="head"><div class="num">٦</div><div class="title">المرشّحات: تحذف الأخطاء المعروفة</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="flt"></div>
+  <div class="cap">كل قاعدة أُضيفت بعد خطأ حقيقي، وما يُحذف هنا لا يراه المستخدم</div>
+</section>
+
+<!-- 8 ranking -->
+<section class="scene" id="s8">
+  <div class="head"><div class="num">٧</div><div class="title">ترتيب البدائل</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card"><span>ركبنا</span><span style="color:var(--rev)">الفيوز</span><span>في الدائرة الكهربائية للسيارة</span></div>
+  <div id="rank"></div>
+  <div class="abs row" id="crit" style="top:860px;right:0;left:0;justify-content:center;gap:20px"></div>
+  <div class="cap">«الفيوز» لها ثلاثة مصطلحات: الأول يُقترح، والباقي بدائل في القائمة</div>
+</section>
+
+<!-- 9 result -->
+<section class="scene" id="s9">
+  <div class="head"><div class="num">٨</div><div class="title">التصنيف وما يراه المستخدم</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="r_sent" style="font-size:44px"></div>
+  <div id="tiers"></div>
+  <div class="abs card" id="popup" style="width:600px;height:400px;left:180px;top:380px;border:3px solid var(--rev);padding:28px 34px"></div>
+  <div class="abs" id="cursor" style="width:34px;height:34px"><svg width="34" height="34"><path d="M4 2 L4 28 L11 21 L16 32 L21 30 L16 19 L26 19 Z" fill="#14231d" stroke="#fff" stroke-width="2"/></svg></div>
+  <div class="cap" id="c9"></div>
+</section>
+
+<!-- 10 end -->
+<section class="scene" id="s10" style="background:var(--green)">
+  <div class="abs" style="top:330px;width:100%;text-align:center;color:#fff;font:700 64px Plex">الطبقة تقترح المصطلح المعتمد، والمستخدم يقرر</div>
+  <div class="abs" style="top:460px;width:100%;text-align:center;color:#cfe3d7;font:500 34px Plex">40,102 مصطلح من 22 معجمًا في سوار · بلا نموذج لغوي وقت التحليل · كل شيء داخل المتصفح</div>
+  <img src="../wordmark_white.png" class="abs" style="left:50%;top:640px;width:300px;transform:translateX(-50%)">
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+const C = n => getComputedStyle(document.documentElement).getPropertyValue('--' + n).trim();
+const cl = x => x < 0 ? 0 : x > 1 ? 1 : x;
+const ease = x => { x = cl(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+const P = (t, a, d = .6) => ease((t - a) / d);
+const lerp = (a, b, k) => a + (b - a) * k;
+const h = (tag, attrs = {}, html = '') => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
+const SVG = (tag, attrs) => { const e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+
+const DOMAINS = ['قانوني', 'تقني', 'مالي', 'إعلامي', 'هندسي', 'ثقافي'];
+const SENT = 'بنينا عميل ذكي يستخدم المودل والـ LLM لتحليل البيانات';
+const TOKS = ['بنينا', 'عميل', 'ذكي', 'يستخدم', 'المودل', 'والـ', 'LLM', 'لتحليل', 'البيانات'];
+const KIND = { rep: ['--rep', '--repbg'], rev: ['--rev', '--revbg'], std: ['--std', '--stdbg'] };
+
+// ---------- scene builders (static DOM) ----------
+function domChips(box) { DOMAINS.forEach(d => box.appendChild(h('span', { class: 'pill', style: 'background:#fff;border:2px solid var(--line);font-size:30px' }, d))); }
+domChips($('doms')); domChips($('doms4'));
+
+const NORM = [
+  { from: 'والمودل', parts: [['و', 1], ['ال', 1], ['مودل', 0]], why: 'فصل السوابق' },
+  { from: 'لتحليل', parts: [['ل', 1], ['تحليل', 0]], why: 'فصل حرف الجر' },
+  { from: 'ذكيّ', parts: [['ذكي', 0]], why: 'إزالة التشكيل' },
+  { from: 'إنشاء', parts: [['انشاء', 0]], why: 'توحيد الهمزات' },
+];
+NORM.forEach((n, i) => {
+  const y = 200 + i * 165;
+  const c = h('div', { class: 'abs card', style: `right:280px;left:280px;top:${y}px;height:135px` });
+  c.appendChild(h('div', { class: 'abs', style: 'right:50px;top:30px;font:600 52px Plex' }, n.from));
+  c.appendChild(h('div', { class: 'abs', id: 'narrow' + i, style: 'right:430px;top:62px;height:6px;background:var(--green);width:0' }));
+  const out = h('div', { class: 'abs row', id: 'nout' + i, style: 'right:640px;top:30px;gap:14px;font:600 52px Plex' });
+  n.parts.forEach(([p, drop], j) => out.appendChild(h('span', { id: `np${i}_${j}`, style: `color:${drop ? 'var(--muted)' : 'var(--green)'}` }, p)));
+  c.appendChild(out);
+  c.appendChild(h('div', { class: 'abs muted', id: 'nwhy' + i, style: 'left:50px;top:44px;font:500 32px Plex' }, n.why));
+  $('norm').appendChild(c);
+});
+
+// lookup steps over TOKS (index i..j), the key looked up, the hit
+const STEPS = [
+  { s: 0, e: 0, key: 'بنينا', hit: null, cap: 'كل كلمة تُبحث في الفهرس: «بنينا» غير موجودة، فلا يُقترح لها شيء' },
+  { s: 1, e: 3, key: 'عميل ذكي يستخدم', hit: null, cap: 'العبارة الأطول أولًا: ثلاث كلمات، ثم اثنتان، ثم واحدة' },
+  { s: 1, e: 2, key: 'عميل ذكي', hit: 3, kind: 'rev', cap: 'وُجدت «عميل ذكي»: كلمة عربية عامة، مقابلها «وكيل ذكي»' },
+  { s: 3, e: 3, key: 'يستخدم', hit: null, cap: 'فعل عربي عادي، ليس في الفهرس' },
+  { s: 4, e: 4, key: 'مودل', hit: 6, kind: 'rep', cap: 'بعد حذف «ال»: «مودل» تعريب لـ«نموذج»' },
+  { s: 6, e: 6, key: 'llm', hit: 5, kind: 'rep', cap: '«LLM» اختصار لـ«نموذج لغوي كبير»' },
+  { s: 7, e: 8, key: 'تحليل البيانات', hit: 7, kind: 'std', cap: '«تحليل البيانات» مصطلح معتمد أصلًا' },
+];
+const IDX = [['بودكاست', 'مدوّنة صوتية', 'تعريب'], ['ستيكر', 'ملصق', 'تعريب'], ['سيرفر', 'خادم', 'تعريب'], ['عميل ذكي', 'وكيل ذكي', 'كلمة عامة'],
+  ['كود', 'الشفرات المصدرية', 'تعريب'], ['llm', 'نموذج لغوي كبير', 'اختصار'], ['مودل', 'نموذج', 'تعريب'], ['تحليل البيانات', 'معتمد', 'مصطلح معتمد']];
+const KINDOF = { 'تعريب': 'rep', 'اختصار': 'rep', 'كلمة عامة': 'rev', 'مصطلح معتمد': 'std' };
+IDX.forEach((r, i) => {
+  const row = h('div', { class: 'row', id: 'ix' + i, style: 'height:44px;padding:0 16px;border-radius:10px;font:500 26px Plex;gap:10px' });
+  row.appendChild(h('span', { style: 'width:240px;font-weight:600' }, r[0]));
+  row.appendChild(h('span', { class: 'muted', style: 'width:40px' }, '←'));
+  row.appendChild(h('span', { style: 'width:300px;color:var(--green);font-weight:600' }, r[1]));
+  const [fg, bg] = KIND[KINDOF[r[2]]];
+  row.appendChild(h('span', { class: 'pill', style: `font-size:20px;padding:2px 16px;background:var(${bg});color:var(${fg})` }, r[2]));
+  $('idx').appendChild(row);
+});
+TOKS.forEach((t, i) => $('s3sent').appendChild(h('span', { class: 'tok', id: 'tk' + i }, t)));
+STEPS.filter(s => s.hit !== null).forEach((s, i) => {
+  const [fg, bg] = KIND[s.kind];
+  const r = IDX[s.hit];
+  const f = h('div', { class: 'row', id: 'fd' + i, style: `margin-bottom:16px;gap:14px;font:600 30px Plex;padding:12px 20px;border-radius:14px;background:var(${bg})` });
+  f.innerHTML = `<span>${TOKS.slice(s.s, s.e + 1).join(' ')}</span><span class="muted">←</span><span style="color:var(${fg})">${r[1] === 'معتمد' ? 'معتمد كما هو' : r[1]}</span>`;
+  $('found').appendChild(f);
+});
+
+// dictionaries
+const DICTS = [['معجم البيانات والذكاء الاصطناعي', 83], ['معجم الحكومة الرقمية', 17]];
+DICTS.forEach((d, i) => {
+  const y = 400 + i * 230;
+  const c = h('div', { class: 'abs card', style: `right:300px;left:300px;top:${y}px;height:190px;padding:26px 40px` });
+  c.innerHTML = `<div class="row" style="justify-content:space-between"><span style="font:700 36px Plex">${d[0]}</span><span id="dp${i}" style="font:700 40px Plex;color:var(${i ? '--muted' : '--green'})"></span></div>
+    <div style="margin-top:30px;height:34px;border-radius:17px;background:var(--bg2);position:relative;overflow:hidden"><div id="db${i}" style="position:absolute;right:0;top:0;bottom:0;width:0;border-radius:17px;background:var(${i ? '--muted' : '--green'})"></div></div>`;
+  $('dicts').appendChild(c);
+});
+// flyers: found terms dropping into dictionaries (تحليل البيانات is in both, so half each)
+const FLY = [['نموذج', 0, 1500], ['نموذج لغوي كبير', 0, 1000], ['تحليل البيانات ½', 0, 600], ['تحليل البيانات ½', 1, 1050]];
+FLY.forEach((f, i) => $('flyers').appendChild(h('span', { class: 'pill abs', id: 'fl' + i, style: 'background:var(--repbg);color:var(--rep);font-size:28px' }, f[0])));
+
+// context gate data (detector output for the two sentences)
+const GATE = [
+  { sent: [['بنينا', 0], ['عميل ذكي', 'rev'], ['يستخدم المودل والـ LLM لتحليل البيانات', 0]],
+    lean: [['ذكي', 3.19], ['نموذج *', 3.25], ['تحليلات *', 2.94], ['تحليل', 2.88], ['لغوي *', 2.5], ['البيانات', 1.69], ['يستخدم', 1.25], ['والـ', -1.19], ['بنينا', -2.56]],
+    avg: 1.55, term: 'وكيل ذكي', vec: [['ذكي', .68], ['يستخدم', .53], ['والـ', .53], ['تحليل', .41], ['بنينا', .39], ['البيانات', .34]], close: .56, pass: true },
+  { sent: [['وقّع', 0], ['العميل', 'red'], ['العقد مع البنك', 0]],
+    lean: [['العقد', .75], ['وقّع', -1.56], ['البنك', -3.12]],
+    avg: -1.31, term: 'وكيل', vec: [['العقد', .43], ['وقّع', .37], ['البنك', .36]], close: .42, pass: false },
+];
+
+// filters
+const FLT = [['صممنا الشعار ببرنامج أدوبي إليستريتر (AI)', 'AI', 'الذكاء الاصطناعي', 'اختصار لاسم مكتوب قبله'],
+  ['ارتفعت مبيعات Maroc Telecom هذا العام', 'Telecom', 'الاتصالات السلكية واللاسلكية', 'جزء من اسم شركة'],
+  ['طورنا وكيل الذكاء الاصطناعي للشركة', 'وكيل', 'وكيل', 'الكاتب يستعمل المصطلح أصلًا']];
+FLT.forEach((f, i) => {
+  const y = 200 + i * 205;
+  const c = h('div', { class: 'abs card', id: 'fc' + i, style: `right:120px;left:120px;top:${y}px;height:175px` });
+  c.innerHTML = `<div class="abs" style="right:44px;top:22px;font:600 36px Plex">${f[0].replace(f[1], `<span style="color:var(--rev)">${f[1]}</span>`)}</div>
+    <div class="abs row" style="right:44px;top:98px;gap:16px;font:600 30px Plex"><span class="muted">مرشّح:</span><span id="fw${i}">${f[2]}</span></div>
+    <span class="abs pill" id="fr${i}" style="left:44px;top:58px;background:var(--redbg);color:var(--red);font-size:28px">✗ ${f[3]}</span>`;
+  $('flt').appendChild(c);
+});
+
+// ranking
+const RANK = [['المصهر', .9], ['فتيلة انفجار', .5], ['صهيرة', .35]];
+RANK.forEach((r, i) => {
+  const c = h('div', { class: 'abs card', id: 'rk' + i, style: `right:330px;left:330px;height:120px;top:${380 + i * 150}px` });
+  c.innerHTML = `<div class="abs" id="rkt${i}" style="right:44px;top:30px;font:600 42px Plex">${r[0]}</div>
+    <div class="abs" style="left:44px;top:46px;width:640px;height:30px;border-radius:15px;background:var(--bg2);overflow:hidden"><div id="rkb${i}" style="position:absolute;right:0;top:0;bottom:0;width:0;background:var(--muted);border-radius:15px"></div></div>`;
+  $('rank').appendChild(c);
+});
+['الصوت: يشبه Fuse', 'السياق: دائرة، سيارة', 'معجم المجال', 'تأكيد المراجعة'].forEach((t, i) =>
+  $('crit').appendChild(h('span', { class: 'pill', id: 'cr' + i, style: 'background:var(--mint);color:var(--green);font-size:26px' }, t)));
+
+// result
+const RES = [['بنينا', 0], ['عميل ذكي', 'rev', 'وكيل ذكي'], ['يستخدم', 0], ['المودل', 'rep', 'نموذج'], ['والـ', 0], ['LLM', 'rep', 'نموذج لغوي كبير'], ['لتحليل البيانات', 'std']];
+RES.forEach((r, i) => $('r_sent').appendChild(h('span', { class: 'tok', id: 'rs' + i }, r[0])));
+const TIERS = [['مقترح', 'rep', 'تعريب واختصار: لا معنى آخر'], ['يحتاج تدقيقًا', 'rev', 'كلمة عامة: تحقق من السياق'], ['معتمد', 'std', 'مصطلح معتمد أصلًا']];
+TIERS.forEach((t, i) => {
+  const [fg, bg] = KIND[t[1]];
+  const c = h('div', { class: 'abs', id: 'tr' + i, style: `right:${405 + i * 380}px;top:470px;width:350px;height:150px;border-radius:20px;background:var(${bg});padding:22px 28px` });
+  c.innerHTML = `<div style="font:700 36px Plex;color:var(${fg})">${t[0]}</div><div class="muted" style="font:500 24px Plex;margin-top:14px">${t[2]}</div>`;
+  $('tiers').appendChild(c);
+});
+$('popup').innerHTML = `<div style="font:700 36px Plex">عميل ذكي ← <span style="color:var(--green)">وكيل ذكي</span></div>
+  <span class="pill" style="margin-top:14px;background:var(--revbg);color:var(--rev);font-size:22px">يحتاج تدقيقًا</span>
+  <div style="font:500 24px Plex;margin-top:18px;line-height:1.6"><b>المعجم:</b> البيانات والذكاء الاصطناعي<br><b>بالإنجليزية:</b> Intelligent Agent<br><b style="color:var(--rev)">السبب:</b> <span style="color:var(--rev)">كلمة عامة لها مصطلح تخصصي هنا</span></div>
+  <div class="row" style="gap:16px;margin-top:24px"><span id="pbtn" class="pill" style="background:var(--green);color:#fff;font-size:26px;border-radius:14px;padding:10px 34px">وكيل ذكي</span>
+  <span class="pill" style="background:#fff;border:2px solid var(--line);font-size:26px;border-radius:14px;padding:10px 34px">الكلمة الأصلية</span></div>`;
+
+// ---------- timeline ----------
+const S = [
+  ['s0', 0, 4.5], ['s1', 4.5, 11], ['s2', 11, 20], ['s3', 20, 42], ['s4', 42, 54], ['s5', 54, 87], ['s7', 87, 99], ['s8', 99, 109], ['s9', 109, 125], ['s10', 125, 130],
+];
+const DURATION = 130;
+
+function set(el, css) { Object.assign(el.style, css); }
+function fadeIn(el, t, a, d = .5) { el.style.opacity = P(t, a, d); }
+
+const U = {
+  s0(t) { fadeIn($('t0logo'), t, .2); fadeIn($('t0a'), t, .8); fadeIn($('t0b'), t, 1.3); },
+  s1(t) {
+    const n = Math.floor(cl((t - .5) / 3) * SENT.length);
+    $('typed').textContent = SENT.slice(0, n);
+    $('caret').style.opacity = (Math.floor(t * 2) % 2 || n < SENT.length) ? 1 : 0;
+    [...$('doms').children].forEach((c, i) => {
+      const on = i === 1 && t > 4.2;
+      set(c, { background: on ? C('green') : '#fff', color: on ? '#fff' : C('ink'), borderColor: on ? C('green') : C('line'), transform: `scale(${i === 1 ? 1 + .12 * Math.sin(Math.PI * cl((t - 4) / .5)) : 1})` });
+    });
+  },
+  s2(t) {
+    NORM.forEach((n, i) => {
+      const a = .4 + i * 1.9;
+      $('narrow' + i).style.width = 180 * P(t, a, .5) + 'px';
+      const out = $('nout' + i); out.style.opacity = P(t, a + .4, .4);
+      n.parts.forEach(([p, drop], j) => {
+        const e = $(`np${i}_${j}`);
+        const k = drop ? P(t, a + 1.0, .6) : 0;
+        set(e, { opacity: 1 - .75 * k, transform: `translateY(${-30 * k}px)`, textDecoration: k > .5 ? 'line-through' : 'none' });
+      });
+      $('nwhy' + i).style.opacity = P(t, a + .6, .4);
+    });
+  },
+  s3(t) {
+    const step = 2.9, st = Math.min(STEPS.length - 1, Math.floor(Math.max(0, t - .3) / step)), lt = Math.max(0, t - .3) - st * step;
+    const s = STEPS[st];
+    const box = $('s3').getBoundingClientRect();
+    const r0 = $('tk' + s.s).getBoundingClientRect(), r1 = $('tk' + s.e).getBoundingClientRect();
+    const prev = STEPS[Math.max(0, st - 1)];
+    const q0 = $('tk' + prev.s).getBoundingClientRect(), q1 = $('tk' + prev.e).getBoundingClientRect();
+    const k = st === 0 ? 1 : P(lt, 0, .5);
+    const L = lerp(Math.min(q0.left, q1.left), Math.min(r0.left, r1.left), k) - 12, R = lerp(Math.max(q0.right, q1.right), Math.max(r0.right, r1.right), k) + 12;
+    set($('bracket'), { left: L - box.left + 'px', width: R - L + 'px', borderColor: lt > 1.1 && s.hit !== null ? C(s.kind === 'rev' ? 'rev' : s.kind === 'std' ? 'std' : 'rep') : lt > 1.1 ? C('red') : C('green') });
+    $('key').textContent = lt > .5 ? s.key : '';
+    const v = $('verdict');
+    if (lt > 1.1) { v.textContent = s.hit === null ? '✗ غير موجود' : '✓ موجود'; v.style.color = s.hit === null ? C('red') : C('rep'); } else v.textContent = lt > .5 ? '…' : '';
+    // the index rows: a scan highlight, then the hit row
+    IDX.forEach((r, i) => {
+      const scan = lt > .5 && lt < 1.1 && Math.floor((lt - .5) * 14) % IDX.length === i;
+      const hit = s.hit === i && lt > 1.1;
+      $('ix' + i).style.background = hit ? C('mint') : scan ? C('bg2') : 'transparent';
+      $('ix' + i).style.outline = hit ? `3px solid ${C('rep')}` : 'none';
+    });
+    // tokens coloured once found; found list grows
+    let fi = 0;
+    STEPS.forEach((x, j) => {
+      if (x.hit === null) return;
+      const done = j < st || (j === st && lt > 1.1);
+      for (let q = x.s; q <= x.e; q++) $('tk' + q).style.color = done ? C(x.kind === 'rev' ? 'rev' : x.kind === 'std' ? 'std' : 'rep') : C('ink');
+      const f = $('fd' + fi++); set(f, { opacity: done ? P(j < st ? 9 : lt, 1.1, .4) : 0, transform: `translateY(${done ? 0 : 20}px)` });
+    });
+    $('c3').textContent = s.cap;
+  },
+  s4(t) {
+    [...$('doms4').children].forEach((c, i) => set(c, { background: i === 1 ? C('green') : '#fff', color: i === 1 ? '#fff' : C('muted'), opacity: i === 1 ? 1 : .55 }));
+    $('chooser').style.opacity = P(t, .3);
+    $('dicts').style.opacity = P(t, .8);
+    const base = $('s4').getBoundingClientRect();
+    FLY.forEach((f, i) => {
+      const e = $('fl' + i), a = 1.8 + i * 1.0, k = P(t, a, .9);
+      const tx = f[2], ty = lerp(345, 470 + f[1] * 230, k);
+      set(e, { left: tx + 'px', top: ty + 'px', opacity: k < .05 ? P(t, a - .3, .3) : 1 - P(t, a + 1.0, .3) });
+    });
+    const k0 = P(t, 3, 4.5);
+    DICTS.forEach((d, i) => { $('db' + i).style.width = d[1] * k0 + '%'; $('dp' + i).textContent = Math.round(d[1] * k0) + '%'; });
+    $('c4').textContent = t < 2 ? 'المجال يختاره المستخدم، والطبقة تبحث في معاجمه فقط' : 'المصطلحات التي وُجدت تصوّت لمعجمها، فيُفضَّل مصطلح المعجم الأقرب عند التعارض';
+  },
+  s5(t) {
+    const g = t < 18 ? GATE[0] : GATE[1], lt = t < 18 ? t : t - 18;
+    $('g_title').textContent = t < 18 ? 'بوابة السياق: للكلمة العربية العامة فقط' : 'بوابة السياق: المثال المعاكس';
+    const sent = $('g_sent');
+    if (sent.dataset.g !== String(t < 18)) {
+      sent.dataset.g = String(t < 18); sent.innerHTML = '';
+      g.sent.forEach(([w, k]) => sent.appendChild(h('span', { style: k ? `color:var(--${k})` : '' }, w)));
+    }
+    drawLean(g, lt); drawVec(g, lt);
+    const v = $('g_verdict'), vk = P(lt, 11, .5);
+    v.innerHTML = `<span class="pill" style="font-size:36px;padding:8px 44px;background:${g.pass ? C('revbg') : C('redbg')};color:${g.pass ? C('rev') : C('red')};border:3px solid ${g.pass ? C('rev') : C('red')}">
+      ${g.pass ? 'الميل 1.55 فوق 0.9 ← يمر: «وكيل ذكي» · يحتاج تدقيقًا' : 'الميل −1.31 تحت 0.6 ← لا يُقترح شيء'}</span>`;
+    set(v, { opacity: vk, transform: `scale(${.9 + .1 * vk})` });
+    $('c5').textContent = t < 18 ? (lt < 5 ? '«عميل» قد تعني زبونًا أو وكيلًا: الطبقة تقيس سياقها بمقياسين' : lt < 11 ? 'الكلمات حولها تميل للتقنية، ومتجهاتها قريبة من معنى «وكيل ذكي»' : 'الميل فوق 0.9 يكفي؛ بين 0.6 و0.9 يلزم قرب المعنى 0.6 فأكثر')
+      : (lt < 11 ? 'هنا النص مالي: «البنك» و«وقّع» لا تميلان للتقنية' : 'فتبقى «العميل» كما هي؛ والمتجهات تختار أيضًا بين معنيين (وكيل 0.42، المستفيد 0.38)');
+  },
+  s7(t) {
+    FLT.forEach((f, i) => {
+      const a = .3 + i * 3.4;
+      const c = $('fc' + i); set(c, { opacity: P(t, a, .5), transform: `translateX(${(1 - P(t, a, .5)) * -60}px)` });
+      set($('fw' + i), { color: t > a + 1.2 ? C('red') : C('green'), textDecoration: t > a + 1.2 ? 'line-through' : 'none', textDecorationThickness: '4px', opacity: 1 - .45 * P(t, a + 1.2, .5) });
+      set($('fr' + i), { opacity: P(t, a + 1.6, .4), transform: `scale(${1.3 - .3 * P(t, a + 1.6, .4)})` });
+    });
+  },
+  s8(t) {
+    const order = t > 5.5 ? [0, 1, 2] : [2, 0, 1];
+    RANK.forEach((r, i) => {
+      const k = P(t, 1 + i * .3, 2.2);
+      $('rkb' + i).style.width = r[1] * 100 * k + '%';
+      const pos = order.indexOf(i), top = 380 + pos * 150;
+      const c = $('rk' + i), cur = parseFloat(c.dataset.top || top);
+      const y = t > 5.5 ? lerp(380 + [2, 0, 1].indexOf(i) * 150, top, P(t, 5.5, .8)) : top;
+      const best = i === 0 && t > 6.3;
+      set(c, { top: y + 'px', background: best ? C('repbg') : '#fff', borderColor: best ? C('rep') : C('line'), opacity: P(t, .2 + i * .2, .4) });
+      $('rkb' + i).style.background = best ? C('rep') : C('muted');
+      $('rkt' + i).style.color = best ? C('rep') : C('ink');
+    });
+    [0, 1, 2, 3].forEach(i => set($('cr' + i), { opacity: P(t, 1.2 + i * .7, .4) }));
+  },
+  s9(t) {
+    RES.forEach((r, i) => {
+      const e = $('rs' + i);
+      const k = r[1] ? P(t, .5 + i * .25, .4) : 0;
+      const chosen = i === 1 && t > 11.2;
+      const showRep = r[1] === 'rep' && t > 13.5;
+      e.textContent = chosen ? 'وكيل ذكي' : showRep ? r[2] : r[0];
+      const col = r[1] ? C(r[1]) : C('ink');
+      set(e, { color: col, background: r[1] && k > .5 ? C(r[1] + 'bg') : 'transparent' });
+    });
+    TIERS.forEach((x, i) => set($('tr' + i), { opacity: P(t, 2 + i * .6, .4) * (1 - P(t, 6.5, .4)) + P(t, 12.2, .5) }));
+    const pk = P(t, 8, .4) * (1 - P(t, 11.4, .4));
+    set($('popup'), { opacity: pk, transform: `translateY(${(1 - pk) * 20}px)` });
+    // cursor: to the word, then to the button
+    const base = $('s9').getBoundingClientRect(), w = $('rs1').getBoundingClientRect(), b = $('pbtn').getBoundingClientRect();
+    const p1 = [w.left - base.left + w.width / 2, w.top - base.top + w.height * .7], p2 = [b.left - base.left + b.width / 2, b.top - base.top + b.height * .6];
+    const k1 = P(t, 6.8, 1), k2 = P(t, 9.8, 1);
+    const x = lerp(lerp(1500, p1[0], k1), p2[0], k2), y = lerp(lerp(900, p1[1], k1), p2[1], k2);
+    set($('cursor'), { left: x + 'px', top: y + 'px', opacity: P(t, 6.5, .3) * (1 - P(t, 11.5, .3)), transform: `scale(${(t > 7.7 && t < 8) || (t > 10.9 && t < 11.2) ? .8 : 1})` });
+    $('c9').textContent = t < 6.5 ? 'ثلاثة مستويات: مقترح، ويحتاج تدقيقًا، ومعتمد' : t < 11.2 ? 'يضغط المستخدم على الكلمة، فيرى المصطلح ومعجمه وسبب التدقيق، ثم يختار' : t < 13.5 ? 'لا يتغير النص إلا باختياره' : 'و«تطبيق الكل» يطبّق المقترح فقط';
+  },
+  s10() {},
+};
+
+function drawLean(g, lt) {
+  const s = $('lean'); s.innerHTML = '';
+  const W = 756, mid = 440, sc = 55, rh = Math.min(40, 370 / g.lean.length);
+  s.appendChild(SVG('line', { x1: mid, x2: mid, y1: 0, y2: rh * g.lean.length, stroke: C('line'), 'stroke-width': 3 }));
+  g.lean.forEach(([w, v], i) => {
+    const k = P(lt, .8 + i * .25, .5), y = i * rh + 6;
+    const len = Math.abs(v) * sc * k, x = v >= 0 ? mid - len : mid;
+    s.appendChild(SVG('rect', { x, y, width: len, height: rh - 14, rx: 6, fill: v >= 0 ? C('rep') : C('red'), opacity: .9 }));
+    const tx = SVG('text', { x: W - 4, y: y + rh / 2, 'font-family': 'Plex', 'font-size': 24, 'font-weight': 600, fill: C('ink'), 'text-anchor': 'start', direction: 'rtl', opacity: P(lt, .5 + i * .25, .4) });
+    tx.textContent = w; s.appendChild(tx);
+    const vt = SVG('text', { x: v >= 0 ? x - 10 : x + len + 10, y: y + rh / 2, 'font-family': 'Plex', 'font-size': 20, fill: C('muted'), 'text-anchor': v >= 0 ? 'end' : 'start', direction: 'ltr', opacity: k });
+    vt.textContent = (v > 0 ? '+' : '') + v.toFixed(2); s.appendChild(vt);
+  });
+  const ak = P(lt, 1 + g.lean.length * .25, .6);
+  $('leanavg').innerHTML = ak > 0 ? `<span style="opacity:${ak}">المتوسط: <span style="color:${g.avg > .9 ? C('rep') : C('red')}" dir="ltr">${g.avg.toFixed(2).replace('-', '−')}</span>
+    <span class="muted" style="font:500 22px Plex">· * من المصطلحات التي وُجدت في النص</span></span>` : '';
+  if (g.lean.length < 5) $('leanavg').querySelector('.muted')?.remove();
+}
+
+function drawVec(g, lt) {
+  const s = $('vec'); s.innerHTML = '';
+  const cx = 378, cy = 282, R = 262, deg = c => Math.acos(c);
+  s.appendChild(SVG('path', { d: `M ${cx - R} ${cy} A ${R} ${R} 0 0 1 ${cx + R} ${cy}`, fill: 'none', stroke: C('line'), 'stroke-width': 2, 'stroke-dasharray': '6 8' }));
+  const arrow = (ang, len, col, w, label, op, side) => {
+    const x = cx + Math.sin(ang) * len * side, y = cy - Math.cos(ang) * len;
+    s.appendChild(SVG('line', { x1: cx, y1: cy, x2: x, y2: y, stroke: col, 'stroke-width': w, 'stroke-linecap': 'round', opacity: op }));
+    const hx = Math.sin(ang) * side, hy = -Math.cos(ang), px = -hy, py = hx, hs = 8 + w;
+    s.appendChild(SVG('path', { d: `M ${x + hx * 4} ${y + hy * 4} L ${x - hx * hs + px * hs * .6} ${y - hy * hs + py * hs * .6} L ${x - hx * hs - px * hs * .6} ${y - hy * hs - py * hs * .6} Z`, fill: col, opacity: op }));
+    if (label) { const t = SVG('text', { x: x + hx * 26, y: y + hy * 26 + 8, 'font-family': 'Plex', 'font-size': 24, 'font-weight': 600, fill: col, 'text-anchor': 'middle', opacity: op }); t.textContent = label; s.appendChild(t); }
+  };
+  // the term's vector (from its definition) points straight up; each word sits at the angle its cosine gives
+  const tk = P(lt, 4.5, .6);
+  arrow(0, 225 * tk, C('green'), 9, tk > .9 ? `«${g.term}» من تعريفه` : '', tk, 1);
+  g.vec.forEach(([w, c], i) => {
+    const k = P(lt, 5.5 + i * .35, .5);
+    arrow(deg(c), 175 * k, C('muted'), 4, '', k * .85, i % 2 ? 1 : -1);
+  });
+  const ck = P(lt, 8.5, .7), a = deg(g.close);
+  if (ck > 0) {
+    const r = 120, x = cx + Math.sin(a) * r * -1, y = cy - Math.cos(a) * r;
+    s.appendChild(SVG('path', { d: `M ${cx} ${cy - r} A ${r} ${r} 0 0 0 ${x} ${y}`, fill: 'none', stroke: g.pass ? C('rev') : C('red'), 'stroke-width': 4, opacity: ck }));
+    arrow(a, 240 * ck, g.pass ? C('rev') : C('red'), 7, ck > .9 ? 'متوسط الجملة' : '', ck, -1);
+  }
+  const wk = P(lt, 5.5, .6);
+  $('vecwords').innerHTML = g.vec.map(([w, c]) => `<span class="pill" style="font-size:21px;padding:2px 14px;background:var(--bg2);gap:8px">${w}<span dir="ltr" class="muted">${c.toFixed(2)}</span></span>`).join('');
+  $('vecwords').style.opacity = wk;
+  $('vecnote').innerHTML = ck > .5 ? `<span style="opacity:${ck}">قرب المعنى: <span dir="ltr" style="color:${g.pass ? C('rev') : C('red')}">${g.close.toFixed(2)}</span> <span class="muted" style="font:500 22px Plex">(كلما صغرت الزاوية زاد القرب)</span></span>` : '';
+}
+
+function render(t) {
+  for (const [id, a, b] of S) {
+    const el = $(id), on = t >= a - .01 && t < b + .01;
+    if (!on) { el.style.opacity = 0; el.style.display = 'none'; continue; }
+    el.style.display = 'block';
+    el.style.opacity = Math.min(P(t, a, .45), 1 - P(t, b - .45, .45));
+    U[id](t - a);
+  }
+}
+window.DURATION = DURATION;
+render(0);
+</script>
+</body>
+</html>

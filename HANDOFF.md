@@ -41,6 +41,10 @@ Pipeline (user's order): extract → enrich variants → EmbeddingGemma embeddin
   sentence did NOT match «نموذج» (context works). Weak spot: whole-sentence queries dilute the word
   («المودل تدرب…» put «نموذج» 4th) → extract the candidate word first, then rank only its candidate terms.
   Also: same term repeated across dictionaries; a few weak pass-1 variants (e.g. «have numbers») surfaced.
+- **Explainer video (2026-11-09):** `reports/presentation/kass_layer_video.mp4` (130 s, 1080p). Source: an animated page
+  `reports/presentation/video/kass_video.html` (`render(t)` draws second t), rendered by `video/render_video.py`
+  (Edge via Playwright + ffmpeg from `imageio-ffmpeg`; pass seconds as arguments for preview PNGs). Lean and closeness
+  numbers are the detector's for its two sentences; the ranking bars are illustrative. Fonts in `reports/presentation/fonts/`.
 
 ## Status 2026-10-21: pass 2 runs unattended on the office PC (user away for days)
 Gemma-only judging failed the pilot (accepted «فرصة» for احتمال, rejected good forms), so pass 2 is now
