@@ -2,14 +2,14 @@
   "dictionary_id": "004ce05a-0d56-45e4-a284-1b0358d4cfc4",
   "dictionary_name": "معجم مصطلحات علم السلوك",
   "source_export": "data/dictionaries/exports/004ce05a-0d56-45e4-a284-1b0358d4cfc4.json",
-  "generated_at": "2026-11-08T21:12:30.701581+00:00",
+  "generated_at": "2026-11-09T06:43:21.691883+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 205,
     "senses_reviewed": 205,
     "senses_with_variants": 205,
-    "variants_accepted": 305,
-    "variants_needing_review": 108
+    "variants_accepted": 306,
+    "variants_needing_review": 110
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -9726,6 +9726,40 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تجنب قراءة fake news من مصادر غير موثوقة.",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "أخبار كاذبة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
+          },
+          {
+            "form": "الأخبار الكاذبة",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "فيك نيوز",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
             "status": "review",
             "review_reasons": [
               "proposed_for_other_terms"

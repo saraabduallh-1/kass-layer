@@ -2,13 +2,13 @@
   "dictionary_id": "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d",
   "dictionary_name": "معجم مصطلحات الحياة الفطرية",
   "source_export": "data/dictionaries/exports/6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d.json",
-  "generated_at": "2026-11-08T21:12:33.812118+00:00",
+  "generated_at": "2026-11-09T06:43:24.726823+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 632,
     "senses_reviewed": 632,
     "senses_with_variants": 632,
-    "variants_accepted": 965,
+    "variants_accepted": 967,
     "variants_needing_review": 262
   },
   "variant_types": {
@@ -20222,6 +20222,26 @@
             "form": "stray",
             "type": "foreign",
             "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سائب",
+            "type": "informal_synonym",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
+          },
+          {
+            "form": "سايب",
+            "type": "colloquial",
+            "confidence": "medium",
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",

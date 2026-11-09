@@ -2,14 +2,14 @@
   "dictionary_id": "89af196b-70be-4a4b-b193-4b761e0b0fdd",
   "dictionary_name": "قاموس العقود والمشتريات وسلاسل الإمداد",
   "source_export": "data/dictionaries/exports/89af196b-70be-4a4b-b193-4b761e0b0fdd.json",
-  "generated_at": "2026-11-08T21:12:34.171588+00:00",
+  "generated_at": "2026-11-09T06:43:25.097263+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 2284,
     "senses_reviewed": 2284,
     "senses_with_variants": 2284,
-    "variants_accepted": 3324,
-    "variants_needing_review": 1910
+    "variants_accepted": 3325,
+    "variants_needing_review": 1911
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -3675,8 +3675,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -30866,6 +30868,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "أربتريشن",
+            "type": "transliteration",
+            "confidence": "high",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -57202,6 +57214,16 @@
             "review_reasons": [
               "proposed_for_other_terms"
             ]
+          },
+          {
+            "form": "انشورنس",
+            "type": "transliteration",
+            "confidence": "medium",
+            "ambiguous": false,
+            "ambiguity_note": "",
+            "example": "",
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -82881,7 +82903,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
