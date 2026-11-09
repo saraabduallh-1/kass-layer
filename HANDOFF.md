@@ -45,6 +45,8 @@ Pipeline (user's order): extract → enrich variants → EmbeddingGemma embeddin
   `reports/presentation/video/kass_video.html` (`render(t)` draws second t), rendered by `video/render_video.py`
   (Edge via Playwright + ffmpeg from `imageio-ffmpeg`; pass seconds as arguments for preview PNGs). Lean and closeness
   numbers are the detector's for its two sentences; the ranking bars are illustrative. Fonts in `reports/presentation/fonts/`.
+  Sound effects only (clicks, ticks, pops; no music): run `video/add_sfx.py` after every render; its times mirror the page's
+  scene starts and offsets, so change both together.
 
 ## Status 2026-10-21: pass 2 runs unattended on the office PC (user away for days)
 Gemma-only judging failed the pilot (accepted «فرصة» for احتمال, rejected good forms), so pass 2 is now
