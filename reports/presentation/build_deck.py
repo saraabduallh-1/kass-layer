@@ -295,8 +295,8 @@ node(bx[3], by, bw, bh, "الاستعمال الحقيقي", "ويكي بيان�
 node(bx[4], by, bw, bh, "الفهارس الجاهزة", "الصيغ · ميل السياق · متجهات embeddinggemma", fill="fbf6ea", line=BUILD)
 for i in range(4):
     arrow(s, bx[i] - 0.02, by + bh / 2, bx[i + 1] + bw + 0.02, by + bh / 2, color=BUILD)
-arrow(s, bx[4] + bw / 2, by + bh + 0.02, bx[4] + bw / 2, 3.42, color=BUILD, w=1.75)
-text(s, bx[4] + bw / 2 + 0.06, 2.67, 1.5, 0.25, "تُحمَّل للمتصفح", size=9.5, color=BUILD, align=PP_ALIGN.LEFT)
+arrow(s, bx[4] + bw / 2, by + bh + 0.02, bx[4] + bw / 2, 2.93, color=BUILD, w=1.75)
+text(s, bx[4] + bw / 2 + 0.08, 2.64, 3.6, 0.27, "تُحمَّل للمتصفح وتستعملها كل خطوات الكاشف", size=9.5, color=BUILD, align=PP_ALIGN.LEFT)
 
 # run lane row A (right to left): input → normalise → match → domain → context gate
 rw_, rh = 1.95, 0.95
@@ -324,8 +324,8 @@ for i in range(4):
 node(bxs[4] + rw_ + 0.17, yb + 0.12, 1.15, rh - 0.24, "النص النهائي", "", fill=SURF, line=GREEN, tcolor=GREEN)
 arrow(s, bxs[4] + rw_ + 0.02, yb + rh / 2, bxs[4] + rw_ + 0.15, yb + rh / 2, color=STD, dash=True)
 # tried and not adopted: an LLM judge on the context gate
-node(gx + 0.05, 2.98, 2.4, 0.36, "حكم بنموذج لغوي (Clef · Gemma)", "", fill="ffffff", line=RED, dash=True, tcolor=RED, tsize=10)
-arrow(s, gx + 1.25, 3.34, gx + 1.25, ya + 0.02, color=RED, dash=True, head=False)
+node(2.75, ya + rh + 0.12, 2.45, 0.38, "جُرِّب هنا ولم يُعتمد: حكم بنموذج لغوي", "", fill="ffffff", line=RED, dash=True, tcolor=RED, tsize=9.5)
+arrow(s, 3.2, ya + rh + 0.12, gx + gw - 0.3, ya + rh + 0.01, color=RED, dash=True, head=False)
 # legend
 lx = 0.75
 for lab, fill, line, dash in [("منفَّذ ويعمل", SURF, GREEN, False), ("مخطط له", SURF, STD, True), ("جُرِّب ولم يُعتمد", SURF, RED, True)]:
