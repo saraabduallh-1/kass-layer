@@ -745,7 +745,7 @@ summary { cursor: pointer; font-weight: 600 }
       if (x.state === "std") html += `<mark class="std" title="مصطلح معتمد">${esc(x.original)}</mark>`;
       else {
         const c = CHOICE[i];
-        const tip = c ? `الكلمة الأصلية: ${x.original} — اضغط لتغيير الاختيار` : "اضغط لاختيار المصطلح المناسب";
+        const tip = c ? `الكلمة الأصلية: ${x.original} — اضغط لتغيير الاختيار` : c === "" ? "أبقيت كلمتك — اضغط لتغيير الاختيار" : "اضغط لاختيار المصطلح المناسب";
         html += `<button type="button" class="sw ${x.state}${c ? " on" : ""}" data-i="${i}" title="${esc(tip)}" aria-label="${esc(tip)}" aria-haspopup="menu">${esc(shown(x, c))}${SWAP}</button>`;
       }
       pos = x.m.e;
@@ -753,7 +753,7 @@ summary { cursor: pointer; font-weight: 600 }
     html += esc(text.slice(pos));
     $("doc").innerHTML = (html || '<span class="empty">لا يوجد نص.</span>') + '<div class="menu" id="menu" role="menu" hidden></div>';
     const d = $("done"); if (d) d.textContent = CHOICE.filter(Boolean).length;
-    const left = $("left"); if (left) left.textContent = items.filter((x, i) => x.state === "review" && !CHOICE[i]).length;  // a chosen term is decided
+    const left = $("left"); if (left) left.textContent = items.filter((x, i) => x.state === "review" && CHOICE[i] == null).length;  // a chosen term, or the kept word, is decided
     drawItems();
   }
 
@@ -762,11 +762,13 @@ summary { cursor: pointer; font-weight: 600 }
     const order = { replace: 0, review: 1, std: 2 }, label = { replace: "مصطلح مقترح", review: "يحتاج اختيارًا", std: "مصطلح معتمد" };
     const idx = items.map((x, i) => i).sort((a, b) => order[items[a].state] - order[items[b].state]);
     $("items").innerHTML = items.length ? idx.map(i => {
-      const x = items[i], c = CHOICE[i], picked = c && x.choices.find(r => termOf(r) === c), s = picked ? DATA.senses[picked[0]] : x.sense;
+      const x = items[i], c = CHOICE[i], kept = c === "", picked = c && x.choices.find(r => termOf(r) === c), s = picked ? DATA.senses[picked[0]] : x.sense;
       let controls = "";
       if (x.state !== "std") {
-        controls = `<div class="opts">${x.choices.slice(0, 6).map(r => `<button type="button" class="opt" data-i="${i}" data-term="${esc(termOf(r))}" aria-pressed="${c === termOf(r)}">${esc(termOf(r))}</button>`).join("")}<button type="button" class="opt" data-i="${i}" data-term="" aria-pressed="${!c}">الكلمة الأصلية</button></div>`;
+        controls = `<div class="opts">${x.choices.slice(0, 6).map(r => `<button type="button" class="opt" data-i="${i}" data-term="${esc(termOf(r))}" aria-pressed="${c === termOf(r)}">${esc(termOf(r))}</button>`).join("")}<button type="button" class="opt" data-i="${i}" data-term="" aria-pressed="${kept}">الكلمة الأصلية</button></div>`;
       }
+      if (kept) return `<div class="item ${x.state}">
+        <div class="t"><span class="from">${esc(x.original)}</span><span class="pill std">أُبقيت الكلمة الأصلية</span></div>${controls}</div>`;
       return `<div class="item ${x.state}">
         <div class="t"><span class="from">${esc(x.original)}</span>${x.state !== "std" ? `<span class="arrow">←</span><span class="to">${esc(c || s[0])}</span>` : ""}${c ? `<span class="pill replace">تم الاختيار</span>` : `<span class="pill ${x.state}">${label[x.state]}</span>`}</div>
         <div class="meta">${esc(DATA.dictionaries[s[1]])}${s[2] ? ` · بالإنجليزية: <span class="en" dir="ltr">${esc(s[2])}</span>` : ""}</div>
@@ -780,7 +782,7 @@ summary { cursor: pointer; font-weight: 600 }
     const x = LAST.items[i], menu = $("menu"), doc = $("doc");
     menu.innerHTML = `<div class="h">اختر المصطلح المناسب لـ «${esc(x.original)}»</div>` +
       x.choices.slice(0, 6).map(r => `<button type="button" role="menuitemradio" data-i="${i}" data-term="${esc(termOf(r))}" aria-checked="${CHOICE[i] === termOf(r)}">${esc(termOf(r))}<small>${esc(DATA.dictionaries[DATA.senses[r[0]][1]].replace(/^(معجم|قاموس) (مصطلحات |المصطلحات )?/, ""))}</small></button>`).join("") +
-      `<button type="button" role="menuitemradio" data-i="${i}" data-term="" aria-checked="${!CHOICE[i]}">إبقاء الكلمة الأصلية</button>`;
+      `<button type="button" role="menuitemradio" data-i="${i}" data-term="" aria-checked="${CHOICE[i] === ""}">إبقاء الكلمة الأصلية</button>`;
     menu.hidden = false;
     const top = btn.offsetTop + btn.offsetHeight + 6, w = menu.offsetWidth, max = doc.clientWidth - w - 8;
     menu.style.top = top + "px";
@@ -788,7 +790,7 @@ summary { cursor: pointer; font-weight: 600 }
     menu.querySelector("button").focus();
   }
   const closeMenu = () => { const m = $("menu"); if (m) m.hidden = true; };
-  function choose(i, term) { CHOICE[i] = term || null; draw(); }
+  function choose(i, term) { CHOICE[i] = term || ""; draw(); }  // "" = the user kept their word; null = not decided yet
 
   function run() {
     if (!DATA) return;
