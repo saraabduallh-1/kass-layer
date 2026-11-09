@@ -10,8 +10,8 @@ logs/
 # EmbeddingGemma vectors (rebuild with scripts/embeddings/build_embeddings.py build)
 data/embeddings/
 
-# local demo copy (published from the gh-pages branch)
-demo_local/
+# demo_local/ (the site's built data and page) is tracked: the server deploys straight from GitHub (deploy/update.sh)
+demo_local/before.html
 
 # Wikipedia corpus for word statistics (rebuild with scripts/corpus/fetch_wikipedia.py)
 data/corpus/

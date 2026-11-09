@@ -155,6 +155,10 @@ Plan on the PC (Gemma proposes, Claude reviews in small batches, as in pass 2):
   ssh renad@arai.center 'cd ~/apps/kass && podman build -q --format docker -t kass:latest src && podman compose up -d --force-recreate app'
   ```
   The SSH key lives on the user's Mac, so deployment is done from the Mac unless the user sets up a key on the PC.
+  **Since 2026-11-09 the server deploys straight from GitHub:** `demo_local/` is tracked (rebuild it, copy the page to
+  `demo_local/index.html`, commit, push), then from the Mac `ssh renad@arai.center 'sh ~/apps/kass/repo/deploy/update.sh'`
+  (first time: the clone command at the top of `deploy/update.sh`). It builds from `~/apps/kass/repo` (branch
+  enrichment-pass1 by default; pass another branch as the first argument); the rsync steps above are no longer needed.
 - Report for the academy: `reports/تقرير_طبقة_خصص.docx/.pdf` (Arabic progress report dated ١٧ جمادى الأولى ١٤٤٨ هـ).
 
 ## Office PC setup (Windows 11, RTX 3080 10 GB, Python 3.11)
