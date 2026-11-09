@@ -16,6 +16,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from .engine import DOMAINS, TYPE, Detector, replacement
+from .unify import unify
 
 DATA_DIR = Path(os.environ.get("KASS_DATA_DIR", Path(__file__).resolve().parents[3] / "demo_local"))
 MAX_CHARS = 5000
@@ -77,6 +78,17 @@ def analyse(req: AnalyseRequest):
         "suggested_text": "".join(out),
         "ms": round((time.perf_counter() - t0) * 1000, 1),
     }
+
+
+@app.post("/unify")
+def unify_terms(req: AnalyseRequest):
+    """Term consistency inside one text: forms of one concept written differently (المودل، الموديل، نموذج), each group with the
+    form to keep (the SIWAR term, or for spellings outside the dictionaries the most frequent one)."""
+    if req.domain not in {d["id"] for d in DOMAINS}:
+        raise HTTPException(422, f"unknown domain {req.domain!r}")
+    t0 = time.perf_counter()
+    res = unify(detector, req.text, req.domain)
+    return {"domain": req.domain, "groups": res["groups"], "ms": round((time.perf_counter() - t0) * 1000, 1)}
 
 
 # KASS_SERVE_PAGE=1 also serves the demo page and its data files from KASS_DATA_DIR at "/" (one container, no GitHub Pages)

@@ -41,6 +41,10 @@ Pipeline (user's order): extract → enrich variants → EmbeddingGemma embeddin
   sentence did NOT match «نموذج» (context works). Weak spot: whole-sentence queries dilute the word
   («المودل تدرب…» put «نموذج» 4th) → extract the candidate word first, then rank only its candidate terms.
   Also: same term repeated across dictionaries; a few weak pass-1 variants (e.g. «have numbers») surfaced.
+- **Term unification (2026-11-09):** one concept written several ways in a text → one form (`reports/unify.md`).
+  `src/kass_layer/detector/unify.py` = `unifyTerms` in the page (parity `scripts/demo/tests/parity_unify.py` 58/58), API
+  `POST /unify`, page block «توحيد المصطلحات في النص». Scores `run_unify.py`: tuning 100/66.7, heldout 100/71.4
+  (precision/recall of merged pairs). Misses are index gaps (الهاكر، ميتنق، السيرفر in tech).
 - **Explainer video (2026-11-09):** `reports/presentation/kass_layer_video.mp4` (130 s, 1080p). Source: an animated page
   `reports/presentation/video/kass_video.html` (`render(t)` draws second t), rendered by `video/render_video.py`
   (Edge via Playwright + ffmpeg from `imageio-ffmpeg`; pass seconds as arguments for preview PNGs). Lean and closeness

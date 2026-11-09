@@ -45,3 +45,20 @@ def test_everyday_arabic_word_follows_context(client):
     assert found("بنينا عميل ذكي يرد على استفسارات المستخدمين باستخدام نموذج لغوي كبير").get("عميل ذكي") == "وكيل ذكي"
     assert found("المودل والعميل يشتغلون مع بعض").get("والعميل") == "وكيل"  # a borrowed term (المودل) is context too
     assert "العميل" not in found("نحرص على رضا العميل في كل مراحل المشروع")
+
+
+def test_unify_groups_forms_of_one_term(client):
+    r = client.post("/unify", json={"text": "دربنا المودل على بيانات العملاء، ثم قارنّا الموديل الجديد بالنموذج القديم.", "domain": "tech"}).json()
+    assert len(r["groups"]) == 1 and r["groups"][0]["keep"] == "نموذج"
+    assert {f["form"] for f in r["groups"][0]["forms"]} == {"المودل", "الموديل", "بالنموذج"}
+
+
+def test_unify_spellings_outside_the_dictionaries(client):
+    g = client.post("/unify", json={"text": "رفعنا الملفات على الدرايف، ثم شاركنا رابط Drive مع الفريق.", "domain": "tech"}).json()["groups"]
+    assert len(g) == 1 and g[0]["kind"] == "spelling" and g[0]["review"]
+
+
+def test_unify_leaves_inflection_and_glosses_alone(client):
+    for text in ["البنك رفع الفائدة، والفائدة الجديدة تطبق من الشهر القادم.", "اشترينا لابتوب جديد للموظفين، واللابتوب القديم نقلناه للمخزن.",
+                 "تطور الذكاء الاصطناعي (AI) بسرعة، وصار الذكاء الاصطناعي جزءًا من العمل."]:
+        assert client.post("/unify", json={"text": text, "domain": "tech"}).json()["groups"] == []

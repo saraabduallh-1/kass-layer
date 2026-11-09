@@ -251,6 +251,11 @@ summary { cursor: pointer; font-weight: 600 }
         <h2>تفاصيل المصطلحات</h2>
         <div class="items" id="items"></div>
       </div>
+      <div class="block" id="unifyBlock" hidden>
+        <h2>توحيد المصطلحات في النص</h2>
+        <div class="legend"><span class="tip">مفهوم واحد كُتب في النص بأكثر من صيغة. وحّده على صيغة واحدة: المصطلح المعتمد إن وُجد، وإلا الصيغة الأكثر تكرارًا.</span></div>
+        <div class="items" id="unify"></div>
+      </div>
     </div>
 
     <section class="info">
@@ -696,6 +701,89 @@ summary { cursor: pointer; font-weight: 600 }
     return a.length === b.length && a.every((x, i) => Math.min(x.length, b[i].length) >= 3 && (x.startsWith(b[i]) || b[i].startsWith(x)));
   }
 
+  // ---- term consistency inside one text (same as src/kass_layer/detector/unify.py): forms of one concept written
+  // differently. 1. forms the dictionaries link to one term (keep the term); 2. spellings of one borrowed word outside the
+  // dictionaries (keep the most frequent). Never word vectors alone: they put related words and opposites close.
+  const U_ARTICLE = /^(?:[وفبك]?ال|و?لل)(?=.{3,})/u, U_AND = /^و(?=.{4,})/u, U_PLURAL = /(ات|ين|ون|ز|س)$/, COMMON_RATE = 2e-5;
+  const uStrip = w => { const x = w.replace(U_ARTICLE, ""); return x !== w ? x : w.replace(U_AND, ""); };
+  const uTermKey = t => normalize(t.replace(/\([^)]*\)/g, " ")).split(" ").filter(Boolean).map(bare).join(" ");
+  const uFormKey = f => normalize(f).split(" ").filter(Boolean).map(uStrip).join(" ");
+  const uLexeme = word => {
+    let w = uStrip(normalize(word));
+    if (isLatin(w)) return w.length > 3 ? w.replace(/(es|s)$/, "") : w;
+    if (w.length >= 5) w = w.replace(/(هما|ها|هم|هن|كم|نا|ه|ك)$/, "");
+    return w.length > 4 ? w.replace(/(ات|ان|ين|ون|يه|ي|و|ا)$/, "") : w;
+  };
+  const uSameLex = (p, q) => p === q || (Math.min(p.length, q.length) >= 4 && (p.startsWith(q) || q.startsWith(p)))
+    || [[p, q], [q, p]].some(([u, v]) => "وفبلك".includes(u[0]) && u.length >= (u[0] === "و" ? 3 : 4) && u.slice(1) === v);
+  function sameWord(a, b) {  // two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات)
+    let x = normalize(a).split(" ").filter(Boolean).map(uLexeme), y = normalize(b).split(" ").filter(Boolean).map(uLexeme);
+    if (x.length === y.length) return x.every((p, i) => uSameLex(p, y[i]));
+    if (x.length > y.length) [x, y] = [y, x];
+    // a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings
+    for (let i = 0; i <= y.length - x.length; i++) {
+      const part = y.slice(i, i + x.length);
+      if (x.every((p, j) => p === part[j]) || x.every((p, j) => uSameLex(p, part[j]) && p.length === part[j].length)) return true;
+    }
+    return false;
+  }
+  const uDistinct = forms => { const heads = []; for (const f of forms) if (!heads.some(h => sameWord(f, h))) heads.push(f); return heads.length; };
+  function uGlossed(text, s, e) {  // «الذكاء الاصطناعي (AI)», «(بالإنجليزية: Cloud computing)», software as a service
+    const before = text.slice(Math.max(0, s - 60), s), after = text.slice(e, e + 60);
+    if (before.includes("(") && !before.slice(before.lastIndexOf("(")).includes(")") && after.includes(")") && !after.slice(0, after.indexOf(")")).includes("(")) return true;
+    if (/[A-Za-z]/.test(text.slice(s, e))) return /[A-Za-z]+[\s\-]*$/.test(before) || /^[\s\-]*[A-Za-z]+/.test(after);
+    return false;
+  }
+  const uSpellingKey = w => { if (isLatin(w)) return enSkels(w)[0]; const x = uStrip(w); return arSkel(x.length > 5 ? x.replace(U_PLURAL, "") : x); };
+  const uSim = (a, b) => 1 - lev(a, b) / Math.max(a.length, b.length, 1);
+  function unifyTerms(text, res) {
+    const groups = [], tokens = res.tokens, S = DATA.senses;
+    const stdKeys = new Set(res.items.filter(it => it.state === "std").map(it => uTermKey(S[it.best[0]][0])));
+    const byTerm = new Map();
+    for (const it of res.items) {
+      // a form with several terms takes the one the writer also uses (الإنفرتر → عاكس التيار, when «عاكس التيار» is there)
+      const best = it.choices.find(r => stdKeys.has(uTermKey(S[r[0]][0]))) || it.best, sense = S[best[0]], k = uTermKey(sense[0]);
+      if (!byTerm.has(k)) byTerm.set(k, { term: sense[0], dictionary: DATA.dictionaries[sense[1]], uses: [] });
+      if (uGlossed(text, it.m.s, it.m.e)) continue;
+      if (it.state === "std" && it.m.n === 1 && !sameWord(it.original, sense[0])) continue;  // another word (عملية / العملة)
+      byTerm.get(k).uses.push({ text: it.original, start: it.m.s, end: it.m.e, state: it.state });
+    }
+    const countForms = uses => { const forms = new Map(); for (const u of uses) { const k = uFormKey(u.text); if (!forms.has(k)) forms.set(k, { form: u.text, count: 0, standard: u.state === "std" }); forms.get(k).count++; } return forms; };
+    for (const g of byTerm.values()) {
+      const n = uTermKey(g.term).split(" ").length;
+      const taken = [...byTerm.values()].flatMap(gg => gg.uses.map(u => [u.start, u.end]));
+      for (let i = 0; i + n - 1 < tokens.length; i++) {  // the term itself, written anywhere (خادم، العقد)
+        const s0 = tokens[i].s, e0 = tokens[i + n - 1].e, win = text.slice(s0, e0);
+        if (taken.some(([s, e]) => s0 < e && e0 > s) || !sameWord(win, g.term.replace(/\([^)]*\)/g, " "))) continue;
+        g.uses.push({ text: win, start: s0, end: e0, state: "std" }); taken.push([s0, e0]);
+      }
+      const forms = countForms(g.uses);
+      if (uDistinct([...forms.values()].map(f => f.form)) < 2) continue;  // one word throughout, however inflected
+      groups.push({ kind: "dictionary", keep: g.term, dictionary: g.dictionary, review: g.uses.some(u => u.state === "review"),
+                    forms: [...forms.values()].sort((a, b) => b.count - a.count), uses: g.uses });
+    }
+    const covered = res.items.map(it => [it.m.s, it.m.e]), bySkel = new Map();
+    for (const t of tokens) {
+      if (covered.some(([s, e]) => t.s < e && t.e > s)) continue;
+      const w = t.n, latin = isLatin(w) && w.length >= 4, x = bare(uStrip(w));
+      // not ordinary Arabic (rare in general articles, not in the dictionaries' Arabic) and spelled like a borrowing (ديتا، سوفتوير)
+      const common = knownArabic(x) || (WORDS && WORD_GEN ? [...ctxWords(w)].some(c => WORDS.has(c) && WORD_GEN[WORDS.get(c)] / GEN_TOTAL >= COMMON_RATE) : false);
+      const borrowed = /^[؀-ۿ]+$/.test(w) && x.length >= 4 && !common && vowels(x) >= 2 && (looksBorrowed(w) || foreignLooking(x, false));
+      if (!(latin || borrowed)) continue;
+      const k = uSpellingKey(w);
+      if (k.length >= 3 && !uGlossed(text, t.s, t.e)) { if (!bySkel.has(k)) bySkel.set(k, []); bySkel.get(k).push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" }); }
+    }
+    for (const uses of bySkel.values()) {
+      const forms = countForms(uses), keys = [...forms.keys()];
+      if (uDistinct([...forms.values()].map(f => f.form)) < 2) continue;
+      if (!keys.every(a => keys.every(b => !(a < b) || uSim(uSpellingKey(a), uSpellingKey(b)) >= 0.75))) continue;
+      const ranked = [...forms.values()].sort((a, b) => b.count - a.count || isLatin(normalize(a.form)) - isLatin(normalize(b.form)));
+      const top = ranked[0].form;
+      groups.push({ kind: "spelling", keep: isLatin(normalize(top)) ? top : uStrip(top), dictionary: null, review: true, forms: ranked, uses });
+    }
+    return groups.sort((a, b) => Math.min(...a.uses.map(u => u.start)) - Math.min(...b.uses.map(u => u.start)));
+  }
+
   function adaptArticle(term, prefix, original) {
     const words = term.split(" ");
     const lead = prefix.replace(/ال$|لل$/, m => m === "لل" ? "ل" : "");
@@ -719,7 +807,7 @@ summary { cursor: pointer; font-weight: 600 }
       <div class="stat"><div class="k">يحتاج تدقيقًا</div><div class="v" id="left" style="color:var(--review)">${count("review")}</div></div>
       <div class="stat"><div class="k">تم استبداله</div><div class="v" id="done" style="color:var(--green)">0</div></div>
       <div class="stat"><div class="k">مصطلحات معتمدة مستخدمة</div><div class="v" style="color:var(--std)">${count("std")}</div></div>`;
-    LAST = { text, items, unknown: res.unknown }; CHOICE = items.map(() => null);
+    LAST = { text, items, unknown: res.unknown, groups: unifyTerms(text, res) }; CHOICE = items.map(() => null);
     draw();
     const out = $("out"); out.hidden = false; out.classList.remove("fresh"); void out.offsetWidth; out.classList.add("fresh");
   }
@@ -755,7 +843,27 @@ summary { cursor: pointer; font-weight: 600 }
     const d = $("done"); if (d) d.textContent = CHOICE.filter(Boolean).length;
     const left = $("left"); if (left) left.textContent = items.filter((x, i) => x.state === "review" && CHOICE[i] == null).length;  // a chosen term, or the kept word, is decided
     drawItems();
+    drawUnify();
   }
+
+  function drawUnify() {
+    const groups = LAST.groups || [];
+    $("unifyBlock").hidden = !groups.length;
+    $("unify").innerHTML = groups.map((g, gi) => {
+      const idx = unifyItems(g), done = idx.length && idx.every(i => CHOICE[i] === g.keep);
+      const forms = g.forms.map(f => `<span class="from">${esc(f.form)}</span>${f.count > 1 ? ` <span class="meta">×${f.count}</span>` : ""}${f.standard ? ` <span class="meta">(معتمد)</span>` : ""}`).join("، ");
+      return `<div class="item ${g.review ? "review" : "replace"}">
+        <div class="t"><span>اكتب</span><span class="to">${esc(g.keep)}</span><span>في كل المواضع</span>${done ? `<span class="pill replace">تم التوحيد</span>` : g.review ? `<span class="pill review">تحقّق قبل التوحيد</span>` : ""}</div>
+        <div>الصيغ في النص: ${forms}</div>
+        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاختيرت الأكثر تكرارًا"}</div>
+        ${idx.length && !done ? `<div class="opts"><button type="button" class="opt" data-g="${gi}">توحيد على «${esc(g.keep)}»</button></div>` : ""}</div>`;
+    }).join("");
+  }
+  // the suggestions in a group that can take its term (spellings outside the dictionaries have none)
+  const unifyItems = g => LAST.items.map((x, i) => i).filter(i => {
+    const x = LAST.items[i];
+    return x.state !== "std" && g.uses.some(u => u.start === x.m.s) && x.choices.some(r => termOf(r) === g.keep);
+  });
 
   function drawItems() {
     const { items } = LAST;
@@ -831,6 +939,10 @@ summary { cursor: pointer; font-weight: 600 }
     openMenu(b, i);
   });
   $("items").addEventListener("click", e => { const b = e.target.closest(".opt"); if (b) choose(+b.dataset.i, b.dataset.term); });
+  $("unify").addEventListener("click", e => {
+    const b = e.target.closest(".opt[data-g]"); if (!b) return;
+    const g = LAST.groups[+b.dataset.g]; for (const i of unifyItems(g)) CHOICE[i] = g.keep; draw();
+  });
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
   document.addEventListener("click", e => { if (!e.target.closest("#doc")) closeMenu(); });
   $("all").addEventListener("click", () => { LAST.items.forEach((x, i) => { if (x.state === "replace") CHOICE[i] = x.sense[0]; }); draw(); });
