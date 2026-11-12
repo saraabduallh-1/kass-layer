@@ -62,3 +62,19 @@ def test_unify_leaves_inflection_and_glosses_alone(client):
     for text in ["البنك رفع الفائدة، والفائدة الجديدة تطبق من الشهر القادم.", "اشترينا لابتوب جديد للموظفين، واللابتوب القديم نقلناه للمخزن.",
                  "تطور الذكاء الاصطناعي (AI) بسرعة، وصار الذكاء الاصطناعي جزءًا من العمل."]:
         assert client.post("/unify", json={"text": text, "domain": "tech"}).json()["groups"] == []
+
+
+def test_unify_lets_the_writer_choose(client):
+    """The writer picks the form and the places: every use carries its text under every option (its own و/ب/ال kept)."""
+    text = ("درّبنا المودل على بيانات العملاء، ثم قارنّا الموديل الجديد بالنموذج القديم. "
+            "رفعنا الملفات على الدرايف، ثم شاركنا رابط الدرايف مع الفريق، وحفظنا نسخة في Drive.")
+    groups = client.post("/unify", json={"text": text, "domain": "tech"}).json()["groups"]
+    model, drive = groups
+    assert model["options"] == ["نموذج", "مودل", "موديل"] and drive["options"] == ["درايف", "Drive"]
+    by_text = {u["text"]: u["replacements"] for u in model["uses"]}
+    assert by_text["المودل"]["نموذج"] == "النموذج" and by_text["بالنموذج"]["مودل"] == "بالمودل"
+    assert [u["replacements"]["Drive"] for u in drive["uses"]] == ["Drive", "Drive", "Drive"]
+    assert [u["replacements"]["درايف"] for u in drive["uses"]] == ["الدرايف", "الدرايف", "درايف"]
+    # applying one option to the uses the writer picked (here: only the last) changes nothing else
+    u = drive["uses"][-1]
+    assert (text[:u["start"]] + u["replacements"]["درايف"] + text[u["end"]:]).endswith("نسخة في درايف.")

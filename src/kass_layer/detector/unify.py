@@ -163,3 +163,49 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
 
     groups.sort(key=lambda g: min(u["start"] for u in g["uses"]))
     return {"groups": groups}
+
+
+# ---- the writer's choice (same rules as unifyOptions / formFor / unifyPlan in the page): for each group the forms the
+# writer may keep, and for each use the text it takes under each of them. A client shows the options, lets the writer
+# pick one and the uses to change (all, or some), and writes use["replacements"][kept] at use["start"]:use["end"].
+
+def options(group: dict) -> list[str]:
+    """The suggested form first, then every other form of the group without its article (المودل → مودل)."""
+    out, seen = [group["keep"]], {term_key(group["keep"])}
+    for f in group["forms"]:
+        c = f["form"] if is_latin(normalize(f["form"])) else _strip(f["form"])
+        if term_key(c) not in seen:
+            seen.add(term_key(c))
+            out.append(c)
+    return out
+
+
+def form_for(use: str, keep: str) -> str:
+    """The text one use takes when the writer keeps «keep»: its own و/ب/ال stay (بالمودل → بالنموذج)."""
+    lead, had_al = "", False
+    if not is_latin(normalize(use)):
+        m = _ARTICLE.match(use)
+        if m:
+            lead, had_al = m.group(0), True
+        elif a := _AND.match(use):
+            lead = a.group(0)
+    no_al = re.sub("^(و?)لل$", r"\1ل", re.sub("ال$", "", lead))
+    if is_latin(normalize(keep)) or " " in keep:
+        return (no_al if had_al else lead) + keep
+    return lead + (keep[2:] if keep.startswith("ال") and len(keep) > 4 else keep)
+
+
+def with_choices(det: Detector, groups: list[dict], analysis: dict) -> list[dict]:
+    """Adds group["options"] and use["replacements"] = {option: text}. A use the detector already suggests the term
+    for takes the suggestion's own text for that term (pronoun endings carried over), as the page does."""
+    from .engine import replacement
+    items = {it["m"]["s"]: it for it in analysis["items"] if it["state"] != "std"}
+    for g in groups:
+        g["options"] = options(g)
+        for u in g["uses"]:
+            it = items.get(u["start"])
+            u["replacements"] = {
+                o: replacement(o, it) if it is not None and o == g["keep"] and any(det.senses[r[0]][0] == o for r in it["choices"])
+                else form_for(u["text"], o)
+                for o in g["options"]}
+    return groups

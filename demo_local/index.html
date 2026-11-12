@@ -158,6 +158,11 @@ mark.std { background: var(--std-bg) }
 .pill { font-size: .74rem; padding: 1px 10px; border-radius: 99px; font-weight: 600 }
 .pill.replace { background: var(--replace-bg); color: var(--replace) } .pill.review { background: var(--review-bg); color: var(--review) } .pill.std { background: var(--std-bg); color: var(--std) }
 .meta { font-size: .85rem; color: var(--muted) }
+.ukeep { font: inherit; font-weight: 700; color: var(--replace); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 1px 8px; cursor: pointer }
+.umode { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .88rem }
+.umode label, .uses label { display: inline-flex; gap: 6px; align-items: baseline; cursor: pointer }
+.uses { display: grid; gap: 4px; font-size: .88rem; color: var(--muted) } .uses b { color: var(--ink) }
+.opt:disabled { opacity: .45; cursor: default }
 .en { font-size: .85rem; direction: ltr; unicode-bidi: isolate }
 .choices { font-size: .88rem } .choices b { color: var(--review) }
 .empty { color: var(--muted) }
@@ -253,7 +258,7 @@ summary { cursor: pointer; font-weight: 600 }
       </div>
       <div class="block" id="unifyBlock" hidden>
         <h2>توحيد المصطلحات في النص</h2>
-        <div class="legend"><span class="tip">مفهوم واحد كُتب في النص بأكثر من صيغة. وحّده على صيغة واحدة: المصطلح المعتمد إن وُجد، وإلا الصيغة الأكثر تكرارًا.</span></div>
+        <div class="legend"><span class="tip">مفهوم واحد كُتب في النص بأكثر من صيغة. نقترح المصطلح المعتمد إن وُجد، وإلا الصيغة الأكثر تكرارًا، ولك أن تختار الصيغة والمواضع.</span></div>
         <div class="items" id="unify"></div>
       </div>
     </div>
@@ -303,7 +308,7 @@ summary { cursor: pointer; font-weight: 600 }
     { label: "نص قانوني بكلمات عربية عامة", domain: "legal", text: "قدم المدعي القضية إلى المحكمة الابتدائية وطلب التعويض عن الضرر." },
     { label: "خبر إعلامي بكلمات عربية عامة", domain: "media", text: "مقدم البرنامج استضاف وزير الإعلام في الحلقة المباشرة، وأصدرت الوزارة بيان للصحفيين حول الحادثة." }
   ];
-  let DATA = null, current = "tech", LAST = { text: "", items: [] }, CHOICE = [], EDITS = new Map();
+  let DATA = null, current = "tech", LAST = { text: "", items: [] }, CHOICE = [], EDITS = new Map(), UST = [];
 
   const normalize = t => (t || "").replace(DIAC, "").replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
     .toLowerCase().replace(PUNCT, " ").split(/\s+/).filter(Boolean).join(" ");
@@ -807,7 +812,7 @@ summary { cursor: pointer; font-weight: 600 }
       <div class="stat"><div class="k">يحتاج تدقيقًا</div><div class="v" id="left" style="color:var(--review)">${count("review")}</div></div>
       <div class="stat"><div class="k">تم استبداله</div><div class="v" id="done" style="color:var(--green)">0</div></div>
       <div class="stat"><div class="k">مصطلحات معتمدة مستخدمة</div><div class="v" style="color:var(--std)">${count("std")}</div></div>`;
-    LAST = { text, items, unknown: res.unknown, groups: unifyTerms(text, res) }; CHOICE = items.map(() => null); EDITS = new Map();
+    LAST = { text, items, unknown: res.unknown, groups: unifyTerms(text, res) }; CHOICE = items.map(() => null); EDITS = new Map(); resetUnify();
     draw();
     const out = $("out"); out.hidden = false; out.classList.remove("fresh"); void out.offsetWidth; out.classList.add("fresh");
   }
@@ -833,7 +838,7 @@ summary { cursor: pointer; font-weight: 600 }
 
   function currentText() {
     const { text, items } = LAST; let out = "", pos = 0;
-    items.forEach((x, i) => { out += plain(pos, x.m.s) + shown(x, CHOICE[i]); pos = x.m.e; });
+    items.forEach((x, i) => { const ed = EDITS.get(x.m.s); out += plain(pos, x.m.s) + (ed ? ed[1] : shown(x, CHOICE[i])); pos = ed ? ed[0] : x.m.e; });
     return out + plain(pos, text.length);
   }
 
@@ -841,6 +846,8 @@ summary { cursor: pointer; font-weight: 600 }
     const { text, items } = LAST; let html = "", pos = 0;
     items.forEach((x, i) => {
       html += plain(pos, x.m.s, true);
+      const ed = EDITS.get(x.m.s);
+      if (ed) { html += `<mark class="replace" title="${esc("كانت: " + text.slice(x.m.s, ed[0]))}">${esc(ed[1])}</mark>`; pos = ed[0]; return; }
       if (x.state === "std") html += `<mark class="std" title="مصطلح معتمد">${esc(x.original)}</mark>`;
       else {
         const c = CHOICE[i];
@@ -857,31 +864,76 @@ summary { cursor: pointer; font-weight: 600 }
     drawUnify();
   }
 
+  // ---- the writer decides each unify group: which form to write (the suggested one first) and where (every use, or the
+  // uses they tick). Each use keeps its own و/ب/ال (بالمودل → بالنموذج، والدرايف stays). An applied group can be undone.
+  // The same rules are in src/kass_layer/detector/unify.py (options, form_for, apply_edits) for the API.
+  function resetUnify() {
+    UST = (LAST.groups || []).map(g => ({ keep: g.keep, mode: "all", picked: new Set(g.uses.map(u => u.start)), applied: null }));
+  }
+  function unifyOptions(g) {  // the suggested form, then every other form of the group without its article
+    const out = [g.keep], seen = new Set([uTermKey(g.keep)]);
+    for (const f of g.forms) {
+      const c = isLatin(normalize(f.form)) ? f.form : uStrip(f.form), k = uTermKey(c);
+      if (!seen.has(k)) { seen.add(k); out.push(c); }
+    }
+    return out;
+  }
+  function formFor(use, keep) {  // the text one use takes when the writer keeps «keep»
+    let lead = "", hadAl = false;
+    if (!isLatin(normalize(use))) {
+      const m = use.match(U_ARTICLE);
+      if (m) { lead = m[0]; hadAl = true; } else { const a = use.match(U_AND); if (a) lead = a[0]; }
+    }
+    const noAl = lead.replace(/ال$/, "").replace(/^(و?)لل$/, "$1ل");
+    if (isLatin(normalize(keep)) || keep.includes(" ")) return (hadAl ? noAl : lead) + keep;
+    return lead + (keep.startsWith("ال") && keep.length > 4 ? keep.slice(2) : keep);
+  }
+  function unifyPlan(gi) {  // the uses that change: through the suggestion (keeps its suffix handling) or as a spelling edit
+    const g = LAST.groups[gi], st = UST[gi];
+    return g.uses.filter(u => st.mode === "all" || st.picked.has(u.start)).map(u => {
+      const i = LAST.items.findIndex(x => x.m.s === u.start && x.state !== "std");
+      const viaChoice = i >= 0 && st.keep === g.keep && LAST.items[i].choices.some(r => termOf(r) === g.keep);
+      return { start: u.start, end: u.end, i: viaChoice ? i : -1, text: viaChoice ? shown(LAST.items[i], g.keep) : formFor(u.text, st.keep) };
+    }).filter(p => p.text !== LAST.text.slice(p.start, p.end));
+  }
+  function applyUnify(gi) {
+    const plan = unifyPlan(gi);
+    for (const p of plan) { if (p.i >= 0) CHOICE[p.i] = LAST.groups[gi].keep; else EDITS.set(p.start, [p.end, p.text]); }
+    UST[gi].applied = plan; draw();
+  }
+  function undoUnify(gi) {
+    for (const p of UST[gi].applied || []) { if (p.i >= 0) CHOICE[p.i] = null; else EDITS.delete(p.start); }
+    UST[gi].applied = null; draw();
+  }
+  function useContext(u) {  // «…الملفات على الدرايف، ثم شاركنا…» with the use in bold
+    const t = LAST.text, before = t.slice(Math.max(0, u.start - 28), u.start), after = t.slice(u.end, u.end + 28);
+    return `…${esc(u.start > 28 ? before.replace(/^\S*\s/, "") : before)}<b>${esc(t.slice(u.start, u.end))}</b>${esc(u.end + 28 < t.length ? after.replace(/\s\S*$/, "") : after)}…`;
+  }
+
   function drawUnify() {
     const groups = LAST.groups || [];
     $("unifyBlock").hidden = !groups.length;
     $("unify").innerHTML = groups.map((g, gi) => {
-      const idx = unifyItems(g), edits = g.kind === "spelling" ? spellingEdits(g) : [];
-      const can = idx.length || edits.length, done = can && idx.every(i => CHOICE[i] === g.keep) && edits.every(([s, e, w]) => EDITS.has(s));
+      const st = UST[gi], done = !!st.applied, opts = unifyOptions(g), n = done ? st.applied.length : unifyPlan(gi).length;
+      const why = g.kind === "dictionary" ? "المصطلح المعتمد" : "الأكثر تكرارًا";
       const forms = g.forms.map(f => `<span class="from">${esc(f.form)}</span>${f.count > 1 ? ` <span class="meta">×${f.count}</span>` : ""}${f.standard ? ` <span class="meta">(معتمد)</span>` : ""}`).join("، ");
+      const dis = done ? " disabled" : "";
+      const count = k => k === 1 ? "موضع واحد" : k === 2 ? "موضعان" : k + " مواضع";
       return `<div class="item ${g.review ? "review" : "replace"}">
-        <div class="t"><span>اكتب</span><span class="to">${esc(g.keep)}</span><span>في كل المواضع</span>${done ? `<span class="pill replace">تم التوحيد</span>` : g.review ? `<span class="pill review">تحقّق قبل التوحيد</span>` : ""}</div>
+        <div class="t"><span>اكتب</span><select class="ukeep" data-g="${gi}" aria-label="الصيغة التي تُكتب"${dis}>${opts.map((o, k) =>
+          `<option value="${esc(o)}"${o === st.keep ? " selected" : ""}>${esc(o)}${k === 0 ? ` (${why})` : ""}</option>`).join("")}</select>
+          ${done ? `<span class="pill replace">تم التوحيد</span>` : g.review ? `<span class="pill review">تحقّق قبل التوحيد</span>` : ""}</div>
         <div>الصيغ في النص: ${forms}</div>
-        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاختيرت الأكثر تكرارًا"}</div>
-        ${can && !done ? `<div class="opts"><button type="button" class="opt" data-g="${gi}">توحيد على «${esc(g.keep)}»</button></div>` : ""}</div>`;
+        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاقتُرحت الأكثر تكرارًا"}</div>
+        <div class="umode">
+          <label><input type="radio" name="um${gi}" value="all" data-g="${gi}"${st.mode === "all" ? " checked" : ""}${dis}> في كل المواضع (${g.uses.length})</label>
+          <label><input type="radio" name="um${gi}" value="pick" data-g="${gi}"${st.mode === "pick" ? " checked" : ""}${dis}> في مواضع أختارها</label></div>
+        ${st.mode === "pick" ? `<div class="uses">${g.uses.map(u => `<label><input type="checkbox" data-g="${gi}" data-s="${u.start}"${st.picked.has(u.start) ? " checked" : ""}${dis}> <span>${useContext(u)}</span></label>`).join("")}</div>` : ""}
+        <div class="opts">${done
+          ? `<button type="button" class="opt" data-g="${gi}" data-act="undo">تراجع عن هذا التوحيد</button>`
+          : `<button type="button" class="opt" data-g="${gi}" data-act="apply"${n ? "" : " disabled"}>${n ? `توحيد على «${esc(st.keep)}» (${count(n)})` : "لا شيء يتغيّر"}</button>`}</div></div>`;
     }).join("");
   }
-  // a spelling group outside the dictionaries: each use that is not already the kept form becomes it, keeping its و/ال
-  // (Drive → درايف, والدرايف stays)
-  const spellingEdits = g => g.uses.map(u => {
-    const core = isLatin(normalize(u.text)) ? u.text : uStrip(u.text), lead = isLatin(normalize(u.text)) ? "" : u.text.slice(0, u.text.length - core.length);
-    return [u.start, u.end, lead + g.keep];
-  }).filter(([s, e, w]) => LAST.text.slice(s, e) !== w);
-  // the suggestions in a group that can take its term (spellings outside the dictionaries have none)
-  const unifyItems = g => LAST.items.map((x, i) => i).filter(i => {
-    const x = LAST.items[i];
-    return x.state !== "std" && g.uses.some(u => u.start === x.m.s) && x.choices.some(r => termOf(r) === g.keep);
-  });
 
   function drawItems() {
     const { items } = LAST;
@@ -958,16 +1010,20 @@ summary { cursor: pointer; font-weight: 600 }
   });
   $("items").addEventListener("click", e => { const b = e.target.closest(".opt"); if (b) choose(+b.dataset.i, b.dataset.term); });
   $("unify").addEventListener("click", e => {
-    const b = e.target.closest(".opt[data-g]"); if (!b) return;
-    const g = LAST.groups[+b.dataset.g];
-    for (const i of unifyItems(g)) CHOICE[i] = g.keep;
-    if (g.kind === "spelling") for (const [s, e, w] of spellingEdits(g)) EDITS.set(s, [e, w]);
-    draw();
+    const b = e.target.closest(".opt[data-act]"); if (!b) return;
+    (b.dataset.act === "apply" ? applyUnify : undoUnify)(+b.dataset.g);
+  });
+  $("unify").addEventListener("change", e => {
+    const t = e.target, gi = +t.dataset.g, st = UST[gi]; if (!st || st.applied) return;
+    if (t.matches(".ukeep")) st.keep = t.value;
+    else if (t.type === "radio") st.mode = t.value;
+    else if (t.type === "checkbox") { const s0 = +t.dataset.s; if (t.checked) st.picked.add(s0); else st.picked.delete(s0); }
+    drawUnify();
   });
   document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
   document.addEventListener("click", e => { if (!e.target.closest("#doc")) closeMenu(); });
   $("all").addEventListener("click", () => { LAST.items.forEach((x, i) => { if (x.state === "replace") CHOICE[i] = x.sense[0]; }); draw(); });
-  $("reset").addEventListener("click", () => { CHOICE = LAST.items.map(() => null); EDITS = new Map(); draw(); });
+  $("reset").addEventListener("click", () => { CHOICE = LAST.items.map(() => null); EDITS = new Map(); resetUnify(); draw(); });
   $("copy").addEventListener("click", () => {
     const t = currentText();
     navigator.clipboard.writeText(t).then(() => $("status").textContent = "نُسخ النص بحالته الحالية.", () => {

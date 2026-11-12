@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>سرعة خصص</title>
+<!-- One slide-size image of the system's speed, rendered by render_speed.py, which passes bench.json in as window.DATA. -->
+<style>
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Bold.ttf);font-weight:700}
+:root{--bg:#f6f7f2;--bg2:#eef2ea;--surf:#fff;--ink:#14231d;--muted:#5b6b63;--line:#dde5dd;--green:#0b4b33;--rep:#1b7448;--gold:#c08f1f;--mint:#e5efe7;--goldbg:#f8edd6}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Plex;color:var(--ink)}
+.abs{position:absolute}
+.card{background:var(--surf);border:2px solid var(--line);border-radius:22px}
+.head{position:absolute;top:52px;right:96px;left:96px;display:flex;align-items:center;gap:26px}
+.title{font:700 56px Plex}
+.sub{font:500 28px Plex;color:var(--muted);margin-top:4px}
+.logo{position:absolute;top:66px;left:96px;height:56px}
+.tile{position:absolute;top:220px;width:520px;height:290px;padding:30px 36px}
+.tile .k{font:700 32px Plex;display:flex;align-items:center;gap:14px}
+.sw{width:22px;height:22px;border-radius:6px;flex:none}
+.tile .v{font:700 88px Plex;line-height:1.05;margin-top:4px}
+.tile .v small{font:600 34px Plex;color:var(--muted);margin-right:10px}
+.tile .d{font:500 26px Plex;color:var(--muted);margin-top:8px;line-height:1.5}
+.foot{position:absolute;bottom:0;left:0;right:0;height:96px;background:var(--green);color:#e3efe7;font:500 25px Plex;display:flex;align-items:center;justify-content:center;gap:34px}
+.foot b{color:#fff;font-weight:600}
+</style>
+</head>
+<body>
+<div class="head"><div><div class="title">سرعة خصص</div><div class="sub">زمن المعالجة بحسب طول النص · ملّي ثانية</div></div></div>
+<img class="logo" src="../wordmark_green.png">
+
+<div class="tile card" style="right:96px;border-top:10px solid var(--rep)">
+  <div class="k"><span class="sw" style="background:var(--rep)"></span>استبدال المصطلحات</div>
+  <div class="v" id="v1"></div>
+  <div class="d" id="d1"></div>
+</div>
+<div class="tile card" style="right:648px;border-top:10px solid var(--gold)">
+  <div class="k"><span class="sw" style="background:var(--gold)"></span>توحيد المصطلحات</div>
+  <div class="v" id="v2"></div>
+  <div class="d" id="d2"></div>
+</div>
+<div class="tile card" style="right:1200px;width:624px;background:var(--mint);border-color:var(--mint)">
+  <div class="k" style="color:var(--green)">صفحة كاملة في أقل من عُشر ثانية</div>
+  <div class="d" style="color:var(--ink);font-size:28px;margin-top:22px;line-height:1.65" id="d3"></div>
+</div>
+
+<div class="abs card" style="right:96px;left:96px;top:540px;height:420px;padding:22px 36px 10px">
+  <div class="row" style="display:flex;justify-content:space-between;align-items:center">
+    <div style="font:700 30px Plex">الزمن بحسب عدد كلمات النص</div>
+    <div style="display:flex;gap:30px;font:600 24px Plex">
+      <span style="display:flex;align-items:center;gap:10px"><span class="sw" style="background:var(--rep)"></span>استبدال المصطلحات</span>
+      <span style="display:flex;align-items:center;gap:10px"><span class="sw" style="background:var(--gold)"></span>توحيد المصطلحات (يشمل التحليل)</span>
+    </div>
+  </div>
+  <svg id="chart" width="1724" height="340"></svg>
+</div>
+
+<div class="foot" id="foot"></div>
+
+<script>
+const D = window.DATA;
+const ar = n => String(n).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[d]).replace('.', '٫');
+const r0 = n => ar(Math.round(n));
+const at = w => D.find(x => x.words === w);
+const page = at(300), big = at(1000);
+document.getElementById('v1').innerHTML = `${r0(page.analyse)}<small>ملّي ثانية</small>`;
+document.getElementById('d1').innerHTML = `لصفحة من ٣٠٠ كلمة<br>و${r0(big.analyse)} ملّي ثانية لألف كلمة`;
+document.getElementById('v2').innerHTML = `${r0(page.unify_full)}<small>ملّي ثانية</small>`;
+document.getElementById('d2').innerHTML = `لصفحة من ٣٠٠ كلمة، مع التحليل<br>و${r0(big.unify_full)} ملّي ثانية لألف كلمة`;
+document.getElementById('d3').innerHTML = `يكتشف المصطلحات ويقترح بدائلها، ثم يجمع صيغ المفهوم الواحد، في <b>${r0(page.unify_full)} ملّي ثانية</b> لصفحة كاملة.<br>والزمن ينمو مع طول النص بانتظام، دون قفزات.`;
+document.getElementById('foot').innerHTML = `<span><b>الوسيط</b> من ١٥ تشغيلًا</span><span>·</span><span>معالج Intel، بلا بطاقة رسومية</span><span>·</span><span>تُحمَّل الفهارس <b>مرة واحدة</b> عند التشغيل (١٫٢ ثانية)</span>`;
+
+// grouped bars: one group per text length, two bars, values printed on every bar (the gold fails 3:1 on white)
+const svg = document.getElementById('chart'), NS = 'http://www.w3.org/2000/svg';
+const el = (t, a, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; svg.appendChild(e); return e; };
+const W = 1724, H = 340, yTop = 34, base = 280, max = 200, y = v => base - (base - yTop) * v / max;
+for (const g of [0, 50, 100, 150, 200]) {
+  el('line', { x1: 60, x2: W, y1: y(g), y2: y(g), stroke: g ? '#e8ede8' : '#b9c4bc', 'stroke-width': g ? 1 : 2 });
+  el('text', { x: 46, y: y(g) + 8, 'font-family': 'Plex', 'font-size': 24, fill: '#5b6b63', 'text-anchor': 'end' }, ar(g));
+}
+const n = D.length, band = (W - 80) / n, bw = 92, gap = 4;
+D.forEach((d, i) => {
+  const cx = W - band * (i + .5);  // right to left: shortest text first
+  [[d.analyse, '#1b7448', 1], [d.unify_full, '#c08f1f', -1]].forEach(([v, c, side]) => {
+    const x = side > 0 ? cx + gap / 2 : cx - gap / 2 - bw, hgt = base - y(v), r = Math.min(4, hgt);
+    el('path', { d: `M${x} ${base} V${y(v) + r} Q${x} ${y(v)} ${x + r} ${y(v)} H${x + bw - r} Q${x + bw} ${y(v)} ${x + bw} ${y(v) + r} V${base} Z`, fill: c });
+    el('text', { x: x + bw / 2, y: y(v) - 10, 'font-family': 'Plex', 'font-size': 24, 'font-weight': 700, fill: '#14231d', 'text-anchor': 'middle' }, r0(v));
+  });
+  el('text', { x: cx, y: base + 40, 'font-family': 'Plex', 'font-size': 24, 'font-weight': 600, fill: '#14231d', 'text-anchor': 'middle' }, `${ar(d.words)} كلمة`);
+});
+</script>
+</body>
+</html>

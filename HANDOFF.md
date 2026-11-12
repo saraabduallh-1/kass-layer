@@ -1,13 +1,46 @@
-# Handoff — Kass Layer (updated 2026-11-01)
+# Handoff — Kass Layer (updated 2026-11-12)
 
-## START HERE (office PC, 2026-11-01)
+## START HERE (2026-11-12)
+Kass (خصص) proposes standard SIWAR terms for non-standard Arabic writing and unifies a concept written several ways.
+It is close to final. Plain-Arabic overview: `docs/PROJECT_EXPLAINED.md`. **Using Kass from another system (Saleem):
+`docs/API.md`** — endpoints, response fields, and the rules (suggestions only; the writer decides every change).
+
+Where things stand:
+- Detector + unification: done, page `scripts/demo/kass-lab.html` (copy at `demo_local/index.html`), same logic in
+  Python `src/kass_layer/detector/` behind the API. Scores: section "Baseline" below; unify 100/66.7 tuning, 100/71.4 heldout.
+- 2026-11-12, writer's choice in unification: each group offers the forms to keep (suggested one first) and «every place»
+  or chosen places, with undo (page `drawUnify`; API `/unify` returns `options` and `uses[].replacements`;
+  test `tests/test_detector_api.py::test_unify_lets_the_writer_choose`).
+- 2026-11-12, extraction of the 9 terminology dictionaries left in SIWAR runs in the background (no Claude, no model):
+  `scripts/extract/run_new_dictionaries.py` → `logs/extract-new.log`, finished when `logs/extract-new.done` exists
+  (about a day at 5 s per request). Progress: `extract_finance_media.py status legal_glossary theatre sociolinguistics
+  stylistics applied_linguistics equestrian camels falcons education_heritage`. Running it again resumes.
+  Not extracted on purpose: القاموس المحيط، names, bilingual dictionaries (not term sources).
+
+Next, in order (the user's plan):
+1. When extraction is done: enrichment of the 9 (Gemma proposes, Claude reviews; "Next: everyday-Arabic enrichment
+   pass 3" and pass 2 below), then `scripts/embeddings/build_embeddings.py build`, rebuild the page data, run every gold
+   set and `parity.py` / `parity_unify.py`, compare with the baseline.
+2. معجم الرياض: the user will give it as a JSON file (do not extract it). Use it as a reference for ordinary Arabic and
+   for links between forms, NOT as a term dictionary (it would propose replacements for everyday words).
+3. Unification rules still wanted by the user (need معجم الرياض for meanings and plurals):
+   - inflection is not a conflict (done); derivation may be: حاسوب / حاسب unify, حاسب / حاسبة do not
+     (today `same_word("حاسب", "حاسبة")` is True: fix it);
+   - broken plurals and the everyday form with the term: عميل، عملاء، وكيل، الوكلاء → one group (today only وكيل is found);
+   - spelling of Arabic words: سوريا / سوريه (today the spelling layer covers borrowed words only).
+4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
+   the new link. Start that conversation from `docs/API.md`.
+
+---
+
+## History: START HERE of 2026-11-01 (office PC)
 The user works with Claude Code on the office PC from now on. Do, in order:
 1. `git pull` on branch `enrichment-pass1`, then the setup checks in "Office PC setup" below (skip what is already installed).
 2. Continue **"Next: everyday-Arabic enrichment pass 3"** below — first the audit of weak pass-1 pairs (step 3 there),
    because it is what lowers the wrong suggestions users see today (precision 50% on `gold-arabic-heldout.json`),
    then the proposals for new everyday forms (steps 1–2).
 3. After each dictionary: rebuild the page data, run the tests (step 4), report the numbers to the user, ask before pushing.
-Baseline to beat (`node scripts/demo/tests/run_tests.js <gold file>`, 2026-11-01):
+Baseline (`node scripts/demo/tests/run_tests.js gold-<set>.json`, bare file names; latest numbers last):
 tuning 93.8/86.5 · heldout-1 81.0/63.0 · heldout-2 94.7/100 · ambiguity 71.4/58.8 · arabic-tuning 71.0/56.4 ·
 arabic-heldout 83.3/50.0 (recall/precision %); `parity.py` 212/212 identical.
 Baseline rebuilt on the office PC (2026-11-01), the one to compare with here (see `reports/pc_decisions.md`):

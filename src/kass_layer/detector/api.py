@@ -15,8 +15,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
+from .. import agreement
 from .engine import DOMAINS, TYPE, Detector, replacement
-from .unify import unify
+from .unify import unify, with_choices
 
 DATA_DIR = Path(os.environ.get("KASS_DATA_DIR", Path(__file__).resolve().parents[3] / "demo_local"))
 MAX_CHARS = 5000
@@ -80,15 +81,52 @@ def analyse(req: AnalyseRequest):
     }
 
 
+class AgreeReplacement(BaseModel):
+    start: int = Field(..., ge=0)
+    end: int = Field(..., ge=0)
+    original: str = Field(..., max_length=200, description="what the user had written there")
+    term: str = Field(..., max_length=200, description="the SIWAR term as inserted in text")
+
+
+class AgreeRequest(BaseModel):
+    text: str = Field(..., max_length=MAX_CHARS, description="the text after the user's choices",
+                      examples=["درّبنا النموذج الكبيرة على البيانات الجديدة"])
+    replacements: list[AgreeReplacement] = Field(..., max_length=200,
+                                                 examples=[[{"start": 7, "end": 14, "original": "المودلز", "term": "النموذج"}]])
+
+
+@app.get("/agree/status")
+def agree_status():
+    """Whether the agreement model is configured (KASS_AGREE_URL); the page shows its button only then."""
+    return {"available": agreement.configured(), "model": os.environ.get("KASS_AGREE_MODEL") or None}
+
+
+@app.post("/agree")
+def agree(req: AgreeRequest):
+    """Fixes number and gender of the inserted terms and the words that agree with them; nothing else may change."""
+    if not agreement.configured():
+        raise HTTPException(503, "agreement model not configured (KASS_AGREE_URL)")
+    reps = [agreement.Replacement(**r.model_dump()) for r in req.replacements]
+    if any(r.end > len(req.text) or r.start >= r.end for r in reps):
+        raise HTTPException(422, "replacement outside the text")
+    t0 = time.perf_counter()
+    out = agreement.agree(req.text, reps)
+    return {**out, "ms": round((time.perf_counter() - t0) * 1000, 1)}
+
+
 @app.post("/unify")
 def unify_terms(req: AnalyseRequest):
     """Term consistency inside one text: forms of one concept written differently (المودل، الموديل، نموذج), each group with the
-    form to keep (the SIWAR term, or for spellings outside the dictionaries the most frequent one)."""
+    form to keep (the SIWAR term, or for spellings outside the dictionaries the most frequent one).
+    The writer decides: group["options"] are the forms they may keep (the suggested one first), and every use carries
+    use["replacements"][option], the text to write at use["start"]:use["end"] (its own و/ب/ال kept). Change all uses or
+    only the ones the writer picks; nothing changes unless the writer asks."""
     if req.domain not in {d["id"] for d in DOMAINS}:
         raise HTTPException(422, f"unknown domain {req.domain!r}")
     t0 = time.perf_counter()
-    res = unify(detector, req.text, req.domain)
-    return {"domain": req.domain, "groups": res["groups"], "ms": round((time.perf_counter() - t0) * 1000, 1)}
+    analysis = detector.analyse(req.text, req.domain)
+    groups = with_choices(detector, unify(detector, req.text, req.domain, analysis)["groups"], analysis)
+    return {"domain": req.domain, "groups": groups, "ms": round((time.perf_counter() - t0) * 1000, 1)}
 
 
 # KASS_SERVE_PAGE=1 also serves the demo page and its data files from KASS_DATA_DIR at "/" (one container, no GitHub Pages)

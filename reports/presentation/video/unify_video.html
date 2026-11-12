@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>توحيد المصطلحات</title>
+<!-- Animated explainer of term unification (src/kass_layer/detector/unify.py, the «توحيد المصطلحات» block in demo_local),
+     rendered frame by frame by render_unify.py (render(t) draws second t). Both example sentences, their groups, the kept
+     forms, the spelling keys (drf), the similarity and the general-Arabic rate are what the detector returns. -->
+<style>
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Bold.ttf);font-weight:700}
+:root{--bg:#f6f7f2;--bg2:#eef2ea;--surf:#fff;--ink:#14231d;--muted:#5b6b63;--line:#dde5dd;--green:#0b4b33;--green2:#12633f;
+--mint:#e5efe7;--rep:#1b7448;--repbg:#e1f1e7;--rev:#94620a;--revbg:#f8edd6;--std:#3d5d74;--stdbg:#e4ecf2;--red:#8a3b2a;--redbg:#f6e4df;--gold:#b08a2e}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Plex;color:var(--ink)}
+.scene{position:absolute;inset:0;opacity:0;display:none}
+.abs{position:absolute}
+.head{position:absolute;top:56px;right:96px;left:96px;height:90px;display:flex;align-items:center;gap:26px}
+.num{width:84px;height:84px;border-radius:50%;background:var(--green);color:#fff;font:700 40px Plex;display:flex;align-items:center;justify-content:center;flex:none}
+.title{font:700 52px Plex}
+.logo{position:absolute;top:70px;left:96px;height:52px}
+.cap{position:absolute;bottom:0;left:0;right:0;height:132px;background:var(--green);color:#fff;font:600 34px Plex;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 120px}
+.card{background:var(--surf);border:2px solid var(--line);border-radius:22px}
+.sent{position:absolute;right:120px;left:120px;height:120px;display:flex;align-items:center;justify-content:center;font:600 44px Plex;white-space:nowrap}
+.tok{position:relative;display:inline-block;padding:0 5px;border-radius:12px;line-height:1.5}
+.was{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font:500 22px Plex;color:var(--muted);text-decoration:line-through;white-space:nowrap;opacity:0}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font:600 26px Plex;padding:6px 26px;white-space:nowrap}
+.row{display:flex;align-items:center}
+.muted{color:var(--muted)}
+.cursor{position:absolute;width:44px;height:44px;opacity:0;z-index:5}
+.btn{display:inline-flex;align-items:center;border-radius:14px;background:var(--green);color:#fff;font:600 28px Plex;padding:10px 30px}
+.ucard{border-right:8px solid var(--rev)}
+.step{position:absolute;top:330px;height:510px;width:540px;padding:26px 30px}
+.step h3{font:700 32px Plex;margin-bottom:22px}
+.line{display:flex;align-items:center;gap:12px;font:600 28px Plex;margin-bottom:16px;white-space:nowrap}
+.yes{color:var(--rep);font-weight:700}.no{color:var(--red);font-weight:700}
+.lat{font-family:Plex;direction:ltr;unicode-bidi:isolate}
+</style>
+</head>
+<body>
+
+<!-- 0 title -->
+<section class="scene" id="s0" style="background:var(--green)">
+  <img src="../wordmark_white.png" class="abs" id="t0logo" style="left:50%;top:240px;width:520px;transform:translateX(-50%)">
+  <div class="abs" id="t0a" style="top:520px;width:100%;text-align:center;color:#fff;font:700 76px Plex">توحيد المصطلحات في النص</div>
+  <div class="abs" id="t0b" style="top:650px;width:100%;text-align:center;color:#cfe3d7;font:500 40px Plex">مفهوم واحد… صيغة واحدة في كل المواضع</div>
+</section>
+
+<!-- 1 the problem -->
+<section class="scene" id="s1">
+  <div class="head"><div class="num">١</div><div class="title">المشكلة: مفهوم واحد بأكثر من صيغة</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="p1" style="top:220px"></div>
+  <div class="abs row" id="p1f" style="top:360px;right:0;left:0;justify-content:center;gap:18px;font:600 30px Plex"></div>
+  <div class="sent card" id="p2" style="top:520px"></div>
+  <div class="abs row" id="p2f" style="top:660px;right:0;left:0;justify-content:center;gap:18px;font:600 30px Plex"></div>
+  <div class="abs" id="p_q" style="top:790px;right:0;left:0;text-align:center;font:700 40px Plex;color:var(--green)">أيّ صيغة نكتب؟ ولماذا؟</div>
+  <div class="cap" id="c1"></div>
+</section>
+
+<!-- 2 the fork -->
+<section class="scene" id="s2">
+  <div class="head"><div class="num">٢</div><div class="title">سؤال واحد يحدد الطريق</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card" id="fq" style="right:560px;left:560px;top:200px;height:130px;display:flex;align-items:center;justify-content:center;font:700 40px Plex;border:3px solid var(--green)">هل الصيغ مرتبطة بمصطلح في المعاجم؟</div>
+  <svg class="abs" id="fsvg" width="1920" height="1080" style="inset:0"></svg>
+  <div class="abs card" id="fa" style="right:150px;width:740px;top:470px;height:360px;padding:30px 36px;border-top:10px solid var(--std)">
+    <div class="pill" style="background:var(--stdbg);color:var(--std);font-size:28px">نعم · الحالة الأولى</div>
+    <div style="font:700 38px Plex;margin-top:24px">المصطلح موجود في المعجم</div>
+    <div style="font:500 30px Plex;margin-top:18px">نوحّد على <b style="color:var(--green)">المصطلح المعتمد</b></div>
+    <div class="muted" style="font:500 28px Plex;margin-top:22px">المودل، الموديل، النموذج ← <b style="color:var(--green)">نموذج</b></div>
+  </div>
+  <div class="abs card" id="fb" style="left:150px;width:740px;top:470px;height:360px;padding:30px 36px;border-top:10px solid var(--rev)">
+    <div class="pill" style="background:var(--revbg);color:var(--rev);font-size:28px">لا · الحالة الثانية</div>
+    <div style="font:700 38px Plex;margin-top:24px">كلمة دخيلة ليست في المعاجم</div>
+    <div style="font:500 30px Plex;margin-top:18px">نوحّد على <b style="color:var(--rev)">الصيغة الأكثر تكرارًا</b></div>
+    <div class="muted" style="font:500 28px Plex;margin-top:22px">الدرايف ×٢، <span class="lat">Drive</span> ×١ ← <b style="color:var(--rev)">درايف</b></div>
+  </div>
+  <div class="cap" id="c2"></div>
+</section>
+
+<!-- 3 case 1: linking the forms to one term -->
+<section class="scene" id="s3">
+  <div class="head"><div class="num">٣</div><div class="title">الحالة الأولى: المعجم يربط الصيغ بمصطلح واحد</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="a_sent" style="top:180px"></div>
+  <svg class="abs" id="a_svg" width="1920" height="1080" style="inset:0"></svg>
+  <div id="a_rows"></div>
+  <div class="abs card" id="a_term" style="left:150px;width:620px;top:430px;height:300px;padding:30px 36px;border:3px solid var(--green);text-align:center">
+    <div class="muted" style="font:600 26px Plex">المصطلح في فهرس المعاجم</div>
+    <div style="font:700 84px Plex;color:var(--green);margin-top:6px">نموذج</div>
+    <div class="pill" style="background:var(--mint);color:var(--green);font-size:24px;margin-top:10px">معجم البيانات والذكاء الاصطناعي</div>
+  </div>
+  <div class="abs" id="a_rule" style="right:0;left:0;top:810px;text-align:center;font:700 34px Plex">الصيغة التي تُكتب = <span style="color:var(--green)">المصطلح المعتمد من المعجم</span>، مهما كان تكرار غيره</div>
+  <div class="cap" id="c3"></div>
+</section>
+
+<!-- 4 case 1: the button -->
+<section class="scene" id="s4">
+  <div class="head"><div class="num">٤</div><div class="title">الحالة الأولى: زر التوحيد</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card ucard" id="b_card" style="right:360px;left:360px;top:200px;height:330px;padding:28px 40px"></div>
+  <div class="sent card" id="b_sent" style="top:640px;height:150px"></div>
+  <img class="cursor" id="b_cur" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 2l15 11-6.5 1 3.8 7.2-2.6 1.4-3.8-7.3L5 20z' fill='%2314231d' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
+  <div class="cap" id="c4"></div>
+</section>
+
+<!-- 5 case 2: is it a borrowed word, and which spellings are one word -->
+<section class="scene" id="s5">
+  <div class="head"><div class="num">٥</div><div class="title">الحالة الثانية: كلمة دخيلة ليست في المعاجم</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="sent card" id="d_sent" style="top:180px"></div>
+  <div class="abs card step" id="d1" style="right:120px">
+    <h3>١ البحث في المعاجم</h3>
+    <div class="line" id="d1a"><span style="width:170px">الدرايف</span><span class="no">✗</span><span class="muted">لا مصطلح لها</span></div>
+    <div class="line" id="d1b"><span style="width:170px" class="lat">Drive</span><span class="no">✗</span><span class="muted">لا مصطلح لها</span></div>
+    <div id="d1c" style="margin-top:34px;font:600 28px Plex;color:var(--rev);white-space:normal">لا مصطلح معتمد نرجع إليه، فننظر في الكلمات نفسها</div>
+  </div>
+  <div class="abs card step" id="d2" style="right:690px">
+    <h3>٢ هل هي كلمة دخيلة؟</h3>
+    <div id="d2a"><div class="line"><span>الدرايف</span><span class="yes">✓</span></div>
+      <div class="muted" style="font:500 24px Plex;margin:-8px 0 8px">نادرة في المقالات العربية العامة:</div>
+      <div style="font:600 24px Plex;margin-bottom:6px"><span dir="ltr" style="unicode-bidi:isolate">0.0000029 &lt; 0.00002</span></div>
+      <div class="muted" style="font:500 24px Plex;margin-bottom:18px">وشكلها شكل كلمة معرّبة (حروف مدّ)</div></div>
+    <div class="line" id="d2b"><span class="lat">Drive</span><span class="yes">✓</span><span class="muted" style="font-size:24px">حروف لاتينية</span></div>
+    <div class="line" id="d2c" style="margin-top:12px"><span>رابط، الفريق</span><span class="no">✗</span><span class="muted" style="font-size:24px">عربية شائعة، تُستبعد</span></div>
+  </div>
+  <div class="abs card step" id="d3" style="right:1260px">
+    <h3>٣ هيكل النطق</h3>
+    <div class="line" id="d3a"><span>الدرايف</span><span class="muted">←</span><span>درايف</span><span class="muted">←</span><span class="pill lat" style="background:var(--revbg);color:var(--rev);font-size:28px;padding:2px 18px">d r f</span></div>
+    <div class="line" id="d3b"><span class="lat">Drive</span><span class="muted">←</span><span class="pill lat" style="background:var(--revbg);color:var(--rev);font-size:28px;padding:2px 18px">d r f</span></div>
+    <div id="d3c" style="margin-top:30px;font:600 28px Plex">التشابه: <span class="lat" style="color:var(--rev)">1.00</span> <span class="muted" style="font-size:24px">(الحد الأدنى <span class="lat">0.75</span>)</span></div>
+    <div id="d3d" class="pill" style="margin-top:22px;background:var(--revbg);color:var(--rev);font-size:28px">صيغتان لكلمة واحدة</div>
+  </div>
+  <div class="cap" id="c5"></div>
+</section>
+
+<!-- 6 case 2: the most frequent form, and the button -->
+<section class="scene" id="s6">
+  <div class="head"><div class="num">٦</div><div class="title">الحالة الثانية: الأكثر تكرارًا</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card" id="e_count" style="right:120px;width:640px;top:190px;height:400px;padding:26px 34px">
+    <div style="font:700 32px Plex">عدد مرات كل صيغة</div>
+    <div class="row" style="margin-top:34px;gap:16px;font:600 30px Plex"><span style="width:130px">الدرايف</span><div style="flex:1;height:44px;background:var(--bg2);border-radius:10px"><div id="e_b1" style="height:100%;width:0;background:var(--rev);border-radius:10px"></div></div><span style="width:50px">×٢</span></div>
+    <div class="row" style="margin-top:22px;gap:16px;font:600 30px Plex"><span style="width:130px" class="lat">Drive</span><div style="flex:1;height:44px;background:var(--bg2);border-radius:10px"><div id="e_b2" style="height:100%;width:0;background:#c9b88a;border-radius:10px"></div></div><span style="width:50px">×١</span></div>
+    <div id="e_keep" style="margin-top:40px;font:600 28px Plex">الأكثر تكرارًا «الدرايف»، تُحذف «ال» فتصير: <b style="color:var(--rev);font-size:36px">درايف</b></div>
+    <div id="e_tie" class="muted" style="margin-top:14px;font:500 22px Plex">عند التعادل تُقدَّم الصيغة العربية على اللاتينية</div>
+  </div>
+  <div class="abs card ucard" id="e_card" style="left:120px;width:900px;top:190px;height:400px;padding:28px 40px"></div>
+  <div class="sent card" id="e_sent" style="top:670px;height:150px"></div>
+  <img class="cursor" id="e_cur" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4 2l15 11-6.5 1 3.8 7.2-2.6 1.4-3.8-7.3L5 20z' fill='%2314231d' stroke='white' stroke-width='1.4'/%3E%3C/svg%3E">
+  <div class="cap" id="c6"></div>
+</section>
+
+<!-- 7 safeguards -->
+<section class="scene" id="s7">
+  <div class="head"><div class="num">٧</div><div class="title">ضوابط تمنع التوحيد الخاطئ</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="g_cards"></div>
+  <div class="cap">يوحَّد ما هو كلمة واحدة فعلًا، ولا يُفرض شيء على الكاتب</div>
+</section>
+
+<!-- 8 comparison -->
+<section class="scene" id="s8">
+  <div class="head"><div class="num">٨</div><div class="title">الحالتان معًا</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card" id="h_tab" style="right:120px;left:120px;top:190px;height:690px;overflow:hidden"></div>
+  <div class="cap">المعجم أولًا، ثم التهجئة… والقرار الأخير للكاتب</div>
+</section>
+
+<!-- 9 end -->
+<section class="scene" id="s9" style="background:var(--green)">
+  <img src="../wordmark_white.png" class="abs" id="z_logo" style="left:50%;top:330px;width:460px;transform:translateX(-50%)">
+  <div class="abs" id="z_a" style="top:590px;width:100%;text-align:center;color:#fff;font:700 56px Plex">نص متّسق بمصطلح واحد</div>
+  <div class="abs" id="z_b" style="top:690px;width:100%;text-align:center;color:#cfe3d7;font:500 34px Plex">طبقة خصص · مجمع الملك سلمان العالمي للغة العربية</div>
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+const C = n => getComputedStyle(document.documentElement).getPropertyValue('--' + n).trim();
+const cl = x => x < 0 ? 0 : x > 1 ? 1 : x;
+const ease = x => { x = cl(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+const P = (t, a, d = .6) => ease((t - a) / d);
+const lerp = (a, b, k) => a + (b - a) * k;
+const h = (tag, attrs = {}, html = '') => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
+const SVG = (tag, attrs) => { const e = document.createElementNS('http://www.w3.org/2000/svg', tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+const KIND = { rep: ['--rep', '--repbg'], rev: ['--rev', '--revbg'], std: ['--std', '--stdbg'] };
+
+// the two sentences, as the detector reads them (tech domain); [word, id] marks a form in a group
+const S1 = ['درّبنا', ['المودل', 'm1'], 'على بيانات العملاء، ثم قارنّا', ['الموديل', 'm2'], 'الجديد', ['بالنموذج', 'm3'], 'القديم.'];
+const S2 = ['رفعنا الملفات على', ['الدرايف', 'd1'], '، ثم شاركنا رابط', ['الدرايف', 'd2'], 'مع الفريق، وحفظنا نسخة في', ['Drive', 'd3'], '.'];
+function sentence(box, parts, pre) {
+  box.innerHTML = '';
+  const inner = h('div', { style: 'white-space:nowrap' });
+  parts.forEach((p, i) => {
+    const glue = i > 0 && !(typeof p === 'string' && /^[،.]/.test(p)) ? ' ' : '';
+    if (glue) inner.appendChild(document.createTextNode(glue));
+    if (typeof p === 'string') inner.appendChild(document.createTextNode(p));
+    else {
+      const s = h('span', { class: 'tok', id: pre + p[1] }, `<span class="w">${p[0]}</span><span class="was"></span>`);
+      if (/^[A-Za-z]/.test(p[0])) s.classList.add('lat');
+      inner.appendChild(s);
+    }
+  });
+  box.appendChild(inner);
+}
+function mark(id, kind, k) {  // highlight a form: colour and an underline that grows with k
+  const e = $(id); if (!e) return;
+  const [fg, bg] = KIND[kind];
+  e.style.background = k > 0 ? `color-mix(in srgb, var(${bg}) ${Math.round(k * 100)}%, transparent)` : 'transparent';
+  e.style.color = k > .5 ? `var(${fg})` : '';
+  e.style.boxShadow = k > 0 ? `inset 0 -${Math.round(5 * k)}px 0 var(${fg})` : 'none';
+}
+function swapWord(id, word, was, k) {  // the button writes the kept form: the old word rises and is struck through above it
+  const e = $(id); if (!e) return;
+  const w = e.querySelector('.w'), o = e.querySelector('.was');
+  if (!e.dataset.orig) e.dataset.orig = w.textContent;
+  w.textContent = k > .45 ? word : e.dataset.orig;
+  const sq = Math.abs(k - .45) < .3 ? Math.abs(k - .45) / .3 : 1;
+  w.style.display = 'inline-block'; w.style.transform = `scaleY(${k > 0 && k < 1 ? sq : 1})`;
+  o.textContent = 'كانت: ' + was; o.style.opacity = cl((k - .5) * 2);
+  if (k > .45) { e.style.background = 'var(--repbg)'; e.style.color = 'var(--rep)'; e.style.boxShadow = 'inset 0 -5px 0 var(--rep)'; }
+}
+function cursor(id, t, pts) {  // pts: [time, x, y]; a click shrinks it briefly
+  const c = $(id);
+  if (t < pts[0][0] - .3) { c.style.opacity = 0; return; }
+  c.style.opacity = cl((t - pts[0][0] + .3) / .3);
+  let x = pts[0][1], y = pts[0][2];
+  for (let i = 1; i < pts.length; i++) { const k = P(t, pts[i - 1][0], pts[i][0] - pts[i - 1][0]); x = lerp(x, pts[i][1], k); y = lerp(y, pts[i][2], k); }
+  const last = pts[pts.length - 1][0], click = t > last && t < last + .25 ? .8 : 1;
+  c.style.left = x + 'px'; c.style.top = y + 'px'; c.style.transform = `scale(${click})`;
+}
+const fade = (id, k, dy = 24) => { const e = $(id); e.style.opacity = k; e.style.transform = `translateY(${(1 - k) * dy}px)`; };
+function unifyCard(box, keep, forms, meta, pressed) {
+  box.innerHTML = `<div class="muted" style="font:600 24px Plex">توحيد المصطلحات في النص</div>
+    <div class="row" style="gap:16px;font:600 38px Plex;margin-top:14px"><span>اكتب</span><span style="color:var(--green);font-weight:700">${keep}</span><span>في كل المواضع</span>
+      <span class="pill" id="${box.id}_pill" style="font-size:24px;background:var(--revbg);color:var(--rev)">تحقّق قبل التوحيد</span></div>
+    <div style="font:500 30px Plex;margin-top:18px">الصيغ في النص: ${forms}</div>
+    <div class="muted" style="font:500 26px Plex;margin-top:10px">${meta}</div>
+    <div style="margin-top:24px"><span class="btn" id="${box.id}_btn">توحيد على «${keep}»</span></div>`;
+}
+
+// ---------- static scenes ----------
+sentence($('p1'), S1, 'p'); sentence($('p2'), S2, 'q');
+$('p1f').innerHTML = ['المودل', 'الموديل', 'النموذج'].map(w => `<span class="pill" style="background:#fff;border:2px solid var(--line)">${w}</span>`).join('<span class="muted">·</span>') + '<span style="color:var(--green)">= مفهوم واحد</span>';
+$('p2f').innerHTML = ['الدرايف', '<span class="lat">Drive</span>'].map(w => `<span class="pill" style="background:#fff;border:2px solid var(--line)">${w}</span>`).join('<span class="muted">·</span>') + '<span style="color:var(--rev)">= كلمة واحدة بتهجئتين</span>';
+
+sentence($('a_sent'), S1, 'a');
+const AROWS = [
+  { id: 'am1', w: 'المودل', tag: 'تعريب', state: 'استبدال مقترح', kind: 'rep' },
+  { id: 'am2', w: 'الموديل', tag: 'له معنى آخر شائع', state: 'يحتاج تدقيقًا', kind: 'rev' },
+  { id: 'am3', w: 'بالنموذج', tag: 'المصطلح نفسه', state: 'معتمد', kind: 'std' },
+];
+AROWS.forEach((r, i) => {
+  const [fg, bg] = KIND[r.kind];
+  const row = h('div', { class: 'abs card row', id: 'ar' + i, style: `right:120px;width:820px;top:${360 + i * 140}px;height:110px;padding:0 30px;gap:20px;border-right:8px solid var(${fg})` });
+  row.innerHTML = `<span style="font:700 40px Plex;width:200px">${r.w}</span><span class="muted" style="font:500 26px Plex;width:250px">${r.tag}</span>
+    <span class="pill" style="font-size:24px;background:var(${bg});color:var(${fg})">${r.state}</span>`;
+  $('a_rows').appendChild(row);
+});
+
+unifyCard($('b_card'), 'نموذج', 'المودل، الموديل، بالنموذج <span class="muted" style="font-size:24px">(معتمد)</span>', 'المصطلح من معجم البيانات والذكاء الاصطناعي');
+sentence($('b_sent'), S1, 'b');
+
+sentence($('d_sent'), S2, 'd');
+unifyCard($('e_card'), 'درايف', 'الدرايف <span class="muted" style="font-size:24px">×٢</span>، <span class="lat">Drive</span>', 'صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاختيرت الأكثر تكرارًا');
+sentence($('e_sent'), S2, 'e');
+
+const GUARD = [
+  ['لا توحيد بقرب المعنى وحده', 'البائع / المشتري متقاربان في المتجهات، لكنهما مفهومان مختلفان'],
+  ['التصريف ليس تعارضًا', 'الاستثمار / الاستثمارات كلمة واحدة، فلا تظهر في التوحيد'],
+  ['الشرح بين قوسين يُحترم', 'الذكاء الاصطناعي (AI): الصيغة الإنجليزية شرح لا تعارض'],
+  ['القرار للكاتب', 'لا يتغيّر شيء إلا بالزر، و«إعادة النص الأصلي» تُرجع كل شيء'],
+];
+GUARD.forEach(([t, d], i) => {
+  const c = h('div', { class: 'abs card', id: 'g' + i, style: `${i % 2 ? 'left' : 'right'}:120px;width:820px;top:${200 + Math.floor(i / 2) * 330}px;height:290px;padding:34px 40px;border-top:8px solid var(--green)` });
+  c.innerHTML = `<div style="font:700 38px Plex;color:var(--green)">${t}</div><div style="font:500 32px Plex;margin-top:22px;line-height:1.6">${d.replace('(AI)', '(<span class="lat">AI</span>)')}</div>`;
+  $('g_cards').appendChild(c);
+});
+
+const TAB = [
+  ['', 'الحالة الأولى: في المعجم', 'الحالة الثانية: خارج المعاجم'],
+  ['كيف تُجمع الصيغ؟', 'الفهرس يربط كل صيغة بمصطلح واحد', 'هيكل النطق نفسه (درايف = <span class="lat">drive</span>)'],
+  ['أي صيغة تُكتب؟', 'المصطلح المعتمد من المعجم', 'الصيغة الأكثر تكرارًا في النص'],
+  ['التنبيه', '«تحقّق» إن كانت إحدى الصيغ تحتاج تدقيقًا', '«تحقّق» دائمًا: لا مرجع معتمد'],
+  ['المثال', 'المودل، الموديل ← نموذج', '<span class="lat">Drive</span> ← درايف'],
+];
+TAB.forEach((r, i) => {
+  const row = h('div', { class: 'row', id: 'tr' + i, style: `height:138px;border-bottom:${i < TAB.length - 1 ? 2 : 0}px solid var(--line);${i === 0 ? 'background:var(--bg2)' : ''}` });
+  r.forEach((c, j) => row.appendChild(h('div', { style: `width:${j ? 690 : 296}px;padding:0 34px;font:${i === 0 || j === 0 ? 700 : 500} ${i === 0 ? 34 : 32}px Plex;color:${i === 0 && j === 1 ? 'var(--std)' : i === 0 && j === 2 ? 'var(--rev)' : j === 0 ? 'var(--green)' : 'var(--ink)'}` }, c)));
+  $('h_tab').appendChild(row);
+});
+
+// ---------- timeline ----------
+const S = [['s0', 0, 5], ['s1', 5, 17], ['s2', 17, 27], ['s3', 27, 43], ['s4', 43, 57], ['s5', 57, 78], ['s6', 78, 95], ['s7', 95, 106], ['s8', 106, 118], ['s9', 118, 123]];
+const DURATION = 123;
+const cap = (id, t, list) => { let s = ''; for (const [a, txt] of list) if (t >= a) s = txt; $(id).textContent = s; };
+const btnPress = (id, t, at) => { const b = $(id); const p = t > at && t < at + .25; b.style.transform = p ? 'scale(.94)' : 'none'; b.style.background = t > at ? 'var(--green2)' : 'var(--green)'; };
+const pillDone = (id, t, at) => { const p = $(id); if (t > at + .3) { p.textContent = 'تم التوحيد'; p.style.background = 'var(--repbg)'; p.style.color = 'var(--rep)'; } else { p.textContent = 'تحقّق قبل التوحيد'; p.style.background = 'var(--revbg)'; p.style.color = 'var(--rev)'; } };
+const center = el => { const r = el.getBoundingClientRect(); return [r.left + 46, r.top + r.height / 2]; };  // the button's end, clear of its label
+
+const U = {
+  s0(t) { fade('t0logo', P(t, .2, .7), 0); fade('t0a', P(t, .8)); fade('t0b', P(t, 1.3)); },
+  s1(t) {
+    ['pm1', 'pm2', 'pm3'].forEach((id, i) => mark(id, 'rev', P(t, 1 + i * .7, .4)));
+    fade('p1f', P(t, 3.4));
+    ['qd1', 'qd2', 'qd3'].forEach((id, i) => mark(id, 'rev', P(t, 5.2 + i * .7, .4)));
+    fade('p2f', P(t, 7.6));
+    fade('p_q', P(t, 9.2));
+    cap('c1', t, [[0, 'كاتب واحد، ونص واحد… ومفهوم يُكتب بثلاث صيغ'], [5, 'وفي نص آخر: كلمة دخيلة بتهجئتين، عربية ولاتينية'], [9, 'اختلاف الصيغ يربك القارئ، فيقترح خصص صيغة واحدة لكل مفهوم']]);
+  },
+  s2(t) {
+    fade('fq', P(t, .3));
+    const s = $('fsvg'); s.innerHTML = '';
+    [[960, 330, 1410, 470, 'std', 1.6], [960, 330, 510, 470, 'rev', 4.6]].forEach(([x1, y1, x2, y2, c, a]) => {
+      const k = P(t, a, .7);
+      if (k > 0) s.appendChild(SVG('line', { x1, y1, x2: lerp(x1, x2, k), y2: lerp(y1, y2, k), stroke: C(c), 'stroke-width': 6, 'stroke-linecap': 'round' }));
+    });
+    fade('fa', P(t, 2.2)); fade('fb', P(t, 5.2));
+    cap('c2', t, [[0, 'قبل أي توحيد: هل يعرف المعجم هذا المفهوم؟'], [2, 'نعم: المعجم هو المرجع، فالمصطلح المعتمد هو ما يُكتب'], [5, 'لا: لا مرجع، فتُختار الصيغة التي استعملها الكاتب أكثر']]);
+  },
+  s3(t) {
+    const rowsAt = [1.2, 4.2, 7.2];
+    AROWS.forEach((r, i) => { mark(r.id, r.kind, P(t, rowsAt[i], .4)); const e = $('ar' + i); const k = P(t, rowsAt[i] + .4); e.style.opacity = k; e.style.transform = `translateX(${(1 - k) * -60}px)`; });
+    fade('a_term', P(t, .6), 0);
+    const s = $('a_svg'); s.innerHTML = '';
+    rowsAt.forEach((a, i) => {
+      const k = P(t, a + 1.1, .7); if (k <= 0) return;
+      const x1 = 980, y1 = 415 + i * 140, x2 = 772, y2 = 580;
+      s.appendChild(SVG('line', { x1, y1, x2: lerp(x1, x2, k), y2: lerp(y1, y2, k), stroke: C('green'), 'stroke-width': 4, 'stroke-dasharray': '10 8' }));
+      if (k > .95) s.appendChild(SVG('circle', { cx: x2, cy: y2, r: 9, fill: C('green') }));
+    });
+    fade('a_rule', P(t, 11));
+    cap('c3', t, [[0, 'فهرس الصيغ يعرف كل صيغة، ويربطها بمصطلحها في المعجم'], [1.2, '«المودل» تعريب، مقابله في المعجم: نموذج'], [4.2, '«الموديل» تُربط بالمصطلح نفسه، لكن لها معنى يومي (موديل السيارة) فتحتاج تدقيقًا'],
+      [7.2, '«بالنموذج» هي المصطلح المعتمد نفسه، بعد فصل «بـ» و«ال»'], [10.2, 'ثلاث صيغ لمصطلح واحد: تظهر مجموعة في «توحيد المصطلحات»']]);
+  },
+  s4(t) {
+    fade('b_card', P(t, .3)); fade('b_sent', P(t, .8));
+    ['bm1', 'bm2'].forEach(id => { if (t < 6) mark(id, 'rev', P(t, 1.5, .5)); });
+    mark('bm3', 'std', P(t, 1.5, .5));
+    const btn = $('b_card_btn');
+    if (btn.offsetParent) {
+      const [bx, by] = center(btn);
+      cursor('b_cur', t, [[3.2, 1500, 950], [5.2, bx - 6, by - 4]]);
+    }
+    btnPress('b_card_btn', t, 5.4); pillDone('b_card_pill', t, 5.4);
+    swapWord('bm1', 'النموذج', 'المودل', P(t, 5.8, .6));
+    swapWord('bm2', 'النموذج', 'الموديل', P(t, 6.4, .6));
+    cap('c4', t, [[0, 'البطاقة تعرض الصيغ، والمصطلح الذي يُكتب، ومن أي معجم جاء'], [3, 'علامة «تحقّق قبل التوحيد» لأن «الموديل» تحتاج تدقيقًا'], [5.5, 'ضغطة واحدة: كل صيغة تصير «نموذج» في مكانها'],
+      [8.5, 'مع الحفاظ على «ال»: المودل ← النموذج، و«بالنموذج» لا تتغير'], [11.5, 'يُنسخ النص بعد التوحيد، و«إعادة النص الأصلي» تُرجعه كما كان']]);
+  },
+  s5(t) {
+    ['dd1', 'dd2', 'dd3'].forEach(id => mark(id, 'rev', P(t, .8, .5)));
+    fade('d1', P(t, 1.5)); fade('d1a', P(t, 2.3)); fade('d1b', P(t, 2.9)); fade('d1c', P(t, 3.8));
+    fade('d2', P(t, 6.5)); fade('d2a', P(t, 7.3)); fade('d2b', P(t, 9.6)); fade('d2c', P(t, 10.8));
+    fade('d3', P(t, 13)); fade('d3a', P(t, 13.8)); fade('d3b', P(t, 15)); fade('d3c', P(t, 16.4)); fade('d3d', P(t, 17.6));
+    cap('c5', t, [[0, '«الدرايف» و«Drive»: لا يعرفهما أي معجم من معاجم المجال'], [6.5, 'تُفحص كل كلمة: هل هي دخيلة فعلًا أم كلمة عربية عادية؟'], [10.6, 'الكلمات العربية الشائعة لا تدخل التوحيد أبدًا'],
+      [13, 'تُحذف «ال» ويُستخرج هيكل النطق: الحروف الساكنة بلا حروف المد'], [16.2, 'هيكل واحد وتشابه كامل: هما تهجئتان لكلمة واحدة']]);
+  },
+  s6(t) {
+    fade('e_count', P(t, .3)); fade('e_sent', P(t, .5));
+    $('e_b1').style.width = 100 * P(t, 1.2, .9) + '%'; $('e_b2').style.width = 50 * P(t, 1.5, .9) + '%';
+    fade('e_keep', P(t, 3)); fade('e_tie', P(t, 4.2));
+    ['ed1', 'ed2', 'ed3'].forEach(id => { if (t < 11) mark(id, 'rev', P(t, .8, .5)); });
+    fade('e_card', P(t, 6));
+    const btn = $('e_card_btn');
+    if (btn.offsetParent) { const [bx, by] = center(btn); cursor('e_cur', t, [[7.6, 1100, 980], [9.6, bx - 6, by - 4]]); }
+    btnPress('e_card_btn', t, 9.8); pillDone('e_card_pill', t, 9.8);
+    swapWord('ed3', 'درايف', 'Drive', P(t, 10.2, .6));
+    if (t > 10.2) { $('ed3').classList.remove('lat'); }
+    else $('ed3').classList.add('lat');
+    if (t >= 11) ['ed1', 'ed2'].forEach(id => mark(id, 'rev', 1 - P(t, 11, .5)));
+    cap('c6', t, [[0, 'بلا معجم، يحكم استعمال الكاتب نفسه: أي صيغة كتبها أكثر؟'], [3, 'تُحفظ الصيغة بلا «ال»، لتُلصق بها «ال» و«و» في كل موضع كما كانت'],
+      [6, 'البطاقة تقول صراحة: الكلمة ليست في المعاجم، ودائمًا «تحقّق قبل التوحيد»'], [10, '«Drive» ← «درايف»، و«الدرايف» تبقى كما هي'], [13.5, 'التعديلات تظهر مظللة، وتُنسخ مع النص، وتُلغى بـ«إعادة النص الأصلي»']]);
+  },
+  s7(t) { GUARD.forEach((g, i) => fade('g' + i, P(t, .4 + i * 1.8))); },
+  s8(t) { TAB.forEach((r, i) => { const e = $('tr' + i); const k = P(t, .3 + i * 1.6); e.style.opacity = k; e.style.transform = `translateX(${(1 - k) * 40}px)`; }); },
+  s9(t) { fade('z_logo', P(t, .2, .7), 0); fade('z_a', P(t, .7)); fade('z_b', P(t, 1.2)); },
+};
+
+function render(t) {
+  for (const [id, a, b] of S) {
+    const el = $(id), on = t >= a - .01 && t < b + .01;
+    if (!on) { el.style.opacity = 0; el.style.display = 'none'; continue; }
+    el.style.display = 'block';
+    el.style.opacity = Math.min(P(t, a, .45), 1 - P(t, b - .45, .45));
+    U[id](t - a);
+  }
+}
+window.DURATION = DURATION;
+render(0);
+</script>
+</body>
+</html>

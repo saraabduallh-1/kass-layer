@@ -71,7 +71,20 @@ TARGETS = {
     "behavioral": "004ce05a-0d56-45e4-a284-1b0358d4cfc4",  # معجم مصطلحات علم السلوك
     "energy": "f990c2a0-f601-466f-8153-2cd35e4710a3",  # معجم مصطلحات الطاقة
     "contracts": "89af196b-70be-4a4b-b193-4b761e0b0fdd",  # قاموس العقود والمشتريات وسلاسل الإمداد
+    # 2026-11-12: the nine terminology dictionaries left (the general and bilingual ones are not term sources;
+    # the Riyadh dictionary arrives as a JSON file from the user instead of being extracted).
+    "legal_glossary": "b09d4471-8198-4a82-b9f9-5fa97b140e2b",  # مسرد المصطلحات القانونية
+    "theatre": "12cbfc6f-b58d-4116-852e-0744ba950b5c",  # معجم اللغة المسرحية
+    "sociolinguistics": "418913c1-8e46-450d-ab28-7694b51a6047",  # معجم اللغويات الاجتماعية
+    "stylistics": "71c16f98-93e1-4cf1-a401-293b4e0ffe07",  # معجم الأسلوبية والبلاغة
+    "applied_linguistics": "d0328aad-1959-4a9f-9cc8-f23216399c3a",  # المعجم الموسوعي لمصطلحات اللسانيات التطبيقية
+    "equestrian": "84c98c01-6b96-469c-918f-e8d59fffe8ce",  # معجم مصطلحات الفروسية
+    "camels": "a92ca8f8-fe2b-4ab2-8ef5-5bd374c1f082",  # معجم مصطلحات الإبل
+    "falcons": "b510d6e1-0517-4b7f-b342-b2c9fa4f4e8a",  # معجم مصطلحات الصقور
+    "education_heritage": "9be14020-1138-4651-8d3f-713ee1d0c750",  # معجم الألفاظ والمصطلحات التربوية في التراث العربي
 }
+NEW_TERM_DICTIONARIES = ["legal_glossary", "theatre", "sociolinguistics", "stylistics", "applied_linguistics",
+                         "equestrian", "camels", "falcons", "education_heritage"]
 DEFAULT_DELAY_SECONDS = 10.0
 
 
