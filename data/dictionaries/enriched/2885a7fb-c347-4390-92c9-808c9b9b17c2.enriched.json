@@ -2,14 +2,14 @@
   "dictionary_id": "2885a7fb-c347-4390-92c9-808c9b9b17c2",
   "dictionary_name": "معجم مصطلحات القطاع غير الربحي",
   "source_export": "data/dictionaries/exports/2885a7fb-c347-4390-92c9-808c9b9b17c2.json",
-  "generated_at": "2026-11-14T01:58:18.440505+00:00",
+  "generated_at": "2026-11-14T09:03:29.641273+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 521,
     "senses_reviewed": 521,
     "senses_with_variants": 521,
-    "variants_accepted": 626,
-    "variants_needing_review": 332
+    "variants_accepted": 621,
+    "variants_needing_review": 337
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4924,8 +4924,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "employee assistance programs",
@@ -6962,8 +6964,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -12083,8 +12087,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "fieldwork",
@@ -14243,8 +14249,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "دراسة السلوكيات البشرية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28480,8 +28488,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",

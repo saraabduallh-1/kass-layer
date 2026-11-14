@@ -2,14 +2,14 @@
   "dictionary_id": "71c16f98-93e1-4cf1-a401-293b4e0ffe07",
   "dictionary_name": "معجم الأسلوبية والبلاغة",
   "source_export": "data/dictionaries/exports/71c16f98-93e1-4cf1-a401-293b4e0ffe07.json",
-  "generated_at": "2026-11-14T01:58:21.627245+00:00",
+  "generated_at": "2026-11-14T09:03:32.204682+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 7910,
     "senses_reviewed": 250,
     "senses_with_variants": 242,
-    "variants_accepted": 175,
-    "variants_needing_review": 104
+    "variants_accepted": 169,
+    "variants_needing_review": 110
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -2547,8 +2547,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "البنية السطحية",
@@ -3288,8 +3290,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -6094,8 +6098,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -6276,8 +6282,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "اللغة النغمية",
@@ -8498,8 +8506,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أقرأ بحثًا عن generative phonology.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -11586,8 +11596,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",

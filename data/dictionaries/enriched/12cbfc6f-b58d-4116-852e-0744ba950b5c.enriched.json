@@ -2,14 +2,14 @@
   "dictionary_id": "12cbfc6f-b58d-4116-852e-0744ba950b5c",
   "dictionary_name": "معجم اللغة المسرحية",
   "source_export": "data/dictionaries/exports/12cbfc6f-b58d-4116-852e-0744ba950b5c.json",
-  "generated_at": "2026-11-14T01:58:17.990026+00:00",
+  "generated_at": "2026-11-14T09:03:29.236801+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1482,
     "senses_reviewed": 1460,
     "senses_with_variants": 719,
-    "variants_accepted": 1157,
-    "variants_needing_review": 205
+    "variants_accepted": 1152,
+    "variants_needing_review": 210
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1842,8 +1842,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أهم شي في المسرح هو هنا والآن.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -7687,8 +7689,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تساعد تعابير الوجه الممثل على توصيل مشاعره للجمهور.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تعبيرات الوجه",
@@ -23587,8 +23591,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الفعل الكلامي",
@@ -35824,8 +35830,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -64017,8 +64025,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",

@@ -2,14 +2,14 @@
   "dictionary_id": "b09d4471-8198-4a82-b9f9-5fa97b140e2b",
   "dictionary_name": "مسرد المصطلحات القانونية",
   "source_export": "data/dictionaries/exports/b09d4471-8198-4a82-b9f9-5fa97b140e2b.json",
-  "generated_at": "2026-11-14T01:58:23.871149+00:00",
+  "generated_at": "2026-11-14T09:03:34.169294+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 755,
     "senses_reviewed": 755,
     "senses_with_variants": 755,
-    "variants_accepted": 761,
-    "variants_needing_review": 719
+    "variants_accepted": 760,
+    "variants_needing_review": 720
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -2915,7 +2915,8 @@
             "example": "تم استنطاق الشاهد.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -15997,8 +15998,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "session",

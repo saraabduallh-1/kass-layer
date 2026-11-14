@@ -2,14 +2,14 @@
   "dictionary_id": "4264f8ae-7c51-437d-a6e4-877abad57325",
   "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
   "source_export": "data/dictionaries/exports/4264f8ae-7c51-437d-a6e4-877abad57325.json",
-  "generated_at": "2026-11-14T01:58:19.117480+00:00",
+  "generated_at": "2026-11-14T09:03:30.306926+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1893,
     "senses_reviewed": 1893,
     "senses_with_variants": 1428,
-    "variants_accepted": 1394,
-    "variants_needing_review": 1394
+    "variants_accepted": 1392,
+    "variants_needing_review": 1396
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -18356,6 +18356,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -25646,8 +25647,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "شركة التقنية تستخدم تحليل النصوص لفهم آراء العملاء.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Text Mining",
@@ -28938,6 +28941,7 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -32019,8 +32023,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "سجل الموظف تطور وظيفي كبير خلال العام الماضي.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -84904,7 +84910,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],

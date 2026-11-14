@@ -2,14 +2,14 @@
   "dictionary_id": "004ce05a-0d56-45e4-a284-1b0358d4cfc4",
   "dictionary_name": "معجم مصطلحات علم السلوك",
   "source_export": "data/dictionaries/exports/004ce05a-0d56-45e4-a284-1b0358d4cfc4.json",
-  "generated_at": "2026-11-14T01:58:16.207585+00:00",
+  "generated_at": "2026-11-14T09:03:27.612782+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 205,
     "senses_reviewed": 205,
     "senses_with_variants": 205,
-    "variants_accepted": 297,
-    "variants_needing_review": 119
+    "variants_accepted": 296,
+    "variants_needing_review": 120
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1216,8 +1216,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "Anthropomorphism",

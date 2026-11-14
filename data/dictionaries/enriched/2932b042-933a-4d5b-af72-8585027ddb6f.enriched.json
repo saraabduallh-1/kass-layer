@@ -2,14 +2,14 @@
   "dictionary_id": "2932b042-933a-4d5b-af72-8585027ddb6f",
   "dictionary_name": "معجم المصطلحات الإنمائية",
   "source_export": "data/dictionaries/exports/2932b042-933a-4d5b-af72-8585027ddb6f.json",
-  "generated_at": "2026-11-14T01:58:18.577583+00:00",
+  "generated_at": "2026-11-14T09:03:29.771111+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 791,
     "senses_reviewed": 791,
     "senses_with_variants": 791,
-    "variants_accepted": 832,
-    "variants_needing_review": 480
+    "variants_accepted": 828,
+    "variants_needing_review": 484
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -9061,8 +9061,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نجاح self-directed learning يحتاج هدف واضح.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17704,8 +17706,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -21929,8 +21933,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22425,8 +22431,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تختلف الأدوار حسب الجندر في بعض المجتمعات.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
