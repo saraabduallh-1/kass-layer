@@ -23,6 +23,12 @@ Next, in order (the user's plan):
    Stage 2, user's decision: Claude reviews all of the 7 small dictionaries (`session_review.py show/apply`, batches
    of ~120); stylistics (71c16f98) and applied linguistics (d0328aad), ~13k senses, get a sample only for now and
    their unreviewed proposals stay `review`; the user may come back to review them fully later.
+   DONE 2026-11-14: all 9 generated and reviewed (legal glossary, theatre 1460/1482, sociolinguistics, equestrian,
+   camels, falcons all; education heritage 294/324: Gemma kept failing on the rest; stylistics and applied
+   linguistics 250-sense samples). Embeddings rebuilt (153,311 vectors), page data rebuilt (31 dictionaries, 60,493
+   senses). Gold numbers unchanged from the 2026-11-08 baseline after one `also` entry (المحكمة الابتدائية → محكمة
+   الدرجة الأولى, right, from the new legal glossary); parity 238/238, unify parity 58/58, unify 100/66.7 and
+   100/71.4, pytest 42 passed. The 693 old forms that moved accepted → review changed no gold result.
 1. When extraction is done: enrichment of the 9 (Gemma proposes, Claude reviews; "Next: everyday-Arabic enrichment
    pass 3" and pass 2 below), then `scripts/embeddings/build_embeddings.py build`, rebuild the page data, run every gold
    set and `parity.py` / `parity_unify.py`, compare with the baseline.
@@ -224,7 +230,7 @@ QWEN_MODEL=gemma3:12b
 (The variable names say QWEN for history; any OpenAI-compatible endpoint works, including Ollama.)
 
 ## Working rules from the user
-- Ask before every git commit/push. Keys only in `.env`, never in chat. Explain in Arabic; the user is learning.
+- Commit and push to `enrichment-pass1` without asking (user, 2026-11-14); never push to `main`. Keys only in `.env`, never in chat. Explain in Arabic; the user is learning.
 - Keep Claude usage low (small batches); heavy model work runs locally on the PC GPU (Gemma via Ollama).
 - Never modify the original term files. Delete unneeded files. Minimal user involvement.
 - Quality over quantity for every variant. Explain each step when teaching (the user wants to learn).
