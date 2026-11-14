@@ -2,14 +2,14 @@
   "dictionary_id": "0f0ad290-0fa5-4983-bb56-7144c641cc8c",
   "dictionary_name": "معجم مصطلحات تصنيع السيارات الكهربائية وصيانتها",
   "source_export": "data/dictionaries/exports/0f0ad290-0fa5-4983-bb56-7144c641cc8c.json",
-  "generated_at": "2026-11-09T06:43:21.824632+00:00",
+  "generated_at": "2026-11-14T01:35:21.119931+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1061,
     "senses_reviewed": 1061,
     "senses_with_variants": 1061,
-    "variants_accepted": 1553,
-    "variants_needing_review": 777
+    "variants_accepted": 1552,
+    "variants_needing_review": 778
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1513,7 +1513,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -20377,7 +20378,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -44886,8 +44888,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "كماليات",
@@ -51248,6 +51252,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }
@@ -58712,6 +58717,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "is_standard_term_elsewhere",
               "proposed_for_other_terms"
             ]
           }

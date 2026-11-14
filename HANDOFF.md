@@ -18,6 +18,11 @@ Where things stand:
   Not extracted on purpose: القاموس المحيط، names, bilingual dictionaries (not term sources).
 
 Next, in order (the user's plan):
+0. 2026-11-13: extraction of the 9 done (17,370 entries, commit 718a8db). Stage 1 (Gemma proposals) runs in the
+   background: `scripts/enrich/run_new_generation.py` (resumable; log `logs/enrich-new.log`, `logs/enrich-new.done`).
+   Stage 2, user's decision: Claude reviews all of the 7 small dictionaries (`session_review.py show/apply`, batches
+   of ~120); stylistics (71c16f98) and applied linguistics (d0328aad), ~13k senses, get a sample only for now and
+   their unreviewed proposals stay `review`; the user may come back to review them fully later.
 1. When extraction is done: enrichment of the 9 (Gemma proposes, Claude reviews; "Next: everyday-Arabic enrichment
    pass 3" and pass 2 below), then `scripts/embeddings/build_embeddings.py build`, rebuild the page data, run every gold
    set and `parity.py` / `parity_unify.py`, compare with the baseline.

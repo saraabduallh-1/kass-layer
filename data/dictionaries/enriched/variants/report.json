@@ -1,36 +1,39 @@
 {
-  "generated_at": "2026-11-09T06:43:29.400523+00:00",
+  "generated_at": "2026-11-14T01:35:31.264603+00:00",
   "prompt_versions": {
     "generation": "3",
     "review": "1"
   },
   "totals": {
-    "dictionaries": 22,
-    "senses": 40102,
-    "generated": 40102,
-    "reviewed": 40102,
+    "dictionaries": 31,
+    "senses": 60493,
+    "generated": 53518,
+    "reviewed": 45623,
     "variants_by_status": {
-      "accepted": 50696,
-      "review": 36753
+      "accepted": 53410,
+      "review": 54132
     },
     "variants_by_type": {
-      "foreign": 61498,
-      "informal_synonym": 13334,
-      "abbreviation": 5711,
-      "transliteration": 3744,
-      "spelling_variant": 1739,
-      "colloquial": 1423
+      "foreign": 65591,
+      "informal_synonym": 27557,
+      "abbreviation": 5858,
+      "transliteration": 4801,
+      "spelling_variant": 2141,
+      "colloquial": 1594
     },
     "reviewer_actions": {
-      "added": 84189,
-      "kept": 3258,
-      "corrected": 2
+      "added": 88630,
+      "kept": 3827,
+      "corrected": 2,
+      "unreviewed": 15083
     },
     "review_reasons": {
-      "proposed_for_other_terms": 34494,
-      "is_standard_term_elsewhere": 4554,
-      "ambiguous": 581,
-      "low_confidence": 209
+      "proposed_for_other_terms": 45052,
+      "is_standard_term_elsewhere": 11680,
+      "ambiguous": 1500,
+      "low_confidence": 6436,
+      "not_reviewed_by_claude": 15083,
+      "has_definite_article": 329
     }
   },
   "claude_token_usage": {},
@@ -41,8 +44,8 @@
       "generated": 205,
       "reviewed": 205,
       "senses_with_variants": 205,
-      "variants_accepted": 306,
-      "variants_review": 110,
+      "variants_accepted": 297,
+      "variants_review": 119,
       "variants_dropped": 79
     },
     "0f0ad290-0fa5-4983-bb56-7144c641cc8c": {
@@ -51,8 +54,8 @@
       "generated": 1061,
       "reviewed": 1061,
       "senses_with_variants": 1061,
-      "variants_accepted": 1553,
-      "variants_review": 777,
+      "variants_accepted": 1552,
+      "variants_review": 778,
       "variants_dropped": 493
     },
     "0f465c61-2af3-46e6-9ad5-f3a3d4c0bc24": {
@@ -61,9 +64,19 @@
       "generated": 6107,
       "reviewed": 6107,
       "senses_with_variants": 6104,
-      "variants_accepted": 7774,
-      "variants_review": 6418,
+      "variants_accepted": 7476,
+      "variants_review": 6716,
       "variants_dropped": 5133
+    },
+    "12cbfc6f-b58d-4116-852e-0744ba950b5c": {
+      "dictionary_name": "معجم اللغة المسرحية",
+      "senses": 1482,
+      "generated": 1460,
+      "reviewed": 1460,
+      "senses_with_variants": 719,
+      "variants_accepted": 1162,
+      "variants_review": 200,
+      "variants_dropped": 2092
     },
     "2813060b-8eda-4c7b-8b10-1fc3255305cb": {
       "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
@@ -71,8 +84,8 @@
       "generated": 856,
       "reviewed": 856,
       "senses_with_variants": 856,
-      "variants_accepted": 1293,
-      "variants_review": 663,
+      "variants_accepted": 1285,
+      "variants_review": 671,
       "variants_dropped": 415
     },
     "2885a7fb-c347-4390-92c9-808c9b9b17c2": {
@@ -81,8 +94,8 @@
       "generated": 521,
       "reviewed": 521,
       "senses_with_variants": 521,
-      "variants_accepted": 646,
-      "variants_review": 312,
+      "variants_accepted": 627,
+      "variants_review": 331,
       "variants_dropped": 479
     },
     "2932b042-933a-4d5b-af72-8585027ddb6f": {
@@ -91,9 +104,19 @@
       "generated": 791,
       "reviewed": 791,
       "senses_with_variants": 791,
-      "variants_accepted": 840,
-      "variants_review": 472,
+      "variants_accepted": 832,
+      "variants_review": 480,
       "variants_dropped": 628
+    },
+    "418913c1-8e46-450d-ab28-7694b51a6047": {
+      "dictionary_name": "معجم اللغويات الاجتماعية",
+      "senses": 1293,
+      "generated": 1283,
+      "reviewed": 1283,
+      "senses_with_variants": 1213,
+      "variants_accepted": 1475,
+      "variants_review": 628,
+      "variants_dropped": 2184
     },
     "4264f8ae-7c51-437d-a6e4-877abad57325": {
       "dictionary_name": "معجم المصطلحات المالية والاقتصادية",
@@ -101,8 +124,8 @@
       "generated": 1893,
       "reviewed": 1893,
       "senses_with_variants": 1428,
-      "variants_accepted": 1410,
-      "variants_review": 1378,
+      "variants_accepted": 1394,
+      "variants_review": 1394,
       "variants_dropped": 1254
     },
     "4cd164a7-7160-4de8-af5c-34382f5da657": {
@@ -111,8 +134,8 @@
       "generated": 1443,
       "reviewed": 1443,
       "senses_with_variants": 1441,
-      "variants_accepted": 2306,
-      "variants_review": 710,
+      "variants_accepted": 2279,
+      "variants_review": 737,
       "variants_dropped": 1158
     },
     "4fc63968-9cd8-47d9-a32e-aadc6c6a265b": {
@@ -121,8 +144,8 @@
       "generated": 446,
       "reviewed": 446,
       "senses_with_variants": 446,
-      "variants_accepted": 391,
-      "variants_review": 468,
+      "variants_accepted": 381,
+      "variants_review": 478,
       "variants_dropped": 519
     },
     "54a32a50-2b7e-49c2-9aa4-897f58fae786": {
@@ -131,8 +154,8 @@
       "generated": 507,
       "reviewed": 507,
       "senses_with_variants": 507,
-      "variants_accepted": 929,
-      "variants_review": 460,
+      "variants_accepted": 910,
+      "variants_review": 479,
       "variants_dropped": 819
     },
     "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d": {
@@ -141,9 +164,19 @@
       "generated": 632,
       "reviewed": 632,
       "senses_with_variants": 632,
-      "variants_accepted": 967,
-      "variants_review": 262,
+      "variants_accepted": 957,
+      "variants_review": 272,
       "variants_dropped": 196
+    },
+    "71c16f98-93e1-4cf1-a401-293b4e0ffe07": {
+      "dictionary_name": "معجم الأسلوبية والبلاغة",
+      "senses": 7910,
+      "generated": 7895,
+      "reviewed": 0,
+      "senses_with_variants": 7757,
+      "variants_accepted": 0,
+      "variants_review": 15083,
+      "variants_dropped": 675
     },
     "7806f9cf-4bdb-4c10-b9e5-2705d8945603": {
       "dictionary_name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
@@ -151,9 +184,19 @@
       "generated": 320,
       "reviewed": 320,
       "senses_with_variants": 311,
-      "variants_accepted": 275,
-      "variants_review": 342,
+      "variants_accepted": 271,
+      "variants_review": 346,
       "variants_dropped": 312
+    },
+    "84c98c01-6b96-469c-918f-e8d59fffe8ce": {
+      "dictionary_name": "معجم مصطلحات الفروسية",
+      "senses": 335,
+      "generated": 335,
+      "reviewed": 335,
+      "senses_with_variants": 28,
+      "variants_accepted": 20,
+      "variants_review": 11,
+      "variants_dropped": 472
     },
     "89af196b-70be-4a4b-b193-4b761e0b0fdd": {
       "dictionary_name": "قاموس العقود والمشتريات وسلاسل الإمداد",
@@ -161,8 +204,8 @@
       "generated": 2284,
       "reviewed": 2284,
       "senses_with_variants": 2284,
-      "variants_accepted": 3325,
-      "variants_review": 1911,
+      "variants_accepted": 3275,
+      "variants_review": 1961,
       "variants_dropped": 2701
     },
     "928f4f87-b98c-4b2d-b31d-0b45c6747644": {
@@ -171,8 +214,8 @@
       "generated": 833,
       "reviewed": 833,
       "senses_with_variants": 788,
-      "variants_accepted": 1143,
-      "variants_review": 489,
+      "variants_accepted": 1121,
+      "variants_review": 511,
       "variants_dropped": 633
     },
     "94d205e3-6e93-4b6b-a245-1d5304b3ed7d": {
@@ -181,8 +224,8 @@
       "generated": 387,
       "reviewed": 387,
       "senses_with_variants": 387,
-      "variants_accepted": 568,
-      "variants_review": 423,
+      "variants_accepted": 559,
+      "variants_review": 432,
       "variants_dropped": 412
     },
     "97ac5360-d65f-425f-974f-9118f09d13a6": {
@@ -195,15 +238,45 @@
       "variants_review": 203,
       "variants_dropped": 219
     },
+    "9be14020-1138-4651-8d3f-713ee1d0c750": {
+      "dictionary_name": "معجم الألفاظ والمصطلحات التربوية في التراث العربي",
+      "senses": 324,
+      "generated": 289,
+      "reviewed": 289,
+      "senses_with_variants": 5,
+      "variants_accepted": 5,
+      "variants_review": 0,
+      "variants_dropped": 431
+    },
+    "a92ca8f8-fe2b-4ab2-8ef5-5bd374c1f082": {
+      "dictionary_name": "معجم مصطلحات الإبل",
+      "senses": 1051,
+      "generated": 1051,
+      "reviewed": 1051,
+      "senses_with_variants": 7,
+      "variants_accepted": 6,
+      "variants_review": 1,
+      "variants_dropped": 1470
+    },
     "ae041c6d-79e6-42c3-b54b-ffbf28c88b9a": {
       "dictionary_name": "معجم المصطلحات الرياضية",
       "senses": 981,
       "generated": 981,
       "reviewed": 981,
       "senses_with_variants": 981,
-      "variants_accepted": 1652,
-      "variants_review": 701,
+      "variants_accepted": 1632,
+      "variants_review": 721,
       "variants_dropped": 768
+    },
+    "b09d4471-8198-4a82-b9f9-5fa97b140e2b": {
+      "dictionary_name": "مسرد المصطلحات القانونية",
+      "senses": 755,
+      "generated": 755,
+      "reviewed": 755,
+      "senses_with_variants": 755,
+      "variants_accepted": 761,
+      "variants_review": 719,
+      "variants_dropped": 1547
     },
     "b4759d02-40ef-4df5-a818-4081a11c338c": {
       "dictionary_name": "معجم المصطلحات الموسيقية",
@@ -211,9 +284,19 @@
       "generated": 700,
       "reviewed": 700,
       "senses_with_variants": 618,
-      "variants_accepted": 874,
-      "variants_review": 485,
+      "variants_accepted": 853,
+      "variants_review": 506,
       "variants_dropped": 522
+    },
+    "b510d6e1-0517-4b7f-b342-b2c9fa4f4e8a": {
+      "dictionary_name": "معجم مصطلحات الصقور",
+      "senses": 348,
+      "generated": 348,
+      "reviewed": 348,
+      "senses_with_variants": 15,
+      "variants_accepted": 17,
+      "variants_review": 5,
+      "variants_dropped": 503
     },
     "b60a0505-57cb-436a-8a07-75b062de8013": {
       "dictionary_name": "معجم مصطلحات علوم هندسة الطيران والفضاء",
@@ -221,8 +304,8 @@
       "generated": 16215,
       "reviewed": 16215,
       "senses_with_variants": 16214,
-      "variants_accepted": 19828,
-      "variants_review": 17271,
+      "variants_accepted": 19735,
+      "variants_review": 17364,
       "variants_dropped": 6115
     },
     "c59be8de-20c3-482b-ab57-ce923dfb4cee": {
@@ -231,9 +314,19 @@
       "generated": 825,
       "reviewed": 825,
       "senses_with_variants": 811,
-      "variants_accepted": 614,
-      "variants_review": 942,
+      "variants_accepted": 551,
+      "variants_review": 1005,
       "variants_dropped": 505
+    },
+    "d0328aad-1959-4a9f-9cc8-f23216399c3a": {
+      "dictionary_name": "المعجم الموسوعي لمصطلحات اللسانيات التطبيقية",
+      "senses": 6893,
+      "generated": 0,
+      "reviewed": 0,
+      "senses_with_variants": 0,
+      "variants_accepted": 0,
+      "variants_review": 0,
+      "variants_dropped": 0
     },
     "ee392446-a5df-4b0c-b1e2-f0002b74342d": {
       "dictionary_name": "معجم المصطلحات الإحصائية",
@@ -241,8 +334,8 @@
       "generated": 1390,
       "reviewed": 1390,
       "senses_with_variants": 1027,
-      "variants_accepted": 1224,
-      "variants_review": 767,
+      "variants_accepted": 1206,
+      "variants_review": 785,
       "variants_dropped": 690
     },
     "f990c2a0-f601-466f-8153-2cd35e4710a3": {
@@ -251,8 +344,8 @@
       "generated": 1575,
       "reviewed": 1575,
       "senses_with_variants": 1575,
-      "variants_accepted": 2659,
-      "variants_review": 1189,
+      "variants_accepted": 2652,
+      "variants_review": 1196,
       "variants_dropped": 908
     }
   }
