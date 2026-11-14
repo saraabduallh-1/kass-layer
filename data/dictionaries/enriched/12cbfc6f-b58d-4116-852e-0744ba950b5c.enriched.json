@@ -2,14 +2,14 @@
   "dictionary_id": "12cbfc6f-b58d-4116-852e-0744ba950b5c",
   "dictionary_name": "معجم اللغة المسرحية",
   "source_export": "data/dictionaries/exports/12cbfc6f-b58d-4116-852e-0744ba950b5c.json",
-  "generated_at": "2026-11-14T01:35:22.578581+00:00",
+  "generated_at": "2026-11-14T01:58:17.990026+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1482,
     "senses_reviewed": 1460,
     "senses_with_variants": 719,
-    "variants_accepted": 1162,
-    "variants_needing_review": 200
+    "variants_accepted": 1157,
+    "variants_needing_review": 205
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4274,8 +4274,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -6146,8 +6148,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مسرحة",
@@ -7031,8 +7035,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -10798,8 +10804,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "جانبية",
@@ -33976,7 +33984,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -59080,8 +59089,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "باروديا",
