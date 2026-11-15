@@ -11,6 +11,8 @@ text and lets the writer unify them. Kass only **proposes**: nothing in the text
   `/analyse`, ~41 ms for `/unify` (`reports/presentation/speed/`).
 - Live: https://kass.arai.center (the page at `/`, the API on the same host). Interactive docs: `/docs`.
 
+Saleem client (one file, standard library): `integrations/saleem/kass_client.py`, guide `integrations/saleem/README.md`.
+
 ## Run it
 ```
 pip install -r requirements-api.txt
