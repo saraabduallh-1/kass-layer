@@ -51,7 +51,11 @@ def _dictionary(dictionary_id: str) -> dict:
 
 def cmd_show(args) -> None:
     dictionary = _dictionary(args.dictionary)
-    pairs = pending_review(dictionary)[: args.limit]
+    pairs = pending_review(dictionary)
+    if args.only:  # e.g. --only t,a: senses with a transliteration or abbreviation proposal (what writers type)
+        wanted = {TYPES[t] for t in args.only.split(",")}
+        pairs = [(r, g) for r, g in pairs if any(v.get("type") in wanted for v in g["variants"])]
+    pairs = pairs[: args.limit]
     write_json(SELECTION_DIR / f"{dictionary['dictionary_id']}.json", [record["sense_id"] for record, _ in pairs])
     print(f"# {dictionary['dictionary_name'].strip()} — {len(pending_review(dictionary))} pending, showing {len(pairs)}")
     for n, (record, generation) in enumerate(pairs, start=1):
@@ -133,6 +137,7 @@ def main() -> None:
     show.add_argument("dictionary")
     show.add_argument("--limit", type=int, default=120)
     show.add_argument("--width", type=int, default=90, help="definition characters shown")
+    show.add_argument("--only", default="", help="comma-separated proposal types to select senses by, e.g. t,a")
     show.set_defaults(handler=cmd_show)
     apply = commands.add_parser("apply")
     apply.add_argument("dictionary")

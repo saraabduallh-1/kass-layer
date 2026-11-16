@@ -2,14 +2,14 @@
   "dictionary_id": "418913c1-8e46-450d-ab28-7694b51a6047",
   "dictionary_name": "معجم اللغويات الاجتماعية",
   "source_export": "data/dictionaries/exports/418913c1-8e46-450d-ab28-7694b51a6047.json",
-  "generated_at": "2026-11-14T09:03:30.000971+00:00",
+  "generated_at": "2026-11-16T23:49:46.449124+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1293,
     "senses_reviewed": 1283,
     "senses_with_variants": 1213,
-    "variants_accepted": 1374,
-    "variants_needing_review": 729
+    "variants_accepted": 1350,
+    "variants_needing_review": 753
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -3105,8 +3105,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "honorifics",
@@ -4736,8 +4738,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "code switching",
@@ -9739,7 +9743,8 @@
             "example": "يجب أن نأخذ في الاعتبار التداوليّة عند تحليل النصوص.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -9751,6 +9756,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
+              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -11761,8 +11767,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "multilingual",
@@ -14614,8 +14622,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "تعدد المعنى",
@@ -16913,8 +16923,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -22456,8 +22468,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -25394,7 +25408,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -25924,8 +25939,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "اللهجات العربية",
@@ -26361,8 +26378,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الفعل الإنجازي",
@@ -27849,8 +27868,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -30710,8 +30731,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الشعرية",
@@ -36874,8 +36897,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "The semantic field of colors is culturally influenced.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الحقل الدلالي",
@@ -38849,8 +38874,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "historical present",
@@ -42062,8 +42089,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مورفيم",
@@ -43203,8 +43232,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -43592,8 +43623,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الجماعة اللغوية",
@@ -43675,7 +43708,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -46351,8 +46385,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "عملية tagging مهمة لتنظيم البيانات.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الوسم",
@@ -48894,8 +48930,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -49294,10 +49332,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "iconic",
@@ -49980,8 +50016,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -53188,8 +53226,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الديالكتيك",
@@ -58718,8 +58758,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -59741,8 +59783,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المرجع",
@@ -60723,8 +60767,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -63473,8 +63519,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أظهرت الدراسة أن المجتمع monolingual يواجه تحديات.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الأحادية اللغوية",
@@ -64882,8 +64930,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -65960,8 +66010,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "يعتبر formalism من أهم التيارات الأدبية.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الشكلانية",

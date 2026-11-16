@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T09:03:39.721416+00:00",
+  "generated_at": "2026-11-16T23:49:53.433996+00:00",
   "prompt_versions": {
     "generation": "3",
     "review": "1"
@@ -8,32 +8,32 @@
     "dictionaries": 31,
     "senses": 60493,
     "generated": 60411,
-    "reviewed": 46128,
+    "reviewed": 47121,
     "variants_by_status": {
-      "accepted": 53374,
-      "review": 65850
+      "accepted": 53695,
+      "review": 64321
     },
     "variants_by_type": {
-      "foreign": 66666,
-      "informal_synonym": 36397,
-      "abbreviation": 6103,
-      "transliteration": 5993,
-      "spelling_variant": 2308,
-      "colloquial": 1757
+      "foreign": 66989,
+      "informal_synonym": 35750,
+      "abbreviation": 6040,
+      "transliteration": 5184,
+      "spelling_variant": 2302,
+      "colloquial": 1751
     },
     "reviewer_actions": {
-      "added": 88951,
-      "kept": 3865,
+      "added": 89514,
+      "kept": 4035,
       "corrected": 2,
-      "unreviewed": 26406
+      "unreviewed": 24465
     },
     "review_reasons": {
-      "proposed_for_other_terms": 51914,
-      "is_standard_term_elsewhere": 15797,
-      "ambiguous": 1946,
-      "low_confidence": 10585,
-      "not_reviewed_by_claude": 26406,
-      "has_definite_article": 540
+      "proposed_for_other_terms": 51062,
+      "is_standard_term_elsewhere": 15278,
+      "ambiguous": 1837,
+      "low_confidence": 9607,
+      "not_reviewed_by_claude": 24465,
+      "has_definite_article": 515
     }
   },
   "claude_token_usage": {},
@@ -64,8 +64,8 @@
       "generated": 6107,
       "reviewed": 6107,
       "senses_with_variants": 6104,
-      "variants_accepted": 7458,
-      "variants_review": 6734,
+      "variants_accepted": 7460,
+      "variants_review": 6732,
       "variants_dropped": 5133
     },
     "12cbfc6f-b58d-4116-852e-0744ba950b5c": {
@@ -74,8 +74,8 @@
       "generated": 1460,
       "reviewed": 1460,
       "senses_with_variants": 719,
-      "variants_accepted": 1152,
-      "variants_review": 210,
+      "variants_accepted": 1143,
+      "variants_review": 219,
       "variants_dropped": 2092
     },
     "2813060b-8eda-4c7b-8b10-1fc3255305cb": {
@@ -104,8 +104,8 @@
       "generated": 791,
       "reviewed": 791,
       "senses_with_variants": 791,
-      "variants_accepted": 828,
-      "variants_review": 484,
+      "variants_accepted": 829,
+      "variants_review": 483,
       "variants_dropped": 628
     },
     "418913c1-8e46-450d-ab28-7694b51a6047": {
@@ -114,8 +114,8 @@
       "generated": 1283,
       "reviewed": 1283,
       "senses_with_variants": 1213,
-      "variants_accepted": 1374,
-      "variants_review": 729,
+      "variants_accepted": 1350,
+      "variants_review": 753,
       "variants_dropped": 2184
     },
     "4264f8ae-7c51-437d-a6e4-877abad57325": {
@@ -124,8 +124,8 @@
       "generated": 1893,
       "reviewed": 1893,
       "senses_with_variants": 1428,
-      "variants_accepted": 1392,
-      "variants_review": 1396,
+      "variants_accepted": 1391,
+      "variants_review": 1397,
       "variants_dropped": 1254
     },
     "4cd164a7-7160-4de8-af5c-34382f5da657": {
@@ -134,8 +134,8 @@
       "generated": 1443,
       "reviewed": 1443,
       "senses_with_variants": 1441,
-      "variants_accepted": 2258,
-      "variants_review": 758,
+      "variants_accepted": 2260,
+      "variants_review": 756,
       "variants_dropped": 1158
     },
     "4fc63968-9cd8-47d9-a32e-aadc6c6a265b": {
@@ -154,8 +154,8 @@
       "generated": 507,
       "reviewed": 507,
       "senses_with_variants": 507,
-      "variants_accepted": 902,
-      "variants_review": 487,
+      "variants_accepted": 905,
+      "variants_review": 484,
       "variants_dropped": 819
     },
     "6a6b2873-4ad1-4a9f-89c7-1f07ccbb476d": {
@@ -164,19 +164,19 @@
       "generated": 632,
       "reviewed": 632,
       "senses_with_variants": 632,
-      "variants_accepted": 956,
-      "variants_review": 273,
+      "variants_accepted": 957,
+      "variants_review": 272,
       "variants_dropped": 196
     },
     "71c16f98-93e1-4cf1-a401-293b4e0ffe07": {
       "dictionary_name": "معجم الأسلوبية والبلاغة",
       "senses": 7910,
       "generated": 7895,
-      "reviewed": 250,
-      "senses_with_variants": 7754,
-      "variants_accepted": 169,
-      "variants_review": 14723,
-      "variants_dropped": 1129
+      "reviewed": 1243,
+      "senses_with_variants": 7382,
+      "variants_accepted": 509,
+      "variants_review": 13175,
+      "variants_dropped": 2898
     },
     "7806f9cf-4bdb-4c10-b9e5-2705d8945603": {
       "dictionary_name": "معجم مصطلحات مركز قياس أداء الأجهزة العامة",
@@ -184,8 +184,8 @@
       "generated": 320,
       "reviewed": 320,
       "senses_with_variants": 311,
-      "variants_accepted": 270,
-      "variants_review": 347,
+      "variants_accepted": 271,
+      "variants_review": 346,
       "variants_dropped": 312
     },
     "84c98c01-6b96-469c-918f-e8d59fffe8ce": {
@@ -224,8 +224,8 @@
       "generated": 387,
       "reviewed": 387,
       "senses_with_variants": 387,
-      "variants_accepted": 557,
-      "variants_review": 434,
+      "variants_accepted": 558,
+      "variants_review": 433,
       "variants_dropped": 412
     },
     "97ac5360-d65f-425f-974f-9118f09d13a6": {
@@ -264,8 +264,8 @@
       "generated": 981,
       "reviewed": 981,
       "senses_with_variants": 981,
-      "variants_accepted": 1630,
-      "variants_review": 723,
+      "variants_accepted": 1633,
+      "variants_review": 720,
       "variants_dropped": 768
     },
     "b09d4471-8198-4a82-b9f9-5fa97b140e2b": {
@@ -284,8 +284,8 @@
       "generated": 700,
       "reviewed": 700,
       "senses_with_variants": 618,
-      "variants_accepted": 848,
-      "variants_review": 511,
+      "variants_accepted": 846,
+      "variants_review": 513,
       "variants_dropped": 522
     },
     "b510d6e1-0517-4b7f-b342-b2c9fa4f4e8a": {
@@ -304,8 +304,8 @@
       "generated": 16215,
       "reviewed": 16215,
       "senses_with_variants": 16214,
-      "variants_accepted": 19702,
-      "variants_review": 17397,
+      "variants_accepted": 19704,
+      "variants_review": 17395,
       "variants_dropped": 6115
     },
     "c59be8de-20c3-482b-ab57-ce923dfb4cee": {
@@ -344,8 +344,8 @@
       "generated": 1575,
       "reviewed": 1575,
       "senses_with_variants": 1575,
-      "variants_accepted": 2651,
-      "variants_review": 1197,
+      "variants_accepted": 2652,
+      "variants_review": 1196,
       "variants_dropped": 908
     }
   }

@@ -2,14 +2,14 @@
   "dictionary_id": "54a32a50-2b7e-49c2-9aa4-897f58fae786",
   "dictionary_name": "معجم مصطلحات الرياضات الإلكترونية",
   "source_export": "data/dictionaries/exports/54a32a50-2b7e-49c2-9aa4-897f58fae786.json",
-  "generated_at": "2026-11-14T09:03:30.993624+00:00",
+  "generated_at": "2026-11-16T23:49:47.192075+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 507,
     "senses_reviewed": 507,
     "senses_with_variants": 507,
-    "variants_accepted": 902,
-    "variants_needing_review": 487
+    "variants_accepted": 905,
+    "variants_needing_review": 484
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -3181,10 +3181,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "اللاعب المحترف يستخدم المايكرو بشكل مكثف للتحكم في كل وحدة.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "ميكرو",
@@ -3193,10 +3191,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -8779,10 +8775,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "كانون الرواية هو الأساس.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "لور",
