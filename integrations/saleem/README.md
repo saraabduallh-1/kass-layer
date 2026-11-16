@@ -19,3 +19,26 @@ it from the context block. Texts stay on the Kass server and are never sent to o
 
 Riyadh dictionary: when it is added to Kass, this client does not change. Only the server data
 (`demo_local/`) is rebuilt.
+
+## In Saleem's web editor (through the gateway)
+
+The web editor calls Kass directly from the browser through Saleem's gateway. The Python client is not used there.
+
+| Saleem side | What it does |
+|---|---|
+| Gateway (`KSGAAL-DotNET`, `ocelot*.json`) | `POST /kass/analyse` → `/analyse` and `POST /kass/unify` → `/unify` on host `ksgaal-kass` port 8000 (`127.0.0.1:8000` in Development). Authenticated like the other NLP tools. No other Kass path is exposed: no `/agree`, no page. |
+| Web UI (`KSGAAL-UI`, `features/editor/kass-terms`) | While the writer types, sends the editor text and the document's المجال المعرفي, mapped to a Kass domain. Shows term cards and unify cards under «تصحيح كل الأخطاء» and underlines the words. Writes only what the writer picks. |
+| Lookup (`KnowledgeDomain`) | The knowledge-domain list is the Kass domain list. |
+
+Settings for the Kass container beside Saleem:
+
+| Variable | Value for Saleem | Why |
+|---|---|---|
+| `KASS_MAX_CHARS` | e.g. `50000` | A Saleem document can be longer than the default limit of 5,000 characters. Above the limit Kass answers 422 and the editor shows no Kass suggestions. |
+| `KASS_CORS_ORIGINS` | the gateway's origin | The browser never calls Kass directly. The default is any origin. |
+| `KASS_AGREE_URL` | **unset** | `/agree` would send text to a language model. It is not routed, so keep it off. |
+
+Domain ids the editor sends (`kassDomainFor` in the UI): `legal`, `tech`, `finance`, `media`, `eng`, `culture`,
+`linguistics` (لغوي وأدبي), `heritage` (تراثي). The last two must be added to `DOMAINS` in
+`src/kass_layer/detector/engine.py` **with exactly these ids**. Until then Kass answers 422 for them and the editor
+stays silent.

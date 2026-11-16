@@ -19,7 +19,8 @@ pip install -r requirements-api.txt
 uvicorn kass_layer.detector.api:app --app-dir src --port 8000
 ```
 Or the container: `Dockerfile` + `deploy/docker-compose.yml` (set `KASS_SERVE_PAGE=1` to also serve the page).
-CORS is open to every origin (GET, POST). Texts are limited to 5,000 characters.
+CORS is open to every origin (GET, POST) unless `KASS_CORS_ORIGINS` lists the allowed ones (comma-separated).
+Texts are limited to 5,000 characters, or `KASS_MAX_CHARS`.
 
 ## Endpoints
 

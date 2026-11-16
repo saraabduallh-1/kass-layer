@@ -20,11 +20,14 @@ from .engine import DOMAINS, TYPE, Detector, replacement
 from .unify import unify, with_choices
 
 DATA_DIR = Path(os.environ.get("KASS_DATA_DIR", Path(__file__).resolve().parents[3] / "demo_local"))
-MAX_CHARS = 5000
+# A Saleem document can be longer than the demo page's texts; the Saleem deployment raises the limit (KASS_MAX_CHARS).
+MAX_CHARS = int(os.environ.get("KASS_MAX_CHARS", "5000"))
+# Behind Saleem's gateway no browser calls Kass directly, so the origins can be narrowed (comma-separated; default: any).
+CORS_ORIGINS = [o.strip() for o in os.environ.get("KASS_CORS_ORIGINS", "*").split(",") if o.strip()]
 
 app = FastAPI(title="Kass Layer term detector", version="1.0",
               description="Finds non-standard words in Arabic text and proposes the standard SIWAR term.")
-app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET", "POST"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=CORS_ORIGINS, allow_methods=["GET", "POST"], allow_headers=["*"])
 detector = Detector(DATA_DIR)
 
 
