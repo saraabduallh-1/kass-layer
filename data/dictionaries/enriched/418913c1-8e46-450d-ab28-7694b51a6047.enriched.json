@@ -2,14 +2,14 @@
   "dictionary_id": "418913c1-8e46-450d-ab28-7694b51a6047",
   "dictionary_name": "معجم اللغويات الاجتماعية",
   "source_export": "data/dictionaries/exports/418913c1-8e46-450d-ab28-7694b51a6047.json",
-  "generated_at": "2026-11-16T23:49:46.449124+00:00",
+  "generated_at": "2026-11-16T23:54:21.131755+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1293,
     "senses_reviewed": 1283,
     "senses_with_variants": 1213,
-    "variants_accepted": 1350,
-    "variants_needing_review": 753
+    "variants_accepted": 1373,
+    "variants_needing_review": 730
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -1302,8 +1302,7 @@
             "example": "نسعى للحفاظ على اللغة العربية.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -3516,10 +3515,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تُستخدم الأفعال modal للتعبير عن الاحتمالية.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الصيغة",
@@ -4750,10 +4747,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "التحول اللغوي",
@@ -4775,10 +4770,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "التناوب الشفري",
@@ -6281,10 +6274,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "البيئة اللسانية",
@@ -6594,10 +6585,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -7912,10 +7901,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -9824,10 +9811,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "نستخدم المنهج التواصلي في تدريس اللغة الإنجليزية.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -13243,10 +13228,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "التغير الصوتي",
@@ -16058,7 +16041,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           },
           {
@@ -25421,8 +25405,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -25595,10 +25578,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "random sampling",
@@ -26585,8 +26566,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "فرضية سابير-وورف",
@@ -26608,10 +26591,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -26958,8 +26939,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -28328,8 +28308,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -29633,8 +29612,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تدرس اللغة الإنجليزية كلغة أجنبية في المدرسة.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "english as a foreign language",
@@ -29643,10 +29624,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -29690,10 +29669,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "EFL",
@@ -29702,8 +29679,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -31460,10 +31439,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هناك لغة مهددة بالانقراض في منطقة جبال الألب.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -32999,10 +32976,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "علم اللغة الاجتماعي",
@@ -34738,8 +34713,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -35143,10 +35117,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "rhoticity",
@@ -37077,10 +37049,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -37264,10 +37234,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "التعميم المفرط",
@@ -42350,10 +42318,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -45330,10 +45296,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تساعدنا الإثنوجرافيا على فهم الثقافة اللغوية.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الإثنوغرافيا",
@@ -45521,10 +45485,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الـ phoneme هو الوحدة الصوتية الأساسية في اللغة.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "فونيم",
@@ -45535,8 +45497,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -47759,10 +47720,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تستخدم طريقة fronting في تحليل الأصوات.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "front vowels",
@@ -51271,10 +51230,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "SPEAKING model",
@@ -52196,10 +52153,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "النحونة",
@@ -57233,10 +57188,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هذا الصوت هو uvular.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الأصوات اللهوية",
@@ -57257,8 +57210,7 @@
             "example": "الـ لهوي يخرج من الجزء الخلفي من اللسان.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -57984,10 +57936,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "Haitian creole is a fascinating language.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الكريولية",
@@ -60578,10 +60528,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",

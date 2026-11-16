@@ -2,14 +2,14 @@
   "dictionary_id": "12cbfc6f-b58d-4116-852e-0744ba950b5c",
   "dictionary_name": "معجم اللغة المسرحية",
   "source_export": "data/dictionaries/exports/12cbfc6f-b58d-4116-852e-0744ba950b5c.json",
-  "generated_at": "2026-11-16T23:49:45.816105+00:00",
+  "generated_at": "2026-11-16T23:54:20.630840+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1482,
     "senses_reviewed": 1460,
     "senses_with_variants": 719,
-    "variants_accepted": 1143,
-    "variants_needing_review": 219
+    "variants_accepted": 1144,
+    "variants_needing_review": 218
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -23593,10 +23593,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الفعل الكلامي",

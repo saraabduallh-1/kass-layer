@@ -2,14 +2,14 @@
   "dictionary_id": "ee392446-a5df-4b0c-b1e2-f0002b74342d",
   "dictionary_name": "معجم المصطلحات الإحصائية",
   "source_export": "data/dictionaries/exports/ee392446-a5df-4b0c-b1e2-f0002b74342d.json",
-  "generated_at": "2026-11-16T23:49:53.030778+00:00",
+  "generated_at": "2026-11-16T23:54:27.209343+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 1390,
     "senses_reviewed": 1390,
     "senses_with_variants": 1027,
-    "variants_accepted": 1201,
-    "variants_needing_review": 790
+    "variants_accepted": 1202,
+    "variants_needing_review": 789
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -61753,8 +61753,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -65412,10 +65411,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "فترة الإقامة",

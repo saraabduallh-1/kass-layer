@@ -2,14 +2,14 @@
   "dictionary_id": "71c16f98-93e1-4cf1-a401-293b4e0ffe07",
   "dictionary_name": "معجم الأسلوبية والبلاغة",
   "source_export": "data/dictionaries/exports/71c16f98-93e1-4cf1-a401-293b4e0ffe07.json",
-  "generated_at": "2026-11-16T23:49:48.195523+00:00",
+  "generated_at": "2026-11-16T23:54:22.716486+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 7910,
     "senses_reviewed": 1243,
     "senses_with_variants": 846,
-    "variants_accepted": 509,
-    "variants_needing_review": 503
+    "variants_accepted": 518,
+    "variants_needing_review": 494
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -6290,10 +6290,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "اللغة النغمية",
@@ -8524,10 +8522,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أقرأ بحثًا عن generative phonology.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -22992,10 +22988,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "هناك الكثير من الجارجون في هذا المجال.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -27111,10 +27105,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -27410,8 +27402,7 @@
             "example": "أتعلم لغة برمجة جديدة.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -36047,10 +36038,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -88227,10 +88216,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -186164,10 +186151,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "تكافؤ وظيفي",
@@ -233779,10 +233764,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أخذت دورة في سيميولوجيا.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -239959,10 +239942,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "قرأت مقالاً عن generative semantics.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -247420,8 +247401,7 @@
             "example": "درس الطالب النحو التوليدي في الجامعة.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
