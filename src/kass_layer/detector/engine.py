@@ -98,6 +98,17 @@ def sim(a: str, b: str) -> float:
 NATIVE = re.compile("[عحصضظذثءؤئة]")
 
 
+def en_key(en: str | None) -> str:
+    return " ".join(re.sub(r"\([^)]*\)", " ", en or "").split()).lower()
+
+
+def agree_key(t: str) -> str:
+    return " ".join(bare(w) for w in normalize(re.sub(r"\([^)]*\)", " ", t)).split(" "))
+
+
+EN_ADJ = re.compile(r"(ic|ical|ive|ous)$")
+
+
 def bare(w: str) -> str:
     return w[2:] if w.startswith("ال") and len(w) > 4 else w
 
@@ -216,6 +227,13 @@ class Detector:
         names = [normalize(n) for n in self.dictionaries]
         self.domains = [dict(dom, dicts={i for i, n in enumerate(names) if any(normalize(k) in n for k in dom["keys"])}) for dom in DOMAINS]
         self._build_phon()
+        # (english, term) -> dictionaries giving that pair: a rendering two dictionaries agree on is the usual term
+        # (metaphor: استعارة in two dictionaries beats أسلوب أدبي in one)
+        self.agree: dict[tuple, set] = {}
+        for sense in self.senses:
+            en = en_key(sense[2])
+            if en:
+                self.agree.setdefault((en, agree_key(sense[0])), set()).add(sense[1])
 
     # ---- helpers that need the data
     def native(self, w: str) -> bool:
@@ -595,7 +613,16 @@ class Detector:
                         sound = max(sound, sim(surf, sk))
                 acr = 1 if m["how"] == "acronym" and re.search(r"\(" + m["head"] + r"s?\)|^" + m["head"] + "$", sense[2] or "", re.I) else 0
                 ctx = 0 if everyday else self.context_score(r[0], text_words, own)
-                return acr + ctx + sound * 2 + (0.3 if r[1] & 1 else 0) + (0.3 if sense[1] == domain else 0.1 if sense[1] in top3 else 0) - len(sense[0]) / 200
+                ek = en_key(sense[2])
+                # dictionaries that give many renderings of one English word (stylistics: 9 for discourse) mix the term
+                # with glosses: prefer a rendering other dictionaries agree on, and a term over a long description
+                extra = 0.3 if ek and len(self.agree.get((ek, agree_key(sense[0])), ())) > 1 else 0
+                if ek and " " not in ek and len(sense[0].split()) >= 3:
+                    extra -= 0.3
+                # a borrowed noun (مونولوج) is not the English adjective (monologic); the Arabic adjective ends in ي
+                if surf and ARABIC_WORD.search(p) and not p.endswith("ي") and EN_ADJ.search(ek):
+                    extra -= 0.3
+                return acr + ctx + sound * 2 + extra + (0.3 if r[1] & 1 else 0) + (0.3 if sense[1] == domain else 0.1 if sense[1] in top3 else 0) - len(sense[0]) / 200
 
             vals = list(by_term.values())
             # meaning closeness: to the other terms found; for an everyday word, to all the words around it

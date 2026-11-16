@@ -366,6 +366,9 @@ summary { cursor: pointer; font-weight: 600 }
     });
   }
   const NATIVE = /[عحصضظذثءؤئة]/;
+  let AGREE = new Map();
+  const enKey = en => (en || "").replace(/\([^)]*\)/g, " ").split(/\s+/).filter(Boolean).join(" ").toLowerCase();
+  const agreeKey = t => normalize(t.replace(/\([^)]*\)/g, " ")).split(" ").map(w => bare(w)).join(" ");
   const bare = w => w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
   // the word without a leading particle and without a pronoun ending: بتقنيات → تقنيات, استراتيجيتك → استراتيجيه
   const arabicReadings = w => {
@@ -656,7 +659,15 @@ summary { cursor: pointer; font-weight: 600 }
         if (surf && en) for (const sk of enSkels(en)) sound = Math.max(sound, 1 - lev(surf, sk) / Math.max(surf.length, sk.length, 1));
         const acr = m.how === "acronym" && new RegExp("\\(" + m.head + "s?\\)|^" + m.head + "$", "i").test(sense[2] || "") ? 1 : 0;
         const ctx = everyday ? 0 : contextScore(r[0], textWords, ctxWords(text.slice(m.s, m.e)));
-        return acr + ctx + sound * 2 + (r[1] & 1 ? 0.3 : 0) + (sense[1] === domain ? 0.3 : top3.has(sense[1]) ? 0.1 : 0) - sense[0].length / 200;
+        const ek = enKey(sense[2]);
+        // dictionaries that give many renderings of one English word (stylistics: 9 for discourse) mix the term
+        // with glosses: prefer a rendering other dictionaries agree on, and a term over a long description
+        let extra = ek && (AGREE.get(ek + "|" + agreeKey(sense[0])) || 0) > 1 ? 0.3 : 0;
+        if (ek && !ek.includes(" ") && sense[0].split(/\s+/).filter(Boolean).length >= 3) extra -= 0.3;
+        // a borrowed noun (مونولوج) is not the English adjective (monologic); the Arabic adjective ends in ي
+        const hd = m.head || "";
+        if (surf && /^[؀-ۿ]+$/.test(hd) && !hd.endsWith("ي") && /(ic|ical|ive|ous)$/.test(ek)) extra -= 0.3;
+        return acr + ctx + sound * 2 + extra + (r[1] & 1 ? 0.3 : 0) + (sense[1] === domain ? 0.3 : top3.has(sense[1]) ? 0.1 : 0) - sense[0].length / 200;
       };
       // meaning closeness: to the other terms found; for an everyday word, to all the words around it
       const sims = wordSims && wordSims.size ? wordSims : ctxVec ? new Map([...byTerm.values()].map(r => [r[0], simTo(r[0], ctxVec)])) : null;
@@ -1050,6 +1061,10 @@ summary { cursor: pointer; font-weight: 600 }
     }).catch(() => {});
     fetch("context.json").then(r => r.ok ? r.json() : null).then(c => { if (c) { CTX = c.kw; if (LAST.text) run(); } }).catch(() => {});
     const names = d.dictionaries.map(n => normalize(n));
+    // (english, term) -> number of dictionaries giving that pair (see rank)
+    const agreeSets = new Map();
+    for (const sn of d.senses) { const ek = enKey(sn[2]); if (!ek) continue; const k = ek + "|" + agreeKey(sn[0]); if (!agreeSets.has(k)) agreeSets.set(k, new Set()); agreeSets.get(k).add(sn[1]); }
+    AGREE = new Map([...agreeSets].map(([k, v]) => [k, v.size]));
     for (const dom of DOMAINS) if (dom.keys) dom.dicts = new Set(names.flatMap((n, i) => dom.keys.some(k => n.includes(normalize(k))) ? [i] : []));
     $("go").disabled = false;
     $("status").textContent = `جاهز: ${d.senses.length.toLocaleString("ar-SA")} مصطلح من ${d.dictionaries.length} معجمًا.`;
