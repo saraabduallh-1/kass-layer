@@ -766,7 +766,17 @@ summary { cursor: pointer; font-weight: 600 }
   }
   const uSpellingKey = w => { if (isLatin(w)) return enSkels(w)[0]; const x = uStrip(w); return arSkel(x.length > 5 ? x.replace(U_PLURAL, "") : x); };
   const uSim = (a, b) => 1 - lev(a, b) / Math.max(a.length, b.length, 1);
-  const uRiyadhKeys = word => { const w = normalize(word); return w.includes(" ") ? [] : [...new Set([bare(uStrip(w)), uLexeme(w)])]; };
+  const uRiyadhKeys = word => {  // والحاسوب → حاسوب, حاسوبا → حاسوب, الوكلاء → وكيل
+    const w = normalize(word);
+    if (w.includes(" ")) return [];
+    const keys = new Set([bare(uStrip(w)), uLexeme(w), bare(w)]), m = uLexeme(w).match(U_FUALAA);  // bare(w): وكيلا is not و + كيلا
+    if (w.endsWith("ا") && w.length > 4) keys.add(bare(w.slice(0, -1)));
+    if (m) keys.add(m[1] + m[2] + "ي" + m[3]);
+    return [...keys];
+  };
+  // synonyms one domain uses that the dictionaries do not link (same as DOMAIN_SYN in unify.py): in tech «عميل ذكي» is
+  // an intelligent agent (وكيل ذكي); not next to a server, where عميل is a client
+  const DOMAIN_SYN = { tech: { "عميل": ["وكيل"], "وكيل": ["عميل"] } }, U_CLIENT_SERVER = /خادم|خوادم|سيرفر|server/;
   function uPlace(w) {  // the Riyadh place name a written word is: وسوريا، بسورية → سوريا; not السورية
     if (w.startsWith("ال")) return null;
     for (const x of ("وبل".includes(w[0] || " ") && w.length > 4 ? [w, w.slice(1)] : [w])) {
@@ -777,6 +787,9 @@ summary { cursor: pointer; font-weight: 600 }
   }
   function unifyTerms(text, res) {
     const groups = [], tokens = res.tokens, S = DATA.senses;
+    const dsyn = U_CLIENT_SERVER.test(normalize(text)) ? {} : DOMAIN_SYN[current] || {};
+    const nearOf = word => [...new Set([...uRiyadhKeys(word).flatMap(k => RIYADH.syn[k] || []),
+      ...normalize(word).split(" ").filter(Boolean).flatMap(w => uRiyadhKeys(w).flatMap(k => dsyn[k] || []))])];
     const stdKeys = new Set(res.items.filter(it => it.state === "std").map(it => uTermKey(S[it.best[0]][0])));
     const byTerm = new Map();
     for (const it of res.items) {
@@ -799,14 +812,14 @@ summary { cursor: pointer; font-weight: 600 }
         g.uses.push({ text: win, start: s0, end: e0, state: "std" }); taken.push([s0, e0]);
       }
       // the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
-      if (Object.keys(RIYADH.syn).length && g.uses.length) {
-        const near = new Set(g.uses.flatMap(u => uRiyadhKeys(u.text).flatMap(k => RIYADH.syn[k] || [])));
+      if ((Object.keys(RIYADH.syn).length || Object.keys(dsyn).length) && g.uses.length) {
+        const near = new Set(g.uses.flatMap(u => nearOf(u.text)));
         for (let added = true; added;) {
           added = false;
           for (const t of tokens) {
             if (taken.some(([s, e]) => t.s < e && t.e > s) || !uRiyadhKeys(t.n).some(k => near.has(k))) continue;
             g.uses.push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" }); taken.push([t.s, t.e]);
-            for (const k of uRiyadhKeys(t.n)) for (const x of RIYADH.syn[k] || []) near.add(x);
+            for (const x of nearOf(t.n)) near.add(x);
             added = true;
           }
         }

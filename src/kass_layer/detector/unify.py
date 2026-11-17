@@ -5,7 +5,7 @@ Two layers, as terminology QA tools do (glossary first, spelling variants second
 2. Spelling groups: borrowed words outside the dictionaries that are spellings of one word (الداتا، داتا، ديتا;
    داشبورد، dashboard). The most frequent form is kept; these are always marked for review.
 معجم الرياض (general Arabic, demo_local/riyadh.json) adds three things: a dictionary group also takes the synonyms the
-Riyadh dictionary translates the same way (الحاسب الآلي: حاسوب، كمبيوتر); a feminine form with its own meaning is another
+Riyadh dictionary translates the same way (الحاسب الآلي: حاسوب، كمبيوتر), and in tech عميل / وكيل (DOMAIN_SYN); a feminine form with its own meaning is another
 word (حاسب / حاسبة); and a place name it spells with «يا» groups its «ية» spelling (سوريا / سورية).
 Word vectors are not used to merge words: they put related words and opposites close (البائع / المشتري), so a merge
 on closeness alone would join different concepts.
@@ -114,9 +114,21 @@ def _spelling_key(word: str) -> str:
 
 
 def _riyadh_keys(word: str) -> set[str]:
-    """The keys a written word may have in معجم الرياض: والحاسوب → حاسوب, حاسوبا → حاسوب."""
+    """The keys a written word may have in معجم الرياض: والحاسوب → حاسوب, حاسوبا → حاسوب, الوكلاء → وكيل."""
     w = normalize(word)
-    return {bare(_strip(w)), _lexeme(w)} if " " not in w else set()
+    if " " in w:
+        return set()
+    keys = {bare(_strip(w)), _lexeme(w), bare(w)}  # bare(w): a word that starts with و itself (وكيلا, not «و» + كيلا)
+    if w.endswith("ا") and len(w) > 4:
+        keys.add(bare(w[:-1]))
+    m = _FUALAA.match(_lexeme(w))
+    return keys | {m.group(1) + m.group(2) + "ي" + m.group(3)} if m else keys
+
+
+# Synonyms one domain uses that the dictionaries do not link: in tech «عميل ذكي» is written for an intelligent agent
+# (وكيل ذكي). Elsewhere عميل is a client and وكيل an agent, two concepts; and next to a server it is a client in tech too.
+DOMAIN_SYN = {"tech": {"عميل": ["وكيل"], "وكيل": ["عميل"]}}
+_CLIENT_SERVER = re.compile("خادم|خوادم|سيرفر|server")
 
 
 def _place(w: str, places) -> str | None:
@@ -136,6 +148,11 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
     groups = []
     riyadh = getattr(det, "riyadh", None) or {"syn": {}, "own": frozenset(), "place": frozenset(), "name": ""}
     own, syn = riyadh["own"], riyadh["syn"]
+    dsyn = {} if _CLIENT_SERVER.search(normalize(text)) else DOMAIN_SYN.get(domain_id, {})
+
+    def near_of(word: str) -> set[str]:
+        out = {s for k in _riyadh_keys(word) for s in syn.get(k, [])}
+        return out | {s for w in normalize(word).split() for k in _riyadh_keys(w) for s in dsyn.get(k, [])}
 
     # 1. forms the dictionaries link to one term
     tokens = tokenize(text)
@@ -164,8 +181,8 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
             g["uses"].append({"text": window, "start": s0, "end": e0, "state": "std"})
             taken.append((s0, e0))
         # the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
-        if syn and g["uses"]:
-            near = {s for u in g["uses"] for k in _riyadh_keys(u["text"]) for s in syn.get(k, [])}
+        if (syn or dsyn) and g["uses"]:
+            near = {s for u in g["uses"] for s in near_of(u["text"])}
             added = True
             while added:
                 added = False
@@ -174,7 +191,7 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                         continue
                     g["uses"].append({"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"})
                     taken.append((t["s"], t["e"]))
-                    near |= {s for k in _riyadh_keys(t["n"]) for s in syn.get(k, [])}
+                    near |= near_of(t["n"])
                     added = True
             g["uses"].sort(key=lambda u: u["start"])
         forms: dict[str, dict] = {}

@@ -42,8 +42,9 @@ Next, in order (the user's plan):
    - broken plural فعلاء of فعيل is the same word (عملاء / عميل، وكلاء / وكيل); the Riyadh «جمع» definitions were too
      uneven to use (ظروف given as plural of ظريف);
    - سوريا / سورية / سوريه: one spelling group, keep سوريا (not after a feminine noun: شركة سورية; not السورية).
-   - NOT done, waiting for the user: عميل / وكيل in one group. In SIWAR عميل = client/customer and وكيل = agent
-     (legal and finance dictionaries), so merging them would join two concepts.
+   - عميل / وكيل: one group in tech only, as the user chose (`DOMAIN_SYN` in unify.py and the page; SIWAR's AI dictionary
+     already gives العميل الذكي → وكيل ذكي). Not in other domains, where عميل = client and وكيل = agent, and not in a tech
+     text about a server (client-server). `gold-unify-riyadh.json` now 10 cases, 100/100; unify parity 68/68.
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 
