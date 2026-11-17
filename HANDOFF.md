@@ -45,6 +45,12 @@ Next, in order (the user's plan):
    - عميل / وكيل: one group in tech only, as the user chose (`DOMAIN_SYN` in unify.py and the page; SIWAR's AI dictionary
      already gives العميل الذكي → وكيل ذكي). Not in other domains, where عميل = client and وكيل = agent, and not in a tech
      text about a server (client-server). `gold-unify-riyadh.json` now 10 cases, 100/100; unify parity 68/68.
+   - 2026-11-17 later: words no dictionary item covers are grouped too (layer 1b): Riyadh synonyms (ماوس / فأرة from
+     the definition «الفأرة، …»; حاسب / حاسوب) only when a word is borrowed, two share a SIWAR term, or the domain pair
+     links them. Filters found on the 32 real articles: a Riyadh synonym joins a SIWAR term only when it translates as
+     the term does (no نحو for طريق), never two words joined by «و» (الأمان والسلامة), عميل after خدمة/استفسارات/ردود/…
+     is a customer. Known miss: «أسئلة على العميل» in an agent article is still joined to وكيل.
+     `gold-unify-riyadh.json` 23 cases 100/100, unify parity 81/81.
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 

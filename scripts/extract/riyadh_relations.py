@@ -3,7 +3,7 @@
 The Riyadh dictionary is general Arabic, not terminology, so it never proposes replacements. Kass uses it only to tell
 the unification step which written forms are one word or one concept:
   syn     word -> nouns the dictionary lists as its synonyms AND translates the same way
-          (حاسوب، حاسب، كمبيوتر = computer), not حاسبة (calculator);
+          (حاسوب، حاسب، كمبيوتر = computer), not حاسبة (calculator), or defines by such a word (ماوس: «الفأرة، …»);
   own     feminine forms that are their own word, not the feminine of the other one (حاسبة is not «حاسب» + ة);
   place   place names ending in «يا» (سوريا), so «سورية / سوريه» is read as a spelling of the same name.
 Plurals are not taken from it: its «جمع …» definitions are too uneven (ظروف is given as the plural of ظريف).
@@ -52,7 +52,21 @@ def main(src: str, out: str) -> None:
                 if b != a and len(b.split()) == 1 and len(a) >= 3 and len(b) >= 3 and tr & translations(b):
                     links[a].add(b)
                     links[b].add(a)
+    # a word the dictionary defines by another headword translated the same way: ماوس «الفأرة، وهي من أدوات الحاسوب»
+    for r in single:
+        if not (r.get("pos") or "").startswith("N"):
+            continue
+        a = key(r["word"])
+        for s in r["senses"]:
+            tr = {t.strip().lower() for t in s.get("translations") or [] if t.strip()}
+            m = re.match(r"\s*([^\s،,.:؛(]+)\s*[،,.]", s.get("definition", ""))
+            b = key(m.group(1)) if m else ""
+            if tr and b != a and len(b) >= 3 and b in heads and tr & translations(b):
+                links[a].add(b)
+                links[b].add(a)
     syn = {a: sorted(bs) for a, bs in sorted(links.items())}
+    # the English of each linked word: unification adds a synonym to a SIWAR term only when it translates as the term does
+    en = {w: sorted(translations(w)) for w in syn}
 
     # own: «حاسبة» has its own meaning (no sense is «مؤنث …») and «حاسب» is a headword too, translated differently
     own = []
@@ -68,7 +82,7 @@ def main(src: str, out: str) -> None:
 
     place = sorted({key(r["word"]) for r in single if r.get("pos") == "NL" and key(r["word"]).endswith("يا")})
 
-    data = {"source": "معجم الرياض للغة العربية المعاصرة", "syn": syn, "own": sorted(own), "place": place}
+    data = {"source": "معجم الرياض للغة العربية المعاصرة", "syn": syn, "en": en, "own": sorted(own), "place": place}
     Path(out).write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"{len(rows)} entries: {len(syn)} words with synonyms, {len(own)} own feminine forms, "
           f"{len(place)} place names -> {out} ({Path(out).stat().st_size // 1024} KB)")

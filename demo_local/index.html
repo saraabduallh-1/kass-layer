@@ -485,7 +485,7 @@ summary { cursor: pointer; font-weight: 600 }
   }
   // riyadh.json (معجم الرياض, general Arabic): synonyms translated the same way, feminine forms with their own meaning,
   // place names spelled with «يا»; used by unification only (same as unify.py)
-  let RIYADH = { syn: {}, own: new Set(), place: new Set(), name: "" };
+  let RIYADH = { syn: {}, en: {}, own: new Set(), place: new Set(), name: "" };
   let CTX = null;  // context.json: distinctive keywords per sense, loaded after the dictionaries
   const ctxWords = text => new Set((normalize(text).match(/[\u0621-\u064a]{3,}/g) || []).map(w => {
     w = w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
@@ -739,7 +739,7 @@ summary { cursor: pointer; font-weight: 600 }
   const uSameLex = (p, q) => p === q || (Math.min(p.length, q.length) >= 4 && (p.startsWith(q) || q.startsWith(p)))
     || [[p, q], [q, p]].some(([u, v]) => { const m = u.match(U_FUALAA); return !!m && v === m[1] + m[2] + "ي" + m[3]; })
     || [[p, q], [q, p]].some(([u, v]) => "وفبلك".includes(u[0]) && u.length >= (u[0] === "و" ? 3 : 4) && u.slice(1) === v);
-  const uSingularF = w => w.endsWith("ات") && w.length > 4 ? w.slice(0, -2) + "ه" : w;
+  const uSingularF = w => w;  // a plural in ات is not read as a ة form (الإعلانات is the plural of إعلان)
   const uOwnWord = (a, b) => {  // «حاسبة» is its own word (calculator), not «حاسب» + ة (معجم الرياض)
     if (!RIYADH.own.size) return false;
     const p = uSingularF(bare(uStrip(a))), q = uSingularF(bare(uStrip(b)));
@@ -766,17 +766,21 @@ summary { cursor: pointer; font-weight: 600 }
   }
   const uSpellingKey = w => { if (isLatin(w)) return enSkels(w)[0]; const x = uStrip(w); return arSkel(x.length > 5 ? x.replace(U_PLURAL, "") : x); };
   const uSim = (a, b) => 1 - lev(a, b) / Math.max(a.length, b.length, 1);
-  const uRiyadhKeys = word => {  // والحاسوب → حاسوب, حاسوبا → حاسوب, الوكلاء → وكيل
+  const uRiyadhKeys = word => {  // والحاسوب → حاسوب, حاسوبا → حاسوب, الوكلاء → وكيل; الحاسبة keeps its own key only
     const w = normalize(word);
     if (w.includes(" ")) return [];
-    const keys = new Set([bare(uStrip(w)), uLexeme(w), bare(w)]), m = uLexeme(w).match(U_FUALAA);  // bare(w): وكيلا is not و + كيلا
+    const f = uSingularF(bare(uStrip(w)));
+    if (RIYADH.own.has(f)) return [f];
+    const keys = new Set([bare(uStrip(w)), uLexeme(w), bare(w)]);  // bare(w): وكيلا is not و + كيلا
     if (w.endsWith("ا") && w.length > 4) keys.add(bare(w.slice(0, -1)));
-    if (m) keys.add(m[1] + m[2] + "ي" + m[3]);
+    for (const x of [uLexeme(w), bare(w)]) { const m = x.match(U_FUALAA); if (m) keys.add(m[1] + m[2] + "ي" + m[3]); }
     return [...keys];
   };
-  // synonyms one domain uses that the dictionaries do not link (same as DOMAIN_SYN in unify.py): in tech «عميل ذكي» is
-  // an intelligent agent (وكيل ذكي); not next to a server, where عميل is a client
-  const DOMAIN_SYN = { tech: { "عميل": ["وكيل"], "وكيل": ["عميل"] } }, U_CLIENT_SERVER = /خادم|خوادم|سيرفر|server/;
+  // synonyms one domain uses that the dictionaries do not link, the form to keep first (same as DOMAIN_SYN in unify.py):
+  // in tech «عميل ذكي» is an intelligent agent (وكيل ذكي); not next to a server, where عميل is a client
+  const DOMAIN_SYN = { tech: [["وكيل", "عميل"]] }, U_CLIENT_SERVER = /خادم|خوادم|سيرفر|server/;
+  // «خدمة العملاء، استفسارات العملاء، كبار عملاء»: customers, even in a text about agents (CUSTOMER_BEFORE in unify.py)
+  const CUSTOMER_BEFORE = new Set(["خدمة", "استفسارات", "ردود", "شكاوى", "رضا", "تجربة", "طلبات", "احتياجات", "بيانات", "حسابات", "كبار", "ولاء", "دعم", "آراء", "توقعات", "علاقات"].map(normalize));
   function uPlace(w) {  // the Riyadh place name a written word is: وسوريا، بسورية → سوريا; not السورية
     if (w.startsWith("ال")) return null;
     for (const x of ("وبل".includes(w[0] || " ") && w.length > 4 ? [w, w.slice(1)] : [w])) {
@@ -785,21 +789,39 @@ summary { cursor: pointer; font-weight: 600 }
     }
     return null;
   }
+  const uEn = x => (x || "").replace(/\([^)]*\)/g, " ").toLowerCase().split(/\s+/).filter(Boolean).join(" ");  // «Computer (PC)» → computer
+  // two words joined by «و» (الأمان والسلامة): the writer names two things, not one thing twice
+  const uCoordinated = (tokens, i, j) => { const a = Math.min(i, j), b = Math.max(i, j); return b === a + 1 && tokens[b].n.startsWith("و"); };
   function unifyTerms(text, res) {
     const groups = [], tokens = res.tokens, S = DATA.senses;
-    const dsyn = U_CLIENT_SERVER.test(normalize(text)) ? {} : DOMAIN_SYN[current] || {};
-    const nearOf = word => [...new Set([...uRiyadhKeys(word).flatMap(k => RIYADH.syn[k] || []),
-      ...normalize(word).split(" ").filter(Boolean).flatMap(w => uRiyadhKeys(w).flatMap(k => dsyn[k] || []))])];
+    const server = U_CLIENT_SERVER.test(normalize(text)), pairs = DOMAIN_SYN[current] || [], dsyn = {};
+    if (!server) for (const p of pairs) for (const w of p) dsyn[w] = p.filter(x => x !== w);
+    const keysOf = phrase => new Set(normalize(phrase).split(" ").filter(Boolean).flatMap(uRiyadhKeys));
+    const reserved = new Set(pairs.flat()), heads = new Set(pairs.map(p => p[0]));
+    const customer = new Set(tokens.filter((t, i) => i && uRiyadhKeys(t.n).some(k => reserved.has(k) && !heads.has(k))
+      && CUSTOMER_BEFORE.has(bare(uStrip(normalize(tokens[i - 1].n))))).map(t => t.s));
+    const translatesAs = (word, en) => !!en && (RIYADH.en[word] || []).some(t => t.split(";").map(p => p.trim()).includes(en));
+    // the Riyadh synonyms that translate as the term does (حاسوب for «Computer», not نحو for «Road»), and the domain's own
+    const nearOf = (word, en) => [...new Set([...uRiyadhKeys(word).flatMap(k => (RIYADH.syn[k] || []).filter(s => translatesAs(s, en))),
+      ...[...keysOf(word)].flatMap(k => dsyn[k] || [])])];
     const stdKeys = new Set(res.items.filter(it => it.state === "std").map(it => uTermKey(S[it.best[0]][0])));
     const byTerm = new Map();
     for (const it of res.items) {
       // a form with several terms takes the one the writer also uses (الإنفرتر → عاكس التيار, when «عاكس التيار» is there)
       const best = it.choices.find(r => stdKeys.has(uTermKey(S[r[0]][0]))) || it.best, sense = S[best[0]], k = uTermKey(sense[0]);
-      if (!byTerm.has(k)) byTerm.set(k, { term: sense[0], dictionary: DATA.dictionaries[sense[1]], uses: [] });
+      if (!byTerm.has(k)) byTerm.set(k, { term: sense[0], dictionary: DATA.dictionaries[sense[1]], uses: [], en: uEn(sense[2]) });
       if (uGlossed(text, it.m.s, it.m.e)) continue;
       if (it.state === "std" && it.m.n === 1 && !sameWord(it.original, sense[0])) continue;  // another word (عملية / العملة)
       const tw = uTermKey(sense[0]).split(" ");  // a feminine with its own meaning is another word (الحاسبة / الحاسب الآلي)
       if (normalize(it.original).split(" ").filter(Boolean).some(w => tw.some(v => uOwnWord(w, v)))) continue;
+      if (server) {  // next to a server, العميل is the client, not the agent (وكيل)
+        const ko = keysOf(it.original), kt = keysOf(sense[0]);
+        if (pairs.some(p => p.some(x => ko.has(x)) && p.some(x => kt.has(x)) && !p.some(x => ko.has(x) && kt.has(x)))) continue;
+      }
+      {  // وكلاء in tech is the agent of the domain pair, not another term (النائب); خدمة العملاء is the customer
+        const ko = keysOf(it.original), kt = keysOf(sense[0]), inPair = s => [...s].some(x => reserved.has(x));
+        if ((inPair(ko) && !inPair(kt)) || (customer.has(it.m.s) && inPair(kt))) continue;
+      }
       byTerm.get(k).uses.push({ text: it.original, start: it.m.s, end: it.m.e, state: it.state });
     }
     const countForms = uses => { const forms = new Map(); for (const u of uses) { const k = uFormKey(u.text); if (!forms.has(k)) forms.set(k, { form: u.text, count: 0, standard: u.state === "std" }); forms.get(k).count++; } return forms; };
@@ -813,15 +835,18 @@ summary { cursor: pointer; font-weight: 600 }
       }
       // the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
       if ((Object.keys(RIYADH.syn).length || Object.keys(dsyn).length) && g.uses.length) {
-        const near = new Set(g.uses.flatMap(u => nearOf(u.text)));
+        const near = new Set(g.uses.flatMap(u => nearOf(u.text, g.en))), mine = ![...keysOf(g.term)].some(x => reserved.has(x));
         for (let added = true; added;) {
           added = false;
-          for (const t of tokens) {
-            if (taken.some(([s, e]) => t.s < e && t.e > s) || !uRiyadhKeys(t.n).some(k => near.has(k))) continue;
+          tokens.forEach((t, i) => {
+            const ks = uRiyadhKeys(t.n);
+            if (taken.some(([s, e]) => t.s < e && t.e > s) || !ks.some(k => near.has(k)) || (mine && ks.some(k => reserved.has(k))) || customer.has(t.s)) return;
+            const starts = new Set(g.uses.map(u => u.start));
+            if ([i - 1, i + 1].some(j => j >= 0 && j < tokens.length && starts.has(tokens[j].s) && uCoordinated(tokens, i, j))) return;
             g.uses.push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" }); taken.push([t.s, t.e]);
-            for (const x of nearOf(t.n)) near.add(x);
+            for (const x of nearOf(t.n, g.en)) near.add(x);
             added = true;
-          }
+          });
         }
         g.uses.sort((a, b) => a.start - b.start);
       }
@@ -830,7 +855,51 @@ summary { cursor: pointer; font-weight: 600 }
       groups.push({ kind: "dictionary", keep: g.term, dictionary: g.dictionary, review: g.uses.some(u => u.state === "review"),
                     forms: [...forms.values()].sort((a, b) => b.count - a.count), uses: g.uses });
     }
-    const covered = res.items.map(it => [it.m.s, it.m.e]), bySkel = new Map();
+    // 1b. one concept in words no dictionary item covers: words معجم الرياض links (ماوس / فأرة; حاسب / حاسوب) or the
+    // domain's own synonyms (tech: عميل / وكيل); kept only when the domain links them, two share a SIWAR term, or one is borrowed
+    const extra = [];
+    if (Object.keys(RIYADH.syn).length || Object.keys(dsyn).length) {
+      const taken = groups.flatMap(g => g.uses.map(u => [u.start, u.end])).concat(res.items.map(it => [it.m.s, it.m.e]));
+      const cand = [];
+      tokens.forEach((t, i) => {
+        const ks = new Set(uRiyadhKeys(t.n));
+        if (!taken.some(([s, e]) => t.s < e && t.e > s) && !customer.has(t.s) && [...ks].some(k => k in RIYADH.syn || k in dsyn)) cand.push([t, ks, i]);
+      });
+      const comp = cand.map((_, i) => i), root = i => { while (comp[i] !== i) i = comp[i]; return i; };
+      for (let i = 0; i < cand.length; i++) for (let j = 0; j < i; j++) {
+        const a = cand[i][1], b = cand[j][1];
+        if (uCoordinated(tokens, cand[i][2], cand[j][2])) continue;
+        if ([...a].some(k => b.has(k)) || [...a].some(k => (RIYADH.syn[k] || []).concat(dsyn[k] || []).some(x => b.has(x)))) comp[root(i)] = root(j);
+      }
+      const members = new Map();
+      cand.forEach((c, i) => { const r = root(i); if (!members.has(r)) members.set(r, []); members.get(r).push(c); });
+      for (const mem of members.values()) {
+        const uses = mem.map(([t]) => ({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" })), forms = countForms(uses);
+        if (uDistinct([...forms.values()].map(f => f.form)) < 2) continue;
+        // two different words linked as synonyms, not only forms of one word (إعلان، الإعلانات)
+        if (!mem.some(([, a]) => mem.some(([, b]) => ![...a].some(k => b.has(k)) && [...a].some(k => (RIYADH.syn[k] || []).concat(dsyn[k] || []).some(x => b.has(x)))))) continue;
+        const allk = new Set(mem.flatMap(([, ks]) => [...ks]));
+        const pair = Object.keys(dsyn).length ? pairs.find(p => p.filter(x => allk.has(x)).length >= 2) : undefined;
+        const seenBy = new Map();  // SIWAR sense -> the written forms that reach it
+        for (const [t, ks] of mem) for (const k of [...ks].sort()) for (const row of DATA.forms[k] || []) {
+          if (!seenBy.has(row[0])) seenBy.set(row[0], new Set()); seenBy.get(row[0]).add(uFormKey(t.n));
+        }
+        const sid = [...seenBy.keys()].sort((a, b) => a - b).find(s => seenBy.get(s).size >= 2);
+        const borrowed = mem.filter(([t]) => foreignLooking(bare(uStrip(normalize(t.n))), true)).map(([t]) => t);
+        if (!pair && sid === undefined && !borrowed.length) continue;
+        let keep, kind, dic;
+        if (pair) [keep, kind, dic] = [pair[0], "synonym", null];
+        else if (sid !== undefined) [keep, kind, dic] = [S[sid][0], "dictionary", DATA.dictionaries[S[sid][1]]];
+        else {
+          const all = [...forms.values()], arabic = all.filter(f => !borrowed.some(t => uFormKey(t.n) === uFormKey(f.form)));
+          const top = (arabic.length ? arabic : all).reduce((x, y) => y.count > x.count ? y : x);
+          [keep, kind, dic] = [uStrip(top.form), "synonym", RIYADH.name];
+        }
+        groups.push({ kind, keep, dictionary: dic, review: true, forms: [...forms.values()].sort((a, b) => b.count - a.count), uses });
+        for (const u of uses) extra.push([u.start, u.end]);
+      }
+    }
+    const covered = res.items.map(it => [it.m.s, it.m.e]).concat(extra), bySkel = new Map();
     for (const t of tokens) {
       if (covered.some(([s, e]) => t.s < e && t.e > s)) continue;
       const w = t.n, latin = isLatin(w) && w.length >= 4, x = bare(uStrip(w));
@@ -995,7 +1064,7 @@ summary { cursor: pointer; font-weight: 600 }
     $("unifyBlock").hidden = !groups.length;
     $("unify").innerHTML = groups.map((g, gi) => {
       const st = UST[gi], done = !!st.applied, opts = unifyOptions(g), n = done ? st.applied.length : unifyPlan(gi).length;
-      const why = g.kind === "dictionary" ? "المصطلح المعتمد" : "الأكثر تكرارًا";
+      const why = g.kind === "dictionary" ? "المصطلح المعتمد" : g.kind === "synonym" ? "المقترح" : "الأكثر تكرارًا";
       const forms = g.forms.map(f => `<span class="from">${esc(f.form)}</span>${f.count > 1 ? ` <span class="meta">×${f.count}</span>` : ""}${f.standard ? ` <span class="meta">(معتمد)</span>` : ""}`).join("، ");
       const dis = done ? " disabled" : "";
       const count = k => k === 1 ? "موضع واحد" : k === 2 ? "موضعان" : k + " مواضع";
@@ -1004,7 +1073,7 @@ summary { cursor: pointer; font-weight: 600 }
           `<option value="${esc(o)}"${o === st.keep ? " selected" : ""}>${esc(o)}${k === 0 ? ` (${why})` : ""}</option>`).join("")}</select>
           ${done ? `<span class="pill replace">تم التوحيد</span>` : g.review ? `<span class="pill review">تحقّق قبل التوحيد</span>` : ""}</div>
         <div>الصيغ في النص: ${forms}</div>
-        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : g.dictionary ? `إملاء الاسم كما في ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاقتُرحت الأكثر تكرارًا"}</div>
+        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : g.kind === "synonym" ? (g.dictionary ? `كلمات بمعنى واحد في ${esc(g.dictionary)}` : "كلمات بمعنى واحد في هذا المجال") : g.dictionary ? `إملاء الاسم كما في ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاقتُرحت الأكثر تكرارًا"}</div>
         <div class="umode">
           <label><input type="radio" name="um${gi}" value="all" data-g="${gi}"${st.mode === "all" ? " checked" : ""}${dis}> في كل المواضع (${g.uses.length})</label>
           <label><input type="radio" name="um${gi}" value="pick" data-g="${gi}"${st.mode === "pick" ? " checked" : ""}${dis}> في مواضع أختارها</label></div>
@@ -1128,7 +1197,7 @@ summary { cursor: pointer; font-weight: 600 }
     }).catch(() => {});
     fetch("context.json").then(r => r.ok ? r.json() : null).then(c => { if (c) { CTX = c.kw; if (LAST.text) run(); } }).catch(() => {});
     fetch("riyadh.json").then(r => r.ok ? r.json() : null).then(r => {
-      if (r) { RIYADH = { syn: r.syn || {}, own: new Set(r.own || []), place: new Set(r.place || []), name: r.source || "" }; if (LAST.text) run(); }
+      if (r) { RIYADH = { syn: r.syn || {}, en: r.en || {}, own: new Set(r.own || []), place: new Set(r.place || []), name: r.source || "" }; if (LAST.text) run(); }
     }).catch(() => {});
     const names = d.dictionaries.map(n => normalize(n));
     // (english, term) -> number of dictionaries giving that pair (see rank)
