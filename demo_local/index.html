@@ -656,7 +656,7 @@ summary { cursor: pointer; font-weight: 600 }
       const rank = r => {
         const sense = DATA.senses[r[0]], en = (sense[2] || "").replace(/\([^)]*\)/g, " ");
         let sound = 0;
-        if (surf && en) for (const sk of enSkels(en)) sound = Math.max(sound, 1 - lev(surf, sk) / Math.max(surf.length, sk.length, 1));
+        if (surf && en) enSkels(en).forEach((sk, j) => { sound = Math.max(sound, (1 - lev(surf, sk) / Math.max(surf.length, sk.length, 1)) * (j === 0 ? 1 : 0.9)); });  // the first skeleton is the usual reading
         const acr = m.how === "acronym" && new RegExp("\\(" + m.head + "s?\\)|^" + m.head + "$", "i").test(sense[2] || "") ? 1 : 0;
         const ctx = everyday ? 0 : contextScore(r[0], textWords, ctxWords(text.slice(m.s, m.e)));
         const ek = enKey(sense[2]);

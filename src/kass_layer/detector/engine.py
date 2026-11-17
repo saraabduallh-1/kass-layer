@@ -609,8 +609,9 @@ class Detector:
                 en = re.sub(r"\([^)]*\)", " ", sense[2] or "")
                 sound = 0
                 if surf and en:
-                    for sk in en_skels(en):
-                        sound = max(sound, sim(surf, sk))
+                    # the first skeleton is the usual reading; the others (psycho read with ch = sh) count a little less
+                    for j, sk in enumerate(en_skels(en)):
+                        sound = max(sound, sim(surf, sk) * (1 if j == 0 else 0.9))
                 acr = 1 if m["how"] == "acronym" and re.search(r"\(" + m["head"] + r"s?\)|^" + m["head"] + "$", sense[2] or "", re.I) else 0
                 ctx = 0 if everyday else self.context_score(r[0], text_words, own)
                 ek = en_key(sense[2])
