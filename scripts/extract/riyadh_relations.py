@@ -27,6 +27,14 @@ def key(word: str) -> str:
     return bare(normalize(word))
 
 
+def same_en(a: set[str], b: set[str]) -> bool:
+    """A shared translation, or one inside the other: «mobile» and «mobile phone» (موبايل / جوال)."""
+    if a & b:
+        return True
+    return any(set(x.split()) < set(y.split()) or set(y.split()) < set(x.split())
+               for x in a for y in b if max(len(w) for w in (x + " " + y).split()) >= 4 and min(len(x), len(y)) >= 4)
+
+
 def main(src: str, out: str) -> None:
     rows = [json.loads(line) for line in open(src, encoding="utf-8") if line.strip()]
     single = [r for r in rows if r.get("type") == "singleWord" and len(normalize(r["word"]).split()) == 1]
@@ -49,7 +57,7 @@ def main(src: str, out: str) -> None:
             tr = {t.strip().lower() for t in s.get("translations") or [] if t.strip()}
             for w in s.get("synonyms") or []:
                 b = key(w)
-                if b != a and len(b.split()) == 1 and len(a) >= 3 and len(b) >= 3 and tr & translations(b):
+                if b != a and len(b.split()) == 1 and len(a) >= 3 and len(b) >= 3 and same_en(tr, translations(b)):
                     links[a].add(b)
                     links[b].add(a)
     # a word the dictionary defines by another headword translated the same way: ماوس «الفأرة، وهي من أدوات الحاسوب»
@@ -61,7 +69,7 @@ def main(src: str, out: str) -> None:
             tr = {t.strip().lower() for t in s.get("translations") or [] if t.strip()}
             m = re.match(r"\s*([^\s،,.:؛(]+)\s*[،,.]", s.get("definition", ""))
             b = key(m.group(1)) if m else ""
-            if tr and b != a and len(b) >= 3 and b in heads and tr & translations(b):
+            if tr and b != a and len(b) >= 3 and b in heads and same_en(tr, translations(b)):
                 links[a].add(b)
                 links[b].add(a)
     syn = {a: sorted(bs) for a, bs in sorted(links.items())}

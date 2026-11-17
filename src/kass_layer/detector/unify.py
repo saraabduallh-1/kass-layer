@@ -147,6 +147,23 @@ def _en(x: str | None) -> str:
     return " ".join(re.sub(r"\([^)]*\)", " ", x or "").lower().split())
 
 
+def _en_related(a: str, b: str) -> bool:
+    """Two English renderings of one concept: equal, or one inside the other (Podcast / Audio Podcast)."""
+    if not a or not b:
+        return False
+    x, y = set(a.split()), set(b.split())
+    return a == b or ((x < y or y < x) and max(map(len, (a + " " + b).split())) >= 4)
+
+
+_PRONOUN = re.compile("(ها|هما|هم|هن|كم|نا)$")
+
+
+def _with_pronoun(word: str) -> bool:
+    """«كونها، حسابنا»: a word with a pronoun is a verbal noun or a possession more often than a second name."""
+    w = bare(_strip(normalize(word)))
+    return len(w) >= 5 and bool(_PRONOUN.search(w))
+
+
 def _coordinated(tokens: list[dict], i: int, j: int) -> bool:
     """Two words joined by «و» (الأمان والسلامة): the writer names two things, not one thing twice."""
     a, b = min(i, j), max(i, j)
@@ -184,16 +201,20 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                 and bare(_strip(normalize(tokens[i - 1]["n"]))) in CUSTOMER_BEFORE}
 
     def translates_as(word: str, en: str) -> bool:
-        return bool(en) and any(en in [p.strip() for p in t.split(";")] for t in syn_en.get(word, []))
+        """The word translates as the term (computer = Computer), or one English inside the other (mobile / mobile phone)."""
+        return any(_en_related(p, en) for t in syn_en.get(word, []) for p in (q.strip() for q in t.split(";")) if p)
 
     def near_of(word: str, en: str) -> set[str]:
         """The Riyadh synonyms that translate as the term does (حاسوب for «Computer», not نحو for «Road»), and the
         domain's own synonyms."""
-        out = {s for k in _riyadh_keys(word, own) for s in syn.get(k, []) if translates_as(s, en)}
+        out = set() if _with_pronoun(word) else {s for k in _riyadh_keys(word, own) for s in syn.get(k, []) if translates_as(s, en)}
         return out | {s for k in keys_of(word) for s in dsyn.get(k, [])}
 
     # 1. forms the dictionaries link to one term
     std_keys = {term_key(det.senses[it["best"][0]][0]) for it in res["items"] if it["state"] == "std"}
+    # the standard terms the writer writes as they are (المدونة الصوتية), not only reached from another word
+    written = {term_key(det.senses[it["best"][0]][0]) for it in res["items"]
+               if it["state"] == "std" and same_word(it["original"], det.senses[it["best"][0]][0], own)}
     by_term: dict[str, dict] = {}
     for it in res["items"]:
         # a form with several terms takes the one the writer also uses (الإنفرتر → عاكس التيار, when «عاكس التيار» is there)
@@ -203,8 +224,12 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                                                     "en": _en(sense[2])})
         if _glossed(text, it["m"]["s"], it["m"]["e"]):
             continue
-        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0], own):
-            continue  # a one-word "standard" match that is another word (عملية / العملة, الدور / الدوري)
+        # a one-word "standard" match that is another word (عملية / العملة, الدور / الدوري); but a standard term of its own
+        # that has the same meaning as a term the writer also uses stays (البودكاست with المدونة الصوتية)
+        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0], own) and not (
+                term_key(sense[0]) in written and any(same_word(it["original"], det.senses[r[0]][0], own)
+                                                      and _en_related(_en(det.senses[r[0]][2]), _en(sense[2])) for r in it["choices"])):
+            continue
         if any(_own_word(w, v, own) for w in normalize(it["original"]).split() for v in term_key(sense[0]).split()):
             continue  # a feminine with its own meaning is another word (الحاسبة is not «الحاسب الآلي»)
         if server and any(keys_of(it["original"]) & set(p) and keys_of(sense[0]) & set(p)
@@ -234,7 +259,7 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                 for i, t in enumerate(tokens):
                     ks = _riyadh_keys(t["n"], own)
                     if any(t["s"] < e and t["e"] > s for s, e in taken) or not ks & near or (mine and ks & reserved) \
-                            or t["s"] in customer:
+                            or t["s"] in customer or (_with_pronoun(t["n"]) and not ks & set(dsyn)):
                         continue
                     starts = {u["start"] for u in g["uses"]}
                     if any(0 <= j < len(tokens) and tokens[j]["s"] in starts and _coordinated(tokens, i, j) for j in (i - 1, i + 1)):
@@ -244,6 +269,16 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                     near |= near_of(t["n"], g["en"])
                     added = True
             g["uses"].sort(key=lambda u: u["start"])
+        # two different words joined by «و» (الحاسوب والكمبيوتر المحمول) name two things: neither is a second name
+        at = {t["s"]: i for i, t in enumerate(tokens)}
+        ends = {t["e"]: i for i, t in enumerate(tokens)}
+        joined = {id(u) for u in g["uses"] for v in g["uses"] if u is not v and v["start"] in at and u["end"] in ends
+                  and at[v["start"]] == ends[u["end"]] + 1 and tokens[at[v["start"]]]["n"].startswith("و")
+                  and not same_word(u["text"], v["text"], own)}
+        joined |= {id(v) for u in g["uses"] for v in g["uses"] if u is not v and v["start"] in at and u["end"] in ends
+                   and at[v["start"]] == ends[u["end"]] + 1 and tokens[at[v["start"]]]["n"].startswith("و")
+                   and not same_word(u["text"], v["text"], own)}
+        g["uses"] = [u for u in g["uses"] if id(u) not in joined]
         forms: dict[str, dict] = {}
         for u in g["uses"]:
             f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": u["state"] == "std"})
@@ -263,7 +298,8 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         cand = []
         for i, t in enumerate(tokens):
             ks = _riyadh_keys(t["n"], own)
-            if not any(t["s"] < e and t["e"] > s for s, e in taken) and t["s"] not in customer and any(k in syn or k in dsyn for k in ks):
+            if not any(t["s"] < e and t["e"] > s for s, e in taken) and t["s"] not in customer \
+                    and any(k in dsyn or (k in syn and not _with_pronoun(t["n"])) for k in ks):
                 cand.append((t, ks, i))
         comp = list(range(len(cand)))
 
@@ -301,7 +337,9 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
                     for row in det.forms.get(k, []):
                         seen_by.setdefault(row[0], set()).add(form_key(t["n"]))
             sid = next((s for s in sorted(seen_by) if len(seen_by[s]) >= 2), None)
-            borrowed = [t for t, _, _ in mem if det.foreign_looking(bare(_strip(normalize(t["n"]))))]
+            # borrowed: spelled like a borrowing, or listed by SIWAR as a transliteration (كمبيوتر، تكنولوجيا)
+            borrowed = [t for t, ks, _ in mem if det.foreign_looking(bare(_strip(normalize(t["n"]))))
+                        or any(row[2] == "t" for k in ks for row in det.forms.get(k, []))]
             if not (pair or sid is not None or borrowed):
                 continue
             if pair:

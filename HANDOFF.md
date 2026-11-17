@@ -51,6 +51,12 @@ Next, in order (the user's plan):
      the term does (no نحو for طريق), never two words joined by «و» (الأمان والسلامة), عميل after خدمة/استفسارات/ردود/…
      is a customer. Known miss: «أسئلة على العميل» in an agent article is still joined to وكيل.
      `gold-unify-riyadh.json` 23 cases 100/100, unify parity 81/81.
+   - `gold-unify-wide.json` (39 cases, many terms and traps): precision 100, recall 48. Most misses are words neither
+     SIWAR (tech domain) nor Riyadh links: برنتر/طابعة، مونيتر/شاشة، باسورد/كلمة مرور، راوتر/موجه، كيبورد/لوحة مفاتيح،
+     هارد ديسك/قرص صلب، لابتوب/حاسوب محمول، سيرفر/خادم، إيميل/بريد إلكتروني، كاش/نقد، البورصة/سوق الأسهم.
+     Fixed on the way: «لأن» was read as LAN in finance (stop word now); two standard terms of one concept unify
+     (البودكاست / المدونة الصوتية, tuning recall 66.7 → 72.2); words joined by و are never grouped; a word with a
+     pronoun (كونها) is not taken as a Riyadh synonym; موبايل / جوال (translation «mobile» inside «mobile phone»).
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 

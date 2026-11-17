@@ -314,7 +314,7 @@ summary { cursor: pointer; font-weight: 600 }
 
   const normalize = t => (t || "").replace(DIAC, "").replace(/[أإآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
     .toLowerCase().replace(PUNCT, " ").split(/\s+/).filter(Boolean).join(" ");
-  const STOP = new Set(["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون"].map(w => normalize(w)));
+  const STOP = new Set(["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون", "لأن", "لأنه", "لأنها", "لأنهم", "ولأن", "لكي", "كي"].map(w => normalize(w)));
   const termKey = t => { const n = normalize(t).split(" "); if (n[0] && n[0].startsWith("ال") && n[0].length > 3) n[0] = n[0].slice(2); return n.join(" "); };
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const pct = (a, b) => Math.round(100 * a / b);
@@ -789,6 +789,13 @@ summary { cursor: pointer; font-weight: 600 }
     }
     return null;
   }
+  const uEnRelated = (a, b) => {  // equal, or one English inside the other (Podcast / Audio Podcast)
+    if (!a || !b) return false;
+    const x = new Set(a.split(" ")), y = new Set(b.split(" ")), sub = (p, q) => p.size < q.size && [...p].every(w => q.has(w));
+    return a === b || ((sub(x, y) || sub(y, x)) && Math.max(...(a + " " + b).split(" ").map(w => w.length)) >= 4);
+  };
+  // «كونها، حسابنا»: a word with a pronoun is a verbal noun or a possession more often than a second name
+  const uWithPronoun = word => { const w = bare(uStrip(normalize(word))); return w.length >= 5 && /(ها|هما|هم|هن|كم|نا)$/.test(w); };
   const uEn = x => (x || "").replace(/\([^)]*\)/g, " ").toLowerCase().split(/\s+/).filter(Boolean).join(" ");  // «Computer (PC)» → computer
   // two words joined by «و» (الأمان والسلامة): the writer names two things, not one thing twice
   const uCoordinated = (tokens, i, j) => { const a = Math.min(i, j), b = Math.max(i, j); return b === a + 1 && tokens[b].n.startsWith("و"); };
@@ -800,18 +807,24 @@ summary { cursor: pointer; font-weight: 600 }
     const reserved = new Set(pairs.flat()), heads = new Set(pairs.map(p => p[0]));
     const customer = new Set(tokens.filter((t, i) => i && uRiyadhKeys(t.n).some(k => reserved.has(k) && !heads.has(k))
       && CUSTOMER_BEFORE.has(bare(uStrip(normalize(tokens[i - 1].n))))).map(t => t.s));
-    const translatesAs = (word, en) => !!en && (RIYADH.en[word] || []).some(t => t.split(";").map(p => p.trim()).includes(en));
+    // computer = Computer, or one English inside the other (mobile / mobile phone)
+    const translatesAs = (word, en) => (RIYADH.en[word] || []).some(t => t.split(";").map(p => p.trim()).filter(Boolean).some(p => uEnRelated(p, en)));
     // the Riyadh synonyms that translate as the term does (حاسوب for «Computer», not نحو for «Road»), and the domain's own
-    const nearOf = (word, en) => [...new Set([...uRiyadhKeys(word).flatMap(k => (RIYADH.syn[k] || []).filter(s => translatesAs(s, en))),
+    const nearOf = (word, en) => [...new Set([...(uWithPronoun(word) ? [] : uRiyadhKeys(word).flatMap(k => (RIYADH.syn[k] || []).filter(s => translatesAs(s, en)))),
       ...[...keysOf(word)].flatMap(k => dsyn[k] || [])])];
     const stdKeys = new Set(res.items.filter(it => it.state === "std").map(it => uTermKey(S[it.best[0]][0])));
+    // the standard terms the writer writes as they are (المدونة الصوتية), not only reached from another word
+    const written = new Set(res.items.filter(it => it.state === "std" && sameWord(it.original, S[it.best[0]][0])).map(it => uTermKey(S[it.best[0]][0])));
     const byTerm = new Map();
     for (const it of res.items) {
       // a form with several terms takes the one the writer also uses (الإنفرتر → عاكس التيار, when «عاكس التيار» is there)
       const best = it.choices.find(r => stdKeys.has(uTermKey(S[r[0]][0]))) || it.best, sense = S[best[0]], k = uTermKey(sense[0]);
       if (!byTerm.has(k)) byTerm.set(k, { term: sense[0], dictionary: DATA.dictionaries[sense[1]], uses: [], en: uEn(sense[2]) });
       if (uGlossed(text, it.m.s, it.m.e)) continue;
-      if (it.state === "std" && it.m.n === 1 && !sameWord(it.original, sense[0])) continue;  // another word (عملية / العملة)
+      // a one-word "standard" match that is another word (عملية / العملة); but a standard term of its own with the same
+      // meaning as a term the writer also uses stays (البودكاست with المدونة الصوتية)
+      if (it.state === "std" && it.m.n === 1 && !sameWord(it.original, sense[0])
+          && !(written.has(uTermKey(sense[0])) && it.choices.some(r => sameWord(it.original, S[r[0]][0]) && uEnRelated(uEn(S[r[0]][2]), uEn(sense[2]))))) continue;
       const tw = uTermKey(sense[0]).split(" ");  // a feminine with its own meaning is another word (الحاسبة / الحاسب الآلي)
       if (normalize(it.original).split(" ").filter(Boolean).some(w => tw.some(v => uOwnWord(w, v)))) continue;
       if (server) {  // next to a server, العميل is the client, not the agent (وكيل)
@@ -840,7 +853,8 @@ summary { cursor: pointer; font-weight: 600 }
           added = false;
           tokens.forEach((t, i) => {
             const ks = uRiyadhKeys(t.n);
-            if (taken.some(([s, e]) => t.s < e && t.e > s) || !ks.some(k => near.has(k)) || (mine && ks.some(k => reserved.has(k))) || customer.has(t.s)) return;
+            if (taken.some(([s, e]) => t.s < e && t.e > s) || !ks.some(k => near.has(k)) || (mine && ks.some(k => reserved.has(k))) || customer.has(t.s)
+                || (uWithPronoun(t.n) && !ks.some(k => k in dsyn))) return;
             const starts = new Set(g.uses.map(u => u.start));
             if ([i - 1, i + 1].some(j => j >= 0 && j < tokens.length && starts.has(tokens[j].s) && uCoordinated(tokens, i, j))) return;
             g.uses.push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" }); taken.push([t.s, t.e]);
@@ -849,6 +863,13 @@ summary { cursor: pointer; font-weight: 600 }
           });
         }
         g.uses.sort((a, b) => a.start - b.start);
+      }
+      {  // two different words joined by «و» (الحاسوب والكمبيوتر المحمول) name two things: neither is a second name
+        const at = new Map(tokens.map((t, i) => [t.s, i])), ends = new Map(tokens.map((t, i) => [t.e, i])), joined = new Set();
+        for (const u of g.uses) for (const v of g.uses)
+          if (u !== v && at.has(v.start) && ends.has(u.end) && at.get(v.start) === ends.get(u.end) + 1
+              && tokens[at.get(v.start)].n.startsWith("و") && !sameWord(u.text, v.text)) { joined.add(u); joined.add(v); }
+        g.uses = g.uses.filter(u => !joined.has(u));
       }
       const forms = countForms(g.uses);
       if (uDistinct([...forms.values()].map(f => f.form)) < 2) continue;  // one word throughout, however inflected
@@ -863,7 +884,7 @@ summary { cursor: pointer; font-weight: 600 }
       const cand = [];
       tokens.forEach((t, i) => {
         const ks = new Set(uRiyadhKeys(t.n));
-        if (!taken.some(([s, e]) => t.s < e && t.e > s) && !customer.has(t.s) && [...ks].some(k => k in RIYADH.syn || k in dsyn)) cand.push([t, ks, i]);
+        if (!taken.some(([s, e]) => t.s < e && t.e > s) && !customer.has(t.s) && [...ks].some(k => k in dsyn || (k in RIYADH.syn && !uWithPronoun(t.n)))) cand.push([t, ks, i]);
       });
       const comp = cand.map((_, i) => i), root = i => { while (comp[i] !== i) i = comp[i]; return i; };
       for (let i = 0; i < cand.length; i++) for (let j = 0; j < i; j++) {
@@ -885,7 +906,9 @@ summary { cursor: pointer; font-weight: 600 }
           if (!seenBy.has(row[0])) seenBy.set(row[0], new Set()); seenBy.get(row[0]).add(uFormKey(t.n));
         }
         const sid = [...seenBy.keys()].sort((a, b) => a - b).find(s => seenBy.get(s).size >= 2);
-        const borrowed = mem.filter(([t]) => foreignLooking(bare(uStrip(normalize(t.n))), true)).map(([t]) => t);
+        // borrowed: spelled like a borrowing, or listed by SIWAR as a transliteration (كمبيوتر، تكنولوجيا)
+        const borrowed = mem.filter(([t, ks]) => foreignLooking(bare(uStrip(normalize(t.n))), true)
+          || [...ks].some(k => (DATA.forms[k] || []).some(row => row[2] === "t"))).map(([t]) => t);
         if (!pair && sid === undefined && !borrowed.length) continue;
         let keep, kind, dic;
         if (pair) [keep, kind, dic] = [pair[0], "synonym", null];
