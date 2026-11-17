@@ -69,7 +69,7 @@ Next, in order (the user's plan):
      92.3/92.3 but it is a TUNING set from here (its misses were fixed by hand); الدايغلوسيا still ranks تعددية اللهجة.
      Unify wide 92.0. Human review sample: `logs/review_sample_200.xlsx` (blind; key `logs/review_sample_200_key.json`,
      103 article + 97 tweet suggestions, none of the earlier 50) sent to the user; score it when it comes back.
-     Next: try a context-gloss classifier (ArabGlossBERT / SinaTools) on the 600 decision cases; adopt only if it clearly wins.
+     ArabGlossBERT tried as a context-gloss judge: AUC 0.637 / 0.675, not adopted (`reports/gloss_judge.md`).
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 
