@@ -1,0 +1,1007 @@
+{
+ "dictionary_id": "kass-supplement",
+ "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+ "source_export": "data\\dictionaries\\supplement\\kass_supplement.json",
+ "generated_at": "2026-11-17T09:46:37.916953+00:00",
+ "enrichment_status": "complete",
+ "note": "Standard Arabic terms in established use (Arabic academies, the unified dictionaries, Arabic system interfaces) for everyday tech, finance and media words that the SIWAR dictionaries of these domains do not cover. Written by Claude for Kass at the user's request (2026-11-17); not a SIWAR source. Each variant is a borrowed spelling in real use for the same meaning.",
+ "counts": {
+  "senses": 33,
+  "variants_accepted": 93
+ },
+ "records": [
+  {
+   "entry_id": "kass-supplement-0",
+   "sense_id": "kass-supplement-0:0",
+   "term": "طابعة",
+   "term_without_diacritics": "طابعة",
+   "definition": "جهاز يُخرج النصوص والصور من الحاسوب على الورق.",
+   "english_term": "Printer",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "برنتر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "برينتر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "printer",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-1",
+   "sense_id": "kass-supplement-1:0",
+   "term": "شاشة",
+   "term_without_diacritics": "شاشة",
+   "definition": "جهاز عرض يُظهر مخرجات الحاسوب من نصوص وصور.",
+   "english_term": "Monitor",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "مونيتر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "مونيتور",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "monitor",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-2",
+   "sense_id": "kass-supplement-2:0",
+   "term": "كلمة المرور",
+   "term_without_diacritics": "كلمة المرور",
+   "definition": "سلسلة سرية من الحروف أو الأرقام يُتحقق بها من هوية المستخدم عند الدخول.",
+   "english_term": "Password",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "باسورد",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "باسوورد",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "password",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-3",
+   "sense_id": "kass-supplement-3:0",
+   "term": "موجّه",
+   "term_without_diacritics": "موجه",
+   "definition": "جهاز شبكي يوجّه حزم البيانات بين الشبكات ويوزع الاتصال بالإنترنت.",
+   "english_term": "Router",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "راوتر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "روتر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "router",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-4",
+   "sense_id": "kass-supplement-4:0",
+   "term": "لوحة المفاتيح",
+   "term_without_diacritics": "لوحة المفاتيح",
+   "definition": "أداة إدخال تتكون من مفاتيح الحروف والأرقام والأوامر لكتابة البيانات في الحاسوب.",
+   "english_term": "Keyboard",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "كيبورد",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "كي بورد",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "keyboard",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-5",
+   "sense_id": "kass-supplement-5:0",
+   "term": "قرص صلب",
+   "term_without_diacritics": "قرص صلب",
+   "definition": "وحدة تخزين دائمة في الحاسوب تُحفظ عليها الملفات والبرامج.",
+   "english_term": "Hard disk",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "هارد ديسك",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "هارد دسك",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "هارديسك",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "hard disk",
+      "type": "foreign",
+      "status": "accepted"
+     },
+     {
+      "form": "hard drive",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-6",
+   "sense_id": "kass-supplement-6:0",
+   "term": "حاسوب محمول",
+   "term_without_diacritics": "حاسوب محمول",
+   "definition": "حاسوب شخصي صغير خفيف يعمل بالبطارية ويسهل حمله.",
+   "english_term": "Laptop",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "لابتوب",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "لاب توب",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "laptop",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-7",
+   "sense_id": "kass-supplement-7:0",
+   "term": "فأرة",
+   "term_without_diacritics": "فأرة",
+   "definition": "أداة تأشير يدوية تُحرك المؤشر على الشاشة وتختار الأوامر بالنقر.",
+   "english_term": "Mouse",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "ماوس",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "mouse",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-8",
+   "sense_id": "kass-supplement-8:0",
+   "term": "خادم",
+   "term_without_diacritics": "خادم",
+   "definition": "حاسوب أو برنامج يقدّم الخدمات والبيانات لأجهزة أخرى على الشبكة.",
+   "english_term": "Server",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "سيرفر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "سرفر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "server",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-9",
+   "sense_id": "kass-supplement-9:0",
+   "term": "بريد إلكتروني",
+   "term_without_diacritics": "بريد إلكتروني",
+   "definition": "خدمة لتبادل الرسائل والملفات عبر الإنترنت.",
+   "english_term": "Email",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "إيميل",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "ايميل",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "email",
+      "type": "foreign",
+      "status": "accepted"
+     },
+     {
+      "form": "e-mail",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-10",
+   "sense_id": "kass-supplement-10:0",
+   "term": "هاتف محمول",
+   "term_without_diacritics": "هاتف محمول",
+   "definition": "هاتف لاسلكي صغير يحمله صاحبه ويتصل عبر شبكة الاتصالات.",
+   "english_term": "Mobile phone",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "موبايل",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "mobile",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-11",
+   "sense_id": "kass-supplement-11:0",
+   "term": "ذاكرة وميضية",
+   "term_without_diacritics": "ذاكرة وميضية",
+   "definition": "وحدة تخزين صغيرة محمولة تتصل بالحاسوب عبر منفذ USB.",
+   "english_term": "Flash drive",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "فلاشة",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "فلاش ميموري",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "flash drive",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-12",
+   "sense_id": "kass-supplement-12:0",
+   "term": "ماسح ضوئي",
+   "term_without_diacritics": "ماسح ضوئي",
+   "definition": "جهاز يحوّل الوثائق والصور الورقية إلى ملفات رقمية.",
+   "english_term": "Scanner",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "سكانر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "اسكانر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "scanner",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-13",
+   "sense_id": "kass-supplement-13:0",
+   "term": "متصفح",
+   "term_without_diacritics": "متصفح",
+   "definition": "برنامج لعرض صفحات الويب والتنقل بينها.",
+   "english_term": "Browser",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "براوزر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "browser",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-14",
+   "sense_id": "kass-supplement-14:0",
+   "term": "لقطة شاشة",
+   "term_without_diacritics": "لقطة شاشة",
+   "definition": "صورة لما يظهر على الشاشة في لحظة معينة.",
+   "english_term": "Screenshot",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "سكرين شوت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "سكرينشوت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "screenshot",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-15",
+   "sense_id": "kass-supplement-15:0",
+   "term": "نسخة احتياطية",
+   "term_without_diacritics": "نسخة احتياطية",
+   "definition": "نسخة من البيانات تُحفظ في مكان آخر لاستعادتها عند فقد الأصل أو تلفه.",
+   "english_term": "Backup",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "باك أب",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "باكب",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "باك اب",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "backup",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-16",
+   "sense_id": "kass-supplement-16:0",
+   "term": "سماعة رأس",
+   "term_without_diacritics": "سماعة رأس",
+   "definition": "سماعتان توضعان على الأذنين أو فيهما للاستماع إلى الصوت.",
+   "english_term": "Headphones",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "هيدفون",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "هيدسيت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "headphones",
+      "type": "foreign",
+      "status": "accepted"
+     },
+     {
+      "form": "headset",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-17",
+   "sense_id": "kass-supplement-17:0",
+   "term": "جهاز لوحي",
+   "term_without_diacritics": "جهاز لوحي",
+   "definition": "حاسوب محمول مسطح يعمل باللمس دون لوحة مفاتيح منفصلة.",
+   "english_term": "Tablet",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "تابلت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "tablet",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-18",
+   "sense_id": "kass-supplement-18:0",
+   "term": "مجلد",
+   "term_without_diacritics": "مجلد",
+   "definition": "حاوية في نظام الملفات تُجمع فيها الملفات وتُنظم.",
+   "english_term": "Folder",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "فولدر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "folder",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-19",
+   "sense_id": "kass-supplement-19:0",
+   "term": "تحديث",
+   "term_without_diacritics": "تحديث",
+   "definition": "نسخة أحدث من برنامج أو نظام تُصلح الأخطاء أو تضيف ميزات.",
+   "english_term": "Update",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "أبديت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "ابديت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "update",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-20",
+   "sense_id": "kass-supplement-20:0",
+   "term": "تنزيل",
+   "term_without_diacritics": "تنزيل",
+   "definition": "نقل ملف أو برنامج من الإنترنت أو من خادم إلى الجهاز.",
+   "english_term": "Download",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "داونلود",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "download",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-21",
+   "sense_id": "kass-supplement-21:0",
+   "term": "رابط",
+   "term_without_diacritics": "رابط",
+   "definition": "عنوان أو وصلة تنقل المستخدم إلى صفحة أو ملف آخر.",
+   "english_term": "Link",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "لينك",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "link",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-22",
+   "sense_id": "kass-supplement-22:0",
+   "term": "إعدادات",
+   "term_without_diacritics": "إعدادات",
+   "definition": "الخيارات التي يضبط بها المستخدم طريقة عمل الجهاز أو البرنامج.",
+   "english_term": "Settings",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "سيتنقز",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "سيتنجز",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "settings",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-23",
+   "sense_id": "kass-supplement-23:0",
+   "term": "شبكة لاسلكية",
+   "term_without_diacritics": "شبكة لاسلكية",
+   "definition": "شبكة تربط الأجهزة بالإنترنت أو ببعضها عبر موجات الراديو دون أسلاك.",
+   "english_term": "Wi-Fi",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "واي فاي",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "وايفاي",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "wifi",
+      "type": "foreign",
+      "status": "accepted"
+     },
+     {
+      "form": "wi-fi",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-24",
+   "sense_id": "kass-supplement-24:0",
+   "term": "نقد",
+   "term_without_diacritics": "نقد",
+   "definition": "المال الحاضر من أوراق نقدية وعملات معدنية يُدفع فورًا.",
+   "english_term": "Cash",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "كاش",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "cash",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-25",
+   "sense_id": "kass-supplement-25:0",
+   "term": "خصم",
+   "term_without_diacritics": "خصم",
+   "definition": "مبلغ أو نسبة تُطرح من السعر الأصلي للسلعة أو الخدمة.",
+   "english_term": "Discount",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "ديسكاونت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "discount",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-26",
+   "sense_id": "kass-supplement-26:0",
+   "term": "استرداد",
+   "term_without_diacritics": "استرداد",
+   "definition": "إعادة المبلغ المدفوع إلى المشتري عند إلغاء الشراء أو إرجاع السلعة.",
+   "english_term": "Refund",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "ريفند",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "refund",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-27",
+   "sense_id": "kass-supplement-27:0",
+   "term": "عرض ترويجي",
+   "term_without_diacritics": "عرض ترويجي",
+   "definition": "تخفيض أو ميزة مؤقتة تقدمها الشركة لجذب العملاء.",
+   "english_term": "Offer",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "أوفر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "اوفر",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "offer",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-28",
+   "sense_id": "kass-supplement-28:0",
+   "term": "وسم",
+   "term_without_diacritics": "وسم",
+   "definition": "كلمة أو عبارة مسبوقة بعلامة # تُجمع بها المنشورات حول موضوع واحد.",
+   "english_term": "Hashtag",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "هاشتاق",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "هاشتاغ",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "هاشتاج",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "hashtag",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-29",
+   "sense_id": "kass-supplement-29:0",
+   "term": "متابع",
+   "term_without_diacritics": "متابع",
+   "definition": "مستخدم يشترك في حساب على منصات التواصل ليرى منشوراته.",
+   "english_term": "Follower",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "فولورز",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "فلورز",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "followers",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-30",
+   "sense_id": "kass-supplement-30:0",
+   "term": "بث مباشر",
+   "term_without_diacritics": "بث مباشر",
+   "definition": "نقل الصوت والصورة عبر الإنترنت في وقت حدوثه.",
+   "english_term": "Live stream",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "لايف",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "live",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-31",
+   "sense_id": "kass-supplement-31:0",
+   "term": "منشور",
+   "term_without_diacritics": "منشور",
+   "definition": "نص أو صورة أو مقطع ينشره المستخدم على منصة تواصل.",
+   "english_term": "Post",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "بوست",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "post",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  },
+  {
+   "entry_id": "kass-supplement-32",
+   "sense_id": "kass-supplement-32:0",
+   "term": "محتوى",
+   "term_without_diacritics": "محتوى",
+   "definition": "ما يُنشر من نصوص وصور ومقاطع على المنصات والمواقع.",
+   "english_term": "Content",
+   "dictionary_id": "kass-supplement",
+   "dictionary_name": "مسرد خصص التكميلي (من خارج سوار)",
+   "source_url": null,
+   "enrichment": {
+    "variants": [
+     {
+      "form": "كونتنت",
+      "type": "transliteration",
+      "status": "accepted"
+     },
+     {
+      "form": "content",
+      "type": "foreign",
+      "status": "accepted"
+     }
+    ],
+    "reviewed_by": "claude-opus-5-5 (Claude Code session)"
+   }
+  }
+ ]
+}

@@ -57,6 +57,13 @@ Next, in order (the user's plan):
      Fixed on the way: «لأن» was read as LAN in finance (stop word now); two standard terms of one concept unify
      (البودكاست / المدونة الصوتية, tuning recall 66.7 → 72.2); words joined by و are never grouped; a word with a
      pronoun (كونها) is not taken as a Riyadh synonym; موبايل / جوال (translation «mobile» inside «mobile phone»).
+   - مسرد خصص التكميلي (من خارج سوار), at the user's request (2026-11-17): 33 standard Arabic terms with definitions for
+     everyday tech, finance and media words SIWAR does not cover (طابعة/برنتر، كلمة المرور/باسورد، موجّه/راوتر، خادم/سيرفر،
+     نقد/كاش، وسم/هاشتاق …), 93 borrowed variants. Source `data/dictionaries/supplement/kass_supplement.json`, built by
+     `scripts/extract/build_supplement.py` into `enriched/kass-supplement.enriched.json`; in the tech, finance and media
+     domains (key «مسرد خصص»). Shown to the writer under its name, never as SIWAR. `gold-supplement.json` 23 cases
+     100/96.6; unify wide 48 → 88 recall, tuning unify 77.8; analysis gold unchanged after two right extras moved to
+     `also` (السيرفرات → خادم، هاشتاق → وسم; reports/gold_also.md). 32 dictionaries, 60,526 senses.
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 
