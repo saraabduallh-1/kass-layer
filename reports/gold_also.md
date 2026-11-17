@@ -28,6 +28,7 @@ expected word counts as correct. Both runners (`run_tests.js`, `run_tests.py`) r
 | arabic-heldout | المحطة الكهربائية → محطة إنتاج الكهرباء | انقطع التيار عن المحطة الكهربائية … |
 | arabic-heldout | الكود → الشفرات المصدرية | المبرمج كتب الكود وراجعه مع زملائه |
 | arabic-tuning | المحكمة الابتدائية → محكمة الدرجة الأولى (2026-11-14, new legal glossary; same court) | قدم المدعي القضية إلى المحكمة الابتدائية … |
+| lang | السيميوتيكس → علم الإشارة | السيميوتيكس تدرس العلامات ومعانيها |
 
 ## Still counted as errors
 
