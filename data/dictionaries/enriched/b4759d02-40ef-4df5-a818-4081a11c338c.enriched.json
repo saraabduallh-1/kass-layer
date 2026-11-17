@@ -2,14 +2,14 @@
   "dictionary_id": "b4759d02-40ef-4df5-a818-4081a11c338c",
   "dictionary_name": "معجم المصطلحات الموسيقية",
   "source_export": "data/dictionaries/exports/b4759d02-40ef-4df5-a818-4081a11c338c.json",
-  "generated_at": "2026-11-14T09:03:34.323938+00:00",
+  "generated_at": "2026-11-16T23:54:24.436044+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 700,
     "senses_reviewed": 700,
     "senses_with_variants": 618,
-    "variants_accepted": 848,
-    "variants_needing_review": 511
+    "variants_accepted": 847,
+    "variants_needing_review": 512
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -4046,7 +4046,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms",
               "ambiguous"
             ]
           }
@@ -5016,10 +5015,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -5393,8 +5390,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الأوركسترا ألحنت بأسلوب baroque.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15217,10 +15216,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "تيمبر",
@@ -15229,10 +15226,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -22291,7 +22286,6 @@
             "status": "review",
             "review_reasons": [
               "is_standard_term_elsewhere",
-              "proposed_for_other_terms",
               "low_confidence"
             ]
           }
@@ -26677,10 +26671,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "air",
@@ -26836,8 +26828,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "leitmotiv",
@@ -26856,8 +26850,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -28148,8 +28144,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "conjunct motion",
@@ -29338,8 +29336,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مدرج موسيقي",
@@ -31563,8 +31563,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مفتاح دو",
@@ -34516,10 +34518,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "موسيقى كلاسيك",
@@ -35367,8 +35367,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],

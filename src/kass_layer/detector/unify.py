@@ -4,6 +4,9 @@ Two layers, as terminology QA tools do (glossary first, spelling variants second
 1. Dictionary groups: every form the detector links to the same SIWAR term. The term is the form to keep.
 2. Spelling groups: borrowed words outside the dictionaries that are spellings of one word (الداتا، داتا، ديتا;
    داشبورد، dashboard). The most frequent form is kept; these are always marked for review.
+معجم الرياض (general Arabic, demo_local/riyadh.json) adds three things: a dictionary group also takes the synonyms the
+Riyadh dictionary translates the same way (الحاسب الآلي: حاسوب، كمبيوتر), and in tech عميل / وكيل (DOMAIN_SYN); a feminine form with its own meaning is another
+word (حاسب / حاسبة); and a place name it spells with «يا» groups its «ية» spelling (سوريا / سورية).
 Word vectors are not used to merge words: they put related words and opposites close (البائع / المشتري), so a merge
 on closeness alone would join different concepts.
 """
@@ -41,11 +44,26 @@ def _lexeme(word: str) -> str:
     return re.sub("(ات|ان|ين|ون|يه|ي|و|ا)$", "", w) if len(w) > 4 else w
 
 
-def same_word(a: str, b: str) -> bool:
-    """Two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات, سيارة ذاتية / السيارات الذاتية)."""
-    x, y = [_lexeme(w) for w in normalize(a).split()], [_lexeme(w) for w in normalize(b).split()]
+def _singular_f(w: str) -> str:
+    """The word itself: a plural in ات is not read as a ة form (الإعلانات is the plural of إعلان, not of «إعلانة»)."""
+    return w
+
+
+def _own_word(a: str, b: str, own) -> bool:
+    """«حاسبة» is its own word (calculator), not «حاسب» + ة: معجم الرياض translates the two differently."""
+    if not own:
+        return False
+    p, q = _singular_f(bare(_strip(a))), _singular_f(bare(_strip(b)))
+    return (p in own and q == p[:-1]) or (q in own and p == q[:-1])
+
+
+def same_word(a: str, b: str, own=frozenset()) -> bool:
+    """Two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات, سيارة ذاتية / السيارات الذاتية).
+    own: the Riyadh feminine forms with their own meaning (حاسبة), which are not forms of the masculine (حاسب)."""
+    na, nb = normalize(a).split(), normalize(b).split()
+    x, y = [_lexeme(w) for w in na], [_lexeme(w) for w in nb]
     if len(x) == len(y):
-        return all(_same_lex(p, q) for p, q in zip(x, y))
+        return all(_same_lex(p, q) and not _own_word(u, v, own) for p, q, u, v in zip(x, y, na, nb))
     if len(x) > len(y):
         x, y = y, x
     # a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings
@@ -53,18 +71,25 @@ def same_word(a: str, b: str) -> bool:
                for i in range(len(y) - len(x) + 1))
 
 
+_FUALAA = re.compile("^(.)(.)(.)ا[ءئؤ]$")  # the broken plural فُعَلاء of فَعِيل: عملاء / عميل، وكلاء / وكيل، وزراء / وزير
+
+
 def _same_lex(p: str, q: str) -> bool:
     if p == q or (min(len(p), len(q)) >= 4 and (p.startswith(q) or q.startswith(p))):
         return True
+    for u, v in ((p, q), (q, p)):
+        m = _FUALAA.match(u)
+        if m and v == m.group(1) + m.group(2) + "ي" + m.group(3):
+            return True
     # a one-letter particle: لصاحب / صاحب, بتقديم / تقديم
     return any(u[0] in "وفبلك" and len(u) >= (3 if u[0] == "و" else 4) and u[1:] == v for u, v in ((p, q), (q, p)))
 
 
-def _distinct(forms: list[str]) -> int:
+def _distinct(forms: list[str], own=frozenset()) -> int:
     """How many different words the forms are, inflection aside."""
     heads: list[str] = []
     for f in forms:
-        if not any(same_word(f, h) for h in heads):
+        if not any(same_word(f, h, own) for h in heads):
             heads.append(f)
     return len(heads)
 
@@ -88,23 +113,131 @@ def _spelling_key(word: str) -> str:
     return ar_skel(_PLURAL.sub("", w) if len(w) > 5 else w)
 
 
+def _riyadh_keys(word: str, own=frozenset()) -> set[str]:
+    """The keys a written word may have in معجم الرياض: والحاسوب → حاسوب, حاسوبا → حاسوب, الوكلاء → وكيل.
+    A feminine with its own meaning keeps its own key only (الحاسبة → حاسبه, never حاسب)."""
+    w = normalize(word)
+    if " " in w:
+        return set()
+    f = _singular_f(bare(_strip(w)))
+    if f in own:
+        return {f}
+    keys = {bare(_strip(w)), _lexeme(w), bare(w)}  # bare(w): a word that starts with و itself (وكيلا, not «و» + كيلا)
+    if w.endswith("ا") and len(w) > 4:
+        keys.add(bare(w[:-1]))
+    for x in (_lexeme(w), bare(w)):  # وكلاء is not «و» + كلاء
+        m = _FUALAA.match(x)
+        if m:
+            keys.add(m.group(1) + m.group(2) + "ي" + m.group(3))
+    return keys
+
+
+# Synonyms one domain uses that the dictionaries do not link, the form to keep first: in tech «عميل ذكي» is written for
+# an intelligent agent (وكيل ذكي). Elsewhere عميل is a client and وكيل an agent, two concepts; and next to a server it is
+# a client in tech too.
+DOMAIN_SYN = {"tech": [["وكيل", "عميل"]]}
+_CLIENT_SERVER = re.compile("خادم|خوادم|سيرفر|server")
+# «خدمة العملاء، استفسارات العملاء، كبار عملاء»: customers, even in a text about agents
+CUSTOMER_BEFORE = {normalize(w) for w in ["خدمة", "استفسارات", "ردود", "شكاوى", "رضا", "تجربة", "طلبات", "احتياجات",
+                                          "بيانات", "حسابات", "كبار", "ولاء", "دعم", "آراء", "توقعات", "علاقات"]}
+
+
+def _en(x: str | None) -> str:
+    """English for comparing translations: «Computer (PC)» → computer."""
+    return " ".join(re.sub(r"\([^)]*\)", " ", x or "").lower().split())
+
+
+def _en_related(a: str, b: str) -> bool:
+    """Two English renderings of one concept: equal, or one inside the other (Podcast / Audio Podcast)."""
+    if not a or not b:
+        return False
+    x, y = set(a.split()), set(b.split())
+    return a == b or ((x < y or y < x) and max(map(len, (a + " " + b).split())) >= 4)
+
+
+_PRONOUN = re.compile("(ها|هما|هم|هن|كم|نا)$")
+
+
+def _with_pronoun(word: str) -> bool:
+    """«كونها، حسابنا»: a word with a pronoun is a verbal noun or a possession more often than a second name."""
+    w = bare(_strip(normalize(word)))
+    return len(w) >= 5 and bool(_PRONOUN.search(w))
+
+
+def _coordinated(tokens: list[dict], i: int, j: int) -> bool:
+    """Two words joined by «و» (الأمان والسلامة): the writer names two things, not one thing twice."""
+    a, b = min(i, j), max(i, j)
+    return b == a + 1 and tokens[b]["n"].startswith("و")
+
+
+def _place(w: str, places) -> str | None:
+    """The Riyadh place name a written word is: سوريا، وسوريا، بسورية، لسوريه → سوريا; not السورية (the adjective)."""
+    if w.startswith("ال"):
+        return None
+    for x in (w, w[1:]) if w[:1] in "وبل" and len(w) > 4 else (w,):
+        if x in places:
+            return x
+        if x.endswith("يه") and x[:-2] + "يا" in places:
+            return x[:-2] + "يا"
+    return None
+
+
 def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | None = None) -> dict:
     res = analysis or det.analyse(text, domain_id)
     groups = []
+    riyadh = getattr(det, "riyadh", None) or {"syn": {}, "en": {}, "own": frozenset(), "place": frozenset(), "name": ""}
+    own, syn, syn_en = riyadh["own"], riyadh["syn"], riyadh.get("en", {})
+    server = bool(_CLIENT_SERVER.search(normalize(text)))
+    pairs = DOMAIN_SYN.get(domain_id, [])
+    dsyn = {} if server else {w: [x for x in p if x != w] for p in pairs for w in p}
+    reserved = {w for p in pairs for w in p}  # in tech عميل / وكيل belong to the domain pair only, never to another term
+
+    def keys_of(phrase: str) -> set[str]:
+        return {k for w in normalize(phrase).split() for k in _riyadh_keys(w, own)}
+
+    tokens = tokenize(text)
+    # the pair words used as customers (خدمة العملاء): never joined to the agent
+    customer = {t["s"] for i, t in enumerate(tokens) if i and _riyadh_keys(t["n"], own) & reserved - {p[0] for p in pairs}
+                and bare(_strip(normalize(tokens[i - 1]["n"]))) in CUSTOMER_BEFORE}
+
+    def translates_as(word: str, en: str) -> bool:
+        """The word translates as the term (computer = Computer), or one English inside the other (mobile / mobile phone)."""
+        return any(_en_related(p, en) for t in syn_en.get(word, []) for p in (q.strip() for q in t.split(";")) if p)
+
+    def near_of(word: str, en: str) -> set[str]:
+        """The Riyadh synonyms that translate as the term does (حاسوب for «Computer», not نحو for «Road»), and the
+        domain's own synonyms."""
+        out = set() if _with_pronoun(word) else {s for k in _riyadh_keys(word, own) for s in syn.get(k, []) if translates_as(s, en)}
+        return out | {s for k in keys_of(word) for s in dsyn.get(k, [])}
 
     # 1. forms the dictionaries link to one term
-    tokens = tokenize(text)
     std_keys = {term_key(det.senses[it["best"][0]][0]) for it in res["items"] if it["state"] == "std"}
+    # the standard terms the writer writes as they are (المدونة الصوتية), not only reached from another word
+    written = {term_key(det.senses[it["best"][0]][0]) for it in res["items"]
+               if it["state"] == "std" and same_word(it["original"], det.senses[it["best"][0]][0], own)}
     by_term: dict[str, dict] = {}
     for it in res["items"]:
         # a form with several terms takes the one the writer also uses (الإنفرتر → عاكس التيار, when «عاكس التيار» is there)
         best = next((r for r in it["choices"] if term_key(det.senses[r[0]][0]) in std_keys), it["best"])
         sense = det.senses[best[0]]
-        g = by_term.setdefault(term_key(sense[0]), {"term": sense[0], "dictionary": det.dictionaries[sense[1]], "uses": []})
+        g = by_term.setdefault(term_key(sense[0]), {"term": sense[0], "dictionary": det.dictionaries[sense[1]], "uses": [],
+                                                    "en": _en(sense[2])})
         if _glossed(text, it["m"]["s"], it["m"]["e"]):
             continue
-        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0]):
-            continue  # a one-word "standard" match that is another word (عملية / العملة, الدور / الدوري)
+        # a one-word "standard" match that is another word (عملية / العملة, الدور / الدوري); but a standard term of its own
+        # that has the same meaning as a term the writer also uses stays (البودكاست with المدونة الصوتية)
+        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0], own) and not (
+                term_key(sense[0]) in written and any(same_word(it["original"], det.senses[r[0]][0], own)
+                                                      and _en_related(_en(det.senses[r[0]][2]), _en(sense[2])) for r in it["choices"])):
+            continue
+        if any(_own_word(w, v, own) for w in normalize(it["original"]).split() for v in term_key(sense[0]).split()):
+            continue  # a feminine with its own meaning is another word (الحاسبة is not «الحاسب الآلي»)
+        if server and any(keys_of(it["original"]) & set(p) and keys_of(sense[0]) & set(p)
+                          and not keys_of(it["original"]) & keys_of(sense[0]) & set(p) for p in pairs):
+            continue  # next to a server, العميل is the client, not the agent (وكيل)
+        if (keys_of(it["original"]) & reserved and not keys_of(sense[0]) & reserved) or \
+                (it["m"]["s"] in customer and keys_of(sense[0]) & reserved):
+            continue  # وكلاء in tech is the agent of the domain pair, not another term (النائب)
         g["uses"].append({"text": it["original"], "start": it["m"]["s"], "end": it["m"]["e"], "state": it["state"]})
     for g in by_term.values():
         n = len(term_key(g["term"]).split())
@@ -112,22 +245,117 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         for i in range(len(tokens) - n + 1):  # the term itself, written anywhere (خادم، العقد), even where nothing was proposed
             s0, e0 = tokens[i]["s"], tokens[i + n - 1]["e"]
             window = text[s0:e0]
-            if any(s0 < e and e0 > s for s, e in taken) or not same_word(window, re.sub(r"\([^)]*\)", " ", g["term"])):
+            if any(s0 < e and e0 > s for s, e in taken) or not same_word(window, re.sub(r"\([^)]*\)", " ", g["term"]), own):
                 continue
             g["uses"].append({"text": window, "start": s0, "end": e0, "state": "std"})
             taken.append((s0, e0))
+        # the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
+        if (syn or dsyn) and g["uses"]:
+            near = {s for u in g["uses"] for s in near_of(u["text"], g["en"])}
+            mine = not keys_of(g["term"]) & reserved
+            added = True
+            while added:
+                added = False
+                for i, t in enumerate(tokens):
+                    ks = _riyadh_keys(t["n"], own)
+                    if any(t["s"] < e and t["e"] > s for s, e in taken) or not ks & near or (mine and ks & reserved) \
+                            or t["s"] in customer or (_with_pronoun(t["n"]) and not ks & set(dsyn)):
+                        continue
+                    starts = {u["start"] for u in g["uses"]}
+                    if any(0 <= j < len(tokens) and tokens[j]["s"] in starts and _coordinated(tokens, i, j) for j in (i - 1, i + 1)):
+                        continue
+                    g["uses"].append({"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"})
+                    taken.append((t["s"], t["e"]))
+                    near |= near_of(t["n"], g["en"])
+                    added = True
+            g["uses"].sort(key=lambda u: u["start"])
+        # two different words joined by «و» (الحاسوب والكمبيوتر المحمول) name two things: neither is a second name
+        at = {t["s"]: i for i, t in enumerate(tokens)}
+        ends = {t["e"]: i for i, t in enumerate(tokens)}
+        joined = {id(u) for u in g["uses"] for v in g["uses"] if u is not v and v["start"] in at and u["end"] in ends
+                  and at[v["start"]] == ends[u["end"]] + 1 and tokens[at[v["start"]]]["n"].startswith("و")
+                  and not same_word(u["text"], v["text"], own)}
+        joined |= {id(v) for u in g["uses"] for v in g["uses"] if u is not v and v["start"] in at and u["end"] in ends
+                   and at[v["start"]] == ends[u["end"]] + 1 and tokens[at[v["start"]]]["n"].startswith("و")
+                   and not same_word(u["text"], v["text"], own)}
+        g["uses"] = [u for u in g["uses"] if id(u) not in joined]
         forms: dict[str, dict] = {}
         for u in g["uses"]:
             f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": u["state"] == "std"})
             f["count"] += 1
-        if _distinct([f["form"] for f in forms.values()]) < 2:
+        if _distinct([f["form"] for f in forms.values()], own) < 2:
             continue  # one word throughout, however inflected: consistent (a lone borrowed form is already a suggestion)
         review = any(u["state"] == "review" for u in g["uses"])
         groups.append({"kind": "dictionary", "keep": g["term"], "dictionary": g["dictionary"], "review": review,
                        "forms": sorted(forms.values(), key=lambda f: -f["count"]), "uses": g["uses"]})
 
+    # 1b. one concept in words no dictionary item covers: words معجم الرياض links (ماوس / فأرة; حاسب / حاسوب) or the
+    # domain's own synonyms (tech: عميل / وكيل). Kept only when the domain links them, two of them share a SIWAR term,
+    # or one is a borrowed word, so two ordinary synonyms (اجتماع / لقاء) are left alone. Always marked for review.
+    extra: list[tuple] = []
+    if syn or dsyn:
+        taken = [(u["start"], u["end"]) for g in groups for u in g["uses"]] + [(it["m"]["s"], it["m"]["e"]) for it in res["items"]]
+        cand = []
+        for i, t in enumerate(tokens):
+            ks = _riyadh_keys(t["n"], own)
+            if not any(t["s"] < e and t["e"] > s for s, e in taken) and t["s"] not in customer \
+                    and any(k in dsyn or (k in syn and not _with_pronoun(t["n"])) for k in ks):
+                cand.append((t, ks, i))
+        comp = list(range(len(cand)))
+
+        def root(i: int) -> int:
+            while comp[i] != i:
+                i = comp[i]
+            return i
+        for i in range(len(cand)):
+            for j in range(i):
+                a, b = cand[i][1], cand[j][1]
+                if _coordinated(tokens, cand[i][2], cand[j][2]):
+                    continue
+                if a & b or any(x in b for k in a for x in syn.get(k, []) + dsyn.get(k, [])):
+                    comp[root(i)] = root(j)
+        members: dict[int, list] = {}
+        for i, c in enumerate(cand):
+            members.setdefault(root(i), []).append(c)
+        for mem in members.values():
+            uses = [{"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"} for t, _, _ in mem]
+            forms: dict[str, dict] = {}
+            for u in uses:
+                f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": False})
+                f["count"] += 1
+            if _distinct([f["form"] for f in forms.values()], own) < 2:
+                continue
+            # two different words linked as synonyms, not only forms of one word (إعلان، الإعلانات)
+            if not any(not a & b and any(x in b for k in a for x in syn.get(k, []) + dsyn.get(k, []))
+                       for _, a, _ in mem for _, b, _ in mem):
+                continue
+            allk = set().union(*(ks for _, ks, _ in mem))
+            pair = next((p for p in pairs if dsyn and len(allk & set(p)) >= 2), None)
+            seen_by: dict[int, set] = {}  # SIWAR sense -> the written forms that reach it
+            for t, ks, _ in mem:
+                for k in sorted(ks):
+                    for row in det.forms.get(k, []):
+                        seen_by.setdefault(row[0], set()).add(form_key(t["n"]))
+            sid = next((s for s in sorted(seen_by) if len(seen_by[s]) >= 2), None)
+            # borrowed: spelled like a borrowing, or listed by SIWAR as a transliteration (كمبيوتر، تكنولوجيا)
+            borrowed = [t for t, ks, _ in mem if det.foreign_looking(bare(_strip(normalize(t["n"]))))
+                        or any(row[2] == "t" for k in ks for row in det.forms.get(k, []))]
+            if not (pair or sid is not None or borrowed):
+                continue
+            if pair:
+                keep, kind, dic = pair[0], "synonym", None
+            elif sid is not None:
+                keep, kind, dic = det.senses[sid][0], "dictionary", det.dictionaries[det.senses[sid][1]]
+            else:
+                arabic = [f for f in forms.values() if not any(form_key(t["n"]) == form_key(f["form"]) for t in borrowed)]
+                top = max(arabic or list(forms.values()), key=lambda f: f["count"])
+                keep, kind, dic = _strip(top["form"]), "synonym", riyadh["name"]
+            groups.append({"kind": kind, "keep": keep, "dictionary": dic, "review": True,
+                           "forms": sorted(forms.values(), key=lambda f: -f["count"]), "uses": uses})
+            extra += [(u["start"], u["end"]) for u in uses]
+
     # 2. spellings of one borrowed word that the dictionaries do not list
-    covered = [(it["m"]["s"], it["m"]["e"]) for it in res["items"]]
+    covered = [(it["m"]["s"], it["m"]["e"]) for it in res["items"]] + extra
     by_skel: dict[str, list] = {}
     for t in tokens:
         if any(t["s"] < e and t["e"] > s for s, e in covered):
@@ -151,7 +379,7 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         for u in uses:
             f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": False})
             f["count"] += 1
-        if _distinct([f["form"] for f in forms.values()]) < 2:
+        if _distinct([f["form"] for f in forms.values()], own) < 2:
             continue
         # spellings of one word stay close in sound; a shared skeleton between unlike words (كاميرا / كوميري) does not
         keys = list(forms)
@@ -160,6 +388,29 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         ranked = sorted(forms.values(), key=lambda f: (-f["count"], is_latin(normalize(f["form"]))))
         groups.append({"kind": "spelling", "keep": _strip(ranked[0]["form"]) if not is_latin(normalize(ranked[0]["form"]))
                        else ranked[0]["form"], "dictionary": None, "review": True, "forms": ranked, "uses": uses})
+
+    # 3. a place name معجم الرياض spells with «يا», also written with «ية» (سوريا / سورية); not the adjective after a
+    # feminine noun (شركة سورية) and not with the article (السورية)
+    if riyadh["place"]:
+        taken = [(u["start"], u["end"]) for g in groups for u in g["uses"]] + covered
+        places = riyadh["place"]
+        by_place: dict[str, list] = {}
+        for i, t in enumerate(tokens):
+            name = _place(normalize(t["n"]), places)
+            if not name or any(t["s"] < e and t["e"] > s for s, e in taken):
+                continue
+            if not normalize(t["n"]).endswith("يا") and i and normalize(tokens[i - 1]["n"]).endswith("ه"):
+                continue
+            by_place.setdefault(name, []).append({"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"})
+        for name, uses in by_place.items():
+            forms: dict[str, dict] = {}
+            for u in uses:
+                f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": False})
+                f["count"] += 1
+            if len({normalize(f["form"]).endswith("يا") for f in forms.values()}) < 2:
+                continue  # both spellings, «يا» and «ية», are written
+            groups.append({"kind": "spelling", "keep": name, "dictionary": riyadh["name"], "review": True,
+                           "forms": sorted(forms.values(), key=lambda f: -f["count"]), "uses": uses})
 
     groups.sort(key=lambda g: min(u["start"] for u in g["uses"]))
     return {"groups": groups}

@@ -2,14 +2,14 @@
   "dictionary_id": "2813060b-8eda-4c7b-8b10-1fc3255305cb",
   "dictionary_name": "معجم مصطلحات الخطوط الحديدية",
   "source_export": "data/dictionaries/exports/2813060b-8eda-4c7b-8b10-1fc3255305cb.json",
-  "generated_at": "2026-11-14T09:03:29.477242+00:00",
+  "generated_at": "2026-11-16T23:54:20.776300+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 856,
     "senses_reviewed": 856,
     "senses_with_variants": 856,
-    "variants_accepted": 1284,
-    "variants_needing_review": 672
+    "variants_accepted": 1285,
+    "variants_needing_review": 671
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -452,10 +452,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -15104,7 +15102,6 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "proposed_for_other_terms",
               "low_confidence"
             ]
           }

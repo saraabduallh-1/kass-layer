@@ -2,14 +2,14 @@
   "dictionary_id": "12cbfc6f-b58d-4116-852e-0744ba950b5c",
   "dictionary_name": "معجم اللغة المسرحية",
   "source_export": "data/dictionaries/exports/12cbfc6f-b58d-4116-852e-0744ba950b5c.json",
-  "generated_at": "2026-11-14T09:03:29.236801+00:00",
+  "generated_at": "2026-11-16T23:54:20.630840+00:00",
   "enrichment_status": "partial",
   "counts": {
     "senses": 1482,
     "senses_reviewed": 1460,
     "senses_with_variants": 719,
-    "variants_accepted": 1152,
-    "variants_needing_review": 210
+    "variants_accepted": 1144,
+    "variants_needing_review": 218
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -5390,8 +5390,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "التقطيع العروضي",
@@ -11235,10 +11237,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "أعجبني مونولوج الممثل.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "المونولوج",
@@ -19163,8 +19163,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -23591,10 +23593,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الفعل الكلامي",
@@ -28200,8 +28200,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "البانتومايم",
@@ -32502,8 +32504,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "مسرح العبث",
@@ -33958,8 +33962,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميتامسرح",
@@ -44465,8 +44471,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "البانتوميم",
@@ -45263,8 +45271,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "theory of reception",
@@ -45283,10 +45293,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "جمالية التلقي",
@@ -49555,8 +49563,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "flashback",
@@ -49591,7 +49601,8 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere"
+              "is_standard_term_elsewhere",
+              "proposed_for_other_terms"
             ]
           }
         ],
@@ -50133,8 +50144,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           }
         ],
         "generated_by": "gemma3:12b",
@@ -52551,8 +52564,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "تعتبر semiosis جزءًا أساسيًا من عملية التواصل.",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "السيميوزيس",
@@ -52571,10 +52586,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "gemma3:12b",
@@ -53089,10 +53102,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الترميز",
@@ -58383,8 +58394,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "المسرح البريختي",
@@ -59279,8 +59292,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "antitheatre",
@@ -60937,8 +60952,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "ميلودراما",
@@ -60947,8 +60964,10 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "accepted",
-            "review_reasons": []
+            "status": "review",
+            "review_reasons": [
+              "proposed_for_other_terms"
+            ]
           },
           {
             "form": "الميلودراما",
@@ -61046,10 +61065,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "الكوميديا هي نوع مسرحي قديم.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "الكوميديا",

@@ -2,14 +2,14 @@
   "dictionary_id": "ae041c6d-79e6-42c3-b54b-ffbf28c88b9a",
   "dictionary_name": "معجم المصطلحات الرياضية",
   "source_export": "data/dictionaries/exports/ae041c6d-79e6-42c3-b54b-ffbf28c88b9a.json",
-  "generated_at": "2026-11-14T09:03:33.941802+00:00",
+  "generated_at": "2026-11-16T23:54:24.110311+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 981,
     "senses_reviewed": 981,
     "senses_with_variants": 981,
-    "variants_accepted": 1630,
-    "variants_needing_review": 723
+    "variants_accepted": 1633,
+    "variants_needing_review": 720
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -6981,10 +6981,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "شافل",
@@ -9400,10 +9398,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -17391,10 +17387,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "استخدموا تكتيكاً مفاجئاً.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "خطة اللعب",
@@ -34276,8 +34270,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],

@@ -27,11 +27,13 @@ ARABIC_WORD = re.compile("^[؀-ۿ]+$")
 
 DOMAINS = [
     {"id": "legal", "label": "قانوني", "keys": ["القانونية", "العقود"]},
-    {"id": "tech", "label": "تقني", "keys": ["البيانات والذكاء", "الحكومة الرقمية"]},
-    {"id": "finance", "label": "مالي وإداري", "keys": ["المالية", "العقود", "الإحصائية", "الإدارية", "الموارد البشرية", "قياس أداء", "غير الربحي", "الإنمائية"]},
-    {"id": "media", "label": "إعلامي", "keys": ["الإعلام"]},
+    {"id": "tech", "label": "تقني", "keys": ["البيانات والذكاء", "الحكومة الرقمية", "مسرد خصص"]},
+    {"id": "finance", "label": "مالي وإداري", "keys": ["مسرد خصص", "المالية", "العقود", "الإحصائية", "الإدارية", "الموارد البشرية", "قياس أداء", "غير الربحي", "الإنمائية"]},
+    {"id": "media", "label": "إعلامي", "keys": ["الإعلام", "مسرد خصص"]},
     {"id": "eng", "label": "هندسي", "keys": ["الطيران", "السيارات", "الطاقة", "الخطوط الحديدية", "الطرق"]},
     {"id": "culture", "label": "علمي وثقافي", "keys": ["علم السلوك", "الحياة الفطرية", "المصطلحات الرياضية", "الموسيقية", "الرياضات الإلكترونية"]},
+    {"id": "lang", "label": "لغوي وأدبي", "keys": ["اللغويات الاجتماعية", "الأسلوبية", "اللسانيات التطبيقية", "اللغة المسرحية"]},
+    {"id": "heritage", "label": "تراثي", "keys": ["الفروسية", "الإبل", "الصقور", "التراث العربي"]},
 ]
 
 
@@ -41,7 +43,7 @@ def normalize(t: str | None) -> str:
     return " ".join(PUNCT.sub(" ", t).split())
 
 
-STOP = {normalize(w) for w in ["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون"]}
+STOP = {normalize(w) for w in ["آخر", "أن", "أنا", "أنت", "أو", "إذا", "إلى", "إن", "إيه", "ابي", "احنا", "اخر", "اذا", "التي", "الحين", "الذي", "الذين", "اللي", "الى", "الي", "اليوم", "امس", "ان", "انا", "انت", "انتم", "او", "اول", "ايش", "اين", "ايه", "بس", "بعد", "بعض", "بكرة", "بكره", "بل", "بين", "تبي", "تحت", "تكون", "تلك", "ثم", "جدا", "جديد", "حتى", "خاص", "دحين", "ذلك", "زي", "سوى", "سوي", "سوينا", "صار", "صارت", "صغير", "عام", "عشان", "علشان", "على", "علي", "عليه", "عليها", "عن", "عند", "عنده", "عنه", "عنها", "غير", "فوق", "في", "فيه", "فيها", "قبل", "قد", "قليل", "كان", "كانت", "كبير", "كثير", "كذا", "كل", "كيف", "لا", "لدى", "لقد", "لكن", "لم", "لماذا", "لن", "لو", "ليس", "ليست", "ليش", "لين", "ما", "ماذا", "متى", "مثل", "مرة", "مره", "مع", "معه", "معها", "معي", "من", "منا", "منك", "منه", "منها", "منهم", "مني", "نبي", "نحن", "نفس", "هاذا", "هالشي", "هذا", "هذه", "هذي", "هم", "هن", "هنا", "هناك", "هو", "هي", "واجد", "وش", "وين", "يا", "يبي", "بدل", "بدال", "عوض", "تسوي", "نسوي", "يسوي", "اسوي", "سويت", "سوت", "يسوون", "تسوون", "سوو", "يسوي", "يكون", "لأن", "لأنه", "لأنها", "لأنهم", "ولأن", "لكي", "كي"]}
 
 
 NEVER_FORMS = {normalize(w) for w in ["بواسطة", "in", "of", "on", "at", "to", "by", "for", "the", "and", "or", "is", "as", "an"]}
@@ -94,6 +96,17 @@ def sim(a: str, b: str) -> float:
 
 
 NATIVE = re.compile("[عحصضظذثءؤئة]")
+
+
+def en_key(en: str | None) -> str:
+    return " ".join(re.sub(r"\([^)]*\)", " ", en or "").split()).lower()
+
+
+def agree_key(t: str) -> str:
+    return " ".join(bare(w) for w in normalize(re.sub(r"\([^)]*\)", " ", t)).split(" "))
+
+
+EN_ADJ = re.compile(r"(ic|ical|ive|ous)$")
 
 
 def bare(w: str) -> str:
@@ -211,9 +224,21 @@ class Detector:
                 v = np.frombuffer(base64.b64decode("".join(wv.read_text().split())), dtype=np.int8)
                 if v.size == len(self.words) * 128:
                     self.word_vec = v.reshape(-1, 128)
+        # معجم الرياض: links between ordinary Arabic forms, used by unification only (scripts/extract/riyadh_relations.py)
+        rj = data_dir / "riyadh.json"
+        r = json.loads(rj.read_text(encoding="utf-8")) if rj.exists() else {}
+        self.riyadh = {"syn": r.get("syn", {}), "en": r.get("en", {}), "own": frozenset(r.get("own", [])), "place": frozenset(r.get("place", [])),
+                       "name": r.get("source", "")}
         names = [normalize(n) for n in self.dictionaries]
         self.domains = [dict(dom, dicts={i for i, n in enumerate(names) if any(normalize(k) in n for k in dom["keys"])}) for dom in DOMAINS]
         self._build_phon()
+        # (english, term) -> dictionaries giving that pair: a rendering two dictionaries agree on is the usual term
+        # (metaphor: استعارة in two dictionaries beats أسلوب أدبي in one)
+        self.agree: dict[tuple, set] = {}
+        for sense in self.senses:
+            en = en_key(sense[2])
+            if en:
+                self.agree.setdefault((en, agree_key(sense[0])), set()).add(sense[1])
 
     # ---- helpers that need the data
     def native(self, w: str) -> bool:
@@ -589,11 +614,21 @@ class Detector:
                 en = re.sub(r"\([^)]*\)", " ", sense[2] or "")
                 sound = 0
                 if surf and en:
-                    for sk in en_skels(en):
-                        sound = max(sound, sim(surf, sk))
+                    # the first skeleton is the usual reading; the others (psycho read with ch = sh) count a little less
+                    for j, sk in enumerate(en_skels(en)):
+                        sound = max(sound, sim(surf, sk) * (1 if j == 0 else 0.9))
                 acr = 1 if m["how"] == "acronym" and re.search(r"\(" + m["head"] + r"s?\)|^" + m["head"] + "$", sense[2] or "", re.I) else 0
                 ctx = 0 if everyday else self.context_score(r[0], text_words, own)
-                return acr + ctx + sound * 2 + (0.3 if r[1] & 1 else 0) + (0.3 if sense[1] == domain else 0.1 if sense[1] in top3 else 0) - len(sense[0]) / 200
+                ek = en_key(sense[2])
+                # dictionaries that give many renderings of one English word (stylistics: 9 for discourse) mix the term
+                # with glosses: prefer a rendering other dictionaries agree on, and a term over a long description
+                extra = 0.3 if ek and len(self.agree.get((ek, agree_key(sense[0])), ())) > 1 else 0
+                if ek and " " not in ek and len(sense[0].split()) >= 3:
+                    extra -= 0.3
+                # a borrowed noun (مونولوج) is not the English adjective (monologic); the Arabic adjective ends in ي
+                if surf and ARABIC_WORD.search(p) and not p.endswith("ي") and EN_ADJ.search(ek):
+                    extra -= 0.3
+                return acr + ctx + sound * 2 + extra + (0.3 if r[1] & 1 else 0) + (0.3 if sense[1] == domain else 0.1 if sense[1] in top3 else 0) - len(sense[0]) / 200
 
             vals = list(by_term.values())
             # meaning closeness: to the other terms found; for an everyday word, to all the words around it

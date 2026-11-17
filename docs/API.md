@@ -25,7 +25,7 @@ Texts are limited to 5,000 characters, or `KASS_MAX_CHARS`.
 ## Endpoints
 
 ### `GET /domains`
-The domains the writer can choose (`tech`, `legal`, `finance`, `media`, `eng`, `culture`, ...) with their dictionaries.
+The domains the writer can choose (`legal`, `tech`, `finance`, `media`, `eng`, `culture`, `lang` لغوي وأدبي, `heritage` تراثي) with their dictionaries.
 The domain decides which dictionaries are searched. Ask the writer, or keep one per document type.
 
 ### `POST /analyse` — term suggestions

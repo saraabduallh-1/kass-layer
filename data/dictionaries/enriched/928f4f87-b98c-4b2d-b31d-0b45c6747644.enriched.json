@@ -2,14 +2,14 @@
   "dictionary_id": "928f4f87-b98c-4b2d-b31d-0b45c6747644",
   "dictionary_name": "معجم مصطلحات الإعلام",
   "source_export": "data/dictionaries/exports/928f4f87-b98c-4b2d-b31d-0b45c6747644.json",
-  "generated_at": "2026-11-14T09:03:33.396372+00:00",
+  "generated_at": "2026-11-16T23:54:23.659752+00:00",
   "enrichment_status": "complete",
   "counts": {
     "senses": 833,
     "senses_reviewed": 833,
     "senses_with_variants": 788,
-    "variants_accepted": 1115,
-    "variants_needing_review": 517
+    "variants_accepted": 1117,
+    "variants_needing_review": 515
   },
   "variant_types": {
     "transliteration": "English/foreign word in Arabic letters",
@@ -20591,8 +20591,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
@@ -20602,10 +20601,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           },
           {
             "form": "بروجكتور",
@@ -33943,10 +33940,8 @@
             "ambiguous": false,
             "ambiguity_note": "",
             "example": "عرض فيلم سينمائي في السينما.",
-            "status": "review",
-            "review_reasons": [
-              "proposed_for_other_terms"
-            ]
+            "status": "accepted",
+            "review_reasons": []
           }
         ],
         "generated_by": "Qwen/Qwen3.5-4B",
@@ -41210,8 +41205,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -42437,8 +42431,7 @@
             "example": "",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           }
         ],
@@ -43274,8 +43267,7 @@
             "example": "أرسلت لك ملخّصاً عن الخبر.",
             "status": "review",
             "review_reasons": [
-              "is_standard_term_elsewhere",
-              "proposed_for_other_terms"
+              "is_standard_term_elsewhere"
             ]
           },
           {
