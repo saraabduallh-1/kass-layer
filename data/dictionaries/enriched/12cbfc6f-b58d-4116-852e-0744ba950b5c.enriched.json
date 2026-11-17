@@ -63075,7 +63075,22 @@
       "dictionary_name": "معجم اللغة المسرحية",
       "dictionary_url": "https://siwar.ksaa.gov.sa/public-dict-information/12cbfc6f-b58d-4116-852e-0744ba950b5c",
       "source_url": "https://siwar.ksaa.gov.sa/api/v2/search/096ef2f7-b35d-4e70-bc32-ddd5cece771e/get-public-entry",
-      "enrichment": null
+      "enrichment": {
+        "variants": [
+          {
+            "form": "ديالوج",
+            "type": "transliteration",
+            "status": "accepted",
+            "note": "added 2026-11-17: borrowed spelling in real use, missed by the lang test set"
+          },
+          {
+            "form": "دايلوج",
+            "type": "transliteration",
+            "status": "accepted",
+            "note": "added 2026-11-17: borrowed spelling in real use, missed by the lang test set"
+          }
+        ]
+      }
     },
     {
       "entry_id": "096ef2f7-b35d-4e70-bc32-ddd5cece771e",

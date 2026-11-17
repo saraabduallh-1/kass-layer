@@ -57,13 +57,19 @@ def _own_word(a: str, b: str, own) -> bool:
     return (p in own and q == p[:-1]) or (q in own and p == q[:-1])
 
 
+def _accusative(a: str, b: str) -> bool:
+    """«موجهًا» is «موجه» with the accusative alif (not «موج» + ها); not after ي, where سوريا is not سوري."""
+    p, q = bare(_strip(a)), bare(_strip(b))
+    return any(len(u) >= 4 and u.endswith("ا") and u[:-1] == v and not v.endswith("ي") for u, v in ((p, q), (q, p)))
+
+
 def same_word(a: str, b: str, own=frozenset()) -> bool:
     """Two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات, سيارة ذاتية / السيارات الذاتية).
     own: the Riyadh feminine forms with their own meaning (حاسبة), which are not forms of the masculine (حاسب)."""
     na, nb = normalize(a).split(), normalize(b).split()
     x, y = [_lexeme(w) for w in na], [_lexeme(w) for w in nb]
     if len(x) == len(y):
-        return all(_same_lex(p, q) and not _own_word(u, v, own) for p, q, u, v in zip(x, y, na, nb))
+        return all((_same_lex(p, q) or _accusative(u, v)) and not _own_word(u, v, own) for p, q, u, v in zip(x, y, na, nb))
     if len(x) > len(y):
         x, y = y, x
     # a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings

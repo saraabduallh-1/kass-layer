@@ -64,6 +64,12 @@ Next, in order (the user's plan):
      domains (key «مسرد خصص»). Shown to the writer under its name, never as SIWAR. `gold-supplement.json` 23 cases
      100/96.6; unify wide 48 → 88 recall, tuning unify 77.8; analysis gold unchanged after two right extras moved to
      `also` (السيرفرات → خادم، هاشتاق → وسم; reports/gold_also.md). 32 dictionaries, 60,526 senses.
+   - 2026-11-17 accuracy step 1: accusative alif in unify (موجهًا = موجه, not after ي); reviewed borrowed spellings for
+     the lang misses (ديالوج → الحوار، آيروني → مفارقة، كوربس → مدونة اللغة، دايغلوسيا → الازدواجية اللغوية). lang is now
+     92.3/92.3 but it is a TUNING set from here (its misses were fixed by hand); الدايغلوسيا still ranks تعددية اللهجة.
+     Unify wide 92.0. Human review sample: `logs/review_sample_200.xlsx` (blind; key `logs/review_sample_200_key.json`,
+     103 article + 97 tweet suggestions, none of the earlier 50) sent to the user; score it when it comes back.
+     Next: try a context-gloss classifier (ArabGlossBERT / SinaTools) on the 600 decision cases; adopt only if it clearly wins.
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 

@@ -745,10 +745,14 @@ summary { cursor: pointer; font-weight: 600 }
     const p = uSingularF(bare(uStrip(a))), q = uSingularF(bare(uStrip(b)));
     return (RIYADH.own.has(p) && q === p.slice(0, -1)) || (RIYADH.own.has(q) && p === q.slice(0, -1));
   };
+  const uAccusative = (a, b) => {  // «موجهًا» is «موجه» with the accusative alif; not after ي (سوريا is not سوري)
+    const p = bare(uStrip(a)), q = bare(uStrip(b));
+    return [[p, q], [q, p]].some(([u, v]) => u.length >= 4 && u.endsWith("ا") && u.slice(0, -1) === v && !v.endsWith("ي"));
+  };
   function sameWord(a, b) {  // two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات)
     const na = normalize(a).split(" ").filter(Boolean), nb = normalize(b).split(" ").filter(Boolean);
     let x = na.map(uLexeme), y = nb.map(uLexeme);
-    if (x.length === y.length) return x.every((p, i) => uSameLex(p, y[i]) && !uOwnWord(na[i], nb[i]));
+    if (x.length === y.length) return x.every((p, i) => (uSameLex(p, y[i]) || uAccusative(na[i], nb[i])) && !uOwnWord(na[i], nb[i]));
     if (x.length > y.length) [x, y] = [y, x];
     // a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings
     for (let i = 0; i <= y.length - x.length; i++) {
