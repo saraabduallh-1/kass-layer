@@ -483,6 +483,9 @@ summary { cursor: pointer; font-weight: 600 }
     }
     return [typical, close];
   }
+  // riyadh.json (معجم الرياض, general Arabic): synonyms translated the same way, feminine forms with their own meaning,
+  // place names spelled with «يا»; used by unification only (same as unify.py)
+  let RIYADH = { syn: {}, own: new Set(), place: new Set(), name: "" };
   let CTX = null;  // context.json: distinctive keywords per sense, loaded after the dictionaries
   const ctxWords = text => new Set((normalize(text).match(/[\u0621-\u064a]{3,}/g) || []).map(w => {
     w = w.startsWith("ال") && w.length > 4 ? w.slice(2) : w;
@@ -732,11 +735,20 @@ summary { cursor: pointer; font-weight: 600 }
     if (w.length >= 5) w = w.replace(/(هما|ها|هم|هن|كم|نا|ه|ك)$/, "");
     return w.length > 4 ? w.replace(/(ات|ان|ين|ون|يه|ي|و|ا)$/, "") : w;
   };
+  const U_FUALAA = /^(.)(.)(.)ا[ءئؤ]$/u;  // the broken plural فُعَلاء of فَعِيل: عملاء / عميل، وكلاء / وكيل
   const uSameLex = (p, q) => p === q || (Math.min(p.length, q.length) >= 4 && (p.startsWith(q) || q.startsWith(p)))
+    || [[p, q], [q, p]].some(([u, v]) => { const m = u.match(U_FUALAA); return !!m && v === m[1] + m[2] + "ي" + m[3]; })
     || [[p, q], [q, p]].some(([u, v]) => "وفبلك".includes(u[0]) && u.length >= (u[0] === "و" ? 3 : 4) && u.slice(1) === v);
+  const uSingularF = w => w.endsWith("ات") && w.length > 4 ? w.slice(0, -2) + "ه" : w;
+  const uOwnWord = (a, b) => {  // «حاسبة» is its own word (calculator), not «حاسب» + ة (معجم الرياض)
+    if (!RIYADH.own.size) return false;
+    const p = uSingularF(bare(uStrip(a))), q = uSingularF(bare(uStrip(b)));
+    return (RIYADH.own.has(p) && q === p.slice(0, -1)) || (RIYADH.own.has(q) && p === q.slice(0, -1));
+  };
   function sameWord(a, b) {  // two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات)
-    let x = normalize(a).split(" ").filter(Boolean).map(uLexeme), y = normalize(b).split(" ").filter(Boolean).map(uLexeme);
-    if (x.length === y.length) return x.every((p, i) => uSameLex(p, y[i]));
+    const na = normalize(a).split(" ").filter(Boolean), nb = normalize(b).split(" ").filter(Boolean);
+    let x = na.map(uLexeme), y = nb.map(uLexeme);
+    if (x.length === y.length) return x.every((p, i) => uSameLex(p, y[i]) && !uOwnWord(na[i], nb[i]));
     if (x.length > y.length) [x, y] = [y, x];
     // a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings
     for (let i = 0; i <= y.length - x.length; i++) {
@@ -754,6 +766,15 @@ summary { cursor: pointer; font-weight: 600 }
   }
   const uSpellingKey = w => { if (isLatin(w)) return enSkels(w)[0]; const x = uStrip(w); return arSkel(x.length > 5 ? x.replace(U_PLURAL, "") : x); };
   const uSim = (a, b) => 1 - lev(a, b) / Math.max(a.length, b.length, 1);
+  const uRiyadhKeys = word => { const w = normalize(word); return w.includes(" ") ? [] : [...new Set([bare(uStrip(w)), uLexeme(w)])]; };
+  function uPlace(w) {  // the Riyadh place name a written word is: وسوريا، بسورية → سوريا; not السورية
+    if (w.startsWith("ال")) return null;
+    for (const x of ("وبل".includes(w[0] || " ") && w.length > 4 ? [w, w.slice(1)] : [w])) {
+      if (RIYADH.place.has(x)) return x;
+      if (x.endsWith("يه") && RIYADH.place.has(x.slice(0, -2) + "يا")) return x.slice(0, -2) + "يا";
+    }
+    return null;
+  }
   function unifyTerms(text, res) {
     const groups = [], tokens = res.tokens, S = DATA.senses;
     const stdKeys = new Set(res.items.filter(it => it.state === "std").map(it => uTermKey(S[it.best[0]][0])));
@@ -764,6 +785,8 @@ summary { cursor: pointer; font-weight: 600 }
       if (!byTerm.has(k)) byTerm.set(k, { term: sense[0], dictionary: DATA.dictionaries[sense[1]], uses: [] });
       if (uGlossed(text, it.m.s, it.m.e)) continue;
       if (it.state === "std" && it.m.n === 1 && !sameWord(it.original, sense[0])) continue;  // another word (عملية / العملة)
+      const tw = uTermKey(sense[0]).split(" ");  // a feminine with its own meaning is another word (الحاسبة / الحاسب الآلي)
+      if (normalize(it.original).split(" ").filter(Boolean).some(w => tw.some(v => uOwnWord(w, v)))) continue;
       byTerm.get(k).uses.push({ text: it.original, start: it.m.s, end: it.m.e, state: it.state });
     }
     const countForms = uses => { const forms = new Map(); for (const u of uses) { const k = uFormKey(u.text); if (!forms.has(k)) forms.set(k, { form: u.text, count: 0, standard: u.state === "std" }); forms.get(k).count++; } return forms; };
@@ -774,6 +797,20 @@ summary { cursor: pointer; font-weight: 600 }
         const s0 = tokens[i].s, e0 = tokens[i + n - 1].e, win = text.slice(s0, e0);
         if (taken.some(([s, e]) => s0 < e && e0 > s) || !sameWord(win, g.term.replace(/\([^)]*\)/g, " "))) continue;
         g.uses.push({ text: win, start: s0, end: e0, state: "std" }); taken.push([s0, e0]);
+      }
+      // the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
+      if (Object.keys(RIYADH.syn).length && g.uses.length) {
+        const near = new Set(g.uses.flatMap(u => uRiyadhKeys(u.text).flatMap(k => RIYADH.syn[k] || [])));
+        for (let added = true; added;) {
+          added = false;
+          for (const t of tokens) {
+            if (taken.some(([s, e]) => t.s < e && t.e > s) || !uRiyadhKeys(t.n).some(k => near.has(k))) continue;
+            g.uses.push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" }); taken.push([t.s, t.e]);
+            for (const k of uRiyadhKeys(t.n)) for (const x of RIYADH.syn[k] || []) near.add(x);
+            added = true;
+          }
+        }
+        g.uses.sort((a, b) => a.start - b.start);
       }
       const forms = countForms(g.uses);
       if (uDistinct([...forms.values()].map(f => f.form)) < 2) continue;  // one word throughout, however inflected
@@ -798,6 +835,23 @@ summary { cursor: pointer; font-weight: 600 }
       const ranked = [...forms.values()].sort((a, b) => b.count - a.count || isLatin(normalize(a.form)) - isLatin(normalize(b.form)));
       const top = ranked[0].form;
       groups.push({ kind: "spelling", keep: isLatin(normalize(top)) ? top : uStrip(top), dictionary: null, review: true, forms: ranked, uses });
+    }
+    // 3. a place name معجم الرياض spells with «يا», also written with «ية» (سوريا / سورية); not after a feminine noun
+    if (RIYADH.place.size) {
+      const taken = groups.flatMap(g => g.uses.map(u => [u.start, u.end])).concat(covered), byPlace = new Map();
+      tokens.forEach((t, i) => {
+        const name = uPlace(normalize(t.n));
+        if (!name || taken.some(([s, e]) => t.s < e && t.e > s)) return;
+        if (!normalize(t.n).endsWith("يا") && i && normalize(tokens[i - 1].n).endsWith("ه")) return;
+        if (!byPlace.has(name)) byPlace.set(name, []);
+        byPlace.get(name).push({ text: text.slice(t.s, t.e), start: t.s, end: t.e, state: "review" });
+      });
+      for (const [name, uses] of byPlace) {
+        const forms = countForms(uses);
+        if (new Set([...forms.values()].map(f => normalize(f.form).endsWith("يا"))).size < 2) continue;
+        groups.push({ kind: "spelling", keep: name, dictionary: RIYADH.name, review: true,
+                      forms: [...forms.values()].sort((a, b) => b.count - a.count), uses });
+      }
     }
     return groups.sort((a, b) => Math.min(...a.uses.map(u => u.start)) - Math.min(...b.uses.map(u => u.start)));
   }
@@ -937,7 +991,7 @@ summary { cursor: pointer; font-weight: 600 }
           `<option value="${esc(o)}"${o === st.keep ? " selected" : ""}>${esc(o)}${k === 0 ? ` (${why})` : ""}</option>`).join("")}</select>
           ${done ? `<span class="pill replace">تم التوحيد</span>` : g.review ? `<span class="pill review">تحقّق قبل التوحيد</span>` : ""}</div>
         <div>الصيغ في النص: ${forms}</div>
-        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاقتُرحت الأكثر تكرارًا"}</div>
+        <div class="meta">${g.kind === "dictionary" ? `المصطلح من ${esc(g.dictionary)}` : g.dictionary ? `إملاء الاسم كما في ${esc(g.dictionary)}` : "صيغ لكلمة دخيلة واحدة غير موجودة في المعاجم، فاقتُرحت الأكثر تكرارًا"}</div>
         <div class="umode">
           <label><input type="radio" name="um${gi}" value="all" data-g="${gi}"${st.mode === "all" ? " checked" : ""}${dis}> في كل المواضع (${g.uses.length})</label>
           <label><input type="radio" name="um${gi}" value="pick" data-g="${gi}"${st.mode === "pick" ? " checked" : ""}${dis}> في مواضع أختارها</label></div>
@@ -1060,6 +1114,9 @@ summary { cursor: pointer; font-weight: 600 }
       fetch("words.txt").then(r => r.ok ? r.text() : null).then(t => { if (t) { const v = b64(t); if (v.length === WORDS.size * 128) WORD_VEC = v; } if (LAST.text) run(); }).catch(() => {});
     }).catch(() => {});
     fetch("context.json").then(r => r.ok ? r.json() : null).then(c => { if (c) { CTX = c.kw; if (LAST.text) run(); } }).catch(() => {});
+    fetch("riyadh.json").then(r => r.ok ? r.json() : null).then(r => {
+      if (r) { RIYADH = { syn: r.syn || {}, own: new Set(r.own || []), place: new Set(r.place || []), name: r.source || "" }; if (LAST.text) run(); }
+    }).catch(() => {});
     const names = d.dictionaries.map(n => normalize(n));
     // (english, term) -> number of dictionaries giving that pair (see rank)
     const agreeSets = new Map();

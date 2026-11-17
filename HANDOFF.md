@@ -32,13 +32,18 @@ Next, in order (the user's plan):
 1. When extraction is done: enrichment of the 9 (Gemma proposes, Claude reviews; "Next: everyday-Arabic enrichment
    pass 3" and pass 2 below), then `scripts/embeddings/build_embeddings.py build`, rebuild the page data, run every gold
    set and `parity.py` / `parity_unify.py`, compare with the baseline.
-2. معجم الرياض: the user will give it as a JSON file (do not extract it). Use it as a reference for ordinary Arabic and
-   for links between forms, NOT as a term dictionary (it would propose replacements for everyday words).
-3. Unification rules still wanted by the user (need معجم الرياض for meanings and plurals):
-   - inflection is not a conflict (done); derivation may be: حاسوب / حاسب unify, حاسب / حاسبة do not
-     (today `same_word("حاسب", "حاسبة")` is True: fix it);
-   - broken plurals and the everyday form with the term: عميل، عملاء، وكيل، الوكلاء → one group (today only وكيل is found);
-   - spelling of Arabic words: سوريا / سوريه (today the spelling layer covers borrowed words only).
+2. معجم الرياض (done 2026-11-17): the user's JSONL export is kept as given in
+   `data/dictionaries/raw/riyadh/riyadh-published.jsonl` (73,680 entries). `scripts/extract/riyadh_relations.py` turns it
+   into `demo_local/riyadh.json` (65 KB): synonyms the dictionary translates the same way, feminine forms with their own
+   meaning, place names with «يا». It is NOT a term dictionary: it never proposes replacements, only unification uses it.
+3. Unification rules (done 2026-11-17, Python and page, `gold-unify-riyadh.json` 6 cases 100/100, unify parity 64/64):
+   - حاسوب / حاسب / كمبيوتر unify (Riyadh synonyms added to a dictionary group, marked review);
+   - حاسب / حاسبة do not (`same_word(..., own)` with the Riyadh feminine forms that have their own meaning);
+   - broken plural فعلاء of فعيل is the same word (عملاء / عميل، وكلاء / وكيل); the Riyadh «جمع» definitions were too
+     uneven to use (ظروف given as plural of ظريف);
+   - سوريا / سورية / سوريه: one spelling group, keep سوريا (not after a feminine noun: شركة سورية; not السورية).
+   - NOT done, waiting for the user: عميل / وكيل in one group. In SIWAR عميل = client/customer and وكيل = agent
+     (legal and finance dictionaries), so merging them would join two concepts.
 4. Then the project is closed and linked to Saleem in a NEW conversation; Saleem's repository is changing, so wait for
    the new link. Start that conversation from `docs/API.md`.
 

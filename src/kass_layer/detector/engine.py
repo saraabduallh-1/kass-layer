@@ -224,6 +224,11 @@ class Detector:
                 v = np.frombuffer(base64.b64decode("".join(wv.read_text().split())), dtype=np.int8)
                 if v.size == len(self.words) * 128:
                     self.word_vec = v.reshape(-1, 128)
+        # معجم الرياض: links between ordinary Arabic forms, used by unification only (scripts/extract/riyadh_relations.py)
+        rj = data_dir / "riyadh.json"
+        r = json.loads(rj.read_text(encoding="utf-8")) if rj.exists() else {}
+        self.riyadh = {"syn": r.get("syn", {}), "own": frozenset(r.get("own", [])), "place": frozenset(r.get("place", [])),
+                       "name": r.get("source", "")}
         names = [normalize(n) for n in self.dictionaries]
         self.domains = [dict(dom, dicts={i for i, n in enumerate(names) if any(normalize(k) in n for k in dom["keys"])}) for dom in DOMAINS]
         self._build_phon()

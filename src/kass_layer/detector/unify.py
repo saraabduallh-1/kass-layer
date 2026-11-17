@@ -4,6 +4,9 @@ Two layers, as terminology QA tools do (glossary first, spelling variants second
 1. Dictionary groups: every form the detector links to the same SIWAR term. The term is the form to keep.
 2. Spelling groups: borrowed words outside the dictionaries that are spellings of one word (الداتا، داتا، ديتا;
    داشبورد، dashboard). The most frequent form is kept; these are always marked for review.
+معجم الرياض (general Arabic, demo_local/riyadh.json) adds three things: a dictionary group also takes the synonyms the
+Riyadh dictionary translates the same way (الحاسب الآلي: حاسوب، كمبيوتر); a feminine form with its own meaning is another
+word (حاسب / حاسبة); and a place name it spells with «يا» groups its «ية» spelling (سوريا / سورية).
 Word vectors are not used to merge words: they put related words and opposites close (البائع / المشتري), so a merge
 on closeness alone would join different concepts.
 """
@@ -41,11 +44,26 @@ def _lexeme(word: str) -> str:
     return re.sub("(ات|ان|ين|ون|يه|ي|و|ا)$", "", w) if len(w) > 4 else w
 
 
-def same_word(a: str, b: str) -> bool:
-    """Two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات, سيارة ذاتية / السيارات الذاتية)."""
-    x, y = [_lexeme(w) for w in normalize(a).split()], [_lexeme(w) for w in normalize(b).split()]
+def _singular_f(w: str) -> str:
+    """The ة form a word is written from: حاسبه → حاسبه, حاسبات → حاسبه, حاسب → حاسب."""
+    return w[:-2] + "ه" if w.endswith("ات") and len(w) > 4 else w
+
+
+def _own_word(a: str, b: str, own) -> bool:
+    """«حاسبة» is its own word (calculator), not «حاسب» + ة: معجم الرياض translates the two differently."""
+    if not own:
+        return False
+    p, q = _singular_f(bare(_strip(a))), _singular_f(bare(_strip(b)))
+    return (p in own and q == p[:-1]) or (q in own and p == q[:-1])
+
+
+def same_word(a: str, b: str, own=frozenset()) -> bool:
+    """Two forms of one word or phrase, only inflected differently (الاستثمار / الاستثمارات, سيارة ذاتية / السيارات الذاتية).
+    own: the Riyadh feminine forms with their own meaning (حاسبة), which are not forms of the masculine (حاسب)."""
+    na, nb = normalize(a).split(), normalize(b).split()
+    x, y = [_lexeme(w) for w in na], [_lexeme(w) for w in nb]
     if len(x) == len(y):
-        return all(_same_lex(p, q) for p, q in zip(x, y))
+        return all(_same_lex(p, q) and not _own_word(u, v, own) for p, q, u, v in zip(x, y, na, nb))
     if len(x) > len(y):
         x, y = y, x
     # a shortened mention is the same name (للفيدرالي / الاحتياطي الفيدرالي); السوفتوير / السوفت وير is two spellings
@@ -53,18 +71,25 @@ def same_word(a: str, b: str) -> bool:
                for i in range(len(y) - len(x) + 1))
 
 
+_FUALAA = re.compile("^(.)(.)(.)ا[ءئؤ]$")  # the broken plural فُعَلاء of فَعِيل: عملاء / عميل، وكلاء / وكيل، وزراء / وزير
+
+
 def _same_lex(p: str, q: str) -> bool:
     if p == q or (min(len(p), len(q)) >= 4 and (p.startswith(q) or q.startswith(p))):
         return True
+    for u, v in ((p, q), (q, p)):
+        m = _FUALAA.match(u)
+        if m and v == m.group(1) + m.group(2) + "ي" + m.group(3):
+            return True
     # a one-letter particle: لصاحب / صاحب, بتقديم / تقديم
     return any(u[0] in "وفبلك" and len(u) >= (3 if u[0] == "و" else 4) and u[1:] == v for u, v in ((p, q), (q, p)))
 
 
-def _distinct(forms: list[str]) -> int:
+def _distinct(forms: list[str], own=frozenset()) -> int:
     """How many different words the forms are, inflection aside."""
     heads: list[str] = []
     for f in forms:
-        if not any(same_word(f, h) for h in heads):
+        if not any(same_word(f, h, own) for h in heads):
             heads.append(f)
     return len(heads)
 
@@ -88,9 +113,29 @@ def _spelling_key(word: str) -> str:
     return ar_skel(_PLURAL.sub("", w) if len(w) > 5 else w)
 
 
+def _riyadh_keys(word: str) -> set[str]:
+    """The keys a written word may have in معجم الرياض: والحاسوب → حاسوب, حاسوبا → حاسوب."""
+    w = normalize(word)
+    return {bare(_strip(w)), _lexeme(w)} if " " not in w else set()
+
+
+def _place(w: str, places) -> str | None:
+    """The Riyadh place name a written word is: سوريا، وسوريا، بسورية، لسوريه → سوريا; not السورية (the adjective)."""
+    if w.startswith("ال"):
+        return None
+    for x in (w, w[1:]) if w[:1] in "وبل" and len(w) > 4 else (w,):
+        if x in places:
+            return x
+        if x.endswith("يه") and x[:-2] + "يا" in places:
+            return x[:-2] + "يا"
+    return None
+
+
 def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | None = None) -> dict:
     res = analysis or det.analyse(text, domain_id)
     groups = []
+    riyadh = getattr(det, "riyadh", None) or {"syn": {}, "own": frozenset(), "place": frozenset(), "name": ""}
+    own, syn = riyadh["own"], riyadh["syn"]
 
     # 1. forms the dictionaries link to one term
     tokens = tokenize(text)
@@ -103,8 +148,10 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         g = by_term.setdefault(term_key(sense[0]), {"term": sense[0], "dictionary": det.dictionaries[sense[1]], "uses": []})
         if _glossed(text, it["m"]["s"], it["m"]["e"]):
             continue
-        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0]):
+        if it["state"] == "std" and it["m"]["n"] == 1 and not same_word(it["original"], sense[0], own):
             continue  # a one-word "standard" match that is another word (عملية / العملة, الدور / الدوري)
+        if any(_own_word(w, v, own) for w in normalize(it["original"]).split() for v in term_key(sense[0]).split()):
+            continue  # a feminine with its own meaning is another word (الحاسبة is not «الحاسب الآلي»)
         g["uses"].append({"text": it["original"], "start": it["m"]["s"], "end": it["m"]["e"], "state": it["state"]})
     for g in by_term.values():
         n = len(term_key(g["term"]).split())
@@ -112,15 +159,29 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         for i in range(len(tokens) - n + 1):  # the term itself, written anywhere (خادم، العقد), even where nothing was proposed
             s0, e0 = tokens[i]["s"], tokens[i + n - 1]["e"]
             window = text[s0:e0]
-            if any(s0 < e and e0 > s for s, e in taken) or not same_word(window, re.sub(r"\([^)]*\)", " ", g["term"])):
+            if any(s0 < e and e0 > s for s, e in taken) or not same_word(window, re.sub(r"\([^)]*\)", " ", g["term"]), own):
                 continue
             g["uses"].append({"text": window, "start": s0, "end": e0, "state": "std"})
             taken.append((s0, e0))
+        # the Riyadh synonyms of the forms used (الحاسب → حاسوب، كمبيوتر), written anywhere; marked for review
+        if syn and g["uses"]:
+            near = {s for u in g["uses"] for k in _riyadh_keys(u["text"]) for s in syn.get(k, [])}
+            added = True
+            while added:
+                added = False
+                for t in tokens:
+                    if any(t["s"] < e and t["e"] > s for s, e in taken) or not _riyadh_keys(t["n"]) & near:
+                        continue
+                    g["uses"].append({"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"})
+                    taken.append((t["s"], t["e"]))
+                    near |= {s for k in _riyadh_keys(t["n"]) for s in syn.get(k, [])}
+                    added = True
+            g["uses"].sort(key=lambda u: u["start"])
         forms: dict[str, dict] = {}
         for u in g["uses"]:
             f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": u["state"] == "std"})
             f["count"] += 1
-        if _distinct([f["form"] for f in forms.values()]) < 2:
+        if _distinct([f["form"] for f in forms.values()], own) < 2:
             continue  # one word throughout, however inflected: consistent (a lone borrowed form is already a suggestion)
         review = any(u["state"] == "review" for u in g["uses"])
         groups.append({"kind": "dictionary", "keep": g["term"], "dictionary": g["dictionary"], "review": review,
@@ -151,7 +212,7 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         for u in uses:
             f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": False})
             f["count"] += 1
-        if _distinct([f["form"] for f in forms.values()]) < 2:
+        if _distinct([f["form"] for f in forms.values()], own) < 2:
             continue
         # spellings of one word stay close in sound; a shared skeleton between unlike words (كاميرا / كوميري) does not
         keys = list(forms)
@@ -160,6 +221,29 @@ def unify(det: Detector, text: str, domain_id: str = "tech", analysis: dict | No
         ranked = sorted(forms.values(), key=lambda f: (-f["count"], is_latin(normalize(f["form"]))))
         groups.append({"kind": "spelling", "keep": _strip(ranked[0]["form"]) if not is_latin(normalize(ranked[0]["form"]))
                        else ranked[0]["form"], "dictionary": None, "review": True, "forms": ranked, "uses": uses})
+
+    # 3. a place name معجم الرياض spells with «يا», also written with «ية» (سوريا / سورية); not the adjective after a
+    # feminine noun (شركة سورية) and not with the article (السورية)
+    if riyadh["place"]:
+        taken = [(u["start"], u["end"]) for g in groups for u in g["uses"]] + covered
+        places = riyadh["place"]
+        by_place: dict[str, list] = {}
+        for i, t in enumerate(tokens):
+            name = _place(normalize(t["n"]), places)
+            if not name or any(t["s"] < e and t["e"] > s for s, e in taken):
+                continue
+            if not normalize(t["n"]).endswith("يا") and i and normalize(tokens[i - 1]["n"]).endswith("ه"):
+                continue
+            by_place.setdefault(name, []).append({"text": text[t["s"]:t["e"]], "start": t["s"], "end": t["e"], "state": "review"})
+        for name, uses in by_place.items():
+            forms: dict[str, dict] = {}
+            for u in uses:
+                f = forms.setdefault(form_key(u["text"]), {"form": u["text"], "count": 0, "standard": False})
+                f["count"] += 1
+            if len({normalize(f["form"]).endswith("يا") for f in forms.values()}) < 2:
+                continue  # both spellings, «يا» and «ية», are written
+            groups.append({"kind": "spelling", "keep": name, "dictionary": riyadh["name"], "review": True,
+                           "forms": sorted(forms.values(), key=lambda f: -f["count"]), "uses": uses})
 
     groups.sort(key=lambda g: min(u["start"] for u in g["uses"]))
     return {"groups": groups}
