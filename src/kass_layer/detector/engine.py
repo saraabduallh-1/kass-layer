@@ -160,6 +160,7 @@ def arabic_pattern(x: str) -> bool:  # فاعل، فعايل، مفاعل
 
 
 # English prefixes Arabic writers often split off (أوت سورسنق, بري بروسيسنج, سب كونتراكتور)
+NAME_CUES = {normalize(w) for w in ["جائزة", "جائزتي", "لاعب", "اللاعب", "اللاعبة", "المدرب", "مدرب", "الحارس", "حارس", "المهاجم", "المدافع", "النجم", "الرئيس", "السيد", "السيدة", "الدكتور", "المخرج", "الكاتب", "الكاتبة", "الروائي", "الشاعر", "الفنان", "الفنانة", "المغني", "المغنية", "الأمير", "الأميرة", "الملك", "الملكة", "الشيخ", "ولاية", "ولايتي", "مدينة", "مقاطعة", "عاصمة", "نادي", "منتخب", "شركة", "لوس", "لاس", "سان", "سانت", "سانتا", "دي", "دا", "فان", "فون", "بن", "ابن", "أبو", "آل", "ماك"]}  # words before a name (جائزة بوشكاش، لوس أنغلوس)
 PARTICLES = {normalize(w) for w in ["اوت", "بري", "سب", "اوفر", "ري", "اب", "داون", "ان", "انتر", "ميكرو", "ميني", "ملتي", "سوبر"]}
 SUFFIXES = [("ات", "plural"), ("ين", "plural"), ("ون", "plural"), ("ها", "pron"), ("هم", "pron"), ("نا", "pron"), ("كم", "pron"),
             ("هن", "pron"), ("ه", "pron"), ("ز", "plural-en"), ("س", "plural-en")]  # ز/س: English plural s (مودلز، سيرفرز)
@@ -372,6 +373,25 @@ class Detector:
                         out.append((p, head[:-len(suf)], suf, kind))
         return out
 
+    def name_context(self, tokens, i, n, text) -> bool:
+        """A sound match that is a name: a cue word or name particle before it (جائزة بوشكاش، لوس أنغلوس, also after و),
+        «كل من» before it, or another unknown foreign-looking word right beside it (ألبيرتو زاكيروني)."""
+        if re.search("^([وفبك]?ال|لل)", text[tokens[i]["s"]:tokens[i]["e"]]):  # raw text: ألبيرتو is no article
+            return False  # a foreign name takes no article (الشاعر الميتافور is a term)
+        unwaw = lambda w: w[1:] if w.startswith("و") and len(w) > 2 else w
+        prev = tokens[i - 1] if i > 0 and not gap(text, tokens[i - 1], tokens[i]) else None
+        nxt = tokens[i + n] if i + n < len(tokens) and not gap(text, tokens[i + n - 1], tokens[i + n]) else None
+        if prev and (unwaw(prev["n"]) in NAME_CUES or (prev["n"] == "من" and i > 1 and tokens[i - 2]["n"] in ("كل", "وكل"))):
+            return True
+        for t in (prev, nxt):
+            if t is None or not ARABIC_WORD.search(t["n"]):
+                continue
+            w = unwaw(t["n"])
+            if w not in STOP and self.foreign_looking(w) and not self.known_arabic(w) and not self.forms.get(bare(w)) \
+                    and not self.vocab.get(bare(w), 0):
+                return True
+        return False
+
     def find_matches(self, tokens, text, allowed):
         found, i = [], 0
         filt = lambda rows: [r for r in rows if self.senses[r[0]][1] in allowed] if rows and allowed is not None else rows
@@ -458,7 +478,7 @@ class Detector:
                     if not best_ph or score > best_ph[0]:
                         best_ph = (score, {"n": n, "s": span[0]["s"], "e": span[-1]["e"], "prefix": prefix, "suffix": suffix, "sufKind": suf_kind,
                                            "head": word, "rows": ph["rows"], "how": ph["how"]})
-                if best_ph:
+                if best_ph and not self.name_context(tokens, i, n, text):
                     hit = best_ph[1]
             if not hit:
                 hit = dict_hit or everyday

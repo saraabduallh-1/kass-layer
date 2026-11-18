@@ -413,6 +413,7 @@ summary { cursor: pointer; font-weight: 600 }
   const looksBorrowed = w => /^[a-z]{3,}$/.test(w) && !STOP.has(w)
     || /^[\u0621-\u064a]{4,}$/.test(w) && stems(w).every(x => !native(x) && unseen(x) && !arabicPattern(bare(x))) && foreignLooking(bare(w.replace(/^[وفبلك](?=ال)/, ""))) && vowels(w) >= 2;
   // English prefixes Arabic writers often split off (أوت سورسنق, بري بروسيسنج, سب كونتراكتور)
+  const NAME_CUES = new Set(["جائزة", "جائزتي", "لاعب", "اللاعب", "اللاعبة", "المدرب", "مدرب", "الحارس", "حارس", "المهاجم", "المدافع", "النجم", "الرئيس", "السيد", "السيدة", "الدكتور", "المخرج", "الكاتب", "الكاتبة", "الروائي", "الشاعر", "الفنان", "الفنانة", "المغني", "المغنية", "الأمير", "الأميرة", "الملك", "الملكة", "الشيخ", "ولاية", "ولايتي", "مدينة", "مقاطعة", "عاصمة", "نادي", "منتخب", "شركة", "لوس", "لاس", "سان", "سانت", "سانتا", "دي", "دا", "فان", "فون", "بن", "ابن", "أبو", "آل", "ماك"].map(w => normalize(w)));  // words before a name (جائزة بوشكاش، لوس أنغلوس)
   const PARTICLES = new Set(["اوت", "بري", "سب", "اوفر", "ري", "اب", "داون", "ان", "انتر", "ميكرو", "ميني", "ملتي", "سوبر"].map(w => normalize(w)));
   function phonetic(word, allowed, words = 1, loose = false, particle = false) {
     const sk = arSkel(word); if (sk.length < (words > 1 ? 4 : 4)) return null;
@@ -538,6 +539,20 @@ summary { cursor: pointer; font-weight: 600 }
     return out;
   }
 
+  function nameContext(tokens, i, n, text) {  // a sound match that is a name: cue word, «كل من», or an unknown foreign word beside it
+    if (/^([وفبك]?ال|لل)/.test(text.slice(tokens[i].s, tokens[i].e))) return false;  // raw text: ألبيرتو is no article  // a foreign name takes no article (الشاعر الميتافور is a term)
+    const unwaw = w => w.startsWith("و") && w.length > 2 ? w.slice(1) : w;
+    const gapAt = (a, b) => /\S/.test(text.slice(a.e, b.s));
+    const prev = i > 0 && !gapAt(tokens[i - 1], tokens[i]) ? tokens[i - 1] : null;
+    const nxt = i + n < tokens.length && !gapAt(tokens[i + n - 1], tokens[i + n]) ? tokens[i + n] : null;
+    if (prev && (NAME_CUES.has(unwaw(prev.n)) || (prev.n === "من" && i > 1 && (tokens[i - 2].n === "كل" || tokens[i - 2].n === "وكل")))) return true;
+    for (const t of [prev, nxt]) {
+      if (!t || !/[؀-ۿ]/.test(t.n)) continue;
+      const w = unwaw(t.n);
+      if (!STOP.has(w) && foreignLooking(w) && !knownArabic(w) && !(DATA.forms[bare(w)] || []).length && !(DATA.vocab[bare(w)] || 0)) return true;
+    }
+    return false;
+  }
   function findMatches(tokens, text, allowed) {
     const found = []; let i = 0;
     const filt = rows => rows && allowed ? rows.filter(r => allowed.has(DATA.senses[r[0]][1])) : rows;
@@ -598,7 +613,7 @@ summary { cursor: pointer; font-weight: 600 }
           const score = (ph.how === "exact" ? 10 : 0) + prefix.length + suffix.length;
           if (!bestPh || score > bestPh.score) bestPh = { score, hit: { n, s: span[0].s, e: span[n - 1].e, prefix, suffix, sufKind, head: word, rows: ph.rows, how: ph.how } };
         }
-        if (bestPh) hit = bestPh.hit;
+        if (bestPh && !nameContext(tokens, i, n, text)) hit = bestPh.hit;
       }
       if (!hit) hit = dictHit || everyday;
       if (hit && hit.how === "dict") {

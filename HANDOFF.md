@@ -265,3 +265,13 @@ QWEN_MODEL=gemma3:12b
 - Keep Claude usage low (small batches); heavy model work runs locally on the PC GPU (Gemma via Ollama).
 - Never modify the original term files. Delete unneeded files. Minimal user involvement.
 - Quality over quantity for every variant. Explain each step when teaching (the user wants to learn).
+
+## Human review of the article suggestions (2026-11-19)
+Phone review page https://claude.ai/artifact/GgTumK8ifZM5Rq4H2Wtbe1 (db collection `labels`, 103 article rows; tweets kept
+local). Owner: 86 correct / 12 wrong / 5 unsure, precision 87.8% (replace 27/28, review 59/70). ChatGPT on the same
+file: 80.9%, kappa 0.55 with the owner. Fixes: name rule for sound matches (`name_context` / `nameContext`) and 5
+part-of-term forms withdrawn (الأسهم، البدلات، التتبع، تأكيد، هندسة الطيران). Gold numbers unchanged, parity 352/352
+and 120/120; on the reviewed rows 87.8 → 93.4% (in sample). Details `reports/human_review_articles.md`, script
+`scripts/evaluate/score_human_review.py`, paper 6.3. Next: 300 new suggestions from Wikipedia, judged by two people
+separately (agreement + kappa), as the independent check; then redeploy from the Mac
+(`ssh renad@arai.center 'sh ~/apps/kass/repo/deploy/update.sh'`).
