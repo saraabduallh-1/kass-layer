@@ -275,3 +275,13 @@ and 120/120; on the reviewed rows 87.8 → 93.4% (in sample). Details `reports/h
 `scripts/evaluate/score_human_review.py`, paper 6.3. Next: 300 new suggestions from Wikipedia, judged by two people
 separately (agreement + kappa), as the independent check; then redeploy from the Mac
 (`ssh renad@arai.center 'sh ~/apps/kass/repo/deploy/update.sh'`).
+
+## Wikipedia sample and stricter sound matching (2026-11-19)
+300 suggestions on Arabic Wikipedia (`scripts/evaluate/sample_review_300.py`, key `logs/review_sample_300_key.json`),
+two-judge page https://claude.ai/artifact/KKw6YbuS9zatBjZD8qNJfQ (doc ids `A-<row>` / `B-<row>`; human judgments still
+pending). ChatGPT: 101 / 148 / 51 unsure, precision 40.6% (tech 77.4, lang 11.9); sound-only matches 0 right of 61.
+Trials `scripts/evaluate/phonetic_experiments.py` (E1a/E1b/E1c/E2/E2m/E3/E4). Adopted (owner's choice, option B):
+E1a + E2m + E3 + E4 in both engines (`ambiguous`, `dropped`). Gold pooled recall 90.2 → 87.6, precision 92.6 → 93.4
+(lost الليسنق، أوفر فيتنق، كابيتال، بروسسينق، بري بروسيسنج); Wikipedia (ChatGPT) 41.8 → 54.4% in sample; articles
+93.3%. Paper 6.4 (new), tables 4–6, 7.4, 7.5, 8, 9, limitations; placeholders removed (authors, affiliation, journal).
+Next: the two human judges on the 300 page, then a fresh sample for an independent estimate; a Wikidata names list.
