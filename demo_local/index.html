@@ -420,7 +420,7 @@ summary { cursor: pointer; font-weight: 600 }
     const keep = rows => { const r = rows.filter(x => !allowed || allowed.has(DATA.senses[x[0]][1])); return r.length ? r : null; };
     const fits = k => loose || words === 1 || PHON_WC.get(k).has(words) || (particle && PHON_WC.get(k).has(words - 1));  // «الطيار أبلغ» (2 words) may not match «tribology» (1 word)
     const exact = PHON.get(sk) && fits(sk) && keep(PHON.get(sk));
-    if (exact) return { rows: exact, how: "exact", key: sk };
+    if (exact) return !loose && ambiguous(sk) ? null : { rows: exact, how: "exact", key: sk };
     if (sk.length < 6) return null;
     let best = null, bestScore = 0, bestKey = null;
     for (const [k, rows] of PHON) {
@@ -428,7 +428,11 @@ summary { cursor: pointer; font-weight: 600 }
       const score = 1 - lev(sk, k) / Math.max(k.length, sk.length);
       if (score > bestScore) { const r = keep(rows); if (r) { best = r; bestScore = score; bestKey = k; } }
     }
-    return bestScore >= 0.85 ? { rows: best, how: "near", key: bestKey } : null;
+    return bestScore >= 0.85 && !(!loose && ambiguous(bestKey)) ? { rows: best, how: "near", key: bestKey } : null;
+  }
+  function ambiguous(key) {  // consonants that fit several different English words (بول: pool, ball, bowl): no sound match; cell/cells count as one
+    const ens = [...new Set([...PHON_EN.get(key)].map(e => e.toLowerCase().replace(/[^a-z]/g, "")))];
+    return ens.length > 1 && !ens.some(a => ens.some(b => a !== b && (a.startsWith(b) || b.startsWith(a))));
   }
 
   let VEC = null;  // senses.vec: 128-d int8 meaning vector per sense (EmbeddingGemma, precomputed), loaded after the dictionaries
@@ -623,9 +627,16 @@ summary { cursor: pointer; font-weight: 600 }
           if (ph) { const seen = new Set(hit.rows.map(r => r[0])); hit.rows = hit.rows.concat(ph.rows.filter(r => !seen.has(r[0]))); }
         }
       }
-      if (hit) { found.push(hit); i += hit.n; } else i++;
+      if (hit) { if (!dropped(hit, tokens, i, text)) found.push(hit); i += hit.n; } else i++;
     }
     return found;
+  }
+  // matches the context rules out: a Latin word inside a formula (a LaTeX command, x^2, a = b), an acronym inside a longer
+  // run of letter names (كيه بي إم جي), a dictionary transliteration in a name context (بول بليشكا)
+  function dropped(hit, tokens, i, text) {
+    if (/[A-Za-z]/.test(text.slice(hit.s, hit.e)) && /\\[a-z]+|[{}^=]/.test(text.slice(Math.max(0, hit.s - 40), hit.e + 40))) return true;
+    if (hit.how === "acronym" && ((i > 0 && LETTERS[tokens[i - 1].n]) || (i + hit.n < tokens.length && LETTERS[tokens[i + hit.n].n]))) return true;
+    return hit.how === "dict" && hit.rows.every(r => r[2] === "t") && nameContext(tokens, i, hit.n, text);
   }
 
   let EMB_W = 2;  // weight of meaning-closeness to the sentence's other terms

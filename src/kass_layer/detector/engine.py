@@ -312,7 +312,7 @@ class Detector:
         if sk in self.phon and fits(sk):
             exact = self._keep(self.phon[sk], allowed)
             if exact:
-                return {"rows": exact, "how": "exact", "key": sk}
+                return None if not loose and self.ambiguous(sk) else {"rows": exact, "how": "exact", "key": sk}
         if len(sk) < 6:
             return None
         # only scores >= 0.85 are ever used, so skip keys that cannot reach it (same winner as a full scan):
@@ -330,7 +330,15 @@ class Detector:
                 r = self._keep(self.phon[k], allowed)
                 if r:
                     best, best_score, best_key = r, score, k
-        return {"rows": best, "how": "near", "key": best_key} if best_score >= 0.85 else None
+        if best_score < 0.85 or (not loose and self.ambiguous(best_key)):
+            return None
+        return {"rows": best, "how": "near", "key": best_key}
+
+    def ambiguous(self, key) -> bool:
+        """Consonants that fit several different English words (بول: pool, ball, bowl) say nothing on their own:
+        no sound match. Words where one starts the other (cell, cells) count as one."""
+        ens = {re.sub("[^a-z]", "", e.lower()) for e in self.phon_en[key]}
+        return len(ens) > 1 and not any(a != b and (a.startswith(b) or b.startswith(a)) for a in ens for b in ens)
 
     def acronym_at(self, tokens, i, text, allowed):
         # 2-5 letter names in a row; the first may carry ال / و / ب / ل
@@ -491,11 +499,21 @@ class Detector:
                         seen = {r[0] for r in hit["rows"]}
                         hit["rows"] = hit["rows"] + [r for r in ph["rows"] if r[0] not in seen]
             if hit:
-                found.append(hit)
+                if not self.dropped(hit, tokens, i, text):
+                    found.append(hit)
                 i += hit["n"]
             else:
                 i += 1
         return found
+
+    def dropped(self, hit, tokens, i, text) -> bool:
+        """Matches the context rules out: a Latin word inside a formula (a LaTeX command, x^2, a = b), an acronym that is part of a
+        longer run of letter names (كيه بي إم جي), a dictionary transliteration in a name context (بول بليشكا)."""
+        if re.search("[A-Za-z]", text[hit["s"]:hit["e"]]) and re.search(r"\\[a-z]+|[{}^=]", text[max(0, hit["s"] - 40):hit["e"] + 40]):
+            return True
+        if hit["how"] == "acronym" and ((i > 0 and LETTERS.get(tokens[i - 1]["n"])) or (i + hit["n"] < len(tokens) and LETTERS.get(tokens[i + hit["n"]]["n"]))):
+            return True
+        return hit["how"] == "dict" and all(r[2] == "t" for r in hit["rows"]) and self.name_context(tokens, i, hit["n"], text)
 
     # ---- context
     def centroid(self, rows):  # average meaning of the given senses (float32, as in the page)
