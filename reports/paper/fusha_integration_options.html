@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>طرق ربط نموذج الأعجمي بخصص وسليم</title>
+<style>
+@page { size: A4; margin: 2.2cm 2cm 2cm 2cm; }
+body { font-family: "IBM Plex Sans Arabic", Arial, sans-serif; font-size: 11pt; line-height: 1.6; color: #161616; direction: rtl; text-align: justify; }
+.masthead { text-align: center; margin: 0 0 4pt; }
+.rule { border-top: 3px solid #d2b26f; margin: 4pt 0 12pt; }
+.type { text-align: center; font-size: 9.5pt; color: #ffffff; background: #1b8354; padding: 2pt 0; margin: 0 0 10pt; }
+h1 { font-size: 18pt; text-align: center; margin: 0 0 4pt; color: #104631; line-height: 1.4; }
+.sub { text-align: center; font-size: 10pt; color: #475467; margin: 0 0 12pt; }
+h2 { font-size: 13.5pt; color: #104631; margin: 16pt 0 6pt; padding: 2pt 8pt; border-right: 5px solid #d2b26f; background: #f3fcf6; }
+h3 { font-size: 11.5pt; color: #1b8354; margin: 10pt 0 3pt; }
+p { margin: 0 0 7pt; }
+table { border-collapse: collapse; width: 100%; margin: 6pt 0 4pt; font-size: 9.5pt; }
+th, td { border: 1px solid #b8eacb; padding: 4pt 5pt; text-align: center; vertical-align: middle; }
+th { background: #166a45; color: #ffffff; font-weight: bold; }
+tr:nth-child(even) td { background: #f7fdf9; }
+td.r, th.r { text-align: right; }
+.cap { font-size: 9.5pt; color: #475467; text-align: center; margin: 0 0 10pt; }
+.flow { text-align: center; font-weight: bold; color: #104631; background: #f7fdf9; border: 1px solid #b8eacb; padding: 5pt; margin: 4pt 0 8pt; }
+.box { border: 1px solid #b8eacb; border-right: 5px solid #1b8354; background: #f7fdf9; padding: 8pt 12pt; margin: 6pt 0 10pt; }
+.rec { border: 1px solid #d2b26f; border-right: 5px solid #d2b26f; background: #fdf9ef; padding: 8pt 12pt; margin: 6pt 0 10pt; }
+.yes { color: #1b8354; font-weight: bold; }
+.no { color: #b42318; font-weight: bold; }
+.mid { color: #b54708; font-weight: bold; }
+ul, ol { margin: 0 0 7pt; padding-right: 20pt; }
+li { margin-bottom: 3pt; }
+.en { direction: ltr; unicode-bidi: embed; font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+
+<p class="masthead"><img src="ksaa_logo.png" width="300" height="82" style="width:7.6cm;height:2.08cm"></p>
+<div class="rule"></div>
+<p class="type">ورقة عمل داخلية</p>
+
+<h1>طرق ربط نموذج تحويل الأعجمي إلى الفصحى بطبقة «خصص» ومنصة «سليم»</h1>
+<p class="sub">فرع العمل في مستودع سليم: <span class="en">KassFushaFeature</span> (سليم + خصص + نموذج الأعجمي)، والفرع الرئيس لا يتغير</p>
+
+<h2>1. الطبقات الثلاث ودور كل منها</h2>
+<p>المبدأ المتفق عليه أن تكون كل ميزة طبقة مستقلة، لا تؤدي عمل غيرها.</p>
+<table>
+<tr><th>الطبقة</th><th>عملها</th><th>ما تُخرجه</th><th>نقطة قوتها</th><th>حدودها</th></tr>
+<tr><td><b>نموذج الأعجمي</b></td><td class="r">يكتشف الكلمات الأعجمية ويعطي مقابلها الفصيح</td><td>قائمة: الكلمة ← الفصيح</td><td class="r">يغطي أي كلمة أعجمية، ولو لم تكن في المعاجم</td><td class="r">نموذج ترجمة (<span class="en">m2m100</span>، نحو 400 مليون معامل) يعيد الجملة كاملة، وتعلّم مقابلاته من ترجمة <span class="en">Google</span>، ولا يذكر مصدرًا</td></tr>
+<tr><td><b>خصص</b></td><td class="r">يكتشف المصطلحات المتخصصة، ويوحّدها في النص، ويستبدلها بالمعتمد</td><td>قائمة: المصطلح ← المعتمد، مع المعجم والتعريف</td><td class="r">مصطلحاته من معاجم سِوار المعتمدة، ويختار حسب المجال، وسريع جدًا</td><td class="r">لا يعرف إلا ما في المعاجم</td></tr>
+<tr><td><b>سليم</b></td><td class="r">يصحح الجمل لغويًا</td><td>النص النهائي</td><td class="r">نموذج لغوي متخصص في التصحيح</td><td class="r">لا يعرف المصطلح المعتمد ما لم يُعطَ له</td></tr>
+</table>
+<p class="cap">جدول 1. الطبقات الثلاث.</p>
+
+<h2>2. الطرق الممكنة</h2>
+<table>
+<tr><th style="width:4%">#</th><th style="width:16%">الطريقة</th><th style="width:22%">الترتيب</th><th style="width:29%">المزايا</th><th style="width:29%">العيوب</th></tr>
+<tr><td>1</td><td class="r"><b>النموذج أولًا</b></td><td>النص ← النموذج (يعيد الجملة) ← خصص ← سليم</td><td class="r">بسيطة في التنفيذ</td><td class="r">النموذج يغيّر المصطلحات المتخصصة قبل خصص، فيغلب مقابلُ <span class="en">Google</span> المعجمَ المعتمد؛ وتختفي الكلمات الأصلية فلا يستطيع خصص توحيدها؛ ويصحح النموذج الجمل فيكرر عمل سليم؛ ولا يعرف الكاتب ما الذي تغيّر</td></tr>
+<tr><td>2</td><td class="r"><b>خصص أولًا</b></td><td>النص ← خصص ← النموذج للأعجمي الباقي ← سليم</td><td class="r">المعجم المعتمد له الأولوية؛ النموذج يغطي ما لا يعرفه خصص</td><td class="r">النموذج يعيد كتابة الجملة فقد يغيّر مصطلحات خصص، فيلزم قفلها قبله وإرجاعها بعده؛ أبطأ لأن الطبقات متتالية</td></tr>
+<tr><td>3</td><td class="r"><b>بالتوازي ثم الدمج</b> ⭐</td><td>النص ← (خصص ‖ النموذج) ← دمج الاقتراحات ← الكاتب ← سليم</td><td class="r">كل طبقة مستقلة فعلًا؛ خطأ طبقة لا ينتقل لغيرها؛ تُقاس كل طبقة وحدها ومجتمعة؛ يظهر للكاتب مصدر كل اقتراح؛ لا يصحح النموذج الجمل</td><td class="r">تحتاج قاعدة واضحة عند تعارض الاقتراحين؛ وتحتاج استخراج الكلمات المتغيرة من جملة النموذج</td></tr>
+<tr><td>4</td><td class="r"><b>النموذج احتياطي داخل خصص</b></td><td>النص ← خصص (يسأل النموذج عن الأعجمي الذي لا مصطلح له) ← سليم</td><td class="r">الأرخص والأسرع: النموذج يعمل على كلمات قليلة</td><td class="r">النموذج لا يصبح طبقة مستقلة؛ ويفوته الأعجمي الذي لا يكتشفه خصص أصلًا</td></tr>
+<tr><td>5</td><td class="r"><b>النموذج مدقق لخصص</b></td><td>النص ← خصص ← النموذج يؤكد أو يشكك ← سليم</td><td class="r">قد يرفع دقة خصص في المطابقة الصوتية، وهي أكثر مصادر خطئه في عينة ويكيبيديا</td><td class="r">لا يغطي الأعجمي الجديد، فهو إضافة لطريقة أخرى لا بديل عنها</td></tr>
+</table>
+<p class="cap">جدول 2. الطرق الخمس.</p>
+
+<h2>3. المقارنة بالمعايير</h2>
+<table>
+<tr><th class="r">المعيار</th><th>1<br>النموذج أولًا</th><th>2<br>خصص أولًا</th><th>3<br>بالتوازي</th><th>4<br>احتياطي</th><th>5<br>مدقق</th></tr>
+<tr><td class="r">المعجم المعتمد له الأولوية</td><td class="no">لا</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="yes">نعم</td></tr>
+<tr><td class="r">كل ميزة طبقة مستقلة</td><td class="mid">جزئيًا</td><td class="mid">جزئيًا</td><td class="yes">نعم</td><td class="no">لا</td><td class="no">لا</td></tr>
+<tr><td class="r">يغطي الأعجمي الذي ليس في المعاجم</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="mid">جزئيًا</td><td class="no">لا</td></tr>
+<tr><td class="r">لا يكرر عمل سليم في تصحيح الجمل</td><td class="no">لا</td><td class="mid">بشرط القفل</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="yes">نعم</td></tr>
+<tr><td class="r">يعرف الكاتب مصدر كل اقتراح</td><td class="no">لا</td><td class="mid">جزئيًا</td><td class="yes">نعم</td><td class="yes">نعم</td><td class="yes">نعم</td></tr>
+<tr><td class="r">خطأ طبقة لا ينتقل لغيرها</td><td class="no">لا</td><td class="no">لا</td><td class="yes">نعم</td><td class="mid">جزئيًا</td><td class="mid">جزئيًا</td></tr>
+<tr><td class="r">السرعة</td><td class="mid">متوسطة</td><td class="no">الأبطأ</td><td class="mid">متوسطة</td><td class="yes">الأسرع</td><td class="mid">متوسطة</td></tr>
+<tr><td class="r">صعوبة التنفيذ</td><td class="yes">سهلة</td><td class="mid">متوسطة</td><td class="mid">متوسطة</td><td class="yes">سهلة</td><td class="mid">متوسطة</td></tr>
+</table>
+<p class="cap">جدول 3. مقارنة الطرق. السرعة تقدير: خصص يحلل النص في أجزاء من الثانية، والنموذج نحو ثانية للجملة على المعالج وأسرع على كرت الشاشة (لم يُقس بعد).</p>
+
+<h2>4. الطريقة المقترحة: بالتوازي ثم الدمج</h2>
+<div class="flow">النص الأصلي ← [ خصص ‖ نموذج الأعجمي ] ← دمج الاقتراحات ← الكاتب يقبل أو يرفض ← سليم يصحح الجمل</div>
+<h3>4.1 خطوات العمل</h3>
+<ol>
+<li>يعمل خصص على النص الأصلي، فيخرج قائمة المصطلحات المتخصصة ومعتمدها وتوحيدها.</li>
+<li>يعمل النموذج على النص الأصلي نفسه، فيعيد الجمل بالفصحى.</li>
+<li>نقارن جملة النموذج بالجملة الأصلية، ونأخذ فقط الكلمات الأعجمية التي تغيّرت، ونتجاهل أي تغيير آخر (العامية والنحو من عمل سليم).</li>
+<li>ندمج القائمتين بقاعدة التعارض (جدول 4)، فتظهر كل كلمة مرة واحدة ومعها مصدرها.</li>
+<li>يقرر الكاتب، ثم يُرسل النص مع المصطلحات المعتمدة إلى سليم.</li>
+</ol>
+<h3>4.2 قاعدة التعارض</h3>
+<table>
+<tr><th class="r">الحالة</th><th class="r">القرار</th><th>المصدر الظاهر للكاتب</th></tr>
+<tr><td class="r">الكلمة مصطلح متخصص وجده خصص</td><td class="r">اقتراح خصص، ولو اقترح النموذج غيره</td><td>خصص (المعجم)</td></tr>
+<tr><td class="r">كلمة أعجمية عامة لا يعرفها خصص</td><td class="r">اقتراح النموذج</td><td>نموذج الأعجمي</td></tr>
+<tr><td class="r">اتفق الاثنان على المقابل نفسه</td><td class="r">يُعرض مرة واحدة بثقة أعلى</td><td>خصص + النموذج</td></tr>
+<tr><td class="r">خصص في مستوى «راجع» والنموذج يخالفه</td><td class="r">يبقى «راجع» ويُعرض الاقتراحان (هذا مدخل الطريقة 5)</td><td>الاثنان</td></tr>
+</table>
+<p class="cap">جدول 4. قاعدة الدمج المقترحة.</p>
+
+<h3>4.3 مثال توضيحي</h3>
+<p>الجملة: «نزّلت الأبديت على اللابتوب وشغلت المودل على الداتا». المقابلات أدناه لتوضيح الفكرة فقط، وليست ناتج تشغيل فعلي.</p>
+<table>
+<tr><th>الكلمة</th><th>خصص</th><th>النموذج</th><th>القرار</th><th>السبب</th></tr>
+<tr><td>المودل</td><td>النموذج</td><td>النموذج</td><td>النموذج</td><td class="r">اتفقا</td></tr>
+<tr><td>الداتا</td><td>البيانات</td><td>المعطيات</td><td>البيانات</td><td class="r">مصطلح متخصص، فالأولوية للمعجم</td></tr>
+<tr><td>الأبديت</td><td>—</td><td>التحديث</td><td>التحديث</td><td class="r">أعجمي عام لا يعرفه خصص</td></tr>
+<tr><td>اللابتوب</td><td>—</td><td>الحاسوب المحمول</td><td>الحاسوب المحمول</td><td class="r">أعجمي عام لا يعرفه خصص</td></tr>
+<tr><td>نزّلت، شغلت</td><td>—</td><td>(غيّرها)</td><td>لا شيء</td><td class="r">ليست أعجمية؛ تصحيحها لسليم</td></tr>
+</table>
+<p class="cap">جدول 5. مثال توضيحي للدمج.</p>
+
+<div class="rec"><b>التوصية.</b> نعتمد الطريقة 3 أساسًا لأنها الوحيدة التي تحقق مبدأ «كل ميزة طبقة»: النموذج يحوّل الأعجمي، وخصص يوحّد ويستبدل المصطلحات، وسليم يصحح الجمل. ونضيف الطريقة 5 لاحقًا لرفع دقة اقتراحات خصص غير المؤكدة. وتسمح هذه الطريقة بقياس كل طبقة وحدها ومجتمعة في الورقة العلمية.</div>
+
+<h2>5. ملاحظات على النموذج قبل اعتماده</h2>
+<ul>
+<li>قيس النموذج على مجموعة التحقق (553 جملة) دون مجموعة اختبار منفصلة؛ إن اختيرت أفضل تجربة عليها فالنتيجة (BLEU 50.17) متفائلة.</li>
+<li>مقياس BLEU يقيس تشابه الألفاظ مع المرجع، ولا يقيس صحة المصطلح أو حفظ المعنى، ولا يوجد تقييم بشري.</li>
+<li>النموذج مدرّب على اللهجات، فسيغيّر كلمات عامية غير أعجمية؛ لذلك نأخذ منه الأعجمي فقط.</li>
+<li>نقيسه في طبقته على عينة من نصوصنا: هل اكتشف الأعجمي، وهل المقابل صحيح، وهل تعارض مع خصص.</li>
+</ul>
+
+<h2>6. المطلوب للبدء</h2>
+<div class="box">
+<ol style="margin:0">
+<li>مكان النموذج المدرّب النهائي: اسمه في <span class="en">Hugging Face</span> أو مسار ملفاته.</li>
+<li>جملتان أو ثلاث: المدخل وما يُخرجه النموذج.</li>
+<li>مكان التشغيل: خادم سليم أو الجهاز المحلي.</li>
+</ol>
+</div>
+
+</body>
+</html>
