@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>ربط نموذج الأعجمي بخصص</title>
+<!-- Animated explainer: three ways to link the foreign-to-MSA model with Kass and Saleem, rendered frame by frame by
+     render_fusha.py (render(t) draws second t). Kass's suggestions for the example sentence are what the detector returns
+     (tech domain: الداتا → بيانات, السيرفر → خادم). The model's output for that sentence is illustrative; the model facts
+     and the examples in scene 2 come from its code and its validation file. -->
+<style>
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Regular.ttf);font-weight:400}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Medium.ttf);font-weight:500}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-SemiBold.ttf);font-weight:600}
+@font-face{font-family:Plex;src:url(../fonts/IBMPlexSansArabic-Bold.ttf);font-weight:700}
+:root{--bg:#f6f7f2;--bg2:#eef2ea;--surf:#fff;--ink:#14231d;--muted:#5b6b63;--line:#dde5dd;--green:#0b4b33;--green2:#12633f;
+--mint:#e5efe7;--rep:#1b7448;--repbg:#e1f1e7;--rev:#94620a;--revbg:#f8edd6;--mdl:#4b3a8c;--mdlbg:#ebe7f6;--red:#8a3b2a;--redbg:#f6e4df;--gold:#b08a2e;--goldbg:#f7efd9}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg);font-family:Plex;color:var(--ink)}
+.scene{position:absolute;inset:0;opacity:0;display:none}
+.abs{position:absolute}
+.head{position:absolute;top:56px;right:96px;left:96px;height:90px;display:flex;align-items:center;gap:26px}
+.num{width:84px;height:84px;border-radius:50%;background:var(--green);color:#fff;font:700 40px Plex;display:flex;align-items:center;justify-content:center;flex:none}
+.title{font:700 50px Plex}
+.logo{position:absolute;top:70px;left:96px;height:52px}
+.cap{position:absolute;bottom:0;left:0;right:0;height:132px;background:var(--green);color:#fff;font:600 34px Plex;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 120px}
+.card{background:var(--surf);border:2px solid var(--line);border-radius:22px}
+.row{display:flex;align-items:center}
+.muted{color:var(--muted)}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font:600 24px Plex;padding:4px 22px;white-space:nowrap}
+.tok{display:inline-block;padding:0 6px;border-radius:10px;line-height:1.45}
+.k-rep{background:var(--repbg);color:var(--rep);box-shadow:inset 0 -5px 0 var(--rep)}
+.k-mdl{background:var(--mdlbg);color:var(--mdl);box-shadow:inset 0 -5px 0 var(--mdl)}
+.k-rev{background:var(--revbg);color:var(--rev);box-shadow:inset 0 -5px 0 var(--rev)}
+.k-bad{background:var(--redbg);color:var(--red);box-shadow:inset 0 -5px 0 var(--red)}
+.stage{position:absolute;right:96px;width:1060px;height:136px;padding:16px 30px}
+.stage .lab{font:600 24px Plex;color:var(--muted);margin-bottom:6px}
+.stage .s{font:600 38px Plex;white-space:nowrap}
+.imp{position:absolute;left:96px;width:630px;top:330px;height:470px;padding:26px 30px}
+.imp h3{font:700 30px Plex;margin-bottom:16px;color:var(--green)}
+.it{display:flex;gap:14px;font:500 25px Plex;line-height:1.45;margin-bottom:14px}
+.it b{flex:none;width:30px;text-align:center;font-size:28px}
+.ok{color:var(--rep)}.no{color:var(--red)}.mid{color:var(--rev)}
+.pipe{position:absolute;right:96px;left:96px;top:186px;height:110px;display:flex;align-items:center;justify-content:center;gap:16px}
+.pb{height:84px;padding:0 30px;border-radius:18px;display:flex;align-items:center;font:700 30px Plex;border:3px solid var(--line);background:var(--surf);white-space:nowrap;transition:none}
+.arr{font:700 40px Plex;color:var(--muted)}
+.badge{position:absolute;left:96px;top:158px;font:500 20px Plex;color:var(--muted);background:var(--bg2);border-radius:999px;padding:3px 16px}
+.lat{direction:ltr;unicode-bidi:isolate}
+table.t{border-collapse:collapse;width:100%}
+table.t td,table.t th{border-bottom:2px solid var(--line);padding:0 22px;height:84px;font:500 28px Plex;text-align:center}
+table.t th{font:700 30px Plex;background:var(--bg2)}
+table.t td:first-child,table.t th:first-child{text-align:right;font-weight:700;color:var(--green)}
+</style>
+</head>
+<body>
+
+<!-- 0 title -->
+<section class="scene" id="s0" style="background:var(--green)">
+  <img src="../wordmark_white.png" class="abs" id="t0logo" style="left:50%;top:230px;width:500px;transform:translateX(-50%)">
+  <div class="abs" id="t0a" style="top:500px;width:100%;text-align:center;color:#fff;font:700 70px Plex">ثلاث طرق لربط نموذج الأعجمي بخصص</div>
+  <div class="abs" id="t0b" style="top:630px;width:100%;text-align:center;color:#cfe3d7;font:500 38px Plex">نموذج الأعجمي · خصص · سليم: كل ميزة طبقة</div>
+</section>
+
+<!-- 1 the three layers -->
+<section class="scene" id="s1">
+  <div class="head"><div class="num">١</div><div class="title">ثلاث طبقات، لكل واحدة عمل</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="l_cards"></div>
+  <div class="cap" id="c1"></div>
+</section>
+
+<!-- 2 what the model's code tells us -->
+<section class="scene" id="s2">
+  <div class="head"><div class="num">٢</div><div class="title">ماذا يقول كود النموذج؟</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="f_cards"></div>
+  <div class="abs" id="f_foot" style="right:0;left:0;top:850px;text-align:center;font:500 26px Plex" class="muted"><span class="lat">m2m100</span> · نحو ٤٠٠ مليون معامل · ١٠٤٬٤٧٤ جملة تدريب · ٥٥٣ جملة تحقق</div>
+  <div class="cap" id="c2"></div>
+</section>
+
+<!-- 3 method 1 -->
+<section class="scene" id="s3">
+  <div class="head"><div class="num">٣</div><div class="title">الطريقة الأولى: النموذج أولًا</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="pipe" id="m1p"></div>
+  <div class="card stage" id="m1a" style="top:330px"></div>
+  <div class="card stage" id="m1b" style="top:490px"></div>
+  <div class="card stage" id="m1c" style="top:650px"></div>
+  <div class="card imp" id="m1i"></div>
+  <div class="badge" id="m1x">ناتج النموذج هنا توضيحي · اقتراحات خصص حقيقية</div>
+  <div class="cap" id="c3"></div>
+</section>
+
+<!-- 4 method 2 -->
+<section class="scene" id="s4">
+  <div class="head"><div class="num">٤</div><div class="title">الطريقة الثانية: خصص أولًا</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="pipe" id="m2p"></div>
+  <div class="card stage" id="m2a" style="top:330px"></div>
+  <div class="card stage" id="m2b" style="top:490px"></div>
+  <div class="card stage" id="m2c" style="top:650px"></div>
+  <div class="card imp" id="m2i"></div>
+  <div class="badge">ناتج النموذج هنا توضيحي · اقتراحات خصص حقيقية</div>
+  <div class="cap" id="c4"></div>
+</section>
+
+<!-- 5 method 3: flow and merge -->
+<section class="scene" id="s5">
+  <div class="head"><div class="num">٥</div><div class="title">الطريقة الثالثة: بالتوازي ثم الدمج</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="pipe" id="m3p"></div>
+  <div class="card stage" id="m3a" style="top:320px;right:96px;left:96px;width:auto;text-align:center"></div>
+  <div class="abs card" id="m3k" style="right:96px;width:560px;top:480px;height:330px;padding:22px 28px"></div>
+  <div class="abs card" id="m3m" style="right:680px;width:560px;top:480px;height:330px;padding:22px 28px"></div>
+  <div class="abs card" id="m3t" style="left:96px;width:582px;top:480px;height:330px;padding:12px 18px;overflow:hidden"></div>
+  <div class="abs card" id="m3f" style="right:96px;left:96px;top:480px;height:330px;padding:40px;text-align:center;opacity:0"></div>
+  <div class="badge">ناتج النموذج هنا توضيحي · اقتراحات خصص حقيقية</div>
+  <div class="cap" id="c5"></div>
+</section>
+
+<!-- 6 method 3: why -->
+<section class="scene" id="s6">
+  <div class="head"><div class="num">٦</div><div class="title">لماذا الطريقة الثالثة؟</div></div><img class="logo" src="../wordmark_green.png">
+  <div id="w_cards"></div>
+  <div class="cap" id="c6"></div>
+</section>
+
+<!-- 7 comparison -->
+<section class="scene" id="s7">
+  <div class="head"><div class="num">٧</div><div class="title">الطرق الثلاث معًا</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card" id="cmp" style="right:120px;left:120px;top:180px;height:690px;overflow:hidden"></div>
+  <div class="cap">المعجم أولًا في المصطلح، والنموذج في الأعجمي العام، وسليم في الجمل</div>
+</section>
+
+<!-- 8 recommendation -->
+<section class="scene" id="s8">
+  <div class="head"><div class="num">٨</div><div class="title">التوصية والخطوة التالية</div></div><img class="logo" src="../wordmark_green.png">
+  <div class="abs card" id="r1" style="right:120px;left:120px;top:200px;height:250px;padding:34px 44px;border-right:10px solid var(--gold);background:var(--goldbg)">
+    <div style="font:700 44px Plex;color:var(--green)">نعتمد الطريقة الثالثة</div>
+    <div style="font:500 30px Plex;margin-top:18px;line-height:1.6">كل ميزة طبقة مستقلة، تُقاس وحدها ومجتمعة، والمعجم المعتمد يبقى المرجع في المصطلح</div>
+  </div>
+  <div class="abs card" id="r2" style="right:120px;width:820px;top:490px;height:330px;padding:30px 40px">
+    <div style="font:700 32px Plex;color:var(--green);margin-bottom:16px">قبل الربط</div>
+    <div class="it"><b class="mid">١</b><span>مجموعة اختبار منفصلة للنموذج: الـ٥٥٣ استُخدمت للاختيار والقياس معًا</span></div>
+    <div class="it"><b class="mid">٢</b><span>قياس بشري: هل المقابل صحيح؟ هل حُفظ المعنى؟</span></div>
+    <div class="it"><b class="mid">٣</b><span>قياس السرعة على خادم بلا كرت شاشة</span></div>
+  </div>
+  <div class="abs card" id="r3" style="left:120px;width:820px;top:490px;height:330px;padding:30px 40px">
+    <div style="font:700 32px Plex;color:var(--green);margin-bottom:16px">مكان العمل</div>
+    <div class="it"><b class="ok">✓</b><span>مستودع سليم، فرع <span class="lat">KassFushaFeature</span></span></div>
+    <div class="it"><b class="ok">✓</b><span><span class="lat">KassFeature</span> = سليم + خصص كما هو</span></div>
+    <div class="it"><b class="ok">✓</b><span>الفرع الرئيس <span class="lat">main</span> لا يتغير</span></div>
+  </div>
+  <div class="cap">الخطوة التالية: تشغيل النموذج على عينة من نصوصنا وقياس كل طبقة</div>
+</section>
+
+<!-- 9 end -->
+<section class="scene" id="s9" style="background:var(--green)">
+  <img src="../wordmark_white.png" class="abs" id="z_logo" style="left:50%;top:320px;width:460px;transform:translateX(-50%)">
+  <div class="abs" id="z_a" style="top:580px;width:100%;text-align:center;color:#fff;font:700 56px Plex">كل ميزة طبقة… والقرار للكاتب</div>
+  <div class="abs" id="z_b" style="top:680px;width:100%;text-align:center;color:#cfe3d7;font:500 34px Plex">طبقة خصص · مجمع الملك سلمان العالمي للغة العربية</div>
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+const cl = x => x < 0 ? 0 : x > 1 ? 1 : x;
+const ease = x => { x = cl(x); return x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2; };
+const P = (t, a, d = .6) => ease((t - a) / d);
+const h = (tag, attrs = {}, html = '') => { const e = document.createElement(tag); for (const k in attrs) e.setAttribute(k, attrs[k]); e.innerHTML = html; return e; };
+const fade = (id, k, dy = 24) => { const e = typeof id === 'string' ? $(id) : id; e.style.opacity = k; e.style.transform = `translateY(${(1 - k) * dy}px)`; };
+const cap = (id, t, list) => { let s = ''; for (const [a, txt] of list) if (t >= a) s = txt; $(id).textContent = s; };
+
+// a sentence: strings are plain, [text, kind] is a highlighted token
+const sent = parts => parts.map(p => typeof p === 'string' ? p : `<span class="tok k-${p[1]}">${p[0]}</span>`).join(' ').replace(/ ([،.])/g, '$1');
+const ORIG = ['لبس', ['بليزر', 'rev'], '، وقال إن', ['الداتا', 'rev'], 'على', ['السيرفر', 'rev'], 'ضاعت', '.'];
+function stage(id, lab, parts, pill) {
+  $(id).innerHTML = `<div class="lab row" style="gap:14px">${lab}${pill ? `<span class="pill" style="font-size:20px;padding:2px 14px;${pill[1]}">${pill[0]}</span>` : ''}</div><div class="s">${sent(parts)}</div>`;
+}
+function impacts(id, title, list) {
+  $(id).innerHTML = `<h3>${title}</h3>` + list.map(([k, s], i) => `<div class="it" id="${id}_${i}"><b class="${k === '✓' ? 'ok' : k === '✗' ? 'no' : 'mid'}">${k}</b><span>${s}</span></div>`).join('');
+}
+const PB = { txt: ['النص', '--ink', '--surf'], mdl: ['نموذج الأعجمي', '--mdl', '--mdlbg'], kass: ['خصص', '--rep', '--repbg'], sal: ['سليم', '--gold', '--goldbg'],
+  both: ['خصص ‖ النموذج', '--green', '--mint'], merge: ['دمج', '--rev', '--revbg'], wr: ['الكاتب يقرر', '--ink', '--bg2'] };
+function pipe(id, keys) { $(id).innerHTML = keys.map((k, i) => `${i ? '<span class="arr">←</span>' : ''}<div class="pb" id="${id}_${i}">${PB[k][0]}</div>`).join(''); $(id).dataset.keys = keys.join(','); }
+function pipeAct(id, t, times) {  // light each box from its time on; the newest one glows
+  const keys = $(id).dataset.keys.split(',');
+  keys.forEach((k, i) => {
+    const b = $(id + '_' + i), on = t >= times[i], cur = on && (i === keys.length - 1 || t < times[i + 1]);
+    b.style.borderColor = on ? `var(${PB[k][1]})` : 'var(--line)';
+    b.style.background = on ? `var(${PB[k][2]})` : 'var(--surf)';
+    b.style.color = on ? `var(${PB[k][1]})` : 'var(--muted)';
+    b.style.transform = cur ? 'scale(1.08)' : 'none';
+    b.style.boxShadow = cur ? `0 0 0 6px color-mix(in srgb, var(${PB[k][1]}) 18%, transparent)` : 'none';
+  });
+}
+
+// ---------- scene 1: layers ----------
+const LAYERS = [
+  ['نموذج الأعجمي', '--mdl', '--mdlbg', 'يكتشف الكلمة الأعجمية ويعطي مقابلها الفصيح', 'بليزر ← سترة', 'يغطي أي كلمة أعجمية، لكنه بلا مصدر'],
+  ['خصص', '--rep', '--repbg', 'يكتشف المصطلح المتخصص ويوحّده ويستبدله', 'السيرفر ← الخادم', 'المصطلح من معاجم سِوار، مع المعجم والتعريف'],
+  ['سليم', '--gold', '--goldbg', 'يصحح الجمل لغويًا', 'الجملة كلها', 'النموذج اللغوي للمنصة'],
+];
+LAYERS.forEach(([n, fg, bg, job, ex, note], i) => {
+  const c = h('div', { class: 'abs card', id: 'L' + i, style: `right:${120 + i * 572}px;width:530px;top:220px;height:600px;padding:34px 36px;border-top:12px solid var(${fg})` });
+  c.innerHTML = `<div class="pill" style="background:var(${bg});color:var(${fg});font-size:30px;padding:6px 28px">${n}</div>
+    <div style="font:600 32px Plex;margin-top:34px;line-height:1.55">${job}</div>
+    <div style="font:700 40px Plex;margin-top:40px;color:var(${fg})">${ex}</div>
+    <div class="muted" style="font:500 26px Plex;margin-top:40px;line-height:1.5">${note}</div>`;
+  $('l_cards').appendChild(c);
+});
+
+// ---------- scene 2: model facts (examples from its validation file and its API) ----------
+const FACTS = [
+  ['يعيد الجملة كاملة', '<span class="lat" style="font-size:24px">POST /predict → {"prediction": "…"}</span>', 'لا يقول أي كلمة غيّر، ولا لماذا'],
+  ['يصرّف ويطابق ما حولها', 'موديفاي ← تعدل<br>سنيك صغير ← ثعبانًا صغيرًا', 'يغيّر أكثر من الكلمة الأعجمية'],
+  ['يحوّل العامية أيضًا', 'ده فولت ← هذا خطأ', 'وهذا من عمل سليم'],
+  ['كلماته عامة في الغالب', 'بليزر ← سترة<br>هيداك ← صداع', 'وبعضها متخصص: سيستم لوج ← سجل النظام'],
+];
+FACTS.forEach(([t, ex, d], i) => {
+  const c = h('div', { class: 'abs card', id: 'F' + i, style: `${i % 2 ? 'left' : 'right'}:120px;width:820px;top:${190 + Math.floor(i / 2) * 320}px;height:290px;padding:26px 36px;border-right:8px solid var(--mdl)` });
+  c.innerHTML = `<div style="font:700 36px Plex;color:var(--mdl)">${t}</div><div style="font:600 32px Plex;margin-top:18px;line-height:1.55">${ex}</div><div class="muted" style="font:500 26px Plex;margin-top:14px">${d}</div>`;
+  $('f_cards').appendChild(c);
+});
+
+// ---------- scene 3: model first ----------
+pipe('m1p', ['txt', 'mdl', 'kass', 'sal']);
+stage('m1a', 'النص الأصلي', ORIG);
+stage('m1b', 'بعد النموذج: الجملة كلها أُعيدت', ['لبس', ['سترة', 'mdl'], '، وقال إن', ['المعطيات', 'bad'], 'على', ['الخادم', 'mdl'], ['فُقدت', 'bad'], '.']);
+stage('m1c', 'خصص يقرأ الناتج', ['لبس سترة، وقال إن المعطيات على الخادم فُقدت.'], ['لا شيء يقترحه أو يوحّده', 'background:var(--redbg);color:var(--red)']);
+impacts('m1i', 'التأثير', [
+  ['✗', 'مقابل النموذج يغلب المعجم: «المعطيات» بدل المعتمد «البيانات»'],
+  ['✗', 'الكلمات الأصلية اختفت، فلا يجد خصص ما يوحّده ولا يظهر مصدر'],
+  ['✗', 'النموذج غيّر «ضاعت» ← «فُقدت»: هذا عمل سليم'],
+  ['✗', 'الكاتب لا يعرف ما الذي تغيّر'],
+  ['✓', 'الأبسط تنفيذًا: استدعاء واحد'],
+]);
+
+// ---------- scene 4: Kass first ----------
+pipe('m2p', ['txt', 'kass', 'mdl', 'sal']);
+stage('m2a', 'النص الأصلي', ORIG);
+stage('m2b', 'بعد خصص: المصطلحات المعتمدة، مقفلة 🔒', ['لبس', ['بليزر', 'rev'], '، وقال إن', ['البيانات', 'rep'], 'على', ['الخادم', 'rep'], 'ضاعت', '.']);
+stage('m2c', 'بعد النموذج: يحوّل ما بقي', ['لبس', ['سترة', 'mdl'], '، وقال إن', ['البيانات', 'rep'], 'على', ['الخادم', 'rep'], ['فُقدت', 'bad'], '.'], ['ما زال يعيد الجملة', 'background:var(--revbg);color:var(--rev)']);
+impacts('m2i', 'التأثير', [
+  ['✓', 'المعجم أولًا: «البيانات» و«الخادم» من سِوار مع مصدرهما'],
+  ['✓', 'النموذج يغطي «بليزر» التي لا يعرفها خصص'],
+  ['!', 'يلزم قفل مصطلحات خصص، وإلا قد يعيد النموذج كتابتها'],
+  ['!', 'النموذج ما زال يغيّر الجملة، فيحتاج فلترة'],
+  ['✗', 'الأبطأ: الطبقتان متتاليتان، وخطأ خصص ينتقل للنموذج'],
+]);
+
+// ---------- scene 5: parallel ----------
+pipe('m3p', ['txt', 'both', 'merge', 'wr', 'sal']);
+stage('m3a', 'النص الأصلي يذهب إلى الطبقتين معًا', ORIG);
+$('m3k').innerHTML = `<div class="pill" style="background:var(--repbg);color:var(--rep);font-size:26px">خصص</div>
+  <div style="font:600 32px Plex;margin-top:26px" id="k1"><span class="tok k-rev">الداتا</span> ← <span class="tok k-rep">البيانات</span></div>
+  <div style="font:600 32px Plex;margin-top:22px" id="k2"><span class="tok k-rev">السيرفر</span> ← <span class="tok k-rep">الخادم</span></div>
+  <div class="muted" style="font:500 24px Plex;margin-top:26px" id="k3">من معاجم سِوار · «استبدال مقترح»</div>`;
+$('m3m').innerHTML = `<div class="pill" style="background:var(--mdlbg);color:var(--mdl);font-size:26px">نموذج الأعجمي</div>
+  <div style="font:600 26px Plex;margin-top:18px" id="q0">لبس سترة، وقال إن المعطيات على الخادم فُقدت.</div>
+  <div class="muted" style="font:500 22px Plex;margin-top:10px" id="q1">نقارن بالأصل ونأخذ الأعجمي فقط:</div>
+  <div style="font:600 26px Plex;margin-top:8px;line-height:1.7" id="q2">بليزر ← سترة · الداتا ← المعطيات<br>السيرفر ← الخادم · <span style="color:var(--red);text-decoration:line-through">ضاعت ← فُقدت</span></div>`;
+const MT = [['الكلمة', 'خصص', 'النموذج', 'القرار'], ['بليزر', '—', 'سترة', '<b style="color:var(--mdl)">سترة</b>'], ['الداتا', 'البيانات', 'المعطيات', '<b style="color:var(--rep)">البيانات</b>'],
+  ['السيرفر', 'الخادم', 'الخادم', '<b style="color:var(--rep)">الخادم ✓✓</b>'], ['ضاعت', '—', 'فُقدت', '<span style="color:var(--gold)">لسليم</span>']];
+$('m3t').innerHTML = '<table class="t" style="font-size:24px">' + MT.map((r, i) => `<tr id="mt${i}">` + r.map(c => i ? `<td style="height:60px;font-size:24px;padding:0 10px">${c}</td>` : `<th style="height:56px;font-size:24px;padding:0 10px">${c}</th>`).join('') + '</tr>').join('') + '</table>';
+$('m3f').innerHTML = `<div class="muted" style="font:600 26px Plex">يقبل الكاتب، ثم يذهب النص إلى سليم</div>
+  <div style="font:600 46px Plex;margin-top:40px">${sent(['لبس', ['سترة', 'mdl'], '، وقال إن', ['البيانات', 'rep'], 'على', ['الخادم', 'rep'], 'ضاعت', '.'])}</div>
+  <div class="row" style="gap:26px;justify-content:center;margin-top:46px;font:500 26px Plex">
+   <span class="pill" style="background:var(--mdlbg);color:var(--mdl)">من نموذج الأعجمي</span><span class="pill" style="background:var(--repbg);color:var(--rep)">من خصص (المعجم)</span><span class="pill" style="background:var(--goldbg);color:var(--gold)">الجمل: سليم</span></div>`;
+
+// ---------- scene 6: why method 3 ----------
+const WHY = [
+  ['كل ميزة طبقة مستقلة', 'النموذج للأعجمي، وخصص للمصطلح، وسليم للجمل: لا أحد يعمل عمل غيره'],
+  ['الخطأ لا ينتقل', 'الطبقتان تقرآن النص الأصلي نفسه، فخطأ إحداهما لا يدخل الأخرى'],
+  ['مصدر كل اقتراح ظاهر', 'يرى الكاتب: هذا من المعجم، وهذا من النموذج، وهذا اتفقا عليه'],
+  ['أسرع مما يبدو', 'لا يُرسل للنموذج إلا الجمل التي فيها كلمة يُشتبه أنها أعجمية'],
+];
+WHY.forEach(([t, d], i) => {
+  const c = h('div', { class: 'abs card', id: 'W' + i, style: `${i % 2 ? 'left' : 'right'}:120px;width:820px;top:${190 + Math.floor(i / 2) * 330}px;height:290px;padding:34px 40px;border-top:8px solid var(--green)` });
+  c.innerHTML = `<div style="font:700 38px Plex;color:var(--green)">${t}</div><div style="font:500 31px Plex;margin-top:22px;line-height:1.6">${d}</div>`;
+  $('w_cards').appendChild(c);
+});
+
+// ---------- scene 7: comparison ----------
+const Y = '<b class="ok">✓</b>', N = '<b class="no">✗</b>', M = s => `<b class="mid">${s}</b>`;
+const CMP = [['', '١ النموذج أولًا', '٢ خصص أولًا', '٣ بالتوازي'],
+  ['المعجم المعتمد له الأولوية', N, Y, Y], ['كل ميزة طبقة مستقلة', N, M('جزئيًا'), Y], ['يغطي الأعجمي خارج المعاجم', Y, Y, Y],
+  ['لا يكرر عمل سليم', N, M('بفلترة'), Y], ['الكاتب يعرف مصدر الاقتراح', N, M('جزئيًا'), Y], ['السرعة', M('متوسطة'), N + ' <span class="no">الأبطأ</span>', M('متوسطة')], ['صعوبة التنفيذ', Y + ' <span class="ok">سهلة</span>', M('متوسطة'), M('متوسطة')]];
+$('cmp').innerHTML = '<table class="t">' + CMP.map((r, i) => `<tr id="cr${i}">` + r.map((c, j) => i ? `<td>${c}</td>` : `<th style="${j === 3 ? 'color:var(--green);background:var(--goldbg)' : ''}">${c}</th>`).join('') + '</tr>').join('') + '</table>';
+
+// ---------- timeline ----------
+const S = [['s0', 0, 5], ['s1', 5, 17], ['s2', 17, 31], ['s3', 31, 52], ['s4', 52, 73], ['s5', 73, 98], ['s6', 98, 110], ['s7', 110, 124], ['s8', 124, 133], ['s9', 133, 138]];
+const DURATION = 138;
+const U = {
+  s0(t) { fade('t0logo', P(t, .2, .7), 0); fade('t0a', P(t, .8)); fade('t0b', P(t, 1.3)); },
+  s1(t) {
+    LAYERS.forEach((_, i) => fade('L' + i, P(t, .4 + i * 3)));
+    cap('c1', t, [[0, 'نموذج الأعجمي: الكلمات الأعجمية العامة'], [3.4, 'خصص: المصطلح المتخصص من المعجم المعتمد، وتوحيده في النص'], [6.4, 'سليم: تصحيح الجمل'], [9.2, 'السؤال: بأي ترتيب تعمل الطبقات الثلاث؟']]);
+  },
+  s2(t) {
+    FACTS.forEach((_, i) => fade('F' + i, P(t, .4 + i * 2.8))); fade('f_foot', P(t, 11.6));
+    cap('c2', t, [[0, 'النموذج ترجمة آلية: يستقبل جملة ويعيدها كاملة بالفصحى'], [2.8, 'لا يبدّل الكلمة وحدها: يصرّف الفعل ويطابق الصفة'], [5.6, 'ومدرَّب على اللهجات، فيحوّل العامية أيضًا'],
+      [8.4, 'أغلب كلماته من الحياة اليومية، وخصص للمصطلح المتخصص'], [11.4, 'هذه الحقائق تحدد أين يُوضع النموذج']]);
+  },
+  s3(t) {
+    pipeAct('m1p', t, [.3, 3.5, 8, 99]);
+    fade('m1a', P(t, .6)); fade('m1b', P(t, 3.8)); fade('m1c', P(t, 8.2)); fade('m1x', P(t, 3.8), 0);
+    fade('m1i', P(t, 10.5)); for (let i = 0; i < 5; i++) fade('m1i_' + i, P(t, 11 + i * 1.6));
+    cap('c3', t, [[0, 'النص يذهب أولًا إلى النموذج'], [3.6, 'النموذج يعيد الجملة كلها: «بليزر» صحيحة، لكن «الداتا» صارت «المعطيات»'], [8, 'خصص لا يرى الكلمات الأصلية، فلا يقترح ولا يوحّد'],
+      [11, 'المصطلح يأتي من النموذج لا من المعجم، والتغييرات بلا مصدر'], [17.5, 'سهلة التنفيذ، لكنها تُضعف خصص وتكرر عمل سليم']]);
+  },
+  s4(t) {
+    pipeAct('m2p', t, [.3, 3.5, 8, 99]);
+    fade('m2a', P(t, .6)); fade('m2b', P(t, 3.8)); fade('m2c', P(t, 8.2));
+    fade('m2i', P(t, 10.5)); for (let i = 0; i < 5; i++) fade('m2i_' + i, P(t, 11 + i * 1.6));
+    cap('c4', t, [[0, 'هذه المرة يبدأ خصص'], [3.6, 'خصص يستبدل «الداتا» و«السيرفر» بالمعتمد من سِوار، ونقفلهما'], [8, 'ثم يحوّل النموذج «بليزر» التي لا يعرفها خصص'],
+      [11, 'المعجم يحكم المصطلح، والنموذج يكمل الباقي'], [16, 'لكن النموذج ما زال يعيد الجملة، والطبقتان متتاليتان فهي الأبطأ']]);
+  },
+  s5(t) {
+    pipeAct('m3p', t, [.3, 3, 11.5, 18, 21]);
+    fade('m3a', P(t, .6));
+    const pre = 1 - P(t, 17.4, .5);
+    fade('m3k', Math.min(P(t, 3.2), pre)); fade('k1', P(t, 4)); fade('k2', P(t, 4.6)); fade('k3', P(t, 5.2));
+    fade('m3m', Math.min(P(t, 6), pre)); fade('q0', P(t, 6.6)); fade('q1', P(t, 8.4)); fade('q2', P(t, 9.2));
+    fade('m3t', Math.min(P(t, 11.6), pre)); for (let i = 0; i < 5; i++) fade('mt' + i, P(t, 11.9 + i * 1.1), 10);
+    fade('m3f', P(t, 17.9));
+    cap('c5', t, [[0, 'النص الأصلي يذهب إلى الطبقتين في الوقت نفسه'], [3.2, 'خصص يعطي المصطلحات المعتمدة: البيانات، الخادم'], [6, 'النموذج يعيد الجملة، فنأخذ منها الكلمات الأعجمية التي تغيّرت فقط'],
+      [9.6, '«ضاعت ← فُقدت» ليست أعجمية: تُترك لسليم'], [11.6, 'الدمج: في المصطلح يحكم المعجم، وفي الأعجمي العام يحكم النموذج'], [16, 'وإن اتفقا ارتفعت الثقة'], [18, 'الكاتب يقبل، ثم يصحح سليم الجمل']]);
+  },
+  s6(t) {
+    WHY.forEach((_, i) => fade('W' + i, P(t, .4 + i * 2.6)));
+    cap('c6', t, [[0, 'الطريقة الثالثة هي الوحيدة التي تحقق: كل ميزة طبقة'], [5.4, 'وتسمح بقياس كل طبقة وحدها، ثم مجتمعة'], [8, 'والنموذج أبطأ من خصص، فلا يعمل إلا حيث يلزم']]);
+  },
+  s7(t) { CMP.forEach((_, i) => { const e = $('cr' + i); const k = P(t, .3 + i * 1.5); e.style.opacity = k; e.style.transform = `translateX(${(1 - k) * 40}px)`; }); },
+  s8(t) { fade('r1', P(t, .3)); fade('r2', P(t, 2)); fade('r3', P(t, 3.6)); },
+  s9(t) { fade('z_logo', P(t, .2, .7), 0); fade('z_a', P(t, .7)); fade('z_b', P(t, 1.2)); },
+};
+
+function render(t) {
+  for (const [id, a, b] of S) {
+    const el = $(id), on = t >= a - .01 && t < b + .01;
+    if (!on) { el.style.opacity = 0; el.style.display = 'none'; continue; }
+    el.style.display = 'block';
+    el.style.opacity = Math.min(P(t, a, .45), 1 - P(t, b - .45, .45));
+    U[id](t - a);
+  }
+}
+window.DURATION = DURATION;
+render(0);
+</script>
+</body>
+</html>
